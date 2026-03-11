@@ -60,9 +60,12 @@
     ],
     "globalMetadata": {
       "_appTitle": "LunyScript Documentation",
-      "_appName": "LunyScript",
+      "_appName": "Script",
       "_appFooter": "© 2025-2026 Steffen Itterheim (CodeSmile)",
-      "_enableSearch": true
+      "_enableSearch": true,
+      "_appLogoPath": "images/Luny-logo-133x54.png",
+      "_appFaviconPath": "images/luny-logo-56x56.png",
+      "_appLogoUrl": "/"
     },
     "fileMetadata": {},
     "markdownEngineProperties": {
