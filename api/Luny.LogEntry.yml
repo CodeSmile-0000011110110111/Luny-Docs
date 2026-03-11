@@ -1,0 +1,443 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.LogEntry
+  commentId: T:Luny.LogEntry
+  id: LogEntry
+  parent: Luny
+  children:
+  - Luny.LogEntry.Context
+  - Luny.LogEntry.ElapsedSeconds
+  - Luny.LogEntry.FrameCount
+  - Luny.LogEntry.Level
+  - Luny.LogEntry.Message
+  - Luny.LogEntry.ToString
+  langs:
+  - csharp
+  - vb
+  name: LogEntry
+  nameWithType: LogEntry
+  fullName: Luny.LogEntry
+  type: Struct
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Represents a single log entry in the internal Luny logging system.
+
+    Uses FrameCount and ElapsedSeconds instead of DateTime for precise game-time tracking.
+  example: []
+  syntax:
+    content: public struct LogEntry
+    content.vb: Public Structure LogEntry
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Luny.LogEntry.FrameCount
+  commentId: F:Luny.LogEntry.FrameCount
+  id: FrameCount
+  parent: Luny.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: FrameCount
+  nameWithType: LogEntry.FrameCount
+  fullName: Luny.LogEntry.FrameCount
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Frame number when this log entry was created (from ITimeServiceProvider).
+
+    -1 if time service not available.
+  example: []
+  syntax:
+    content: public long FrameCount
+    return:
+      type: System.Int64
+    content.vb: Public FrameCount As Long
+- uid: Luny.LogEntry.ElapsedSeconds
+  commentId: F:Luny.LogEntry.ElapsedSeconds
+  id: ElapsedSeconds
+  parent: Luny.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: ElapsedSeconds
+  nameWithType: LogEntry.ElapsedSeconds
+  fullName: Luny.LogEntry.ElapsedSeconds
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Elapsed time in seconds since application start (from ITimeServiceProvider).
+
+    -1.0 if time service not available.
+  example: []
+  syntax:
+    content: public double ElapsedSeconds
+    return:
+      type: System.Double
+    content.vb: Public ElapsedSeconds As Double
+- uid: Luny.LogEntry.Level
+  commentId: F:Luny.LogEntry.Level
+  id: Level
+  parent: Luny.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: LogEntry.Level
+  fullName: Luny.LogEntry.Level
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Severity level of the log message.
+  example: []
+  syntax:
+    content: public LogLevel Level
+    return:
+      type: Luny.LogLevel
+    content.vb: Public Level As LogLevel
+- uid: Luny.LogEntry.Message
+  commentId: F:Luny.LogEntry.Message
+  id: Message
+  parent: Luny.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: LogEntry.Message
+  fullName: Luny.LogEntry.Message
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: The log message content.
+  example: []
+  syntax:
+    content: public string Message
+    return:
+      type: System.String
+    content.vb: Public Message As String
+- uid: Luny.LogEntry.Context
+  commentId: F:Luny.LogEntry.Context
+  id: Context
+  parent: Luny.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: LogEntry.Context
+  fullName: Luny.LogEntry.Context
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Context type name that generated this log (e.g., "LunyScriptRunner", "LogMessageBlock").
+  example: []
+  syntax:
+    content: public string Context
+    return:
+      type: System.String
+    content.vb: Public Context As String
+- uid: Luny.LogEntry.ToString
+  commentId: M:Luny.LogEntry.ToString
+  id: ToString
+  parent: Luny.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LogEntry.ToString()
+  fullName: Luny.LogEntry.ToString()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Luny.LogEntry.ToString*
+references:
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Luny.LogLevel
+  commentId: T:Luny.LogLevel
+  parent: Luny
+  isExternal: true
+  href: Luny.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Luny.LogLevel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Luny.LogEntry.ToString*
+  commentId: Overload:Luny.LogEntry.ToString
+  isExternal: true
+  href: Luny.LogEntry.html#Luny_LogEntry_ToString
+  name: ToString
+  nameWithType: LogEntry.ToString
+  fullName: Luny.LogEntry.ToString

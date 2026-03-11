@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests
+  commentId: N:LunyScript.SmokeTests
+  id: LunyScript.SmokeTests
+  children:
+  - LunyScript.SmokeTests.LifecycleTestController
+  - LunyScript.SmokeTests.LunyScriptSmokeTestBase
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.SmokeTests
+  nameWithType: LunyScript.SmokeTests
+  fullName: LunyScript.SmokeTests
+  type: Namespace
+  assemblies:
+  - LunyScript.SmokeTests
+references:
+- uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase
+  commentId: T:LunyScript.SmokeTests.LunyScriptSmokeTestBase
+  parent: LunyScript.SmokeTests
+  isExternal: true
+  href: LunyScript.SmokeTests.LunyScriptSmokeTestBase.html
+  name: LunyScriptSmokeTestBase
+  nameWithType: LunyScriptSmokeTestBase
+  fullName: LunyScript.SmokeTests.LunyScriptSmokeTestBase
+- uid: LunyScript.SmokeTests.LifecycleTestController
+  commentId: T:LunyScript.SmokeTests.LifecycleTestController
+  isExternal: true
+  href: LunyScript.SmokeTests.LifecycleTestController.html
+  name: LifecycleTestController
+  nameWithType: LifecycleTestController
+  fullName: LunyScript.SmokeTests.LifecycleTestController
+- uid: LunyScript.SmokeTests
+  commentId: N:LunyScript.SmokeTests
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.SmokeTests
+  nameWithType: LunyScript.SmokeTests
+  fullName: LunyScript.SmokeTests
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html

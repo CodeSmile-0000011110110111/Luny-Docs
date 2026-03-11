@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics
+  commentId: T:LunyScript.Diagnostics.ScriptBlockMetrics
+  id: ScriptBlockMetrics
+  parent: LunyScript.Diagnostics
+  children:
+  - LunyScript.Diagnostics.ScriptBlockMetrics.#ctor
+  - LunyScript.Diagnostics.ScriptBlockMetrics.AverageMs
+  - LunyScript.Diagnostics.ScriptBlockMetrics.BlockType
+  - LunyScript.Diagnostics.ScriptBlockMetrics.CallCount
+  - LunyScript.Diagnostics.ScriptBlockMetrics.ErrorCount
+  - LunyScript.Diagnostics.ScriptBlockMetrics.MaxMs
+  - LunyScript.Diagnostics.ScriptBlockMetrics.MinMs
+  - LunyScript.Diagnostics.ScriptBlockMetrics.ScriptBlockId
+  - LunyScript.Diagnostics.ScriptBlockMetrics.ToString
+  - LunyScript.Diagnostics.ScriptBlockMetrics.TotalMs
+  langs:
+  - csharp
+  - vb
+  name: ScriptBlockMetrics
+  nameWithType: ScriptBlockMetrics
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  summary: >-
+    Performance metrics for a single block (sequence or individual block).
+
+    Tracks execution time statistics and error counts.
+  example: []
+  syntax:
+    content: public sealed class ScriptBlockMetrics
+    content.vb: Public NotInheritable Class ScriptBlockMetrics
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.ScriptBlockId
+  commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.ScriptBlockId
+  id: ScriptBlockId
+  parent: LunyScript.Diagnostics.ScriptBlockMetrics
+  langs:
+  - csharp
+  - vb
+  name: ScriptBlockId
+  nameWithType: ScriptBlockMetrics.ScriptBlockId
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.ScriptBlockId
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public ScriptBlockId ScriptBlockId
+    return:
+      type: LunyScript.ScriptBlockId
+    content.vb: Public ScriptBlockId As ScriptBlockId
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.BlockType
+  commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.BlockType
+  id: BlockType
+  parent: LunyScript.Diagnostics.ScriptBlockMetrics
+  langs:
+  - csharp
+  - vb
+  name: BlockType
+  nameWithType: ScriptBlockMetrics.BlockType
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.BlockType
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public Type BlockType
+    return:
+      type: System.Type
+    content.vb: Public BlockType As Type
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.CallCount
+  commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.CallCount
+  id: CallCount
+  parent: LunyScript.Diagnostics.ScriptBlockMetrics
+  langs:
+  - csharp
+  - vb
+  name: CallCount
+  nameWithType: ScriptBlockMetrics.CallCount
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.CallCount
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public int CallCount
+    return:
+      type: System.Int32
+    content.vb: Public CallCount As Integer
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.TotalMs
+  commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.TotalMs
+  id: TotalMs
+  parent: LunyScript.Diagnostics.ScriptBlockMetrics
+  langs:
+  - csharp
+  - vb
+  name: TotalMs
+  nameWithType: ScriptBlockMetrics.TotalMs
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.TotalMs
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public double TotalMs
+    return:
+      type: System.Double
+    content.vb: Public TotalMs As Double
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.AverageMs
+  commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.AverageMs
+  id: AverageMs
+  parent: LunyScript.Diagnostics.ScriptBlockMetrics
+  langs:
+  - csharp
+  - vb
+  name: AverageMs
+  nameWithType: ScriptBlockMetrics.AverageMs
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.AverageMs
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public double AverageMs
+    return:
+      type: System.Double
+    content.vb: Public AverageMs As Double
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.MinMs
+  commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.MinMs
+  id: MinMs
+  parent: LunyScript.Diagnostics.ScriptBlockMetrics
+  langs:
+  - csharp
+  - vb
+  name: MinMs
+  nameWithType: ScriptBlockMetrics.MinMs
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.MinMs
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public double MinMs
+    return:
+      type: System.Double
+    content.vb: Public MinMs As Double
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.MaxMs
+  commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.MaxMs
+  id: MaxMs
+  parent: LunyScript.Diagnostics.ScriptBlockMetrics
+  langs:
+  - csharp
+  - vb
+  name: MaxMs
+  nameWithType: ScriptBlockMetrics.MaxMs
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.MaxMs
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public double MaxMs
+    return:
+      type: System.Double
+    content.vb: Public MaxMs As Double
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.ErrorCount
+  commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.ErrorCount
+  id: ErrorCount
+  parent: LunyScript.Diagnostics.ScriptBlockMetrics
+  langs:
+  - csharp
+  - vb
+  name: ErrorCount
+  nameWithType: ScriptBlockMetrics.ErrorCount
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.ErrorCount
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public int ErrorCount
+    return:
+      type: System.Int32
+    content.vb: Public ErrorCount As Integer
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.ToString
+  commentId: M:LunyScript.Diagnostics.ScriptBlockMetrics.ToString
+  id: ToString
+  parent: LunyScript.Diagnostics.ScriptBlockMetrics
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ScriptBlockMetrics.ToString()
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.ToString()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: LunyScript.Diagnostics.ScriptBlockMetrics.ToString*
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.#ctor
+  commentId: M:LunyScript.Diagnostics.ScriptBlockMetrics.#ctor
+  id: '#ctor'
+  parent: LunyScript.Diagnostics.ScriptBlockMetrics
+  langs:
+  - csharp
+  - vb
+  name: ScriptBlockMetrics()
+  nameWithType: ScriptBlockMetrics.ScriptBlockMetrics()
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.ScriptBlockMetrics()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public ScriptBlockMetrics()
+    content.vb: Public Sub New()
+  overload: LunyScript.Diagnostics.ScriptBlockMetrics.#ctor*
+  nameWithType.vb: ScriptBlockMetrics.New()
+  fullName.vb: LunyScript.Diagnostics.ScriptBlockMetrics.New()
+  name.vb: New()
+references:
+- uid: LunyScript.Diagnostics
+  commentId: N:LunyScript.Diagnostics
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Diagnostics
+  nameWithType: LunyScript.Diagnostics
+  fullName: LunyScript.Diagnostics
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: LunyScript.Diagnostics.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: LunyScript.Diagnostics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptBlockId
+  commentId: T:LunyScript.ScriptBlockId
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ScriptBlockId.html
+  name: ScriptBlockId
+  nameWithType: ScriptBlockId
+  fullName: LunyScript.ScriptBlockId
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.ToString*
+  commentId: Overload:LunyScript.Diagnostics.ScriptBlockMetrics.ToString
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptBlockMetrics.html#LunyScript_Diagnostics_ScriptBlockMetrics_ToString
+  name: ToString
+  nameWithType: ScriptBlockMetrics.ToString
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics.#ctor*
+  commentId: Overload:LunyScript.Diagnostics.ScriptBlockMetrics.#ctor
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptBlockMetrics.html#LunyScript_Diagnostics_ScriptBlockMetrics__ctor
+  name: ScriptBlockMetrics
+  nameWithType: ScriptBlockMetrics.ScriptBlockMetrics
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics.ScriptBlockMetrics
+  nameWithType.vb: ScriptBlockMetrics.New
+  fullName.vb: LunyScript.Diagnostics.ScriptBlockMetrics.New
+  name.vb: New

@@ -1,0 +1,1566 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.LunyEngine
+  commentId: T:Luny.LunyEngine
+  id: LunyEngine
+  parent: Luny
+  children:
+  - Luny.LunyEngine.Application
+  - Luny.LunyEngine.Asset
+  - Luny.LunyEngine.Debug
+  - Luny.LunyEngine.DisableObserver``1
+  - Luny.LunyEngine.Editor
+  - Luny.LunyEngine.EnableObserver``1
+  - Luny.LunyEngine.Finalize
+  - Luny.LunyEngine.GetObserver``1
+  - Luny.LunyEngine.GetService``1
+  - Luny.LunyEngine.HasService``1
+  - Luny.LunyEngine.Input
+  - Luny.LunyEngine.Instance
+  - Luny.LunyEngine.IsObserverEnabled``1
+  - Luny.LunyEngine.Object
+  - Luny.LunyEngine.Profiler
+  - Luny.LunyEngine.Scene
+  - Luny.LunyEngine.Time
+  - Luny.LunyEngine.TryGetObject(System.String,System.String,System.Int32)
+  - Luny.LunyEngine.TryGetService``1(``0@)
+  langs:
+  - csharp
+  - vb
+  name: LunyEngine
+  nameWithType: LunyEngine
+  fullName: Luny.LunyEngine
+  type: Class
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Singleton engine that discovers and manages services and lifecycle observers.
+  example: []
+  syntax:
+    content: 'public sealed class LunyEngine : ILunyEngine, ILunyEngineLifecycle'
+    content.vb: Public NotInheritable Class LunyEngine Implements ILunyEngine, ILunyEngineLifecycle
+  inheritance:
+  - System.Object
+  implements:
+  - Luny.ILunyEngine
+  - Luny.ILunyEngineLifecycle
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Luny.LunyEngine.HasService``1
+  commentId: M:Luny.LunyEngine.HasService``1
+  id: HasService``1
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: HasService<TService>()
+  nameWithType: LunyEngine.HasService<TService>()
+  fullName: Luny.LunyEngine.HasService<TService>()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: 'public bool HasService<TService>() where TService : LunyEngineServiceBase'
+    typeParameters:
+    - id: TService
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasService(Of TService As LunyEngineServiceBase)() As Boolean
+  overload: Luny.LunyEngine.HasService*
+  implements:
+  - Luny.ILunyEngine.HasService``1
+  nameWithType.vb: LunyEngine.HasService(Of TService)()
+  fullName.vb: Luny.LunyEngine.HasService(Of TService)()
+  name.vb: HasService(Of TService)()
+- uid: Luny.LunyEngine.GetService``1
+  commentId: M:Luny.LunyEngine.GetService``1
+  id: GetService``1
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: GetService<TService>()
+  nameWithType: LunyEngine.GetService<TService>()
+  fullName: Luny.LunyEngine.GetService<TService>()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: 'public TService GetService<TService>() where TService : LunyEngineServiceBase'
+    typeParameters:
+    - id: TService
+    return:
+      type: '{TService}'
+    content.vb: Public Function GetService(Of TService As LunyEngineServiceBase)() As TService
+  overload: Luny.LunyEngine.GetService*
+  implements:
+  - Luny.ILunyEngine.GetService``1
+  nameWithType.vb: LunyEngine.GetService(Of TService)()
+  fullName.vb: Luny.LunyEngine.GetService(Of TService)()
+  name.vb: GetService(Of TService)()
+- uid: Luny.LunyEngine.TryGetService``1(``0@)
+  commentId: M:Luny.LunyEngine.TryGetService``1(``0@)
+  id: TryGetService``1(``0@)
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: TryGetService<TService>(out TService)
+  nameWithType: LunyEngine.TryGetService<TService>(out TService)
+  fullName: Luny.LunyEngine.TryGetService<TService>(out TService)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: 'public bool TryGetService<TService>(out TService service) where TService : LunyEngineServiceBase'
+    parameters:
+    - id: service
+      type: '{TService}'
+    typeParameters:
+    - id: TService
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetService(Of TService As LunyEngineServiceBase)(service As TService) As Boolean
+  overload: Luny.LunyEngine.TryGetService*
+  implements:
+  - Luny.ILunyEngine.TryGetService``1({TService}@)
+  nameWithType.vb: LunyEngine.TryGetService(Of TService)(TService)
+  fullName.vb: Luny.LunyEngine.TryGetService(Of TService)(TService)
+  name.vb: TryGetService(Of TService)(TService)
+- uid: Luny.LunyEngine.EnableObserver``1
+  commentId: M:Luny.LunyEngine.EnableObserver``1
+  id: EnableObserver``1
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: EnableObserver<T>()
+  nameWithType: LunyEngine.EnableObserver<T>()
+  fullName: Luny.LunyEngine.EnableObserver<T>()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: 'public void EnableObserver<T>() where T : ILunyEngineObserver'
+    typeParameters:
+    - id: T
+    content.vb: Public Sub EnableObserver(Of T As ILunyEngineObserver)()
+  overload: Luny.LunyEngine.EnableObserver*
+  implements:
+  - Luny.ILunyEngine.EnableObserver``1
+  nameWithType.vb: LunyEngine.EnableObserver(Of T)()
+  fullName.vb: Luny.LunyEngine.EnableObserver(Of T)()
+  name.vb: EnableObserver(Of T)()
+- uid: Luny.LunyEngine.DisableObserver``1
+  commentId: M:Luny.LunyEngine.DisableObserver``1
+  id: DisableObserver``1
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: DisableObserver<T>()
+  nameWithType: LunyEngine.DisableObserver<T>()
+  fullName: Luny.LunyEngine.DisableObserver<T>()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: 'public void DisableObserver<T>() where T : ILunyEngineObserver'
+    typeParameters:
+    - id: T
+    content.vb: Public Sub DisableObserver(Of T As ILunyEngineObserver)()
+  overload: Luny.LunyEngine.DisableObserver*
+  implements:
+  - Luny.ILunyEngine.DisableObserver``1
+  nameWithType.vb: LunyEngine.DisableObserver(Of T)()
+  fullName.vb: Luny.LunyEngine.DisableObserver(Of T)()
+  name.vb: DisableObserver(Of T)()
+- uid: Luny.LunyEngine.IsObserverEnabled``1
+  commentId: M:Luny.LunyEngine.IsObserverEnabled``1
+  id: IsObserverEnabled``1
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: IsObserverEnabled<T>()
+  nameWithType: LunyEngine.IsObserverEnabled<T>()
+  fullName: Luny.LunyEngine.IsObserverEnabled<T>()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: 'public bool IsObserverEnabled<T>() where T : ILunyEngineObserver'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsObserverEnabled(Of T As ILunyEngineObserver)() As Boolean
+  overload: Luny.LunyEngine.IsObserverEnabled*
+  implements:
+  - Luny.ILunyEngine.IsObserverEnabled``1
+  nameWithType.vb: LunyEngine.IsObserverEnabled(Of T)()
+  fullName.vb: Luny.LunyEngine.IsObserverEnabled(Of T)()
+  name.vb: IsObserverEnabled(Of T)()
+- uid: Luny.LunyEngine.GetObserver``1
+  commentId: M:Luny.LunyEngine.GetObserver``1
+  id: GetObserver``1
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: GetObserver<T>()
+  nameWithType: LunyEngine.GetObserver<T>()
+  fullName: Luny.LunyEngine.GetObserver<T>()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: 'public T GetObserver<T>() where T : ILunyEngineObserver'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function GetObserver(Of T As ILunyEngineObserver)() As T
+  overload: Luny.LunyEngine.GetObserver*
+  implements:
+  - Luny.ILunyEngine.GetObserver``1
+  nameWithType.vb: LunyEngine.GetObserver(Of T)()
+  fullName.vb: Luny.LunyEngine.GetObserver(Of T)()
+  name.vb: GetObserver(Of T)()
+- uid: Luny.LunyEngine.TryGetObject(System.String,System.String,System.Int32)
+  commentId: M:Luny.LunyEngine.TryGetObject(System.String,System.String,System.Int32)
+  id: TryGetObject(System.String,System.String,System.Int32)
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: TryGetObject(string, string, int)
+  nameWithType: LunyEngine.TryGetObject(string, string, int)
+  fullName: Luny.LunyEngine.TryGetObject(string, string, int)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Will try to find an object by name in the scene. Queries already-cached objects first.
+  example: []
+  syntax:
+    content: public ILunyObject TryGetObject(string name, string callerFilePath = "", int callerLineNumber = 0)
+    parameters:
+    - id: name
+      type: System.String
+    - id: callerFilePath
+      type: System.String
+    - id: callerLineNumber
+      type: System.Int32
+    return:
+      type: Luny.Engine.Bridge.ILunyObject
+    content.vb: Public Function TryGetObject(name As String, callerFilePath As String = "", callerLineNumber As Integer = 0) As ILunyObject
+  overload: Luny.LunyEngine.TryGetObject*
+  implements:
+  - Luny.ILunyEngine.TryGetObject(System.String,System.String,System.Int32)
+  nameWithType.vb: LunyEngine.TryGetObject(String, String, Integer)
+  fullName.vb: Luny.LunyEngine.TryGetObject(String, String, Integer)
+  name.vb: TryGetObject(String, String, Integer)
+- uid: Luny.LunyEngine.Finalize
+  commentId: M:Luny.LunyEngine.Finalize
+  id: Finalize
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: ~LunyEngine()
+  nameWithType: LunyEngine.~LunyEngine()
+  fullName: Luny.LunyEngine.~LunyEngine()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: protected ~LunyEngine()
+    content.vb: 'Protected '
+  overload: Luny.LunyEngine.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: Luny.LunyEngine.Application
+  commentId: P:Luny.LunyEngine.Application
+  id: Application
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: Application
+  nameWithType: LunyEngine.Application
+  fullName: Luny.LunyEngine.Application
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public ILunyApplicationService Application { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Services.ILunyApplicationService
+    content.vb: Public ReadOnly Property Application As ILunyApplicationService
+  overload: Luny.LunyEngine.Application*
+  implements:
+  - Luny.ILunyEngine.Application
+- uid: Luny.LunyEngine.Asset
+  commentId: P:Luny.LunyEngine.Asset
+  id: Asset
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: Asset
+  nameWithType: LunyEngine.Asset
+  fullName: Luny.LunyEngine.Asset
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public ILunyAssetService Asset { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Services.ILunyAssetService
+    content.vb: Public ReadOnly Property Asset As ILunyAssetService
+  overload: Luny.LunyEngine.Asset*
+  implements:
+  - Luny.ILunyEngine.Asset
+- uid: Luny.LunyEngine.Debug
+  commentId: P:Luny.LunyEngine.Debug
+  id: Debug
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: LunyEngine.Debug
+  fullName: Luny.LunyEngine.Debug
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public ILunyDebugService Debug { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Services.ILunyDebugService
+    content.vb: Public ReadOnly Property Debug As ILunyDebugService
+  overload: Luny.LunyEngine.Debug*
+  implements:
+  - Luny.ILunyEngine.Debug
+- uid: Luny.LunyEngine.Editor
+  commentId: P:Luny.LunyEngine.Editor
+  id: Editor
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: Editor
+  nameWithType: LunyEngine.Editor
+  fullName: Luny.LunyEngine.Editor
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public ILunyEditorService Editor { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Services.ILunyEditorService
+    content.vb: Public ReadOnly Property Editor As ILunyEditorService
+  overload: Luny.LunyEngine.Editor*
+  implements:
+  - Luny.ILunyEngine.Editor
+- uid: Luny.LunyEngine.Input
+  commentId: P:Luny.LunyEngine.Input
+  id: Input
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: Input
+  nameWithType: LunyEngine.Input
+  fullName: Luny.LunyEngine.Input
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public ILunyInputService Input { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Services.ILunyInputService
+    content.vb: Public ReadOnly Property Input As ILunyInputService
+  overload: Luny.LunyEngine.Input*
+  implements:
+  - Luny.ILunyEngine.Input
+- uid: Luny.LunyEngine.Object
+  commentId: P:Luny.LunyEngine.Object
+  id: Object
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: Object
+  nameWithType: LunyEngine.Object
+  fullName: Luny.LunyEngine.Object
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public ILunyObjectService Object { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Services.ILunyObjectService
+    content.vb: Public ReadOnly Property [Object] As ILunyObjectService
+  overload: Luny.LunyEngine.Object*
+  implements:
+  - Luny.ILunyEngine.Object
+- uid: Luny.LunyEngine.Scene
+  commentId: P:Luny.LunyEngine.Scene
+  id: Scene
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: Scene
+  nameWithType: LunyEngine.Scene
+  fullName: Luny.LunyEngine.Scene
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public ILunySceneService Scene { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Services.ILunySceneService
+    content.vb: Public ReadOnly Property Scene As ILunySceneService
+  overload: Luny.LunyEngine.Scene*
+  implements:
+  - Luny.ILunyEngine.Scene
+- uid: Luny.LunyEngine.Time
+  commentId: P:Luny.LunyEngine.Time
+  id: Time
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: LunyEngine.Time
+  fullName: Luny.LunyEngine.Time
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public ILunyTimeService Time { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Services.ILunyTimeService
+    content.vb: Public ReadOnly Property Time As ILunyTimeService
+  overload: Luny.LunyEngine.Time*
+  implements:
+  - Luny.ILunyEngine.Time
+- uid: Luny.LunyEngine.Profiler
+  commentId: P:Luny.LunyEngine.Profiler
+  id: Profiler
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: Profiler
+  nameWithType: LunyEngine.Profiler
+  fullName: Luny.LunyEngine.Profiler
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Gets the engine profiler for performance monitoring.
+
+    Profiling methods are no-ops in release builds unless LUNY_PROFILE is defined.
+  example: []
+  syntax:
+    content: public ILunyEngineProfiler Profiler { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Diagnostics.ILunyEngineProfiler
+    content.vb: Public ReadOnly Property Profiler As ILunyEngineProfiler
+  overload: Luny.LunyEngine.Profiler*
+  implements:
+  - Luny.ILunyEngine.Profiler
+- uid: Luny.LunyEngine.Instance
+  commentId: P:Luny.LunyEngine.Instance
+  id: Instance
+  parent: Luny.LunyEngine
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: LunyEngine.Instance
+  fullName: Luny.LunyEngine.Instance
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Gets the singleton instance, creating it on first access.
+  example: []
+  syntax:
+    content: public static ILunyEngine Instance { get; }
+    parameters: []
+    return:
+      type: Luny.ILunyEngine
+    content.vb: Public Shared ReadOnly Property Instance As ILunyEngine
+  overload: Luny.LunyEngine.Instance*
+references:
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Luny.ILunyEngine
+  commentId: T:Luny.ILunyEngine
+  parent: Luny
+  isExternal: true
+  href: Luny.ILunyEngine.html
+  name: ILunyEngine
+  nameWithType: ILunyEngine
+  fullName: Luny.ILunyEngine
+- uid: Luny.ILunyEngineLifecycle
+  commentId: T:Luny.ILunyEngineLifecycle
+  parent: Luny
+  isExternal: true
+  href: Luny.ILunyEngineLifecycle.html
+  name: ILunyEngineLifecycle
+  nameWithType: ILunyEngineLifecycle
+  fullName: Luny.ILunyEngineLifecycle
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.LunyEngine.HasService*
+  commentId: Overload:Luny.LunyEngine.HasService
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_HasService__1
+  name: HasService
+  nameWithType: LunyEngine.HasService
+  fullName: Luny.LunyEngine.HasService
+- uid: Luny.ILunyEngine.HasService``1
+  commentId: M:Luny.ILunyEngine.HasService``1
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_HasService__1
+  name: HasService<TService>()
+  nameWithType: ILunyEngine.HasService<TService>()
+  fullName: Luny.ILunyEngine.HasService<TService>()
+  nameWithType.vb: ILunyEngine.HasService(Of TService)()
+  fullName.vb: Luny.ILunyEngine.HasService(Of TService)()
+  name.vb: HasService(Of TService)()
+  spec.csharp:
+  - uid: Luny.ILunyEngine.HasService``1
+    name: HasService
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_HasService__1
+  - name: <
+  - name: TService
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.ILunyEngine.HasService``1
+    name: HasService
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_HasService__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TService
+  - name: )
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Luny.LunyEngine.GetService*
+  commentId: Overload:Luny.LunyEngine.GetService
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_GetService__1
+  name: GetService
+  nameWithType: LunyEngine.GetService
+  fullName: Luny.LunyEngine.GetService
+- uid: Luny.ILunyEngine.GetService``1
+  commentId: M:Luny.ILunyEngine.GetService``1
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_GetService__1
+  name: GetService<TService>()
+  nameWithType: ILunyEngine.GetService<TService>()
+  fullName: Luny.ILunyEngine.GetService<TService>()
+  nameWithType.vb: ILunyEngine.GetService(Of TService)()
+  fullName.vb: Luny.ILunyEngine.GetService(Of TService)()
+  name.vb: GetService(Of TService)()
+  spec.csharp:
+  - uid: Luny.ILunyEngine.GetService``1
+    name: GetService
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_GetService__1
+  - name: <
+  - name: TService
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.ILunyEngine.GetService``1
+    name: GetService
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_GetService__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TService
+  - name: )
+  - name: (
+  - name: )
+- uid: '{TService}'
+  commentId: '!:TService'
+  definition: TService
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: TService
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: Luny.LunyEngine.TryGetService*
+  commentId: Overload:Luny.LunyEngine.TryGetService
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_TryGetService__1___0__
+  name: TryGetService
+  nameWithType: LunyEngine.TryGetService
+  fullName: Luny.LunyEngine.TryGetService
+- uid: Luny.ILunyEngine.TryGetService``1({TService}@)
+  commentId: M:Luny.ILunyEngine.TryGetService``1(``0@)
+  parent: Luny.ILunyEngine
+  definition: Luny.ILunyEngine.TryGetService``1(``0@)
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetService__1___0__
+  name: TryGetService<TService>(out TService)
+  nameWithType: ILunyEngine.TryGetService<TService>(out TService)
+  fullName: Luny.ILunyEngine.TryGetService<TService>(out TService)
+  nameWithType.vb: ILunyEngine.TryGetService(Of TService)(TService)
+  fullName.vb: Luny.ILunyEngine.TryGetService(Of TService)(TService)
+  name.vb: TryGetService(Of TService)(TService)
+  spec.csharp:
+  - uid: Luny.ILunyEngine.TryGetService``1(``0@)
+    name: TryGetService
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetService__1___0__
+  - name: <
+  - name: TService
+  - name: '>'
+  - name: (
+  - name: out
+  - name: " "
+  - name: TService
+  - name: )
+  spec.vb:
+  - uid: Luny.ILunyEngine.TryGetService``1(``0@)
+    name: TryGetService
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetService__1___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TService
+  - name: )
+  - name: (
+  - name: TService
+  - name: )
+- uid: Luny.ILunyEngine.TryGetService``1(``0@)
+  commentId: M:Luny.ILunyEngine.TryGetService``1(``0@)
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetService__1___0__
+  name: TryGetService<TService>(out TService)
+  nameWithType: ILunyEngine.TryGetService<TService>(out TService)
+  fullName: Luny.ILunyEngine.TryGetService<TService>(out TService)
+  nameWithType.vb: ILunyEngine.TryGetService(Of TService)(TService)
+  fullName.vb: Luny.ILunyEngine.TryGetService(Of TService)(TService)
+  name.vb: TryGetService(Of TService)(TService)
+  spec.csharp:
+  - uid: Luny.ILunyEngine.TryGetService``1(``0@)
+    name: TryGetService
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetService__1___0__
+  - name: <
+  - name: TService
+  - name: '>'
+  - name: (
+  - name: out
+  - name: " "
+  - name: TService
+  - name: )
+  spec.vb:
+  - uid: Luny.ILunyEngine.TryGetService``1(``0@)
+    name: TryGetService
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetService__1___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TService
+  - name: )
+  - name: (
+  - name: TService
+  - name: )
+- uid: Luny.LunyEngine.EnableObserver*
+  commentId: Overload:Luny.LunyEngine.EnableObserver
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_EnableObserver__1
+  name: EnableObserver
+  nameWithType: LunyEngine.EnableObserver
+  fullName: Luny.LunyEngine.EnableObserver
+- uid: Luny.ILunyEngine.EnableObserver``1
+  commentId: M:Luny.ILunyEngine.EnableObserver``1
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_EnableObserver__1
+  name: EnableObserver<T>()
+  nameWithType: ILunyEngine.EnableObserver<T>()
+  fullName: Luny.ILunyEngine.EnableObserver<T>()
+  nameWithType.vb: ILunyEngine.EnableObserver(Of T)()
+  fullName.vb: Luny.ILunyEngine.EnableObserver(Of T)()
+  name.vb: EnableObserver(Of T)()
+  spec.csharp:
+  - uid: Luny.ILunyEngine.EnableObserver``1
+    name: EnableObserver
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_EnableObserver__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.ILunyEngine.EnableObserver``1
+    name: EnableObserver
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_EnableObserver__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: Luny.LunyEngine.DisableObserver*
+  commentId: Overload:Luny.LunyEngine.DisableObserver
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_DisableObserver__1
+  name: DisableObserver
+  nameWithType: LunyEngine.DisableObserver
+  fullName: Luny.LunyEngine.DisableObserver
+- uid: Luny.ILunyEngine.DisableObserver``1
+  commentId: M:Luny.ILunyEngine.DisableObserver``1
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_DisableObserver__1
+  name: DisableObserver<T>()
+  nameWithType: ILunyEngine.DisableObserver<T>()
+  fullName: Luny.ILunyEngine.DisableObserver<T>()
+  nameWithType.vb: ILunyEngine.DisableObserver(Of T)()
+  fullName.vb: Luny.ILunyEngine.DisableObserver(Of T)()
+  name.vb: DisableObserver(Of T)()
+  spec.csharp:
+  - uid: Luny.ILunyEngine.DisableObserver``1
+    name: DisableObserver
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_DisableObserver__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.ILunyEngine.DisableObserver``1
+    name: DisableObserver
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_DisableObserver__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: Luny.LunyEngine.IsObserverEnabled*
+  commentId: Overload:Luny.LunyEngine.IsObserverEnabled
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_IsObserverEnabled__1
+  name: IsObserverEnabled
+  nameWithType: LunyEngine.IsObserverEnabled
+  fullName: Luny.LunyEngine.IsObserverEnabled
+- uid: Luny.ILunyEngine.IsObserverEnabled``1
+  commentId: M:Luny.ILunyEngine.IsObserverEnabled``1
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_IsObserverEnabled__1
+  name: IsObserverEnabled<T>()
+  nameWithType: ILunyEngine.IsObserverEnabled<T>()
+  fullName: Luny.ILunyEngine.IsObserverEnabled<T>()
+  nameWithType.vb: ILunyEngine.IsObserverEnabled(Of T)()
+  fullName.vb: Luny.ILunyEngine.IsObserverEnabled(Of T)()
+  name.vb: IsObserverEnabled(Of T)()
+  spec.csharp:
+  - uid: Luny.ILunyEngine.IsObserverEnabled``1
+    name: IsObserverEnabled
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_IsObserverEnabled__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.ILunyEngine.IsObserverEnabled``1
+    name: IsObserverEnabled
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_IsObserverEnabled__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: Luny.LunyEngine.GetObserver*
+  commentId: Overload:Luny.LunyEngine.GetObserver
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_GetObserver__1
+  name: GetObserver
+  nameWithType: LunyEngine.GetObserver
+  fullName: Luny.LunyEngine.GetObserver
+- uid: Luny.ILunyEngine.GetObserver``1
+  commentId: M:Luny.ILunyEngine.GetObserver``1
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_GetObserver__1
+  name: GetObserver<T>()
+  nameWithType: ILunyEngine.GetObserver<T>()
+  fullName: Luny.ILunyEngine.GetObserver<T>()
+  nameWithType.vb: ILunyEngine.GetObserver(Of T)()
+  fullName.vb: Luny.ILunyEngine.GetObserver(Of T)()
+  name.vb: GetObserver(Of T)()
+  spec.csharp:
+  - uid: Luny.ILunyEngine.GetObserver``1
+    name: GetObserver
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_GetObserver__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.ILunyEngine.GetObserver``1
+    name: GetObserver
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_GetObserver__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Luny.LunyEngine.TryGetObject*
+  commentId: Overload:Luny.LunyEngine.TryGetObject
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_TryGetObject_System_String_System_String_System_Int32_
+  name: TryGetObject
+  nameWithType: LunyEngine.TryGetObject
+  fullName: Luny.LunyEngine.TryGetObject
+- uid: Luny.ILunyEngine.TryGetObject(System.String,System.String,System.Int32)
+  commentId: M:Luny.ILunyEngine.TryGetObject(System.String,System.String,System.Int32)
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetObject_System_String_System_String_System_Int32_
+  name: TryGetObject(string, string, int)
+  nameWithType: ILunyEngine.TryGetObject(string, string, int)
+  fullName: Luny.ILunyEngine.TryGetObject(string, string, int)
+  nameWithType.vb: ILunyEngine.TryGetObject(String, String, Integer)
+  fullName.vb: Luny.ILunyEngine.TryGetObject(String, String, Integer)
+  name.vb: TryGetObject(String, String, Integer)
+  spec.csharp:
+  - uid: Luny.ILunyEngine.TryGetObject(System.String,System.String,System.Int32)
+    name: TryGetObject
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetObject_System_String_System_String_System_Int32_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Luny.ILunyEngine.TryGetObject(System.String,System.String,System.Int32)
+    name: TryGetObject
+    isExternal: true
+    href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetObject_System_String_System_String_System_Int32_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Luny.Engine.Bridge.ILunyObject
+  commentId: T:Luny.Engine.Bridge.ILunyObject
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.ILunyObject.html
+  name: ILunyObject
+  nameWithType: ILunyObject
+  fullName: Luny.Engine.Bridge.ILunyObject
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+- uid: Luny.LunyEngine.Finalize*
+  commentId: Overload:Luny.LunyEngine.Finalize
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Finalize
+  name: ~LunyEngine
+  nameWithType: LunyEngine.~LunyEngine
+  fullName: Luny.LunyEngine.~LunyEngine
+  spec.csharp:
+  - name: "~"
+  - uid: Luny.LunyEngine.Finalize*
+    name: LunyEngine
+    isExternal: true
+    href: Luny.LunyEngine.html#Luny_LunyEngine_Finalize
+- uid: Luny.LunyEngine.Application*
+  commentId: Overload:Luny.LunyEngine.Application
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Application
+  name: Application
+  nameWithType: LunyEngine.Application
+  fullName: Luny.LunyEngine.Application
+- uid: Luny.ILunyEngine.Application
+  commentId: P:Luny.ILunyEngine.Application
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_Application
+  name: Application
+  nameWithType: ILunyEngine.Application
+  fullName: Luny.ILunyEngine.Application
+- uid: Luny.Engine.Services.ILunyApplicationService
+  commentId: T:Luny.Engine.Services.ILunyApplicationService
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.ILunyApplicationService.html
+  name: ILunyApplicationService
+  nameWithType: ILunyApplicationService
+  fullName: Luny.Engine.Services.ILunyApplicationService
+- uid: Luny.Engine.Services
+  commentId: N:Luny.Engine.Services
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Services
+  nameWithType: Luny.Engine.Services
+  fullName: Luny.Engine.Services
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Services
+    name: Services
+    isExternal: true
+    href: Luny.Engine.Services.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Services
+    name: Services
+    isExternal: true
+    href: Luny.Engine.Services.html
+- uid: Luny.LunyEngine.Asset*
+  commentId: Overload:Luny.LunyEngine.Asset
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Asset
+  name: Asset
+  nameWithType: LunyEngine.Asset
+  fullName: Luny.LunyEngine.Asset
+- uid: Luny.ILunyEngine.Asset
+  commentId: P:Luny.ILunyEngine.Asset
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_Asset
+  name: Asset
+  nameWithType: ILunyEngine.Asset
+  fullName: Luny.ILunyEngine.Asset
+- uid: Luny.Engine.Services.ILunyAssetService
+  commentId: T:Luny.Engine.Services.ILunyAssetService
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.ILunyAssetService.html
+  name: ILunyAssetService
+  nameWithType: ILunyAssetService
+  fullName: Luny.Engine.Services.ILunyAssetService
+- uid: Luny.LunyEngine.Debug*
+  commentId: Overload:Luny.LunyEngine.Debug
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Debug
+  name: Debug
+  nameWithType: LunyEngine.Debug
+  fullName: Luny.LunyEngine.Debug
+- uid: Luny.ILunyEngine.Debug
+  commentId: P:Luny.ILunyEngine.Debug
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_Debug
+  name: Debug
+  nameWithType: ILunyEngine.Debug
+  fullName: Luny.ILunyEngine.Debug
+- uid: Luny.Engine.Services.ILunyDebugService
+  commentId: T:Luny.Engine.Services.ILunyDebugService
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.ILunyDebugService.html
+  name: ILunyDebugService
+  nameWithType: ILunyDebugService
+  fullName: Luny.Engine.Services.ILunyDebugService
+- uid: Luny.LunyEngine.Editor*
+  commentId: Overload:Luny.LunyEngine.Editor
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Editor
+  name: Editor
+  nameWithType: LunyEngine.Editor
+  fullName: Luny.LunyEngine.Editor
+- uid: Luny.ILunyEngine.Editor
+  commentId: P:Luny.ILunyEngine.Editor
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_Editor
+  name: Editor
+  nameWithType: ILunyEngine.Editor
+  fullName: Luny.ILunyEngine.Editor
+- uid: Luny.Engine.Services.ILunyEditorService
+  commentId: T:Luny.Engine.Services.ILunyEditorService
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.ILunyEditorService.html
+  name: ILunyEditorService
+  nameWithType: ILunyEditorService
+  fullName: Luny.Engine.Services.ILunyEditorService
+- uid: Luny.LunyEngine.Input*
+  commentId: Overload:Luny.LunyEngine.Input
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Input
+  name: Input
+  nameWithType: LunyEngine.Input
+  fullName: Luny.LunyEngine.Input
+- uid: Luny.ILunyEngine.Input
+  commentId: P:Luny.ILunyEngine.Input
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_Input
+  name: Input
+  nameWithType: ILunyEngine.Input
+  fullName: Luny.ILunyEngine.Input
+- uid: Luny.Engine.Services.ILunyInputService
+  commentId: T:Luny.Engine.Services.ILunyInputService
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.ILunyInputService.html
+  name: ILunyInputService
+  nameWithType: ILunyInputService
+  fullName: Luny.Engine.Services.ILunyInputService
+- uid: Luny.LunyEngine.Object*
+  commentId: Overload:Luny.LunyEngine.Object
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Object
+  name: Object
+  nameWithType: LunyEngine.Object
+  fullName: Luny.LunyEngine.Object
+- uid: Luny.ILunyEngine.Object
+  commentId: P:Luny.ILunyEngine.Object
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_Object
+  name: Object
+  nameWithType: ILunyEngine.Object
+  fullName: Luny.ILunyEngine.Object
+- uid: Luny.Engine.Services.ILunyObjectService
+  commentId: T:Luny.Engine.Services.ILunyObjectService
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.ILunyObjectService.html
+  name: ILunyObjectService
+  nameWithType: ILunyObjectService
+  fullName: Luny.Engine.Services.ILunyObjectService
+- uid: Luny.LunyEngine.Scene*
+  commentId: Overload:Luny.LunyEngine.Scene
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Scene
+  name: Scene
+  nameWithType: LunyEngine.Scene
+  fullName: Luny.LunyEngine.Scene
+- uid: Luny.ILunyEngine.Scene
+  commentId: P:Luny.ILunyEngine.Scene
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_Scene
+  name: Scene
+  nameWithType: ILunyEngine.Scene
+  fullName: Luny.ILunyEngine.Scene
+- uid: Luny.Engine.Services.ILunySceneService
+  commentId: T:Luny.Engine.Services.ILunySceneService
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.ILunySceneService.html
+  name: ILunySceneService
+  nameWithType: ILunySceneService
+  fullName: Luny.Engine.Services.ILunySceneService
+- uid: Luny.LunyEngine.Time*
+  commentId: Overload:Luny.LunyEngine.Time
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Time
+  name: Time
+  nameWithType: LunyEngine.Time
+  fullName: Luny.LunyEngine.Time
+- uid: Luny.ILunyEngine.Time
+  commentId: P:Luny.ILunyEngine.Time
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_Time
+  name: Time
+  nameWithType: ILunyEngine.Time
+  fullName: Luny.ILunyEngine.Time
+- uid: Luny.Engine.Services.ILunyTimeService
+  commentId: T:Luny.Engine.Services.ILunyTimeService
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.ILunyTimeService.html
+  name: ILunyTimeService
+  nameWithType: ILunyTimeService
+  fullName: Luny.Engine.Services.ILunyTimeService
+- uid: Luny.LunyEngine.Profiler*
+  commentId: Overload:Luny.LunyEngine.Profiler
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Profiler
+  name: Profiler
+  nameWithType: LunyEngine.Profiler
+  fullName: Luny.LunyEngine.Profiler
+- uid: Luny.ILunyEngine.Profiler
+  commentId: P:Luny.ILunyEngine.Profiler
+  parent: Luny.ILunyEngine
+  isExternal: true
+  href: Luny.ILunyEngine.html#Luny_ILunyEngine_Profiler
+  name: Profiler
+  nameWithType: ILunyEngine.Profiler
+  fullName: Luny.ILunyEngine.Profiler
+- uid: Luny.Engine.Diagnostics.ILunyEngineProfiler
+  commentId: T:Luny.Engine.Diagnostics.ILunyEngineProfiler
+  parent: Luny.Engine.Diagnostics
+  isExternal: true
+  href: Luny.Engine.Diagnostics.ILunyEngineProfiler.html
+  name: ILunyEngineProfiler
+  nameWithType: ILunyEngineProfiler
+  fullName: Luny.Engine.Diagnostics.ILunyEngineProfiler
+- uid: Luny.Engine.Diagnostics
+  commentId: N:Luny.Engine.Diagnostics
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Diagnostics
+  nameWithType: Luny.Engine.Diagnostics
+  fullName: Luny.Engine.Diagnostics
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Luny.Engine.Diagnostics.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Luny.Engine.Diagnostics.html
+- uid: Luny.LunyEngine.Instance*
+  commentId: Overload:Luny.LunyEngine.Instance
+  isExternal: true
+  href: Luny.LunyEngine.html#Luny_LunyEngine_Instance
+  name: Instance
+  nameWithType: LunyEngine.Instance
+  fullName: Luny.LunyEngine.Instance

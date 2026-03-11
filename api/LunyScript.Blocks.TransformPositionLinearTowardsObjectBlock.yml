@@ -1,0 +1,584 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+  commentId: T:LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+  id: TransformPositionLinearTowardsObjectBlock
+  parent: LunyScript.Blocks
+  children:
+  - LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Create(Luny.Engine.Bridge.ILunyObject,System.Double,System.Double,Luny.Engine.Bridge.LunyVector3,System.Double)
+  - LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Execute(LunyScript.IScriptRuntimeContext)
+  - LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.ToString
+  langs:
+  - csharp
+  - vb
+  name: TransformPositionLinearTowardsObjectBlock
+  nameWithType: TransformPositionLinearTowardsObjectBlock
+  fullName: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: 'public sealed class TransformPositionLinearTowardsObjectBlock : TransformInterpolateTowardsObjectBlock, IScriptBlock'
+    content.vb: Public NotInheritable Class TransformPositionLinearTowardsObjectBlock Inherits TransformInterpolateTowardsObjectBlock Implements IScriptBlock
+  inheritance:
+  - System.Object
+  - LunyScript.Blocks.ScriptBlock
+  - LunyScript.Blocks.ScriptActionBlock
+  - LunyScript.Blocks.TransformInterpolateBlock
+  - LunyScript.Blocks.TransformInterpolateTowardsObjectBlock
+  implements:
+  - LunyScript.Blocks.IScriptBlock
+  inheritedMembers:
+  - LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Create(Luny.Engine.Bridge.ILunyObject,System.Double,System.Double,Luny.Engine.Bridge.LunyVector3,System.Double)
+  commentId: M:LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Create(Luny.Engine.Bridge.ILunyObject,System.Double,System.Double,Luny.Engine.Bridge.LunyVector3,System.Double)
+  id: Create(Luny.Engine.Bridge.ILunyObject,System.Double,System.Double,Luny.Engine.Bridge.LunyVector3,System.Double)
+  parent: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+  langs:
+  - csharp
+  - vb
+  name: Create(ILunyObject, double, double, LunyVector3, double)
+  nameWithType: TransformPositionLinearTowardsObjectBlock.Create(ILunyObject, double, double, LunyVector3, double)
+  fullName: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Create(Luny.Engine.Bridge.ILunyObject, double, double, Luny.Engine.Bridge.LunyVector3, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static TransformPositionLinearTowardsObjectBlock Create(ILunyObject target, double speed, double deadZone = 0.1, LunyVector3 axisLock = default, double responsiveness = 1)
+    parameters:
+    - id: target
+      type: Luny.Engine.Bridge.ILunyObject
+    - id: speed
+      type: System.Double
+    - id: deadZone
+      type: System.Double
+    - id: axisLock
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: responsiveness
+      type: System.Double
+    return:
+      type: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+    content.vb: Public Shared Function Create(target As ILunyObject, speed As Double, deadZone As Double = 0.1, axisLock As LunyVector3 = Nothing, responsiveness As Double = 1) As TransformPositionLinearTowardsObjectBlock
+  overload: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Create*
+  nameWithType.vb: TransformPositionLinearTowardsObjectBlock.Create(ILunyObject, Double, Double, LunyVector3, Double)
+  fullName.vb: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Create(Luny.Engine.Bridge.ILunyObject, Double, Double, Luny.Engine.Bridge.LunyVector3, Double)
+  name.vb: Create(ILunyObject, Double, Double, LunyVector3, Double)
+- uid: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Execute(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Execute(LunyScript.IScriptRuntimeContext)
+  id: Execute(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+  langs:
+  - csharp
+  - vb
+  name: Execute(IScriptRuntimeContext)
+  nameWithType: TransformPositionLinearTowardsObjectBlock.Execute(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Execute(LunyScript.IScriptRuntimeContext)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: protected override void Execute(IScriptRuntimeContext runtimeContext)
+    parameters:
+    - id: runtimeContext
+      type: LunyScript.IScriptRuntimeContext
+    content.vb: Protected Overrides Sub Execute(runtimeContext As IScriptRuntimeContext)
+  overridden: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  overload: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Execute*
+- uid: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.ToString
+  commentId: M:LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.ToString
+  id: ToString
+  parent: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TransformPositionLinearTowardsObjectBlock.ToString()
+  fullName: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.ToString()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.ToString*
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: LunyScript.Blocks.ScriptBlock
+  commentId: T:LunyScript.Blocks.ScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptBlock.html
+  name: ScriptBlock
+  nameWithType: ScriptBlock
+  fullName: LunyScript.Blocks.ScriptBlock
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.TransformInterpolateBlock
+  commentId: T:LunyScript.Blocks.TransformInterpolateBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.TransformInterpolateBlock.html
+  name: TransformInterpolateBlock
+  nameWithType: TransformInterpolateBlock
+  fullName: LunyScript.Blocks.TransformInterpolateBlock
+- uid: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock
+  commentId: T:LunyScript.Blocks.TransformInterpolateTowardsObjectBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.html
+  name: TransformInterpolateTowardsObjectBlock
+  nameWithType: TransformInterpolateTowardsObjectBlock
+  fullName: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock
+- uid: LunyScript.Blocks.IScriptBlock
+  commentId: T:LunyScript.Blocks.IScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.IScriptBlock.html
+  name: IScriptBlock
+  nameWithType: IScriptBlock
+  fullName: LunyScript.Blocks.IScriptBlock
+- uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.Blocks.ScriptActionBlock
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+  name: IsNullOrEmpty(ScriptActionBlock[])
+  nameWithType: ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock[])
+  fullName: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  nameWithType.vb: ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock())
+  fullName.vb: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock())
+  name.vb: IsNullOrEmpty(ScriptActionBlock())
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+    name: IsNullOrEmpty
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+  - name: (
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+    name: IsNullOrEmpty
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+  - name: (
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Create*
+  commentId: Overload:LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Create
+  isExternal: true
+  href: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.html#LunyScript_Blocks_TransformPositionLinearTowardsObjectBlock_Create_Luny_Engine_Bridge_ILunyObject_System_Double_System_Double_Luny_Engine_Bridge_LunyVector3_System_Double_
+  name: Create
+  nameWithType: TransformPositionLinearTowardsObjectBlock.Create
+  fullName: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Create
+- uid: Luny.Engine.Bridge.ILunyObject
+  commentId: T:Luny.Engine.Bridge.ILunyObject
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.ILunyObject.html
+  name: ILunyObject
+  nameWithType: ILunyObject
+  fullName: Luny.Engine.Bridge.ILunyObject
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Luny.Engine.Bridge.LunyVector3
+  commentId: T:Luny.Engine.Bridge.LunyVector3
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyVector3.html
+  name: LunyVector3
+  nameWithType: LunyVector3
+  fullName: Luny.Engine.Bridge.LunyVector3
+- uid: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+  commentId: T:LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.html
+  name: TransformPositionLinearTowardsObjectBlock
+  nameWithType: TransformPositionLinearTowardsObjectBlock
+  fullName: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+- uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.ScriptActionBlock
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  name: Execute(IScriptRuntimeContext)
+  nameWithType: ScriptActionBlock.Execute(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+    name: Execute
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  - name: (
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+    name: Execute
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  - name: (
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+- uid: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Execute*
+  commentId: Overload:LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Execute
+  isExternal: true
+  href: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.html#LunyScript_Blocks_TransformPositionLinearTowardsObjectBlock_Execute_LunyScript_IScriptRuntimeContext_
+  name: Execute
+  nameWithType: TransformPositionLinearTowardsObjectBlock.Execute
+  fullName: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.Execute
+- uid: LunyScript.IScriptRuntimeContext
+  commentId: T:LunyScript.IScriptRuntimeContext
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html
+  name: IScriptRuntimeContext
+  nameWithType: IScriptRuntimeContext
+  fullName: LunyScript.IScriptRuntimeContext
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.ToString*
+  commentId: Overload:LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.ToString
+  isExternal: true
+  href: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.html#LunyScript_Blocks_TransformPositionLinearTowardsObjectBlock_ToString
+  name: ToString
+  nameWithType: TransformPositionLinearTowardsObjectBlock.ToString
+  fullName: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

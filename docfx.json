@@ -4,14 +4,17 @@
       "src": [
         {
           "files": [
-            "Luny*.csproj"
+			"Library/XmlDocs/Luny*.dll"
+          ],
+          "exclude": [
+            "*SmokeTests*"
           ],
           "src": "../../.."
         }
       ],
       "dest": "api",
       "includePrivateMembers": false,
-      "disableGitFeatures": false,
+      "disableGitFeatures": true,
       "disableDefaultFilter": false,
       "properties": {
         "AllowUnsafeBlocks": "true",
@@ -31,7 +34,8 @@
       },
       {
         "files": [
-          "*.md"
+          "index.md",
+          "*.yml"
         ],
         "src": "api",
         "dest": "api"

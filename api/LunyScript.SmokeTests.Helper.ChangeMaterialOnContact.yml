@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact
+  commentId: T:LunyScript.SmokeTests.Helper.ChangeMaterialOnContact
+  id: ChangeMaterialOnContact
+  parent: LunyScript.SmokeTests.Helper
+  children:
+  - LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.#ctor
+  - LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.CollisionMaterial
+  - LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.TriggerMaterial
+  langs:
+  - csharp
+  - vb
+  name: ChangeMaterialOnContact
+  nameWithType: ChangeMaterialOnContact
+  fullName: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact
+  type: Class
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests.Helper
+  syntax:
+    content: 'public sealed class ChangeMaterialOnContact : MonoBehaviour'
+    content.vb: Public NotInheritable Class ChangeMaterialOnContact Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.CollisionMaterial
+  commentId: F:LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.CollisionMaterial
+  id: CollisionMaterial
+  parent: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact
+  langs:
+  - csharp
+  - vb
+  name: CollisionMaterial
+  nameWithType: ChangeMaterialOnContact.CollisionMaterial
+  fullName: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.CollisionMaterial
+  type: Field
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests.Helper
+  syntax:
+    content: public Material CollisionMaterial
+    return:
+      type: UnityEngine.Material
+    content.vb: Public CollisionMaterial As Material
+- uid: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.TriggerMaterial
+  commentId: F:LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.TriggerMaterial
+  id: TriggerMaterial
+  parent: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact
+  langs:
+  - csharp
+  - vb
+  name: TriggerMaterial
+  nameWithType: ChangeMaterialOnContact.TriggerMaterial
+  fullName: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.TriggerMaterial
+  type: Field
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests.Helper
+  syntax:
+    content: public Material TriggerMaterial
+    return:
+      type: UnityEngine.Material
+    content.vb: Public TriggerMaterial As Material
+- uid: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.#ctor
+  commentId: M:LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.#ctor
+  id: '#ctor'
+  parent: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact
+  langs:
+  - csharp
+  - vb
+  name: ChangeMaterialOnContact()
+  nameWithType: ChangeMaterialOnContact.ChangeMaterialOnContact()
+  fullName: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.ChangeMaterialOnContact()
+  type: Constructor
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests.Helper
+  syntax:
+    content: public ChangeMaterialOnContact()
+    content.vb: Public Sub New()
+  overload: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.#ctor*
+  nameWithType.vb: ChangeMaterialOnContact.New()
+  fullName.vb: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.New()
+  name.vb: New()
+references:
+- uid: LunyScript.SmokeTests.Helper
+  commentId: N:LunyScript.SmokeTests.Helper
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.SmokeTests.Helper
+  nameWithType: LunyScript.SmokeTests.Helper
+  fullName: LunyScript.SmokeTests.Helper
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+  - name: .
+  - uid: LunyScript.SmokeTests.Helper
+    name: Helper
+    isExternal: true
+    href: LunyScript.SmokeTests.Helper.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+  - name: .
+  - uid: LunyScript.SmokeTests.Helper
+    name: Helper
+    isExternal: true
+    href: LunyScript.SmokeTests.Helper.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Material
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.#ctor*
+  commentId: Overload:LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.#ctor
+  isExternal: true
+  href: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.html#LunyScript_SmokeTests_Helper_ChangeMaterialOnContact__ctor
+  name: ChangeMaterialOnContact
+  nameWithType: ChangeMaterialOnContact.ChangeMaterialOnContact
+  fullName: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.ChangeMaterialOnContact
+  nameWithType.vb: ChangeMaterialOnContact.New
+  fullName.vb: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.New
+  name.vb: New

@@ -1,0 +1,308 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.IScriptRuntimeContext
+  commentId: T:LunyScript.IScriptRuntimeContext
+  id: IScriptRuntimeContext
+  parent: LunyScript
+  children:
+  - LunyScript.IScriptRuntimeContext.EventArgs
+  - LunyScript.IScriptRuntimeContext.GlobalVariables
+  - LunyScript.IScriptRuntimeContext.LocalVariables
+  - LunyScript.IScriptRuntimeContext.LunyObject
+  - LunyScript.IScriptRuntimeContext.ScriptId
+  - LunyScript.IScriptRuntimeContext.ScriptType
+  langs:
+  - csharp
+  - vb
+  name: IScriptRuntimeContext
+  nameWithType: IScriptRuntimeContext
+  fullName: LunyScript.IScriptRuntimeContext
+  type: Interface
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Runtime context for a LunyScript instance operating on a specific object.
+
+    Contains the script metadata, object reference, variables, and registered sequences.
+  example: []
+  syntax:
+    content: public interface IScriptRuntimeContext
+    content.vb: Public Interface IScriptRuntimeContext
+- uid: LunyScript.IScriptRuntimeContext.ScriptId
+  commentId: P:LunyScript.IScriptRuntimeContext.ScriptId
+  id: ScriptId
+  parent: LunyScript.IScriptRuntimeContext
+  langs:
+  - csharp
+  - vb
+  name: ScriptId
+  nameWithType: IScriptRuntimeContext.ScriptId
+  fullName: LunyScript.IScriptRuntimeContext.ScriptId
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: ScriptId ScriptId { get; }
+    parameters: []
+    return:
+      type: LunyScript.ScriptId
+    content.vb: ReadOnly Property ScriptId As ScriptId
+  overload: LunyScript.IScriptRuntimeContext.ScriptId*
+- uid: LunyScript.IScriptRuntimeContext.ScriptType
+  commentId: P:LunyScript.IScriptRuntimeContext.ScriptType
+  id: ScriptType
+  parent: LunyScript.IScriptRuntimeContext
+  langs:
+  - csharp
+  - vb
+  name: ScriptType
+  nameWithType: IScriptRuntimeContext.ScriptType
+  fullName: LunyScript.IScriptRuntimeContext.ScriptType
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: Type ScriptType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property ScriptType As Type
+  overload: LunyScript.IScriptRuntimeContext.ScriptType*
+- uid: LunyScript.IScriptRuntimeContext.LunyObject
+  commentId: P:LunyScript.IScriptRuntimeContext.LunyObject
+  id: LunyObject
+  parent: LunyScript.IScriptRuntimeContext
+  langs:
+  - csharp
+  - vb
+  name: LunyObject
+  nameWithType: IScriptRuntimeContext.LunyObject
+  fullName: LunyScript.IScriptRuntimeContext.LunyObject
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: ILunyObject LunyObject { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.ILunyObject
+    content.vb: ReadOnly Property LunyObject As ILunyObject
+  overload: LunyScript.IScriptRuntimeContext.LunyObject*
+- uid: LunyScript.IScriptRuntimeContext.GlobalVariables
+  commentId: P:LunyScript.IScriptRuntimeContext.GlobalVariables
+  id: GlobalVariables
+  parent: LunyScript.IScriptRuntimeContext
+  langs:
+  - csharp
+  - vb
+  name: GlobalVariables
+  nameWithType: IScriptRuntimeContext.GlobalVariables
+  fullName: LunyScript.IScriptRuntimeContext.GlobalVariables
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: ITable GlobalVariables { get; }
+    parameters: []
+    return:
+      type: Luny.ITable
+    content.vb: ReadOnly Property GlobalVariables As ITable
+  overload: LunyScript.IScriptRuntimeContext.GlobalVariables*
+- uid: LunyScript.IScriptRuntimeContext.LocalVariables
+  commentId: P:LunyScript.IScriptRuntimeContext.LocalVariables
+  id: LocalVariables
+  parent: LunyScript.IScriptRuntimeContext
+  langs:
+  - csharp
+  - vb
+  name: LocalVariables
+  nameWithType: IScriptRuntimeContext.LocalVariables
+  fullName: LunyScript.IScriptRuntimeContext.LocalVariables
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: ITable LocalVariables { get; }
+    parameters: []
+    return:
+      type: Luny.ITable
+    content.vb: ReadOnly Property LocalVariables As ITable
+  overload: LunyScript.IScriptRuntimeContext.LocalVariables*
+- uid: LunyScript.IScriptRuntimeContext.EventArgs
+  commentId: P:LunyScript.IScriptRuntimeContext.EventArgs
+  id: EventArgs
+  parent: LunyScript.IScriptRuntimeContext
+  langs:
+  - csharp
+  - vb
+  name: EventArgs
+  nameWithType: IScriptRuntimeContext.EventArgs
+  fullName: LunyScript.IScriptRuntimeContext.EventArgs
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Generic event arguments for the currently executing event.
+
+    Blocks cast this to the expected type (e.g. LunyCollision, LunyCollider).
+
+    Null outside of event execution.
+  example: []
+  syntax:
+    content: object EventArgs { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property EventArgs As Object
+  overload: LunyScript.IScriptRuntimeContext.EventArgs*
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.IScriptRuntimeContext.ScriptId*
+  commentId: Overload:LunyScript.IScriptRuntimeContext.ScriptId
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html#LunyScript_IScriptRuntimeContext_ScriptId
+  name: ScriptId
+  nameWithType: IScriptRuntimeContext.ScriptId
+  fullName: LunyScript.IScriptRuntimeContext.ScriptId
+- uid: LunyScript.ScriptId
+  commentId: T:LunyScript.ScriptId
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ScriptId.html
+  name: ScriptId
+  nameWithType: ScriptId
+  fullName: LunyScript.ScriptId
+- uid: LunyScript.IScriptRuntimeContext.ScriptType*
+  commentId: Overload:LunyScript.IScriptRuntimeContext.ScriptType
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html#LunyScript_IScriptRuntimeContext_ScriptType
+  name: ScriptType
+  nameWithType: IScriptRuntimeContext.ScriptType
+  fullName: LunyScript.IScriptRuntimeContext.ScriptType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.IScriptRuntimeContext.LunyObject*
+  commentId: Overload:LunyScript.IScriptRuntimeContext.LunyObject
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html#LunyScript_IScriptRuntimeContext_LunyObject
+  name: LunyObject
+  nameWithType: IScriptRuntimeContext.LunyObject
+  fullName: LunyScript.IScriptRuntimeContext.LunyObject
+- uid: Luny.Engine.Bridge.ILunyObject
+  commentId: T:Luny.Engine.Bridge.ILunyObject
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.ILunyObject.html
+  name: ILunyObject
+  nameWithType: ILunyObject
+  fullName: Luny.Engine.Bridge.ILunyObject
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+- uid: LunyScript.IScriptRuntimeContext.GlobalVariables*
+  commentId: Overload:LunyScript.IScriptRuntimeContext.GlobalVariables
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html#LunyScript_IScriptRuntimeContext_GlobalVariables
+  name: GlobalVariables
+  nameWithType: IScriptRuntimeContext.GlobalVariables
+  fullName: LunyScript.IScriptRuntimeContext.GlobalVariables
+- uid: Luny.ITable
+  commentId: T:Luny.ITable
+  parent: Luny
+  isExternal: true
+  href: Luny.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: Luny.ITable
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: LunyScript.IScriptRuntimeContext.LocalVariables*
+  commentId: Overload:LunyScript.IScriptRuntimeContext.LocalVariables
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html#LunyScript_IScriptRuntimeContext_LocalVariables
+  name: LocalVariables
+  nameWithType: IScriptRuntimeContext.LocalVariables
+  fullName: LunyScript.IScriptRuntimeContext.LocalVariables
+- uid: LunyScript.IScriptRuntimeContext.EventArgs*
+  commentId: Overload:LunyScript.IScriptRuntimeContext.EventArgs
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html#LunyScript_IScriptRuntimeContext_EventArgs
+  name: EventArgs
+  nameWithType: IScriptRuntimeContext.EventArgs
+  fullName: LunyScript.IScriptRuntimeContext.EventArgs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object

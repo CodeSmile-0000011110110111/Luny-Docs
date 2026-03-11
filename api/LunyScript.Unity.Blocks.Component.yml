@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Unity.Blocks.Component
+  commentId: N:LunyScript.Unity.Blocks.Component
+  id: LunyScript.Unity.Blocks.Component
+  children:
+  - LunyScript.Unity.Blocks.Component.ComponentApiExtensions
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.Unity.Blocks.Component
+  nameWithType: LunyScript.Unity.Blocks.Component
+  fullName: LunyScript.Unity.Blocks.Component
+  type: Namespace
+  assemblies:
+  - LunyScript.Unity
+references:
+- uid: LunyScript.Unity.Blocks.Component.ComponentApiExtensions
+  commentId: T:LunyScript.Unity.Blocks.Component.ComponentApiExtensions
+  isExternal: true
+  href: LunyScript.Unity.Blocks.Component.ComponentApiExtensions.html
+  name: ComponentApiExtensions
+  nameWithType: ComponentApiExtensions
+  fullName: LunyScript.Unity.Blocks.Component.ComponentApiExtensions

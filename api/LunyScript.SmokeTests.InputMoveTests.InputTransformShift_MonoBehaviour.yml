@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour
+  commentId: T:LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour
+  id: InputTransformShift_MonoBehaviour
+  parent: LunyScript.SmokeTests.InputMoveTests
+  children:
+  - LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.#ctor
+  langs:
+  - csharp
+  - vb
+  name: InputTransformShift_MonoBehaviour
+  nameWithType: InputTransformShift_MonoBehaviour
+  fullName: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour
+  type: Class
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests.InputMoveTests
+  syntax:
+    content: 'public class InputTransformShift_MonoBehaviour : MonoBehaviour'
+    content.vb: Public Class InputTransformShift_MonoBehaviour Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.#ctor
+  commentId: M:LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.#ctor
+  id: '#ctor'
+  parent: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour
+  langs:
+  - csharp
+  - vb
+  name: InputTransformShift_MonoBehaviour()
+  nameWithType: InputTransformShift_MonoBehaviour.InputTransformShift_MonoBehaviour()
+  fullName: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.InputTransformShift_MonoBehaviour()
+  type: Constructor
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests.InputMoveTests
+  syntax:
+    content: public InputTransformShift_MonoBehaviour()
+    content.vb: Public Sub New()
+  overload: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.#ctor*
+  nameWithType.vb: InputTransformShift_MonoBehaviour.New()
+  fullName.vb: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.New()
+  name.vb: New()
+references:
+- uid: LunyScript.SmokeTests.InputMoveTests
+  commentId: N:LunyScript.SmokeTests.InputMoveTests
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.SmokeTests.InputMoveTests
+  nameWithType: LunyScript.SmokeTests.InputMoveTests
+  fullName: LunyScript.SmokeTests.InputMoveTests
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+  - name: .
+  - uid: LunyScript.SmokeTests.InputMoveTests
+    name: InputMoveTests
+    isExternal: true
+    href: LunyScript.SmokeTests.InputMoveTests.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+  - name: .
+  - uid: LunyScript.SmokeTests.InputMoveTests
+    name: InputMoveTests
+    isExternal: true
+    href: LunyScript.SmokeTests.InputMoveTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.#ctor*
+  commentId: Overload:LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.#ctor
+  isExternal: true
+  href: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.html#LunyScript_SmokeTests_InputMoveTests_InputTransformShift_MonoBehaviour__ctor
+  name: InputTransformShift_MonoBehaviour
+  nameWithType: InputTransformShift_MonoBehaviour.InputTransformShift_MonoBehaviour
+  fullName: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.InputTransformShift_MonoBehaviour
+  nameWithType.vb: InputTransformShift_MonoBehaviour.New
+  fullName.vb: LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.New
+  name.vb: New

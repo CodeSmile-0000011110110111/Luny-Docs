@@ -1,0 +1,547 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.ILunyEngineNativeAdapter
+  commentId: T:Luny.ILunyEngineNativeAdapter
+  id: ILunyEngineNativeAdapter
+  parent: Luny
+  children:
+  - Luny.ILunyEngineNativeAdapter.CreateEngine(Luny.ILunyEngineNativeAdapter@,Luny.ILunyEngineNativeAdapter)
+  - Luny.ILunyEngineNativeAdapter.EndLogging
+  - Luny.ILunyEngineNativeAdapter.Engine
+  - Luny.ILunyEngineNativeAdapter.FrameLateUpdate(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  - Luny.ILunyEngineNativeAdapter.FrameUpdate(System.Double,Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  - Luny.ILunyEngineNativeAdapter.Heartbeat(System.Double,Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  - Luny.ILunyEngineNativeAdapter.IsApplicationQuitting
+  - Luny.ILunyEngineNativeAdapter.Shutdown(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  - Luny.ILunyEngineNativeAdapter.ShutdownComplete(Luny.ILunyEngineNativeAdapter)
+  - Luny.ILunyEngineNativeAdapter.Startup(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  - Luny.ILunyEngineNativeAdapter.ThrowIfAdapterNull(Luny.ILunyEngineNativeAdapter)
+  - Luny.ILunyEngineNativeAdapter.ThrowIfLunyEngineNull(Luny.ILunyEngineLifecycle)
+  - Luny.ILunyEngineNativeAdapter.ThrowIfPrematurelyRemoved(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  - Luny.ILunyEngineNativeAdapter.ValidateAdapterSingletonInstance(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineNativeAdapter)
+  langs:
+  - csharp
+  - vb
+  name: ILunyEngineNativeAdapter
+  nameWithType: ILunyEngineNativeAdapter
+  fullName: Luny.ILunyEngineNativeAdapter
+  type: Interface
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Interface for the native engine adapter.
+  example: []
+  syntax:
+    content: public interface ILunyEngineNativeAdapter
+    content.vb: Public Interface ILunyEngineNativeAdapter
+- uid: Luny.ILunyEngineNativeAdapter.IsApplicationQuitting
+  commentId: F:Luny.ILunyEngineNativeAdapter.IsApplicationQuitting
+  id: IsApplicationQuitting
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: IsApplicationQuitting
+  nameWithType: ILunyEngineNativeAdapter.IsApplicationQuitting
+  fullName: Luny.ILunyEngineNativeAdapter.IsApplicationQuitting
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool IsApplicationQuitting
+    return:
+      type: System.Boolean
+    content.vb: Public Shared IsApplicationQuitting As Boolean
+- uid: Luny.ILunyEngineNativeAdapter.CreateEngine(Luny.ILunyEngineNativeAdapter@,Luny.ILunyEngineNativeAdapter)
+  commentId: M:Luny.ILunyEngineNativeAdapter.CreateEngine(Luny.ILunyEngineNativeAdapter@,Luny.ILunyEngineNativeAdapter)
+  id: CreateEngine(Luny.ILunyEngineNativeAdapter@,Luny.ILunyEngineNativeAdapter)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: CreateEngine(ref ILunyEngineNativeAdapter, ILunyEngineNativeAdapter)
+  nameWithType: ILunyEngineNativeAdapter.CreateEngine(ref ILunyEngineNativeAdapter, ILunyEngineNativeAdapter)
+  fullName: Luny.ILunyEngineNativeAdapter.CreateEngine(ref Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineNativeAdapter)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static ILunyEngineLifecycle CreateEngine(ref ILunyEngineNativeAdapter nativeAdapterSingleton, ILunyEngineNativeAdapter nativeAdapter)
+    parameters:
+    - id: nativeAdapterSingleton
+      type: Luny.ILunyEngineNativeAdapter
+    - id: nativeAdapter
+      type: Luny.ILunyEngineNativeAdapter
+    return:
+      type: Luny.ILunyEngineLifecycle
+    content.vb: Public Shared Function CreateEngine(nativeAdapterSingleton As ILunyEngineNativeAdapter, nativeAdapter As ILunyEngineNativeAdapter) As ILunyEngineLifecycle
+  overload: Luny.ILunyEngineNativeAdapter.CreateEngine*
+  nameWithType.vb: ILunyEngineNativeAdapter.CreateEngine(ILunyEngineNativeAdapter, ILunyEngineNativeAdapter)
+  fullName.vb: Luny.ILunyEngineNativeAdapter.CreateEngine(Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineNativeAdapter)
+  name.vb: CreateEngine(ILunyEngineNativeAdapter, ILunyEngineNativeAdapter)
+- uid: Luny.ILunyEngineNativeAdapter.ValidateAdapterSingletonInstance(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineNativeAdapter)
+  commentId: M:Luny.ILunyEngineNativeAdapter.ValidateAdapterSingletonInstance(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineNativeAdapter)
+  id: ValidateAdapterSingletonInstance(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineNativeAdapter)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: ValidateAdapterSingletonInstance(ILunyEngineNativeAdapter, ILunyEngineNativeAdapter)
+  nameWithType: ILunyEngineNativeAdapter.ValidateAdapterSingletonInstance(ILunyEngineNativeAdapter, ILunyEngineNativeAdapter)
+  fullName: Luny.ILunyEngineNativeAdapter.ValidateAdapterSingletonInstance(Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineNativeAdapter)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static ILunyEngineNativeAdapter ValidateAdapterSingletonInstance(ILunyEngineNativeAdapter existingInstance, ILunyEngineNativeAdapter nativeAdapter)
+    parameters:
+    - id: existingInstance
+      type: Luny.ILunyEngineNativeAdapter
+    - id: nativeAdapter
+      type: Luny.ILunyEngineNativeAdapter
+    return:
+      type: Luny.ILunyEngineNativeAdapter
+    content.vb: Public Shared Function ValidateAdapterSingletonInstance(existingInstance As ILunyEngineNativeAdapter, nativeAdapter As ILunyEngineNativeAdapter) As ILunyEngineNativeAdapter
+  overload: Luny.ILunyEngineNativeAdapter.ValidateAdapterSingletonInstance*
+- uid: Luny.ILunyEngineNativeAdapter.ThrowIfAdapterNull(Luny.ILunyEngineNativeAdapter)
+  commentId: M:Luny.ILunyEngineNativeAdapter.ThrowIfAdapterNull(Luny.ILunyEngineNativeAdapter)
+  id: ThrowIfAdapterNull(Luny.ILunyEngineNativeAdapter)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfAdapterNull(ILunyEngineNativeAdapter)
+  nameWithType: ILunyEngineNativeAdapter.ThrowIfAdapterNull(ILunyEngineNativeAdapter)
+  fullName: Luny.ILunyEngineNativeAdapter.ThrowIfAdapterNull(Luny.ILunyEngineNativeAdapter)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static void ThrowIfAdapterNull(ILunyEngineNativeAdapter adapter)
+    parameters:
+    - id: adapter
+      type: Luny.ILunyEngineNativeAdapter
+    content.vb: Public Shared Sub ThrowIfAdapterNull(adapter As ILunyEngineNativeAdapter)
+  overload: Luny.ILunyEngineNativeAdapter.ThrowIfAdapterNull*
+- uid: Luny.ILunyEngineNativeAdapter.ThrowIfLunyEngineNull(Luny.ILunyEngineLifecycle)
+  commentId: M:Luny.ILunyEngineNativeAdapter.ThrowIfLunyEngineNull(Luny.ILunyEngineLifecycle)
+  id: ThrowIfLunyEngineNull(Luny.ILunyEngineLifecycle)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfLunyEngineNull(ILunyEngineLifecycle)
+  nameWithType: ILunyEngineNativeAdapter.ThrowIfLunyEngineNull(ILunyEngineLifecycle)
+  fullName: Luny.ILunyEngineNativeAdapter.ThrowIfLunyEngineNull(Luny.ILunyEngineLifecycle)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static void ThrowIfLunyEngineNull(ILunyEngineLifecycle lunyEngineInternal)
+    parameters:
+    - id: lunyEngineInternal
+      type: Luny.ILunyEngineLifecycle
+    content.vb: Public Shared Sub ThrowIfLunyEngineNull(lunyEngineInternal As ILunyEngineLifecycle)
+  overload: Luny.ILunyEngineNativeAdapter.ThrowIfLunyEngineNull*
+- uid: Luny.ILunyEngineNativeAdapter.ThrowIfPrematurelyRemoved(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  commentId: M:Luny.ILunyEngineNativeAdapter.ThrowIfPrematurelyRemoved(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  id: ThrowIfPrematurelyRemoved(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfPrematurelyRemoved(ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  nameWithType: ILunyEngineNativeAdapter.ThrowIfPrematurelyRemoved(ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  fullName: Luny.ILunyEngineNativeAdapter.ThrowIfPrematurelyRemoved(Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineLifecycle)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static void ThrowIfPrematurelyRemoved(ILunyEngineNativeAdapter adapter, ILunyEngineLifecycle lunyEngineInternal)
+    parameters:
+    - id: adapter
+      type: Luny.ILunyEngineNativeAdapter
+    - id: lunyEngineInternal
+      type: Luny.ILunyEngineLifecycle
+    content.vb: Public Shared Sub ThrowIfPrematurelyRemoved(adapter As ILunyEngineNativeAdapter, lunyEngineInternal As ILunyEngineLifecycle)
+  overload: Luny.ILunyEngineNativeAdapter.ThrowIfPrematurelyRemoved*
+- uid: Luny.ILunyEngineNativeAdapter.Startup(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  commentId: M:Luny.ILunyEngineNativeAdapter.Startup(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  id: Startup(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: Startup(ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  nameWithType: ILunyEngineNativeAdapter.Startup(ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  fullName: Luny.ILunyEngineNativeAdapter.Startup(Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineLifecycle)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static void Startup(ILunyEngineNativeAdapter nativeAdapter, ILunyEngineLifecycle lunyEngineInternal)
+    parameters:
+    - id: nativeAdapter
+      type: Luny.ILunyEngineNativeAdapter
+    - id: lunyEngineInternal
+      type: Luny.ILunyEngineLifecycle
+    content.vb: Public Shared Sub Startup(nativeAdapter As ILunyEngineNativeAdapter, lunyEngineInternal As ILunyEngineLifecycle)
+  overload: Luny.ILunyEngineNativeAdapter.Startup*
+- uid: Luny.ILunyEngineNativeAdapter.Shutdown(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  commentId: M:Luny.ILunyEngineNativeAdapter.Shutdown(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  id: Shutdown(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: Shutdown(ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  nameWithType: ILunyEngineNativeAdapter.Shutdown(ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  fullName: Luny.ILunyEngineNativeAdapter.Shutdown(Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineLifecycle)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static void Shutdown(ILunyEngineNativeAdapter adapter, ILunyEngineLifecycle lunyEngineInternal)
+    parameters:
+    - id: adapter
+      type: Luny.ILunyEngineNativeAdapter
+    - id: lunyEngineInternal
+      type: Luny.ILunyEngineLifecycle
+    content.vb: Public Shared Sub Shutdown(adapter As ILunyEngineNativeAdapter, lunyEngineInternal As ILunyEngineLifecycle)
+  overload: Luny.ILunyEngineNativeAdapter.Shutdown*
+- uid: Luny.ILunyEngineNativeAdapter.ShutdownComplete(Luny.ILunyEngineNativeAdapter)
+  commentId: M:Luny.ILunyEngineNativeAdapter.ShutdownComplete(Luny.ILunyEngineNativeAdapter)
+  id: ShutdownComplete(Luny.ILunyEngineNativeAdapter)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: ShutdownComplete(ILunyEngineNativeAdapter)
+  nameWithType: ILunyEngineNativeAdapter.ShutdownComplete(ILunyEngineNativeAdapter)
+  fullName: Luny.ILunyEngineNativeAdapter.ShutdownComplete(Luny.ILunyEngineNativeAdapter)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static void ShutdownComplete(ILunyEngineNativeAdapter adapter)
+    parameters:
+    - id: adapter
+      type: Luny.ILunyEngineNativeAdapter
+    content.vb: Public Shared Sub ShutdownComplete(adapter As ILunyEngineNativeAdapter)
+  overload: Luny.ILunyEngineNativeAdapter.ShutdownComplete*
+- uid: Luny.ILunyEngineNativeAdapter.Heartbeat(System.Double,Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  commentId: M:Luny.ILunyEngineNativeAdapter.Heartbeat(System.Double,Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  id: Heartbeat(System.Double,Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: Heartbeat(double, ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  nameWithType: ILunyEngineNativeAdapter.Heartbeat(double, ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  fullName: Luny.ILunyEngineNativeAdapter.Heartbeat(double, Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineLifecycle)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static void Heartbeat(double fixedDeltaTime, ILunyEngineNativeAdapter nativeAdapter, ILunyEngineLifecycle lunyEngine)
+    parameters:
+    - id: fixedDeltaTime
+      type: System.Double
+    - id: nativeAdapter
+      type: Luny.ILunyEngineNativeAdapter
+    - id: lunyEngine
+      type: Luny.ILunyEngineLifecycle
+    content.vb: Public Shared Sub Heartbeat(fixedDeltaTime As Double, nativeAdapter As ILunyEngineNativeAdapter, lunyEngine As ILunyEngineLifecycle)
+  overload: Luny.ILunyEngineNativeAdapter.Heartbeat*
+  nameWithType.vb: ILunyEngineNativeAdapter.Heartbeat(Double, ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  fullName.vb: Luny.ILunyEngineNativeAdapter.Heartbeat(Double, Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineLifecycle)
+  name.vb: Heartbeat(Double, ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+- uid: Luny.ILunyEngineNativeAdapter.FrameUpdate(System.Double,Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  commentId: M:Luny.ILunyEngineNativeAdapter.FrameUpdate(System.Double,Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  id: FrameUpdate(System.Double,Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: FrameUpdate(double, ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  nameWithType: ILunyEngineNativeAdapter.FrameUpdate(double, ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  fullName: Luny.ILunyEngineNativeAdapter.FrameUpdate(double, Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineLifecycle)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static void FrameUpdate(double deltaTime, ILunyEngineNativeAdapter nativeAdapter, ILunyEngineLifecycle lunyEngine)
+    parameters:
+    - id: deltaTime
+      type: System.Double
+    - id: nativeAdapter
+      type: Luny.ILunyEngineNativeAdapter
+    - id: lunyEngine
+      type: Luny.ILunyEngineLifecycle
+    content.vb: Public Shared Sub FrameUpdate(deltaTime As Double, nativeAdapter As ILunyEngineNativeAdapter, lunyEngine As ILunyEngineLifecycle)
+  overload: Luny.ILunyEngineNativeAdapter.FrameUpdate*
+  nameWithType.vb: ILunyEngineNativeAdapter.FrameUpdate(Double, ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  fullName.vb: Luny.ILunyEngineNativeAdapter.FrameUpdate(Double, Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineLifecycle)
+  name.vb: FrameUpdate(Double, ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+- uid: Luny.ILunyEngineNativeAdapter.FrameLateUpdate(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  commentId: M:Luny.ILunyEngineNativeAdapter.FrameLateUpdate(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  id: FrameLateUpdate(Luny.ILunyEngineNativeAdapter,Luny.ILunyEngineLifecycle)
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: FrameLateUpdate(ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  nameWithType: ILunyEngineNativeAdapter.FrameLateUpdate(ILunyEngineNativeAdapter, ILunyEngineLifecycle)
+  fullName: Luny.ILunyEngineNativeAdapter.FrameLateUpdate(Luny.ILunyEngineNativeAdapter, Luny.ILunyEngineLifecycle)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static void FrameLateUpdate(ILunyEngineNativeAdapter nativeAdapter, ILunyEngineLifecycle lunyEngine)
+    parameters:
+    - id: nativeAdapter
+      type: Luny.ILunyEngineNativeAdapter
+    - id: lunyEngine
+      type: Luny.ILunyEngineLifecycle
+    content.vb: Public Shared Sub FrameLateUpdate(nativeAdapter As ILunyEngineNativeAdapter, lunyEngine As ILunyEngineLifecycle)
+  overload: Luny.ILunyEngineNativeAdapter.FrameLateUpdate*
+- uid: Luny.ILunyEngineNativeAdapter.EndLogging
+  commentId: M:Luny.ILunyEngineNativeAdapter.EndLogging
+  id: EndLogging
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: EndLogging()
+  nameWithType: ILunyEngineNativeAdapter.EndLogging()
+  fullName: Luny.ILunyEngineNativeAdapter.EndLogging()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static void EndLogging()
+    content.vb: Public Shared Sub EndLogging()
+  overload: Luny.ILunyEngineNativeAdapter.EndLogging*
+- uid: Luny.ILunyEngineNativeAdapter.Engine
+  commentId: P:Luny.ILunyEngineNativeAdapter.Engine
+  id: Engine
+  parent: Luny.ILunyEngineNativeAdapter
+  langs:
+  - csharp
+  - vb
+  name: Engine
+  nameWithType: ILunyEngineNativeAdapter.Engine
+  fullName: Luny.ILunyEngineNativeAdapter.Engine
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: NativeEngine Engine { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.NativeEngine
+    content.vb: ReadOnly Property Engine As NativeEngine
+  overload: Luny.ILunyEngineNativeAdapter.Engine*
+references:
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.ILunyEngineNativeAdapter.CreateEngine*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.CreateEngine
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_CreateEngine_Luny_ILunyEngineNativeAdapter__Luny_ILunyEngineNativeAdapter_
+  name: CreateEngine
+  nameWithType: ILunyEngineNativeAdapter.CreateEngine
+  fullName: Luny.ILunyEngineNativeAdapter.CreateEngine
+- uid: Luny.ILunyEngineNativeAdapter
+  commentId: T:Luny.ILunyEngineNativeAdapter
+  parent: Luny
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html
+  name: ILunyEngineNativeAdapter
+  nameWithType: ILunyEngineNativeAdapter
+  fullName: Luny.ILunyEngineNativeAdapter
+- uid: Luny.ILunyEngineLifecycle
+  commentId: T:Luny.ILunyEngineLifecycle
+  parent: Luny
+  isExternal: true
+  href: Luny.ILunyEngineLifecycle.html
+  name: ILunyEngineLifecycle
+  nameWithType: ILunyEngineLifecycle
+  fullName: Luny.ILunyEngineLifecycle
+- uid: Luny.ILunyEngineNativeAdapter.ValidateAdapterSingletonInstance*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.ValidateAdapterSingletonInstance
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_ValidateAdapterSingletonInstance_Luny_ILunyEngineNativeAdapter_Luny_ILunyEngineNativeAdapter_
+  name: ValidateAdapterSingletonInstance
+  nameWithType: ILunyEngineNativeAdapter.ValidateAdapterSingletonInstance
+  fullName: Luny.ILunyEngineNativeAdapter.ValidateAdapterSingletonInstance
+- uid: Luny.ILunyEngineNativeAdapter.ThrowIfAdapterNull*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.ThrowIfAdapterNull
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_ThrowIfAdapterNull_Luny_ILunyEngineNativeAdapter_
+  name: ThrowIfAdapterNull
+  nameWithType: ILunyEngineNativeAdapter.ThrowIfAdapterNull
+  fullName: Luny.ILunyEngineNativeAdapter.ThrowIfAdapterNull
+- uid: Luny.ILunyEngineNativeAdapter.ThrowIfLunyEngineNull*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.ThrowIfLunyEngineNull
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_ThrowIfLunyEngineNull_Luny_ILunyEngineLifecycle_
+  name: ThrowIfLunyEngineNull
+  nameWithType: ILunyEngineNativeAdapter.ThrowIfLunyEngineNull
+  fullName: Luny.ILunyEngineNativeAdapter.ThrowIfLunyEngineNull
+- uid: Luny.ILunyEngineNativeAdapter.ThrowIfPrematurelyRemoved*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.ThrowIfPrematurelyRemoved
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_ThrowIfPrematurelyRemoved_Luny_ILunyEngineNativeAdapter_Luny_ILunyEngineLifecycle_
+  name: ThrowIfPrematurelyRemoved
+  nameWithType: ILunyEngineNativeAdapter.ThrowIfPrematurelyRemoved
+  fullName: Luny.ILunyEngineNativeAdapter.ThrowIfPrematurelyRemoved
+- uid: Luny.ILunyEngineNativeAdapter.Startup*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.Startup
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_Startup_Luny_ILunyEngineNativeAdapter_Luny_ILunyEngineLifecycle_
+  name: Startup
+  nameWithType: ILunyEngineNativeAdapter.Startup
+  fullName: Luny.ILunyEngineNativeAdapter.Startup
+- uid: Luny.ILunyEngineNativeAdapter.Shutdown*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.Shutdown
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_Shutdown_Luny_ILunyEngineNativeAdapter_Luny_ILunyEngineLifecycle_
+  name: Shutdown
+  nameWithType: ILunyEngineNativeAdapter.Shutdown
+  fullName: Luny.ILunyEngineNativeAdapter.Shutdown
+- uid: Luny.ILunyEngineNativeAdapter.ShutdownComplete*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.ShutdownComplete
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_ShutdownComplete_Luny_ILunyEngineNativeAdapter_
+  name: ShutdownComplete
+  nameWithType: ILunyEngineNativeAdapter.ShutdownComplete
+  fullName: Luny.ILunyEngineNativeAdapter.ShutdownComplete
+- uid: Luny.ILunyEngineNativeAdapter.Heartbeat*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.Heartbeat
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_Heartbeat_System_Double_Luny_ILunyEngineNativeAdapter_Luny_ILunyEngineLifecycle_
+  name: Heartbeat
+  nameWithType: ILunyEngineNativeAdapter.Heartbeat
+  fullName: Luny.ILunyEngineNativeAdapter.Heartbeat
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Luny.ILunyEngineNativeAdapter.FrameUpdate*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.FrameUpdate
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_FrameUpdate_System_Double_Luny_ILunyEngineNativeAdapter_Luny_ILunyEngineLifecycle_
+  name: FrameUpdate
+  nameWithType: ILunyEngineNativeAdapter.FrameUpdate
+  fullName: Luny.ILunyEngineNativeAdapter.FrameUpdate
+- uid: Luny.ILunyEngineNativeAdapter.FrameLateUpdate*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.FrameLateUpdate
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_FrameLateUpdate_Luny_ILunyEngineNativeAdapter_Luny_ILunyEngineLifecycle_
+  name: FrameLateUpdate
+  nameWithType: ILunyEngineNativeAdapter.FrameLateUpdate
+  fullName: Luny.ILunyEngineNativeAdapter.FrameLateUpdate
+- uid: Luny.ILunyEngineNativeAdapter.EndLogging*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.EndLogging
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_EndLogging
+  name: EndLogging
+  nameWithType: ILunyEngineNativeAdapter.EndLogging
+  fullName: Luny.ILunyEngineNativeAdapter.EndLogging
+- uid: Luny.ILunyEngineNativeAdapter.Engine*
+  commentId: Overload:Luny.ILunyEngineNativeAdapter.Engine
+  isExternal: true
+  href: Luny.ILunyEngineNativeAdapter.html#Luny_ILunyEngineNativeAdapter_Engine
+  name: Engine
+  nameWithType: ILunyEngineNativeAdapter.Engine
+  fullName: Luny.ILunyEngineNativeAdapter.Engine
+- uid: Luny.Engine.Bridge.NativeEngine
+  commentId: T:Luny.Engine.Bridge.NativeEngine
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.NativeEngine.html
+  name: NativeEngine
+  nameWithType: NativeEngine
+  fullName: Luny.Engine.Bridge.NativeEngine
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html

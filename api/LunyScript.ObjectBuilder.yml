@@ -1,0 +1,500 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ObjectBuilder
+  commentId: T:LunyScript.ObjectBuilder
+  id: ObjectBuilder
+  parent: LunyScript
+  children:
+  - LunyScript.ObjectBuilder.Create(System.String)
+  - LunyScript.ObjectBuilder.Destroy(System.String)
+  - LunyScript.ObjectBuilder.Disable(System.String)
+  - LunyScript.ObjectBuilder.Enable(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ObjectBuilder
+  nameWithType: ObjectBuilder
+  fullName: LunyScript.ObjectBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Provides operations for objects.
+  example: []
+  syntax:
+    content: public readonly struct ObjectBuilder
+    content.vb: Public Structure ObjectBuilder
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LunyScript.ObjectBuilder.Enable(System.String)
+  commentId: M:LunyScript.ObjectBuilder.Enable(System.String)
+  id: Enable(System.String)
+  parent: LunyScript.ObjectBuilder
+  langs:
+  - csharp
+  - vb
+  name: Enable(string)
+  nameWithType: ObjectBuilder.Enable(string)
+  fullName: LunyScript.ObjectBuilder.Enable(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptActionBlock Enable(string name = null)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Enable(name As String = Nothing) As ScriptActionBlock
+  overload: LunyScript.ObjectBuilder.Enable*
+  nameWithType.vb: ObjectBuilder.Enable(String)
+  fullName.vb: LunyScript.ObjectBuilder.Enable(String)
+  name.vb: Enable(String)
+- uid: LunyScript.ObjectBuilder.Disable(System.String)
+  commentId: M:LunyScript.ObjectBuilder.Disable(System.String)
+  id: Disable(System.String)
+  parent: LunyScript.ObjectBuilder
+  langs:
+  - csharp
+  - vb
+  name: Disable(string)
+  nameWithType: ObjectBuilder.Disable(string)
+  fullName: LunyScript.ObjectBuilder.Disable(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptActionBlock Disable(string name = null)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Disable(name As String = Nothing) As ScriptActionBlock
+  overload: LunyScript.ObjectBuilder.Disable*
+  nameWithType.vb: ObjectBuilder.Disable(String)
+  fullName.vb: LunyScript.ObjectBuilder.Disable(String)
+  name.vb: Disable(String)
+- uid: LunyScript.ObjectBuilder.Create(System.String)
+  commentId: M:LunyScript.ObjectBuilder.Create(System.String)
+  id: Create(System.String)
+  parent: LunyScript.ObjectBuilder
+  langs:
+  - csharp
+  - vb
+  name: Create(string)
+  nameWithType: ObjectBuilder.Create(string)
+  fullName: LunyScript.ObjectBuilder.Create(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ObjectCreateBuilder<ObjectBuilderNameSet> Create(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.ObjectCreateBuilder{LunyScript.ObjectBuilderNameSet}
+    content.vb: Public Function Create(name As String) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
+  overload: LunyScript.ObjectBuilder.Create*
+  nameWithType.vb: ObjectBuilder.Create(String)
+  fullName.vb: LunyScript.ObjectBuilder.Create(String)
+  name.vb: Create(String)
+- uid: LunyScript.ObjectBuilder.Destroy(System.String)
+  commentId: M:LunyScript.ObjectBuilder.Destroy(System.String)
+  id: Destroy(System.String)
+  parent: LunyScript.ObjectBuilder
+  langs:
+  - csharp
+  - vb
+  name: Destroy(string)
+  nameWithType: ObjectBuilder.Destroy(string)
+  fullName: LunyScript.ObjectBuilder.Destroy(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptActionBlock Destroy(string name = null)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Destroy(name As String = Nothing) As ScriptActionBlock
+  overload: LunyScript.ObjectBuilder.Destroy*
+  nameWithType.vb: ObjectBuilder.Destroy(String)
+  fullName.vb: LunyScript.ObjectBuilder.Destroy(String)
+  name.vb: Destroy(String)
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ObjectBuilder.Enable*
+  commentId: Overload:LunyScript.ObjectBuilder.Enable
+  isExternal: true
+  href: LunyScript.ObjectBuilder.html#LunyScript_ObjectBuilder_Enable_System_String_
+  name: Enable
+  nameWithType: ObjectBuilder.Enable
+  fullName: LunyScript.ObjectBuilder.Enable
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.ObjectBuilder.Disable*
+  commentId: Overload:LunyScript.ObjectBuilder.Disable
+  isExternal: true
+  href: LunyScript.ObjectBuilder.html#LunyScript_ObjectBuilder_Disable_System_String_
+  name: Disable
+  nameWithType: ObjectBuilder.Disable
+  fullName: LunyScript.ObjectBuilder.Disable
+- uid: LunyScript.ObjectBuilder.Create*
+  commentId: Overload:LunyScript.ObjectBuilder.Create
+  isExternal: true
+  href: LunyScript.ObjectBuilder.html#LunyScript_ObjectBuilder_Create_System_String_
+  name: Create
+  nameWithType: ObjectBuilder.Create
+  fullName: LunyScript.ObjectBuilder.Create
+- uid: LunyScript.ObjectCreateBuilder{LunyScript.ObjectBuilderNameSet}
+  commentId: T:LunyScript.ObjectCreateBuilder{LunyScript.ObjectBuilderNameSet}
+  parent: LunyScript
+  definition: LunyScript.ObjectCreateBuilder`1
+  href: LunyScript.ObjectCreateBuilder-1.html
+  name: ObjectCreateBuilder<ObjectBuilderNameSet>
+  nameWithType: ObjectCreateBuilder<ObjectBuilderNameSet>
+  fullName: LunyScript.ObjectCreateBuilder<LunyScript.ObjectBuilderNameSet>
+  nameWithType.vb: ObjectCreateBuilder(Of ObjectBuilderNameSet)
+  fullName.vb: LunyScript.ObjectCreateBuilder(Of LunyScript.ObjectBuilderNameSet)
+  name.vb: ObjectCreateBuilder(Of ObjectBuilderNameSet)
+  spec.csharp:
+  - uid: LunyScript.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ObjectCreateBuilder-1.html
+  - name: <
+  - uid: LunyScript.ObjectBuilderNameSet
+    name: ObjectBuilderNameSet
+    isExternal: true
+    href: LunyScript.ObjectBuilderNameSet.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ObjectCreateBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.ObjectBuilderNameSet
+    name: ObjectBuilderNameSet
+    isExternal: true
+    href: LunyScript.ObjectBuilderNameSet.html
+  - name: )
+- uid: LunyScript.ObjectCreateBuilder`1
+  commentId: T:LunyScript.ObjectCreateBuilder`1
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ObjectCreateBuilder-1.html
+  name: ObjectCreateBuilder<T>
+  nameWithType: ObjectCreateBuilder<T>
+  fullName: LunyScript.ObjectCreateBuilder<T>
+  nameWithType.vb: ObjectCreateBuilder(Of T)
+  fullName.vb: LunyScript.ObjectCreateBuilder(Of T)
+  name.vb: ObjectCreateBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ObjectCreateBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ObjectCreateBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.ObjectBuilder.Destroy*
+  commentId: Overload:LunyScript.ObjectBuilder.Destroy
+  isExternal: true
+  href: LunyScript.ObjectBuilder.html#LunyScript_ObjectBuilder_Destroy_System_String_
+  name: Destroy
+  nameWithType: ObjectBuilder.Destroy
+  fullName: LunyScript.ObjectBuilder.Destroy

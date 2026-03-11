@@ -1,0 +1,579 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Table.VarHandle`1
+  commentId: T:Luny.Table.VarHandle`1
+  id: Table.VarHandle`1
+  parent: Luny
+  children:
+  - Luny.Table.VarHandle`1.Reset
+  - Luny.Table.VarHandle`1.ToString
+  - Luny.Table.VarHandle`1.Value
+  langs:
+  - csharp
+  - vb
+  name: Table.VarHandle<T>
+  nameWithType: Table.VarHandle<T>
+  fullName: Luny.Table.VarHandle<T>
+  type: Class
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: 'public sealed class Table.VarHandle<T> : Table.VarHandle'
+    typeParameters:
+    - id: T
+    content.vb: Public NotInheritable Class Table.VarHandle(Of T) Inherits Table.VarHandle
+  inheritance:
+  - System.Object
+  - Luny.Table.VarHandle
+  inheritedMembers:
+  - Luny.Table.VarHandle.As``1
+  - Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{{T}}@)
+  - Luny.Table.VarHandle.Name
+  - Luny.Table.VarHandle.IsConstant
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: Table.VarHandle(Of T)
+  fullName.vb: Luny.Table.VarHandle(Of T)
+  name.vb: Table.VarHandle(Of T)
+- uid: Luny.Table.VarHandle`1.Reset
+  commentId: M:Luny.Table.VarHandle`1.Reset
+  id: Reset
+  parent: Luny.Table.VarHandle`1
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: Table.VarHandle<T>.Reset()
+  fullName: Luny.Table.VarHandle<T>.Reset()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset()
+  overridden: Luny.Table.VarHandle.Reset
+  overload: Luny.Table.VarHandle`1.Reset*
+  nameWithType.vb: Table.VarHandle(Of T).Reset()
+  fullName.vb: Luny.Table.VarHandle(Of T).Reset()
+- uid: Luny.Table.VarHandle`1.ToString
+  commentId: M:Luny.Table.VarHandle`1.ToString
+  id: ToString
+  parent: Luny.Table.VarHandle`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Table.VarHandle<T>.ToString()
+  fullName: Luny.Table.VarHandle<T>.ToString()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Luny.Table.VarHandle`1.ToString*
+  nameWithType.vb: Table.VarHandle(Of T).ToString()
+  fullName.vb: Luny.Table.VarHandle(Of T).ToString()
+- uid: Luny.Table.VarHandle`1.Value
+  commentId: P:Luny.Table.VarHandle`1.Value
+  id: Value
+  parent: Luny.Table.VarHandle`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Table.VarHandle<T>.Value
+  fullName: Luny.Table.VarHandle<T>.Value
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public T Value { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property Value As T
+  overload: Luny.Table.VarHandle`1.Value*
+  nameWithType.vb: Table.VarHandle(Of T).Value
+  fullName.vb: Luny.Table.VarHandle(Of T).Value
+references:
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Luny.Table.VarHandle
+  commentId: T:Luny.Table.VarHandle
+  parent: Luny
+  isExternal: true
+  href: Luny.Table.html
+  name: Table.VarHandle
+  nameWithType: Table.VarHandle
+  fullName: Luny.Table.VarHandle
+  spec.csharp:
+  - uid: Luny.Table
+    name: Table
+    isExternal: true
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.VarHandle
+    name: VarHandle
+    isExternal: true
+    href: Luny.Table.VarHandle.html
+  spec.vb:
+  - uid: Luny.Table
+    name: Table
+    isExternal: true
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.VarHandle
+    name: VarHandle
+    isExternal: true
+    href: Luny.Table.VarHandle.html
+- uid: Luny.Table.VarHandle.As``1
+  commentId: M:Luny.Table.VarHandle.As``1
+  parent: Luny.Table.VarHandle
+  isExternal: true
+  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_As__1
+  name: As<T>()
+  nameWithType: Table.VarHandle.As<T>()
+  fullName: Luny.Table.VarHandle.As<T>()
+  nameWithType.vb: Table.VarHandle.As(Of T)()
+  fullName.vb: Luny.Table.VarHandle.As(Of T)()
+  name.vb: As(Of T)()
+  spec.csharp:
+  - uid: Luny.Table.VarHandle.As``1
+    name: As
+    isExternal: true
+    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_As__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.Table.VarHandle.As``1
+    name: As
+    isExternal: true
+    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_As__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{{T}}@)
+  commentId: M:Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
+  parent: Luny.Table.VarHandle
+  definition: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
+  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
+  name: TryAs<T>(out VarHandle<T>)
+  nameWithType: Table.VarHandle.TryAs<T>(out Table.VarHandle<T>)
+  fullName: Luny.Table.VarHandle.TryAs<T>(out Luny.Table.VarHandle<T>)
+  nameWithType.vb: Table.VarHandle.TryAs(Of T)(Table.VarHandle(Of T))
+  fullName.vb: Luny.Table.VarHandle.TryAs(Of T)(Luny.Table.VarHandle(Of T))
+  name.vb: TryAs(Of T)(VarHandle(Of T))
+  spec.csharp:
+  - uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
+    name: TryAs
+    isExternal: true
+    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: out
+  - name: " "
+  - uid: Luny.Table.VarHandle`1
+    name: VarHandle
+    isExternal: true
+    href: Luny.Table.VarHandle-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
+    name: TryAs
+    isExternal: true
+    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Luny.Table.VarHandle`1
+    name: VarHandle
+    isExternal: true
+    href: Luny.Table.VarHandle-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Luny.Table.VarHandle.Name
+  commentId: P:Luny.Table.VarHandle.Name
+  parent: Luny.Table.VarHandle
+  isExternal: true
+  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_Name
+  name: Name
+  nameWithType: Table.VarHandle.Name
+  fullName: Luny.Table.VarHandle.Name
+- uid: Luny.Table.VarHandle.IsConstant
+  commentId: P:Luny.Table.VarHandle.IsConstant
+  parent: Luny.Table.VarHandle
+  isExternal: true
+  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_IsConstant
+  name: IsConstant
+  nameWithType: Table.VarHandle.IsConstant
+  fullName: Luny.Table.VarHandle.IsConstant
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
+  commentId: M:Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
+  isExternal: true
+  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
+  name: TryAs<T>(out VarHandle<T>)
+  nameWithType: Table.VarHandle.TryAs<T>(out Table.VarHandle<T>)
+  fullName: Luny.Table.VarHandle.TryAs<T>(out Luny.Table.VarHandle<T>)
+  nameWithType.vb: Table.VarHandle.TryAs(Of T)(Table.VarHandle(Of T))
+  fullName.vb: Luny.Table.VarHandle.TryAs(Of T)(Luny.Table.VarHandle(Of T))
+  name.vb: TryAs(Of T)(VarHandle(Of T))
+  spec.csharp:
+  - uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
+    name: TryAs
+    isExternal: true
+    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: out
+  - name: " "
+  - uid: Luny.Table.VarHandle`1
+    name: VarHandle
+    isExternal: true
+    href: Luny.Table.VarHandle-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
+    name: TryAs
+    isExternal: true
+    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Luny.Table.VarHandle`1
+    name: VarHandle
+    isExternal: true
+    href: Luny.Table.VarHandle-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Luny.Table.VarHandle.Reset
+  commentId: M:Luny.Table.VarHandle.Reset
+  parent: Luny.Table.VarHandle
+  isExternal: true
+  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_Reset
+  name: Reset()
+  nameWithType: Table.VarHandle.Reset()
+  fullName: Luny.Table.VarHandle.Reset()
+  spec.csharp:
+  - uid: Luny.Table.VarHandle.Reset
+    name: Reset
+    isExternal: true
+    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.Table.VarHandle.Reset
+    name: Reset
+    isExternal: true
+    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_Reset
+  - name: (
+  - name: )
+- uid: Luny.Table.VarHandle`1.Reset*
+  commentId: Overload:Luny.Table.VarHandle`1.Reset
+  isExternal: true
+  href: Luny.Table.VarHandle-1.html#Luny_Table_VarHandle_1_Reset
+  name: Reset
+  nameWithType: Table.VarHandle<T>.Reset
+  fullName: Luny.Table.VarHandle<T>.Reset
+  nameWithType.vb: Table.VarHandle(Of T).Reset
+  fullName.vb: Luny.Table.VarHandle(Of T).Reset
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Luny.Table.VarHandle`1.ToString*
+  commentId: Overload:Luny.Table.VarHandle`1.ToString
+  isExternal: true
+  href: Luny.Table.VarHandle-1.html#Luny_Table_VarHandle_1_ToString
+  name: ToString
+  nameWithType: Table.VarHandle<T>.ToString
+  fullName: Luny.Table.VarHandle<T>.ToString
+  nameWithType.vb: Table.VarHandle(Of T).ToString
+  fullName.vb: Luny.Table.VarHandle(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Table.VarHandle`1.Value*
+  commentId: Overload:Luny.Table.VarHandle`1.Value
+  isExternal: true
+  href: Luny.Table.VarHandle-1.html#Luny_Table_VarHandle_1_Value
+  name: Value
+  nameWithType: Table.VarHandle<T>.Value
+  fullName: Luny.Table.VarHandle<T>.Value
+  nameWithType.vb: Table.VarHandle(Of T).Value
+  fullName.vb: Luny.Table.VarHandle(Of T).Value
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

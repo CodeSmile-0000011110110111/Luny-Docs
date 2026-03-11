@@ -1,0 +1,2163 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.VariableBlock
+  commentId: T:LunyScript.Blocks.VariableBlock
+  id: VariableBlock
+  parent: LunyScript.Blocks
+  children:
+  - LunyScript.Blocks.VariableBlock.#ctor
+  - LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Dec
+  - LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Equals(System.Object)
+  - LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  - LunyScript.Blocks.VariableBlock.GetHashCode
+  - LunyScript.Blocks.VariableBlock.Inc
+  - LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Toggle
+  - LunyScript.Blocks.VariableBlock.op_Addition(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Decrement(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Division(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Division(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.op_Division(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Equality(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.op_Equality(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_GreaterThan(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.op_GreaterThan(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Implicit(Luny.Variable)~LunyScript.Blocks.VariableBlock
+  - LunyScript.Blocks.VariableBlock.op_Implicit(System.Boolean)~LunyScript.Blocks.VariableBlock
+  - LunyScript.Blocks.VariableBlock.op_Implicit(System.Double)~LunyScript.Blocks.VariableBlock
+  - LunyScript.Blocks.VariableBlock.op_Implicit(System.Int32)~LunyScript.Blocks.VariableBlock
+  - LunyScript.Blocks.VariableBlock.op_Implicit(System.Int64)~LunyScript.Blocks.VariableBlock
+  - LunyScript.Blocks.VariableBlock.op_Implicit(System.Single)~LunyScript.Blocks.VariableBlock
+  - LunyScript.Blocks.VariableBlock.op_Implicit(System.String)~LunyScript.Blocks.VariableBlock
+  - LunyScript.Blocks.VariableBlock.op_Increment(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Inequality(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.op_Inequality(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_LessThan(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.op_LessThan(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_LessThanOrEqual(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.op_LessThanOrEqual(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_LogicalNot(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Multiply(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Multiply(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.op_Multiply(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Subtraction(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.op_Subtraction(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.op_Subtraction(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  langs:
+  - csharp
+  - vb
+  name: VariableBlock
+  nameWithType: VariableBlock
+  fullName: LunyScript.Blocks.VariableBlock
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: >-
+    Abstract base for variable blocks that evaluate to a runtime Variable.
+
+    Extends ScriptConditionBlock because variables are implicitly usable as conditions
+
+    (via AsBoolean conversion).
+  example: []
+  syntax:
+    content: 'public abstract class VariableBlock : ScriptConditionBlock, IScriptBlock'
+    content.vb: Public MustInherit Class VariableBlock Inherits ScriptConditionBlock Implements IScriptBlock
+  inheritance:
+  - System.Object
+  - LunyScript.Blocks.ScriptBlock
+  - LunyScript.Blocks.ScriptConditionBlock
+  derivedClasses:
+  - LunyScript.Blocks.ComputedVariableBlock
+  - LunyScript.Blocks.ConstantVariableBlock
+  - LunyScript.Blocks.TableVariableBlock
+  implements:
+  - LunyScript.Blocks.IScriptBlock
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LunyScript.Blocks.VariableBlock.op_Implicit(Luny.Variable)~LunyScript.Blocks.VariableBlock
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(Luny.Variable)~LunyScript.Blocks.VariableBlock
+  id: op_Implicit(Luny.Variable)~LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: implicit operator VariableBlock(Variable)
+  nameWithType: VariableBlock.implicit operator VariableBlock(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static implicit operator VariableBlock(Variable value)
+    parameters:
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Implicit*
+  nameWithType.vb: VariableBlock.CType(Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Luny.Variable)
+  name.vb: CType(Variable)
+- uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.Int32)~LunyScript.Blocks.VariableBlock
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.Int32)~LunyScript.Blocks.VariableBlock
+  id: op_Implicit(System.Int32)~LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: implicit operator VariableBlock(int)
+  nameWithType: VariableBlock.implicit operator VariableBlock(int)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(int)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static implicit operator VariableBlock(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As Integer) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Implicit*
+  nameWithType.vb: VariableBlock.CType(Integer)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Integer)
+  name.vb: CType(Integer)
+- uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.Int64)~LunyScript.Blocks.VariableBlock
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.Int64)~LunyScript.Blocks.VariableBlock
+  id: op_Implicit(System.Int64)~LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: implicit operator VariableBlock(long)
+  nameWithType: VariableBlock.implicit operator VariableBlock(long)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(long)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static implicit operator VariableBlock(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As Long) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Implicit*
+  nameWithType.vb: VariableBlock.CType(Long)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Long)
+  name.vb: CType(Long)
+- uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.Single)~LunyScript.Blocks.VariableBlock
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.Single)~LunyScript.Blocks.VariableBlock
+  id: op_Implicit(System.Single)~LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: implicit operator VariableBlock(float)
+  nameWithType: VariableBlock.implicit operator VariableBlock(float)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(float)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static implicit operator VariableBlock(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As Single) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Implicit*
+  nameWithType.vb: VariableBlock.CType(Single)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Single)
+  name.vb: CType(Single)
+- uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.Double)~LunyScript.Blocks.VariableBlock
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.Double)~LunyScript.Blocks.VariableBlock
+  id: op_Implicit(System.Double)~LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: implicit operator VariableBlock(double)
+  nameWithType: VariableBlock.implicit operator VariableBlock(double)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(double)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static implicit operator VariableBlock(double value)
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As Double) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Implicit*
+  nameWithType.vb: VariableBlock.CType(Double)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Double)
+  name.vb: CType(Double)
+- uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.Boolean)~LunyScript.Blocks.VariableBlock
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.Boolean)~LunyScript.Blocks.VariableBlock
+  id: op_Implicit(System.Boolean)~LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: implicit operator VariableBlock(bool)
+  nameWithType: VariableBlock.implicit operator VariableBlock(bool)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(bool)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static implicit operator VariableBlock(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As Boolean) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Implicit*
+  nameWithType.vb: VariableBlock.CType(Boolean)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Boolean)
+  name.vb: CType(Boolean)
+- uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.String)~LunyScript.Blocks.VariableBlock
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.String)~LunyScript.Blocks.VariableBlock
+  id: op_Implicit(System.String)~LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: implicit operator VariableBlock(string)
+  nameWithType: VariableBlock.implicit operator VariableBlock(string)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(string)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static implicit operator VariableBlock(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As String) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Implicit*
+  nameWithType.vb: VariableBlock.CType(String)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(String)
+  name.vb: CType(String)
+- uid: LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  id: op_Addition(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator +(VariableBlock, Variable)
+  nameWithType: VariableBlock.operator +(VariableBlock, Variable)
+  fullName: LunyScript.Blocks.VariableBlock.operator +(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator +(VariableBlock left, Variable right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator +(left As VariableBlock, right As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Addition*
+  nameWithType.vb: VariableBlock.+(VariableBlock, Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock.+(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  name.vb: +(VariableBlock, Variable)
+- uid: LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: op_Addition(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator +(VariableBlock, VariableBlock)
+  nameWithType: VariableBlock.operator +(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator +(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator +(VariableBlock left, VariableBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator +(left As VariableBlock, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Addition*
+  nameWithType.vb: VariableBlock.+(VariableBlock, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.+(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  name.vb: +(VariableBlock, VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_Addition(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Addition(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  id: op_Addition(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator +(Variable, VariableBlock)
+  nameWithType: VariableBlock.operator +(Variable, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator +(Luny.Variable, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator +(Variable left, VariableBlock right)
+    parameters:
+    - id: left
+      type: Luny.Variable
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator +(left As Variable, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Addition*
+  nameWithType.vb: VariableBlock.+(Variable, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.+(Luny.Variable, LunyScript.Blocks.VariableBlock)
+  name.vb: +(Variable, VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_Subtraction(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Subtraction(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  id: op_Subtraction(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator -(VariableBlock, Variable)
+  nameWithType: VariableBlock.operator -(VariableBlock, Variable)
+  fullName: LunyScript.Blocks.VariableBlock.operator -(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator -(VariableBlock left, Variable right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator -(left As VariableBlock, right As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Subtraction*
+  nameWithType.vb: VariableBlock.-(VariableBlock, Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock.-(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  name.vb: -(VariableBlock, Variable)
+- uid: LunyScript.Blocks.VariableBlock.op_Subtraction(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Subtraction(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: op_Subtraction(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator -(VariableBlock, VariableBlock)
+  nameWithType: VariableBlock.operator -(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator -(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator -(VariableBlock left, VariableBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator -(left As VariableBlock, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Subtraction*
+  nameWithType.vb: VariableBlock.-(VariableBlock, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.-(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  name.vb: -(VariableBlock, VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_Subtraction(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Subtraction(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  id: op_Subtraction(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator -(Variable, VariableBlock)
+  nameWithType: VariableBlock.operator -(Variable, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator -(Luny.Variable, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator -(Variable left, VariableBlock right)
+    parameters:
+    - id: left
+      type: Luny.Variable
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator -(left As Variable, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Subtraction*
+  nameWithType.vb: VariableBlock.-(Variable, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.-(Luny.Variable, LunyScript.Blocks.VariableBlock)
+  name.vb: -(Variable, VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_Multiply(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Multiply(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  id: op_Multiply(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator *(VariableBlock, Variable)
+  nameWithType: VariableBlock.operator *(VariableBlock, Variable)
+  fullName: LunyScript.Blocks.VariableBlock.operator *(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator *(VariableBlock left, Variable right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator *(left As VariableBlock, right As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Multiply*
+  nameWithType.vb: VariableBlock.*(VariableBlock, Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock.*(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  name.vb: '*(VariableBlock, Variable)'
+- uid: LunyScript.Blocks.VariableBlock.op_Multiply(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Multiply(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: op_Multiply(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator *(VariableBlock, VariableBlock)
+  nameWithType: VariableBlock.operator *(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator *(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator *(VariableBlock left, VariableBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator *(left As VariableBlock, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Multiply*
+  nameWithType.vb: VariableBlock.*(VariableBlock, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.*(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  name.vb: '*(VariableBlock, VariableBlock)'
+- uid: LunyScript.Blocks.VariableBlock.op_Multiply(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Multiply(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  id: op_Multiply(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator *(Variable, VariableBlock)
+  nameWithType: VariableBlock.operator *(Variable, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator *(Luny.Variable, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator *(Variable left, VariableBlock right)
+    parameters:
+    - id: left
+      type: Luny.Variable
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator *(left As Variable, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Multiply*
+  nameWithType.vb: VariableBlock.*(Variable, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.*(Luny.Variable, LunyScript.Blocks.VariableBlock)
+  name.vb: '*(Variable, VariableBlock)'
+- uid: LunyScript.Blocks.VariableBlock.op_Division(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Division(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  id: op_Division(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator /(VariableBlock, Variable)
+  nameWithType: VariableBlock.operator /(VariableBlock, Variable)
+  fullName: LunyScript.Blocks.VariableBlock.operator /(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator /(VariableBlock left, Variable right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator /(left As VariableBlock, right As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Division*
+  nameWithType.vb: VariableBlock./(VariableBlock, Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock./(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  name.vb: /(VariableBlock, Variable)
+- uid: LunyScript.Blocks.VariableBlock.op_Division(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Division(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: op_Division(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator /(VariableBlock, VariableBlock)
+  nameWithType: VariableBlock.operator /(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator /(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator /(VariableBlock left, VariableBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator /(left As VariableBlock, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Division*
+  nameWithType.vb: VariableBlock./(VariableBlock, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock./(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  name.vb: /(VariableBlock, VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_Division(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Division(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  id: op_Division(Luny.Variable,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator /(Variable, VariableBlock)
+  nameWithType: VariableBlock.operator /(Variable, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator /(Luny.Variable, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator /(Variable left, VariableBlock right)
+    parameters:
+    - id: left
+      type: Luny.Variable
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator /(left As Variable, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Division*
+  nameWithType.vb: VariableBlock./(Variable, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock./(Luny.Variable, LunyScript.Blocks.VariableBlock)
+  name.vb: /(Variable, VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_Increment(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Increment(LunyScript.Blocks.VariableBlock)
+  id: op_Increment(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator ++(VariableBlock)
+  nameWithType: VariableBlock.operator ++(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator ++(LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator ++(VariableBlock a)
+    parameters:
+    - id: a
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Function op_Increment(a As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Increment*
+  nameWithType.vb: VariableBlock.op_Increment(VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.op_Increment(LunyScript.Blocks.VariableBlock)
+  name.vb: op_Increment(VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_Decrement(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Decrement(LunyScript.Blocks.VariableBlock)
+  id: op_Decrement(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator --(VariableBlock)
+  nameWithType: VariableBlock.operator --(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator --(LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator --(VariableBlock a)
+    parameters:
+    - id: a
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Function op_Decrement(a As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Decrement*
+  nameWithType.vb: VariableBlock.op_Decrement(VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.op_Decrement(LunyScript.Blocks.VariableBlock)
+  name.vb: op_Decrement(VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_Equality(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Equality(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  id: op_Equality(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator ==(VariableBlock, Variable)
+  nameWithType: VariableBlock.operator ==(VariableBlock, Variable)
+  fullName: LunyScript.Blocks.VariableBlock.operator ==(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator ==(VariableBlock left, Variable right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator =(left As VariableBlock, right As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Equality*
+  nameWithType.vb: VariableBlock.=(VariableBlock, Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock.=(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  name.vb: =(VariableBlock, Variable)
+- uid: LunyScript.Blocks.VariableBlock.op_Equality(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Equality(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: op_Equality(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator ==(VariableBlock, VariableBlock)
+  nameWithType: VariableBlock.operator ==(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator ==(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator ==(VariableBlock left, VariableBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator =(left As VariableBlock, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Equality*
+  nameWithType.vb: VariableBlock.=(VariableBlock, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.=(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  name.vb: =(VariableBlock, VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_Inequality(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Inequality(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  id: op_Inequality(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator !=(VariableBlock, Variable)
+  nameWithType: VariableBlock.operator !=(VariableBlock, Variable)
+  fullName: LunyScript.Blocks.VariableBlock.operator !=(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator !=(VariableBlock left, Variable right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator <>(left As VariableBlock, right As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Inequality*
+  nameWithType.vb: VariableBlock.<>(VariableBlock, Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock.<>(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  name.vb: <>(VariableBlock, Variable)
+- uid: LunyScript.Blocks.VariableBlock.op_Inequality(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_Inequality(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: op_Inequality(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator !=(VariableBlock, VariableBlock)
+  nameWithType: VariableBlock.operator !=(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator !=(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator !=(VariableBlock left, VariableBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator <>(left As VariableBlock, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_Inequality*
+  nameWithType.vb: VariableBlock.<>(VariableBlock, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.<>(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  name.vb: <>(VariableBlock, VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_GreaterThan(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_GreaterThan(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  id: op_GreaterThan(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator >(VariableBlock, Variable)
+  nameWithType: VariableBlock.operator >(VariableBlock, Variable)
+  fullName: LunyScript.Blocks.VariableBlock.operator >(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator >(VariableBlock left, Variable right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator >(left As VariableBlock, right As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_GreaterThan*
+  nameWithType.vb: VariableBlock.>(VariableBlock, Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock.>(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  name.vb: '>(VariableBlock, Variable)'
+- uid: LunyScript.Blocks.VariableBlock.op_GreaterThan(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_GreaterThan(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: op_GreaterThan(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator >(VariableBlock, VariableBlock)
+  nameWithType: VariableBlock.operator >(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator >(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator >(VariableBlock left, VariableBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator >(left As VariableBlock, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_GreaterThan*
+  nameWithType.vb: VariableBlock.>(VariableBlock, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.>(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  name.vb: '>(VariableBlock, VariableBlock)'
+- uid: LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  id: op_GreaterThanOrEqual(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator >=(VariableBlock, Variable)
+  nameWithType: VariableBlock.operator >=(VariableBlock, Variable)
+  fullName: LunyScript.Blocks.VariableBlock.operator >=(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator >=(VariableBlock left, Variable right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator >=(left As VariableBlock, right As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual*
+  nameWithType.vb: VariableBlock.>=(VariableBlock, Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock.>=(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  name.vb: '>=(VariableBlock, Variable)'
+- uid: LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: op_GreaterThanOrEqual(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator >=(VariableBlock, VariableBlock)
+  nameWithType: VariableBlock.operator >=(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator >=(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator >=(VariableBlock left, VariableBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator >=(left As VariableBlock, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual*
+  nameWithType.vb: VariableBlock.>=(VariableBlock, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.>=(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  name.vb: '>=(VariableBlock, VariableBlock)'
+- uid: LunyScript.Blocks.VariableBlock.op_LessThan(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_LessThan(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  id: op_LessThan(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator <(VariableBlock, Variable)
+  nameWithType: VariableBlock.operator <(VariableBlock, Variable)
+  fullName: LunyScript.Blocks.VariableBlock.operator <(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator <(VariableBlock left, Variable right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator <(left As VariableBlock, right As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_LessThan*
+  nameWithType.vb: VariableBlock.<(VariableBlock, Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock.<(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  name.vb: <(VariableBlock, Variable)
+- uid: LunyScript.Blocks.VariableBlock.op_LessThan(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_LessThan(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: op_LessThan(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator <(VariableBlock, VariableBlock)
+  nameWithType: VariableBlock.operator <(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator <(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator <(VariableBlock left, VariableBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator <(left As VariableBlock, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_LessThan*
+  nameWithType.vb: VariableBlock.<(VariableBlock, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.<(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  name.vb: <(VariableBlock, VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_LessThanOrEqual(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_LessThanOrEqual(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  id: op_LessThanOrEqual(LunyScript.Blocks.VariableBlock,Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator <=(VariableBlock, Variable)
+  nameWithType: VariableBlock.operator <=(VariableBlock, Variable)
+  fullName: LunyScript.Blocks.VariableBlock.operator <=(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator <=(VariableBlock left, Variable right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator <=(left As VariableBlock, right As Variable) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_LessThanOrEqual*
+  nameWithType.vb: VariableBlock.<=(VariableBlock, Variable)
+  fullName.vb: LunyScript.Blocks.VariableBlock.<=(LunyScript.Blocks.VariableBlock, Luny.Variable)
+  name.vb: <=(VariableBlock, Variable)
+- uid: LunyScript.Blocks.VariableBlock.op_LessThanOrEqual(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_LessThanOrEqual(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: op_LessThanOrEqual(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator <=(VariableBlock, VariableBlock)
+  nameWithType: VariableBlock.operator <=(VariableBlock, VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator <=(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator <=(VariableBlock left, VariableBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.VariableBlock
+    - id: right
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator <=(left As VariableBlock, right As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_LessThanOrEqual*
+  nameWithType.vb: VariableBlock.<=(VariableBlock, VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.<=(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  name.vb: <=(VariableBlock, VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.op_LogicalNot(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.op_LogicalNot(LunyScript.Blocks.VariableBlock)
+  id: op_LogicalNot(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: operator !(VariableBlock)
+  nameWithType: VariableBlock.operator !(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.operator !(LunyScript.Blocks.VariableBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static VariableBlock operator !(VariableBlock operand)
+    parameters:
+    - id: operand
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public Shared Operator Not(operand As VariableBlock) As VariableBlock
+  overload: LunyScript.Blocks.VariableBlock.op_LogicalNot*
+  nameWithType.vb: VariableBlock.Not(VariableBlock)
+  fullName.vb: LunyScript.Blocks.VariableBlock.Not(LunyScript.Blocks.VariableBlock)
+  name.vb: Not(VariableBlock)
+- uid: LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  id: Evaluate(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Evaluate(IScriptRuntimeContext)
+  nameWithType: VariableBlock.Evaluate(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: protected override bool Evaluate(IScriptRuntimeContext runtimeContext)
+    parameters:
+    - id: runtimeContext
+      type: LunyScript.IScriptRuntimeContext
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function Evaluate(runtimeContext As IScriptRuntimeContext) As Boolean
+  overridden: LunyScript.Blocks.ScriptConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  overload: LunyScript.Blocks.VariableBlock.Evaluate*
+- uid: LunyScript.Blocks.VariableBlock.Equals(System.Object)
+  commentId: M:LunyScript.Blocks.VariableBlock.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: VariableBlock.Equals(object)
+  fullName: LunyScript.Blocks.VariableBlock.Equals(object)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: LunyScript.Blocks.VariableBlock.Equals*
+  nameWithType.vb: VariableBlock.Equals(Object)
+  fullName.vb: LunyScript.Blocks.VariableBlock.Equals(Object)
+  name.vb: Equals(Object)
+- uid: LunyScript.Blocks.VariableBlock.GetHashCode
+  commentId: M:LunyScript.Blocks.VariableBlock.GetHashCode
+  id: GetHashCode
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: VariableBlock.GetHashCode()
+  fullName: LunyScript.Blocks.VariableBlock.GetHashCode()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: LunyScript.Blocks.VariableBlock.GetHashCode*
+- uid: LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
+  id: Set(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Set(Variable)
+  nameWithType: VariableBlock.Set(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Set(Variable value)
+    parameters:
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function [Set](value As Variable) As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Set*
+- uid: LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
+  id: Set(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Set(VariableBlock)
+  nameWithType: VariableBlock.Set(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Set(VariableBlock value)
+    parameters:
+    - id: value
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function [Set](value As VariableBlock) As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Set*
+- uid: LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
+  id: Add(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Add(Variable)
+  nameWithType: VariableBlock.Add(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Add(Variable value)
+    parameters:
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Add(value As Variable) As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Add*
+- uid: LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
+  id: Add(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Add(VariableBlock)
+  nameWithType: VariableBlock.Add(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Add(VariableBlock value)
+    parameters:
+    - id: value
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Add(value As VariableBlock) As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Add*
+- uid: LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
+  id: Sub(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Sub(Variable)
+  nameWithType: VariableBlock.Sub(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Sub(Variable value)
+    parameters:
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function [Sub](value As Variable) As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Sub*
+- uid: LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+  id: Sub(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Sub(VariableBlock)
+  nameWithType: VariableBlock.Sub(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Sub(VariableBlock value)
+    parameters:
+    - id: value
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function [Sub](value As VariableBlock) As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Sub*
+- uid: LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
+  id: Mul(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Mul(Variable)
+  nameWithType: VariableBlock.Mul(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Mul(Variable value)
+    parameters:
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Mul(value As Variable) As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Mul*
+- uid: LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+  id: Mul(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Mul(VariableBlock)
+  nameWithType: VariableBlock.Mul(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Mul(VariableBlock value)
+    parameters:
+    - id: value
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Mul(value As VariableBlock) As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Mul*
+- uid: LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
+  id: Div(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Div(Variable)
+  nameWithType: VariableBlock.Div(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Div(Variable value)
+    parameters:
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Div(value As Variable) As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Div*
+- uid: LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+  id: Div(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Div(VariableBlock)
+  nameWithType: VariableBlock.Div(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Div(VariableBlock value)
+    parameters:
+    - id: value
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Div(value As VariableBlock) As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Div*
+- uid: LunyScript.Blocks.VariableBlock.Inc
+  commentId: M:LunyScript.Blocks.VariableBlock.Inc
+  id: Inc
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Inc()
+  nameWithType: VariableBlock.Inc()
+  fullName: LunyScript.Blocks.VariableBlock.Inc()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Inc()
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Inc() As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Inc*
+- uid: LunyScript.Blocks.VariableBlock.Dec
+  commentId: M:LunyScript.Blocks.VariableBlock.Dec
+  id: Dec
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Dec()
+  nameWithType: VariableBlock.Dec()
+  fullName: LunyScript.Blocks.VariableBlock.Dec()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Dec()
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Dec() As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Dec*
+- uid: LunyScript.Blocks.VariableBlock.Toggle
+  commentId: M:LunyScript.Blocks.VariableBlock.Toggle
+  id: Toggle
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Toggle()
+  nameWithType: VariableBlock.Toggle()
+  fullName: LunyScript.Blocks.VariableBlock.Toggle()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ScriptActionBlock Toggle()
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Toggle() As ScriptActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Toggle*
+- uid: LunyScript.Blocks.VariableBlock.#ctor
+  commentId: M:LunyScript.Blocks.VariableBlock.#ctor
+  id: '#ctor'
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: VariableBlock()
+  nameWithType: VariableBlock.VariableBlock()
+  fullName: LunyScript.Blocks.VariableBlock.VariableBlock()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: protected VariableBlock()
+    content.vb: Protected Sub New()
+  overload: LunyScript.Blocks.VariableBlock.#ctor*
+  nameWithType.vb: VariableBlock.New()
+  fullName.vb: LunyScript.Blocks.VariableBlock.New()
+  name.vb: New()
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: LunyScript.Blocks.ScriptBlock
+  commentId: T:LunyScript.Blocks.ScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptBlock.html
+  name: ScriptBlock
+  nameWithType: ScriptBlock
+  fullName: LunyScript.Blocks.ScriptBlock
+- uid: LunyScript.Blocks.ScriptConditionBlock
+  commentId: T:LunyScript.Blocks.ScriptConditionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptConditionBlock.html
+  name: ScriptConditionBlock
+  nameWithType: ScriptConditionBlock
+  fullName: LunyScript.Blocks.ScriptConditionBlock
+- uid: LunyScript.Blocks.IScriptBlock
+  commentId: T:LunyScript.Blocks.IScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.IScriptBlock.html
+  name: IScriptBlock
+  nameWithType: IScriptBlock
+  fullName: LunyScript.Blocks.IScriptBlock
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks.VariableBlock.op_Implicit*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_Implicit
+  name: implicit operator
+  nameWithType: VariableBlock.implicit operator
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator
+  nameWithType.vb: VariableBlock.CType
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Luny.Variable
+  commentId: T:Luny.Variable
+  parent: Luny
+  isExternal: true
+  href: Luny.Variable.html
+  name: Variable
+  nameWithType: Variable
+  fullName: Luny.Variable
+- uid: LunyScript.Blocks.VariableBlock
+  commentId: T:LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html
+  name: VariableBlock
+  nameWithType: VariableBlock
+  fullName: LunyScript.Blocks.VariableBlock
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LunyScript.Blocks.VariableBlock.op_Addition*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_Addition
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Addition_LunyScript_Blocks_VariableBlock_Luny_Variable_
+  name: operator +
+  nameWithType: VariableBlock.operator +
+  fullName: LunyScript.Blocks.VariableBlock.operator +
+  nameWithType.vb: VariableBlock.+
+  fullName.vb: LunyScript.Blocks.VariableBlock.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_Addition*
+    name: +
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Addition_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableBlock.op_Subtraction*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_Subtraction
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Subtraction_LunyScript_Blocks_VariableBlock_Luny_Variable_
+  name: operator -
+  nameWithType: VariableBlock.operator -
+  fullName: LunyScript.Blocks.VariableBlock.operator -
+  nameWithType.vb: VariableBlock.-
+  fullName.vb: LunyScript.Blocks.VariableBlock.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_Subtraction*
+    name: '-'
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Subtraction_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableBlock.op_Multiply*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_Multiply
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Multiply_LunyScript_Blocks_VariableBlock_Luny_Variable_
+  name: operator *
+  nameWithType: VariableBlock.operator *
+  fullName: LunyScript.Blocks.VariableBlock.operator *
+  nameWithType.vb: VariableBlock.*
+  fullName.vb: LunyScript.Blocks.VariableBlock.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Multiply_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableBlock.op_Division*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_Division
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Division_LunyScript_Blocks_VariableBlock_Luny_Variable_
+  name: operator /
+  nameWithType: VariableBlock.operator /
+  fullName: LunyScript.Blocks.VariableBlock.operator /
+  nameWithType.vb: VariableBlock./
+  fullName.vb: LunyScript.Blocks.VariableBlock./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_Division*
+    name: /
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Division_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableBlock.op_Increment*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_Increment
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Increment_LunyScript_Blocks_VariableBlock_
+  name: operator ++
+  nameWithType: VariableBlock.operator ++
+  fullName: LunyScript.Blocks.VariableBlock.operator ++
+  nameWithType.vb: VariableBlock.op_Increment
+  fullName.vb: LunyScript.Blocks.VariableBlock.op_Increment
+  name.vb: op_Increment
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_Increment*
+    name: ++
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Increment_LunyScript_Blocks_VariableBlock_
+- uid: LunyScript.Blocks.VariableBlock.op_Decrement*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_Decrement
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Decrement_LunyScript_Blocks_VariableBlock_
+  name: operator --
+  nameWithType: VariableBlock.operator --
+  fullName: LunyScript.Blocks.VariableBlock.operator --
+  nameWithType.vb: VariableBlock.op_Decrement
+  fullName.vb: LunyScript.Blocks.VariableBlock.op_Decrement
+  name.vb: op_Decrement
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_Decrement*
+    name: --
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Decrement_LunyScript_Blocks_VariableBlock_
+- uid: LunyScript.Blocks.VariableBlock.op_Equality*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_Equality
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Equality_LunyScript_Blocks_VariableBlock_Luny_Variable_
+  name: operator ==
+  nameWithType: VariableBlock.operator ==
+  fullName: LunyScript.Blocks.VariableBlock.operator ==
+  nameWithType.vb: VariableBlock.=
+  fullName.vb: LunyScript.Blocks.VariableBlock.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_Equality*
+    name: ==
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Equality_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableBlock.op_Inequality*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_Inequality
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Inequality_LunyScript_Blocks_VariableBlock_Luny_Variable_
+  name: operator !=
+  nameWithType: VariableBlock.operator !=
+  fullName: LunyScript.Blocks.VariableBlock.operator !=
+  nameWithType.vb: VariableBlock.<>
+  fullName.vb: LunyScript.Blocks.VariableBlock.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Inequality_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableBlock.op_GreaterThan*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_GreaterThan
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_GreaterThan_LunyScript_Blocks_VariableBlock_Luny_Variable_
+  name: operator >
+  nameWithType: VariableBlock.operator >
+  fullName: LunyScript.Blocks.VariableBlock.operator >
+  nameWithType.vb: VariableBlock.>
+  fullName.vb: LunyScript.Blocks.VariableBlock.>
+  name.vb: '>'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_GreaterThan*
+    name: '>'
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_GreaterThan_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_GreaterThanOrEqual_LunyScript_Blocks_VariableBlock_Luny_Variable_
+  name: operator >=
+  nameWithType: VariableBlock.operator >=
+  fullName: LunyScript.Blocks.VariableBlock.operator >=
+  nameWithType.vb: VariableBlock.>=
+  fullName.vb: LunyScript.Blocks.VariableBlock.>=
+  name.vb: '>='
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_GreaterThanOrEqual*
+    name: '>='
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_GreaterThanOrEqual_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableBlock.op_LessThan*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_LessThan
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_LessThan_LunyScript_Blocks_VariableBlock_Luny_Variable_
+  name: operator <
+  nameWithType: VariableBlock.operator <
+  fullName: LunyScript.Blocks.VariableBlock.operator <
+  nameWithType.vb: VariableBlock.<
+  fullName.vb: LunyScript.Blocks.VariableBlock.<
+  name.vb: <
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_LessThan*
+    name: <
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_LessThan_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableBlock.op_LessThanOrEqual*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_LessThanOrEqual
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_LessThanOrEqual_LunyScript_Blocks_VariableBlock_Luny_Variable_
+  name: operator <=
+  nameWithType: VariableBlock.operator <=
+  fullName: LunyScript.Blocks.VariableBlock.operator <=
+  nameWithType.vb: VariableBlock.<=
+  fullName.vb: LunyScript.Blocks.VariableBlock.<=
+  name.vb: <=
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_LessThanOrEqual*
+    name: <=
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_LessThanOrEqual_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableBlock.op_LogicalNot*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.op_LogicalNot
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_LogicalNot_LunyScript_Blocks_VariableBlock_
+  name: operator !
+  nameWithType: VariableBlock.operator !
+  fullName: LunyScript.Blocks.VariableBlock.operator !
+  nameWithType.vb: VariableBlock.Not
+  fullName.vb: LunyScript.Blocks.VariableBlock.Not
+  name.vb: Not
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.VariableBlock.op_LogicalNot*
+    name: '!'
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_LogicalNot_LunyScript_Blocks_VariableBlock_
+- uid: LunyScript.Blocks.ScriptConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.ScriptConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.ScriptConditionBlock
+  isExternal: true
+  href: LunyScript.Blocks.ScriptConditionBlock.html#LunyScript_Blocks_ScriptConditionBlock_Evaluate_LunyScript_IScriptRuntimeContext_
+  name: Evaluate(IScriptRuntimeContext)
+  nameWithType: ScriptConditionBlock.Evaluate(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.ScriptConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+    name: Evaluate
+    isExternal: true
+    href: LunyScript.Blocks.ScriptConditionBlock.html#LunyScript_Blocks_ScriptConditionBlock_Evaluate_LunyScript_IScriptRuntimeContext_
+  - name: (
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+    name: Evaluate
+    isExternal: true
+    href: LunyScript.Blocks.ScriptConditionBlock.html#LunyScript_Blocks_ScriptConditionBlock_Evaluate_LunyScript_IScriptRuntimeContext_
+  - name: (
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Evaluate*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Evaluate
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Evaluate_LunyScript_IScriptRuntimeContext_
+  name: Evaluate
+  nameWithType: VariableBlock.Evaluate
+  fullName: LunyScript.Blocks.VariableBlock.Evaluate
+- uid: LunyScript.IScriptRuntimeContext
+  commentId: T:LunyScript.IScriptRuntimeContext
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html
+  name: IScriptRuntimeContext
+  nameWithType: IScriptRuntimeContext
+  fullName: LunyScript.IScriptRuntimeContext
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Equals*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Equals
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Equals_System_Object_
+  name: Equals
+  nameWithType: VariableBlock.Equals
+  fullName: LunyScript.Blocks.VariableBlock.Equals
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.GetHashCode*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.GetHashCode
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_GetHashCode
+  name: GetHashCode
+  nameWithType: VariableBlock.GetHashCode
+  fullName: LunyScript.Blocks.VariableBlock.GetHashCode
+- uid: LunyScript.Blocks.VariableBlock.Set*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Set
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Set_Luny_Variable_
+  name: Set
+  nameWithType: VariableBlock.Set
+  fullName: LunyScript.Blocks.VariableBlock.Set
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.VariableBlock.Add*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Add
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Add_Luny_Variable_
+  name: Add
+  nameWithType: VariableBlock.Add
+  fullName: LunyScript.Blocks.VariableBlock.Add
+- uid: LunyScript.Blocks.VariableBlock.Sub*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Sub
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Sub_Luny_Variable_
+  name: Sub
+  nameWithType: VariableBlock.Sub
+  fullName: LunyScript.Blocks.VariableBlock.Sub
+- uid: LunyScript.Blocks.VariableBlock.Mul*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Mul
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Mul_Luny_Variable_
+  name: Mul
+  nameWithType: VariableBlock.Mul
+  fullName: LunyScript.Blocks.VariableBlock.Mul
+- uid: LunyScript.Blocks.VariableBlock.Div*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Div
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Div_Luny_Variable_
+  name: Div
+  nameWithType: VariableBlock.Div
+  fullName: LunyScript.Blocks.VariableBlock.Div
+- uid: LunyScript.Blocks.VariableBlock.Inc*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Inc
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Inc
+  name: Inc
+  nameWithType: VariableBlock.Inc
+  fullName: LunyScript.Blocks.VariableBlock.Inc
+- uid: LunyScript.Blocks.VariableBlock.Dec*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Dec
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Dec
+  name: Dec
+  nameWithType: VariableBlock.Dec
+  fullName: LunyScript.Blocks.VariableBlock.Dec
+- uid: LunyScript.Blocks.VariableBlock.Toggle*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Toggle
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Toggle
+  name: Toggle
+  nameWithType: VariableBlock.Toggle
+  fullName: LunyScript.Blocks.VariableBlock.Toggle
+- uid: LunyScript.Blocks.VariableBlock.#ctor*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.#ctor
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock__ctor
+  name: VariableBlock
+  nameWithType: VariableBlock.VariableBlock
+  fullName: LunyScript.Blocks.VariableBlock.VariableBlock
+  nameWithType.vb: VariableBlock.New
+  fullName.vb: LunyScript.Blocks.VariableBlock.New
+  name.vb: New

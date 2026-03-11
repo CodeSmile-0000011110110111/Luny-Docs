@@ -1,0 +1,499 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.Bridge.LunyAssetPath
+  commentId: T:Luny.Engine.Bridge.LunyAssetPath
+  id: LunyAssetPath
+  parent: Luny.Engine.Bridge
+  children:
+  - Luny.Engine.Bridge.LunyAssetPath.FromAgnostic(System.String)
+  - Luny.Engine.Bridge.LunyAssetPath.FromNative(System.String)
+  - Luny.Engine.Bridge.LunyAssetPath.PathType
+  - Luny.Engine.Bridge.LunyAssetPath.op_Implicit(System.String)~Luny.Engine.Bridge.LunyAssetPath
+  langs:
+  - csharp
+  - vb
+  name: LunyAssetPath
+  nameWithType: LunyAssetPath
+  fullName: Luny.Engine.Bridge.LunyAssetPath
+  type: Class
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  summary: Specialized path for engine assets.
+  example: []
+  syntax:
+    content: 'public sealed class LunyAssetPath : LunyPath, ILunyPath'
+    content.vb: Public NotInheritable Class LunyAssetPath Inherits LunyPath Implements ILunyPath
+  inheritance:
+  - System.Object
+  - Luny.Engine.Bridge.LunyPath
+  implements:
+  - Luny.Engine.Bridge.ILunyPath
+  inheritedMembers:
+  - Luny.Engine.Bridge.LunyPath.ToString
+  - Luny.Engine.Bridge.LunyPath.Converter
+  - Luny.Engine.Bridge.LunyPath.NativePath
+  - Luny.Engine.Bridge.LunyPath.AgnosticPath
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Luny.Engine.Bridge.LunyAssetPath.op_Implicit(System.String)~Luny.Engine.Bridge.LunyAssetPath
+  commentId: M:Luny.Engine.Bridge.LunyAssetPath.op_Implicit(System.String)~Luny.Engine.Bridge.LunyAssetPath
+  id: op_Implicit(System.String)~Luny.Engine.Bridge.LunyAssetPath
+  parent: Luny.Engine.Bridge.LunyAssetPath
+  langs:
+  - csharp
+  - vb
+  name: implicit operator LunyAssetPath(string)
+  nameWithType: LunyAssetPath.implicit operator LunyAssetPath(string)
+  fullName: Luny.Engine.Bridge.LunyAssetPath.implicit operator Luny.Engine.Bridge.LunyAssetPath(string)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static implicit operator LunyAssetPath(string agnosticPath)
+    parameters:
+    - id: agnosticPath
+      type: System.String
+    return:
+      type: Luny.Engine.Bridge.LunyAssetPath
+    content.vb: Public Shared Widening Operator CType(agnosticPath As String) As LunyAssetPath
+  overload: Luny.Engine.Bridge.LunyAssetPath.op_Implicit*
+  nameWithType.vb: LunyAssetPath.CType(String)
+  fullName.vb: Luny.Engine.Bridge.LunyAssetPath.CType(String)
+  name.vb: CType(String)
+- uid: Luny.Engine.Bridge.LunyAssetPath.FromNative(System.String)
+  commentId: M:Luny.Engine.Bridge.LunyAssetPath.FromNative(System.String)
+  id: FromNative(System.String)
+  parent: Luny.Engine.Bridge.LunyAssetPath
+  langs:
+  - csharp
+  - vb
+  name: FromNative(string)
+  nameWithType: LunyAssetPath.FromNative(string)
+  fullName: Luny.Engine.Bridge.LunyAssetPath.FromNative(string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyAssetPath FromNative(string nativePath)
+    parameters:
+    - id: nativePath
+      type: System.String
+    return:
+      type: Luny.Engine.Bridge.LunyAssetPath
+    content.vb: Public Shared Function FromNative(nativePath As String) As LunyAssetPath
+  overload: Luny.Engine.Bridge.LunyAssetPath.FromNative*
+  nameWithType.vb: LunyAssetPath.FromNative(String)
+  fullName.vb: Luny.Engine.Bridge.LunyAssetPath.FromNative(String)
+  name.vb: FromNative(String)
+- uid: Luny.Engine.Bridge.LunyAssetPath.FromAgnostic(System.String)
+  commentId: M:Luny.Engine.Bridge.LunyAssetPath.FromAgnostic(System.String)
+  id: FromAgnostic(System.String)
+  parent: Luny.Engine.Bridge.LunyAssetPath
+  langs:
+  - csharp
+  - vb
+  name: FromAgnostic(string)
+  nameWithType: LunyAssetPath.FromAgnostic(string)
+  fullName: Luny.Engine.Bridge.LunyAssetPath.FromAgnostic(string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyAssetPath FromAgnostic(string agnosticPath)
+    parameters:
+    - id: agnosticPath
+      type: System.String
+    return:
+      type: Luny.Engine.Bridge.LunyAssetPath
+    content.vb: Public Shared Function FromAgnostic(agnosticPath As String) As LunyAssetPath
+  overload: Luny.Engine.Bridge.LunyAssetPath.FromAgnostic*
+  nameWithType.vb: LunyAssetPath.FromAgnostic(String)
+  fullName.vb: Luny.Engine.Bridge.LunyAssetPath.FromAgnostic(String)
+  name.vb: FromAgnostic(String)
+- uid: Luny.Engine.Bridge.LunyAssetPath.PathType
+  commentId: P:Luny.Engine.Bridge.LunyAssetPath.PathType
+  id: PathType
+  parent: Luny.Engine.Bridge.LunyAssetPath
+  langs:
+  - csharp
+  - vb
+  name: PathType
+  nameWithType: LunyAssetPath.PathType
+  fullName: Luny.Engine.Bridge.LunyAssetPath.PathType
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: protected override LunyPathType PathType { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyPathType
+    content.vb: Protected Overrides ReadOnly Property PathType As LunyPathType
+  overridden: Luny.Engine.Bridge.LunyPath.PathType
+  overload: Luny.Engine.Bridge.LunyAssetPath.PathType*
+references:
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Luny.Engine.Bridge.LunyPath
+  commentId: T:Luny.Engine.Bridge.LunyPath
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyPath.html
+  name: LunyPath
+  nameWithType: LunyPath
+  fullName: Luny.Engine.Bridge.LunyPath
+- uid: Luny.Engine.Bridge.ILunyPath
+  commentId: T:Luny.Engine.Bridge.ILunyPath
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.ILunyPath.html
+  name: ILunyPath
+  nameWithType: ILunyPath
+  fullName: Luny.Engine.Bridge.ILunyPath
+- uid: Luny.Engine.Bridge.LunyPath.ToString
+  commentId: M:Luny.Engine.Bridge.LunyPath.ToString
+  parent: Luny.Engine.Bridge.LunyPath
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyPath.html#Luny_Engine_Bridge_LunyPath_ToString
+  name: ToString()
+  nameWithType: LunyPath.ToString()
+  fullName: Luny.Engine.Bridge.LunyPath.ToString()
+  spec.csharp:
+  - uid: Luny.Engine.Bridge.LunyPath.ToString
+    name: ToString
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyPath.html#Luny_Engine_Bridge_LunyPath_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Bridge.LunyPath.ToString
+    name: ToString
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyPath.html#Luny_Engine_Bridge_LunyPath_ToString
+  - name: (
+  - name: )
+- uid: Luny.Engine.Bridge.LunyPath.Converter
+  commentId: P:Luny.Engine.Bridge.LunyPath.Converter
+  parent: Luny.Engine.Bridge.LunyPath
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyPath.html#Luny_Engine_Bridge_LunyPath_Converter
+  name: Converter
+  nameWithType: LunyPath.Converter
+  fullName: Luny.Engine.Bridge.LunyPath.Converter
+- uid: Luny.Engine.Bridge.LunyPath.NativePath
+  commentId: P:Luny.Engine.Bridge.LunyPath.NativePath
+  parent: Luny.Engine.Bridge.LunyPath
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyPath.html#Luny_Engine_Bridge_LunyPath_NativePath
+  name: NativePath
+  nameWithType: LunyPath.NativePath
+  fullName: Luny.Engine.Bridge.LunyPath.NativePath
+- uid: Luny.Engine.Bridge.LunyPath.AgnosticPath
+  commentId: P:Luny.Engine.Bridge.LunyPath.AgnosticPath
+  parent: Luny.Engine.Bridge.LunyPath
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyPath.html#Luny_Engine_Bridge_LunyPath_AgnosticPath
+  name: AgnosticPath
+  nameWithType: LunyPath.AgnosticPath
+  fullName: Luny.Engine.Bridge.LunyPath.AgnosticPath
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Engine.Bridge.LunyAssetPath.op_Implicit*
+  commentId: Overload:Luny.Engine.Bridge.LunyAssetPath.op_Implicit
+  name: implicit operator
+  nameWithType: LunyAssetPath.implicit operator
+  fullName: Luny.Engine.Bridge.LunyAssetPath.implicit operator
+  nameWithType.vb: LunyAssetPath.CType
+  fullName.vb: Luny.Engine.Bridge.LunyAssetPath.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Engine.Bridge.LunyAssetPath
+  commentId: T:Luny.Engine.Bridge.LunyAssetPath
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyAssetPath.html
+  name: LunyAssetPath
+  nameWithType: LunyAssetPath
+  fullName: Luny.Engine.Bridge.LunyAssetPath
+- uid: Luny.Engine.Bridge.LunyAssetPath.FromNative*
+  commentId: Overload:Luny.Engine.Bridge.LunyAssetPath.FromNative
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyAssetPath.html#Luny_Engine_Bridge_LunyAssetPath_FromNative_System_String_
+  name: FromNative
+  nameWithType: LunyAssetPath.FromNative
+  fullName: Luny.Engine.Bridge.LunyAssetPath.FromNative
+- uid: Luny.Engine.Bridge.LunyAssetPath.FromAgnostic*
+  commentId: Overload:Luny.Engine.Bridge.LunyAssetPath.FromAgnostic
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyAssetPath.html#Luny_Engine_Bridge_LunyAssetPath_FromAgnostic_System_String_
+  name: FromAgnostic
+  nameWithType: LunyAssetPath.FromAgnostic
+  fullName: Luny.Engine.Bridge.LunyAssetPath.FromAgnostic
+- uid: Luny.Engine.Bridge.LunyPath.PathType
+  commentId: P:Luny.Engine.Bridge.LunyPath.PathType
+  parent: Luny.Engine.Bridge.LunyPath
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyPath.html#Luny_Engine_Bridge_LunyPath_PathType
+  name: PathType
+  nameWithType: LunyPath.PathType
+  fullName: Luny.Engine.Bridge.LunyPath.PathType
+- uid: Luny.Engine.Bridge.LunyAssetPath.PathType*
+  commentId: Overload:Luny.Engine.Bridge.LunyAssetPath.PathType
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyAssetPath.html#Luny_Engine_Bridge_LunyAssetPath_PathType
+  name: PathType
+  nameWithType: LunyAssetPath.PathType
+  fullName: Luny.Engine.Bridge.LunyAssetPath.PathType
+- uid: Luny.Engine.Bridge.LunyPathType
+  commentId: T:Luny.Engine.Bridge.LunyPathType
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyPathType.html
+  name: LunyPathType
+  nameWithType: LunyPathType
+  fullName: Luny.Engine.Bridge.LunyPathType

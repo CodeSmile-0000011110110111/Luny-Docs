@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ICoroutineCounterBuilderState
+  commentId: T:LunyScript.ICoroutineCounterBuilderState
+  id: ICoroutineCounterBuilderState
+  parent: LunyScript
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICoroutineCounterBuilderState
+  nameWithType: ICoroutineCounterBuilderState
+  fullName: LunyScript.ICoroutineCounterBuilderState
+  type: Interface
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public interface ICoroutineCounterBuilderState
+    content.vb: Public Interface ICoroutineCounterBuilderState
+  derivedClasses:
+  - LunyScript.CoroutineCounterBuilderUnitSet
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript

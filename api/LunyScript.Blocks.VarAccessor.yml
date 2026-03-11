@@ -1,0 +1,420 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.VarAccessor
+  commentId: T:LunyScript.Blocks.VarAccessor
+  id: VarAccessor
+  parent: LunyScript.Blocks
+  children:
+  - LunyScript.Blocks.VarAccessor.Constant(System.String,Luny.Variable)
+  - LunyScript.Blocks.VarAccessor.Define(System.String,Luny.Variable)
+  - LunyScript.Blocks.VarAccessor.Item(System.String)
+  langs:
+  - csharp
+  - vb
+  name: VarAccessor
+  nameWithType: VarAccessor
+  fullName: LunyScript.Blocks.VarAccessor
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: >-
+    Provides indexed access to script variables.
+
+    Getter returns a VariableBlock for use in script expressions and conditions.
+
+    Setter performs immediate variable assignment during Build().
+  example: []
+  syntax:
+    content: public sealed class VarAccessor
+    content.vb: Public NotInheritable Class VarAccessor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: LunyScript.Blocks.VarAccessor.Define(System.String,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VarAccessor.Define(System.String,Luny.Variable)
+  id: Define(System.String,Luny.Variable)
+  parent: LunyScript.Blocks.VarAccessor
+  langs:
+  - csharp
+  - vb
+  name: Define(string, Variable)
+  nameWithType: VarAccessor.Define(string, Variable)
+  fullName: LunyScript.Blocks.VarAccessor.Define(string, Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public TableVariableBlock Define(string name, Variable value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.TableVariableBlock
+    content.vb: Public Function Define(name As String, value As Variable) As TableVariableBlock
+  overload: LunyScript.Blocks.VarAccessor.Define*
+  nameWithType.vb: VarAccessor.Define(String, Variable)
+  fullName.vb: LunyScript.Blocks.VarAccessor.Define(String, Luny.Variable)
+  name.vb: Define(String, Variable)
+- uid: LunyScript.Blocks.VarAccessor.Constant(System.String,Luny.Variable)
+  commentId: M:LunyScript.Blocks.VarAccessor.Constant(System.String,Luny.Variable)
+  id: Constant(System.String,Luny.Variable)
+  parent: LunyScript.Blocks.VarAccessor
+  langs:
+  - csharp
+  - vb
+  name: Constant(string, Variable)
+  nameWithType: VarAccessor.Constant(string, Variable)
+  fullName: LunyScript.Blocks.VarAccessor.Constant(string, Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public TableVariableBlock Constant(string name, Variable value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.TableVariableBlock
+    content.vb: Public Function Constant(name As String, value As Variable) As TableVariableBlock
+  overload: LunyScript.Blocks.VarAccessor.Constant*
+  nameWithType.vb: VarAccessor.Constant(String, Variable)
+  fullName.vb: LunyScript.Blocks.VarAccessor.Constant(String, Luny.Variable)
+  name.vb: Constant(String, Variable)
+- uid: LunyScript.Blocks.VarAccessor.Item(System.String)
+  commentId: P:LunyScript.Blocks.VarAccessor.Item(System.String)
+  id: Item(System.String)
+  parent: LunyScript.Blocks.VarAccessor
+  langs:
+  - csharp
+  - vb
+  name: this[string]
+  nameWithType: VarAccessor.this[string]
+  fullName: LunyScript.Blocks.VarAccessor.this[string]
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public TableVariableBlock this[string name] { get; set; }
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.Blocks.TableVariableBlock
+    content.vb: Public Default Property this[](name As String) As TableVariableBlock
+  overload: LunyScript.Blocks.VarAccessor.Item*
+  nameWithType.vb: VarAccessor.this[](String)
+  fullName.vb: LunyScript.Blocks.VarAccessor.this[](String)
+  name.vb: this[](String)
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks.VarAccessor.Define*
+  commentId: Overload:LunyScript.Blocks.VarAccessor.Define
+  isExternal: true
+  href: LunyScript.Blocks.VarAccessor.html#LunyScript_Blocks_VarAccessor_Define_System_String_Luny_Variable_
+  name: Define
+  nameWithType: VarAccessor.Define
+  fullName: LunyScript.Blocks.VarAccessor.Define
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Variable
+  commentId: T:Luny.Variable
+  parent: Luny
+  isExternal: true
+  href: Luny.Variable.html
+  name: Variable
+  nameWithType: Variable
+  fullName: Luny.Variable
+- uid: LunyScript.Blocks.TableVariableBlock
+  commentId: T:LunyScript.Blocks.TableVariableBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.TableVariableBlock.html
+  name: TableVariableBlock
+  nameWithType: TableVariableBlock
+  fullName: LunyScript.Blocks.TableVariableBlock
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: LunyScript.Blocks.VarAccessor.Constant*
+  commentId: Overload:LunyScript.Blocks.VarAccessor.Constant
+  isExternal: true
+  href: LunyScript.Blocks.VarAccessor.html#LunyScript_Blocks_VarAccessor_Constant_System_String_Luny_Variable_
+  name: Constant
+  nameWithType: VarAccessor.Constant
+  fullName: LunyScript.Blocks.VarAccessor.Constant
+- uid: LunyScript.Blocks.VarAccessor.Item*
+  commentId: Overload:LunyScript.Blocks.VarAccessor.Item
+  isExternal: true
+  href: LunyScript.Blocks.VarAccessor.html#LunyScript_Blocks_VarAccessor_Item_System_String_
+  name: this
+  nameWithType: VarAccessor.this
+  fullName: LunyScript.Blocks.VarAccessor.this
+  nameWithType.vb: VarAccessor.this[]
+  fullName.vb: LunyScript.Blocks.VarAccessor.this[]
+  name.vb: this[]

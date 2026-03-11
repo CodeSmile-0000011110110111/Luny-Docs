@@ -1,0 +1,311 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot
+  commentId: T:Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot
+  id: ILunyEngineProfilerSnapshot
+  parent: Luny.Engine.Diagnostics
+  children:
+  - Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.CategorizedMetrics
+  - Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount
+  - Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp
+  langs:
+  - csharp
+  - vb
+  name: ILunyEngineProfilerSnapshot
+  nameWithType: ILunyEngineProfilerSnapshot
+  fullName: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot
+  type: Interface
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Diagnostics
+  summary: >-
+    Immutable snapshot of profiler state at a specific point in time.
+
+    Useful for querying performance metrics without blocking the profiler.
+  example: []
+  syntax:
+    content: public interface ILunyEngineProfilerSnapshot
+    content.vb: Public Interface ILunyEngineProfilerSnapshot
+- uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.CategorizedMetrics
+  commentId: P:Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.CategorizedMetrics
+  id: CategorizedMetrics
+  parent: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: CategorizedMetrics
+  nameWithType: ILunyEngineProfilerSnapshot.CategorizedMetrics
+  fullName: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.CategorizedMetrics
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Diagnostics
+  syntax:
+    content: IReadOnlyDictionary<LunyEngineLifecycleEvents, IReadOnlyList<LunyObserverMetrics>> CategorizedMetrics { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{Luny.Engine.Diagnostics.LunyEngineLifecycleEvents,System.Collections.Generic.IReadOnlyList{Luny.Engine.Diagnostics.LunyObserverMetrics}}
+    content.vb: ReadOnly Property CategorizedMetrics As IReadOnlyDictionary(Of LunyEngineLifecycleEvents, IReadOnlyList(Of LunyObserverMetrics))
+  overload: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.CategorizedMetrics*
+- uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp
+  commentId: P:Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp
+  id: Timestamp
+  parent: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Timestamp
+  nameWithType: ILunyEngineProfilerSnapshot.Timestamp
+  fullName: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Diagnostics
+  syntax:
+    content: DateTime Timestamp { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: ReadOnly Property Timestamp As Date
+  overload: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp*
+- uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount
+  commentId: P:Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount
+  id: FrameCount
+  parent: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot
+  langs:
+  - csharp
+  - vb
+  name: FrameCount
+  nameWithType: ILunyEngineProfilerSnapshot.FrameCount
+  fullName: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Diagnostics
+  syntax:
+    content: long FrameCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property FrameCount As Long
+  overload: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount*
+references:
+- uid: Luny.Engine.Diagnostics
+  commentId: N:Luny.Engine.Diagnostics
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Diagnostics
+  nameWithType: Luny.Engine.Diagnostics
+  fullName: Luny.Engine.Diagnostics
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Luny.Engine.Diagnostics.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Luny.Engine.Diagnostics.html
+- uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.CategorizedMetrics*
+  commentId: Overload:Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.CategorizedMetrics
+  isExternal: true
+  href: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.html#Luny_Engine_Diagnostics_ILunyEngineProfilerSnapshot_CategorizedMetrics
+  name: CategorizedMetrics
+  nameWithType: ILunyEngineProfilerSnapshot.CategorizedMetrics
+  fullName: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.CategorizedMetrics
+- uid: System.Collections.Generic.IReadOnlyDictionary{Luny.Engine.Diagnostics.LunyEngineLifecycleEvents,System.Collections.Generic.IReadOnlyList{Luny.Engine.Diagnostics.LunyObserverMetrics}}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{Luny.Engine.Diagnostics.LunyEngineLifecycleEvents,System.Collections.Generic.IReadOnlyList{Luny.Engine.Diagnostics.LunyObserverMetrics}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<LunyEngineLifecycleEvents, IReadOnlyList<LunyObserverMetrics>>
+  nameWithType: IReadOnlyDictionary<LunyEngineLifecycleEvents, IReadOnlyList<LunyObserverMetrics>>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Luny.Engine.Diagnostics.LunyEngineLifecycleEvents, System.Collections.Generic.IReadOnlyList<Luny.Engine.Diagnostics.LunyObserverMetrics>>
+  nameWithType.vb: IReadOnlyDictionary(Of LunyEngineLifecycleEvents, IReadOnlyList(Of LunyObserverMetrics))
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Luny.Engine.Diagnostics.LunyEngineLifecycleEvents, System.Collections.Generic.IReadOnlyList(Of Luny.Engine.Diagnostics.LunyObserverMetrics))
+  name.vb: IReadOnlyDictionary(Of LunyEngineLifecycleEvents, IReadOnlyList(Of LunyObserverMetrics))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
+    name: LunyEngineLifecycleEvents
+    isExternal: true
+    href: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Luny.Engine.Diagnostics.LunyObserverMetrics
+    name: LunyObserverMetrics
+    isExternal: true
+    href: Luny.Engine.Diagnostics.LunyObserverMetrics.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
+    name: LunyEngineLifecycleEvents
+    isExternal: true
+    href: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Diagnostics.LunyObserverMetrics
+    name: LunyObserverMetrics
+    isExternal: true
+    href: Luny.Engine.Diagnostics.LunyObserverMetrics.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp*
+  commentId: Overload:Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp
+  isExternal: true
+  href: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.html#Luny_Engine_Diagnostics_ILunyEngineProfilerSnapshot_Timestamp
+  name: Timestamp
+  nameWithType: ILunyEngineProfilerSnapshot.Timestamp
+  fullName: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount*
+  commentId: Overload:Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount
+  isExternal: true
+  href: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.html#Luny_Engine_Diagnostics_ILunyEngineProfilerSnapshot_FrameCount
+  name: FrameCount
+  nameWithType: ILunyEngineProfilerSnapshot.FrameCount
+  fullName: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

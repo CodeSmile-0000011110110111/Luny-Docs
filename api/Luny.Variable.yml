@@ -1,0 +1,2161 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Variable
+  commentId: T:Luny.Variable
+  id: Variable
+  parent: Luny
+  children:
+  - Luny.Variable.AsBoolean
+  - Luny.Variable.AsDouble
+  - Luny.Variable.AsInt32
+  - Luny.Variable.AsInt64
+  - Luny.Variable.AsNumber
+  - Luny.Variable.AsSingle
+  - Luny.Variable.AsString
+  - Luny.Variable.As``1
+  - Luny.Variable.Equals(Luny.Variable)
+  - Luny.Variable.Equals(System.Boolean)
+  - Luny.Variable.Equals(System.Double)
+  - Luny.Variable.Equals(System.Object)
+  - Luny.Variable.Equals(System.String)
+  - Luny.Variable.GetHashCode
+  - Luny.Variable.IsHigh
+  - Luny.Variable.IsNormalized
+  - Luny.Variable.IsNull
+  - Luny.Variable.IsNullOrEmpty
+  - Luny.Variable.IsNullOrWhitespace
+  - Luny.Variable.IsTrue
+  - Luny.Variable.Name
+  - Luny.Variable.Named(Luny.Number,System.String)
+  - Luny.Variable.Named(System.Boolean,System.String)
+  - Luny.Variable.Named(System.Double,System.String)
+  - Luny.Variable.Named(System.Int32,System.String)
+  - Luny.Variable.Named(System.Int64,System.String)
+  - Luny.Variable.Named(System.Object,System.String)
+  - Luny.Variable.Named(System.Single,System.String)
+  - Luny.Variable.Named(System.String,System.String)
+  - Luny.Variable.Object
+  - Luny.Variable.ToString
+  - Luny.Variable.Type
+  - Luny.Variable.Value
+  - Luny.Variable.op_Equality(Luny.Variable,Luny.Variable)
+  - Luny.Variable.op_Implicit(Luny.Number)~Luny.Variable
+  - Luny.Variable.op_Implicit(Luny.Variable)~Luny.Number
+  - Luny.Variable.op_Implicit(Luny.Variable)~System.Boolean
+  - Luny.Variable.op_Implicit(Luny.Variable)~System.Double
+  - Luny.Variable.op_Implicit(Luny.Variable)~System.Int32
+  - Luny.Variable.op_Implicit(Luny.Variable)~System.Int64
+  - Luny.Variable.op_Implicit(Luny.Variable)~System.Single
+  - Luny.Variable.op_Implicit(Luny.Variable)~System.String
+  - Luny.Variable.op_Implicit(System.Boolean)~Luny.Variable
+  - Luny.Variable.op_Implicit(System.Double)~Luny.Variable
+  - Luny.Variable.op_Implicit(System.Int32)~Luny.Variable
+  - Luny.Variable.op_Implicit(System.Int64)~Luny.Variable
+  - Luny.Variable.op_Implicit(System.Single)~Luny.Variable
+  - Luny.Variable.op_Implicit(System.String)~Luny.Variable
+  - Luny.Variable.op_Inequality(Luny.Variable,Luny.Variable)
+  langs:
+  - csharp
+  - vb
+  name: Variable
+  nameWithType: Variable
+  fullName: Luny.Variable
+  type: Struct
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: 'public readonly struct Variable : IEquatable<Variable>, IEquatable<bool>, IEquatable<double>, IEquatable<string>'
+    content.vb: Public Structure Variable Implements IEquatable(Of Variable), IEquatable(Of Boolean), IEquatable(Of Double), IEquatable(Of String)
+  implements:
+  - System.IEquatable{Luny.Variable}
+  - System.IEquatable{System.Boolean}
+  - System.IEquatable{System.Double}
+  - System.IEquatable{System.String}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Luny.Variable.Named(System.Boolean,System.String)
+  commentId: M:Luny.Variable.Named(System.Boolean,System.String)
+  id: Named(System.Boolean,System.String)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Named(bool, string)
+  nameWithType: Variable.Named(bool, string)
+  fullName: Luny.Variable.Named(bool, string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static Variable Named(bool value, string name)
+    parameters:
+    - id: value
+      type: System.Boolean
+    - id: name
+      type: System.String
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Function Named(value As Boolean, name As String) As Variable
+  overload: Luny.Variable.Named*
+  nameWithType.vb: Variable.Named(Boolean, String)
+  fullName.vb: Luny.Variable.Named(Boolean, String)
+  name.vb: Named(Boolean, String)
+- uid: Luny.Variable.Named(System.Double,System.String)
+  commentId: M:Luny.Variable.Named(System.Double,System.String)
+  id: Named(System.Double,System.String)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Named(double, string)
+  nameWithType: Variable.Named(double, string)
+  fullName: Luny.Variable.Named(double, string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static Variable Named(double value, string name)
+    parameters:
+    - id: value
+      type: System.Double
+    - id: name
+      type: System.String
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Function Named(value As Double, name As String) As Variable
+  overload: Luny.Variable.Named*
+  nameWithType.vb: Variable.Named(Double, String)
+  fullName.vb: Luny.Variable.Named(Double, String)
+  name.vb: Named(Double, String)
+- uid: Luny.Variable.Named(System.Single,System.String)
+  commentId: M:Luny.Variable.Named(System.Single,System.String)
+  id: Named(System.Single,System.String)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Named(float, string)
+  nameWithType: Variable.Named(float, string)
+  fullName: Luny.Variable.Named(float, string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static Variable Named(float value, string name)
+    parameters:
+    - id: value
+      type: System.Single
+    - id: name
+      type: System.String
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Function Named(value As Single, name As String) As Variable
+  overload: Luny.Variable.Named*
+  nameWithType.vb: Variable.Named(Single, String)
+  fullName.vb: Luny.Variable.Named(Single, String)
+  name.vb: Named(Single, String)
+- uid: Luny.Variable.Named(System.Int32,System.String)
+  commentId: M:Luny.Variable.Named(System.Int32,System.String)
+  id: Named(System.Int32,System.String)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Named(int, string)
+  nameWithType: Variable.Named(int, string)
+  fullName: Luny.Variable.Named(int, string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static Variable Named(int value, string name)
+    parameters:
+    - id: value
+      type: System.Int32
+    - id: name
+      type: System.String
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Function Named(value As Integer, name As String) As Variable
+  overload: Luny.Variable.Named*
+  nameWithType.vb: Variable.Named(Integer, String)
+  fullName.vb: Luny.Variable.Named(Integer, String)
+  name.vb: Named(Integer, String)
+- uid: Luny.Variable.Named(System.Int64,System.String)
+  commentId: M:Luny.Variable.Named(System.Int64,System.String)
+  id: Named(System.Int64,System.String)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Named(long, string)
+  nameWithType: Variable.Named(long, string)
+  fullName: Luny.Variable.Named(long, string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static Variable Named(long value, string name)
+    parameters:
+    - id: value
+      type: System.Int64
+    - id: name
+      type: System.String
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Function Named(value As Long, name As String) As Variable
+  overload: Luny.Variable.Named*
+  nameWithType.vb: Variable.Named(Long, String)
+  fullName.vb: Luny.Variable.Named(Long, String)
+  name.vb: Named(Long, String)
+- uid: Luny.Variable.Named(Luny.Number,System.String)
+  commentId: M:Luny.Variable.Named(Luny.Number,System.String)
+  id: Named(Luny.Number,System.String)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Named(Number, string)
+  nameWithType: Variable.Named(Number, string)
+  fullName: Luny.Variable.Named(Luny.Number, string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static Variable Named(Number value, string name)
+    parameters:
+    - id: value
+      type: Luny.Number
+    - id: name
+      type: System.String
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Function Named(value As Number, name As String) As Variable
+  overload: Luny.Variable.Named*
+  nameWithType.vb: Variable.Named(Number, String)
+  fullName.vb: Luny.Variable.Named(Luny.Number, String)
+  name.vb: Named(Number, String)
+- uid: Luny.Variable.Named(System.String,System.String)
+  commentId: M:Luny.Variable.Named(System.String,System.String)
+  id: Named(System.String,System.String)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Named(string, string)
+  nameWithType: Variable.Named(string, string)
+  fullName: Luny.Variable.Named(string, string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static Variable Named(string value, string name)
+    parameters:
+    - id: value
+      type: System.String
+    - id: name
+      type: System.String
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Function Named(value As String, name As String) As Variable
+  overload: Luny.Variable.Named*
+  nameWithType.vb: Variable.Named(String, String)
+  fullName.vb: Luny.Variable.Named(String, String)
+  name.vb: Named(String, String)
+- uid: Luny.Variable.Named(System.Object,System.String)
+  commentId: M:Luny.Variable.Named(System.Object,System.String)
+  id: Named(System.Object,System.String)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Named(object, string)
+  nameWithType: Variable.Named(object, string)
+  fullName: Luny.Variable.Named(object, string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static Variable Named(object value, string name)
+    parameters:
+    - id: value
+      type: System.Object
+    - id: name
+      type: System.String
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Function Named(value As Object, name As String) As Variable
+  overload: Luny.Variable.Named*
+  nameWithType.vb: Variable.Named(Object, String)
+  fullName.vb: Luny.Variable.Named(Object, String)
+  name.vb: Named(Object, String)
+- uid: Luny.Variable.AsBoolean
+  commentId: M:Luny.Variable.AsBoolean
+  id: AsBoolean
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: AsBoolean()
+  nameWithType: Variable.AsBoolean()
+  fullName: Luny.Variable.AsBoolean()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public bool AsBoolean()
+    return:
+      type: System.Boolean
+    content.vb: Public Function AsBoolean() As Boolean
+  overload: Luny.Variable.AsBoolean*
+- uid: Luny.Variable.AsNumber
+  commentId: M:Luny.Variable.AsNumber
+  id: AsNumber
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: AsNumber()
+  nameWithType: Variable.AsNumber()
+  fullName: Luny.Variable.AsNumber()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public Number AsNumber()
+    return:
+      type: Luny.Number
+    content.vb: Public Function AsNumber() As Number
+  overload: Luny.Variable.AsNumber*
+- uid: Luny.Variable.AsDouble
+  commentId: M:Luny.Variable.AsDouble
+  id: AsDouble
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: AsDouble()
+  nameWithType: Variable.AsDouble()
+  fullName: Luny.Variable.AsDouble()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public double AsDouble()
+    return:
+      type: System.Double
+    content.vb: Public Function AsDouble() As Double
+  overload: Luny.Variable.AsDouble*
+- uid: Luny.Variable.AsSingle
+  commentId: M:Luny.Variable.AsSingle
+  id: AsSingle
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: AsSingle()
+  nameWithType: Variable.AsSingle()
+  fullName: Luny.Variable.AsSingle()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public float AsSingle()
+    return:
+      type: System.Single
+    content.vb: Public Function AsSingle() As Single
+  overload: Luny.Variable.AsSingle*
+- uid: Luny.Variable.AsInt64
+  commentId: M:Luny.Variable.AsInt64
+  id: AsInt64
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: AsInt64()
+  nameWithType: Variable.AsInt64()
+  fullName: Luny.Variable.AsInt64()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public long AsInt64()
+    return:
+      type: System.Int64
+    content.vb: Public Function AsInt64() As Long
+  overload: Luny.Variable.AsInt64*
+- uid: Luny.Variable.AsInt32
+  commentId: M:Luny.Variable.AsInt32
+  id: AsInt32
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: AsInt32()
+  nameWithType: Variable.AsInt32()
+  fullName: Luny.Variable.AsInt32()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public int AsInt32()
+    return:
+      type: System.Int32
+    content.vb: Public Function AsInt32() As Integer
+  overload: Luny.Variable.AsInt32*
+- uid: Luny.Variable.AsString
+  commentId: M:Luny.Variable.AsString
+  id: AsString
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: AsString()
+  nameWithType: Variable.AsString()
+  fullName: Luny.Variable.AsString()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public string AsString()
+    return:
+      type: System.String
+    content.vb: Public Function AsString() As String
+  overload: Luny.Variable.AsString*
+- uid: Luny.Variable.As``1
+  commentId: M:Luny.Variable.As``1
+  id: As``1
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: As<T>()
+  nameWithType: Variable.As<T>()
+  fullName: Luny.Variable.As<T>()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public T As<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function [As](Of T)() As T
+  overload: Luny.Variable.As*
+  nameWithType.vb: Variable.As(Of T)()
+  fullName.vb: Luny.Variable.As(Of T)()
+  name.vb: As(Of T)()
+- uid: Luny.Variable.op_Implicit(System.Int32)~Luny.Variable
+  commentId: M:Luny.Variable.op_Implicit(System.Int32)~Luny.Variable
+  id: op_Implicit(System.Int32)~Luny.Variable
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Variable(int)
+  nameWithType: Variable.implicit operator Variable(int)
+  fullName: Luny.Variable.implicit operator Luny.Variable(int)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator Variable(int v)
+    parameters:
+    - id: v
+      type: System.Int32
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Widening Operator CType(v As Integer) As Variable
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Integer)
+  fullName.vb: Luny.Variable.CType(Integer)
+  name.vb: CType(Integer)
+- uid: Luny.Variable.op_Implicit(System.Int64)~Luny.Variable
+  commentId: M:Luny.Variable.op_Implicit(System.Int64)~Luny.Variable
+  id: op_Implicit(System.Int64)~Luny.Variable
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Variable(long)
+  nameWithType: Variable.implicit operator Variable(long)
+  fullName: Luny.Variable.implicit operator Luny.Variable(long)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator Variable(long v)
+    parameters:
+    - id: v
+      type: System.Int64
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Widening Operator CType(v As Long) As Variable
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Long)
+  fullName.vb: Luny.Variable.CType(Long)
+  name.vb: CType(Long)
+- uid: Luny.Variable.op_Implicit(System.Single)~Luny.Variable
+  commentId: M:Luny.Variable.op_Implicit(System.Single)~Luny.Variable
+  id: op_Implicit(System.Single)~Luny.Variable
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Variable(float)
+  nameWithType: Variable.implicit operator Variable(float)
+  fullName: Luny.Variable.implicit operator Luny.Variable(float)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator Variable(float v)
+    parameters:
+    - id: v
+      type: System.Single
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Widening Operator CType(v As Single) As Variable
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Single)
+  fullName.vb: Luny.Variable.CType(Single)
+  name.vb: CType(Single)
+- uid: Luny.Variable.op_Implicit(System.Double)~Luny.Variable
+  commentId: M:Luny.Variable.op_Implicit(System.Double)~Luny.Variable
+  id: op_Implicit(System.Double)~Luny.Variable
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Variable(double)
+  nameWithType: Variable.implicit operator Variable(double)
+  fullName: Luny.Variable.implicit operator Luny.Variable(double)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator Variable(double v)
+    parameters:
+    - id: v
+      type: System.Double
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Widening Operator CType(v As Double) As Variable
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Double)
+  fullName.vb: Luny.Variable.CType(Double)
+  name.vb: CType(Double)
+- uid: Luny.Variable.op_Implicit(System.Boolean)~Luny.Variable
+  commentId: M:Luny.Variable.op_Implicit(System.Boolean)~Luny.Variable
+  id: op_Implicit(System.Boolean)~Luny.Variable
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Variable(bool)
+  nameWithType: Variable.implicit operator Variable(bool)
+  fullName: Luny.Variable.implicit operator Luny.Variable(bool)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator Variable(bool v)
+    parameters:
+    - id: v
+      type: System.Boolean
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Widening Operator CType(v As Boolean) As Variable
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Boolean)
+  fullName.vb: Luny.Variable.CType(Boolean)
+  name.vb: CType(Boolean)
+- uid: Luny.Variable.op_Implicit(Luny.Number)~Luny.Variable
+  commentId: M:Luny.Variable.op_Implicit(Luny.Number)~Luny.Variable
+  id: op_Implicit(Luny.Number)~Luny.Variable
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Variable(Number)
+  nameWithType: Variable.implicit operator Variable(Number)
+  fullName: Luny.Variable.implicit operator Luny.Variable(Luny.Number)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator Variable(Number v)
+    parameters:
+    - id: v
+      type: Luny.Number
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Widening Operator CType(v As Number) As Variable
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Number)
+  fullName.vb: Luny.Variable.CType(Luny.Number)
+  name.vb: CType(Number)
+- uid: Luny.Variable.op_Implicit(System.String)~Luny.Variable
+  commentId: M:Luny.Variable.op_Implicit(System.String)~Luny.Variable
+  id: op_Implicit(System.String)~Luny.Variable
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Variable(string)
+  nameWithType: Variable.implicit operator Variable(string)
+  fullName: Luny.Variable.implicit operator Luny.Variable(string)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator Variable(string v)
+    parameters:
+    - id: v
+      type: System.String
+    return:
+      type: Luny.Variable
+    content.vb: Public Shared Widening Operator CType(v As String) As Variable
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(String)
+  fullName.vb: Luny.Variable.CType(String)
+  name.vb: CType(String)
+- uid: Luny.Variable.op_Implicit(Luny.Variable)~System.Int32
+  commentId: M:Luny.Variable.op_Implicit(Luny.Variable)~System.Int32
+  id: op_Implicit(Luny.Variable)~System.Int32
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator int(Variable)
+  nameWithType: Variable.implicit operator int(Variable)
+  fullName: Luny.Variable.implicit operator int(Luny.Variable)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator int(Variable v)
+    parameters:
+    - id: v
+      type: Luny.Variable
+    return:
+      type: System.Int32
+    content.vb: Public Shared Widening Operator CType(v As Variable) As Integer
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Variable)
+  fullName.vb: Luny.Variable.CType(Luny.Variable)
+  name.vb: CType(Variable)
+- uid: Luny.Variable.op_Implicit(Luny.Variable)~System.Int64
+  commentId: M:Luny.Variable.op_Implicit(Luny.Variable)~System.Int64
+  id: op_Implicit(Luny.Variable)~System.Int64
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator long(Variable)
+  nameWithType: Variable.implicit operator long(Variable)
+  fullName: Luny.Variable.implicit operator long(Luny.Variable)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator long(Variable v)
+    parameters:
+    - id: v
+      type: Luny.Variable
+    return:
+      type: System.Int64
+    content.vb: Public Shared Widening Operator CType(v As Variable) As Long
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Variable)
+  fullName.vb: Luny.Variable.CType(Luny.Variable)
+  name.vb: CType(Variable)
+- uid: Luny.Variable.op_Implicit(Luny.Variable)~System.Single
+  commentId: M:Luny.Variable.op_Implicit(Luny.Variable)~System.Single
+  id: op_Implicit(Luny.Variable)~System.Single
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator float(Variable)
+  nameWithType: Variable.implicit operator float(Variable)
+  fullName: Luny.Variable.implicit operator float(Luny.Variable)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator float(Variable v)
+    parameters:
+    - id: v
+      type: Luny.Variable
+    return:
+      type: System.Single
+    content.vb: Public Shared Widening Operator CType(v As Variable) As Single
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Variable)
+  fullName.vb: Luny.Variable.CType(Luny.Variable)
+  name.vb: CType(Variable)
+- uid: Luny.Variable.op_Implicit(Luny.Variable)~System.Double
+  commentId: M:Luny.Variable.op_Implicit(Luny.Variable)~System.Double
+  id: op_Implicit(Luny.Variable)~System.Double
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator double(Variable)
+  nameWithType: Variable.implicit operator double(Variable)
+  fullName: Luny.Variable.implicit operator double(Luny.Variable)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator double(Variable v)
+    parameters:
+    - id: v
+      type: Luny.Variable
+    return:
+      type: System.Double
+    content.vb: Public Shared Widening Operator CType(v As Variable) As Double
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Variable)
+  fullName.vb: Luny.Variable.CType(Luny.Variable)
+  name.vb: CType(Variable)
+- uid: Luny.Variable.op_Implicit(Luny.Variable)~System.Boolean
+  commentId: M:Luny.Variable.op_Implicit(Luny.Variable)~System.Boolean
+  id: op_Implicit(Luny.Variable)~System.Boolean
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator bool(Variable)
+  nameWithType: Variable.implicit operator bool(Variable)
+  fullName: Luny.Variable.implicit operator bool(Luny.Variable)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator bool(Variable v)
+    parameters:
+    - id: v
+      type: Luny.Variable
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Widening Operator CType(v As Variable) As Boolean
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Variable)
+  fullName.vb: Luny.Variable.CType(Luny.Variable)
+  name.vb: CType(Variable)
+- uid: Luny.Variable.op_Implicit(Luny.Variable)~Luny.Number
+  commentId: M:Luny.Variable.op_Implicit(Luny.Variable)~Luny.Number
+  id: op_Implicit(Luny.Variable)~Luny.Number
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Number(Variable)
+  nameWithType: Variable.implicit operator Number(Variable)
+  fullName: Luny.Variable.implicit operator Luny.Number(Luny.Variable)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator Number(Variable v)
+    parameters:
+    - id: v
+      type: Luny.Variable
+    return:
+      type: Luny.Number
+    content.vb: Public Shared Widening Operator CType(v As Variable) As Number
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Variable)
+  fullName.vb: Luny.Variable.CType(Luny.Variable)
+  name.vb: CType(Variable)
+- uid: Luny.Variable.op_Implicit(Luny.Variable)~System.String
+  commentId: M:Luny.Variable.op_Implicit(Luny.Variable)~System.String
+  id: op_Implicit(Luny.Variable)~System.String
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string(Variable)
+  nameWithType: Variable.implicit operator string(Variable)
+  fullName: Luny.Variable.implicit operator string(Luny.Variable)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static implicit operator string(Variable v)
+    parameters:
+    - id: v
+      type: Luny.Variable
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(v As Variable) As String
+  overload: Luny.Variable.op_Implicit*
+  nameWithType.vb: Variable.CType(Variable)
+  fullName.vb: Luny.Variable.CType(Luny.Variable)
+  name.vb: CType(Variable)
+- uid: Luny.Variable.ToString
+  commentId: M:Luny.Variable.ToString
+  id: ToString
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Variable.ToString()
+  fullName: Luny.Variable.ToString()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: >-
+      [ExcludeFromCodeCoverage]
+
+      public override string ToString()
+    return:
+      type: System.String
+    content.vb: >-
+      <ExcludeFromCodeCoverage>
+
+      Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Luny.Variable.ToString*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute
+    ctor: System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute.#ctor
+    arguments: []
+- uid: Luny.Variable.Equals(System.Boolean)
+  commentId: M:Luny.Variable.Equals(System.Boolean)
+  id: Equals(System.Boolean)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Equals(bool)
+  nameWithType: Variable.Equals(bool)
+  fullName: Luny.Variable.Equals(bool)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public bool Equals(bool b)
+    parameters:
+    - id: b
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(b As Boolean) As Boolean
+  overload: Luny.Variable.Equals*
+  implements:
+  - System.IEquatable{System.Boolean}.Equals(System.Boolean)
+  nameWithType.vb: Variable.Equals(Boolean)
+  fullName.vb: Luny.Variable.Equals(Boolean)
+  name.vb: Equals(Boolean)
+- uid: Luny.Variable.Equals(System.Double)
+  commentId: M:Luny.Variable.Equals(System.Double)
+  id: Equals(System.Double)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Equals(double)
+  nameWithType: Variable.Equals(double)
+  fullName: Luny.Variable.Equals(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public bool Equals(double d)
+    parameters:
+    - id: d
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(d As Double) As Boolean
+  overload: Luny.Variable.Equals*
+  implements:
+  - System.IEquatable{System.Double}.Equals(System.Double)
+  nameWithType.vb: Variable.Equals(Double)
+  fullName.vb: Luny.Variable.Equals(Double)
+  name.vb: Equals(Double)
+- uid: Luny.Variable.Equals(System.String)
+  commentId: M:Luny.Variable.Equals(System.String)
+  id: Equals(System.String)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Equals(string)
+  nameWithType: Variable.Equals(string)
+  fullName: Luny.Variable.Equals(string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public bool Equals(string s)
+    parameters:
+    - id: s
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(s As String) As Boolean
+  overload: Luny.Variable.Equals*
+  implements:
+  - System.IEquatable{System.String}.Equals(System.String)
+  nameWithType.vb: Variable.Equals(String)
+  fullName.vb: Luny.Variable.Equals(String)
+  name.vb: Equals(String)
+- uid: Luny.Variable.Equals(Luny.Variable)
+  commentId: M:Luny.Variable.Equals(Luny.Variable)
+  id: Equals(Luny.Variable)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Equals(Variable)
+  nameWithType: Variable.Equals(Variable)
+  fullName: Luny.Variable.Equals(Luny.Variable)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public bool Equals(Variable other)
+    parameters:
+    - id: other
+      type: Luny.Variable
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Variable) As Boolean
+  overload: Luny.Variable.Equals*
+  implements:
+  - System.IEquatable{Luny.Variable}.Equals(Luny.Variable)
+- uid: Luny.Variable.Equals(System.Object)
+  commentId: M:Luny.Variable.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Variable.Equals(object)
+  fullName: Luny.Variable.Equals(object)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Luny.Variable.Equals*
+  nameWithType.vb: Variable.Equals(Object)
+  fullName.vb: Luny.Variable.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Luny.Variable.GetHashCode
+  commentId: M:Luny.Variable.GetHashCode
+  id: GetHashCode
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Variable.GetHashCode()
+  fullName: Luny.Variable.GetHashCode()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Luny.Variable.GetHashCode*
+- uid: Luny.Variable.op_Equality(Luny.Variable,Luny.Variable)
+  commentId: M:Luny.Variable.op_Equality(Luny.Variable,Luny.Variable)
+  id: op_Equality(Luny.Variable,Luny.Variable)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Variable, Variable)
+  nameWithType: Variable.operator ==(Variable, Variable)
+  fullName: Luny.Variable.operator ==(Luny.Variable, Luny.Variable)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator ==(Variable left, Variable right)
+    parameters:
+    - id: left
+      type: Luny.Variable
+    - id: right
+      type: Luny.Variable
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Variable, right As Variable) As Boolean
+  overload: Luny.Variable.op_Equality*
+  nameWithType.vb: Variable.=(Variable, Variable)
+  fullName.vb: Luny.Variable.=(Luny.Variable, Luny.Variable)
+  name.vb: =(Variable, Variable)
+- uid: Luny.Variable.op_Inequality(Luny.Variable,Luny.Variable)
+  commentId: M:Luny.Variable.op_Inequality(Luny.Variable,Luny.Variable)
+  id: op_Inequality(Luny.Variable,Luny.Variable)
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Variable, Variable)
+  nameWithType: Variable.operator !=(Variable, Variable)
+  fullName: Luny.Variable.operator !=(Luny.Variable, Luny.Variable)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator !=(Variable left, Variable right)
+    parameters:
+    - id: left
+      type: Luny.Variable
+    - id: right
+      type: Luny.Variable
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Variable, right As Variable) As Boolean
+  overload: Luny.Variable.op_Inequality*
+  nameWithType.vb: Variable.<>(Variable, Variable)
+  fullName.vb: Luny.Variable.<>(Luny.Variable, Luny.Variable)
+  name.vb: <>(Variable, Variable)
+- uid: Luny.Variable.Name
+  commentId: P:Luny.Variable.Name
+  id: Name
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Variable.Name
+  fullName: Luny.Variable.Name
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Luny.Variable.Name*
+- uid: Luny.Variable.Type
+  commentId: P:Luny.Variable.Type
+  id: Type
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Variable.Type
+  fullName: Luny.Variable.Type
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public Variable.ValueType Type { get; }
+    parameters: []
+    return:
+      type: Luny.Variable.ValueType
+    content.vb: Public ReadOnly Property Type As Variable.ValueType
+  overload: Luny.Variable.Type*
+- uid: Luny.Variable.IsTrue
+  commentId: P:Luny.Variable.IsTrue
+  id: IsTrue
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: IsTrue
+  nameWithType: Variable.IsTrue
+  fullName: Luny.Variable.IsTrue
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public bool IsTrue { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsTrue As Boolean
+  overload: Luny.Variable.IsTrue*
+- uid: Luny.Variable.IsHigh
+  commentId: P:Luny.Variable.IsHigh
+  id: IsHigh
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: IsHigh
+  nameWithType: Variable.IsHigh
+  fullName: Luny.Variable.IsHigh
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public bool IsHigh { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsHigh As Boolean
+  overload: Luny.Variable.IsHigh*
+- uid: Luny.Variable.IsNormalized
+  commentId: P:Luny.Variable.IsNormalized
+  id: IsNormalized
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: IsNormalized
+  nameWithType: Variable.IsNormalized
+  fullName: Luny.Variable.IsNormalized
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public bool IsNormalized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsNormalized As Boolean
+  overload: Luny.Variable.IsNormalized*
+- uid: Luny.Variable.Value
+  commentId: P:Luny.Variable.Value
+  id: Value
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Variable.Value
+  fullName: Luny.Variable.Value
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public double Value { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Value As Double
+  overload: Luny.Variable.Value*
+- uid: Luny.Variable.Object
+  commentId: P:Luny.Variable.Object
+  id: Object
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: Object
+  nameWithType: Variable.Object
+  fullName: Luny.Variable.Object
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public object Object { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property [Object] As Object
+  overload: Luny.Variable.Object*
+- uid: Luny.Variable.IsNull
+  commentId: P:Luny.Variable.IsNull
+  id: IsNull
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: IsNull
+  nameWithType: Variable.IsNull
+  fullName: Luny.Variable.IsNull
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public bool IsNull { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsNull As Boolean
+  overload: Luny.Variable.IsNull*
+- uid: Luny.Variable.IsNullOrEmpty
+  commentId: P:Luny.Variable.IsNullOrEmpty
+  id: IsNullOrEmpty
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrEmpty
+  nameWithType: Variable.IsNullOrEmpty
+  fullName: Luny.Variable.IsNullOrEmpty
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public bool IsNullOrEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsNullOrEmpty As Boolean
+  overload: Luny.Variable.IsNullOrEmpty*
+- uid: Luny.Variable.IsNullOrWhitespace
+  commentId: P:Luny.Variable.IsNullOrWhitespace
+  id: IsNullOrWhitespace
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrWhitespace
+  nameWithType: Variable.IsNullOrWhitespace
+  fullName: Luny.Variable.IsNullOrWhitespace
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public bool IsNullOrWhitespace { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsNullOrWhitespace As Boolean
+  overload: Luny.Variable.IsNullOrWhitespace*
+references:
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: System.IEquatable{Luny.Variable}
+  commentId: T:System.IEquatable{Luny.Variable}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Variable>
+  nameWithType: IEquatable<Variable>
+  fullName: System.IEquatable<Luny.Variable>
+  nameWithType.vb: IEquatable(Of Variable)
+  fullName.vb: System.IEquatable(Of Luny.Variable)
+  name.vb: IEquatable(Of Variable)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+    href: Luny.Variable.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+    href: Luny.Variable.html
+  - name: )
+- uid: System.IEquatable{System.Boolean}
+  commentId: T:System.IEquatable{System.Boolean}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<bool>
+  nameWithType: IEquatable<bool>
+  fullName: System.IEquatable<bool>
+  nameWithType.vb: IEquatable(Of Boolean)
+  fullName.vb: System.IEquatable(Of Boolean)
+  name.vb: IEquatable(Of Boolean)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.IEquatable{System.Double}
+  commentId: T:System.IEquatable{System.Double}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<double>
+  nameWithType: IEquatable<double>
+  fullName: System.IEquatable<double>
+  nameWithType.vb: IEquatable(Of Double)
+  fullName.vb: System.IEquatable(Of Double)
+  name.vb: IEquatable(Of Double)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.IEquatable{System.String}
+  commentId: T:System.IEquatable{System.String}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<string>
+  nameWithType: IEquatable<string>
+  fullName: System.IEquatable<string>
+  nameWithType.vb: IEquatable(Of String)
+  fullName.vb: System.IEquatable(Of String)
+  name.vb: IEquatable(Of String)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Luny.Variable.Named*
+  commentId: Overload:Luny.Variable.Named
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_Named_System_Boolean_System_String_
+  name: Named
+  nameWithType: Variable.Named
+  fullName: Luny.Variable.Named
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Variable
+  commentId: T:Luny.Variable
+  parent: Luny
+  isExternal: true
+  href: Luny.Variable.html
+  name: Variable
+  nameWithType: Variable
+  fullName: Luny.Variable
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Luny.Number
+  commentId: T:Luny.Number
+  parent: Luny
+  isExternal: true
+  href: Luny.Number.html
+  name: Number
+  nameWithType: Number
+  fullName: Luny.Number
+- uid: Luny.Variable.AsBoolean*
+  commentId: Overload:Luny.Variable.AsBoolean
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_AsBoolean
+  name: AsBoolean
+  nameWithType: Variable.AsBoolean
+  fullName: Luny.Variable.AsBoolean
+- uid: Luny.Variable.AsNumber*
+  commentId: Overload:Luny.Variable.AsNumber
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_AsNumber
+  name: AsNumber
+  nameWithType: Variable.AsNumber
+  fullName: Luny.Variable.AsNumber
+- uid: Luny.Variable.AsDouble*
+  commentId: Overload:Luny.Variable.AsDouble
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_AsDouble
+  name: AsDouble
+  nameWithType: Variable.AsDouble
+  fullName: Luny.Variable.AsDouble
+- uid: Luny.Variable.AsSingle*
+  commentId: Overload:Luny.Variable.AsSingle
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_AsSingle
+  name: AsSingle
+  nameWithType: Variable.AsSingle
+  fullName: Luny.Variable.AsSingle
+- uid: Luny.Variable.AsInt64*
+  commentId: Overload:Luny.Variable.AsInt64
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_AsInt64
+  name: AsInt64
+  nameWithType: Variable.AsInt64
+  fullName: Luny.Variable.AsInt64
+- uid: Luny.Variable.AsInt32*
+  commentId: Overload:Luny.Variable.AsInt32
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_AsInt32
+  name: AsInt32
+  nameWithType: Variable.AsInt32
+  fullName: Luny.Variable.AsInt32
+- uid: Luny.Variable.AsString*
+  commentId: Overload:Luny.Variable.AsString
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_AsString
+  name: AsString
+  nameWithType: Variable.AsString
+  fullName: Luny.Variable.AsString
+- uid: Luny.Variable.As*
+  commentId: Overload:Luny.Variable.As
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_As__1
+  name: As
+  nameWithType: Variable.As
+  fullName: Luny.Variable.As
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Luny.Variable.op_Implicit*
+  commentId: Overload:Luny.Variable.op_Implicit
+  name: implicit operator
+  nameWithType: Variable.implicit operator
+  fullName: Luny.Variable.implicit operator
+  nameWithType.vb: Variable.CType
+  fullName.vb: Luny.Variable.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Luny.Variable.ToString*
+  commentId: Overload:Luny.Variable.ToString
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_ToString
+  name: ToString
+  nameWithType: Variable.ToString
+  fullName: Luny.Variable.ToString
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: Luny.Variable.Equals*
+  commentId: Overload:Luny.Variable.Equals
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_Equals_System_Boolean_
+  name: Equals
+  nameWithType: Variable.Equals
+  fullName: Luny.Variable.Equals
+- uid: System.IEquatable{System.Boolean}.Equals(System.Boolean)
+  commentId: M:System.IEquatable{System.Boolean}.Equals(System.Boolean)
+  parent: System.IEquatable{System.Boolean}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(bool)
+  nameWithType: IEquatable<bool>.Equals(bool)
+  fullName: System.IEquatable<bool>.Equals(bool)
+  nameWithType.vb: IEquatable(Of Boolean).Equals(Boolean)
+  fullName.vb: System.IEquatable(Of Boolean).Equals(Boolean)
+  name.vb: Equals(Boolean)
+  spec.csharp:
+  - uid: System.IEquatable{System.Boolean}.Equals(System.Boolean)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Boolean}.Equals(System.Boolean)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{System.Double}.Equals(System.Double)
+  commentId: M:System.IEquatable{System.Double}.Equals(System.Double)
+  parent: System.IEquatable{System.Double}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(double)
+  nameWithType: IEquatable<double>.Equals(double)
+  fullName: System.IEquatable<double>.Equals(double)
+  nameWithType.vb: IEquatable(Of Double).Equals(Double)
+  fullName.vb: System.IEquatable(Of Double).Equals(Double)
+  name.vb: Equals(Double)
+  spec.csharp:
+  - uid: System.IEquatable{System.Double}.Equals(System.Double)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Double}.Equals(System.Double)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.IEquatable{System.String}.Equals(System.String)
+  commentId: M:System.IEquatable{System.String}.Equals(System.String)
+  parent: System.IEquatable{System.String}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(string)
+  nameWithType: IEquatable<string>.Equals(string)
+  fullName: System.IEquatable<string>.Equals(string)
+  nameWithType.vb: IEquatable(Of String).Equals(String)
+  fullName.vb: System.IEquatable(Of String).Equals(String)
+  name.vb: Equals(String)
+  spec.csharp:
+  - uid: System.IEquatable{System.String}.Equals(System.String)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.String}.Equals(System.String)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.IEquatable{Luny.Variable}.Equals(Luny.Variable)
+  commentId: M:System.IEquatable{Luny.Variable}.Equals(Luny.Variable)
+  parent: System.IEquatable{Luny.Variable}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Variable)
+  nameWithType: IEquatable<Variable>.Equals(Variable)
+  fullName: System.IEquatable<Luny.Variable>.Equals(Luny.Variable)
+  nameWithType.vb: IEquatable(Of Variable).Equals(Variable)
+  fullName.vb: System.IEquatable(Of Luny.Variable).Equals(Luny.Variable)
+  spec.csharp:
+  - uid: System.IEquatable{Luny.Variable}.Equals(Luny.Variable)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+    href: Luny.Variable.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Luny.Variable}.Equals(Luny.Variable)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+    href: Luny.Variable.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Luny.Variable.GetHashCode*
+  commentId: Overload:Luny.Variable.GetHashCode
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_GetHashCode
+  name: GetHashCode
+  nameWithType: Variable.GetHashCode
+  fullName: Luny.Variable.GetHashCode
+- uid: Luny.Variable.op_Equality*
+  commentId: Overload:Luny.Variable.op_Equality
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_op_Equality_Luny_Variable_Luny_Variable_
+  name: operator ==
+  nameWithType: Variable.operator ==
+  fullName: Luny.Variable.operator ==
+  nameWithType.vb: Variable.=
+  fullName.vb: Luny.Variable.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Variable.op_Equality*
+    name: ==
+    isExternal: true
+    href: Luny.Variable.html#Luny_Variable_op_Equality_Luny_Variable_Luny_Variable_
+- uid: Luny.Variable.op_Inequality*
+  commentId: Overload:Luny.Variable.op_Inequality
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_op_Inequality_Luny_Variable_Luny_Variable_
+  name: operator !=
+  nameWithType: Variable.operator !=
+  fullName: Luny.Variable.operator !=
+  nameWithType.vb: Variable.<>
+  fullName.vb: Luny.Variable.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Variable.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Luny.Variable.html#Luny_Variable_op_Inequality_Luny_Variable_Luny_Variable_
+- uid: Luny.Variable.Name*
+  commentId: Overload:Luny.Variable.Name
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_Name
+  name: Name
+  nameWithType: Variable.Name
+  fullName: Luny.Variable.Name
+- uid: Luny.Variable.Type*
+  commentId: Overload:Luny.Variable.Type
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_Type
+  name: Type
+  nameWithType: Variable.Type
+  fullName: Luny.Variable.Type
+- uid: Luny.Variable.ValueType
+  commentId: T:Luny.Variable.ValueType
+  parent: Luny
+  isExternal: true
+  href: Luny.Variable.html
+  name: Variable.ValueType
+  nameWithType: Variable.ValueType
+  fullName: Luny.Variable.ValueType
+  spec.csharp:
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+    href: Luny.Variable.html
+  - name: .
+  - uid: Luny.Variable.ValueType
+    name: ValueType
+    isExternal: true
+    href: Luny.Variable.ValueType.html
+  spec.vb:
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+    href: Luny.Variable.html
+  - name: .
+  - uid: Luny.Variable.ValueType
+    name: ValueType
+    isExternal: true
+    href: Luny.Variable.ValueType.html
+- uid: Luny.Variable.IsTrue*
+  commentId: Overload:Luny.Variable.IsTrue
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_IsTrue
+  name: IsTrue
+  nameWithType: Variable.IsTrue
+  fullName: Luny.Variable.IsTrue
+- uid: Luny.Variable.IsHigh*
+  commentId: Overload:Luny.Variable.IsHigh
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_IsHigh
+  name: IsHigh
+  nameWithType: Variable.IsHigh
+  fullName: Luny.Variable.IsHigh
+- uid: Luny.Variable.IsNormalized*
+  commentId: Overload:Luny.Variable.IsNormalized
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_IsNormalized
+  name: IsNormalized
+  nameWithType: Variable.IsNormalized
+  fullName: Luny.Variable.IsNormalized
+- uid: Luny.Variable.Value*
+  commentId: Overload:Luny.Variable.Value
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_Value
+  name: Value
+  nameWithType: Variable.Value
+  fullName: Luny.Variable.Value
+- uid: Luny.Variable.Object*
+  commentId: Overload:Luny.Variable.Object
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_Object
+  name: Object
+  nameWithType: Variable.Object
+  fullName: Luny.Variable.Object
+- uid: Luny.Variable.IsNull*
+  commentId: Overload:Luny.Variable.IsNull
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_IsNull
+  name: IsNull
+  nameWithType: Variable.IsNull
+  fullName: Luny.Variable.IsNull
+- uid: Luny.Variable.IsNullOrEmpty*
+  commentId: Overload:Luny.Variable.IsNullOrEmpty
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_IsNullOrEmpty
+  name: IsNullOrEmpty
+  nameWithType: Variable.IsNullOrEmpty
+  fullName: Luny.Variable.IsNullOrEmpty
+- uid: Luny.Variable.IsNullOrWhitespace*
+  commentId: Overload:Luny.Variable.IsNullOrWhitespace
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_IsNullOrWhitespace
+  name: IsNullOrWhitespace
+  nameWithType: Variable.IsNullOrWhitespace
+  fullName: Luny.Variable.IsNullOrWhitespace

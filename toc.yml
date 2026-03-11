@@ -1,6 +1,7 @@
 - name: Manual
-  href: index.md
+  href: manual/
 - name: Scripting API
-  href: api/
+  href: api/index.html
+  homepage: api/index.html
 - name: Changelog
   href: CHANGELOG.md

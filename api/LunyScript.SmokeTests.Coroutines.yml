@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.Coroutines
+  commentId: N:LunyScript.SmokeTests.Coroutines
+  id: LunyScript.SmokeTests.Coroutines
+  children:
+  - LunyScript.SmokeTests.Coroutines.CoroutineCounter
+  - LunyScript.SmokeTests.Coroutines.CoroutineEvery
+  - LunyScript.SmokeTests.Coroutines.CoroutineFor
+  - LunyScript.SmokeTests.Coroutines.CoroutineTimer
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.SmokeTests.Coroutines
+  nameWithType: LunyScript.SmokeTests.Coroutines
+  fullName: LunyScript.SmokeTests.Coroutines
+  type: Namespace
+  assemblies:
+  - LunyScript.SmokeTests
+references:
+- uid: LunyScript.SmokeTests.Coroutines.CoroutineCounter
+  commentId: T:LunyScript.SmokeTests.Coroutines.CoroutineCounter
+  isExternal: true
+  href: LunyScript.SmokeTests.Coroutines.CoroutineCounter.html
+  name: CoroutineCounter
+  nameWithType: CoroutineCounter
+  fullName: LunyScript.SmokeTests.Coroutines.CoroutineCounter
+- uid: LunyScript.SmokeTests.Coroutines.CoroutineEvery
+  commentId: T:LunyScript.SmokeTests.Coroutines.CoroutineEvery
+  isExternal: true
+  href: LunyScript.SmokeTests.Coroutines.CoroutineEvery.html
+  name: CoroutineEvery
+  nameWithType: CoroutineEvery
+  fullName: LunyScript.SmokeTests.Coroutines.CoroutineEvery
+- uid: LunyScript.SmokeTests.Coroutines.CoroutineFor
+  commentId: T:LunyScript.SmokeTests.Coroutines.CoroutineFor
+  isExternal: true
+  href: LunyScript.SmokeTests.Coroutines.CoroutineFor.html
+  name: CoroutineFor
+  nameWithType: CoroutineFor
+  fullName: LunyScript.SmokeTests.Coroutines.CoroutineFor
+- uid: LunyScript.SmokeTests.Coroutines.CoroutineTimer
+  commentId: T:LunyScript.SmokeTests.Coroutines.CoroutineTimer
+  isExternal: true
+  href: LunyScript.SmokeTests.Coroutines.CoroutineTimer.html
+  name: CoroutineTimer
+  nameWithType: CoroutineTimer
+  fullName: LunyScript.SmokeTests.Coroutines.CoroutineTimer
