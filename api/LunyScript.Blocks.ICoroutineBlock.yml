@@ -1,0 +1,191 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.ICoroutineBlock
+  commentId: T:LunyScript.Blocks.ICoroutineBlock
+  id: ICoroutineBlock
+  parent: LunyScript.Blocks
+  children:
+  - LunyScript.Blocks.ICoroutineBlock.Pause
+  - LunyScript.Blocks.ICoroutineBlock.Resume
+  - LunyScript.Blocks.ICoroutineBlock.Start
+  - LunyScript.Blocks.ICoroutineBlock.Stop
+  langs:
+  - csharp
+  - vb
+  name: ICoroutineBlock
+  nameWithType: ICoroutineBlock
+  fullName: LunyScript.Blocks.ICoroutineBlock
+  type: Interface
+  source:
+    id: ICoroutineBlock
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\Coroutine\CoroutineBlocks.cs
+    startLine: 9
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: >-
+    Represents a coroutine block that runs perpetually (indefinitely).
+
+    Coroutines can be started, stopped, paused, resumed.
+  example: []
+  syntax:
+    content: 'public interface ICoroutineBlock : IScriptBlock'
+    content.vb: Public Interface ICoroutineBlock Inherits IScriptBlock
+- uid: LunyScript.Blocks.ICoroutineBlock.Start
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Start
+  id: Start
+  parent: LunyScript.Blocks.ICoroutineBlock
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ICoroutineBlock.Start()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Start()
+  type: Method
+  source:
+    id: Start
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\Coroutine\CoroutineBlocks.cs
+    startLine: 14
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Starts or restarts the coroutine.
+  example: []
+  syntax:
+    content: ScriptActionBlock Start()
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Function Start() As ScriptActionBlock
+  overload: LunyScript.Blocks.ICoroutineBlock.Start*
+- uid: LunyScript.Blocks.ICoroutineBlock.Stop
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Stop
+  id: Stop
+  parent: LunyScript.Blocks.ICoroutineBlock
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ICoroutineBlock.Stop()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Stop()
+  type: Method
+  source:
+    id: Stop
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\Coroutine\CoroutineBlocks.cs
+    startLine: 19
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Stops the coroutine and resets its state.
+  example: []
+  syntax:
+    content: ScriptActionBlock Stop()
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Function [Stop]() As ScriptActionBlock
+  overload: LunyScript.Blocks.ICoroutineBlock.Stop*
+- uid: LunyScript.Blocks.ICoroutineBlock.Pause
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Pause
+  id: Pause
+  parent: LunyScript.Blocks.ICoroutineBlock
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: ICoroutineBlock.Pause()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Pause()
+  type: Method
+  source:
+    id: Pause
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\Coroutine\CoroutineBlocks.cs
+    startLine: 24
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Pauses the coroutine, preserving current state.
+  example: []
+  syntax:
+    content: ScriptActionBlock Pause()
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Function Pause() As ScriptActionBlock
+  overload: LunyScript.Blocks.ICoroutineBlock.Pause*
+- uid: LunyScript.Blocks.ICoroutineBlock.Resume
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Resume
+  id: Resume
+  parent: LunyScript.Blocks.ICoroutineBlock
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: ICoroutineBlock.Resume()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Resume()
+  type: Method
+  source:
+    id: Resume
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\Coroutine\CoroutineBlocks.cs
+    startLine: 29
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Resumes a paused coroutine.
+  example: []
+  syntax:
+    content: ScriptActionBlock Resume()
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Function [Resume]() As ScriptActionBlock
+  overload: LunyScript.Blocks.ICoroutineBlock.Resume*
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+- uid: LunyScript.Blocks.ICoroutineBlock.Start*
+  commentId: Overload:LunyScript.Blocks.ICoroutineBlock.Start
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Start
+  name: Start
+  nameWithType: ICoroutineBlock.Start
+  fullName: LunyScript.Blocks.ICoroutineBlock.Start
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ICoroutineBlock.Stop*
+  commentId: Overload:LunyScript.Blocks.ICoroutineBlock.Stop
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Stop
+  name: Stop
+  nameWithType: ICoroutineBlock.Stop
+  fullName: LunyScript.Blocks.ICoroutineBlock.Stop
+- uid: LunyScript.Blocks.ICoroutineBlock.Pause*
+  commentId: Overload:LunyScript.Blocks.ICoroutineBlock.Pause
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Pause
+  name: Pause
+  nameWithType: ICoroutineBlock.Pause
+  fullName: LunyScript.Blocks.ICoroutineBlock.Pause
+- uid: LunyScript.Blocks.ICoroutineBlock.Resume*
+  commentId: Overload:LunyScript.Blocks.ICoroutineBlock.Resume
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Resume
+  name: Resume
+  nameWithType: ICoroutineBlock.Resume
+  fullName: LunyScript.Blocks.ICoroutineBlock.Resume

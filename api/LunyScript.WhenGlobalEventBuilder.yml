@@ -1,0 +1,335 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.WhenGlobalEventBuilder
+  commentId: T:LunyScript.WhenGlobalEventBuilder
+  id: WhenGlobalEventBuilder
+  parent: LunyScript
+  children:
+  - LunyScript.WhenGlobalEventBuilder.Input
+  - LunyScript.WhenGlobalEventBuilder.Scene
+  langs:
+  - csharp
+  - vb
+  name: WhenGlobalEventBuilder
+  nameWithType: WhenGlobalEventBuilder
+  fullName: LunyScript.WhenGlobalEventBuilder
+  type: Struct
+  source:
+    id: WhenGlobalEventBuilder
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Events\WhenGlobalEventBuilder.cs
+    startLine: 7
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: 'Handles external events: Scene, Input, Collision, Messages.'
+  example: []
+  syntax:
+    content: public readonly struct WhenGlobalEventBuilder
+    content.vb: Public Structure WhenGlobalEventBuilder
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LunyScript.WhenGlobalEventBuilder.Input
+  commentId: P:LunyScript.WhenGlobalEventBuilder.Input
+  id: Input
+  parent: LunyScript.WhenGlobalEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Input
+  nameWithType: WhenGlobalEventBuilder.Input
+  fullName: LunyScript.WhenGlobalEventBuilder.Input
+  type: Property
+  source:
+    id: Input
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Events\WhenGlobalEventBuilder.cs
+    startLine: 12
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public WhenInputEventBuilder Input { get; }
+    parameters: []
+    return:
+      type: LunyScript.WhenInputEventBuilder
+    content.vb: Public ReadOnly Property Input As WhenInputEventBuilder
+  overload: LunyScript.WhenGlobalEventBuilder.Input*
+- uid: LunyScript.WhenGlobalEventBuilder.Scene
+  commentId: P:LunyScript.WhenGlobalEventBuilder.Scene
+  id: Scene
+  parent: LunyScript.WhenGlobalEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Scene
+  nameWithType: WhenGlobalEventBuilder.Scene
+  fullName: LunyScript.WhenGlobalEventBuilder.Scene
+  type: Property
+  source:
+    id: Scene
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Events\WhenGlobalEventBuilder.cs
+    startLine: 13
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public WhenSceneEventBuilder Scene { get; }
+    parameters: []
+    return:
+      type: LunyScript.WhenSceneEventBuilder
+    content.vb: Public ReadOnly Property Scene As WhenSceneEventBuilder
+  overload: LunyScript.WhenGlobalEventBuilder.Scene*
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.WhenGlobalEventBuilder.Input*
+  commentId: Overload:LunyScript.WhenGlobalEventBuilder.Input
+  href: LunyScript.WhenGlobalEventBuilder.html#LunyScript_WhenGlobalEventBuilder_Input
+  name: Input
+  nameWithType: WhenGlobalEventBuilder.Input
+  fullName: LunyScript.WhenGlobalEventBuilder.Input
+- uid: LunyScript.WhenInputEventBuilder
+  commentId: T:LunyScript.WhenInputEventBuilder
+  parent: LunyScript
+  href: LunyScript.WhenInputEventBuilder.html
+  name: WhenInputEventBuilder
+  nameWithType: WhenInputEventBuilder
+  fullName: LunyScript.WhenInputEventBuilder
+- uid: LunyScript.WhenGlobalEventBuilder.Scene*
+  commentId: Overload:LunyScript.WhenGlobalEventBuilder.Scene
+  href: LunyScript.WhenGlobalEventBuilder.html#LunyScript_WhenGlobalEventBuilder_Scene
+  name: Scene
+  nameWithType: WhenGlobalEventBuilder.Scene
+  fullName: LunyScript.WhenGlobalEventBuilder.Scene
+- uid: LunyScript.WhenSceneEventBuilder
+  commentId: T:LunyScript.WhenSceneEventBuilder
+  parent: LunyScript
+  href: LunyScript.WhenSceneEventBuilder.html
+  name: WhenSceneEventBuilder
+  nameWithType: WhenSceneEventBuilder
+  fullName: LunyScript.WhenSceneEventBuilder

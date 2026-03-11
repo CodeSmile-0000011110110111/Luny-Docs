@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Variable.ValueType
+  commentId: T:Luny.Variable.ValueType
+  id: Variable.ValueType
+  parent: Luny
+  children:
+  - Luny.Variable.ValueType.Boolean
+  - Luny.Variable.ValueType.Number
+  - Luny.Variable.ValueType.String
+  langs:
+  - csharp
+  - vb
+  name: Variable.ValueType
+  nameWithType: Variable.ValueType
+  fullName: Luny.Variable.ValueType
+  type: Enum
+  source:
+    id: ValueType
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Variables\Variable.cs
+    startLine: 11
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public enum Variable.ValueType
+    content.vb: Public Enum Variable.ValueType
+- uid: Luny.Variable.ValueType.Number
+  commentId: F:Luny.Variable.ValueType.Number
+  id: Number
+  parent: Luny.Variable.ValueType
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: Variable.ValueType.Number
+  fullName: Luny.Variable.ValueType.Number
+  type: Field
+  source:
+    id: Number
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Variables\Variable.cs
+    startLine: 14
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: Number = 0
+    return:
+      type: Luny.Variable.ValueType
+- uid: Luny.Variable.ValueType.Boolean
+  commentId: F:Luny.Variable.ValueType.Boolean
+  id: Boolean
+  parent: Luny.Variable.ValueType
+  langs:
+  - csharp
+  - vb
+  name: Boolean
+  nameWithType: Variable.ValueType.Boolean
+  fullName: Luny.Variable.ValueType.Boolean
+  type: Field
+  source:
+    id: Boolean
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Variables\Variable.cs
+    startLine: 15
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: Boolean = 1
+    return:
+      type: Luny.Variable.ValueType
+- uid: Luny.Variable.ValueType.String
+  commentId: F:Luny.Variable.ValueType.String
+  id: String
+  parent: Luny.Variable.ValueType
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: Variable.ValueType.String
+  fullName: Luny.Variable.ValueType.String
+  type: Field
+  source:
+    id: String
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Variables\Variable.cs
+    startLine: 16
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: String = 2
+    return:
+      type: Luny.Variable.ValueType
+references:
+- uid: Luny
+  commentId: N:Luny
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: Luny.Variable.ValueType
+  commentId: T:Luny.Variable.ValueType
+  parent: Luny
+  href: Luny.Variable.html
+  name: Variable.ValueType
+  nameWithType: Variable.ValueType
+  fullName: Luny.Variable.ValueType
+  spec.csharp:
+  - uid: Luny.Variable
+    name: Variable
+    href: Luny.Variable.html
+  - name: .
+  - uid: Luny.Variable.ValueType
+    name: ValueType
+    href: Luny.Variable.ValueType.html
+  spec.vb:
+  - uid: Luny.Variable
+    name: Variable
+    href: Luny.Variable.html
+  - name: .
+  - uid: Luny.Variable.ValueType
+    name: ValueType
+    href: Luny.Variable.ValueType.html

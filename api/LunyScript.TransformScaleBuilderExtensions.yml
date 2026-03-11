@@ -1,0 +1,744 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.TransformScaleBuilderExtensions
+  commentId: T:LunyScript.TransformScaleBuilderExtensions
+  id: TransformScaleBuilderExtensions
+  parent: LunyScript
+  children:
+  - LunyScript.TransformScaleBuilderExtensions.DeadZone``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  - LunyScript.TransformScaleBuilderExtensions.Lerp``1(LunyScript.TransformScaleBuilder{``0})
+  - LunyScript.TransformScaleBuilderExtensions.LockX``1(LunyScript.TransformScaleBuilder{``0})
+  - LunyScript.TransformScaleBuilderExtensions.LockY``1(LunyScript.TransformScaleBuilder{``0})
+  - LunyScript.TransformScaleBuilderExtensions.LockZ``1(LunyScript.TransformScaleBuilder{``0})
+  - LunyScript.TransformScaleBuilderExtensions.Responsiveness``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  - LunyScript.TransformScaleBuilderExtensions.Slerp``1(LunyScript.TransformScaleBuilder{``0})
+  - LunyScript.TransformScaleBuilderExtensions.Speed``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  langs:
+  - csharp
+  - vb
+  name: TransformScaleBuilderExtensions
+  nameWithType: TransformScaleBuilderExtensions
+  fullName: LunyScript.TransformScaleBuilderExtensions
+  type: Class
+  source:
+    id: TransformScaleBuilderExtensions
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformScaleBuilder.cs
+    startLine: 42
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public static class TransformScaleBuilderExtensions
+    content.vb: Public Module TransformScaleBuilderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: LunyScript.TransformScaleBuilderExtensions.Speed``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  commentId: M:LunyScript.TransformScaleBuilderExtensions.Speed``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  id: Speed``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.TransformScaleBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Speed<T>(TransformScaleBuilder<T>, double)
+  nameWithType: TransformScaleBuilderExtensions.Speed<T>(TransformScaleBuilder<T>, double)
+  fullName: LunyScript.TransformScaleBuilderExtensions.Speed<T>(LunyScript.TransformScaleBuilder<T>, double)
+  type: Method
+  source:
+    id: Speed
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformScaleBuilder.cs
+    startLine: 45
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Scale speed in units per second (for linear) or lerp factor (for <code>Lerp()</code>/<code>Slerp()</code>).
+  example: []
+  syntax:
+    content: 'public static TransformScaleBuilder<TransformBuilderReady> Speed<T>(this TransformScaleBuilder<T> b, double speed) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.TransformScaleBuilder{{T}}
+    - id: speed
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+    content.vb: Public Shared Function Speed(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T), speed As Double) As TransformScaleBuilder(Of TransformBuilderReady)
+  overload: LunyScript.TransformScaleBuilderExtensions.Speed*
+  nameWithType.vb: TransformScaleBuilderExtensions.Speed(Of T)(TransformScaleBuilder(Of T), Double)
+  fullName.vb: LunyScript.TransformScaleBuilderExtensions.Speed(Of T)(LunyScript.TransformScaleBuilder(Of T), Double)
+  name.vb: Speed(Of T)(TransformScaleBuilder(Of T), Double)
+- uid: LunyScript.TransformScaleBuilderExtensions.DeadZone``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  commentId: M:LunyScript.TransformScaleBuilderExtensions.DeadZone``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  id: DeadZone``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.TransformScaleBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeadZone<T>(TransformScaleBuilder<T>, double)
+  nameWithType: TransformScaleBuilderExtensions.DeadZone<T>(TransformScaleBuilder<T>, double)
+  fullName: LunyScript.TransformScaleBuilderExtensions.DeadZone<T>(LunyScript.TransformScaleBuilder<T>, double)
+  type: Method
+  source:
+    id: DeadZone
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformScaleBuilder.cs
+    startLine: 49
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Minimum scale-distance threshold before scaling begins (prevents micro-jitter).
+  example: []
+  syntax:
+    content: 'public static TransformScaleBuilder<TransformBuilderReady> DeadZone<T>(this TransformScaleBuilder<T> b, double deadZone) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.TransformScaleBuilder{{T}}
+    - id: deadZone
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+    content.vb: Public Shared Function DeadZone(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T), deadZone As Double) As TransformScaleBuilder(Of TransformBuilderReady)
+  overload: LunyScript.TransformScaleBuilderExtensions.DeadZone*
+  nameWithType.vb: TransformScaleBuilderExtensions.DeadZone(Of T)(TransformScaleBuilder(Of T), Double)
+  fullName.vb: LunyScript.TransformScaleBuilderExtensions.DeadZone(Of T)(LunyScript.TransformScaleBuilder(Of T), Double)
+  name.vb: DeadZone(Of T)(TransformScaleBuilder(Of T), Double)
+- uid: LunyScript.TransformScaleBuilderExtensions.Responsiveness``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  commentId: M:LunyScript.TransformScaleBuilderExtensions.Responsiveness``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  id: Responsiveness``1(LunyScript.TransformScaleBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.TransformScaleBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Responsiveness<T>(TransformScaleBuilder<T>, double)
+  nameWithType: TransformScaleBuilderExtensions.Responsiveness<T>(TransformScaleBuilder<T>, double)
+  fullName: LunyScript.TransformScaleBuilderExtensions.Responsiveness<T>(LunyScript.TransformScaleBuilder<T>, double)
+  type: Method
+  source:
+    id: Responsiveness
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformScaleBuilder.cs
+    startLine: 53
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Multiplies delta time; larger values produce faster approach.
+  example: []
+  syntax:
+    content: 'public static TransformScaleBuilder<TransformBuilderReady> Responsiveness<T>(this TransformScaleBuilder<T> b, double responsiveness) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.TransformScaleBuilder{{T}}
+    - id: responsiveness
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+    content.vb: Public Shared Function Responsiveness(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T), responsiveness As Double) As TransformScaleBuilder(Of TransformBuilderReady)
+  overload: LunyScript.TransformScaleBuilderExtensions.Responsiveness*
+  nameWithType.vb: TransformScaleBuilderExtensions.Responsiveness(Of T)(TransformScaleBuilder(Of T), Double)
+  fullName.vb: LunyScript.TransformScaleBuilderExtensions.Responsiveness(Of T)(LunyScript.TransformScaleBuilder(Of T), Double)
+  name.vb: Responsiveness(Of T)(TransformScaleBuilder(Of T), Double)
+- uid: LunyScript.TransformScaleBuilderExtensions.LockX``1(LunyScript.TransformScaleBuilder{``0})
+  commentId: M:LunyScript.TransformScaleBuilderExtensions.LockX``1(LunyScript.TransformScaleBuilder{``0})
+  id: LockX``1(LunyScript.TransformScaleBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.TransformScaleBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockX<T>(TransformScaleBuilder<T>)
+  nameWithType: TransformScaleBuilderExtensions.LockX<T>(TransformScaleBuilder<T>)
+  fullName: LunyScript.TransformScaleBuilderExtensions.LockX<T>(LunyScript.TransformScaleBuilder<T>)
+  type: Method
+  source:
+    id: LockX
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformScaleBuilder.cs
+    startLine: 57
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Prevents scaling along the X axis.
+  example: []
+  syntax:
+    content: 'public static TransformScaleBuilder<TransformBuilderReady> LockX<T>(this TransformScaleBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.TransformScaleBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+    content.vb: Public Shared Function LockX(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T)) As TransformScaleBuilder(Of TransformBuilderReady)
+  overload: LunyScript.TransformScaleBuilderExtensions.LockX*
+  nameWithType.vb: TransformScaleBuilderExtensions.LockX(Of T)(TransformScaleBuilder(Of T))
+  fullName.vb: LunyScript.TransformScaleBuilderExtensions.LockX(Of T)(LunyScript.TransformScaleBuilder(Of T))
+  name.vb: LockX(Of T)(TransformScaleBuilder(Of T))
+- uid: LunyScript.TransformScaleBuilderExtensions.LockY``1(LunyScript.TransformScaleBuilder{``0})
+  commentId: M:LunyScript.TransformScaleBuilderExtensions.LockY``1(LunyScript.TransformScaleBuilder{``0})
+  id: LockY``1(LunyScript.TransformScaleBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.TransformScaleBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockY<T>(TransformScaleBuilder<T>)
+  nameWithType: TransformScaleBuilderExtensions.LockY<T>(TransformScaleBuilder<T>)
+  fullName: LunyScript.TransformScaleBuilderExtensions.LockY<T>(LunyScript.TransformScaleBuilder<T>)
+  type: Method
+  source:
+    id: LockY
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformScaleBuilder.cs
+    startLine: 66
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Prevents scaling along the Y axis.
+  example: []
+  syntax:
+    content: 'public static TransformScaleBuilder<TransformBuilderReady> LockY<T>(this TransformScaleBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.TransformScaleBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+    content.vb: Public Shared Function LockY(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T)) As TransformScaleBuilder(Of TransformBuilderReady)
+  overload: LunyScript.TransformScaleBuilderExtensions.LockY*
+  nameWithType.vb: TransformScaleBuilderExtensions.LockY(Of T)(TransformScaleBuilder(Of T))
+  fullName.vb: LunyScript.TransformScaleBuilderExtensions.LockY(Of T)(LunyScript.TransformScaleBuilder(Of T))
+  name.vb: LockY(Of T)(TransformScaleBuilder(Of T))
+- uid: LunyScript.TransformScaleBuilderExtensions.LockZ``1(LunyScript.TransformScaleBuilder{``0})
+  commentId: M:LunyScript.TransformScaleBuilderExtensions.LockZ``1(LunyScript.TransformScaleBuilder{``0})
+  id: LockZ``1(LunyScript.TransformScaleBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.TransformScaleBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockZ<T>(TransformScaleBuilder<T>)
+  nameWithType: TransformScaleBuilderExtensions.LockZ<T>(TransformScaleBuilder<T>)
+  fullName: LunyScript.TransformScaleBuilderExtensions.LockZ<T>(LunyScript.TransformScaleBuilder<T>)
+  type: Method
+  source:
+    id: LockZ
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformScaleBuilder.cs
+    startLine: 75
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Prevents scaling along the Z axis.
+  example: []
+  syntax:
+    content: 'public static TransformScaleBuilder<TransformBuilderReady> LockZ<T>(this TransformScaleBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.TransformScaleBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+    content.vb: Public Shared Function LockZ(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T)) As TransformScaleBuilder(Of TransformBuilderReady)
+  overload: LunyScript.TransformScaleBuilderExtensions.LockZ*
+  nameWithType.vb: TransformScaleBuilderExtensions.LockZ(Of T)(TransformScaleBuilder(Of T))
+  fullName.vb: LunyScript.TransformScaleBuilderExtensions.LockZ(Of T)(LunyScript.TransformScaleBuilder(Of T))
+  name.vb: LockZ(Of T)(TransformScaleBuilder(Of T))
+- uid: LunyScript.TransformScaleBuilderExtensions.Lerp``1(LunyScript.TransformScaleBuilder{``0})
+  commentId: M:LunyScript.TransformScaleBuilderExtensions.Lerp``1(LunyScript.TransformScaleBuilder{``0})
+  id: Lerp``1(LunyScript.TransformScaleBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.TransformScaleBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Lerp<T>(TransformScaleBuilder<T>)
+  nameWithType: TransformScaleBuilderExtensions.Lerp<T>(TransformScaleBuilder<T>)
+  fullName: LunyScript.TransformScaleBuilderExtensions.Lerp<T>(LunyScript.TransformScaleBuilder<T>)
+  type: Method
+  source:
+    id: Lerp
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformScaleBuilder.cs
+    startLine: 84
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Lerp interpolation — speed is the lerp factor.
+  example: []
+  syntax:
+    content: 'public static TransformScaleTowardsLerpBlock Lerp<T>(this TransformScaleBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.TransformScaleBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Blocks.TransformScaleTowardsLerpBlock
+    content.vb: Public Shared Function Lerp(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T)) As TransformScaleTowardsLerpBlock
+  overload: LunyScript.TransformScaleBuilderExtensions.Lerp*
+  nameWithType.vb: TransformScaleBuilderExtensions.Lerp(Of T)(TransformScaleBuilder(Of T))
+  fullName.vb: LunyScript.TransformScaleBuilderExtensions.Lerp(Of T)(LunyScript.TransformScaleBuilder(Of T))
+  name.vb: Lerp(Of T)(TransformScaleBuilder(Of T))
+- uid: LunyScript.TransformScaleBuilderExtensions.Slerp``1(LunyScript.TransformScaleBuilder{``0})
+  commentId: M:LunyScript.TransformScaleBuilderExtensions.Slerp``1(LunyScript.TransformScaleBuilder{``0})
+  id: Slerp``1(LunyScript.TransformScaleBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.TransformScaleBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Slerp<T>(TransformScaleBuilder<T>)
+  nameWithType: TransformScaleBuilderExtensions.Slerp<T>(TransformScaleBuilder<T>)
+  fullName: LunyScript.TransformScaleBuilderExtensions.Slerp<T>(LunyScript.TransformScaleBuilder<T>)
+  type: Method
+  source:
+    id: Slerp
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformScaleBuilder.cs
+    startLine: 88
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Spherical interpolation — speed is the slerp factor.
+  example: []
+  syntax:
+    content: 'public static TransformScaleTowardsLerpBlock Slerp<T>(this TransformScaleBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.TransformScaleBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Blocks.TransformScaleTowardsLerpBlock
+    content.vb: Public Shared Function Slerp(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T)) As TransformScaleTowardsLerpBlock
+  overload: LunyScript.TransformScaleBuilderExtensions.Slerp*
+  nameWithType.vb: TransformScaleBuilderExtensions.Slerp(Of T)(TransformScaleBuilder(Of T))
+  fullName.vb: LunyScript.TransformScaleBuilderExtensions.Slerp(Of T)(LunyScript.TransformScaleBuilder(Of T))
+  name.vb: Slerp(Of T)(TransformScaleBuilder(Of T))
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.TransformScaleBuilderExtensions.Speed*
+  commentId: Overload:LunyScript.TransformScaleBuilderExtensions.Speed
+  href: LunyScript.TransformScaleBuilderExtensions.html#LunyScript_TransformScaleBuilderExtensions_Speed__1_LunyScript_TransformScaleBuilder___0__System_Double_
+  name: Speed
+  nameWithType: TransformScaleBuilderExtensions.Speed
+  fullName: LunyScript.TransformScaleBuilderExtensions.Speed
+- uid: LunyScript.TransformScaleBuilder{{T}}
+  commentId: T:LunyScript.TransformScaleBuilder{``0}
+  parent: LunyScript
+  definition: LunyScript.TransformScaleBuilder`1
+  href: LunyScript.TransformScaleBuilder-1.html
+  name: TransformScaleBuilder<T>
+  nameWithType: TransformScaleBuilder<T>
+  fullName: LunyScript.TransformScaleBuilder<T>
+  nameWithType.vb: TransformScaleBuilder(Of T)
+  fullName.vb: LunyScript.TransformScaleBuilder(Of T)
+  name.vb: TransformScaleBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    href: LunyScript.TransformScaleBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    href: LunyScript.TransformScaleBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+  commentId: T:LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+  parent: LunyScript
+  definition: LunyScript.TransformScaleBuilder`1
+  href: LunyScript.TransformScaleBuilder-1.html
+  name: TransformScaleBuilder<TransformBuilderReady>
+  nameWithType: TransformScaleBuilder<TransformBuilderReady>
+  fullName: LunyScript.TransformScaleBuilder<LunyScript.TransformBuilderReady>
+  nameWithType.vb: TransformScaleBuilder(Of TransformBuilderReady)
+  fullName.vb: LunyScript.TransformScaleBuilder(Of LunyScript.TransformBuilderReady)
+  name.vb: TransformScaleBuilder(Of TransformBuilderReady)
+  spec.csharp:
+  - uid: LunyScript.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    href: LunyScript.TransformScaleBuilder-1.html
+  - name: <
+  - uid: LunyScript.TransformBuilderReady
+    name: TransformBuilderReady
+    href: LunyScript.TransformBuilderReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    href: LunyScript.TransformScaleBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.TransformBuilderReady
+    name: TransformBuilderReady
+    href: LunyScript.TransformBuilderReady.html
+  - name: )
+- uid: LunyScript.TransformScaleBuilder`1
+  commentId: T:LunyScript.TransformScaleBuilder`1
+  parent: LunyScript
+  href: LunyScript.TransformScaleBuilder-1.html
+  name: TransformScaleBuilder<T>
+  nameWithType: TransformScaleBuilder<T>
+  fullName: LunyScript.TransformScaleBuilder<T>
+  nameWithType.vb: TransformScaleBuilder(Of T)
+  fullName.vb: LunyScript.TransformScaleBuilder(Of T)
+  name.vb: TransformScaleBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    href: LunyScript.TransformScaleBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    href: LunyScript.TransformScaleBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.TransformScaleBuilderExtensions.DeadZone*
+  commentId: Overload:LunyScript.TransformScaleBuilderExtensions.DeadZone
+  href: LunyScript.TransformScaleBuilderExtensions.html#LunyScript_TransformScaleBuilderExtensions_DeadZone__1_LunyScript_TransformScaleBuilder___0__System_Double_
+  name: DeadZone
+  nameWithType: TransformScaleBuilderExtensions.DeadZone
+  fullName: LunyScript.TransformScaleBuilderExtensions.DeadZone
+- uid: LunyScript.TransformScaleBuilderExtensions.Responsiveness*
+  commentId: Overload:LunyScript.TransformScaleBuilderExtensions.Responsiveness
+  href: LunyScript.TransformScaleBuilderExtensions.html#LunyScript_TransformScaleBuilderExtensions_Responsiveness__1_LunyScript_TransformScaleBuilder___0__System_Double_
+  name: Responsiveness
+  nameWithType: TransformScaleBuilderExtensions.Responsiveness
+  fullName: LunyScript.TransformScaleBuilderExtensions.Responsiveness
+- uid: LunyScript.TransformScaleBuilderExtensions.LockX*
+  commentId: Overload:LunyScript.TransformScaleBuilderExtensions.LockX
+  href: LunyScript.TransformScaleBuilderExtensions.html#LunyScript_TransformScaleBuilderExtensions_LockX__1_LunyScript_TransformScaleBuilder___0__
+  name: LockX
+  nameWithType: TransformScaleBuilderExtensions.LockX
+  fullName: LunyScript.TransformScaleBuilderExtensions.LockX
+- uid: LunyScript.TransformScaleBuilderExtensions.LockY*
+  commentId: Overload:LunyScript.TransformScaleBuilderExtensions.LockY
+  href: LunyScript.TransformScaleBuilderExtensions.html#LunyScript_TransformScaleBuilderExtensions_LockY__1_LunyScript_TransformScaleBuilder___0__
+  name: LockY
+  nameWithType: TransformScaleBuilderExtensions.LockY
+  fullName: LunyScript.TransformScaleBuilderExtensions.LockY
+- uid: LunyScript.TransformScaleBuilderExtensions.LockZ*
+  commentId: Overload:LunyScript.TransformScaleBuilderExtensions.LockZ
+  href: LunyScript.TransformScaleBuilderExtensions.html#LunyScript_TransformScaleBuilderExtensions_LockZ__1_LunyScript_TransformScaleBuilder___0__
+  name: LockZ
+  nameWithType: TransformScaleBuilderExtensions.LockZ
+  fullName: LunyScript.TransformScaleBuilderExtensions.LockZ
+- uid: LunyScript.TransformScaleBuilderExtensions.Lerp*
+  commentId: Overload:LunyScript.TransformScaleBuilderExtensions.Lerp
+  href: LunyScript.TransformScaleBuilderExtensions.html#LunyScript_TransformScaleBuilderExtensions_Lerp__1_LunyScript_TransformScaleBuilder___0__
+  name: Lerp
+  nameWithType: TransformScaleBuilderExtensions.Lerp
+  fullName: LunyScript.TransformScaleBuilderExtensions.Lerp
+- uid: LunyScript.Blocks.TransformScaleTowardsLerpBlock
+  commentId: T:LunyScript.Blocks.TransformScaleTowardsLerpBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.TransformScaleTowardsLerpBlock.html
+  name: TransformScaleTowardsLerpBlock
+  nameWithType: TransformScaleTowardsLerpBlock
+  fullName: LunyScript.Blocks.TransformScaleTowardsLerpBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+- uid: LunyScript.TransformScaleBuilderExtensions.Slerp*
+  commentId: Overload:LunyScript.TransformScaleBuilderExtensions.Slerp
+  href: LunyScript.TransformScaleBuilderExtensions.html#LunyScript_TransformScaleBuilderExtensions_Slerp__1_LunyScript_TransformScaleBuilder___0__
+  name: Slerp
+  nameWithType: TransformScaleBuilderExtensions.Slerp
+  fullName: LunyScript.TransformScaleBuilderExtensions.Slerp

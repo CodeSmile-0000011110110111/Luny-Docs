@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.Object
+  commentId: N:LunyScript.SmokeTests.Object
+  id: LunyScript.SmokeTests.Object
+  children:
+  - LunyScript.SmokeTests.Object.ObjectCreateTestScript
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.SmokeTests.Object
+  nameWithType: LunyScript.SmokeTests.Object
+  fullName: LunyScript.SmokeTests.Object
+  type: Namespace
+  assemblies:
+  - LunyScript.SmokeTests
+references:
+- uid: LunyScript.SmokeTests.Object.ObjectCreateTestScript
+  commentId: T:LunyScript.SmokeTests.Object.ObjectCreateTestScript
+  href: LunyScript.SmokeTests.Object.ObjectCreateTestScript.html
+  name: ObjectCreateTestScript
+  nameWithType: ObjectCreateTestScript
+  fullName: LunyScript.SmokeTests.Object.ObjectCreateTestScript

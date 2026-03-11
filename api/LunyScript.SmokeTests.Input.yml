@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.Input
+  commentId: N:LunyScript.SmokeTests.Input
+  id: LunyScript.SmokeTests.Input
+  children:
+  - LunyScript.SmokeTests.Input.InputTest
+  - LunyScript.SmokeTests.Input.Player1
+  - LunyScript.SmokeTests.Input.Player2
+  - LunyScript.SmokeTests.Input.Player3
+  - LunyScript.SmokeTests.Input.Player4
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.SmokeTests.Input
+  nameWithType: LunyScript.SmokeTests.Input
+  fullName: LunyScript.SmokeTests.Input
+  type: Namespace
+  assemblies:
+  - LunyScript.SmokeTests
+references:
+- uid: LunyScript.SmokeTests.Input.Player4
+  commentId: T:LunyScript.SmokeTests.Input.Player4
+  href: LunyScript.SmokeTests.Input.Player4.html
+  name: Player4
+  nameWithType: Player4
+  fullName: LunyScript.SmokeTests.Input.Player4
+- uid: LunyScript.SmokeTests.Input.Player1
+  commentId: T:LunyScript.SmokeTests.Input.Player1
+  href: LunyScript.SmokeTests.Input.Player1.html
+  name: Player1
+  nameWithType: Player1
+  fullName: LunyScript.SmokeTests.Input.Player1
+- uid: LunyScript.SmokeTests.Input.Player3
+  commentId: T:LunyScript.SmokeTests.Input.Player3
+  href: LunyScript.SmokeTests.Input.Player3.html
+  name: Player3
+  nameWithType: Player3
+  fullName: LunyScript.SmokeTests.Input.Player3
+- uid: LunyScript.SmokeTests.Input.InputTest
+  commentId: T:LunyScript.SmokeTests.Input.InputTest
+  href: LunyScript.SmokeTests.Input.InputTest.html
+  name: InputTest
+  nameWithType: InputTest
+  fullName: LunyScript.SmokeTests.Input.InputTest
+- uid: LunyScript.SmokeTests.Input.Player2
+  commentId: T:LunyScript.SmokeTests.Input.Player2
+  href: LunyScript.SmokeTests.Input.Player2.html
+  name: Player2
+  nameWithType: Player2
+  fullName: LunyScript.SmokeTests.Input.Player2

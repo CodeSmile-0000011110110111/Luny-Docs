@@ -1,0 +1,517 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.ILunyEngineObserver
+  commentId: T:Luny.Engine.ILunyEngineObserver
+  id: ILunyEngineObserver
+  parent: Luny.Engine
+  children:
+  - Luny.Engine.ILunyEngineObserver.Enabled
+  - Luny.Engine.ILunyEngineObserver.OnEngineFrameBegins
+  - Luny.Engine.ILunyEngineObserver.OnEngineFrameEnds
+  - Luny.Engine.ILunyEngineObserver.OnEngineFrameLateUpdate
+  - Luny.Engine.ILunyEngineObserver.OnEngineFrameUpdate
+  - Luny.Engine.ILunyEngineObserver.OnEngineHeartbeat
+  - Luny.Engine.ILunyEngineObserver.OnEngineShutdown
+  - Luny.Engine.ILunyEngineObserver.OnEngineStartup
+  - Luny.Engine.ILunyEngineObserver.OnObjectRegistered(Luny.Engine.Bridge.ILunyObject)
+  - Luny.Engine.ILunyEngineObserver.OnObjectUnregistered(Luny.Engine.Bridge.ILunyObject)
+  - Luny.Engine.ILunyEngineObserver.OnSceneLoaded(Luny.Engine.Bridge.ILunyScene)
+  - Luny.Engine.ILunyEngineObserver.OnSceneUnloaded(Luny.Engine.Bridge.ILunyScene)
+  langs:
+  - csharp
+  - vb
+  name: ILunyEngineObserver
+  nameWithType: ILunyEngineObserver
+  fullName: Luny.Engine.ILunyEngineObserver
+  type: Interface
+  source:
+    id: ILunyEngineObserver
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 8
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: Lifecycle observer interface - receives callbacks from LunyEngine.
+  example: []
+  syntax:
+    content: public interface ILunyEngineObserver
+    content.vb: Public Interface ILunyEngineObserver
+- uid: Luny.Engine.ILunyEngineObserver.Enabled
+  commentId: P:Luny.Engine.ILunyEngineObserver.Enabled
+  id: Enabled
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: ILunyEngineObserver.Enabled
+  fullName: Luny.Engine.ILunyEngineObserver.Enabled
+  type: Property
+  source:
+    id: Enabled
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 10
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  syntax:
+    content: bool Enabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Enabled As Boolean
+  overload: Luny.Engine.ILunyEngineObserver.Enabled*
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineStartup
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnEngineStartup
+  id: OnEngineStartup
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnEngineStartup()
+  nameWithType: ILunyEngineObserver.OnEngineStartup()
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineStartup()
+  type: Method
+  source:
+    id: OnEngineStartup
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 15
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: Runs once per lifetime, when the application launches. Processing of the first frame has not begun.
+  example: []
+  syntax:
+    content: void OnEngineStartup()
+    content.vb: Sub OnEngineStartup()
+  overload: Luny.Engine.ILunyEngineObserver.OnEngineStartup*
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineFrameBegins
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnEngineFrameBegins
+  id: OnEngineFrameBegins
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnEngineFrameBegins()
+  nameWithType: ILunyEngineObserver.OnEngineFrameBegins()
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineFrameBegins()
+  type: Method
+  source:
+    id: OnEngineFrameBegins
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 20
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: Runs once per frame, before both frame update / heartbeat methods.
+  example: []
+  syntax:
+    content: void OnEngineFrameBegins()
+    content.vb: Sub OnEngineFrameBegins()
+  overload: Luny.Engine.ILunyEngineObserver.OnEngineFrameBegins*
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineHeartbeat
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnEngineHeartbeat
+  id: OnEngineHeartbeat
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnEngineHeartbeat()
+  nameWithType: ILunyEngineObserver.OnEngineHeartbeat()
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineHeartbeat()
+  type: Method
+  source:
+    id: OnEngineHeartbeat
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 33
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: Runs on the engine's fixed stepping frequency. Most suitable for deterministic game logic and to modify the Physics simulation.
+  remarks: >-
+    Engine internal physics simulation occurs right after a Heartbeat and before FrameUpdate.
+
+
+    Caution: Heartbeat frequency depends on engine time-stepping settings, and is not guaranteed to be in sync with FrameRate.
+
+    The behaviour depends on each frame's delta time (frame rate) and the engine's fixed step (or physics) time setting.
+    	- Heartbeat may be called less often than FrameUpdate
+    	- Heartbeat may be called several times in a single frame (all before FrameUpdate)
+  example: []
+  syntax:
+    content: void OnEngineHeartbeat()
+    content.vb: Sub OnEngineHeartbeat()
+  overload: Luny.Engine.ILunyEngineObserver.OnEngineHeartbeat*
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineFrameUpdate
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnEngineFrameUpdate
+  id: OnEngineFrameUpdate
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnEngineFrameUpdate()
+  nameWithType: ILunyEngineObserver.OnEngineFrameUpdate()
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineFrameUpdate()
+  type: Method
+  source:
+    id: OnEngineFrameUpdate
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 38
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: Runs once per frame. If the current frame runs a Heartbeat, the Heartbeat would have run right before.
+  example: []
+  syntax:
+    content: void OnEngineFrameUpdate()
+    content.vb: Sub OnEngineFrameUpdate()
+  overload: Luny.Engine.ILunyEngineObserver.OnEngineFrameUpdate*
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineFrameLateUpdate
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnEngineFrameLateUpdate
+  id: OnEngineFrameLateUpdate
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnEngineFrameLateUpdate()
+  nameWithType: ILunyEngineObserver.OnEngineFrameLateUpdate()
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineFrameLateUpdate()
+  type: Method
+  source:
+    id: OnEngineFrameLateUpdate
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 43
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: Runs once per frame, after all FrameUpdate ran.
+  example: []
+  syntax:
+    content: void OnEngineFrameLateUpdate()
+    content.vb: Sub OnEngineFrameLateUpdate()
+  overload: Luny.Engine.ILunyEngineObserver.OnEngineFrameLateUpdate*
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineFrameEnds
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnEngineFrameEnds
+  id: OnEngineFrameEnds
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnEngineFrameEnds()
+  nameWithType: ILunyEngineObserver.OnEngineFrameEnds()
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineFrameEnds()
+  type: Method
+  source:
+    id: OnEngineFrameEnds
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 48
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: Runs once per frame, after all FrameUpdate and FrameLateUpdate ran.
+  example: []
+  syntax:
+    content: void OnEngineFrameEnds()
+    content.vb: Sub OnEngineFrameEnds()
+  overload: Luny.Engine.ILunyEngineObserver.OnEngineFrameEnds*
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineShutdown
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnEngineShutdown
+  id: OnEngineShutdown
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnEngineShutdown()
+  nameWithType: ILunyEngineObserver.OnEngineShutdown()
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineShutdown()
+  type: Method
+  source:
+    id: OnEngineShutdown
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 53
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: Runs once per lifetime, when the application quits. Runs after all of the current frame's Heartbeat/Update methods ran.
+  example: []
+  syntax:
+    content: void OnEngineShutdown()
+    content.vb: Sub OnEngineShutdown()
+  overload: Luny.Engine.ILunyEngineObserver.OnEngineShutdown*
+- uid: Luny.Engine.ILunyEngineObserver.OnSceneLoaded(Luny.Engine.Bridge.ILunyScene)
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnSceneLoaded(Luny.Engine.Bridge.ILunyScene)
+  id: OnSceneLoaded(Luny.Engine.Bridge.ILunyScene)
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnSceneLoaded(ILunyScene)
+  nameWithType: ILunyEngineObserver.OnSceneLoaded(ILunyScene)
+  fullName: Luny.Engine.ILunyEngineObserver.OnSceneLoaded(Luny.Engine.Bridge.ILunyScene)
+  type: Method
+  source:
+    id: OnSceneLoaded
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 59
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: Runs when a scene was loaded, before frame processing begins. This includes the first scene which the engine loads automatically.
+  example: []
+  syntax:
+    content: void OnSceneLoaded(ILunyScene loadedScene)
+    parameters:
+    - id: loadedScene
+      type: Luny.Engine.Bridge.ILunyScene
+      description: ''
+    content.vb: Sub OnSceneLoaded(loadedScene As ILunyScene)
+  overload: Luny.Engine.ILunyEngineObserver.OnSceneLoaded*
+- uid: Luny.Engine.ILunyEngineObserver.OnSceneUnloaded(Luny.Engine.Bridge.ILunyScene)
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnSceneUnloaded(Luny.Engine.Bridge.ILunyScene)
+  id: OnSceneUnloaded(Luny.Engine.Bridge.ILunyScene)
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnSceneUnloaded(ILunyScene)
+  nameWithType: ILunyEngineObserver.OnSceneUnloaded(ILunyScene)
+  fullName: Luny.Engine.ILunyEngineObserver.OnSceneUnloaded(Luny.Engine.Bridge.ILunyScene)
+  type: Method
+  source:
+    id: OnSceneUnloaded
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 65
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: Runs when a scene was unloaded. All objects have been invalidated, if not destroyed.
+  example: []
+  syntax:
+    content: void OnSceneUnloaded(ILunyScene unloadedScene)
+    parameters:
+    - id: unloadedScene
+      type: Luny.Engine.Bridge.ILunyScene
+      description: ''
+    content.vb: Sub OnSceneUnloaded(unloadedScene As ILunyScene)
+  overload: Luny.Engine.ILunyEngineObserver.OnSceneUnloaded*
+- uid: Luny.Engine.ILunyEngineObserver.OnObjectRegistered(Luny.Engine.Bridge.ILunyObject)
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnObjectRegistered(Luny.Engine.Bridge.ILunyObject)
+  id: OnObjectRegistered(Luny.Engine.Bridge.ILunyObject)
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnObjectRegistered(ILunyObject)
+  nameWithType: ILunyEngineObserver.OnObjectRegistered(ILunyObject)
+  fullName: Luny.Engine.ILunyEngineObserver.OnObjectRegistered(Luny.Engine.Bridge.ILunyObject)
+  type: Method
+  source:
+    id: OnObjectRegistered
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 75
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: >-
+    Called when a LunyObject registered with LunyEngine.
+
+    Runs when object is created, before object's OnCreate callback. Its NativeObject is already assigned.
+  remarks: In future it may also be called for transferring native object ownership to LunyEngine.
+  example: []
+  syntax:
+    content: void OnObjectRegistered(ILunyObject lunyObject)
+    parameters:
+    - id: lunyObject
+      type: Luny.Engine.Bridge.ILunyObject
+      description: ''
+    content.vb: Sub OnObjectRegistered(lunyObject As ILunyObject)
+  overload: Luny.Engine.ILunyEngineObserver.OnObjectRegistered*
+- uid: Luny.Engine.ILunyEngineObserver.OnObjectUnregistered(Luny.Engine.Bridge.ILunyObject)
+  commentId: M:Luny.Engine.ILunyEngineObserver.OnObjectUnregistered(Luny.Engine.Bridge.ILunyObject)
+  id: OnObjectUnregistered(Luny.Engine.Bridge.ILunyObject)
+  parent: Luny.Engine.ILunyEngineObserver
+  langs:
+  - csharp
+  - vb
+  name: OnObjectUnregistered(ILunyObject)
+  nameWithType: ILunyEngineObserver.OnObjectUnregistered(ILunyObject)
+  fullName: Luny.Engine.ILunyEngineObserver.OnObjectUnregistered(Luny.Engine.Bridge.ILunyObject)
+  type: Method
+  source:
+    id: OnObjectUnregistered
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\ILunyEngineObserver.cs
+    startLine: 85
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: >-
+    Called when a LunyObject has unregistered from LunyEngine. Runs when object is destroyed, after object's OnDestroy callback.
+
+    The LunyObject instance is already invalidated but its NativeObject is still valid.
+  remarks: In future it may also be called for releasing ownership of native objects from LunyEngine.
+  example: []
+  syntax:
+    content: void OnObjectUnregistered(ILunyObject lunyObject)
+    parameters:
+    - id: lunyObject
+      type: Luny.Engine.Bridge.ILunyObject
+      description: ''
+    content.vb: Sub OnObjectUnregistered(lunyObject As ILunyObject)
+  overload: Luny.Engine.ILunyEngineObserver.OnObjectUnregistered*
+references:
+- uid: Luny.Engine
+  commentId: N:Luny.Engine
+  href: Luny.html
+  name: Luny.Engine
+  nameWithType: Luny.Engine
+  fullName: Luny.Engine
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+- uid: Luny.Engine.ILunyEngineObserver.Enabled*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.Enabled
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_Enabled
+  name: Enabled
+  nameWithType: ILunyEngineObserver.Enabled
+  fullName: Luny.Engine.ILunyEngineObserver.Enabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineStartup*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnEngineStartup
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnEngineStartup
+  name: OnEngineStartup
+  nameWithType: ILunyEngineObserver.OnEngineStartup
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineStartup
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineFrameBegins*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnEngineFrameBegins
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnEngineFrameBegins
+  name: OnEngineFrameBegins
+  nameWithType: ILunyEngineObserver.OnEngineFrameBegins
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineFrameBegins
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineHeartbeat*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnEngineHeartbeat
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnEngineHeartbeat
+  name: OnEngineHeartbeat
+  nameWithType: ILunyEngineObserver.OnEngineHeartbeat
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineHeartbeat
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineFrameUpdate*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnEngineFrameUpdate
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnEngineFrameUpdate
+  name: OnEngineFrameUpdate
+  nameWithType: ILunyEngineObserver.OnEngineFrameUpdate
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineFrameUpdate
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineFrameLateUpdate*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnEngineFrameLateUpdate
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnEngineFrameLateUpdate
+  name: OnEngineFrameLateUpdate
+  nameWithType: ILunyEngineObserver.OnEngineFrameLateUpdate
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineFrameLateUpdate
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineFrameEnds*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnEngineFrameEnds
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnEngineFrameEnds
+  name: OnEngineFrameEnds
+  nameWithType: ILunyEngineObserver.OnEngineFrameEnds
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineFrameEnds
+- uid: Luny.Engine.ILunyEngineObserver.OnEngineShutdown*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnEngineShutdown
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnEngineShutdown
+  name: OnEngineShutdown
+  nameWithType: ILunyEngineObserver.OnEngineShutdown
+  fullName: Luny.Engine.ILunyEngineObserver.OnEngineShutdown
+- uid: Luny.Engine.ILunyEngineObserver.OnSceneLoaded*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnSceneLoaded
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnSceneLoaded_Luny_Engine_Bridge_ILunyScene_
+  name: OnSceneLoaded
+  nameWithType: ILunyEngineObserver.OnSceneLoaded
+  fullName: Luny.Engine.ILunyEngineObserver.OnSceneLoaded
+- uid: Luny.Engine.Bridge.ILunyScene
+  commentId: T:Luny.Engine.Bridge.ILunyScene
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.ILunyScene.html
+  name: ILunyScene
+  nameWithType: ILunyScene
+  fullName: Luny.Engine.Bridge.ILunyScene
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+- uid: Luny.Engine.ILunyEngineObserver.OnSceneUnloaded*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnSceneUnloaded
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnSceneUnloaded_Luny_Engine_Bridge_ILunyScene_
+  name: OnSceneUnloaded
+  nameWithType: ILunyEngineObserver.OnSceneUnloaded
+  fullName: Luny.Engine.ILunyEngineObserver.OnSceneUnloaded
+- uid: Luny.Engine.ILunyEngineObserver.OnObjectRegistered*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnObjectRegistered
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnObjectRegistered_Luny_Engine_Bridge_ILunyObject_
+  name: OnObjectRegistered
+  nameWithType: ILunyEngineObserver.OnObjectRegistered
+  fullName: Luny.Engine.ILunyEngineObserver.OnObjectRegistered
+- uid: Luny.Engine.Bridge.ILunyObject
+  commentId: T:Luny.Engine.Bridge.ILunyObject
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.ILunyObject.html
+  name: ILunyObject
+  nameWithType: ILunyObject
+  fullName: Luny.Engine.Bridge.ILunyObject
+- uid: Luny.Engine.ILunyEngineObserver.OnObjectUnregistered*
+  commentId: Overload:Luny.Engine.ILunyEngineObserver.OnObjectUnregistered
+  href: Luny.Engine.ILunyEngineObserver.html#Luny_Engine_ILunyEngineObserver_OnObjectUnregistered_Luny_Engine_Bridge_ILunyObject_
+  name: OnObjectUnregistered
+  nameWithType: ILunyEngineObserver.OnObjectUnregistered
+  fullName: Luny.Engine.ILunyEngineObserver.OnObjectUnregistered

@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.LogLevel
+  commentId: T:Luny.LogLevel
+  id: LogLevel
+  parent: Luny
+  children:
+  - Luny.LogLevel.Error
+  - Luny.LogLevel.Exception
+  - Luny.LogLevel.Info
+  - Luny.LogLevel.Warning
+  langs:
+  - csharp
+  - vb
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Luny.LogLevel
+  type: Enum
+  source:
+    id: LogLevel
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Core\LunyLogger.cs
+    startLine: 58
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Log message severity levels.
+  example: []
+  syntax:
+    content: public enum LogLevel
+    content.vb: Public Enum LogLevel
+- uid: Luny.LogLevel.Info
+  commentId: F:Luny.LogLevel.Info
+  id: Info
+  parent: Luny.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: LogLevel.Info
+  fullName: Luny.LogLevel.Info
+  type: Field
+  source:
+    id: Info
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Core\LunyLogger.cs
+    startLine: 60
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: Info = 0
+    return:
+      type: Luny.LogLevel
+- uid: Luny.LogLevel.Warning
+  commentId: F:Luny.LogLevel.Warning
+  id: Warning
+  parent: Luny.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: LogLevel.Warning
+  fullName: Luny.LogLevel.Warning
+  type: Field
+  source:
+    id: Warning
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Core\LunyLogger.cs
+    startLine: 61
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: Warning = 1
+    return:
+      type: Luny.LogLevel
+- uid: Luny.LogLevel.Error
+  commentId: F:Luny.LogLevel.Error
+  id: Error
+  parent: Luny.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: LogLevel.Error
+  fullName: Luny.LogLevel.Error
+  type: Field
+  source:
+    id: Error
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Core\LunyLogger.cs
+    startLine: 62
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: Error = 2
+    return:
+      type: Luny.LogLevel
+- uid: Luny.LogLevel.Exception
+  commentId: F:Luny.LogLevel.Exception
+  id: Exception
+  parent: Luny.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: LogLevel.Exception
+  fullName: Luny.LogLevel.Exception
+  type: Field
+  source:
+    id: Exception
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Core\LunyLogger.cs
+    startLine: 63
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: Exception = 3
+    return:
+      type: Luny.LogLevel
+references:
+- uid: Luny
+  commentId: N:Luny
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: Luny.LogLevel
+  commentId: T:Luny.LogLevel
+  parent: Luny
+  href: Luny.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Luny.LogLevel

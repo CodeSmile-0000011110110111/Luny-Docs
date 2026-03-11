@@ -1,0 +1,384 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny
+  commentId: N:Luny
+  id: Luny
+  children:
+  - Luny.Alarm
+  - Luny.Counter
+  - Luny.ILunyEngine
+  - Luny.ILunyEngineLifecycle
+  - Luny.ILunyLogger
+  - Luny.ITable
+  - Luny.LogEntry
+  - Luny.LogLevel
+  - Luny.LunyAssetRef
+  - Luny.LunyEngine
+  - Luny.LunyLogger
+  - Luny.LunyObjectRef
+  - Luny.LunyRef`1
+  - Luny.LunyTraceLogger
+  - Luny.Number
+  - Luny.Stopwatch
+  - Luny.SystemDoubleExtensions
+  - Luny.SystemStringExtensions
+  - Luny.SystemTypeExtensions
+  - Luny.Table
+  - Luny.Table.ScalarVarHandle
+  - Luny.Table.VarHandle
+  - Luny.Table.VarHandle`1
+  - Luny.Timer
+  - Luny.Variable
+  - Luny.Variable.ValueType
+  - Luny.VariableChangedArgs
+  - Luny.Variable`1
+  - Luny.Variable`1.ValueType
+  langs:
+  - csharp
+  - vb
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+  type: Namespace
+  assemblies:
+  - Luny
+references:
+- uid: Luny.Counter
+  commentId: T:Luny.Counter
+  href: Luny.Counter.html
+  name: Counter
+  nameWithType: Counter
+  fullName: Luny.Counter
+- uid: Luny.SystemStringExtensions
+  commentId: T:Luny.SystemStringExtensions
+  href: Luny.SystemStringExtensions.html
+  name: SystemStringExtensions
+  nameWithType: SystemStringExtensions
+  fullName: Luny.SystemStringExtensions
+- uid: Luny.SystemDoubleExtensions
+  commentId: T:Luny.SystemDoubleExtensions
+  href: Luny.SystemDoubleExtensions.html
+  name: SystemDoubleExtensions
+  nameWithType: SystemDoubleExtensions
+  fullName: Luny.SystemDoubleExtensions
+- uid: Luny.Variable`1
+  commentId: T:Luny.Variable`1
+  parent: Luny
+  href: Luny.Variable-1.html
+  name: Variable<T>
+  nameWithType: Variable<T>
+  fullName: Luny.Variable<T>
+  nameWithType.vb: Variable(Of T)
+  fullName.vb: Luny.Variable(Of T)
+  name.vb: Variable(Of T)
+  spec.csharp:
+  - uid: Luny.Variable`1
+    name: Variable
+    href: Luny.Variable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Luny.Variable`1
+    name: Variable
+    href: Luny.Variable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Luny.Variable`1.ValueType
+  commentId: T:Luny.Variable`1.ValueType
+  parent: Luny
+  href: Luny.Variable-1.html
+  name: Variable<T>.ValueType
+  nameWithType: Variable<T>.ValueType
+  fullName: Luny.Variable<T>.ValueType
+  nameWithType.vb: Variable(Of T).ValueType
+  fullName.vb: Luny.Variable(Of T).ValueType
+  name.vb: Variable(Of T).ValueType
+  spec.csharp:
+  - uid: Luny.Variable`1
+    name: Variable
+    href: Luny.Variable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: Luny.Variable`1.ValueType
+    name: ValueType
+    href: Luny.Variable-1.ValueType.html
+  spec.vb:
+  - uid: Luny.Variable`1
+    name: Variable
+    href: Luny.Variable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: Luny.Variable`1.ValueType
+    name: ValueType
+    href: Luny.Variable-1.ValueType.html
+- uid: Luny.Stopwatch
+  commentId: T:Luny.Stopwatch
+  parent: Luny
+  href: Luny.Stopwatch.html
+  name: Stopwatch
+  nameWithType: Stopwatch
+  fullName: Luny.Stopwatch
+- uid: Luny.LunyEngine
+  commentId: T:Luny.LunyEngine
+  parent: Luny
+  href: Luny.LunyEngine.html
+  name: LunyEngine
+  nameWithType: LunyEngine
+  fullName: Luny.LunyEngine
+- uid: Luny.Number
+  commentId: T:Luny.Number
+  parent: Luny
+  href: Luny.Number.html
+  name: Number
+  nameWithType: Number
+  fullName: Luny.Number
+- uid: Luny.ILunyEngine
+  commentId: T:Luny.ILunyEngine
+  parent: Luny
+  href: Luny.ILunyEngine.html
+  name: ILunyEngine
+  nameWithType: ILunyEngine
+  fullName: Luny.ILunyEngine
+- uid: Luny.ILunyEngineLifecycle
+  commentId: T:Luny.ILunyEngineLifecycle
+  parent: Luny
+  href: Luny.ILunyEngineLifecycle.html
+  name: ILunyEngineLifecycle
+  nameWithType: ILunyEngineLifecycle
+  fullName: Luny.ILunyEngineLifecycle
+- uid: Luny.VariableChangedArgs
+  commentId: T:Luny.VariableChangedArgs
+  href: Luny.VariableChangedArgs.html
+  name: VariableChangedArgs
+  nameWithType: VariableChangedArgs
+  fullName: Luny.VariableChangedArgs
+- uid: Luny.ITable
+  commentId: T:Luny.ITable
+  parent: Luny
+  href: Luny.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: Luny.ITable
+- uid: Luny.Table
+  commentId: T:Luny.Table
+  parent: Luny
+  href: Luny.Table.html
+  name: Table
+  nameWithType: Table
+  fullName: Luny.Table
+- uid: Luny.Table.VarHandle
+  commentId: T:Luny.Table.VarHandle
+  parent: Luny
+  href: Luny.Table.html
+  name: Table.VarHandle
+  nameWithType: Table.VarHandle
+  fullName: Luny.Table.VarHandle
+  spec.csharp:
+  - uid: Luny.Table
+    name: Table
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.VarHandle
+    name: VarHandle
+    href: Luny.Table.VarHandle.html
+  spec.vb:
+  - uid: Luny.Table
+    name: Table
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.VarHandle
+    name: VarHandle
+    href: Luny.Table.VarHandle.html
+- uid: Luny.Table.ScalarVarHandle
+  commentId: T:Luny.Table.ScalarVarHandle
+  parent: Luny
+  href: Luny.Table.html
+  name: Table.ScalarVarHandle
+  nameWithType: Table.ScalarVarHandle
+  fullName: Luny.Table.ScalarVarHandle
+  spec.csharp:
+  - uid: Luny.Table
+    name: Table
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.ScalarVarHandle
+    name: ScalarVarHandle
+    href: Luny.Table.ScalarVarHandle.html
+  spec.vb:
+  - uid: Luny.Table
+    name: Table
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.ScalarVarHandle
+    name: ScalarVarHandle
+    href: Luny.Table.ScalarVarHandle.html
+- uid: Luny.Table.VarHandle`1
+  commentId: T:Luny.Table.VarHandle`1
+  href: Luny.Table.html
+  name: Table.VarHandle<T>
+  nameWithType: Table.VarHandle<T>
+  fullName: Luny.Table.VarHandle<T>
+  nameWithType.vb: Table.VarHandle(Of T)
+  fullName.vb: Luny.Table.VarHandle(Of T)
+  name.vb: Table.VarHandle(Of T)
+  spec.csharp:
+  - uid: Luny.Table
+    name: Table
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.VarHandle`1
+    name: VarHandle
+    href: Luny.Table.VarHandle-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Luny.Table
+    name: Table
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.VarHandle`1
+    name: VarHandle
+    href: Luny.Table.VarHandle-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Luny.Variable
+  commentId: T:Luny.Variable
+  parent: Luny
+  href: Luny.Variable.html
+  name: Variable
+  nameWithType: Variable
+  fullName: Luny.Variable
+- uid: Luny.Variable.ValueType
+  commentId: T:Luny.Variable.ValueType
+  parent: Luny
+  href: Luny.Variable.html
+  name: Variable.ValueType
+  nameWithType: Variable.ValueType
+  fullName: Luny.Variable.ValueType
+  spec.csharp:
+  - uid: Luny.Variable
+    name: Variable
+    href: Luny.Variable.html
+  - name: .
+  - uid: Luny.Variable.ValueType
+    name: ValueType
+    href: Luny.Variable.ValueType.html
+  spec.vb:
+  - uid: Luny.Variable
+    name: Variable
+    href: Luny.Variable.html
+  - name: .
+  - uid: Luny.Variable.ValueType
+    name: ValueType
+    href: Luny.Variable.ValueType.html
+- uid: Luny.ILunyLogger
+  commentId: T:Luny.ILunyLogger
+  parent: Luny
+  href: Luny.ILunyLogger.html
+  name: ILunyLogger
+  nameWithType: ILunyLogger
+  fullName: Luny.ILunyLogger
+- uid: Luny.LogEntry
+  commentId: T:Luny.LogEntry
+  href: Luny.LogEntry.html
+  name: LogEntry
+  nameWithType: LogEntry
+  fullName: Luny.LogEntry
+- uid: Luny.LogLevel
+  commentId: T:Luny.LogLevel
+  parent: Luny
+  href: Luny.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Luny.LogLevel
+- uid: Luny.LunyLogger
+  commentId: T:Luny.LunyLogger
+  href: Luny.LunyLogger.html
+  name: LunyLogger
+  nameWithType: LunyLogger
+  fullName: Luny.LunyLogger
+- uid: Luny.LunyTraceLogger
+  commentId: T:Luny.LunyTraceLogger
+  href: Luny.LunyTraceLogger.html
+  name: LunyTraceLogger
+  nameWithType: LunyTraceLogger
+  fullName: Luny.LunyTraceLogger
+- uid: Luny.Timer
+  commentId: T:Luny.Timer
+  parent: Luny
+  href: Luny.Timer.html
+  name: Timer
+  nameWithType: Timer
+  fullName: Luny.Timer
+- uid: Luny.SystemTypeExtensions
+  commentId: T:Luny.SystemTypeExtensions
+  href: Luny.SystemTypeExtensions.html
+  name: SystemTypeExtensions
+  nameWithType: SystemTypeExtensions
+  fullName: Luny.SystemTypeExtensions
+- uid: Luny.Alarm
+  commentId: T:Luny.Alarm
+  parent: Luny
+  href: Luny.Alarm.html
+  name: Alarm
+  nameWithType: Alarm
+  fullName: Luny.Alarm
+- uid: Luny.LunyRef`1
+  commentId: T:Luny.LunyRef`1
+  href: Luny.LunyRef-1.html
+  name: LunyRef<T>
+  nameWithType: LunyRef<T>
+  fullName: Luny.LunyRef<T>
+  nameWithType.vb: LunyRef(Of T)
+  fullName.vb: Luny.LunyRef(Of T)
+  name.vb: LunyRef(Of T)
+  spec.csharp:
+  - uid: Luny.LunyRef`1
+    name: LunyRef
+    href: Luny.LunyRef-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Luny.LunyRef`1
+    name: LunyRef
+    href: Luny.LunyRef-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Luny.LunyObjectRef
+  commentId: T:Luny.LunyObjectRef
+  parent: Luny
+  href: Luny.LunyObjectRef.html
+  name: LunyObjectRef
+  nameWithType: LunyObjectRef
+  fullName: Luny.LunyObjectRef
+- uid: Luny.LunyAssetRef
+  commentId: T:Luny.LunyAssetRef
+  parent: Luny
+  href: Luny.LunyAssetRef.html
+  name: LunyAssetRef
+  nameWithType: LunyAssetRef
+  fullName: Luny.LunyAssetRef
+- uid: Luny
+  commentId: N:Luny
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny

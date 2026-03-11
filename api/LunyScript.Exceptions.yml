@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Exceptions
+  commentId: N:LunyScript.Exceptions
+  id: LunyScript.Exceptions
+  children:
+  - LunyScript.Exceptions.LunyScriptException
+  - LunyScript.Exceptions.LunyScriptMaxIterationException
+  - LunyScript.Exceptions.LunyScriptVariableException
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.Exceptions
+  nameWithType: LunyScript.Exceptions
+  fullName: LunyScript.Exceptions
+  type: Namespace
+  assemblies:
+  - LunyScript
+references:
+- uid: LunyScript.Exceptions.LunyScriptException
+  commentId: T:LunyScript.Exceptions.LunyScriptException
+  parent: LunyScript.Exceptions
+  href: LunyScript.Exceptions.LunyScriptException.html
+  name: LunyScriptException
+  nameWithType: LunyScriptException
+  fullName: LunyScript.Exceptions.LunyScriptException
+- uid: LunyScript.Exceptions.LunyScriptVariableException
+  commentId: T:LunyScript.Exceptions.LunyScriptVariableException
+  href: LunyScript.Exceptions.LunyScriptVariableException.html
+  name: LunyScriptVariableException
+  nameWithType: LunyScriptVariableException
+  fullName: LunyScript.Exceptions.LunyScriptVariableException
+- uid: LunyScript.Exceptions.LunyScriptMaxIterationException
+  commentId: T:LunyScript.Exceptions.LunyScriptMaxIterationException
+  href: LunyScript.Exceptions.LunyScriptMaxIterationException.html
+  name: LunyScriptMaxIterationException
+  nameWithType: LunyScriptMaxIterationException
+  fullName: LunyScript.Exceptions.LunyScriptMaxIterationException
+- uid: LunyScript.Exceptions
+  commentId: N:LunyScript.Exceptions
+  href: LunyScript.html
+  name: LunyScript.Exceptions
+  nameWithType: LunyScript.Exceptions
+  fullName: LunyScript.Exceptions
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Exceptions
+    name: Exceptions
+    href: LunyScript.Exceptions.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Exceptions
+    name: Exceptions
+    href: LunyScript.Exceptions.html

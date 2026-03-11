@@ -1,0 +1,777 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  commentId: T:Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  id: UnityCollision
+  parent: Luny.Unity.Engine.Bridge.Physics
+  children:
+  - Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collider
+  - Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collision
+  - Luny.Unity.Engine.Bridge.Physics.UnityCollision.HasComponent(System.Type)
+  - Luny.Unity.Engine.Bridge.Physics.UnityCollision.Layer
+  - Luny.Unity.Engine.Bridge.Physics.UnityCollision.LayerName
+  - Luny.Unity.Engine.Bridge.Physics.UnityCollision.Name
+  - Luny.Unity.Engine.Bridge.Physics.UnityCollision.SetNativeCollision(System.Object)
+  - Luny.Unity.Engine.Bridge.Physics.UnityCollision.Tag
+  langs:
+  - csharp
+  - vb
+  name: UnityCollision
+  nameWithType: UnityCollision
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  type: Class
+  source:
+    id: UnityCollision
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny.Unity\Engine\Bridge\Physics\UnityCollision.cs
+    startLine: 7
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Bridge.Physics
+  syntax:
+    content: 'public sealed class UnityCollision : LunyCollision'
+    content.vb: Public NotInheritable Class UnityCollision Inherits LunyCollision
+  inheritance:
+  - System.Object
+  - Luny.Engine.Bridge.LunyCollision
+  inheritedMembers:
+  - Luny.Engine.Bridge.LunyCollision.NativeCollision
+  - Luny.Engine.Bridge.LunyCollision.IsValid
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collision
+  commentId: P:Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collision
+  id: Collision
+  parent: Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  langs:
+  - csharp
+  - vb
+  name: Collision
+  nameWithType: UnityCollision.Collision
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collision
+  type: Property
+  source:
+    id: Collision
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny.Unity\Engine\Bridge\Physics\UnityCollision.cs
+    startLine: 9
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Bridge.Physics
+  syntax:
+    content: public Collision Collision { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Collision
+    content.vb: Public ReadOnly Property Collision As Collision
+  overload: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collision*
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collider
+  commentId: P:Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collider
+  id: Collider
+  parent: Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  langs:
+  - csharp
+  - vb
+  name: Collider
+  nameWithType: UnityCollision.Collider
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collider
+  type: Property
+  source:
+    id: Collider
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny.Unity\Engine\Bridge\Physics\UnityCollision.cs
+    startLine: 11
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Bridge.Physics
+  example: []
+  syntax:
+    content: public override LunyCollider Collider { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyCollider
+    content.vb: Public Overrides ReadOnly Property Collider As LunyCollider
+  overridden: Luny.Engine.Bridge.LunyCollision.Collider
+  overload: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collider*
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Tag
+  commentId: P:Luny.Unity.Engine.Bridge.Physics.UnityCollision.Tag
+  id: Tag
+  parent: Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  langs:
+  - csharp
+  - vb
+  name: Tag
+  nameWithType: UnityCollision.Tag
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Tag
+  type: Property
+  source:
+    id: Tag
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny.Unity\Engine\Bridge\Physics\UnityCollision.cs
+    startLine: 12
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Bridge.Physics
+  example: []
+  syntax:
+    content: public override string Tag { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property Tag As String
+  overridden: Luny.Engine.Bridge.LunyCollision.Tag
+  overload: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Tag*
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Name
+  commentId: P:Luny.Unity.Engine.Bridge.Physics.UnityCollision.Name
+  id: Name
+  parent: Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: UnityCollision.Name
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Name
+  type: Property
+  source:
+    id: Name
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny.Unity\Engine\Bridge\Physics\UnityCollision.cs
+    startLine: 13
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Bridge.Physics
+  example: []
+  syntax:
+    content: public override string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property Name As String
+  overridden: Luny.Engine.Bridge.LunyCollision.Name
+  overload: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Name*
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.LayerName
+  commentId: P:Luny.Unity.Engine.Bridge.Physics.UnityCollision.LayerName
+  id: LayerName
+  parent: Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  langs:
+  - csharp
+  - vb
+  name: LayerName
+  nameWithType: UnityCollision.LayerName
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.LayerName
+  type: Property
+  source:
+    id: LayerName
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny.Unity\Engine\Bridge\Physics\UnityCollision.cs
+    startLine: 14
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Bridge.Physics
+  example: []
+  syntax:
+    content: public override string LayerName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property LayerName As String
+  overridden: Luny.Engine.Bridge.LunyCollision.LayerName
+  overload: Luny.Unity.Engine.Bridge.Physics.UnityCollision.LayerName*
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Layer
+  commentId: P:Luny.Unity.Engine.Bridge.Physics.UnityCollision.Layer
+  id: Layer
+  parent: Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  langs:
+  - csharp
+  - vb
+  name: Layer
+  nameWithType: UnityCollision.Layer
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Layer
+  type: Property
+  source:
+    id: Layer
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny.Unity\Engine\Bridge\Physics\UnityCollision.cs
+    startLine: 15
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Bridge.Physics
+  example: []
+  syntax:
+    content: public override int Layer { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overrides ReadOnly Property Layer As Integer
+  overridden: Luny.Engine.Bridge.LunyCollision.Layer
+  overload: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Layer*
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.SetNativeCollision(System.Object)
+  commentId: M:Luny.Unity.Engine.Bridge.Physics.UnityCollision.SetNativeCollision(System.Object)
+  id: SetNativeCollision(System.Object)
+  parent: Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  langs:
+  - csharp
+  - vb
+  name: SetNativeCollision(object)
+  nameWithType: UnityCollision.SetNativeCollision(object)
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.SetNativeCollision(object)
+  type: Method
+  source:
+    id: SetNativeCollision
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny.Unity\Engine\Bridge\Physics\UnityCollision.cs
+    startLine: 17
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Bridge.Physics
+  example: []
+  syntax:
+    content: public override void SetNativeCollision(object nativeCollision)
+    parameters:
+    - id: nativeCollision
+      type: System.Object
+    content.vb: Public Overrides Sub SetNativeCollision(nativeCollision As Object)
+  overridden: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(System.Object)
+  overload: Luny.Unity.Engine.Bridge.Physics.UnityCollision.SetNativeCollision*
+  nameWithType.vb: UnityCollision.SetNativeCollision(Object)
+  fullName.vb: Luny.Unity.Engine.Bridge.Physics.UnityCollision.SetNativeCollision(Object)
+  name.vb: SetNativeCollision(Object)
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.HasComponent(System.Type)
+  commentId: M:Luny.Unity.Engine.Bridge.Physics.UnityCollision.HasComponent(System.Type)
+  id: HasComponent(System.Type)
+  parent: Luny.Unity.Engine.Bridge.Physics.UnityCollision
+  langs:
+  - csharp
+  - vb
+  name: HasComponent(Type)
+  nameWithType: UnityCollision.HasComponent(Type)
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.HasComponent(System.Type)
+  type: Method
+  source:
+    id: HasComponent
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny.Unity\Engine\Bridge\Physics\UnityCollision.cs
+    startLine: 23
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Bridge.Physics
+  example: []
+  syntax:
+    content: public override bool HasComponent(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function HasComponent(type As Type) As Boolean
+  overridden: Luny.Engine.Bridge.LunyCollision.HasComponent(System.Type)
+  overload: Luny.Unity.Engine.Bridge.Physics.UnityCollision.HasComponent*
+references:
+- uid: Luny.Unity.Engine.Bridge.Physics
+  commentId: N:Luny.Unity.Engine.Bridge.Physics
+  href: Luny.html
+  name: Luny.Unity.Engine.Bridge.Physics
+  nameWithType: Luny.Unity.Engine.Bridge.Physics
+  fullName: Luny.Unity.Engine.Bridge.Physics
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Unity
+    name: Unity
+    href: Luny.Unity.html
+  - name: .
+  - uid: Luny.Unity.Engine
+    name: Engine
+    href: Luny.Unity.Engine.html
+  - name: .
+  - uid: Luny.Unity.Engine.Bridge
+    name: Bridge
+    href: Luny.Unity.Engine.Bridge.html
+  - name: .
+  - uid: Luny.Unity.Engine.Bridge.Physics
+    name: Physics
+    href: Luny.Unity.Engine.Bridge.Physics.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Unity
+    name: Unity
+    href: Luny.Unity.html
+  - name: .
+  - uid: Luny.Unity.Engine
+    name: Engine
+    href: Luny.Unity.Engine.html
+  - name: .
+  - uid: Luny.Unity.Engine.Bridge
+    name: Bridge
+    href: Luny.Unity.Engine.Bridge.html
+  - name: .
+  - uid: Luny.Unity.Engine.Bridge.Physics
+    name: Physics
+    href: Luny.Unity.Engine.Bridge.Physics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Luny.Engine.Bridge.LunyCollision
+  commentId: T:Luny.Engine.Bridge.LunyCollision
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.LunyCollision.html
+  name: LunyCollision
+  nameWithType: LunyCollision
+  fullName: Luny.Engine.Bridge.LunyCollision
+- uid: Luny.Engine.Bridge.LunyCollision.NativeCollision
+  commentId: P:Luny.Engine.Bridge.LunyCollision.NativeCollision
+  parent: Luny.Engine.Bridge.LunyCollision
+  href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_NativeCollision
+  name: NativeCollision
+  nameWithType: LunyCollision.NativeCollision
+  fullName: Luny.Engine.Bridge.LunyCollision.NativeCollision
+- uid: Luny.Engine.Bridge.LunyCollision.IsValid
+  commentId: P:Luny.Engine.Bridge.LunyCollision.IsValid
+  parent: Luny.Engine.Bridge.LunyCollision
+  href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_IsValid
+  name: IsValid
+  nameWithType: LunyCollision.IsValid
+  fullName: Luny.Engine.Bridge.LunyCollision.IsValid
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collision*
+  commentId: Overload:Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collision
+  href: Luny.Unity.Engine.Bridge.Physics.UnityCollision.html#Luny_Unity_Engine_Bridge_Physics_UnityCollision_Collision
+  name: Collision
+  nameWithType: UnityCollision.Collision
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collision
+- uid: UnityEngine.Collision
+  commentId: T:UnityEngine.Collision
+  parent: UnityEngine
+  isExternal: true
+  name: Collision
+  nameWithType: Collision
+  fullName: UnityEngine.Collision
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Luny.Engine.Bridge.LunyCollision.Collider
+  commentId: P:Luny.Engine.Bridge.LunyCollision.Collider
+  parent: Luny.Engine.Bridge.LunyCollision
+  href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_Collider
+  name: Collider
+  nameWithType: LunyCollision.Collider
+  fullName: Luny.Engine.Bridge.LunyCollision.Collider
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collider*
+  commentId: Overload:Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collider
+  href: Luny.Unity.Engine.Bridge.Physics.UnityCollision.html#Luny_Unity_Engine_Bridge_Physics_UnityCollision_Collider
+  name: Collider
+  nameWithType: UnityCollision.Collider
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Collider
+- uid: Luny.Engine.Bridge.LunyCollider
+  commentId: T:Luny.Engine.Bridge.LunyCollider
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.LunyCollider.html
+  name: LunyCollider
+  nameWithType: LunyCollider
+  fullName: Luny.Engine.Bridge.LunyCollider
+- uid: Luny.Engine.Bridge.LunyCollision.Tag
+  commentId: P:Luny.Engine.Bridge.LunyCollision.Tag
+  parent: Luny.Engine.Bridge.LunyCollision
+  href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_Tag
+  name: Tag
+  nameWithType: LunyCollision.Tag
+  fullName: Luny.Engine.Bridge.LunyCollision.Tag
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Tag*
+  commentId: Overload:Luny.Unity.Engine.Bridge.Physics.UnityCollision.Tag
+  href: Luny.Unity.Engine.Bridge.Physics.UnityCollision.html#Luny_Unity_Engine_Bridge_Physics_UnityCollision_Tag
+  name: Tag
+  nameWithType: UnityCollision.Tag
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Tag
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Engine.Bridge.LunyCollision.Name
+  commentId: P:Luny.Engine.Bridge.LunyCollision.Name
+  parent: Luny.Engine.Bridge.LunyCollision
+  href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_Name
+  name: Name
+  nameWithType: LunyCollision.Name
+  fullName: Luny.Engine.Bridge.LunyCollision.Name
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Name*
+  commentId: Overload:Luny.Unity.Engine.Bridge.Physics.UnityCollision.Name
+  href: Luny.Unity.Engine.Bridge.Physics.UnityCollision.html#Luny_Unity_Engine_Bridge_Physics_UnityCollision_Name
+  name: Name
+  nameWithType: UnityCollision.Name
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Name
+- uid: Luny.Engine.Bridge.LunyCollision.LayerName
+  commentId: P:Luny.Engine.Bridge.LunyCollision.LayerName
+  parent: Luny.Engine.Bridge.LunyCollision
+  href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_LayerName
+  name: LayerName
+  nameWithType: LunyCollision.LayerName
+  fullName: Luny.Engine.Bridge.LunyCollision.LayerName
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.LayerName*
+  commentId: Overload:Luny.Unity.Engine.Bridge.Physics.UnityCollision.LayerName
+  href: Luny.Unity.Engine.Bridge.Physics.UnityCollision.html#Luny_Unity_Engine_Bridge_Physics_UnityCollision_LayerName
+  name: LayerName
+  nameWithType: UnityCollision.LayerName
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.LayerName
+- uid: Luny.Engine.Bridge.LunyCollision.Layer
+  commentId: P:Luny.Engine.Bridge.LunyCollision.Layer
+  parent: Luny.Engine.Bridge.LunyCollision
+  href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_Layer
+  name: Layer
+  nameWithType: LunyCollision.Layer
+  fullName: Luny.Engine.Bridge.LunyCollision.Layer
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Layer*
+  commentId: Overload:Luny.Unity.Engine.Bridge.Physics.UnityCollision.Layer
+  href: Luny.Unity.Engine.Bridge.Physics.UnityCollision.html#Luny_Unity_Engine_Bridge_Physics_UnityCollision_Layer
+  name: Layer
+  nameWithType: UnityCollision.Layer
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.Layer
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(System.Object)
+  commentId: M:Luny.Engine.Bridge.LunyCollision.SetNativeCollision(System.Object)
+  parent: Luny.Engine.Bridge.LunyCollision
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_SetNativeCollision_System_Object_
+  name: SetNativeCollision(object)
+  nameWithType: LunyCollision.SetNativeCollision(object)
+  fullName: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(object)
+  nameWithType.vb: LunyCollision.SetNativeCollision(Object)
+  fullName.vb: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(Object)
+  name.vb: SetNativeCollision(Object)
+  spec.csharp:
+  - uid: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(System.Object)
+    name: SetNativeCollision
+    href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_SetNativeCollision_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(System.Object)
+    name: SetNativeCollision
+    href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_SetNativeCollision_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.SetNativeCollision*
+  commentId: Overload:Luny.Unity.Engine.Bridge.Physics.UnityCollision.SetNativeCollision
+  href: Luny.Unity.Engine.Bridge.Physics.UnityCollision.html#Luny_Unity_Engine_Bridge_Physics_UnityCollision_SetNativeCollision_System_Object_
+  name: SetNativeCollision
+  nameWithType: UnityCollision.SetNativeCollision
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.SetNativeCollision
+- uid: Luny.Engine.Bridge.LunyCollision.HasComponent(System.Type)
+  commentId: M:Luny.Engine.Bridge.LunyCollision.HasComponent(System.Type)
+  parent: Luny.Engine.Bridge.LunyCollision
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_HasComponent_System_Type_
+  name: HasComponent(Type)
+  nameWithType: LunyCollision.HasComponent(Type)
+  fullName: Luny.Engine.Bridge.LunyCollision.HasComponent(System.Type)
+  spec.csharp:
+  - uid: Luny.Engine.Bridge.LunyCollision.HasComponent(System.Type)
+    name: HasComponent
+    href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_HasComponent_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Bridge.LunyCollision.HasComponent(System.Type)
+    name: HasComponent
+    href: Luny.Engine.Bridge.LunyCollision.html#Luny_Engine_Bridge_LunyCollision_HasComponent_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: Luny.Unity.Engine.Bridge.Physics.UnityCollision.HasComponent*
+  commentId: Overload:Luny.Unity.Engine.Bridge.Physics.UnityCollision.HasComponent
+  href: Luny.Unity.Engine.Bridge.Physics.UnityCollision.html#Luny_Unity_Engine_Bridge_Physics_UnityCollision_HasComponent_System_Type_
+  name: HasComponent
+  nameWithType: UnityCollision.HasComponent
+  fullName: Luny.Unity.Engine.Bridge.Physics.UnityCollision.HasComponent
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

@@ -1,0 +1,407 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.CoroutineBuilder
+  commentId: T:LunyScript.CoroutineBuilder
+  id: CoroutineBuilder
+  parent: LunyScript
+  children:
+  - LunyScript.CoroutineBuilder.Every(System.Double)
+  - LunyScript.CoroutineBuilder.In(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: CoroutineBuilder
+  nameWithType: CoroutineBuilder
+  fullName: LunyScript.CoroutineBuilder
+  type: Struct
+  source:
+    id: CoroutineBuilder
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Coroutines\CoroutineBuilder.cs
+    startLine: 12
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Entry point for the Coroutine fluent builder chain.
+
+    Usage: Coroutine("name").For(3).Seconds().OnFrameUpdate(blocks).WhenElapsed(blocks);
+           Coroutine("name").OnFrameUpdate(blocks).WhenStopped(blocks).Do(blocks);
+           Coroutine("name").OnHeartbeat(blocks).Do(blocks);
+  example: []
+  syntax:
+    content: public readonly struct CoroutineBuilder
+    content.vb: Public Structure CoroutineBuilder
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LunyScript.CoroutineBuilder.In(System.Double)
+  commentId: M:LunyScript.CoroutineBuilder.In(System.Double)
+  id: In(System.Double)
+  parent: LunyScript.CoroutineBuilder
+  langs:
+  - csharp
+  - vb
+  name: In(double)
+  nameWithType: CoroutineBuilder.In(double)
+  fullName: LunyScript.CoroutineBuilder.In(double)
+  type: Method
+  source:
+    id: In
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Coroutines\CoroutineBuilder.cs
+    startLine: 29
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: A finite timer coroutine which fires after the specified duration. The Do(blocks) execute when elapsed.
+  example: []
+  syntax:
+    content: public CoroutineTimerBuilder<CoroutineTimerAmountSet> In(double duration)
+    parameters:
+    - id: duration
+      type: System.Double
+    return:
+      type: LunyScript.CoroutineTimerBuilder{LunyScript.CoroutineTimerAmountSet}
+    content.vb: Public Function [In](duration As Double) As CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
+  overload: LunyScript.CoroutineBuilder.In*
+  nameWithType.vb: CoroutineBuilder.In(Double)
+  fullName.vb: LunyScript.CoroutineBuilder.In(Double)
+  name.vb: In(Double)
+- uid: LunyScript.CoroutineBuilder.Every(System.Double)
+  commentId: M:LunyScript.CoroutineBuilder.Every(System.Double)
+  id: Every(System.Double)
+  parent: LunyScript.CoroutineBuilder
+  langs:
+  - csharp
+  - vb
+  name: Every(double)
+  nameWithType: CoroutineBuilder.Every(double)
+  fullName: LunyScript.CoroutineBuilder.Every(double)
+  type: Method
+  source:
+    id: Every
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Coroutines\CoroutineBuilder.cs
+    startLine: 35
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: A repeating timer coroutine which fires at the specified interval. The Do(blocks) execute on every interval elapse.
+  example: []
+  syntax:
+    content: public CoroutineTimerBuilder<CoroutineTimerAmountSet> Every(double interval)
+    parameters:
+    - id: interval
+      type: System.Double
+    return:
+      type: LunyScript.CoroutineTimerBuilder{LunyScript.CoroutineTimerAmountSet}
+    content.vb: Public Function Every(interval As Double) As CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
+  overload: LunyScript.CoroutineBuilder.Every*
+  nameWithType.vb: CoroutineBuilder.Every(Double)
+  fullName.vb: LunyScript.CoroutineBuilder.Every(Double)
+  name.vb: Every(Double)
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.CoroutineBuilder.In*
+  commentId: Overload:LunyScript.CoroutineBuilder.In
+  href: LunyScript.CoroutineBuilder.html#LunyScript_CoroutineBuilder_In_System_Double_
+  name: In
+  nameWithType: CoroutineBuilder.In
+  fullName: LunyScript.CoroutineBuilder.In
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: LunyScript.CoroutineTimerBuilder{LunyScript.CoroutineTimerAmountSet}
+  commentId: T:LunyScript.CoroutineTimerBuilder{LunyScript.CoroutineTimerAmountSet}
+  parent: LunyScript
+  definition: LunyScript.CoroutineTimerBuilder`1
+  href: LunyScript.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<CoroutineTimerAmountSet>
+  nameWithType: CoroutineTimerBuilder<CoroutineTimerAmountSet>
+  fullName: LunyScript.CoroutineTimerBuilder<LunyScript.CoroutineTimerAmountSet>
+  nameWithType.vb: CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
+  fullName.vb: LunyScript.CoroutineTimerBuilder(Of LunyScript.CoroutineTimerAmountSet)
+  name.vb: CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
+  spec.csharp:
+  - uid: LunyScript.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    href: LunyScript.CoroutineTimerBuilder-1.html
+  - name: <
+  - uid: LunyScript.CoroutineTimerAmountSet
+    name: CoroutineTimerAmountSet
+    href: LunyScript.CoroutineTimerAmountSet.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    href: LunyScript.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.CoroutineTimerAmountSet
+    name: CoroutineTimerAmountSet
+    href: LunyScript.CoroutineTimerAmountSet.html
+  - name: )
+- uid: LunyScript.CoroutineTimerBuilder`1
+  commentId: T:LunyScript.CoroutineTimerBuilder`1
+  href: LunyScript.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.CoroutineTimerBuilder<T>
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    href: LunyScript.CoroutineTimerBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    href: LunyScript.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.CoroutineBuilder.Every*
+  commentId: Overload:LunyScript.CoroutineBuilder.Every
+  href: LunyScript.CoroutineBuilder.html#LunyScript_CoroutineBuilder_Every_System_Double_
+  name: Every
+  nameWithType: CoroutineBuilder.Every
+  fullName: LunyScript.CoroutineBuilder.Every

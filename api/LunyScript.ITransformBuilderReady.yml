@@ -1,0 +1,33 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ITransformBuilderReady
+  commentId: T:LunyScript.ITransformBuilderReady
+  id: ITransformBuilderReady
+  parent: LunyScript
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ITransformBuilderReady
+  nameWithType: ITransformBuilderReady
+  fullName: LunyScript.ITransformBuilderReady
+  type: Interface
+  source:
+    id: ITransformBuilderReady
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 7
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: 'public interface ITransformBuilderReady : ITransformBuilderState'
+    content.vb: Public Interface ITransformBuilderReady Inherits ITransformBuilderState
+  derivedClasses:
+  - LunyScript.TransformBuilderReady
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript

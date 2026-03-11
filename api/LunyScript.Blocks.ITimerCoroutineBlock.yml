@@ -1,0 +1,201 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.ITimerCoroutineBlock
+  commentId: T:LunyScript.Blocks.ITimerCoroutineBlock
+  id: ITimerCoroutineBlock
+  parent: LunyScript.Blocks
+  children:
+  - LunyScript.Blocks.ITimerCoroutineBlock.TimeScale(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: ITimerCoroutineBlock
+  nameWithType: ITimerCoroutineBlock
+  fullName: LunyScript.Blocks.ITimerCoroutineBlock
+  type: Interface
+  source:
+    id: ITimerCoroutineBlock
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\Coroutine\CoroutineBlocks.cs
+    startLine: 35
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Represents a coroutine timer block. Timers fire after a duration elapses.
+  example: []
+  syntax:
+    content: 'public interface ITimerCoroutineBlock : ICoroutineBlock, IScriptBlock'
+    content.vb: Public Interface ITimerCoroutineBlock Inherits ICoroutineBlock, IScriptBlock
+  inheritedMembers:
+  - LunyScript.Blocks.ICoroutineBlock.Start
+  - LunyScript.Blocks.ICoroutineBlock.Stop
+  - LunyScript.Blocks.ICoroutineBlock.Pause
+  - LunyScript.Blocks.ICoroutineBlock.Resume
+- uid: LunyScript.Blocks.ITimerCoroutineBlock.TimeScale(System.Double)
+  commentId: M:LunyScript.Blocks.ITimerCoroutineBlock.TimeScale(System.Double)
+  id: TimeScale(System.Double)
+  parent: LunyScript.Blocks.ITimerCoroutineBlock
+  langs:
+  - csharp
+  - vb
+  name: TimeScale(double)
+  nameWithType: ITimerCoroutineBlock.TimeScale(double)
+  fullName: LunyScript.Blocks.ITimerCoroutineBlock.TimeScale(double)
+  type: Method
+  source:
+    id: TimeScale
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\Coroutine\CoroutineBlocks.cs
+    startLine: 40
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Sets the time scale. Negative values are clamped to 0.
+  example: []
+  syntax:
+    content: ScriptActionBlock TimeScale(double scale)
+    parameters:
+    - id: scale
+      type: System.Double
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Function TimeScale(scale As Double) As ScriptActionBlock
+  overload: LunyScript.Blocks.ITimerCoroutineBlock.TimeScale*
+  nameWithType.vb: ITimerCoroutineBlock.TimeScale(Double)
+  fullName.vb: LunyScript.Blocks.ITimerCoroutineBlock.TimeScale(Double)
+  name.vb: TimeScale(Double)
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+- uid: LunyScript.Blocks.ICoroutineBlock.Start
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Start
+  parent: LunyScript.Blocks.ICoroutineBlock
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Start
+  name: Start()
+  nameWithType: ICoroutineBlock.Start()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Start()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Start
+    name: Start
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Start
+    name: Start
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Start
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ICoroutineBlock.Stop
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Stop
+  parent: LunyScript.Blocks.ICoroutineBlock
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Stop
+  name: Stop()
+  nameWithType: ICoroutineBlock.Stop()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Stop()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Stop
+    name: Stop
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Stop
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Stop
+    name: Stop
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Stop
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ICoroutineBlock.Pause
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Pause
+  parent: LunyScript.Blocks.ICoroutineBlock
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Pause
+  name: Pause()
+  nameWithType: ICoroutineBlock.Pause()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Pause()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Pause
+    name: Pause
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Pause
+    name: Pause
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Pause
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ICoroutineBlock.Resume
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Resume
+  parent: LunyScript.Blocks.ICoroutineBlock
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Resume
+  name: Resume()
+  nameWithType: ICoroutineBlock.Resume()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Resume()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Resume
+    name: Resume
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Resume
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Resume
+    name: Resume
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Resume
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ICoroutineBlock
+  commentId: T:LunyScript.Blocks.ICoroutineBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.ICoroutineBlock.html
+  name: ICoroutineBlock
+  nameWithType: ICoroutineBlock
+  fullName: LunyScript.Blocks.ICoroutineBlock
+- uid: LunyScript.Blocks.ITimerCoroutineBlock.TimeScale*
+  commentId: Overload:LunyScript.Blocks.ITimerCoroutineBlock.TimeScale
+  href: LunyScript.Blocks.ITimerCoroutineBlock.html#LunyScript_Blocks_ITimerCoroutineBlock_TimeScale_System_Double_
+  name: TimeScale
+  nameWithType: ITimerCoroutineBlock.TimeScale
+  fullName: LunyScript.Blocks.ITimerCoroutineBlock.TimeScale
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,514 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Diagnostics.ScriptExecutionTrace
+  commentId: T:LunyScript.Diagnostics.ScriptExecutionTrace
+  id: ScriptExecutionTrace
+  parent: LunyScript.Diagnostics
+  children:
+  - LunyScript.Diagnostics.ScriptExecutionTrace.BlockDescription
+  - LunyScript.Diagnostics.ScriptExecutionTrace.BlockType
+  - LunyScript.Diagnostics.ScriptExecutionTrace.ElapsedSeconds
+  - LunyScript.Diagnostics.ScriptExecutionTrace.Error
+  - LunyScript.Diagnostics.ScriptExecutionTrace.FrameCount
+  - LunyScript.Diagnostics.ScriptExecutionTrace.ScriptSequenceId
+  - LunyScript.Diagnostics.ScriptExecutionTrace.ToString
+  langs:
+  - csharp
+  - vb
+  name: ScriptExecutionTrace
+  nameWithType: ScriptExecutionTrace
+  fullName: LunyScript.Diagnostics.ScriptExecutionTrace
+  type: Struct
+  source:
+    id: ScriptExecutionTrace
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Diagnostics\ScriptExecutionTrace.cs
+    startLine: 8
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  summary: >-
+    Captures execution information for a single block execution.
+
+    Used by debug hooks to track execution flow with frame/time information.
+  example: []
+  syntax:
+    content: public struct ScriptExecutionTrace
+    content.vb: Public Structure ScriptExecutionTrace
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LunyScript.Diagnostics.ScriptExecutionTrace.FrameCount
+  commentId: F:LunyScript.Diagnostics.ScriptExecutionTrace.FrameCount
+  id: FrameCount
+  parent: LunyScript.Diagnostics.ScriptExecutionTrace
+  langs:
+  - csharp
+  - vb
+  name: FrameCount
+  nameWithType: ScriptExecutionTrace.FrameCount
+  fullName: LunyScript.Diagnostics.ScriptExecutionTrace.FrameCount
+  type: Field
+  source:
+    id: FrameCount
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Diagnostics\ScriptExecutionTrace.cs
+    startLine: 10
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public long FrameCount
+    return:
+      type: System.Int64
+    content.vb: Public FrameCount As Long
+- uid: LunyScript.Diagnostics.ScriptExecutionTrace.ElapsedSeconds
+  commentId: F:LunyScript.Diagnostics.ScriptExecutionTrace.ElapsedSeconds
+  id: ElapsedSeconds
+  parent: LunyScript.Diagnostics.ScriptExecutionTrace
+  langs:
+  - csharp
+  - vb
+  name: ElapsedSeconds
+  nameWithType: ScriptExecutionTrace.ElapsedSeconds
+  fullName: LunyScript.Diagnostics.ScriptExecutionTrace.ElapsedSeconds
+  type: Field
+  source:
+    id: ElapsedSeconds
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Diagnostics\ScriptExecutionTrace.cs
+    startLine: 11
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public double ElapsedSeconds
+    return:
+      type: System.Double
+    content.vb: Public ElapsedSeconds As Double
+- uid: LunyScript.Diagnostics.ScriptExecutionTrace.ScriptSequenceId
+  commentId: F:LunyScript.Diagnostics.ScriptExecutionTrace.ScriptSequenceId
+  id: ScriptSequenceId
+  parent: LunyScript.Diagnostics.ScriptExecutionTrace
+  langs:
+  - csharp
+  - vb
+  name: ScriptSequenceId
+  nameWithType: ScriptExecutionTrace.ScriptSequenceId
+  fullName: LunyScript.Diagnostics.ScriptExecutionTrace.ScriptSequenceId
+  type: Field
+  source:
+    id: ScriptSequenceId
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Diagnostics\ScriptExecutionTrace.cs
+    startLine: 12
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public ScriptBlockId ScriptSequenceId
+    return:
+      type: LunyScript.ScriptBlockId
+    content.vb: Public ScriptSequenceId As ScriptBlockId
+- uid: LunyScript.Diagnostics.ScriptExecutionTrace.BlockType
+  commentId: F:LunyScript.Diagnostics.ScriptExecutionTrace.BlockType
+  id: BlockType
+  parent: LunyScript.Diagnostics.ScriptExecutionTrace
+  langs:
+  - csharp
+  - vb
+  name: BlockType
+  nameWithType: ScriptExecutionTrace.BlockType
+  fullName: LunyScript.Diagnostics.ScriptExecutionTrace.BlockType
+  type: Field
+  source:
+    id: BlockType
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Diagnostics\ScriptExecutionTrace.cs
+    startLine: 13
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public Type BlockType
+    return:
+      type: System.Type
+    content.vb: Public BlockType As Type
+- uid: LunyScript.Diagnostics.ScriptExecutionTrace.BlockDescription
+  commentId: F:LunyScript.Diagnostics.ScriptExecutionTrace.BlockDescription
+  id: BlockDescription
+  parent: LunyScript.Diagnostics.ScriptExecutionTrace
+  langs:
+  - csharp
+  - vb
+  name: BlockDescription
+  nameWithType: ScriptExecutionTrace.BlockDescription
+  fullName: LunyScript.Diagnostics.ScriptExecutionTrace.BlockDescription
+  type: Field
+  source:
+    id: BlockDescription
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Diagnostics\ScriptExecutionTrace.cs
+    startLine: 14
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public string BlockDescription
+    return:
+      type: System.String
+    content.vb: Public BlockDescription As String
+- uid: LunyScript.Diagnostics.ScriptExecutionTrace.Error
+  commentId: F:LunyScript.Diagnostics.ScriptExecutionTrace.Error
+  id: Error
+  parent: LunyScript.Diagnostics.ScriptExecutionTrace
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: ScriptExecutionTrace.Error
+  fullName: LunyScript.Diagnostics.ScriptExecutionTrace.Error
+  type: Field
+  source:
+    id: Error
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Diagnostics\ScriptExecutionTrace.cs
+    startLine: 15
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public Exception Error
+    return:
+      type: System.Exception
+    content.vb: Public [Error] As Exception
+- uid: LunyScript.Diagnostics.ScriptExecutionTrace.ToString
+  commentId: M:LunyScript.Diagnostics.ScriptExecutionTrace.ToString
+  id: ToString
+  parent: LunyScript.Diagnostics.ScriptExecutionTrace
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ScriptExecutionTrace.ToString()
+  fullName: LunyScript.Diagnostics.ScriptExecutionTrace.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Diagnostics\ScriptExecutionTrace.cs
+    startLine: 17
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: LunyScript.Diagnostics.ScriptExecutionTrace.ToString*
+references:
+- uid: LunyScript.Diagnostics
+  commentId: N:LunyScript.Diagnostics
+  href: LunyScript.html
+  name: LunyScript.Diagnostics
+  nameWithType: LunyScript.Diagnostics
+  fullName: LunyScript.Diagnostics
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Diagnostics
+    name: Diagnostics
+    href: LunyScript.Diagnostics.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Diagnostics
+    name: Diagnostics
+    href: LunyScript.Diagnostics.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: LunyScript.ScriptBlockId
+  commentId: T:LunyScript.ScriptBlockId
+  parent: LunyScript
+  href: LunyScript.ScriptBlockId.html
+  name: ScriptBlockId
+  nameWithType: ScriptBlockId
+  fullName: LunyScript.ScriptBlockId
+- uid: LunyScript
+  commentId: N:LunyScript
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: LunyScript.Diagnostics.ScriptExecutionTrace.ToString*
+  commentId: Overload:LunyScript.Diagnostics.ScriptExecutionTrace.ToString
+  href: LunyScript.Diagnostics.ScriptExecutionTrace.html#LunyScript_Diagnostics_ScriptExecutionTrace_ToString
+  name: ToString
+  nameWithType: ScriptExecutionTrace.ToString
+  fullName: LunyScript.Diagnostics.ScriptExecutionTrace.ToString

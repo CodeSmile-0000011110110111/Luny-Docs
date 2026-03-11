@@ -1,0 +1,74 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Diagnostics
+  commentId: N:LunyScript.Diagnostics
+  id: LunyScript.Diagnostics
+  children:
+  - LunyScript.Diagnostics.ScriptBlockMetrics
+  - LunyScript.Diagnostics.ScriptBlockProfiler
+  - LunyScript.Diagnostics.ScriptBlockProfilerSnapshot
+  - LunyScript.Diagnostics.ScriptDebugHooks
+  - LunyScript.Diagnostics.ScriptExecutionTrace
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.Diagnostics
+  nameWithType: LunyScript.Diagnostics
+  fullName: LunyScript.Diagnostics
+  type: Namespace
+  assemblies:
+  - LunyScript
+references:
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler
+  commentId: T:LunyScript.Diagnostics.ScriptBlockProfiler
+  href: LunyScript.Diagnostics.ScriptBlockProfiler.html
+  name: ScriptBlockProfiler
+  nameWithType: ScriptBlockProfiler
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler
+- uid: LunyScript.Diagnostics.ScriptDebugHooks
+  commentId: T:LunyScript.Diagnostics.ScriptDebugHooks
+  href: LunyScript.Diagnostics.ScriptDebugHooks.html
+  name: ScriptDebugHooks
+  nameWithType: ScriptDebugHooks
+  fullName: LunyScript.Diagnostics.ScriptDebugHooks
+- uid: LunyScript.Diagnostics.ScriptExecutionTrace
+  commentId: T:LunyScript.Diagnostics.ScriptExecutionTrace
+  href: LunyScript.Diagnostics.ScriptExecutionTrace.html
+  name: ScriptExecutionTrace
+  nameWithType: ScriptExecutionTrace
+  fullName: LunyScript.Diagnostics.ScriptExecutionTrace
+- uid: LunyScript.Diagnostics.ScriptBlockMetrics
+  commentId: T:LunyScript.Diagnostics.ScriptBlockMetrics
+  href: LunyScript.Diagnostics.ScriptBlockMetrics.html
+  name: ScriptBlockMetrics
+  nameWithType: ScriptBlockMetrics
+  fullName: LunyScript.Diagnostics.ScriptBlockMetrics
+- uid: LunyScript.Diagnostics.ScriptBlockProfilerSnapshot
+  commentId: T:LunyScript.Diagnostics.ScriptBlockProfilerSnapshot
+  parent: LunyScript.Diagnostics
+  href: LunyScript.Diagnostics.ScriptBlockProfilerSnapshot.html
+  name: ScriptBlockProfilerSnapshot
+  nameWithType: ScriptBlockProfilerSnapshot
+  fullName: LunyScript.Diagnostics.ScriptBlockProfilerSnapshot
+- uid: LunyScript.Diagnostics
+  commentId: N:LunyScript.Diagnostics
+  href: LunyScript.html
+  name: LunyScript.Diagnostics
+  nameWithType: LunyScript.Diagnostics
+  fullName: LunyScript.Diagnostics
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Diagnostics
+    name: Diagnostics
+    href: LunyScript.Diagnostics.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Diagnostics
+    name: Diagnostics
+    href: LunyScript.Diagnostics.html

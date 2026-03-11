@@ -1,0 +1,33 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ICoroutineTimerWhen
+  commentId: T:LunyScript.ICoroutineTimerWhen
+  id: ICoroutineTimerWhen
+  parent: LunyScript
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICoroutineTimerWhen
+  nameWithType: ICoroutineTimerWhen
+  fullName: LunyScript.ICoroutineTimerWhen
+  type: Interface
+  source:
+    id: ICoroutineTimerWhen
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Coroutines\CoroutineTimerBuilder.cs
+    startLine: 9
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: 'public interface ICoroutineTimerWhen : ICoroutineTimerBuilderState'
+    content.vb: Public Interface ICoroutineTimerWhen Inherits ICoroutineTimerBuilderState
+  derivedClasses:
+  - LunyScript.CoroutineTimerUnitSet
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript

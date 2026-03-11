@@ -1,0 +1,66 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Luny*.csproj"
+          ],
+          "src": "../../.."
+        }
+      ],
+      "dest": "api",
+      "includePrivateMembers": false,
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "properties": {
+        "AllowUnsafeBlocks": "true",
+        "LangVersion": "9.0"
+      }
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      },
+      {
+        "files": [
+          "*.md"
+        ],
+        "src": "api",
+        "dest": "api"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "../../../docfx-output",
+    "template": [
+      "default",
+	  "modern"
+    ],
+    "globalMetadata": {
+      "_appTitle": "LunyScript Documentation",
+      "_appName": "LunyScript",
+      "_appFooter": "© 2025-2026 Steffen Itterheim (CodeSmile)",
+      "_enableSearch": true
+    },
+    "fileMetadata": {},
+    "markdownEngineProperties": {
+      "markdigExtensions": [
+        "attributes",
+        "customcontainers"
+      ]
+    }
+  }
+}

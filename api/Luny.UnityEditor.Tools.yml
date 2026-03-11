@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.UnityEditor.Tools
+  commentId: N:Luny.UnityEditor.Tools
+  id: Luny.UnityEditor.Tools
+  children:
+  - Luny.UnityEditor.Tools.NoteEditor
+  langs:
+  - csharp
+  - vb
+  name: Luny.UnityEditor.Tools
+  nameWithType: Luny.UnityEditor.Tools
+  fullName: Luny.UnityEditor.Tools
+  type: Namespace
+  assemblies:
+  - Luny.UnityEditor
+references:
+- uid: Luny.UnityEditor.Tools.NoteEditor
+  commentId: T:Luny.UnityEditor.Tools.NoteEditor
+  href: Luny.UnityEditor.Tools.NoteEditor.html
+  name: NoteEditor
+  nameWithType: NoteEditor
+  fullName: Luny.UnityEditor.Tools.NoteEditor

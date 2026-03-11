@@ -1,0 +1,33 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ICollisionBuilderLayered
+  commentId: T:LunyScript.ICollisionBuilderLayered
+  id: ICollisionBuilderLayered
+  parent: LunyScript
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICollisionBuilderLayered
+  nameWithType: ICollisionBuilderLayered
+  fullName: LunyScript.ICollisionBuilderLayered
+  type: Interface
+  source:
+    id: ICollisionBuilderLayered
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Events\PhysicsEventBuilder.cs
+    startLine: 15
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: 'public interface ICollisionBuilderLayered : ICollisionBuilderReady, ICollisionBuilderState'
+    content.vb: Public Interface ICollisionBuilderLayered Inherits ICollisionBuilderReady, ICollisionBuilderState
+  derivedClasses:
+  - LunyScript.CollisionBuilderLayered
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript

@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.ICounterCoroutineBlock
+  commentId: T:LunyScript.Blocks.ICounterCoroutineBlock
+  id: ICounterCoroutineBlock
+  parent: LunyScript.Blocks
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICounterCoroutineBlock
+  nameWithType: ICounterCoroutineBlock
+  fullName: LunyScript.Blocks.ICounterCoroutineBlock
+  type: Interface
+  source:
+    id: ICounterCoroutineBlock
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\Coroutine\CoroutineBlocks.cs
+    startLine: 46
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Represents a coroutine counter block. Counters elapse after a specific number of frames/heartbeats have passed.
+  example: []
+  syntax:
+    content: 'public interface ICounterCoroutineBlock : ICoroutineBlock, IScriptBlock'
+    content.vb: Public Interface ICounterCoroutineBlock Inherits ICoroutineBlock, IScriptBlock
+  inheritedMembers:
+  - LunyScript.Blocks.ICoroutineBlock.Start
+  - LunyScript.Blocks.ICoroutineBlock.Stop
+  - LunyScript.Blocks.ICoroutineBlock.Pause
+  - LunyScript.Blocks.ICoroutineBlock.Resume
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+- uid: LunyScript.Blocks.ICoroutineBlock.Start
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Start
+  parent: LunyScript.Blocks.ICoroutineBlock
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Start
+  name: Start()
+  nameWithType: ICoroutineBlock.Start()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Start()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Start
+    name: Start
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Start
+    name: Start
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Start
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ICoroutineBlock.Stop
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Stop
+  parent: LunyScript.Blocks.ICoroutineBlock
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Stop
+  name: Stop()
+  nameWithType: ICoroutineBlock.Stop()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Stop()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Stop
+    name: Stop
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Stop
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Stop
+    name: Stop
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Stop
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ICoroutineBlock.Pause
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Pause
+  parent: LunyScript.Blocks.ICoroutineBlock
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Pause
+  name: Pause()
+  nameWithType: ICoroutineBlock.Pause()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Pause()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Pause
+    name: Pause
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Pause
+    name: Pause
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Pause
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ICoroutineBlock.Resume
+  commentId: M:LunyScript.Blocks.ICoroutineBlock.Resume
+  parent: LunyScript.Blocks.ICoroutineBlock
+  href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Resume
+  name: Resume()
+  nameWithType: ICoroutineBlock.Resume()
+  fullName: LunyScript.Blocks.ICoroutineBlock.Resume()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Resume
+    name: Resume
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Resume
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ICoroutineBlock.Resume
+    name: Resume
+    href: LunyScript.Blocks.ICoroutineBlock.html#LunyScript_Blocks_ICoroutineBlock_Resume
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ICoroutineBlock
+  commentId: T:LunyScript.Blocks.ICoroutineBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.ICoroutineBlock.html
+  name: ICoroutineBlock
+  nameWithType: ICoroutineBlock
+  fullName: LunyScript.Blocks.ICoroutineBlock

@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.Bridge.LunyCollision2DEvent
+  commentId: T:Luny.Engine.Bridge.LunyCollision2DEvent
+  id: LunyCollision2DEvent
+  parent: Luny.Engine.Bridge
+  children:
+  - Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionEntered2D
+  - Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionExited2D
+  - Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionUpdate2D
+  langs:
+  - csharp
+  - vb
+  name: LunyCollision2DEvent
+  nameWithType: LunyCollision2DEvent
+  fullName: Luny.Engine.Bridge.LunyCollision2DEvent
+  type: Enum
+  source:
+    id: LunyCollision2DEvent
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Physics\LunyCollisionEvent.cs
+    startLine: 9
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public enum LunyCollision2DEvent
+    content.vb: Public Enum LunyCollision2DEvent
+- uid: Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionEntered2D
+  commentId: F:Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionEntered2D
+  id: OnCollisionEntered2D
+  parent: Luny.Engine.Bridge.LunyCollision2DEvent
+  langs:
+  - csharp
+  - vb
+  name: OnCollisionEntered2D
+  nameWithType: LunyCollision2DEvent.OnCollisionEntered2D
+  fullName: Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionEntered2D
+  type: Field
+  source:
+    id: OnCollisionEntered2D
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Physics\LunyCollisionEvent.cs
+    startLine: 11
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: OnCollisionEntered2D = 0
+    return:
+      type: Luny.Engine.Bridge.LunyCollision2DEvent
+- uid: Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionExited2D
+  commentId: F:Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionExited2D
+  id: OnCollisionExited2D
+  parent: Luny.Engine.Bridge.LunyCollision2DEvent
+  langs:
+  - csharp
+  - vb
+  name: OnCollisionExited2D
+  nameWithType: LunyCollision2DEvent.OnCollisionExited2D
+  fullName: Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionExited2D
+  type: Field
+  source:
+    id: OnCollisionExited2D
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Physics\LunyCollisionEvent.cs
+    startLine: 12
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: OnCollisionExited2D = 1
+    return:
+      type: Luny.Engine.Bridge.LunyCollision2DEvent
+- uid: Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionUpdate2D
+  commentId: F:Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionUpdate2D
+  id: OnCollisionUpdate2D
+  parent: Luny.Engine.Bridge.LunyCollision2DEvent
+  langs:
+  - csharp
+  - vb
+  name: OnCollisionUpdate2D
+  nameWithType: LunyCollision2DEvent.OnCollisionUpdate2D
+  fullName: Luny.Engine.Bridge.LunyCollision2DEvent.OnCollisionUpdate2D
+  type: Field
+  source:
+    id: OnCollisionUpdate2D
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Physics\LunyCollisionEvent.cs
+    startLine: 13
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: OnCollisionUpdate2D = 2
+    return:
+      type: Luny.Engine.Bridge.LunyCollision2DEvent
+references:
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+- uid: Luny.Engine.Bridge.LunyCollision2DEvent
+  commentId: T:Luny.Engine.Bridge.LunyCollision2DEvent
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.LunyCollision2DEvent.html
+  name: LunyCollision2DEvent
+  nameWithType: LunyCollision2DEvent
+  fullName: Luny.Engine.Bridge.LunyCollision2DEvent

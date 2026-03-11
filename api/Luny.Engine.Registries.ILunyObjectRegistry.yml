@@ -1,0 +1,460 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.Registries.ILunyObjectRegistry
+  commentId: T:Luny.Engine.Registries.ILunyObjectRegistry
+  id: ILunyObjectRegistry
+  parent: Luny.Engine.Registries
+  children:
+  - Luny.Engine.Registries.ILunyObjectRegistry.AllObjects
+  - Luny.Engine.Registries.ILunyObjectRegistry.Count
+  - Luny.Engine.Registries.ILunyObjectRegistry.Find(System.String)
+  - Luny.Engine.Registries.ILunyObjectRegistry.GetCached(System.String)
+  - Luny.Engine.Registries.ILunyObjectRegistry.TryGetByLunyID(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.ILunyObject@)
+  - Luny.Engine.Registries.ILunyObjectRegistry.TryGetByNativeId(Luny.Engine.Bridge.LunyNativeObjectId,Luny.Engine.Bridge.ILunyObject@)
+  langs:
+  - csharp
+  - vb
+  name: ILunyObjectRegistry
+  nameWithType: ILunyObjectRegistry
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry
+  type: Interface
+  source:
+    id: ILunyObjectRegistry
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Registries\LunyObjectRegistry.cs
+    startLine: 7
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Registries
+  syntax:
+    content: public interface ILunyObjectRegistry
+    content.vb: Public Interface ILunyObjectRegistry
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.Count
+  commentId: P:Luny.Engine.Registries.ILunyObjectRegistry.Count
+  id: Count
+  parent: Luny.Engine.Registries.ILunyObjectRegistry
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ILunyObjectRegistry.Count
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.Count
+  type: Property
+  source:
+    id: Count
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Registries\LunyObjectRegistry.cs
+    startLine: 9
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Registries
+  syntax:
+    content: int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Count As Integer
+  overload: Luny.Engine.Registries.ILunyObjectRegistry.Count*
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.AllObjects
+  commentId: P:Luny.Engine.Registries.ILunyObjectRegistry.AllObjects
+  id: AllObjects
+  parent: Luny.Engine.Registries.ILunyObjectRegistry
+  langs:
+  - csharp
+  - vb
+  name: AllObjects
+  nameWithType: ILunyObjectRegistry.AllObjects
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.AllObjects
+  type: Property
+  source:
+    id: AllObjects
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Registries\LunyObjectRegistry.cs
+    startLine: 10
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Registries
+  syntax:
+    content: IEnumerable<ILunyObject> AllObjects { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Luny.Engine.Bridge.ILunyObject}
+    content.vb: ReadOnly Property AllObjects As IEnumerable(Of ILunyObject)
+  overload: Luny.Engine.Registries.ILunyObjectRegistry.AllObjects*
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByLunyID(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.ILunyObject@)
+  commentId: M:Luny.Engine.Registries.ILunyObjectRegistry.TryGetByLunyID(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.ILunyObject@)
+  id: TryGetByLunyID(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.ILunyObject@)
+  parent: Luny.Engine.Registries.ILunyObjectRegistry
+  langs:
+  - csharp
+  - vb
+  name: TryGetByLunyID(LunyObjectId, out ILunyObject)
+  nameWithType: ILunyObjectRegistry.TryGetByLunyID(LunyObjectId, out ILunyObject)
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByLunyID(Luny.Engine.Bridge.LunyObjectId, out Luny.Engine.Bridge.ILunyObject)
+  type: Method
+  source:
+    id: TryGetByLunyID
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Registries\LunyObjectRegistry.cs
+    startLine: 11
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Registries
+  syntax:
+    content: bool TryGetByLunyID(LunyObjectId lunyObjectID, out ILunyObject lunyObject)
+    parameters:
+    - id: lunyObjectID
+      type: Luny.Engine.Bridge.LunyObjectId
+    - id: lunyObject
+      type: Luny.Engine.Bridge.ILunyObject
+    return:
+      type: System.Boolean
+    content.vb: Function TryGetByLunyID(lunyObjectID As LunyObjectId, lunyObject As ILunyObject) As Boolean
+  overload: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByLunyID*
+  nameWithType.vb: ILunyObjectRegistry.TryGetByLunyID(LunyObjectId, ILunyObject)
+  fullName.vb: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByLunyID(Luny.Engine.Bridge.LunyObjectId, Luny.Engine.Bridge.ILunyObject)
+  name.vb: TryGetByLunyID(LunyObjectId, ILunyObject)
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByNativeId(Luny.Engine.Bridge.LunyNativeObjectId,Luny.Engine.Bridge.ILunyObject@)
+  commentId: M:Luny.Engine.Registries.ILunyObjectRegistry.TryGetByNativeId(Luny.Engine.Bridge.LunyNativeObjectId,Luny.Engine.Bridge.ILunyObject@)
+  id: TryGetByNativeId(Luny.Engine.Bridge.LunyNativeObjectId,Luny.Engine.Bridge.ILunyObject@)
+  parent: Luny.Engine.Registries.ILunyObjectRegistry
+  langs:
+  - csharp
+  - vb
+  name: TryGetByNativeId(LunyNativeObjectId, out ILunyObject)
+  nameWithType: ILunyObjectRegistry.TryGetByNativeId(LunyNativeObjectId, out ILunyObject)
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByNativeId(Luny.Engine.Bridge.LunyNativeObjectId, out Luny.Engine.Bridge.ILunyObject)
+  type: Method
+  source:
+    id: TryGetByNativeId
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Registries\LunyObjectRegistry.cs
+    startLine: 12
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Registries
+  syntax:
+    content: bool TryGetByNativeId(LunyNativeObjectId lunyNativeObjectID, out ILunyObject lunyObject)
+    parameters:
+    - id: lunyNativeObjectID
+      type: Luny.Engine.Bridge.LunyNativeObjectId
+    - id: lunyObject
+      type: Luny.Engine.Bridge.ILunyObject
+    return:
+      type: System.Boolean
+    content.vb: Function TryGetByNativeId(lunyNativeObjectID As LunyNativeObjectId, lunyObject As ILunyObject) As Boolean
+  overload: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByNativeId*
+  nameWithType.vb: ILunyObjectRegistry.TryGetByNativeId(LunyNativeObjectId, ILunyObject)
+  fullName.vb: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByNativeId(Luny.Engine.Bridge.LunyNativeObjectId, Luny.Engine.Bridge.ILunyObject)
+  name.vb: TryGetByNativeId(LunyNativeObjectId, ILunyObject)
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.GetCached(System.String)
+  commentId: M:Luny.Engine.Registries.ILunyObjectRegistry.GetCached(System.String)
+  id: GetCached(System.String)
+  parent: Luny.Engine.Registries.ILunyObjectRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetCached(string)
+  nameWithType: ILunyObjectRegistry.GetCached(string)
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.GetCached(string)
+  type: Method
+  source:
+    id: GetCached
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Registries\LunyObjectRegistry.cs
+    startLine: 13
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Registries
+  syntax:
+    content: ILunyObject GetCached(string objectName)
+    parameters:
+    - id: objectName
+      type: System.String
+    return:
+      type: Luny.Engine.Bridge.ILunyObject
+    content.vb: Function GetCached(objectName As String) As ILunyObject
+  overload: Luny.Engine.Registries.ILunyObjectRegistry.GetCached*
+  nameWithType.vb: ILunyObjectRegistry.GetCached(String)
+  fullName.vb: Luny.Engine.Registries.ILunyObjectRegistry.GetCached(String)
+  name.vb: GetCached(String)
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.Find(System.String)
+  commentId: M:Luny.Engine.Registries.ILunyObjectRegistry.Find(System.String)
+  id: Find(System.String)
+  parent: Luny.Engine.Registries.ILunyObjectRegistry
+  langs:
+  - csharp
+  - vb
+  name: Find(string)
+  nameWithType: ILunyObjectRegistry.Find(string)
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.Find(string)
+  type: Method
+  source:
+    id: Find
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Registries\LunyObjectRegistry.cs
+    startLine: 14
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Registries
+  syntax:
+    content: ILunyObject Find(string objectName)
+    parameters:
+    - id: objectName
+      type: System.String
+    return:
+      type: Luny.Engine.Bridge.ILunyObject
+    content.vb: Function Find(objectName As String) As ILunyObject
+  overload: Luny.Engine.Registries.ILunyObjectRegistry.Find*
+  nameWithType.vb: ILunyObjectRegistry.Find(String)
+  fullName.vb: Luny.Engine.Registries.ILunyObjectRegistry.Find(String)
+  name.vb: Find(String)
+references:
+- uid: Luny.Engine.Registries
+  commentId: N:Luny.Engine.Registries
+  href: Luny.html
+  name: Luny.Engine.Registries
+  nameWithType: Luny.Engine.Registries
+  fullName: Luny.Engine.Registries
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Registries
+    name: Registries
+    href: Luny.Engine.Registries.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Registries
+    name: Registries
+    href: Luny.Engine.Registries.html
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.Count*
+  commentId: Overload:Luny.Engine.Registries.ILunyObjectRegistry.Count
+  href: Luny.Engine.Registries.ILunyObjectRegistry.html#Luny_Engine_Registries_ILunyObjectRegistry_Count
+  name: Count
+  nameWithType: ILunyObjectRegistry.Count
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.AllObjects*
+  commentId: Overload:Luny.Engine.Registries.ILunyObjectRegistry.AllObjects
+  href: Luny.Engine.Registries.ILunyObjectRegistry.html#Luny_Engine_Registries_ILunyObjectRegistry_AllObjects
+  name: AllObjects
+  nameWithType: ILunyObjectRegistry.AllObjects
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.AllObjects
+- uid: System.Collections.Generic.IEnumerable{Luny.Engine.Bridge.ILunyObject}
+  commentId: T:System.Collections.Generic.IEnumerable{Luny.Engine.Bridge.ILunyObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ILunyObject>
+  nameWithType: IEnumerable<ILunyObject>
+  fullName: System.Collections.Generic.IEnumerable<Luny.Engine.Bridge.ILunyObject>
+  nameWithType.vb: IEnumerable(Of ILunyObject)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Luny.Engine.Bridge.ILunyObject)
+  name.vb: IEnumerable(Of ILunyObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Luny.Engine.Bridge.ILunyObject
+    name: ILunyObject
+    href: Luny.Engine.Bridge.ILunyObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Bridge.ILunyObject
+    name: ILunyObject
+    href: Luny.Engine.Bridge.ILunyObject.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByLunyID*
+  commentId: Overload:Luny.Engine.Registries.ILunyObjectRegistry.TryGetByLunyID
+  href: Luny.Engine.Registries.ILunyObjectRegistry.html#Luny_Engine_Registries_ILunyObjectRegistry_TryGetByLunyID_Luny_Engine_Bridge_LunyObjectId_Luny_Engine_Bridge_ILunyObject__
+  name: TryGetByLunyID
+  nameWithType: ILunyObjectRegistry.TryGetByLunyID
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByLunyID
+- uid: Luny.Engine.Bridge.LunyObjectId
+  commentId: T:Luny.Engine.Bridge.LunyObjectId
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.LunyObjectId.html
+  name: LunyObjectId
+  nameWithType: LunyObjectId
+  fullName: Luny.Engine.Bridge.LunyObjectId
+- uid: Luny.Engine.Bridge.ILunyObject
+  commentId: T:Luny.Engine.Bridge.ILunyObject
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.ILunyObject.html
+  name: ILunyObject
+  nameWithType: ILunyObject
+  fullName: Luny.Engine.Bridge.ILunyObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByNativeId*
+  commentId: Overload:Luny.Engine.Registries.ILunyObjectRegistry.TryGetByNativeId
+  href: Luny.Engine.Registries.ILunyObjectRegistry.html#Luny_Engine_Registries_ILunyObjectRegistry_TryGetByNativeId_Luny_Engine_Bridge_LunyNativeObjectId_Luny_Engine_Bridge_ILunyObject__
+  name: TryGetByNativeId
+  nameWithType: ILunyObjectRegistry.TryGetByNativeId
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.TryGetByNativeId
+- uid: Luny.Engine.Bridge.LunyNativeObjectId
+  commentId: T:Luny.Engine.Bridge.LunyNativeObjectId
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.LunyNativeObjectId.html
+  name: LunyNativeObjectId
+  nameWithType: LunyNativeObjectId
+  fullName: Luny.Engine.Bridge.LunyNativeObjectId
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.GetCached*
+  commentId: Overload:Luny.Engine.Registries.ILunyObjectRegistry.GetCached
+  href: Luny.Engine.Registries.ILunyObjectRegistry.html#Luny_Engine_Registries_ILunyObjectRegistry_GetCached_System_String_
+  name: GetCached
+  nameWithType: ILunyObjectRegistry.GetCached
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.GetCached
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Engine.Registries.ILunyObjectRegistry.Find*
+  commentId: Overload:Luny.Engine.Registries.ILunyObjectRegistry.Find
+  href: Luny.Engine.Registries.ILunyObjectRegistry.html#Luny_Engine_Registries_ILunyObjectRegistry_Find_System_String_
+  name: Find
+  nameWithType: ILunyObjectRegistry.Find
+  fullName: Luny.Engine.Registries.ILunyObjectRegistry.Find

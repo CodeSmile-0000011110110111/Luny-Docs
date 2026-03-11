@@ -1,0 +1,12 @@
+### YamlMime:ManagedReference
+
+apiRules:
+- include:
+    uidRegex: ^Luny
+    type: Namespace
+- include:
+    uidRegex: ^LunyScript
+    type: Namespace
+- exclude:
+    uidRegex: .*
+    type: Namespace

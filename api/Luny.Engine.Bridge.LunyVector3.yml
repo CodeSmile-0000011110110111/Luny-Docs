@@ -1,0 +1,2770 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.Bridge.LunyVector3
+  commentId: T:Luny.Engine.Bridge.LunyVector3
+  id: LunyVector3
+  parent: Luny.Engine.Bridge
+  children:
+  - Luny.Engine.Bridge.LunyVector3.#ctor(System.Double,System.Double)
+  - Luny.Engine.Bridge.LunyVector3.#ctor(System.Double,System.Double,System.Double)
+  - Luny.Engine.Bridge.LunyVector3.#ctor(System.Single,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.#ctor(System.Single,System.Single,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.Angle(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Back
+  - Luny.Engine.Bridge.LunyVector3.ClampMagnitude(Luny.Engine.Bridge.LunyVector3,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.Cross(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Distance(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Dot(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Down
+  - Luny.Engine.Bridge.LunyVector3.Equals(Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Equals(System.Object)
+  - Luny.Engine.Bridge.LunyVector3.Forward
+  - Luny.Engine.Bridge.LunyVector3.GetHashCode
+  - Luny.Engine.Bridge.LunyVector3.Item(System.Int32)
+  - Luny.Engine.Bridge.LunyVector3.Left
+  - Luny.Engine.Bridge.LunyVector3.Lerp(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.LerpUnclamped(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.Magnitude
+  - Luny.Engine.Bridge.LunyVector3.Max(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Min(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.MoveTowards(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.NegativeInfinity
+  - Luny.Engine.Bridge.LunyVector3.Normalize
+  - Luny.Engine.Bridge.LunyVector3.Normalize(Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Normalized
+  - Luny.Engine.Bridge.LunyVector3.One
+  - Luny.Engine.Bridge.LunyVector3.PositiveInfinity
+  - Luny.Engine.Bridge.LunyVector3.Project(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.ProjectOnPlane(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Reflect(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Right
+  - Luny.Engine.Bridge.LunyVector3.Scale(Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Scale(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Set(System.Single,System.Single,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.SignedAngle(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.Slerp(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.SlerpUnclamped(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.SqrDistance(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.SqrMagnitude
+  - Luny.Engine.Bridge.LunyVector3.ToString
+  - Luny.Engine.Bridge.LunyVector3.ToString(System.String)
+  - Luny.Engine.Bridge.LunyVector3.Uniform(System.Double)
+  - Luny.Engine.Bridge.LunyVector3.Up
+  - Luny.Engine.Bridge.LunyVector3.X
+  - Luny.Engine.Bridge.LunyVector3.Y
+  - Luny.Engine.Bridge.LunyVector3.Z
+  - Luny.Engine.Bridge.LunyVector3.Zero
+  - Luny.Engine.Bridge.LunyVector3.op_Addition(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.op_Division(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.op_Division(Luny.Engine.Bridge.LunyVector3,System.Double)
+  - Luny.Engine.Bridge.LunyVector3.op_Division(Luny.Engine.Bridge.LunyVector3,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.op_Equality(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.op_Inequality(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.op_Multiply(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.op_Multiply(Luny.Engine.Bridge.LunyVector3,System.Double)
+  - Luny.Engine.Bridge.LunyVector3.op_Multiply(Luny.Engine.Bridge.LunyVector3,System.Single)
+  - Luny.Engine.Bridge.LunyVector3.op_Multiply(System.Double,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.op_Multiply(System.Single,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.op_Subtraction(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyVector3.op_UnaryNegation(Luny.Engine.Bridge.LunyVector3)
+  langs:
+  - csharp
+  - vb
+  name: LunyVector3
+  nameWithType: LunyVector3
+  fullName: Luny.Engine.Bridge.LunyVector3
+  type: Struct
+  source:
+    id: LunyVector3
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 6
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: 'public struct LunyVector3 : IEquatable<LunyVector3>'
+    content.vb: Public Structure LunyVector3 Implements IEquatable(Of LunyVector3)
+  implements:
+  - System.IEquatable{Luny.Engine.Bridge.LunyVector3}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - Luny.Engine.Bridge.LunyVector3.Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity
+- uid: Luny.Engine.Bridge.LunyVector3.X
+  commentId: P:Luny.Engine.Bridge.LunyVector3.X
+  id: X
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: LunyVector3.X
+  fullName: Luny.Engine.Bridge.LunyVector3.X
+  type: Property
+  source:
+    id: X
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 10
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float X { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property X As Single
+  overload: Luny.Engine.Bridge.LunyVector3.X*
+- uid: Luny.Engine.Bridge.LunyVector3.Y
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Y
+  id: Y
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: LunyVector3.Y
+  fullName: Luny.Engine.Bridge.LunyVector3.Y
+  type: Property
+  source:
+    id: Y
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 16
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float Y { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Y As Single
+  overload: Luny.Engine.Bridge.LunyVector3.Y*
+- uid: Luny.Engine.Bridge.LunyVector3.Z
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Z
+  id: Z
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: LunyVector3.Z
+  fullName: Luny.Engine.Bridge.LunyVector3.Z
+  type: Property
+  source:
+    id: Z
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 22
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float Z { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Z As Single
+  overload: Luny.Engine.Bridge.LunyVector3.Z*
+- uid: Luny.Engine.Bridge.LunyVector3.Item(System.Int32)
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: LunyVector3.this[int]
+  fullName: Luny.Engine.Bridge.LunyVector3.this[int]
+  type: Property
+  source:
+    id: this[]
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 28
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Default Property this[](index As Integer) As Single
+  overload: Luny.Engine.Bridge.LunyVector3.Item*
+  nameWithType.vb: LunyVector3.this[](Integer)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Luny.Engine.Bridge.LunyVector3.#ctor(System.Single,System.Single,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.#ctor(System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single)'
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: LunyVector3(float, float, float)
+  nameWithType: LunyVector3.LunyVector3(float, float, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.LunyVector3(float, float, float)
+  type: Constructor
+  source:
+    id: .ctor
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 59
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public LunyVector3(float x, float y, float z)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    content.vb: Public Sub New(x As Single, y As Single, z As Single)
+  overload: Luny.Engine.Bridge.LunyVector3.#ctor*
+  nameWithType.vb: LunyVector3.New(Single, Single, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.New(Single, Single, Single)
+  name.vb: New(Single, Single, Single)
+- uid: Luny.Engine.Bridge.LunyVector3.#ctor(System.Double,System.Double,System.Double)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.#ctor(System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double)'
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: LunyVector3(double, double, double)
+  nameWithType: LunyVector3.LunyVector3(double, double, double)
+  fullName: Luny.Engine.Bridge.LunyVector3.LunyVector3(double, double, double)
+  type: Constructor
+  source:
+    id: .ctor
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 62
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public LunyVector3(double x, double y, double z)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: z
+      type: System.Double
+    content.vb: Public Sub New(x As Double, y As Double, z As Double)
+  overload: Luny.Engine.Bridge.LunyVector3.#ctor*
+  nameWithType.vb: LunyVector3.New(Double, Double, Double)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.New(Double, Double, Double)
+  name.vb: New(Double, Double, Double)
+- uid: Luny.Engine.Bridge.LunyVector3.#ctor(System.Single,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: LunyVector3(float, float)
+  nameWithType: LunyVector3.LunyVector3(float, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.LunyVector3(float, float)
+  type: Constructor
+  source:
+    id: .ctor
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 65
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public LunyVector3(float x, float y)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    content.vb: Public Sub New(x As Single, y As Single)
+  overload: Luny.Engine.Bridge.LunyVector3.#ctor*
+  nameWithType.vb: LunyVector3.New(Single, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.New(Single, Single)
+  name.vb: New(Single, Single)
+- uid: Luny.Engine.Bridge.LunyVector3.#ctor(System.Double,System.Double)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.#ctor(System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double)'
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: LunyVector3(double, double)
+  nameWithType: LunyVector3.LunyVector3(double, double)
+  fullName: Luny.Engine.Bridge.LunyVector3.LunyVector3(double, double)
+  type: Constructor
+  source:
+    id: .ctor
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 68
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public LunyVector3(double x, double y)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    content.vb: Public Sub New(x As Double, y As Double)
+  overload: Luny.Engine.Bridge.LunyVector3.#ctor*
+  nameWithType.vb: LunyVector3.New(Double, Double)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.New(Double, Double)
+  name.vb: New(Double, Double)
+- uid: Luny.Engine.Bridge.LunyVector3.Zero
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Zero
+  id: Zero
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: LunyVector3.Zero
+  fullName: Luny.Engine.Bridge.LunyVector3.Zero
+  type: Property
+  source:
+    id: Zero
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 75
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Zero { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared ReadOnly Property Zero As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Zero*
+- uid: Luny.Engine.Bridge.LunyVector3.One
+  commentId: P:Luny.Engine.Bridge.LunyVector3.One
+  id: One
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: LunyVector3.One
+  fullName: Luny.Engine.Bridge.LunyVector3.One
+  type: Property
+  source:
+    id: One
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 76
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 One { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared ReadOnly Property One As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.One*
+- uid: Luny.Engine.Bridge.LunyVector3.Up
+  commentId: F:Luny.Engine.Bridge.LunyVector3.Up
+  id: Up
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: LunyVector3.Up
+  fullName: Luny.Engine.Bridge.LunyVector3.Up
+  type: Field
+  source:
+    id: Up
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 77
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Up
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Up As LunyVector3
+- uid: Luny.Engine.Bridge.LunyVector3.Down
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Down
+  id: Down
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: LunyVector3.Down
+  fullName: Luny.Engine.Bridge.LunyVector3.Down
+  type: Property
+  source:
+    id: Down
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 78
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Down { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared ReadOnly Property Down As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Down*
+- uid: Luny.Engine.Bridge.LunyVector3.Left
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Left
+  id: Left
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: LunyVector3.Left
+  fullName: Luny.Engine.Bridge.LunyVector3.Left
+  type: Property
+  source:
+    id: Left
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 79
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Left { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared ReadOnly Property Left As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Left*
+- uid: Luny.Engine.Bridge.LunyVector3.Right
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Right
+  id: Right
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: LunyVector3.Right
+  fullName: Luny.Engine.Bridge.LunyVector3.Right
+  type: Property
+  source:
+    id: Right
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 80
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Right { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared ReadOnly Property Right As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Right*
+- uid: Luny.Engine.Bridge.LunyVector3.Forward
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Forward
+  id: Forward
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Forward
+  nameWithType: LunyVector3.Forward
+  fullName: Luny.Engine.Bridge.LunyVector3.Forward
+  type: Property
+  source:
+    id: Forward
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 81
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Forward { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared ReadOnly Property Forward As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Forward*
+- uid: Luny.Engine.Bridge.LunyVector3.Back
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Back
+  id: Back
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Back
+  nameWithType: LunyVector3.Back
+  fullName: Luny.Engine.Bridge.LunyVector3.Back
+  type: Property
+  source:
+    id: Back
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 82
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Back { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared ReadOnly Property Back As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Back*
+- uid: Luny.Engine.Bridge.LunyVector3.PositiveInfinity
+  commentId: P:Luny.Engine.Bridge.LunyVector3.PositiveInfinity
+  id: PositiveInfinity
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: PositiveInfinity
+  nameWithType: LunyVector3.PositiveInfinity
+  fullName: Luny.Engine.Bridge.LunyVector3.PositiveInfinity
+  type: Property
+  source:
+    id: PositiveInfinity
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 83
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 PositiveInfinity { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared ReadOnly Property PositiveInfinity As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.PositiveInfinity*
+- uid: Luny.Engine.Bridge.LunyVector3.NegativeInfinity
+  commentId: P:Luny.Engine.Bridge.LunyVector3.NegativeInfinity
+  id: NegativeInfinity
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: NegativeInfinity
+  nameWithType: LunyVector3.NegativeInfinity
+  fullName: Luny.Engine.Bridge.LunyVector3.NegativeInfinity
+  type: Property
+  source:
+    id: NegativeInfinity
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 84
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 NegativeInfinity { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared ReadOnly Property NegativeInfinity As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.NegativeInfinity*
+- uid: Luny.Engine.Bridge.LunyVector3.Magnitude
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Magnitude
+  id: Magnitude
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Magnitude
+  nameWithType: LunyVector3.Magnitude
+  fullName: Luny.Engine.Bridge.LunyVector3.Magnitude
+  type: Property
+  source:
+    id: Magnitude
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 87
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float Magnitude { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Magnitude As Single
+  overload: Luny.Engine.Bridge.LunyVector3.Magnitude*
+- uid: Luny.Engine.Bridge.LunyVector3.SqrMagnitude
+  commentId: P:Luny.Engine.Bridge.LunyVector3.SqrMagnitude
+  id: SqrMagnitude
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: SqrMagnitude
+  nameWithType: LunyVector3.SqrMagnitude
+  fullName: Luny.Engine.Bridge.LunyVector3.SqrMagnitude
+  type: Property
+  source:
+    id: SqrMagnitude
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 92
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float SqrMagnitude { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property SqrMagnitude As Single
+  overload: Luny.Engine.Bridge.LunyVector3.SqrMagnitude*
+- uid: Luny.Engine.Bridge.LunyVector3.Normalized
+  commentId: P:Luny.Engine.Bridge.LunyVector3.Normalized
+  id: Normalized
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Normalized
+  nameWithType: LunyVector3.Normalized
+  fullName: Luny.Engine.Bridge.LunyVector3.Normalized
+  type: Property
+  source:
+    id: Normalized
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 97
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public LunyVector3 Normalized { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public ReadOnly Property Normalized As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Normalized*
+- uid: Luny.Engine.Bridge.LunyVector3.Normalize
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Normalize
+  id: Normalize
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Normalize()
+  nameWithType: LunyVector3.Normalize()
+  fullName: Luny.Engine.Bridge.LunyVector3.Normalize()
+  type: Method
+  source:
+    id: Normalize
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 108
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public void Normalize()
+    content.vb: Public Sub Normalize()
+  overload: Luny.Engine.Bridge.LunyVector3.Normalize*
+- uid: Luny.Engine.Bridge.LunyVector3.Set(System.Single,System.Single,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Set(System.Single,System.Single,System.Single)
+  id: Set(System.Single,System.Single,System.Single)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Set(float, float, float)
+  nameWithType: LunyVector3.Set(float, float, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.Set(float, float, float)
+  type: Method
+  source:
+    id: Set
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 118
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public void Set(float newX, float newY, float newZ)
+    parameters:
+    - id: newX
+      type: System.Single
+    - id: newY
+      type: System.Single
+    - id: newZ
+      type: System.Single
+    content.vb: Public Sub [Set](newX As Single, newY As Single, newZ As Single)
+  overload: Luny.Engine.Bridge.LunyVector3.Set*
+  nameWithType.vb: LunyVector3.Set(Single, Single, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.Set(Single, Single, Single)
+  name.vb: Set(Single, Single, Single)
+- uid: Luny.Engine.Bridge.LunyVector3.Scale(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Scale(Luny.Engine.Bridge.LunyVector3)
+  id: Scale(Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Scale(LunyVector3)
+  nameWithType: LunyVector3.Scale(LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Scale(Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Scale
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 121
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public void Scale(LunyVector3 scale)
+    parameters:
+    - id: scale
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Sub Scale(scale As LunyVector3)
+  overload: Luny.Engine.Bridge.LunyVector3.Scale*
+- uid: Luny.Engine.Bridge.LunyVector3.Dot(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Dot(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: Dot(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Dot(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.Dot(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Dot(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Dot
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 125
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static float Dot(LunyVector3 lhs, LunyVector3 rhs)
+    parameters:
+    - id: lhs
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: rhs
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Dot(lhs As LunyVector3, rhs As LunyVector3) As Single
+  overload: Luny.Engine.Bridge.LunyVector3.Dot*
+- uid: Luny.Engine.Bridge.LunyVector3.Cross(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Cross(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: Cross(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Cross(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.Cross(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Cross(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Cross
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 128
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Cross(LunyVector3 lhs, LunyVector3 rhs)
+    parameters:
+    - id: lhs
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: rhs
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function Cross(lhs As LunyVector3, rhs As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Cross*
+- uid: Luny.Engine.Bridge.LunyVector3.Distance(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Distance(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: Distance(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Distance(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.Distance(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Distance(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Distance
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 131
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static float Distance(LunyVector3 a, LunyVector3 b)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Distance(a As LunyVector3, b As LunyVector3) As Single
+  overload: Luny.Engine.Bridge.LunyVector3.Distance*
+- uid: Luny.Engine.Bridge.LunyVector3.SqrDistance(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.SqrDistance(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: SqrDistance(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: SqrDistance(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.SqrDistance(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.SqrDistance(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: SqrDistance
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 134
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static float SqrDistance(LunyVector3 a, LunyVector3 b)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: System.Single
+    content.vb: Public Shared Function SqrDistance(a As LunyVector3, b As LunyVector3) As Single
+  overload: Luny.Engine.Bridge.LunyVector3.SqrDistance*
+- uid: Luny.Engine.Bridge.LunyVector3.Lerp(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Lerp(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  id: Lerp(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Lerp(LunyVector3, LunyVector3, float)
+  nameWithType: LunyVector3.Lerp(LunyVector3, LunyVector3, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.Lerp(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, float)
+  type: Method
+  source:
+    id: Lerp
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 137
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Lerp(LunyVector3 a, LunyVector3 b, float t)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: t
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function Lerp(a As LunyVector3, b As LunyVector3, t As Single) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Lerp*
+  nameWithType.vb: LunyVector3.Lerp(LunyVector3, LunyVector3, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.Lerp(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, Single)
+  name.vb: Lerp(LunyVector3, LunyVector3, Single)
+- uid: Luny.Engine.Bridge.LunyVector3.LerpUnclamped(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.LerpUnclamped(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  id: LerpUnclamped(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: LerpUnclamped(LunyVector3, LunyVector3, float)
+  nameWithType: LunyVector3.LerpUnclamped(LunyVector3, LunyVector3, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.LerpUnclamped(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, float)
+  type: Method
+  source:
+    id: LerpUnclamped
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 140
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 LerpUnclamped(LunyVector3 a, LunyVector3 b, float t)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: t
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function LerpUnclamped(a As LunyVector3, b As LunyVector3, t As Single) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.LerpUnclamped*
+  nameWithType.vb: LunyVector3.LerpUnclamped(LunyVector3, LunyVector3, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.LerpUnclamped(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, Single)
+  name.vb: LerpUnclamped(LunyVector3, LunyVector3, Single)
+- uid: Luny.Engine.Bridge.LunyVector3.Slerp(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Slerp(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  id: Slerp(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Slerp(LunyVector3, LunyVector3, float)
+  nameWithType: LunyVector3.Slerp(LunyVector3, LunyVector3, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.Slerp(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, float)
+  type: Method
+  source:
+    id: Slerp
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 143
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Slerp(LunyVector3 a, LunyVector3 b, float t)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: t
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function Slerp(a As LunyVector3, b As LunyVector3, t As Single) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Slerp*
+  nameWithType.vb: LunyVector3.Slerp(LunyVector3, LunyVector3, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.Slerp(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, Single)
+  name.vb: Slerp(LunyVector3, LunyVector3, Single)
+- uid: Luny.Engine.Bridge.LunyVector3.SlerpUnclamped(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.SlerpUnclamped(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  id: SlerpUnclamped(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: SlerpUnclamped(LunyVector3, LunyVector3, float)
+  nameWithType: LunyVector3.SlerpUnclamped(LunyVector3, LunyVector3, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.SlerpUnclamped(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, float)
+  type: Method
+  source:
+    id: SlerpUnclamped
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 152
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 SlerpUnclamped(LunyVector3 a, LunyVector3 b, float t)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: t
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function SlerpUnclamped(a As LunyVector3, b As LunyVector3, t As Single) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.SlerpUnclamped*
+  nameWithType.vb: LunyVector3.SlerpUnclamped(LunyVector3, LunyVector3, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.SlerpUnclamped(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, Single)
+  name.vb: SlerpUnclamped(LunyVector3, LunyVector3, Single)
+- uid: Luny.Engine.Bridge.LunyVector3.Max(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Max(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: Max(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Max(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.Max(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Max(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Max
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 160
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Max(LunyVector3 lhs, LunyVector3 rhs)
+    parameters:
+    - id: lhs
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: rhs
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function Max(lhs As LunyVector3, rhs As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Max*
+- uid: Luny.Engine.Bridge.LunyVector3.Min(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Min(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: Min(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Min(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.Min(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Min(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Min
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 163
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Min(LunyVector3 lhs, LunyVector3 rhs)
+    parameters:
+    - id: lhs
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: rhs
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function Min(lhs As LunyVector3, rhs As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Min*
+- uid: Luny.Engine.Bridge.LunyVector3.Scale(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Scale(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: Scale(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Scale(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.Scale(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Scale(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Scale
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 166
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Scale(LunyVector3 a, LunyVector3 b)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function Scale(a As LunyVector3, b As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Scale*
+- uid: Luny.Engine.Bridge.LunyVector3.Reflect(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Reflect(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: Reflect(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Reflect(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.Reflect(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Reflect(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Reflect
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 169
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Reflect(LunyVector3 inDirection, LunyVector3 inNormal)
+    parameters:
+    - id: inDirection
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: inNormal
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function Reflect(inDirection As LunyVector3, inNormal As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Reflect*
+- uid: Luny.Engine.Bridge.LunyVector3.Normalize(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Normalize(Luny.Engine.Bridge.LunyVector3)
+  id: Normalize(Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Normalize(LunyVector3)
+  nameWithType: LunyVector3.Normalize(LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Normalize(Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Normalize
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 173
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Normalize(LunyVector3 value)
+    parameters:
+    - id: value
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function Normalize(value As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Normalize*
+- uid: Luny.Engine.Bridge.LunyVector3.ClampMagnitude(Luny.Engine.Bridge.LunyVector3,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.ClampMagnitude(Luny.Engine.Bridge.LunyVector3,System.Single)
+  id: ClampMagnitude(Luny.Engine.Bridge.LunyVector3,System.Single)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: ClampMagnitude(LunyVector3, float)
+  nameWithType: LunyVector3.ClampMagnitude(LunyVector3, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.ClampMagnitude(Luny.Engine.Bridge.LunyVector3, float)
+  type: Method
+  source:
+    id: ClampMagnitude
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 176
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 ClampMagnitude(LunyVector3 vector, float maxLength)
+    parameters:
+    - id: vector
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: maxLength
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function ClampMagnitude(vector As LunyVector3, maxLength As Single) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.ClampMagnitude*
+  nameWithType.vb: LunyVector3.ClampMagnitude(LunyVector3, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.ClampMagnitude(Luny.Engine.Bridge.LunyVector3, Single)
+  name.vb: ClampMagnitude(LunyVector3, Single)
+- uid: Luny.Engine.Bridge.LunyVector3.MoveTowards(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.MoveTowards(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  id: MoveTowards(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: MoveTowards(LunyVector3, LunyVector3, float)
+  nameWithType: LunyVector3.MoveTowards(LunyVector3, LunyVector3, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.MoveTowards(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, float)
+  type: Method
+  source:
+    id: MoveTowards
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 188
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 MoveTowards(LunyVector3 current, LunyVector3 target, float maxDistanceDelta)
+    parameters:
+    - id: current
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: target
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: maxDistanceDelta
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function MoveTowards(current As LunyVector3, target As LunyVector3, maxDistanceDelta As Single) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.MoveTowards*
+  nameWithType.vb: LunyVector3.MoveTowards(LunyVector3, LunyVector3, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.MoveTowards(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, Single)
+  name.vb: MoveTowards(LunyVector3, LunyVector3, Single)
+- uid: Luny.Engine.Bridge.LunyVector3.Project(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Project(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: Project(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Project(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.Project(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Project(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Project
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 198
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Project(LunyVector3 vector, LunyVector3 onNormal)
+    parameters:
+    - id: vector
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: onNormal
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function Project(vector As LunyVector3, onNormal As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Project*
+- uid: Luny.Engine.Bridge.LunyVector3.ProjectOnPlane(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.ProjectOnPlane(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: ProjectOnPlane(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: ProjectOnPlane(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.ProjectOnPlane(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.ProjectOnPlane(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: ProjectOnPlane
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 208
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 ProjectOnPlane(LunyVector3 vector, LunyVector3 planeNormal)
+    parameters:
+    - id: vector
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: planeNormal
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function ProjectOnPlane(vector As LunyVector3, planeNormal As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.ProjectOnPlane*
+- uid: Luny.Engine.Bridge.LunyVector3.Angle(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Angle(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: Angle(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Angle(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.Angle(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Angle(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Angle
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 211
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static float Angle(LunyVector3 from, LunyVector3 to)
+    parameters:
+    - id: from
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: to
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Angle(from As LunyVector3, [to] As LunyVector3) As Single
+  overload: Luny.Engine.Bridge.LunyVector3.Angle*
+- uid: Luny.Engine.Bridge.LunyVector3.SignedAngle(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.SignedAngle(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: SignedAngle(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: SignedAngle(LunyVector3, LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.SignedAngle(LunyVector3, LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.SignedAngle(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: SignedAngle
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 221
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static float SignedAngle(LunyVector3 from, LunyVector3 to, LunyVector3 axis)
+    parameters:
+    - id: from
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: to
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: axis
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: System.Single
+    content.vb: Public Shared Function SignedAngle(from As LunyVector3, [to] As LunyVector3, axis As LunyVector3) As Single
+  overload: Luny.Engine.Bridge.LunyVector3.SignedAngle*
+- uid: Luny.Engine.Bridge.LunyVector3.Uniform(System.Double)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Uniform(System.Double)
+  id: Uniform(System.Double)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Uniform(double)
+  nameWithType: LunyVector3.Uniform(double)
+  fullName: Luny.Engine.Bridge.LunyVector3.Uniform(double)
+  type: Method
+  source:
+    id: Uniform
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 229
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 Uniform(double scale)
+    parameters:
+    - id: scale
+      type: System.Double
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Function Uniform(scale As Double) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.Uniform*
+  nameWithType.vb: LunyVector3.Uniform(Double)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.Uniform(Double)
+  name.vb: Uniform(Double)
+- uid: Luny.Engine.Bridge.LunyVector3.op_Addition(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Addition(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: op_Addition(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator +(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.operator +(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator +(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Operator
+  source:
+    id: op_Addition
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 232
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator +(LunyVector3 a, LunyVector3 b)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator +(a As LunyVector3, b As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_Addition*
+  nameWithType.vb: LunyVector3.+(LunyVector3, LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.+(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  name.vb: +(LunyVector3, LunyVector3)
+- uid: Luny.Engine.Bridge.LunyVector3.op_Subtraction(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Subtraction(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: op_Subtraction(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator -(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.operator -(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator -(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Operator
+  source:
+    id: op_Subtraction
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 235
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator -(LunyVector3 a, LunyVector3 b)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator -(a As LunyVector3, b As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_Subtraction*
+  nameWithType.vb: LunyVector3.-(LunyVector3, LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.-(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  name.vb: -(LunyVector3, LunyVector3)
+- uid: Luny.Engine.Bridge.LunyVector3.op_UnaryNegation(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_UnaryNegation(Luny.Engine.Bridge.LunyVector3)
+  id: op_UnaryNegation(Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator -(LunyVector3)
+  nameWithType: LunyVector3.operator -(LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator -(Luny.Engine.Bridge.LunyVector3)
+  type: Operator
+  source:
+    id: op_UnaryNegation
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 238
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator -(LunyVector3 a)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator -(a As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_UnaryNegation*
+  nameWithType.vb: LunyVector3.-(LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.-(Luny.Engine.Bridge.LunyVector3)
+  name.vb: -(LunyVector3)
+- uid: Luny.Engine.Bridge.LunyVector3.op_Multiply(Luny.Engine.Bridge.LunyVector3,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Multiply(Luny.Engine.Bridge.LunyVector3,System.Single)
+  id: op_Multiply(Luny.Engine.Bridge.LunyVector3,System.Single)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator *(LunyVector3, float)
+  nameWithType: LunyVector3.operator *(LunyVector3, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator *(Luny.Engine.Bridge.LunyVector3, float)
+  type: Operator
+  source:
+    id: op_Multiply
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 241
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator *(LunyVector3 a, float d)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: d
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator *(a As LunyVector3, d As Single) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_Multiply*
+  nameWithType.vb: LunyVector3.*(LunyVector3, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.*(Luny.Engine.Bridge.LunyVector3, Single)
+  name.vb: '*(LunyVector3, Single)'
+- uid: Luny.Engine.Bridge.LunyVector3.op_Multiply(Luny.Engine.Bridge.LunyVector3,System.Double)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Multiply(Luny.Engine.Bridge.LunyVector3,System.Double)
+  id: op_Multiply(Luny.Engine.Bridge.LunyVector3,System.Double)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator *(LunyVector3, double)
+  nameWithType: LunyVector3.operator *(LunyVector3, double)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator *(Luny.Engine.Bridge.LunyVector3, double)
+  type: Operator
+  source:
+    id: op_Multiply
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 244
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator *(LunyVector3 a, double d)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: d
+      type: System.Double
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator *(a As LunyVector3, d As Double) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_Multiply*
+  nameWithType.vb: LunyVector3.*(LunyVector3, Double)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.*(Luny.Engine.Bridge.LunyVector3, Double)
+  name.vb: '*(LunyVector3, Double)'
+- uid: Luny.Engine.Bridge.LunyVector3.op_Multiply(System.Single,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Multiply(System.Single,Luny.Engine.Bridge.LunyVector3)
+  id: op_Multiply(System.Single,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator *(float, LunyVector3)
+  nameWithType: LunyVector3.operator *(float, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator *(float, Luny.Engine.Bridge.LunyVector3)
+  type: Operator
+  source:
+    id: op_Multiply
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 247
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator *(float d, LunyVector3 a)
+    parameters:
+    - id: d
+      type: System.Single
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator *(d As Single, a As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_Multiply*
+  nameWithType.vb: LunyVector3.*(Single, LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.*(Single, Luny.Engine.Bridge.LunyVector3)
+  name.vb: '*(Single, LunyVector3)'
+- uid: Luny.Engine.Bridge.LunyVector3.op_Multiply(System.Double,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Multiply(System.Double,Luny.Engine.Bridge.LunyVector3)
+  id: op_Multiply(System.Double,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator *(double, LunyVector3)
+  nameWithType: LunyVector3.operator *(double, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator *(double, Luny.Engine.Bridge.LunyVector3)
+  type: Operator
+  source:
+    id: op_Multiply
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 250
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator *(double d, LunyVector3 a)
+    parameters:
+    - id: d
+      type: System.Double
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator *(d As Double, a As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_Multiply*
+  nameWithType.vb: LunyVector3.*(Double, LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.*(Double, Luny.Engine.Bridge.LunyVector3)
+  name.vb: '*(Double, LunyVector3)'
+- uid: Luny.Engine.Bridge.LunyVector3.op_Multiply(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Multiply(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: op_Multiply(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator *(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.operator *(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator *(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Operator
+  source:
+    id: op_Multiply
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 253
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator *(LunyVector3 a, LunyVector3 b)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator *(a As LunyVector3, b As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_Multiply*
+  nameWithType.vb: LunyVector3.*(LunyVector3, LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.*(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  name.vb: '*(LunyVector3, LunyVector3)'
+- uid: Luny.Engine.Bridge.LunyVector3.op_Division(Luny.Engine.Bridge.LunyVector3,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Division(Luny.Engine.Bridge.LunyVector3,System.Single)
+  id: op_Division(Luny.Engine.Bridge.LunyVector3,System.Single)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator /(LunyVector3, float)
+  nameWithType: LunyVector3.operator /(LunyVector3, float)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator /(Luny.Engine.Bridge.LunyVector3, float)
+  type: Operator
+  source:
+    id: op_Division
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 256
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator /(LunyVector3 a, float d)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: d
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator /(a As LunyVector3, d As Single) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_Division*
+  nameWithType.vb: LunyVector3./(LunyVector3, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3./(Luny.Engine.Bridge.LunyVector3, Single)
+  name.vb: /(LunyVector3, Single)
+- uid: Luny.Engine.Bridge.LunyVector3.op_Division(Luny.Engine.Bridge.LunyVector3,System.Double)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Division(Luny.Engine.Bridge.LunyVector3,System.Double)
+  id: op_Division(Luny.Engine.Bridge.LunyVector3,System.Double)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator /(LunyVector3, double)
+  nameWithType: LunyVector3.operator /(LunyVector3, double)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator /(Luny.Engine.Bridge.LunyVector3, double)
+  type: Operator
+  source:
+    id: op_Division
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 259
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator /(LunyVector3 a, double d)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: d
+      type: System.Double
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator /(a As LunyVector3, d As Double) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_Division*
+  nameWithType.vb: LunyVector3./(LunyVector3, Double)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3./(Luny.Engine.Bridge.LunyVector3, Double)
+  name.vb: /(LunyVector3, Double)
+- uid: Luny.Engine.Bridge.LunyVector3.op_Division(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Division(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: op_Division(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator /(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.operator /(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator /(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Operator
+  source:
+    id: op_Division
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 262
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator /(LunyVector3 a, LunyVector3 b)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: b
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator /(a As LunyVector3, b As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyVector3.op_Division*
+  nameWithType.vb: LunyVector3./(LunyVector3, LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3./(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  name.vb: /(LunyVector3, LunyVector3)
+- uid: Luny.Engine.Bridge.LunyVector3.op_Equality(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Equality(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: op_Equality(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator ==(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.operator ==(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator ==(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Operator
+  source:
+    id: op_Equality
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 265
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static bool operator ==(LunyVector3 lhs, LunyVector3 rhs)
+    parameters:
+    - id: lhs
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: rhs
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(lhs As LunyVector3, rhs As LunyVector3) As Boolean
+  overload: Luny.Engine.Bridge.LunyVector3.op_Equality*
+  nameWithType.vb: LunyVector3.=(LunyVector3, LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.=(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  name.vb: =(LunyVector3, LunyVector3)
+- uid: Luny.Engine.Bridge.LunyVector3.op_Inequality(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.op_Inequality(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: op_Inequality(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: operator !=(LunyVector3, LunyVector3)
+  nameWithType: LunyVector3.operator !=(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.operator !=(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 268
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static bool operator !=(LunyVector3 lhs, LunyVector3 rhs)
+    parameters:
+    - id: lhs
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: rhs
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(lhs As LunyVector3, rhs As LunyVector3) As Boolean
+  overload: Luny.Engine.Bridge.LunyVector3.op_Inequality*
+  nameWithType.vb: LunyVector3.<>(LunyVector3, LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.<>(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  name.vb: <>(LunyVector3, LunyVector3)
+- uid: Luny.Engine.Bridge.LunyVector3.Equals(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Equals(Luny.Engine.Bridge.LunyVector3)
+  id: Equals(Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Equals(LunyVector3)
+  nameWithType: LunyVector3.Equals(LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyVector3.Equals(Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: Equals
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 272
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public bool Equals(LunyVector3 other)
+    parameters:
+    - id: other
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As LunyVector3) As Boolean
+  overload: Luny.Engine.Bridge.LunyVector3.Equals*
+  implements:
+  - System.IEquatable{Luny.Engine.Bridge.LunyVector3}.Equals(Luny.Engine.Bridge.LunyVector3)
+- uid: Luny.Engine.Bridge.LunyVector3.Equals(System.Object)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: LunyVector3.Equals(object)
+  fullName: Luny.Engine.Bridge.LunyVector3.Equals(object)
+  type: Method
+  source:
+    id: Equals
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 275
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Luny.Engine.Bridge.LunyVector3.Equals*
+  nameWithType.vb: LunyVector3.Equals(Object)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Luny.Engine.Bridge.LunyVector3.GetHashCode
+  commentId: M:Luny.Engine.Bridge.LunyVector3.GetHashCode
+  id: GetHashCode
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: LunyVector3.GetHashCode()
+  fullName: Luny.Engine.Bridge.LunyVector3.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 277
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Luny.Engine.Bridge.LunyVector3.GetHashCode*
+- uid: Luny.Engine.Bridge.LunyVector3.ToString
+  commentId: M:Luny.Engine.Bridge.LunyVector3.ToString
+  id: ToString
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LunyVector3.ToString()
+  fullName: Luny.Engine.Bridge.LunyVector3.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 280
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Luny.Engine.Bridge.LunyVector3.ToString*
+- uid: Luny.Engine.Bridge.LunyVector3.ToString(System.String)
+  commentId: M:Luny.Engine.Bridge.LunyVector3.ToString(System.String)
+  id: ToString(System.String)
+  parent: Luny.Engine.Bridge.LunyVector3
+  langs:
+  - csharp
+  - vb
+  name: ToString(string)
+  nameWithType: LunyVector3.ToString(string)
+  fullName: Luny.Engine.Bridge.LunyVector3.ToString(string)
+  type: Method
+  source:
+    id: ToString
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyVector3.cs
+    startLine: 282
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public string ToString(string format)
+    parameters:
+    - id: format
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ToString(format As String) As String
+  overload: Luny.Engine.Bridge.LunyVector3.ToString*
+  nameWithType.vb: LunyVector3.ToString(String)
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.ToString(String)
+  name.vb: ToString(String)
+references:
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+- uid: System.IEquatable{Luny.Engine.Bridge.LunyVector3}
+  commentId: T:System.IEquatable{Luny.Engine.Bridge.LunyVector3}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<LunyVector3>
+  nameWithType: IEquatable<LunyVector3>
+  fullName: System.IEquatable<Luny.Engine.Bridge.LunyVector3>
+  nameWithType.vb: IEquatable(Of LunyVector3)
+  fullName.vb: System.IEquatable(Of Luny.Engine.Bridge.LunyVector3)
+  name.vb: IEquatable(Of LunyVector3)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    href: Luny.Engine.Bridge.LunyVector3.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    href: Luny.Engine.Bridge.LunyVector3.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Luny.Engine.Bridge.LunyVector3.Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity
+  commentId: M:Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity(Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Unity.Engine.Bridge.LunyVectorExt
+  definition: Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity(Luny.Engine.Bridge.LunyVector3)
+  href: Luny.Unity.Engine.Bridge.LunyVectorExt.html#Luny_Unity_Engine_Bridge_LunyVectorExt_ToUnity_Luny_Engine_Bridge_LunyVector3_
+  name: ToUnity(LunyVector3)
+  nameWithType: LunyVectorExt.ToUnity(LunyVector3)
+  fullName: Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity(Luny.Engine.Bridge.LunyVector3)
+  spec.csharp:
+  - uid: Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity(Luny.Engine.Bridge.LunyVector3)
+    name: ToUnity
+    href: Luny.Unity.Engine.Bridge.LunyVectorExt.html#Luny_Unity_Engine_Bridge_LunyVectorExt_ToUnity_Luny_Engine_Bridge_LunyVector3_
+  - name: (
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    href: Luny.Engine.Bridge.LunyVector3.html
+  - name: )
+  spec.vb:
+  - uid: Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity(Luny.Engine.Bridge.LunyVector3)
+    name: ToUnity
+    href: Luny.Unity.Engine.Bridge.LunyVectorExt.html#Luny_Unity_Engine_Bridge_LunyVectorExt_ToUnity_Luny_Engine_Bridge_LunyVector3_
+  - name: (
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    href: Luny.Engine.Bridge.LunyVector3.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity(Luny.Engine.Bridge.LunyVector3)
+  href: Luny.Unity.Engine.Bridge.LunyVectorExt.html#Luny_Unity_Engine_Bridge_LunyVectorExt_ToUnity_Luny_Engine_Bridge_LunyVector3_
+  name: ToUnity(LunyVector3)
+  nameWithType: LunyVectorExt.ToUnity(LunyVector3)
+  fullName: Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity(Luny.Engine.Bridge.LunyVector3)
+  spec.csharp:
+  - uid: Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity(Luny.Engine.Bridge.LunyVector3)
+    name: ToUnity
+    href: Luny.Unity.Engine.Bridge.LunyVectorExt.html#Luny_Unity_Engine_Bridge_LunyVectorExt_ToUnity_Luny_Engine_Bridge_LunyVector3_
+  - name: (
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    href: Luny.Engine.Bridge.LunyVector3.html
+  - name: )
+  spec.vb:
+  - uid: Luny.Unity.Engine.Bridge.LunyVectorExt.ToUnity(Luny.Engine.Bridge.LunyVector3)
+    name: ToUnity
+    href: Luny.Unity.Engine.Bridge.LunyVectorExt.html#Luny_Unity_Engine_Bridge_LunyVectorExt_ToUnity_Luny_Engine_Bridge_LunyVector3_
+  - name: (
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    href: Luny.Engine.Bridge.LunyVector3.html
+  - name: )
+- uid: Luny.Unity.Engine.Bridge.LunyVectorExt
+  commentId: T:Luny.Unity.Engine.Bridge.LunyVectorExt
+  parent: Luny.Unity.Engine.Bridge
+  href: Luny.Unity.Engine.Bridge.LunyVectorExt.html
+  name: LunyVectorExt
+  nameWithType: LunyVectorExt
+  fullName: Luny.Unity.Engine.Bridge.LunyVectorExt
+- uid: Luny.Unity.Engine.Bridge
+  commentId: N:Luny.Unity.Engine.Bridge
+  href: Luny.html
+  name: Luny.Unity.Engine.Bridge
+  nameWithType: Luny.Unity.Engine.Bridge
+  fullName: Luny.Unity.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Unity
+    name: Unity
+    href: Luny.Unity.html
+  - name: .
+  - uid: Luny.Unity.Engine
+    name: Engine
+    href: Luny.Unity.Engine.html
+  - name: .
+  - uid: Luny.Unity.Engine.Bridge
+    name: Bridge
+    href: Luny.Unity.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Unity
+    name: Unity
+    href: Luny.Unity.html
+  - name: .
+  - uid: Luny.Unity.Engine
+    name: Engine
+    href: Luny.Unity.Engine.html
+  - name: .
+  - uid: Luny.Unity.Engine.Bridge
+    name: Bridge
+    href: Luny.Unity.Engine.Bridge.html
+- uid: Luny.Engine.Bridge.LunyVector3.X*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.X
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_X
+  name: X
+  nameWithType: LunyVector3.X
+  fullName: Luny.Engine.Bridge.LunyVector3.X
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Luny.Engine.Bridge.LunyVector3.Y*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Y
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Y
+  name: Y
+  nameWithType: LunyVector3.Y
+  fullName: Luny.Engine.Bridge.LunyVector3.Y
+- uid: Luny.Engine.Bridge.LunyVector3.Z*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Z
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Z
+  name: Z
+  nameWithType: LunyVector3.Z
+  fullName: Luny.Engine.Bridge.LunyVector3.Z
+- uid: Luny.Engine.Bridge.LunyVector3.Item*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Item
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Item_System_Int32_
+  name: this
+  nameWithType: LunyVector3.this
+  fullName: Luny.Engine.Bridge.LunyVector3.this
+  nameWithType.vb: LunyVector3.this[]
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.this[]
+  name.vb: this[]
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Luny.Engine.Bridge.LunyVector3.#ctor*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.#ctor
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3__ctor_System_Single_System_Single_System_Single_
+  name: LunyVector3
+  nameWithType: LunyVector3.LunyVector3
+  fullName: Luny.Engine.Bridge.LunyVector3.LunyVector3
+  nameWithType.vb: LunyVector3.New
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Luny.Engine.Bridge.LunyVector3.Zero*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Zero
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Zero
+  name: Zero
+  nameWithType: LunyVector3.Zero
+  fullName: Luny.Engine.Bridge.LunyVector3.Zero
+- uid: Luny.Engine.Bridge.LunyVector3
+  commentId: T:Luny.Engine.Bridge.LunyVector3
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.LunyVector3.html
+  name: LunyVector3
+  nameWithType: LunyVector3
+  fullName: Luny.Engine.Bridge.LunyVector3
+- uid: Luny.Engine.Bridge.LunyVector3.One*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.One
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_One
+  name: One
+  nameWithType: LunyVector3.One
+  fullName: Luny.Engine.Bridge.LunyVector3.One
+- uid: Luny.Engine.Bridge.LunyVector3.Down*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Down
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Down
+  name: Down
+  nameWithType: LunyVector3.Down
+  fullName: Luny.Engine.Bridge.LunyVector3.Down
+- uid: Luny.Engine.Bridge.LunyVector3.Left*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Left
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Left
+  name: Left
+  nameWithType: LunyVector3.Left
+  fullName: Luny.Engine.Bridge.LunyVector3.Left
+- uid: Luny.Engine.Bridge.LunyVector3.Right*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Right
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Right
+  name: Right
+  nameWithType: LunyVector3.Right
+  fullName: Luny.Engine.Bridge.LunyVector3.Right
+- uid: Luny.Engine.Bridge.LunyVector3.Forward*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Forward
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Forward
+  name: Forward
+  nameWithType: LunyVector3.Forward
+  fullName: Luny.Engine.Bridge.LunyVector3.Forward
+- uid: Luny.Engine.Bridge.LunyVector3.Back*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Back
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Back
+  name: Back
+  nameWithType: LunyVector3.Back
+  fullName: Luny.Engine.Bridge.LunyVector3.Back
+- uid: Luny.Engine.Bridge.LunyVector3.PositiveInfinity*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.PositiveInfinity
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_PositiveInfinity
+  name: PositiveInfinity
+  nameWithType: LunyVector3.PositiveInfinity
+  fullName: Luny.Engine.Bridge.LunyVector3.PositiveInfinity
+- uid: Luny.Engine.Bridge.LunyVector3.NegativeInfinity*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.NegativeInfinity
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_NegativeInfinity
+  name: NegativeInfinity
+  nameWithType: LunyVector3.NegativeInfinity
+  fullName: Luny.Engine.Bridge.LunyVector3.NegativeInfinity
+- uid: Luny.Engine.Bridge.LunyVector3.Magnitude*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Magnitude
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Magnitude
+  name: Magnitude
+  nameWithType: LunyVector3.Magnitude
+  fullName: Luny.Engine.Bridge.LunyVector3.Magnitude
+- uid: Luny.Engine.Bridge.LunyVector3.SqrMagnitude*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.SqrMagnitude
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_SqrMagnitude
+  name: SqrMagnitude
+  nameWithType: LunyVector3.SqrMagnitude
+  fullName: Luny.Engine.Bridge.LunyVector3.SqrMagnitude
+- uid: Luny.Engine.Bridge.LunyVector3.Normalized*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Normalized
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Normalized
+  name: Normalized
+  nameWithType: LunyVector3.Normalized
+  fullName: Luny.Engine.Bridge.LunyVector3.Normalized
+- uid: Luny.Engine.Bridge.LunyVector3.Normalize*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Normalize
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Normalize
+  name: Normalize
+  nameWithType: LunyVector3.Normalize
+  fullName: Luny.Engine.Bridge.LunyVector3.Normalize
+- uid: Luny.Engine.Bridge.LunyVector3.Set*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Set
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Set_System_Single_System_Single_System_Single_
+  name: Set
+  nameWithType: LunyVector3.Set
+  fullName: Luny.Engine.Bridge.LunyVector3.Set
+- uid: Luny.Engine.Bridge.LunyVector3.Scale*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Scale
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Scale_Luny_Engine_Bridge_LunyVector3_
+  name: Scale
+  nameWithType: LunyVector3.Scale
+  fullName: Luny.Engine.Bridge.LunyVector3.Scale
+- uid: Luny.Engine.Bridge.LunyVector3.Dot*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Dot
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Dot_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: Dot
+  nameWithType: LunyVector3.Dot
+  fullName: Luny.Engine.Bridge.LunyVector3.Dot
+- uid: Luny.Engine.Bridge.LunyVector3.Cross*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Cross
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Cross_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: Cross
+  nameWithType: LunyVector3.Cross
+  fullName: Luny.Engine.Bridge.LunyVector3.Cross
+- uid: Luny.Engine.Bridge.LunyVector3.Distance*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Distance
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Distance_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: Distance
+  nameWithType: LunyVector3.Distance
+  fullName: Luny.Engine.Bridge.LunyVector3.Distance
+- uid: Luny.Engine.Bridge.LunyVector3.SqrDistance*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.SqrDistance
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_SqrDistance_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: SqrDistance
+  nameWithType: LunyVector3.SqrDistance
+  fullName: Luny.Engine.Bridge.LunyVector3.SqrDistance
+- uid: Luny.Engine.Bridge.LunyVector3.Lerp*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Lerp
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Lerp_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_System_Single_
+  name: Lerp
+  nameWithType: LunyVector3.Lerp
+  fullName: Luny.Engine.Bridge.LunyVector3.Lerp
+- uid: Luny.Engine.Bridge.LunyVector3.LerpUnclamped*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.LerpUnclamped
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_LerpUnclamped_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_System_Single_
+  name: LerpUnclamped
+  nameWithType: LunyVector3.LerpUnclamped
+  fullName: Luny.Engine.Bridge.LunyVector3.LerpUnclamped
+- uid: Luny.Engine.Bridge.LunyVector3.Slerp*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Slerp
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Slerp_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_System_Single_
+  name: Slerp
+  nameWithType: LunyVector3.Slerp
+  fullName: Luny.Engine.Bridge.LunyVector3.Slerp
+- uid: Luny.Engine.Bridge.LunyVector3.SlerpUnclamped*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.SlerpUnclamped
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_SlerpUnclamped_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_System_Single_
+  name: SlerpUnclamped
+  nameWithType: LunyVector3.SlerpUnclamped
+  fullName: Luny.Engine.Bridge.LunyVector3.SlerpUnclamped
+- uid: Luny.Engine.Bridge.LunyVector3.Max*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Max
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Max_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: Max
+  nameWithType: LunyVector3.Max
+  fullName: Luny.Engine.Bridge.LunyVector3.Max
+- uid: Luny.Engine.Bridge.LunyVector3.Min*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Min
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Min_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: Min
+  nameWithType: LunyVector3.Min
+  fullName: Luny.Engine.Bridge.LunyVector3.Min
+- uid: Luny.Engine.Bridge.LunyVector3.Reflect*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Reflect
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Reflect_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: Reflect
+  nameWithType: LunyVector3.Reflect
+  fullName: Luny.Engine.Bridge.LunyVector3.Reflect
+- uid: Luny.Engine.Bridge.LunyVector3.ClampMagnitude*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.ClampMagnitude
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_ClampMagnitude_Luny_Engine_Bridge_LunyVector3_System_Single_
+  name: ClampMagnitude
+  nameWithType: LunyVector3.ClampMagnitude
+  fullName: Luny.Engine.Bridge.LunyVector3.ClampMagnitude
+- uid: Luny.Engine.Bridge.LunyVector3.MoveTowards*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.MoveTowards
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_MoveTowards_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_System_Single_
+  name: MoveTowards
+  nameWithType: LunyVector3.MoveTowards
+  fullName: Luny.Engine.Bridge.LunyVector3.MoveTowards
+- uid: Luny.Engine.Bridge.LunyVector3.Project*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Project
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Project_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: Project
+  nameWithType: LunyVector3.Project
+  fullName: Luny.Engine.Bridge.LunyVector3.Project
+- uid: Luny.Engine.Bridge.LunyVector3.ProjectOnPlane*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.ProjectOnPlane
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_ProjectOnPlane_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: ProjectOnPlane
+  nameWithType: LunyVector3.ProjectOnPlane
+  fullName: Luny.Engine.Bridge.LunyVector3.ProjectOnPlane
+- uid: Luny.Engine.Bridge.LunyVector3.Angle*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Angle
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Angle_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: Angle
+  nameWithType: LunyVector3.Angle
+  fullName: Luny.Engine.Bridge.LunyVector3.Angle
+- uid: Luny.Engine.Bridge.LunyVector3.SignedAngle*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.SignedAngle
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_SignedAngle_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: SignedAngle
+  nameWithType: LunyVector3.SignedAngle
+  fullName: Luny.Engine.Bridge.LunyVector3.SignedAngle
+- uid: Luny.Engine.Bridge.LunyVector3.Uniform*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Uniform
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Uniform_System_Double_
+  name: Uniform
+  nameWithType: LunyVector3.Uniform
+  fullName: Luny.Engine.Bridge.LunyVector3.Uniform
+- uid: Luny.Engine.Bridge.LunyVector3.op_Addition*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.op_Addition
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Addition_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: operator +
+  nameWithType: LunyVector3.operator +
+  fullName: Luny.Engine.Bridge.LunyVector3.operator +
+  nameWithType.vb: LunyVector3.+
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3.op_Addition*
+    name: +
+    href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Addition_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+- uid: Luny.Engine.Bridge.LunyVector3.op_Subtraction*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.op_Subtraction
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Subtraction_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: operator -
+  nameWithType: LunyVector3.operator -
+  fullName: Luny.Engine.Bridge.LunyVector3.operator -
+  nameWithType.vb: LunyVector3.-
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3.op_Subtraction*
+    name: '-'
+    href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Subtraction_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+- uid: Luny.Engine.Bridge.LunyVector3.op_UnaryNegation*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.op_UnaryNegation
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_UnaryNegation_Luny_Engine_Bridge_LunyVector3_
+  name: operator -
+  nameWithType: LunyVector3.operator -
+  fullName: Luny.Engine.Bridge.LunyVector3.operator -
+  nameWithType.vb: LunyVector3.-
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3.op_UnaryNegation*
+    name: '-'
+    href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_UnaryNegation_Luny_Engine_Bridge_LunyVector3_
+- uid: Luny.Engine.Bridge.LunyVector3.op_Multiply*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.op_Multiply
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Multiply_Luny_Engine_Bridge_LunyVector3_System_Single_
+  name: operator *
+  nameWithType: LunyVector3.operator *
+  fullName: Luny.Engine.Bridge.LunyVector3.operator *
+  nameWithType.vb: LunyVector3.*
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3.op_Multiply*
+    name: '*'
+    href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Multiply_Luny_Engine_Bridge_LunyVector3_System_Single_
+- uid: Luny.Engine.Bridge.LunyVector3.op_Division*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.op_Division
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Division_Luny_Engine_Bridge_LunyVector3_System_Single_
+  name: operator /
+  nameWithType: LunyVector3.operator /
+  fullName: Luny.Engine.Bridge.LunyVector3.operator /
+  nameWithType.vb: LunyVector3./
+  fullName.vb: Luny.Engine.Bridge.LunyVector3./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3.op_Division*
+    name: /
+    href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Division_Luny_Engine_Bridge_LunyVector3_System_Single_
+- uid: Luny.Engine.Bridge.LunyVector3.op_Equality*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.op_Equality
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Equality_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: operator ==
+  nameWithType: LunyVector3.operator ==
+  fullName: Luny.Engine.Bridge.LunyVector3.operator ==
+  nameWithType.vb: LunyVector3.=
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3.op_Equality*
+    name: ==
+    href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Equality_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Luny.Engine.Bridge.LunyVector3.op_Inequality*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.op_Inequality
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Inequality_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: operator !=
+  nameWithType: LunyVector3.operator !=
+  fullName: Luny.Engine.Bridge.LunyVector3.operator !=
+  nameWithType.vb: LunyVector3.<>
+  fullName.vb: Luny.Engine.Bridge.LunyVector3.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3.op_Inequality*
+    name: '!='
+    href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_op_Inequality_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+- uid: Luny.Engine.Bridge.LunyVector3.Equals*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.Equals
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_Equals_Luny_Engine_Bridge_LunyVector3_
+  name: Equals
+  nameWithType: LunyVector3.Equals
+  fullName: Luny.Engine.Bridge.LunyVector3.Equals
+- uid: System.IEquatable{Luny.Engine.Bridge.LunyVector3}.Equals(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:System.IEquatable{Luny.Engine.Bridge.LunyVector3}.Equals(Luny.Engine.Bridge.LunyVector3)
+  parent: System.IEquatable{Luny.Engine.Bridge.LunyVector3}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(LunyVector3)
+  nameWithType: IEquatable<LunyVector3>.Equals(LunyVector3)
+  fullName: System.IEquatable<Luny.Engine.Bridge.LunyVector3>.Equals(Luny.Engine.Bridge.LunyVector3)
+  nameWithType.vb: IEquatable(Of LunyVector3).Equals(LunyVector3)
+  fullName.vb: System.IEquatable(Of Luny.Engine.Bridge.LunyVector3).Equals(Luny.Engine.Bridge.LunyVector3)
+  spec.csharp:
+  - uid: System.IEquatable{Luny.Engine.Bridge.LunyVector3}.Equals(Luny.Engine.Bridge.LunyVector3)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    href: Luny.Engine.Bridge.LunyVector3.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Luny.Engine.Bridge.LunyVector3}.Equals(Luny.Engine.Bridge.LunyVector3)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    href: Luny.Engine.Bridge.LunyVector3.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Luny.Engine.Bridge.LunyVector3.GetHashCode*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.GetHashCode
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_GetHashCode
+  name: GetHashCode
+  nameWithType: LunyVector3.GetHashCode
+  fullName: Luny.Engine.Bridge.LunyVector3.GetHashCode
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Luny.Engine.Bridge.LunyVector3.ToString*
+  commentId: Overload:Luny.Engine.Bridge.LunyVector3.ToString
+  href: Luny.Engine.Bridge.LunyVector3.html#Luny_Engine_Bridge_LunyVector3_ToString
+  name: ToString
+  nameWithType: LunyVector3.ToString
+  fullName: Luny.Engine.Bridge.LunyVector3.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

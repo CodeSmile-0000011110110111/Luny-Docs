@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Unity
+  commentId: N:LunyScript.Unity
+  id: LunyScript.Unity
+  children:
+  - LunyScript.Unity.ComponentApiExtensions
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.Unity
+  nameWithType: LunyScript.Unity
+  fullName: LunyScript.Unity
+  type: Namespace
+  assemblies:
+  - LunyScript.Unity
+references:
+- uid: LunyScript.Unity.ComponentApiExtensions
+  commentId: T:LunyScript.Unity.ComponentApiExtensions
+  href: LunyScript.Unity.ComponentApiExtensions.html
+  name: ComponentApiExtensions
+  nameWithType: ComponentApiExtensions
+  fullName: LunyScript.Unity.ComponentApiExtensions

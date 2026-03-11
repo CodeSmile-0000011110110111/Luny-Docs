@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.UnityEditor.Linking
+  commentId: N:Luny.UnityEditor.Linking
+  id: Luny.UnityEditor.Linking
+  children:
+  - Luny.UnityEditor.Linking.LunyLinkerProcessor
+  - Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails
+  langs:
+  - csharp
+  - vb
+  name: Luny.UnityEditor.Linking
+  nameWithType: Luny.UnityEditor.Linking
+  fullName: Luny.UnityEditor.Linking
+  type: Namespace
+  assemblies:
+  - Luny.UnityEditor
+references:
+- uid: Luny.UnityEditor.Linking.LunyLinkerProcessor
+  commentId: T:Luny.UnityEditor.Linking.LunyLinkerProcessor
+  href: Luny.UnityEditor.Linking.LunyLinkerProcessor.html
+  name: LunyLinkerProcessor
+  nameWithType: LunyLinkerProcessor
+  fullName: Luny.UnityEditor.Linking.LunyLinkerProcessor
+- uid: Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails
+  commentId: T:Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails
+  href: Luny.UnityEditor.Linking.LunyLinkerProcessor.html
+  name: LunyLinkerProcessor.PreserveDetails
+  nameWithType: LunyLinkerProcessor.PreserveDetails
+  fullName: Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails
+  spec.csharp:
+  - uid: Luny.UnityEditor.Linking.LunyLinkerProcessor
+    name: LunyLinkerProcessor
+    href: Luny.UnityEditor.Linking.LunyLinkerProcessor.html
+  - name: .
+  - uid: Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails
+    name: PreserveDetails
+    href: Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails.html
+  spec.vb:
+  - uid: Luny.UnityEditor.Linking.LunyLinkerProcessor
+    name: LunyLinkerProcessor
+    href: Luny.UnityEditor.Linking.LunyLinkerProcessor.html
+  - name: .
+  - uid: Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails
+    name: PreserveDetails
+    href: Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails.html

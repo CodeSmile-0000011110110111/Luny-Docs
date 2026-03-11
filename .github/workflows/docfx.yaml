@@ -1,0 +1,44 @@
+name: Build and Deploy DocFX
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Luny-Docs
+        uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      - name: Checkout Unity project (for .csproj)
+        uses: actions/checkout@v4
+        with:
+          repository: CodeSmile-0000011110110111/LunyScript_Examples_Unity
+          path: unity-project
+          
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.x
+          
+      - name: Install DocFX
+        run: dotnet tool install -g docfx
+        
+      - name: Build Documentation
+        run: docfx build docfx.json
+        
+      - name: Deploy to RFC repo
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.RFC_DEPLOY_KEY }}
+          external_repository: CodeSmile-0000011110110111/LunyScript-RFC
+          publish_branch: main
+          publish_dir: ./docfx-output/_site
+          destination_dir: manual

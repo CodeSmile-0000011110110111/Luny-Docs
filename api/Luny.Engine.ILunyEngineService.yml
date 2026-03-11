@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.ILunyEngineService
+  commentId: T:Luny.Engine.ILunyEngineService
+  id: ILunyEngineService
+  parent: Luny.Engine
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ILunyEngineService
+  nameWithType: ILunyEngineService
+  fullName: Luny.Engine.ILunyEngineService
+  type: Interface
+  source:
+    id: ILunyEngineService
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\LunyEngineServiceBase.cs
+    startLine: 6
+  assemblies:
+  - Luny
+  namespace: Luny.Engine
+  summary: >-
+    Marker interface for engine-agnostic services: APIs such as Debug, Input, etc.
+
+    Implementations are auto-discovered and registered at startup.
+  example: []
+  syntax:
+    content: public interface ILunyEngineService
+    content.vb: Public Interface ILunyEngineService
+  derivedClasses:
+  - Luny.Engine.Services.LunyApplicationServiceBase
+  - Luny.Engine.Services.LunyAssetServiceBase
+  - Luny.Engine.Services.LunyDebugServiceBase
+  - Luny.Engine.Services.LunyEditorServiceBase
+  - Luny.Engine.Services.LunyInputServiceBase
+  - Luny.Engine.Services.LunyObjectServiceBase
+  - Luny.Engine.Services.LunySceneServiceBase
+  - Luny.Engine.Services.LunyTimeServiceBase
+  - Luny.Unity.Engine.Services.UnityApplicationService
+  - Luny.Unity.Engine.Services.UnityAssetService
+  - Luny.Unity.Engine.Services.UnityDebugService
+  - Luny.Unity.Engine.Services.UnityEditorService
+  - Luny.Unity.Engine.Services.UnityInputService
+  - Luny.Unity.Engine.Services.UnityObjectService
+  - Luny.Unity.Engine.Services.UnitySceneService
+  - Luny.Unity.Engine.Services.UnityTimeService
+references:
+- uid: Luny.Engine
+  commentId: N:Luny.Engine
+  href: Luny.html
+  name: Luny.Engine
+  nameWithType: Luny.Engine
+  fullName: Luny.Engine
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html

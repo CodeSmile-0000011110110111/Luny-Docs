@@ -1,0 +1,200 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.Bridge.LunyInputActionPhase
+  commentId: T:Luny.Engine.Bridge.LunyInputActionPhase
+  id: LunyInputActionPhase
+  parent: Luny.Engine.Bridge
+  children:
+  - Luny.Engine.Bridge.LunyInputActionPhase.Canceled
+  - Luny.Engine.Bridge.LunyInputActionPhase.Disabled
+  - Luny.Engine.Bridge.LunyInputActionPhase.Performed
+  - Luny.Engine.Bridge.LunyInputActionPhase.Performing
+  - Luny.Engine.Bridge.LunyInputActionPhase.Started
+  - Luny.Engine.Bridge.LunyInputActionPhase.Waiting
+  langs:
+  - csharp
+  - vb
+  name: LunyInputActionPhase
+  nameWithType: LunyInputActionPhase
+  fullName: Luny.Engine.Bridge.LunyInputActionPhase
+  type: Enum
+  source:
+    id: LunyInputActionPhase
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyInputActionEvent.cs
+    startLine: 15
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public enum LunyInputActionPhase
+    content.vb: Public Enum LunyInputActionPhase
+- uid: Luny.Engine.Bridge.LunyInputActionPhase.Disabled
+  commentId: F:Luny.Engine.Bridge.LunyInputActionPhase.Disabled
+  id: Disabled
+  parent: Luny.Engine.Bridge.LunyInputActionPhase
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: LunyInputActionPhase.Disabled
+  fullName: Luny.Engine.Bridge.LunyInputActionPhase.Disabled
+  type: Field
+  source:
+    id: Disabled
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyInputActionEvent.cs
+    startLine: 17
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: Disabled = 0
+    return:
+      type: Luny.Engine.Bridge.LunyInputActionPhase
+- uid: Luny.Engine.Bridge.LunyInputActionPhase.Waiting
+  commentId: F:Luny.Engine.Bridge.LunyInputActionPhase.Waiting
+  id: Waiting
+  parent: Luny.Engine.Bridge.LunyInputActionPhase
+  langs:
+  - csharp
+  - vb
+  name: Waiting
+  nameWithType: LunyInputActionPhase.Waiting
+  fullName: Luny.Engine.Bridge.LunyInputActionPhase.Waiting
+  type: Field
+  source:
+    id: Waiting
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyInputActionEvent.cs
+    startLine: 18
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: Waiting = 1
+    return:
+      type: Luny.Engine.Bridge.LunyInputActionPhase
+- uid: Luny.Engine.Bridge.LunyInputActionPhase.Started
+  commentId: F:Luny.Engine.Bridge.LunyInputActionPhase.Started
+  id: Started
+  parent: Luny.Engine.Bridge.LunyInputActionPhase
+  langs:
+  - csharp
+  - vb
+  name: Started
+  nameWithType: LunyInputActionPhase.Started
+  fullName: Luny.Engine.Bridge.LunyInputActionPhase.Started
+  type: Field
+  source:
+    id: Started
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyInputActionEvent.cs
+    startLine: 19
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: Started = 2
+    return:
+      type: Luny.Engine.Bridge.LunyInputActionPhase
+- uid: Luny.Engine.Bridge.LunyInputActionPhase.Performed
+  commentId: F:Luny.Engine.Bridge.LunyInputActionPhase.Performed
+  id: Performed
+  parent: Luny.Engine.Bridge.LunyInputActionPhase
+  langs:
+  - csharp
+  - vb
+  name: Performed
+  nameWithType: LunyInputActionPhase.Performed
+  fullName: Luny.Engine.Bridge.LunyInputActionPhase.Performed
+  type: Field
+  source:
+    id: Performed
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyInputActionEvent.cs
+    startLine: 20
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: Performed = 3
+    return:
+      type: Luny.Engine.Bridge.LunyInputActionPhase
+- uid: Luny.Engine.Bridge.LunyInputActionPhase.Canceled
+  commentId: F:Luny.Engine.Bridge.LunyInputActionPhase.Canceled
+  id: Canceled
+  parent: Luny.Engine.Bridge.LunyInputActionPhase
+  langs:
+  - csharp
+  - vb
+  name: Canceled
+  nameWithType: LunyInputActionPhase.Canceled
+  fullName: Luny.Engine.Bridge.LunyInputActionPhase.Canceled
+  type: Field
+  source:
+    id: Canceled
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyInputActionEvent.cs
+    startLine: 21
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: Canceled = 4
+    return:
+      type: Luny.Engine.Bridge.LunyInputActionPhase
+- uid: Luny.Engine.Bridge.LunyInputActionPhase.Performing
+  commentId: F:Luny.Engine.Bridge.LunyInputActionPhase.Performing
+  id: Performing
+  parent: Luny.Engine.Bridge.LunyInputActionPhase
+  langs:
+  - csharp
+  - vb
+  name: Performing
+  nameWithType: LunyInputActionPhase.Performing
+  fullName: Luny.Engine.Bridge.LunyInputActionPhase.Performing
+  type: Field
+  source:
+    id: Performing
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\Luny\Engine\Bridge\Structs\LunyInputActionEvent.cs
+    startLine: 22
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: Performing = 5
+    return:
+      type: Luny.Engine.Bridge.LunyInputActionPhase
+references:
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+- uid: Luny.Engine.Bridge.LunyInputActionPhase
+  commentId: T:Luny.Engine.Bridge.LunyInputActionPhase
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.LunyInputActionPhase.html
+  name: LunyInputActionPhase
+  nameWithType: LunyInputActionPhase
+  fullName: Luny.Engine.Bridge.LunyInputActionPhase

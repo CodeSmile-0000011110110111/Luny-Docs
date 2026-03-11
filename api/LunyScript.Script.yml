@@ -1,0 +1,4296 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Script
+  commentId: T:LunyScript.Script
+  id: Script
+  parent: LunyScript
+  children:
+  - LunyScript.Script.AI
+  - LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.Accessibility
+  - LunyScript.Script.Account
+  - LunyScript.Script.Animation
+  - LunyScript.Script.Application
+  - LunyScript.Script.Asset
+  - LunyScript.Script.Async
+  - LunyScript.Script.Audio
+  - LunyScript.Script.Avatar
+  - LunyScript.Script.Build(LunyScript.ScriptContext)
+  - LunyScript.Script.Camera
+  - LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
+  - LunyScript.Script.Check(System.Func{System.Boolean})
+  - LunyScript.Script.Cloud
+  - LunyScript.Script.Component
+  - LunyScript.Script.Coroutine(System.String)
+  - LunyScript.Script.Cutscene
+  - LunyScript.Script.Debug
+  - LunyScript.Script.Diagnostics
+  - LunyScript.Script.Editor
+  - LunyScript.Script.Environment
+  - LunyScript.Script.Finalize
+  - LunyScript.Script.For(System.Int32)
+  - LunyScript.Script.For(System.Int32,System.Int32)
+  - LunyScript.Script.GVar
+  - LunyScript.Script.Graphics
+  - LunyScript.Script.HUD
+  - LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.Input
+  - LunyScript.Script.IsEditor
+  - LunyScript.Script.L18n
+  - LunyScript.Script.Locale
+  - LunyScript.Script.Localization
+  - LunyScript.Script.Menu
+  - LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  - LunyScript.Script.NPC
+  - LunyScript.Script.Name
+  - LunyScript.Script.Navigation
+  - LunyScript.Script.Network
+  - LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.Object
+  - LunyScript.Script.On
+  - LunyScript.Script.Owner
+  - LunyScript.Script.Particles
+  - LunyScript.Script.Physics
+  - LunyScript.Script.Platform
+  - LunyScript.Script.Player
+  - LunyScript.Script.Pool
+  - LunyScript.Script.PostFx
+  - LunyScript.Script.Prefab
+  - LunyScript.Script.Progress
+  - LunyScript.Script.Quality
+  - LunyScript.Script.Run(System.Action)
+  - LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
+  - LunyScript.Script.Scene
+  - LunyScript.Script.Session
+  - LunyScript.Script.Settings
+  - LunyScript.Script.Spawn
+  - LunyScript.Script.Sprite
+  - LunyScript.Script.Stage
+  - LunyScript.Script.Storage
+  - LunyScript.Script.Store
+  - LunyScript.Script.Terrain
+  - LunyScript.Script.Tilemap
+  - LunyScript.Script.Time
+  - LunyScript.Script.ToString
+  - LunyScript.Script.Transform
+  - LunyScript.Script.Tutorial
+  - LunyScript.Script.UI
+  - LunyScript.Script.VFX
+  - LunyScript.Script.Var
+  - LunyScript.Script.Video
+  - LunyScript.Script.When
+  - LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+  langs:
+  - csharp
+  - vb
+  name: Script
+  nameWithType: Script
+  fullName: LunyScript.Script
+  type: Class
+  source:
+    id: Script
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 2
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Abstract base class for all LunyScripts.
+
+    Provides the API interface for beginner-friendly visual scripting in C#.
+
+    Users inherit from this class and implement Build() to construct their script logic.
+  remarks: >-
+    Example script template (duplicate LunyScript.LunyScript is correct):
+
+    	public class ExampleLunyScript : LunyScript.LunyScript
+    	{
+    		public override void Build()
+    		{
+    			// define behaviour using LunyScript API here ...
+    			OnUpdate(Debug.Log("Hello, LunyScript!"));
+    		}
+    	}
+  example: []
+  syntax:
+    content: public abstract class Script
+    content.vb: Public MustInherit Class Script
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - LunyScript.SmokeTests.Coroutine.CoroutineCounter
+  - LunyScript.SmokeTests.Coroutine.CoroutineEvery
+  - LunyScript.SmokeTests.Coroutine.CoroutineFor
+  - LunyScript.SmokeTests.Coroutine.CoroutineTimer
+  - LunyScript.SmokeTests.Input.InputTest
+  - LunyScript.SmokeTests.Input.Player1
+  - LunyScript.SmokeTests.Input.Player2
+  - LunyScript.SmokeTests.Input.Player3
+  - LunyScript.SmokeTests.Input.Player4
+  - LunyScript.SmokeTests.InputMove.InputTransformMove_LunyScript
+  - LunyScript.SmokeTests.InputMove.InputTransformShift_LunyScript
+  - LunyScript.SmokeTests.LunyScriptSmokeTestBase
+  - LunyScript.SmokeTests.Object.ObjectCreateTestScript
+  - LunyScript.SmokeTests.PhysicsEvents.CollisionEvents
+  - LunyScript.SmokeTests.PhysicsEvents.TriggerEvents
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LunyScript.Script.Owner
+  commentId: P:LunyScript.Script.Owner
+  id: Owner
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Owner
+  nameWithType: Script.Owner
+  fullName: LunyScript.Script.Owner
+  type: Property
+  source:
+    id: Owner
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 13
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Reference to proxy for engine object.
+  example: []
+  syntax:
+    content: >-
+      [MaybeNull]
+
+      protected ILunyObject Owner { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.ILunyObject
+    content.vb: >-
+      <MaybeNull>
+
+      Protected ReadOnly Property Owner As ILunyObject
+  overload: LunyScript.Script.Owner*
+  attributes:
+  - type: System.Diagnostics.CodeAnalysis.MaybeNullAttribute
+    ctor: System.Diagnostics.CodeAnalysis.MaybeNullAttribute.#ctor
+    arguments: []
+- uid: LunyScript.Script.Name
+  commentId: P:LunyScript.Script.Name
+  id: Name
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Script.Name
+  fullName: LunyScript.Script.Name
+  type: Property
+  source:
+    id: Name
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 15
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: LunyScript.Script.Name*
+- uid: LunyScript.Script.IsEditor
+  commentId: P:LunyScript.Script.IsEditor
+  id: IsEditor
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: IsEditor
+  nameWithType: Script.IsEditor
+  fullName: LunyScript.Script.IsEditor
+  type: Property
+  source:
+    id: IsEditor
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 20
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: True if the script currently runs within the engine's editor (play mode). False in builds.
+  example: []
+  syntax:
+    content: public bool IsEditor { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEditor As Boolean
+  overload: LunyScript.Script.IsEditor*
+- uid: LunyScript.Script.GVar
+  commentId: P:LunyScript.Script.GVar
+  id: GVar
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: GVar
+  nameWithType: Script.GVar
+  fullName: LunyScript.Script.GVar
+  type: Property
+  source:
+    id: GVar
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 25
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Global variables
+  example: []
+  syntax:
+    content: public VarAccessor GVar { get; }
+    parameters: []
+    return:
+      type: LunyScript.Blocks.VarAccessor
+    content.vb: Public ReadOnly Property GVar As VarAccessor
+  overload: LunyScript.Script.GVar*
+- uid: LunyScript.Script.Var
+  commentId: P:LunyScript.Script.Var
+  id: Var
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Var
+  nameWithType: Script.Var
+  fullName: LunyScript.Script.Var
+  type: Property
+  source:
+    id: Var
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 29
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Instance variables (unique per script/object)
+  example: []
+  syntax:
+    content: public VarAccessor Var { get; }
+    parameters: []
+    return:
+      type: LunyScript.Blocks.VarAccessor
+    content.vb: Public ReadOnly Property Var As VarAccessor
+  overload: LunyScript.Script.Var*
+- uid: LunyScript.Script.Component
+  commentId: P:LunyScript.Script.Component
+  id: Component
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Component
+  nameWithType: Script.Component
+  fullName: LunyScript.Script.Component
+  type: Property
+  source:
+    id: Component
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 31
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ComponentApi Component { get; }
+    parameters: []
+    return:
+      type: LunyScript.ComponentApi
+    content.vb: Public ReadOnly Property Component As ComponentApi
+  overload: LunyScript.Script.Component*
+- uid: LunyScript.Script.Debug
+  commentId: P:LunyScript.Script.Debug
+  id: Debug
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: Script.Debug
+  fullName: LunyScript.Script.Debug
+  type: Property
+  source:
+    id: Debug
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 32
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public DebugApi Debug { get; }
+    parameters: []
+    return:
+      type: LunyScript.DebugApi
+    content.vb: Public ReadOnly Property Debug As DebugApi
+  overload: LunyScript.Script.Debug*
+- uid: LunyScript.Script.Editor
+  commentId: P:LunyScript.Script.Editor
+  id: Editor
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Editor
+  nameWithType: Script.Editor
+  fullName: LunyScript.Script.Editor
+  type: Property
+  source:
+    id: Editor
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 33
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public EditorApi Editor { get; }
+    parameters: []
+    return:
+      type: LunyScript.EditorApi
+    content.vb: Public ReadOnly Property Editor As EditorApi
+  overload: LunyScript.Script.Editor*
+- uid: LunyScript.Script.Input
+  commentId: P:LunyScript.Script.Input
+  id: Input
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Input
+  nameWithType: Script.Input
+  fullName: LunyScript.Script.Input
+  type: Property
+  source:
+    id: Input
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 34
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public InputBuilder Input { get; }
+    parameters: []
+    return:
+      type: LunyScript.InputBuilder
+    content.vb: Public ReadOnly Property Input As InputBuilder
+  overload: LunyScript.Script.Input*
+- uid: LunyScript.Script.Object
+  commentId: P:LunyScript.Script.Object
+  id: Object
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Object
+  nameWithType: Script.Object
+  fullName: LunyScript.Script.Object
+  type: Property
+  source:
+    id: Object
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 35
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ObjectBuilder Object { get; }
+    parameters: []
+    return:
+      type: LunyScript.ObjectBuilder
+    content.vb: Public ReadOnly Property [Object] As ObjectBuilder
+  overload: LunyScript.Script.Object*
+- uid: LunyScript.Script.On
+  commentId: P:LunyScript.Script.On
+  id: On
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: On
+  nameWithType: Script.On
+  fullName: LunyScript.Script.On
+  type: Property
+  source:
+    id: On
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 36
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public OnObjectEventBuilder On { get; }
+    parameters: []
+    return:
+      type: LunyScript.OnObjectEventBuilder
+    content.vb: Public ReadOnly Property [On] As OnObjectEventBuilder
+  overload: LunyScript.Script.On*
+- uid: LunyScript.Script.Prefab
+  commentId: P:LunyScript.Script.Prefab
+  id: Prefab
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Prefab
+  nameWithType: Script.Prefab
+  fullName: LunyScript.Script.Prefab
+  type: Property
+  source:
+    id: Prefab
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 37
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public PrefabBuilder Prefab { get; }
+    parameters: []
+    return:
+      type: LunyScript.PrefabBuilder
+    content.vb: Public ReadOnly Property Prefab As PrefabBuilder
+  overload: LunyScript.Script.Prefab*
+- uid: LunyScript.Script.Scene
+  commentId: P:LunyScript.Script.Scene
+  id: Scene
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Scene
+  nameWithType: Script.Scene
+  fullName: LunyScript.Script.Scene
+  type: Property
+  source:
+    id: Scene
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 38
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public SceneApi Scene { get; }
+    parameters: []
+    return:
+      type: LunyScript.SceneApi
+    content.vb: Public ReadOnly Property Scene As SceneApi
+  overload: LunyScript.Script.Scene*
+- uid: LunyScript.Script.Time
+  commentId: P:LunyScript.Script.Time
+  id: Time
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: Script.Time
+  fullName: LunyScript.Script.Time
+  type: Property
+  source:
+    id: Time
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 39
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public TimeApi Time { get; }
+    parameters: []
+    return:
+      type: LunyScript.TimeApi
+    content.vb: Public ReadOnly Property Time As TimeApi
+  overload: LunyScript.Script.Time*
+- uid: LunyScript.Script.Transform
+  commentId: P:LunyScript.Script.Transform
+  id: Transform
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: Script.Transform
+  fullName: LunyScript.Script.Transform
+  type: Property
+  source:
+    id: Transform
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 40
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public TransformBuilder Transform { get; }
+    parameters: []
+    return:
+      type: LunyScript.TransformBuilder
+    content.vb: Public ReadOnly Property Transform As TransformBuilder
+  overload: LunyScript.Script.Transform*
+- uid: LunyScript.Script.When
+  commentId: P:LunyScript.Script.When
+  id: When
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: When
+  nameWithType: Script.When
+  fullName: LunyScript.Script.When
+  type: Property
+  source:
+    id: When
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 41
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public WhenGlobalEventBuilder When { get; }
+    parameters: []
+    return:
+      type: LunyScript.WhenGlobalEventBuilder
+    content.vb: Public ReadOnly Property [When] As WhenGlobalEventBuilder
+  overload: LunyScript.Script.When*
+- uid: LunyScript.Script.Coroutine(System.String)
+  commentId: M:LunyScript.Script.Coroutine(System.String)
+  id: Coroutine(System.String)
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Coroutine(string)
+  nameWithType: Script.Coroutine(string)
+  fullName: LunyScript.Script.Coroutine(string)
+  type: Method
+  source:
+    id: Coroutine
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 47
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Creates a named coroutine.
+
+    Usage: Coroutine("name").Duration(3).Seconds().OnUpdate(blocks).Elapsed(blocks);
+  example: []
+  syntax:
+    content: public CoroutineBuilder Coroutine(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.CoroutineBuilder
+    content.vb: Public Function Coroutine(name As String) As CoroutineBuilder
+  overload: LunyScript.Script.Coroutine*
+  nameWithType.vb: Script.Coroutine(String)
+  fullName.vb: LunyScript.Script.Coroutine(String)
+  name.vb: Coroutine(String)
+- uid: LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+  commentId: M:LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+  id: If(LunyScript.Blocks.ScriptConditionBlock[])
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: If(params ScriptConditionBlock[])
+  nameWithType: Script.If(params ScriptConditionBlock[])
+  fullName: LunyScript.Script.If(params LunyScript.Blocks.ScriptConditionBlock[])
+  type: Method
+  source:
+    id: If
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 53
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Conditional execution: If(conditions).Then(blocks).ElseIf(conditions).Then(blocks).Else(blocks);
+
+    Multiple conditions are implicitly AND combined.
+  example: []
+  syntax:
+    content: public IfBlock If(params ScriptConditionBlock[] conditions)
+    parameters:
+    - id: conditions
+      type: LunyScript.Blocks.ScriptConditionBlock[]
+    return:
+      type: LunyScript.Blocks.IfBlock
+    content.vb: Public Function [If](ParamArray conditions As ScriptConditionBlock()) As IfBlock
+  overload: LunyScript.Script.If*
+  nameWithType.vb: Script.If(ParamArray ScriptConditionBlock())
+  fullName.vb: LunyScript.Script.If(ParamArray LunyScript.Blocks.ScriptConditionBlock())
+  name.vb: If(ParamArray ScriptConditionBlock())
+- uid: LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+  commentId: M:LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+  id: While(LunyScript.Blocks.ScriptConditionBlock[])
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: While(params ScriptConditionBlock[])
+  nameWithType: Script.While(params ScriptConditionBlock[])
+  fullName: LunyScript.Script.While(params LunyScript.Blocks.ScriptConditionBlock[])
+  type: Method
+  source:
+    id: While
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 59
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Loop execution: While(conditions).Do(blocks);
+
+    Multiple conditions are implicitly AND combined.
+  example: []
+  syntax:
+    content: public WhileBlockBuilder While(params ScriptConditionBlock[] conditions)
+    parameters:
+    - id: conditions
+      type: LunyScript.Blocks.ScriptConditionBlock[]
+    return:
+      type: LunyScript.WhileBlockBuilder
+    content.vb: Public Function [While](ParamArray conditions As ScriptConditionBlock()) As WhileBlockBuilder
+  overload: LunyScript.Script.While*
+  nameWithType.vb: Script.While(ParamArray ScriptConditionBlock())
+  fullName.vb: LunyScript.Script.While(ParamArray LunyScript.Blocks.ScriptConditionBlock())
+  name.vb: While(ParamArray ScriptConditionBlock())
+- uid: LunyScript.Script.For(System.Int32)
+  commentId: M:LunyScript.Script.For(System.Int32)
+  id: For(System.Int32)
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: For(int)
+  nameWithType: Script.For(int)
+  fullName: LunyScript.Script.For(int)
+  type: Method
+  source:
+    id: For
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 65
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    For loop (1-based index): For(numberOfTimes).Do(blocks);
+
+    Starts at 1 and increments by 1 until limit is reached (inclusive).
+  example: []
+  syntax:
+    content: public ForBlockBuilder For(int numberOfTimes)
+    parameters:
+    - id: numberOfTimes
+      type: System.Int32
+    return:
+      type: LunyScript.ForBlockBuilder
+    content.vb: Public Function [For](numberOfTimes As Integer) As ForBlockBuilder
+  overload: LunyScript.Script.For*
+  nameWithType.vb: Script.For(Integer)
+  fullName.vb: LunyScript.Script.For(Integer)
+  name.vb: For(Integer)
+- uid: LunyScript.Script.For(System.Int32,System.Int32)
+  commentId: M:LunyScript.Script.For(System.Int32,System.Int32)
+  id: For(System.Int32,System.Int32)
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: For(int, int)
+  nameWithType: Script.For(int, int)
+  fullName: LunyScript.Script.For(int, int)
+  type: Method
+  source:
+    id: For
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 72
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ForBlockBuilder For(int numberOfTimes, int step)
+    parameters:
+    - id: numberOfTimes
+      type: System.Int32
+    - id: step
+      type: System.Int32
+    return:
+      type: LunyScript.ForBlockBuilder
+    content.vb: Public Function [For](numberOfTimes As Integer, [step] As Integer) As ForBlockBuilder
+  overload: LunyScript.Script.For*
+  nameWithType.vb: Script.For(Integer, Integer)
+  fullName.vb: LunyScript.Script.For(Integer, Integer)
+  name.vb: For(Integer, Integer)
+- uid: LunyScript.Script.Check(System.Func{System.Boolean})
+  commentId: M:LunyScript.Script.Check(System.Func{System.Boolean})
+  id: Check(System.Func{System.Boolean})
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Check(Func<bool>)
+  nameWithType: Script.Check(Func<bool>)
+  fullName: LunyScript.Script.Check(System.Func<bool>)
+  type: Method
+  source:
+    id: Check
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 84
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptConditionBlock Check(Func<bool> func)
+    parameters:
+    - id: func
+      type: System.Func{System.Boolean}
+    return:
+      type: LunyScript.Blocks.ScriptConditionBlock
+    content.vb: Public Function Check(func As Func(Of Boolean)) As ScriptConditionBlock
+  overload: LunyScript.Script.Check*
+  nameWithType.vb: Script.Check(Func(Of Boolean))
+  fullName.vb: LunyScript.Script.Check(System.Func(Of Boolean))
+  name.vb: Check(Func(Of Boolean))
+- uid: LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
+  commentId: M:LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
+  id: Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Check(Func<IScriptRuntimeContext, bool>)
+  nameWithType: Script.Check(Func<IScriptRuntimeContext, bool>)
+  fullName: LunyScript.Script.Check(System.Func<LunyScript.IScriptRuntimeContext, bool>)
+  type: Method
+  source:
+    id: Check
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 96
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptConditionBlock Check(Func<IScriptRuntimeContext, bool> func)
+    parameters:
+    - id: func
+      type: System.Func{LunyScript.IScriptRuntimeContext,System.Boolean}
+    return:
+      type: LunyScript.Blocks.ScriptConditionBlock
+    content.vb: Public Function Check(func As Func(Of IScriptRuntimeContext, Boolean)) As ScriptConditionBlock
+  overload: LunyScript.Script.Check*
+  nameWithType.vb: Script.Check(Func(Of IScriptRuntimeContext, Boolean))
+  fullName.vb: LunyScript.Script.Check(System.Func(Of LunyScript.IScriptRuntimeContext, Boolean))
+  name.vb: Check(Func(Of IScriptRuntimeContext, Boolean))
+- uid: LunyScript.Script.Run(System.Action)
+  commentId: M:LunyScript.Script.Run(System.Action)
+  id: Run(System.Action)
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Run(Action)
+  nameWithType: Script.Run(Action)
+  fullName: LunyScript.Script.Run(System.Action)
+  type: Method
+  source:
+    id: Run
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 121
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Executes a System.Action (lambda) or parameterless method returning void.
+  remarks: >-
+    - Intended for quick prototyping and testing.
+
+    - Prefer to convert "Run" code into a custom IBlock class after its initial development and testing,
+
+    - Prefer named methods over lambdas to ensure the block-based code continues to read like intent.
+  example: []
+  syntax:
+    content: public ScriptActionBlock Run(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+      description: ''
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+      description: ''
+    content.vb: Public Function Run(action As Action) As ScriptActionBlock
+  overload: LunyScript.Script.Run*
+- uid: LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
+  commentId: M:LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
+  id: Run(System.Action{LunyScript.IScriptRuntimeContext})
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Run(Action<IScriptRuntimeContext>)
+  nameWithType: Script.Run(Action<IScriptRuntimeContext>)
+  fullName: LunyScript.Script.Run(System.Action<LunyScript.IScriptRuntimeContext>)
+  type: Method
+  source:
+    id: Run
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 133
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Executes a System.Action (lambda) or a method that takes a IScriptRuntimeContext parameter and returns void.
+  remarks: >-
+    - Intended for quick prototyping and testing.
+
+    - Prefer to convert "Run" code into a custom IBlock class after its initial development and testing,
+
+    - Prefer named methods over lambdas to ensure the block-based code continues to read like intent.
+  example: []
+  syntax:
+    content: public ScriptActionBlock Run(Action<IScriptRuntimeContext> action)
+    parameters:
+    - id: action
+      type: System.Action{LunyScript.IScriptRuntimeContext}
+      description: ''
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+      description: ''
+    content.vb: Public Function Run(action As Action(Of IScriptRuntimeContext)) As ScriptActionBlock
+  overload: LunyScript.Script.Run*
+  nameWithType.vb: Script.Run(Action(Of IScriptRuntimeContext))
+  fullName.vb: LunyScript.Script.Run(System.Action(Of LunyScript.IScriptRuntimeContext))
+  name.vb: Run(Action(Of IScriptRuntimeContext))
+- uid: LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+  commentId: M:LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+  id: AND(LunyScript.Blocks.ScriptConditionBlock[])
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: AND(params ScriptConditionBlock[])
+  nameWithType: Script.AND(params ScriptConditionBlock[])
+  fullName: LunyScript.Script.AND(params LunyScript.Blocks.ScriptConditionBlock[])
+  type: Method
+  source:
+    id: AND
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 138
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: 'Logical AND: Returns true if all conditions are true.'
+  example: []
+  syntax:
+    content: public ScriptConditionBlock AND(params ScriptConditionBlock[] conditions)
+    parameters:
+    - id: conditions
+      type: LunyScript.Blocks.ScriptConditionBlock[]
+    return:
+      type: LunyScript.Blocks.ScriptConditionBlock
+    content.vb: Public Function [AND](ParamArray conditions As ScriptConditionBlock()) As ScriptConditionBlock
+  overload: LunyScript.Script.AND*
+  nameWithType.vb: Script.AND(ParamArray ScriptConditionBlock())
+  fullName.vb: LunyScript.Script.AND(ParamArray LunyScript.Blocks.ScriptConditionBlock())
+  name.vb: AND(ParamArray ScriptConditionBlock())
+- uid: LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+  commentId: M:LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+  id: OR(LunyScript.Blocks.ScriptConditionBlock[])
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: OR(params ScriptConditionBlock[])
+  nameWithType: Script.OR(params ScriptConditionBlock[])
+  fullName: LunyScript.Script.OR(params LunyScript.Blocks.ScriptConditionBlock[])
+  type: Method
+  source:
+    id: OR
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 143
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: 'Logical OR: Returns true if at least one condition is true.'
+  example: []
+  syntax:
+    content: public ScriptConditionBlock OR(params ScriptConditionBlock[] conditions)
+    parameters:
+    - id: conditions
+      type: LunyScript.Blocks.ScriptConditionBlock[]
+    return:
+      type: LunyScript.Blocks.ScriptConditionBlock
+    content.vb: Public Function [OR](ParamArray conditions As ScriptConditionBlock()) As ScriptConditionBlock
+  overload: LunyScript.Script.OR*
+  nameWithType.vb: Script.OR(ParamArray ScriptConditionBlock())
+  fullName.vb: LunyScript.Script.OR(ParamArray LunyScript.Blocks.ScriptConditionBlock())
+  name.vb: OR(ParamArray ScriptConditionBlock())
+- uid: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  commentId: M:LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  id: NOT(LunyScript.Blocks.ScriptConditionBlock)
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: NOT(ScriptConditionBlock)
+  nameWithType: Script.NOT(ScriptConditionBlock)
+  fullName: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  type: Method
+  source:
+    id: NOT
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.Api.cs
+    startLine: 148
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: 'Logical NOT: Returns the inverse of the condition.'
+  example: []
+  syntax:
+    content: public ScriptConditionBlock NOT(ScriptConditionBlock condition)
+    parameters:
+    - id: condition
+      type: LunyScript.Blocks.ScriptConditionBlock
+    return:
+      type: LunyScript.Blocks.ScriptConditionBlock
+    content.vb: Public Function [NOT](condition As ScriptConditionBlock) As ScriptConditionBlock
+  overload: LunyScript.Script.NOT*
+- uid: LunyScript.Script.Finalize
+  commentId: M:LunyScript.Script.Finalize
+  id: Finalize
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: ~Script()
+  nameWithType: Script.~Script()
+  fullName: LunyScript.Script.~Script()
+  type: Method
+  source:
+    id: Finalize
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.cs
+    startLine: 45
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ~Script()
+    content.vb: 'Protected '
+  overload: LunyScript.Script.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: LunyScript.Script.Build(LunyScript.ScriptContext)
+  commentId: M:LunyScript.Script.Build(LunyScript.ScriptContext)
+  id: Build(LunyScript.ScriptContext)
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Build(ScriptContext)
+  nameWithType: Script.Build(ScriptContext)
+  fullName: LunyScript.Script.Build(LunyScript.ScriptContext)
+  type: Method
+  source:
+    id: Build
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.cs
+    startLine: 59
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Called once when the script is initialized.
+
+    Users construct their blocks (sequences, statemachines, behaviors) for execution here.
+
+    Users can use regular C# syntax (ie call methods, use loops) to construct complex and/or reusable blocks.
+  example: []
+  syntax:
+    content: public abstract void Build(ScriptContext context)
+    parameters:
+    - id: context
+      type: LunyScript.ScriptContext
+      description: ''
+    content.vb: Public MustOverride Sub Build(context As ScriptContext)
+  overload: LunyScript.Script.Build*
+- uid: LunyScript.Script.ToString
+  commentId: M:LunyScript.Script.ToString
+  id: ToString
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Script.ToString()
+  fullName: LunyScript.Script.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.cs
+    startLine: 108
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: LunyScript.Script.ToString*
+- uid: LunyScript.Script.Animation
+  commentId: P:LunyScript.Script.Animation
+  id: Animation
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Animation
+  nameWithType: Script.Animation
+  fullName: LunyScript.Script.Animation
+  type: Property
+  source:
+    id: Animation
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 4
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.AnimationApi Animation { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.AnimationApi
+    content.vb: Protected ReadOnly Property Animation As ApiPlaceholders.AnimationApi
+  overload: LunyScript.Script.Animation*
+- uid: LunyScript.Script.Application
+  commentId: P:LunyScript.Script.Application
+  id: Application
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Application
+  nameWithType: Script.Application
+  fullName: LunyScript.Script.Application
+  type: Property
+  source:
+    id: Application
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 5
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.ApplicationApi Application { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.ApplicationApi
+    content.vb: Protected ReadOnly Property Application As ApiPlaceholders.ApplicationApi
+  overload: LunyScript.Script.Application*
+- uid: LunyScript.Script.Asset
+  commentId: P:LunyScript.Script.Asset
+  id: Asset
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Asset
+  nameWithType: Script.Asset
+  fullName: LunyScript.Script.Asset
+  type: Property
+  source:
+    id: Asset
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 6
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.AssetApi Asset { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.AssetApi
+    content.vb: Protected ReadOnly Property Asset As ApiPlaceholders.AssetApi
+  overload: LunyScript.Script.Asset*
+- uid: LunyScript.Script.Audio
+  commentId: P:LunyScript.Script.Audio
+  id: Audio
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Audio
+  nameWithType: Script.Audio
+  fullName: LunyScript.Script.Audio
+  type: Property
+  source:
+    id: Audio
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 7
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.AudioApi Audio { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.AudioApi
+    content.vb: Protected ReadOnly Property Audio As ApiPlaceholders.AudioApi
+  overload: LunyScript.Script.Audio*
+- uid: LunyScript.Script.Camera
+  commentId: P:LunyScript.Script.Camera
+  id: Camera
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Camera
+  nameWithType: Script.Camera
+  fullName: LunyScript.Script.Camera
+  type: Property
+  source:
+    id: Camera
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 8
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.CameraApi Camera { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.CameraApi
+    content.vb: Protected ReadOnly Property Camera As ApiPlaceholders.CameraApi
+  overload: LunyScript.Script.Camera*
+- uid: LunyScript.Script.Diagnostics
+  commentId: P:LunyScript.Script.Diagnostics
+  id: Diagnostics
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Diagnostics
+  nameWithType: Script.Diagnostics
+  fullName: LunyScript.Script.Diagnostics
+  type: Property
+  source:
+    id: Diagnostics
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 9
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.DiagnosticsApi Diagnostics { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.DiagnosticsApi
+    content.vb: Protected ReadOnly Property Diagnostics As ApiPlaceholders.DiagnosticsApi
+  overload: LunyScript.Script.Diagnostics*
+- uid: LunyScript.Script.HUD
+  commentId: P:LunyScript.Script.HUD
+  id: HUD
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: HUD
+  nameWithType: Script.HUD
+  fullName: LunyScript.Script.HUD
+  type: Property
+  source:
+    id: HUD
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 10
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.HUDApi HUD { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.HUDApi
+    content.vb: Protected ReadOnly Property HUD As ApiPlaceholders.HUDApi
+  overload: LunyScript.Script.HUD*
+- uid: LunyScript.Script.Menu
+  commentId: P:LunyScript.Script.Menu
+  id: Menu
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Menu
+  nameWithType: Script.Menu
+  fullName: LunyScript.Script.Menu
+  type: Property
+  source:
+    id: Menu
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 11
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.MenuApi Menu { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.MenuApi
+    content.vb: Protected ReadOnly Property Menu As ApiPlaceholders.MenuApi
+  overload: LunyScript.Script.Menu*
+- uid: LunyScript.Script.Physics
+  commentId: P:LunyScript.Script.Physics
+  id: Physics
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Physics
+  nameWithType: Script.Physics
+  fullName: LunyScript.Script.Physics
+  type: Property
+  source:
+    id: Physics
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 12
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.PhysicsApi Physics { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.PhysicsApi
+    content.vb: Protected ReadOnly Property Physics As ApiPlaceholders.PhysicsApi
+  overload: LunyScript.Script.Physics*
+- uid: LunyScript.Script.Player
+  commentId: P:LunyScript.Script.Player
+  id: Player
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Player
+  nameWithType: Script.Player
+  fullName: LunyScript.Script.Player
+  type: Property
+  source:
+    id: Player
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 13
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.PlayerApi Player { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.PlayerApi
+    content.vb: Protected ReadOnly Property Player As ApiPlaceholders.PlayerApi
+  overload: LunyScript.Script.Player*
+- uid: LunyScript.Script.Storage
+  commentId: P:LunyScript.Script.Storage
+  id: Storage
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Storage
+  nameWithType: Script.Storage
+  fullName: LunyScript.Script.Storage
+  type: Property
+  source:
+    id: Storage
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 14
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.StorageApi Storage { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.StorageApi
+    content.vb: Protected ReadOnly Property Storage As ApiPlaceholders.StorageApi
+  overload: LunyScript.Script.Storage*
+- uid: LunyScript.Script.Accessibility
+  commentId: P:LunyScript.Script.Accessibility
+  id: Accessibility
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Accessibility
+  nameWithType: Script.Accessibility
+  fullName: LunyScript.Script.Accessibility
+  type: Property
+  source:
+    id: Accessibility
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 15
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.AccessibilityApi Accessibility { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.AccessibilityApi
+    content.vb: Protected ReadOnly Property Accessibility As ApiPlaceholders.AccessibilityApi
+  overload: LunyScript.Script.Accessibility*
+- uid: LunyScript.Script.Account
+  commentId: P:LunyScript.Script.Account
+  id: Account
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Account
+  nameWithType: Script.Account
+  fullName: LunyScript.Script.Account
+  type: Property
+  source:
+    id: Account
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 16
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.AccountApi Account { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.AccountApi
+    content.vb: Protected ReadOnly Property Account As ApiPlaceholders.AccountApi
+  overload: LunyScript.Script.Account*
+- uid: LunyScript.Script.AI
+  commentId: P:LunyScript.Script.AI
+  id: AI
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: AI
+  nameWithType: Script.AI
+  fullName: LunyScript.Script.AI
+  type: Property
+  source:
+    id: AI
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 17
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.AIApi AI { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.AIApi
+    content.vb: Protected ReadOnly Property AI As ApiPlaceholders.AIApi
+  overload: LunyScript.Script.AI*
+- uid: LunyScript.Script.Async
+  commentId: P:LunyScript.Script.Async
+  id: Async
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Async
+  nameWithType: Script.Async
+  fullName: LunyScript.Script.Async
+  type: Property
+  source:
+    id: Async
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 18
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.AsyncApi Async { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.AsyncApi
+    content.vb: Protected ReadOnly Property Async As ApiPlaceholders.AsyncApi
+  overload: LunyScript.Script.Async*
+- uid: LunyScript.Script.Avatar
+  commentId: P:LunyScript.Script.Avatar
+  id: Avatar
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Avatar
+  nameWithType: Script.Avatar
+  fullName: LunyScript.Script.Avatar
+  type: Property
+  source:
+    id: Avatar
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 19
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.AvatarApi Avatar { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.AvatarApi
+    content.vb: Protected ReadOnly Property Avatar As ApiPlaceholders.AvatarApi
+  overload: LunyScript.Script.Avatar*
+- uid: LunyScript.Script.Cloud
+  commentId: P:LunyScript.Script.Cloud
+  id: Cloud
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Cloud
+  nameWithType: Script.Cloud
+  fullName: LunyScript.Script.Cloud
+  type: Property
+  source:
+    id: Cloud
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 20
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.CloudApi Cloud { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.CloudApi
+    content.vb: Protected ReadOnly Property Cloud As ApiPlaceholders.CloudApi
+  overload: LunyScript.Script.Cloud*
+- uid: LunyScript.Script.Cutscene
+  commentId: P:LunyScript.Script.Cutscene
+  id: Cutscene
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Cutscene
+  nameWithType: Script.Cutscene
+  fullName: LunyScript.Script.Cutscene
+  type: Property
+  source:
+    id: Cutscene
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 21
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.CutsceneApi Cutscene { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.CutsceneApi
+    content.vb: Protected ReadOnly Property Cutscene As ApiPlaceholders.CutsceneApi
+  overload: LunyScript.Script.Cutscene*
+- uid: LunyScript.Script.Environment
+  commentId: P:LunyScript.Script.Environment
+  id: Environment
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Environment
+  nameWithType: Script.Environment
+  fullName: LunyScript.Script.Environment
+  type: Property
+  source:
+    id: Environment
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 22
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.EnvironmentApi Environment { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.EnvironmentApi
+    content.vb: Protected ReadOnly Property Environment As ApiPlaceholders.EnvironmentApi
+  overload: LunyScript.Script.Environment*
+- uid: LunyScript.Script.Graphics
+  commentId: P:LunyScript.Script.Graphics
+  id: Graphics
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Graphics
+  nameWithType: Script.Graphics
+  fullName: LunyScript.Script.Graphics
+  type: Property
+  source:
+    id: Graphics
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 23
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.GraphicsApi Graphics { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.GraphicsApi
+    content.vb: Protected ReadOnly Property Graphics As ApiPlaceholders.GraphicsApi
+  overload: LunyScript.Script.Graphics*
+- uid: LunyScript.Script.L18n
+  commentId: P:LunyScript.Script.L18n
+  id: L18n
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: L18n
+  nameWithType: Script.L18n
+  fullName: LunyScript.Script.L18n
+  type: Property
+  source:
+    id: L18n
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 24
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.L18nApi L18n { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.L18nApi
+    content.vb: Protected ReadOnly Property L18n As ApiPlaceholders.L18nApi
+  overload: LunyScript.Script.L18n*
+- uid: LunyScript.Script.Locale
+  commentId: P:LunyScript.Script.Locale
+  id: Locale
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Locale
+  nameWithType: Script.Locale
+  fullName: LunyScript.Script.Locale
+  type: Property
+  source:
+    id: Locale
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 25
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.LocaleApi Locale { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.LocaleApi
+    content.vb: Protected ReadOnly Property Locale As ApiPlaceholders.LocaleApi
+  overload: LunyScript.Script.Locale*
+- uid: LunyScript.Script.Localization
+  commentId: P:LunyScript.Script.Localization
+  id: Localization
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Localization
+  nameWithType: Script.Localization
+  fullName: LunyScript.Script.Localization
+  type: Property
+  source:
+    id: Localization
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 26
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.LocalizationApi Localization { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.LocalizationApi
+    content.vb: Protected ReadOnly Property Localization As ApiPlaceholders.LocalizationApi
+  overload: LunyScript.Script.Localization*
+- uid: LunyScript.Script.Navigation
+  commentId: P:LunyScript.Script.Navigation
+  id: Navigation
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Navigation
+  nameWithType: Script.Navigation
+  fullName: LunyScript.Script.Navigation
+  type: Property
+  source:
+    id: Navigation
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 27
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.NavigationApi Navigation { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.NavigationApi
+    content.vb: Protected ReadOnly Property Navigation As ApiPlaceholders.NavigationApi
+  overload: LunyScript.Script.Navigation*
+- uid: LunyScript.Script.Network
+  commentId: P:LunyScript.Script.Network
+  id: Network
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Network
+  nameWithType: Script.Network
+  fullName: LunyScript.Script.Network
+  type: Property
+  source:
+    id: Network
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 28
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.NetworkApi Network { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.NetworkApi
+    content.vb: Protected ReadOnly Property Network As ApiPlaceholders.NetworkApi
+  overload: LunyScript.Script.Network*
+- uid: LunyScript.Script.NPC
+  commentId: P:LunyScript.Script.NPC
+  id: NPC
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: NPC
+  nameWithType: Script.NPC
+  fullName: LunyScript.Script.NPC
+  type: Property
+  source:
+    id: NPC
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 29
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.NPCApi NPC { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.NPCApi
+    content.vb: Protected ReadOnly Property NPC As ApiPlaceholders.NPCApi
+  overload: LunyScript.Script.NPC*
+- uid: LunyScript.Script.Particles
+  commentId: P:LunyScript.Script.Particles
+  id: Particles
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Particles
+  nameWithType: Script.Particles
+  fullName: LunyScript.Script.Particles
+  type: Property
+  source:
+    id: Particles
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 30
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.ParticlesApi Particles { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.ParticlesApi
+    content.vb: Protected ReadOnly Property Particles As ApiPlaceholders.ParticlesApi
+  overload: LunyScript.Script.Particles*
+- uid: LunyScript.Script.Platform
+  commentId: P:LunyScript.Script.Platform
+  id: Platform
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Platform
+  nameWithType: Script.Platform
+  fullName: LunyScript.Script.Platform
+  type: Property
+  source:
+    id: Platform
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 31
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.PlatformApi Platform { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.PlatformApi
+    content.vb: Protected ReadOnly Property Platform As ApiPlaceholders.PlatformApi
+  overload: LunyScript.Script.Platform*
+- uid: LunyScript.Script.Pool
+  commentId: P:LunyScript.Script.Pool
+  id: Pool
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Pool
+  nameWithType: Script.Pool
+  fullName: LunyScript.Script.Pool
+  type: Property
+  source:
+    id: Pool
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 32
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.PoolApi Pool { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.PoolApi
+    content.vb: Protected ReadOnly Property Pool As ApiPlaceholders.PoolApi
+  overload: LunyScript.Script.Pool*
+- uid: LunyScript.Script.PostFx
+  commentId: P:LunyScript.Script.PostFx
+  id: PostFx
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: PostFx
+  nameWithType: Script.PostFx
+  fullName: LunyScript.Script.PostFx
+  type: Property
+  source:
+    id: PostFx
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 33
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.PostFxApi PostFx { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.PostFxApi
+    content.vb: Protected ReadOnly Property PostFx As ApiPlaceholders.PostFxApi
+  overload: LunyScript.Script.PostFx*
+- uid: LunyScript.Script.Progress
+  commentId: P:LunyScript.Script.Progress
+  id: Progress
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: Script.Progress
+  fullName: LunyScript.Script.Progress
+  type: Property
+  source:
+    id: Progress
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 34
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.ProgressApi Progress { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.ProgressApi
+    content.vb: Protected ReadOnly Property Progress As ApiPlaceholders.ProgressApi
+  overload: LunyScript.Script.Progress*
+- uid: LunyScript.Script.Quality
+  commentId: P:LunyScript.Script.Quality
+  id: Quality
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Quality
+  nameWithType: Script.Quality
+  fullName: LunyScript.Script.Quality
+  type: Property
+  source:
+    id: Quality
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 35
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.QualityApi Quality { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.QualityApi
+    content.vb: Protected ReadOnly Property Quality As ApiPlaceholders.QualityApi
+  overload: LunyScript.Script.Quality*
+- uid: LunyScript.Script.Session
+  commentId: P:LunyScript.Script.Session
+  id: Session
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Session
+  nameWithType: Script.Session
+  fullName: LunyScript.Script.Session
+  type: Property
+  source:
+    id: Session
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 36
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.SessionApi Session { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.SessionApi
+    content.vb: Protected ReadOnly Property Session As ApiPlaceholders.SessionApi
+  overload: LunyScript.Script.Session*
+- uid: LunyScript.Script.Settings
+  commentId: P:LunyScript.Script.Settings
+  id: Settings
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: Script.Settings
+  fullName: LunyScript.Script.Settings
+  type: Property
+  source:
+    id: Settings
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 37
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.SettingsApi Settings { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.SettingsApi
+    content.vb: Protected ReadOnly Property Settings As ApiPlaceholders.SettingsApi
+  overload: LunyScript.Script.Settings*
+- uid: LunyScript.Script.Spawn
+  commentId: P:LunyScript.Script.Spawn
+  id: Spawn
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Spawn
+  nameWithType: Script.Spawn
+  fullName: LunyScript.Script.Spawn
+  type: Property
+  source:
+    id: Spawn
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 38
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.SpawnApi Spawn { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.SpawnApi
+    content.vb: Protected ReadOnly Property Spawn As ApiPlaceholders.SpawnApi
+  overload: LunyScript.Script.Spawn*
+- uid: LunyScript.Script.Sprite
+  commentId: P:LunyScript.Script.Sprite
+  id: Sprite
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Sprite
+  nameWithType: Script.Sprite
+  fullName: LunyScript.Script.Sprite
+  type: Property
+  source:
+    id: Sprite
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 39
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.SpriteApi Sprite { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.SpriteApi
+    content.vb: Protected ReadOnly Property Sprite As ApiPlaceholders.SpriteApi
+  overload: LunyScript.Script.Sprite*
+- uid: LunyScript.Script.Stage
+  commentId: P:LunyScript.Script.Stage
+  id: Stage
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Stage
+  nameWithType: Script.Stage
+  fullName: LunyScript.Script.Stage
+  type: Property
+  source:
+    id: Stage
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 40
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.StageApi Stage { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.StageApi
+    content.vb: Protected ReadOnly Property Stage As ApiPlaceholders.StageApi
+  overload: LunyScript.Script.Stage*
+- uid: LunyScript.Script.Store
+  commentId: P:LunyScript.Script.Store
+  id: Store
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Store
+  nameWithType: Script.Store
+  fullName: LunyScript.Script.Store
+  type: Property
+  source:
+    id: Store
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 41
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.StoreApi Store { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.StoreApi
+    content.vb: Protected ReadOnly Property Store As ApiPlaceholders.StoreApi
+  overload: LunyScript.Script.Store*
+- uid: LunyScript.Script.Terrain
+  commentId: P:LunyScript.Script.Terrain
+  id: Terrain
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Terrain
+  nameWithType: Script.Terrain
+  fullName: LunyScript.Script.Terrain
+  type: Property
+  source:
+    id: Terrain
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 42
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.TerrainApi Terrain { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.TerrainApi
+    content.vb: Protected ReadOnly Property Terrain As ApiPlaceholders.TerrainApi
+  overload: LunyScript.Script.Terrain*
+- uid: LunyScript.Script.Tilemap
+  commentId: P:LunyScript.Script.Tilemap
+  id: Tilemap
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Tilemap
+  nameWithType: Script.Tilemap
+  fullName: LunyScript.Script.Tilemap
+  type: Property
+  source:
+    id: Tilemap
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 43
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.TilemapApi Tilemap { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.TilemapApi
+    content.vb: Protected ReadOnly Property Tilemap As ApiPlaceholders.TilemapApi
+  overload: LunyScript.Script.Tilemap*
+- uid: LunyScript.Script.Tutorial
+  commentId: P:LunyScript.Script.Tutorial
+  id: Tutorial
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Tutorial
+  nameWithType: Script.Tutorial
+  fullName: LunyScript.Script.Tutorial
+  type: Property
+  source:
+    id: Tutorial
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 44
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.TutorialApi Tutorial { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.TutorialApi
+    content.vb: Protected ReadOnly Property Tutorial As ApiPlaceholders.TutorialApi
+  overload: LunyScript.Script.Tutorial*
+- uid: LunyScript.Script.UI
+  commentId: P:LunyScript.Script.UI
+  id: UI
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: UI
+  nameWithType: Script.UI
+  fullName: LunyScript.Script.UI
+  type: Property
+  source:
+    id: UI
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 45
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.UIApi UI { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.UIApi
+    content.vb: Protected ReadOnly Property UI As ApiPlaceholders.UIApi
+  overload: LunyScript.Script.UI*
+- uid: LunyScript.Script.VFX
+  commentId: P:LunyScript.Script.VFX
+  id: VFX
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: VFX
+  nameWithType: Script.VFX
+  fullName: LunyScript.Script.VFX
+  type: Property
+  source:
+    id: VFX
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 46
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.VFXApi VFX { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.VFXApi
+    content.vb: Protected ReadOnly Property VFX As ApiPlaceholders.VFXApi
+  overload: LunyScript.Script.VFX*
+- uid: LunyScript.Script.Video
+  commentId: P:LunyScript.Script.Video
+  id: Video
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Video
+  nameWithType: Script.Video
+  fullName: LunyScript.Script.Video
+  type: Property
+  source:
+    id: Video
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Script.ApiPlaceholders.cs
+    startLine: 47
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: protected ApiPlaceholders.VideoApi Video { get; }
+    parameters: []
+    return:
+      type: LunyScript.ApiPlaceholders.VideoApi
+    content.vb: Protected ReadOnly Property Video As ApiPlaceholders.VideoApi
+  overload: LunyScript.Script.Video*
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Script.Owner*
+  commentId: Overload:LunyScript.Script.Owner
+  href: LunyScript.Script.html#LunyScript_Script_Owner
+  name: Owner
+  nameWithType: Script.Owner
+  fullName: LunyScript.Script.Owner
+- uid: Luny.Engine.Bridge.ILunyObject
+  commentId: T:Luny.Engine.Bridge.ILunyObject
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.ILunyObject.html
+  name: ILunyObject
+  nameWithType: ILunyObject
+  fullName: Luny.Engine.Bridge.ILunyObject
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+- uid: LunyScript.Script.Name*
+  commentId: Overload:LunyScript.Script.Name
+  href: LunyScript.Script.html#LunyScript_Script_Name
+  name: Name
+  nameWithType: Script.Name
+  fullName: LunyScript.Script.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LunyScript.Script.IsEditor*
+  commentId: Overload:LunyScript.Script.IsEditor
+  href: LunyScript.Script.html#LunyScript_Script_IsEditor
+  name: IsEditor
+  nameWithType: Script.IsEditor
+  fullName: LunyScript.Script.IsEditor
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: LunyScript.Script.GVar*
+  commentId: Overload:LunyScript.Script.GVar
+  href: LunyScript.Script.html#LunyScript_Script_GVar
+  name: GVar
+  nameWithType: Script.GVar
+  fullName: LunyScript.Script.GVar
+- uid: LunyScript.Blocks.VarAccessor
+  commentId: T:LunyScript.Blocks.VarAccessor
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.VarAccessor.html
+  name: VarAccessor
+  nameWithType: VarAccessor
+  fullName: LunyScript.Blocks.VarAccessor
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+- uid: LunyScript.Script.Var*
+  commentId: Overload:LunyScript.Script.Var
+  href: LunyScript.Script.html#LunyScript_Script_Var
+  name: Var
+  nameWithType: Script.Var
+  fullName: LunyScript.Script.Var
+- uid: LunyScript.Script.Component*
+  commentId: Overload:LunyScript.Script.Component
+  href: LunyScript.Script.html#LunyScript_Script_Component
+  name: Component
+  nameWithType: Script.Component
+  fullName: LunyScript.Script.Component
+- uid: LunyScript.ComponentApi
+  commentId: T:LunyScript.ComponentApi
+  parent: LunyScript
+  href: LunyScript.ComponentApi.html
+  name: ComponentApi
+  nameWithType: ComponentApi
+  fullName: LunyScript.ComponentApi
+- uid: LunyScript.Script.Debug*
+  commentId: Overload:LunyScript.Script.Debug
+  href: LunyScript.Script.html#LunyScript_Script_Debug
+  name: Debug
+  nameWithType: Script.Debug
+  fullName: LunyScript.Script.Debug
+- uid: LunyScript.DebugApi
+  commentId: T:LunyScript.DebugApi
+  parent: LunyScript
+  href: LunyScript.DebugApi.html
+  name: DebugApi
+  nameWithType: DebugApi
+  fullName: LunyScript.DebugApi
+- uid: LunyScript.Script.Editor*
+  commentId: Overload:LunyScript.Script.Editor
+  href: LunyScript.Script.html#LunyScript_Script_Editor
+  name: Editor
+  nameWithType: Script.Editor
+  fullName: LunyScript.Script.Editor
+- uid: LunyScript.EditorApi
+  commentId: T:LunyScript.EditorApi
+  parent: LunyScript
+  href: LunyScript.EditorApi.html
+  name: EditorApi
+  nameWithType: EditorApi
+  fullName: LunyScript.EditorApi
+- uid: LunyScript.Script.Input*
+  commentId: Overload:LunyScript.Script.Input
+  href: LunyScript.Script.html#LunyScript_Script_Input
+  name: Input
+  nameWithType: Script.Input
+  fullName: LunyScript.Script.Input
+- uid: LunyScript.InputBuilder
+  commentId: T:LunyScript.InputBuilder
+  parent: LunyScript
+  href: LunyScript.InputBuilder.html
+  name: InputBuilder
+  nameWithType: InputBuilder
+  fullName: LunyScript.InputBuilder
+- uid: LunyScript.Script.Object*
+  commentId: Overload:LunyScript.Script.Object
+  href: LunyScript.Script.html#LunyScript_Script_Object
+  name: Object
+  nameWithType: Script.Object
+  fullName: LunyScript.Script.Object
+- uid: LunyScript.ObjectBuilder
+  commentId: T:LunyScript.ObjectBuilder
+  parent: LunyScript
+  href: LunyScript.ObjectBuilder.html
+  name: ObjectBuilder
+  nameWithType: ObjectBuilder
+  fullName: LunyScript.ObjectBuilder
+- uid: LunyScript.Script.On*
+  commentId: Overload:LunyScript.Script.On
+  href: LunyScript.Script.html#LunyScript_Script_On
+  name: On
+  nameWithType: Script.On
+  fullName: LunyScript.Script.On
+- uid: LunyScript.OnObjectEventBuilder
+  commentId: T:LunyScript.OnObjectEventBuilder
+  parent: LunyScript
+  href: LunyScript.OnObjectEventBuilder.html
+  name: OnObjectEventBuilder
+  nameWithType: OnObjectEventBuilder
+  fullName: LunyScript.OnObjectEventBuilder
+- uid: LunyScript.Script.Prefab*
+  commentId: Overload:LunyScript.Script.Prefab
+  href: LunyScript.Script.html#LunyScript_Script_Prefab
+  name: Prefab
+  nameWithType: Script.Prefab
+  fullName: LunyScript.Script.Prefab
+- uid: LunyScript.PrefabBuilder
+  commentId: T:LunyScript.PrefabBuilder
+  parent: LunyScript
+  href: LunyScript.PrefabBuilder.html
+  name: PrefabBuilder
+  nameWithType: PrefabBuilder
+  fullName: LunyScript.PrefabBuilder
+- uid: LunyScript.Script.Scene*
+  commentId: Overload:LunyScript.Script.Scene
+  href: LunyScript.Script.html#LunyScript_Script_Scene
+  name: Scene
+  nameWithType: Script.Scene
+  fullName: LunyScript.Script.Scene
+- uid: LunyScript.SceneApi
+  commentId: T:LunyScript.SceneApi
+  parent: LunyScript
+  href: LunyScript.SceneApi.html
+  name: SceneApi
+  nameWithType: SceneApi
+  fullName: LunyScript.SceneApi
+- uid: LunyScript.Script.Time*
+  commentId: Overload:LunyScript.Script.Time
+  href: LunyScript.Script.html#LunyScript_Script_Time
+  name: Time
+  nameWithType: Script.Time
+  fullName: LunyScript.Script.Time
+- uid: LunyScript.TimeApi
+  commentId: T:LunyScript.TimeApi
+  parent: LunyScript
+  href: LunyScript.TimeApi.html
+  name: TimeApi
+  nameWithType: TimeApi
+  fullName: LunyScript.TimeApi
+- uid: LunyScript.Script.Transform*
+  commentId: Overload:LunyScript.Script.Transform
+  href: LunyScript.Script.html#LunyScript_Script_Transform
+  name: Transform
+  nameWithType: Script.Transform
+  fullName: LunyScript.Script.Transform
+- uid: LunyScript.TransformBuilder
+  commentId: T:LunyScript.TransformBuilder
+  parent: LunyScript
+  href: LunyScript.TransformBuilder.html
+  name: TransformBuilder
+  nameWithType: TransformBuilder
+  fullName: LunyScript.TransformBuilder
+- uid: LunyScript.Script.When*
+  commentId: Overload:LunyScript.Script.When
+  href: LunyScript.Script.html#LunyScript_Script_When
+  name: When
+  nameWithType: Script.When
+  fullName: LunyScript.Script.When
+- uid: LunyScript.WhenGlobalEventBuilder
+  commentId: T:LunyScript.WhenGlobalEventBuilder
+  parent: LunyScript
+  href: LunyScript.WhenGlobalEventBuilder.html
+  name: WhenGlobalEventBuilder
+  nameWithType: WhenGlobalEventBuilder
+  fullName: LunyScript.WhenGlobalEventBuilder
+- uid: LunyScript.Script.Coroutine*
+  commentId: Overload:LunyScript.Script.Coroutine
+  href: LunyScript.Script.html#LunyScript_Script_Coroutine_System_String_
+  name: Coroutine
+  nameWithType: Script.Coroutine
+  fullName: LunyScript.Script.Coroutine
+- uid: LunyScript.CoroutineBuilder
+  commentId: T:LunyScript.CoroutineBuilder
+  parent: LunyScript
+  href: LunyScript.CoroutineBuilder.html
+  name: CoroutineBuilder
+  nameWithType: CoroutineBuilder
+  fullName: LunyScript.CoroutineBuilder
+- uid: LunyScript.Script.If*
+  commentId: Overload:LunyScript.Script.If
+  href: LunyScript.Script.html#LunyScript_Script_If_LunyScript_Blocks_ScriptConditionBlock___
+  name: If
+  nameWithType: Script.If
+  fullName: LunyScript.Script.If
+- uid: LunyScript.Blocks.ScriptConditionBlock[]
+  isExternal: true
+  href: LunyScript.Blocks.ScriptConditionBlock.html
+  name: ScriptConditionBlock[]
+  nameWithType: ScriptConditionBlock[]
+  fullName: LunyScript.Blocks.ScriptConditionBlock[]
+  nameWithType.vb: ScriptConditionBlock()
+  fullName.vb: LunyScript.Blocks.ScriptConditionBlock()
+  name.vb: ScriptConditionBlock()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    href: LunyScript.Blocks.ScriptConditionBlock.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    href: LunyScript.Blocks.ScriptConditionBlock.html
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.IfBlock
+  commentId: T:LunyScript.Blocks.IfBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.IfBlock.html
+  name: IfBlock
+  nameWithType: IfBlock
+  fullName: LunyScript.Blocks.IfBlock
+- uid: LunyScript.Script.While*
+  commentId: Overload:LunyScript.Script.While
+  href: LunyScript.Script.html#LunyScript_Script_While_LunyScript_Blocks_ScriptConditionBlock___
+  name: While
+  nameWithType: Script.While
+  fullName: LunyScript.Script.While
+- uid: LunyScript.WhileBlockBuilder
+  commentId: T:LunyScript.WhileBlockBuilder
+  parent: LunyScript
+  href: LunyScript.WhileBlockBuilder.html
+  name: WhileBlockBuilder
+  nameWithType: WhileBlockBuilder
+  fullName: LunyScript.WhileBlockBuilder
+- uid: LunyScript.Script.For*
+  commentId: Overload:LunyScript.Script.For
+  href: LunyScript.Script.html#LunyScript_Script_For_System_Int32_
+  name: For
+  nameWithType: Script.For
+  fullName: LunyScript.Script.For
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: LunyScript.ForBlockBuilder
+  commentId: T:LunyScript.ForBlockBuilder
+  parent: LunyScript
+  href: LunyScript.ForBlockBuilder.html
+  name: ForBlockBuilder
+  nameWithType: ForBlockBuilder
+  fullName: LunyScript.ForBlockBuilder
+- uid: LunyScript.Script.Check*
+  commentId: Overload:LunyScript.Script.Check
+  href: LunyScript.Script.html#LunyScript_Script_Check_System_Func_System_Boolean__
+  name: Check
+  nameWithType: Script.Check
+  fullName: LunyScript.Script.Check
+- uid: System.Func{System.Boolean}
+  commentId: T:System.Func{System.Boolean}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<bool>
+  nameWithType: Func<bool>
+  fullName: System.Func<bool>
+  nameWithType.vb: Func(Of Boolean)
+  fullName.vb: System.Func(Of Boolean)
+  name.vb: Func(Of Boolean)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: LunyScript.Blocks.ScriptConditionBlock
+  commentId: T:LunyScript.Blocks.ScriptConditionBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.ScriptConditionBlock.html
+  name: ScriptConditionBlock
+  nameWithType: ScriptConditionBlock
+  fullName: LunyScript.Blocks.ScriptConditionBlock
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{LunyScript.IScriptRuntimeContext,System.Boolean}
+  commentId: T:System.Func{LunyScript.IScriptRuntimeContext,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<IScriptRuntimeContext, bool>
+  nameWithType: Func<IScriptRuntimeContext, bool>
+  fullName: System.Func<LunyScript.IScriptRuntimeContext, bool>
+  nameWithType.vb: Func(Of IScriptRuntimeContext, Boolean)
+  fullName.vb: System.Func(Of LunyScript.IScriptRuntimeContext, Boolean)
+  name.vb: Func(Of IScriptRuntimeContext, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: LunyScript.Script.Run*
+  commentId: Overload:LunyScript.Script.Run
+  href: LunyScript.Script.html#LunyScript_Script_Run_System_Action_
+  name: Run
+  nameWithType: Script.Run
+  fullName: LunyScript.Script.Run
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: System.Action{LunyScript.IScriptRuntimeContext}
+  commentId: T:System.Action{LunyScript.IScriptRuntimeContext}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<IScriptRuntimeContext>
+  nameWithType: Action<IScriptRuntimeContext>
+  fullName: System.Action<LunyScript.IScriptRuntimeContext>
+  nameWithType.vb: Action(Of IScriptRuntimeContext)
+  fullName.vb: System.Action(Of LunyScript.IScriptRuntimeContext)
+  name.vb: Action(Of IScriptRuntimeContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Script.AND*
+  commentId: Overload:LunyScript.Script.AND
+  href: LunyScript.Script.html#LunyScript_Script_AND_LunyScript_Blocks_ScriptConditionBlock___
+  name: AND
+  nameWithType: Script.AND
+  fullName: LunyScript.Script.AND
+- uid: LunyScript.Script.OR*
+  commentId: Overload:LunyScript.Script.OR
+  href: LunyScript.Script.html#LunyScript_Script_OR_LunyScript_Blocks_ScriptConditionBlock___
+  name: OR
+  nameWithType: Script.OR
+  fullName: LunyScript.Script.OR
+- uid: LunyScript.Script.NOT*
+  commentId: Overload:LunyScript.Script.NOT
+  href: LunyScript.Script.html#LunyScript_Script_NOT_LunyScript_Blocks_ScriptConditionBlock_
+  name: NOT
+  nameWithType: Script.NOT
+  fullName: LunyScript.Script.NOT
+- uid: LunyScript.Script.Finalize*
+  commentId: Overload:LunyScript.Script.Finalize
+  href: LunyScript.Script.html#LunyScript_Script_Finalize
+  name: ~Script
+  nameWithType: Script.~Script
+  fullName: LunyScript.Script.~Script
+  spec.csharp:
+  - name: "~"
+  - uid: LunyScript.Script.Finalize*
+    name: Script
+    href: LunyScript.Script.html#LunyScript_Script_Finalize
+- uid: LunyScript.Script.Build*
+  commentId: Overload:LunyScript.Script.Build
+  href: LunyScript.Script.html#LunyScript_Script_Build_LunyScript_ScriptContext_
+  name: Build
+  nameWithType: Script.Build
+  fullName: LunyScript.Script.Build
+- uid: LunyScript.ScriptContext
+  commentId: T:LunyScript.ScriptContext
+  parent: LunyScript
+  href: LunyScript.ScriptContext.html
+  name: ScriptContext
+  nameWithType: ScriptContext
+  fullName: LunyScript.ScriptContext
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: LunyScript.Script.ToString*
+  commentId: Overload:LunyScript.Script.ToString
+  href: LunyScript.Script.html#LunyScript_Script_ToString
+  name: ToString
+  nameWithType: Script.ToString
+  fullName: LunyScript.Script.ToString
+- uid: LunyScript.Script.Animation*
+  commentId: Overload:LunyScript.Script.Animation
+  href: LunyScript.Script.html#LunyScript_Script_Animation
+  name: Animation
+  nameWithType: Script.Animation
+  fullName: LunyScript.Script.Animation
+- uid: LunyScript.ApiPlaceholders.AnimationApi
+  commentId: T:LunyScript.ApiPlaceholders.AnimationApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.AnimationApi
+  nameWithType: ApiPlaceholders.AnimationApi
+  fullName: LunyScript.ApiPlaceholders.AnimationApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AnimationApi
+    name: AnimationApi
+    href: LunyScript.ApiPlaceholders.AnimationApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AnimationApi
+    name: AnimationApi
+    href: LunyScript.ApiPlaceholders.AnimationApi.html
+- uid: LunyScript.Script.Application*
+  commentId: Overload:LunyScript.Script.Application
+  href: LunyScript.Script.html#LunyScript_Script_Application
+  name: Application
+  nameWithType: Script.Application
+  fullName: LunyScript.Script.Application
+- uid: LunyScript.ApiPlaceholders.ApplicationApi
+  commentId: T:LunyScript.ApiPlaceholders.ApplicationApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.ApplicationApi
+  nameWithType: ApiPlaceholders.ApplicationApi
+  fullName: LunyScript.ApiPlaceholders.ApplicationApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.ApplicationApi
+    name: ApplicationApi
+    href: LunyScript.ApiPlaceholders.ApplicationApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.ApplicationApi
+    name: ApplicationApi
+    href: LunyScript.ApiPlaceholders.ApplicationApi.html
+- uid: LunyScript.Script.Asset*
+  commentId: Overload:LunyScript.Script.Asset
+  href: LunyScript.Script.html#LunyScript_Script_Asset
+  name: Asset
+  nameWithType: Script.Asset
+  fullName: LunyScript.Script.Asset
+- uid: LunyScript.ApiPlaceholders.AssetApi
+  commentId: T:LunyScript.ApiPlaceholders.AssetApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.AssetApi
+  nameWithType: ApiPlaceholders.AssetApi
+  fullName: LunyScript.ApiPlaceholders.AssetApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AssetApi
+    name: AssetApi
+    href: LunyScript.ApiPlaceholders.AssetApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AssetApi
+    name: AssetApi
+    href: LunyScript.ApiPlaceholders.AssetApi.html
+- uid: LunyScript.Script.Audio*
+  commentId: Overload:LunyScript.Script.Audio
+  href: LunyScript.Script.html#LunyScript_Script_Audio
+  name: Audio
+  nameWithType: Script.Audio
+  fullName: LunyScript.Script.Audio
+- uid: LunyScript.ApiPlaceholders.AudioApi
+  commentId: T:LunyScript.ApiPlaceholders.AudioApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.AudioApi
+  nameWithType: ApiPlaceholders.AudioApi
+  fullName: LunyScript.ApiPlaceholders.AudioApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AudioApi
+    name: AudioApi
+    href: LunyScript.ApiPlaceholders.AudioApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AudioApi
+    name: AudioApi
+    href: LunyScript.ApiPlaceholders.AudioApi.html
+- uid: LunyScript.Script.Camera*
+  commentId: Overload:LunyScript.Script.Camera
+  href: LunyScript.Script.html#LunyScript_Script_Camera
+  name: Camera
+  nameWithType: Script.Camera
+  fullName: LunyScript.Script.Camera
+- uid: LunyScript.ApiPlaceholders.CameraApi
+  commentId: T:LunyScript.ApiPlaceholders.CameraApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.CameraApi
+  nameWithType: ApiPlaceholders.CameraApi
+  fullName: LunyScript.ApiPlaceholders.CameraApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.CameraApi
+    name: CameraApi
+    href: LunyScript.ApiPlaceholders.CameraApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.CameraApi
+    name: CameraApi
+    href: LunyScript.ApiPlaceholders.CameraApi.html
+- uid: LunyScript.Script.Diagnostics*
+  commentId: Overload:LunyScript.Script.Diagnostics
+  href: LunyScript.Script.html#LunyScript_Script_Diagnostics
+  name: Diagnostics
+  nameWithType: Script.Diagnostics
+  fullName: LunyScript.Script.Diagnostics
+- uid: LunyScript.ApiPlaceholders.DiagnosticsApi
+  commentId: T:LunyScript.ApiPlaceholders.DiagnosticsApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.DiagnosticsApi
+  nameWithType: ApiPlaceholders.DiagnosticsApi
+  fullName: LunyScript.ApiPlaceholders.DiagnosticsApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.DiagnosticsApi
+    name: DiagnosticsApi
+    href: LunyScript.ApiPlaceholders.DiagnosticsApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.DiagnosticsApi
+    name: DiagnosticsApi
+    href: LunyScript.ApiPlaceholders.DiagnosticsApi.html
+- uid: LunyScript.Script.HUD*
+  commentId: Overload:LunyScript.Script.HUD
+  href: LunyScript.Script.html#LunyScript_Script_HUD
+  name: HUD
+  nameWithType: Script.HUD
+  fullName: LunyScript.Script.HUD
+- uid: LunyScript.ApiPlaceholders.HUDApi
+  commentId: T:LunyScript.ApiPlaceholders.HUDApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.HUDApi
+  nameWithType: ApiPlaceholders.HUDApi
+  fullName: LunyScript.ApiPlaceholders.HUDApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.HUDApi
+    name: HUDApi
+    href: LunyScript.ApiPlaceholders.HUDApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.HUDApi
+    name: HUDApi
+    href: LunyScript.ApiPlaceholders.HUDApi.html
+- uid: LunyScript.Script.Menu*
+  commentId: Overload:LunyScript.Script.Menu
+  href: LunyScript.Script.html#LunyScript_Script_Menu
+  name: Menu
+  nameWithType: Script.Menu
+  fullName: LunyScript.Script.Menu
+- uid: LunyScript.ApiPlaceholders.MenuApi
+  commentId: T:LunyScript.ApiPlaceholders.MenuApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.MenuApi
+  nameWithType: ApiPlaceholders.MenuApi
+  fullName: LunyScript.ApiPlaceholders.MenuApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.MenuApi
+    name: MenuApi
+    href: LunyScript.ApiPlaceholders.MenuApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.MenuApi
+    name: MenuApi
+    href: LunyScript.ApiPlaceholders.MenuApi.html
+- uid: LunyScript.Script.Physics*
+  commentId: Overload:LunyScript.Script.Physics
+  href: LunyScript.Script.html#LunyScript_Script_Physics
+  name: Physics
+  nameWithType: Script.Physics
+  fullName: LunyScript.Script.Physics
+- uid: LunyScript.ApiPlaceholders.PhysicsApi
+  commentId: T:LunyScript.ApiPlaceholders.PhysicsApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.PhysicsApi
+  nameWithType: ApiPlaceholders.PhysicsApi
+  fullName: LunyScript.ApiPlaceholders.PhysicsApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.PhysicsApi
+    name: PhysicsApi
+    href: LunyScript.ApiPlaceholders.PhysicsApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.PhysicsApi
+    name: PhysicsApi
+    href: LunyScript.ApiPlaceholders.PhysicsApi.html
+- uid: LunyScript.Script.Player*
+  commentId: Overload:LunyScript.Script.Player
+  href: LunyScript.Script.html#LunyScript_Script_Player
+  name: Player
+  nameWithType: Script.Player
+  fullName: LunyScript.Script.Player
+- uid: LunyScript.ApiPlaceholders.PlayerApi
+  commentId: T:LunyScript.ApiPlaceholders.PlayerApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.PlayerApi
+  nameWithType: ApiPlaceholders.PlayerApi
+  fullName: LunyScript.ApiPlaceholders.PlayerApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.PlayerApi
+    name: PlayerApi
+    href: LunyScript.ApiPlaceholders.PlayerApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.PlayerApi
+    name: PlayerApi
+    href: LunyScript.ApiPlaceholders.PlayerApi.html
+- uid: LunyScript.Script.Storage*
+  commentId: Overload:LunyScript.Script.Storage
+  href: LunyScript.Script.html#LunyScript_Script_Storage
+  name: Storage
+  nameWithType: Script.Storage
+  fullName: LunyScript.Script.Storage
+- uid: LunyScript.ApiPlaceholders.StorageApi
+  commentId: T:LunyScript.ApiPlaceholders.StorageApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.StorageApi
+  nameWithType: ApiPlaceholders.StorageApi
+  fullName: LunyScript.ApiPlaceholders.StorageApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.StorageApi
+    name: StorageApi
+    href: LunyScript.ApiPlaceholders.StorageApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.StorageApi
+    name: StorageApi
+    href: LunyScript.ApiPlaceholders.StorageApi.html
+- uid: LunyScript.Script.Accessibility*
+  commentId: Overload:LunyScript.Script.Accessibility
+  href: LunyScript.Script.html#LunyScript_Script_Accessibility
+  name: Accessibility
+  nameWithType: Script.Accessibility
+  fullName: LunyScript.Script.Accessibility
+- uid: LunyScript.ApiPlaceholders.AccessibilityApi
+  commentId: T:LunyScript.ApiPlaceholders.AccessibilityApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.AccessibilityApi
+  nameWithType: ApiPlaceholders.AccessibilityApi
+  fullName: LunyScript.ApiPlaceholders.AccessibilityApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AccessibilityApi
+    name: AccessibilityApi
+    href: LunyScript.ApiPlaceholders.AccessibilityApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AccessibilityApi
+    name: AccessibilityApi
+    href: LunyScript.ApiPlaceholders.AccessibilityApi.html
+- uid: LunyScript.Script.Account*
+  commentId: Overload:LunyScript.Script.Account
+  href: LunyScript.Script.html#LunyScript_Script_Account
+  name: Account
+  nameWithType: Script.Account
+  fullName: LunyScript.Script.Account
+- uid: LunyScript.ApiPlaceholders.AccountApi
+  commentId: T:LunyScript.ApiPlaceholders.AccountApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.AccountApi
+  nameWithType: ApiPlaceholders.AccountApi
+  fullName: LunyScript.ApiPlaceholders.AccountApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AccountApi
+    name: AccountApi
+    href: LunyScript.ApiPlaceholders.AccountApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AccountApi
+    name: AccountApi
+    href: LunyScript.ApiPlaceholders.AccountApi.html
+- uid: LunyScript.Script.AI*
+  commentId: Overload:LunyScript.Script.AI
+  href: LunyScript.Script.html#LunyScript_Script_AI
+  name: AI
+  nameWithType: Script.AI
+  fullName: LunyScript.Script.AI
+- uid: LunyScript.ApiPlaceholders.AIApi
+  commentId: T:LunyScript.ApiPlaceholders.AIApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.AIApi
+  nameWithType: ApiPlaceholders.AIApi
+  fullName: LunyScript.ApiPlaceholders.AIApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AIApi
+    name: AIApi
+    href: LunyScript.ApiPlaceholders.AIApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AIApi
+    name: AIApi
+    href: LunyScript.ApiPlaceholders.AIApi.html
+- uid: LunyScript.Script.Async*
+  commentId: Overload:LunyScript.Script.Async
+  href: LunyScript.Script.html#LunyScript_Script_Async
+  name: Async
+  nameWithType: Script.Async
+  fullName: LunyScript.Script.Async
+- uid: LunyScript.ApiPlaceholders.AsyncApi
+  commentId: T:LunyScript.ApiPlaceholders.AsyncApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.AsyncApi
+  nameWithType: ApiPlaceholders.AsyncApi
+  fullName: LunyScript.ApiPlaceholders.AsyncApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AsyncApi
+    name: AsyncApi
+    href: LunyScript.ApiPlaceholders.AsyncApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AsyncApi
+    name: AsyncApi
+    href: LunyScript.ApiPlaceholders.AsyncApi.html
+- uid: LunyScript.Script.Avatar*
+  commentId: Overload:LunyScript.Script.Avatar
+  href: LunyScript.Script.html#LunyScript_Script_Avatar
+  name: Avatar
+  nameWithType: Script.Avatar
+  fullName: LunyScript.Script.Avatar
+- uid: LunyScript.ApiPlaceholders.AvatarApi
+  commentId: T:LunyScript.ApiPlaceholders.AvatarApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.AvatarApi
+  nameWithType: ApiPlaceholders.AvatarApi
+  fullName: LunyScript.ApiPlaceholders.AvatarApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AvatarApi
+    name: AvatarApi
+    href: LunyScript.ApiPlaceholders.AvatarApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.AvatarApi
+    name: AvatarApi
+    href: LunyScript.ApiPlaceholders.AvatarApi.html
+- uid: LunyScript.Script.Cloud*
+  commentId: Overload:LunyScript.Script.Cloud
+  href: LunyScript.Script.html#LunyScript_Script_Cloud
+  name: Cloud
+  nameWithType: Script.Cloud
+  fullName: LunyScript.Script.Cloud
+- uid: LunyScript.ApiPlaceholders.CloudApi
+  commentId: T:LunyScript.ApiPlaceholders.CloudApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.CloudApi
+  nameWithType: ApiPlaceholders.CloudApi
+  fullName: LunyScript.ApiPlaceholders.CloudApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.CloudApi
+    name: CloudApi
+    href: LunyScript.ApiPlaceholders.CloudApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.CloudApi
+    name: CloudApi
+    href: LunyScript.ApiPlaceholders.CloudApi.html
+- uid: LunyScript.Script.Cutscene*
+  commentId: Overload:LunyScript.Script.Cutscene
+  href: LunyScript.Script.html#LunyScript_Script_Cutscene
+  name: Cutscene
+  nameWithType: Script.Cutscene
+  fullName: LunyScript.Script.Cutscene
+- uid: LunyScript.ApiPlaceholders.CutsceneApi
+  commentId: T:LunyScript.ApiPlaceholders.CutsceneApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.CutsceneApi
+  nameWithType: ApiPlaceholders.CutsceneApi
+  fullName: LunyScript.ApiPlaceholders.CutsceneApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.CutsceneApi
+    name: CutsceneApi
+    href: LunyScript.ApiPlaceholders.CutsceneApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.CutsceneApi
+    name: CutsceneApi
+    href: LunyScript.ApiPlaceholders.CutsceneApi.html
+- uid: LunyScript.Script.Environment*
+  commentId: Overload:LunyScript.Script.Environment
+  href: LunyScript.Script.html#LunyScript_Script_Environment
+  name: Environment
+  nameWithType: Script.Environment
+  fullName: LunyScript.Script.Environment
+- uid: LunyScript.ApiPlaceholders.EnvironmentApi
+  commentId: T:LunyScript.ApiPlaceholders.EnvironmentApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.EnvironmentApi
+  nameWithType: ApiPlaceholders.EnvironmentApi
+  fullName: LunyScript.ApiPlaceholders.EnvironmentApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.EnvironmentApi
+    name: EnvironmentApi
+    href: LunyScript.ApiPlaceholders.EnvironmentApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.EnvironmentApi
+    name: EnvironmentApi
+    href: LunyScript.ApiPlaceholders.EnvironmentApi.html
+- uid: LunyScript.Script.Graphics*
+  commentId: Overload:LunyScript.Script.Graphics
+  href: LunyScript.Script.html#LunyScript_Script_Graphics
+  name: Graphics
+  nameWithType: Script.Graphics
+  fullName: LunyScript.Script.Graphics
+- uid: LunyScript.ApiPlaceholders.GraphicsApi
+  commentId: T:LunyScript.ApiPlaceholders.GraphicsApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.GraphicsApi
+  nameWithType: ApiPlaceholders.GraphicsApi
+  fullName: LunyScript.ApiPlaceholders.GraphicsApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.GraphicsApi
+    name: GraphicsApi
+    href: LunyScript.ApiPlaceholders.GraphicsApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.GraphicsApi
+    name: GraphicsApi
+    href: LunyScript.ApiPlaceholders.GraphicsApi.html
+- uid: LunyScript.Script.L18n*
+  commentId: Overload:LunyScript.Script.L18n
+  href: LunyScript.Script.html#LunyScript_Script_L18n
+  name: L18n
+  nameWithType: Script.L18n
+  fullName: LunyScript.Script.L18n
+- uid: LunyScript.ApiPlaceholders.L18nApi
+  commentId: T:LunyScript.ApiPlaceholders.L18nApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.L18nApi
+  nameWithType: ApiPlaceholders.L18nApi
+  fullName: LunyScript.ApiPlaceholders.L18nApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.L18nApi
+    name: L18nApi
+    href: LunyScript.ApiPlaceholders.L18nApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.L18nApi
+    name: L18nApi
+    href: LunyScript.ApiPlaceholders.L18nApi.html
+- uid: LunyScript.Script.Locale*
+  commentId: Overload:LunyScript.Script.Locale
+  href: LunyScript.Script.html#LunyScript_Script_Locale
+  name: Locale
+  nameWithType: Script.Locale
+  fullName: LunyScript.Script.Locale
+- uid: LunyScript.ApiPlaceholders.LocaleApi
+  commentId: T:LunyScript.ApiPlaceholders.LocaleApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.LocaleApi
+  nameWithType: ApiPlaceholders.LocaleApi
+  fullName: LunyScript.ApiPlaceholders.LocaleApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.LocaleApi
+    name: LocaleApi
+    href: LunyScript.ApiPlaceholders.LocaleApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.LocaleApi
+    name: LocaleApi
+    href: LunyScript.ApiPlaceholders.LocaleApi.html
+- uid: LunyScript.Script.Localization*
+  commentId: Overload:LunyScript.Script.Localization
+  href: LunyScript.Script.html#LunyScript_Script_Localization
+  name: Localization
+  nameWithType: Script.Localization
+  fullName: LunyScript.Script.Localization
+- uid: LunyScript.ApiPlaceholders.LocalizationApi
+  commentId: T:LunyScript.ApiPlaceholders.LocalizationApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.LocalizationApi
+  nameWithType: ApiPlaceholders.LocalizationApi
+  fullName: LunyScript.ApiPlaceholders.LocalizationApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.LocalizationApi
+    name: LocalizationApi
+    href: LunyScript.ApiPlaceholders.LocalizationApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.LocalizationApi
+    name: LocalizationApi
+    href: LunyScript.ApiPlaceholders.LocalizationApi.html
+- uid: LunyScript.Script.Navigation*
+  commentId: Overload:LunyScript.Script.Navigation
+  href: LunyScript.Script.html#LunyScript_Script_Navigation
+  name: Navigation
+  nameWithType: Script.Navigation
+  fullName: LunyScript.Script.Navigation
+- uid: LunyScript.ApiPlaceholders.NavigationApi
+  commentId: T:LunyScript.ApiPlaceholders.NavigationApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.NavigationApi
+  nameWithType: ApiPlaceholders.NavigationApi
+  fullName: LunyScript.ApiPlaceholders.NavigationApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.NavigationApi
+    name: NavigationApi
+    href: LunyScript.ApiPlaceholders.NavigationApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.NavigationApi
+    name: NavigationApi
+    href: LunyScript.ApiPlaceholders.NavigationApi.html
+- uid: LunyScript.Script.Network*
+  commentId: Overload:LunyScript.Script.Network
+  href: LunyScript.Script.html#LunyScript_Script_Network
+  name: Network
+  nameWithType: Script.Network
+  fullName: LunyScript.Script.Network
+- uid: LunyScript.ApiPlaceholders.NetworkApi
+  commentId: T:LunyScript.ApiPlaceholders.NetworkApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.NetworkApi
+  nameWithType: ApiPlaceholders.NetworkApi
+  fullName: LunyScript.ApiPlaceholders.NetworkApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.NetworkApi
+    name: NetworkApi
+    href: LunyScript.ApiPlaceholders.NetworkApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.NetworkApi
+    name: NetworkApi
+    href: LunyScript.ApiPlaceholders.NetworkApi.html
+- uid: LunyScript.Script.NPC*
+  commentId: Overload:LunyScript.Script.NPC
+  href: LunyScript.Script.html#LunyScript_Script_NPC
+  name: NPC
+  nameWithType: Script.NPC
+  fullName: LunyScript.Script.NPC
+- uid: LunyScript.ApiPlaceholders.NPCApi
+  commentId: T:LunyScript.ApiPlaceholders.NPCApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.NPCApi
+  nameWithType: ApiPlaceholders.NPCApi
+  fullName: LunyScript.ApiPlaceholders.NPCApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.NPCApi
+    name: NPCApi
+    href: LunyScript.ApiPlaceholders.NPCApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.NPCApi
+    name: NPCApi
+    href: LunyScript.ApiPlaceholders.NPCApi.html
+- uid: LunyScript.Script.Particles*
+  commentId: Overload:LunyScript.Script.Particles
+  href: LunyScript.Script.html#LunyScript_Script_Particles
+  name: Particles
+  nameWithType: Script.Particles
+  fullName: LunyScript.Script.Particles
+- uid: LunyScript.ApiPlaceholders.ParticlesApi
+  commentId: T:LunyScript.ApiPlaceholders.ParticlesApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.ParticlesApi
+  nameWithType: ApiPlaceholders.ParticlesApi
+  fullName: LunyScript.ApiPlaceholders.ParticlesApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.ParticlesApi
+    name: ParticlesApi
+    href: LunyScript.ApiPlaceholders.ParticlesApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.ParticlesApi
+    name: ParticlesApi
+    href: LunyScript.ApiPlaceholders.ParticlesApi.html
+- uid: LunyScript.Script.Platform*
+  commentId: Overload:LunyScript.Script.Platform
+  href: LunyScript.Script.html#LunyScript_Script_Platform
+  name: Platform
+  nameWithType: Script.Platform
+  fullName: LunyScript.Script.Platform
+- uid: LunyScript.ApiPlaceholders.PlatformApi
+  commentId: T:LunyScript.ApiPlaceholders.PlatformApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.PlatformApi
+  nameWithType: ApiPlaceholders.PlatformApi
+  fullName: LunyScript.ApiPlaceholders.PlatformApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.PlatformApi
+    name: PlatformApi
+    href: LunyScript.ApiPlaceholders.PlatformApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.PlatformApi
+    name: PlatformApi
+    href: LunyScript.ApiPlaceholders.PlatformApi.html
+- uid: LunyScript.Script.Pool*
+  commentId: Overload:LunyScript.Script.Pool
+  href: LunyScript.Script.html#LunyScript_Script_Pool
+  name: Pool
+  nameWithType: Script.Pool
+  fullName: LunyScript.Script.Pool
+- uid: LunyScript.ApiPlaceholders.PoolApi
+  commentId: T:LunyScript.ApiPlaceholders.PoolApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.PoolApi
+  nameWithType: ApiPlaceholders.PoolApi
+  fullName: LunyScript.ApiPlaceholders.PoolApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.PoolApi
+    name: PoolApi
+    href: LunyScript.ApiPlaceholders.PoolApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.PoolApi
+    name: PoolApi
+    href: LunyScript.ApiPlaceholders.PoolApi.html
+- uid: LunyScript.Script.PostFx*
+  commentId: Overload:LunyScript.Script.PostFx
+  href: LunyScript.Script.html#LunyScript_Script_PostFx
+  name: PostFx
+  nameWithType: Script.PostFx
+  fullName: LunyScript.Script.PostFx
+- uid: LunyScript.ApiPlaceholders.PostFxApi
+  commentId: T:LunyScript.ApiPlaceholders.PostFxApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.PostFxApi
+  nameWithType: ApiPlaceholders.PostFxApi
+  fullName: LunyScript.ApiPlaceholders.PostFxApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.PostFxApi
+    name: PostFxApi
+    href: LunyScript.ApiPlaceholders.PostFxApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.PostFxApi
+    name: PostFxApi
+    href: LunyScript.ApiPlaceholders.PostFxApi.html
+- uid: LunyScript.Script.Progress*
+  commentId: Overload:LunyScript.Script.Progress
+  href: LunyScript.Script.html#LunyScript_Script_Progress
+  name: Progress
+  nameWithType: Script.Progress
+  fullName: LunyScript.Script.Progress
+- uid: LunyScript.ApiPlaceholders.ProgressApi
+  commentId: T:LunyScript.ApiPlaceholders.ProgressApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.ProgressApi
+  nameWithType: ApiPlaceholders.ProgressApi
+  fullName: LunyScript.ApiPlaceholders.ProgressApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.ProgressApi
+    name: ProgressApi
+    href: LunyScript.ApiPlaceholders.ProgressApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.ProgressApi
+    name: ProgressApi
+    href: LunyScript.ApiPlaceholders.ProgressApi.html
+- uid: LunyScript.Script.Quality*
+  commentId: Overload:LunyScript.Script.Quality
+  href: LunyScript.Script.html#LunyScript_Script_Quality
+  name: Quality
+  nameWithType: Script.Quality
+  fullName: LunyScript.Script.Quality
+- uid: LunyScript.ApiPlaceholders.QualityApi
+  commentId: T:LunyScript.ApiPlaceholders.QualityApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.QualityApi
+  nameWithType: ApiPlaceholders.QualityApi
+  fullName: LunyScript.ApiPlaceholders.QualityApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.QualityApi
+    name: QualityApi
+    href: LunyScript.ApiPlaceholders.QualityApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.QualityApi
+    name: QualityApi
+    href: LunyScript.ApiPlaceholders.QualityApi.html
+- uid: LunyScript.Script.Session*
+  commentId: Overload:LunyScript.Script.Session
+  href: LunyScript.Script.html#LunyScript_Script_Session
+  name: Session
+  nameWithType: Script.Session
+  fullName: LunyScript.Script.Session
+- uid: LunyScript.ApiPlaceholders.SessionApi
+  commentId: T:LunyScript.ApiPlaceholders.SessionApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.SessionApi
+  nameWithType: ApiPlaceholders.SessionApi
+  fullName: LunyScript.ApiPlaceholders.SessionApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.SessionApi
+    name: SessionApi
+    href: LunyScript.ApiPlaceholders.SessionApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.SessionApi
+    name: SessionApi
+    href: LunyScript.ApiPlaceholders.SessionApi.html
+- uid: LunyScript.Script.Settings*
+  commentId: Overload:LunyScript.Script.Settings
+  href: LunyScript.Script.html#LunyScript_Script_Settings
+  name: Settings
+  nameWithType: Script.Settings
+  fullName: LunyScript.Script.Settings
+- uid: LunyScript.ApiPlaceholders.SettingsApi
+  commentId: T:LunyScript.ApiPlaceholders.SettingsApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.SettingsApi
+  nameWithType: ApiPlaceholders.SettingsApi
+  fullName: LunyScript.ApiPlaceholders.SettingsApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.SettingsApi
+    name: SettingsApi
+    href: LunyScript.ApiPlaceholders.SettingsApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.SettingsApi
+    name: SettingsApi
+    href: LunyScript.ApiPlaceholders.SettingsApi.html
+- uid: LunyScript.Script.Spawn*
+  commentId: Overload:LunyScript.Script.Spawn
+  href: LunyScript.Script.html#LunyScript_Script_Spawn
+  name: Spawn
+  nameWithType: Script.Spawn
+  fullName: LunyScript.Script.Spawn
+- uid: LunyScript.ApiPlaceholders.SpawnApi
+  commentId: T:LunyScript.ApiPlaceholders.SpawnApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.SpawnApi
+  nameWithType: ApiPlaceholders.SpawnApi
+  fullName: LunyScript.ApiPlaceholders.SpawnApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.SpawnApi
+    name: SpawnApi
+    href: LunyScript.ApiPlaceholders.SpawnApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.SpawnApi
+    name: SpawnApi
+    href: LunyScript.ApiPlaceholders.SpawnApi.html
+- uid: LunyScript.Script.Sprite*
+  commentId: Overload:LunyScript.Script.Sprite
+  href: LunyScript.Script.html#LunyScript_Script_Sprite
+  name: Sprite
+  nameWithType: Script.Sprite
+  fullName: LunyScript.Script.Sprite
+- uid: LunyScript.ApiPlaceholders.SpriteApi
+  commentId: T:LunyScript.ApiPlaceholders.SpriteApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.SpriteApi
+  nameWithType: ApiPlaceholders.SpriteApi
+  fullName: LunyScript.ApiPlaceholders.SpriteApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.SpriteApi
+    name: SpriteApi
+    href: LunyScript.ApiPlaceholders.SpriteApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.SpriteApi
+    name: SpriteApi
+    href: LunyScript.ApiPlaceholders.SpriteApi.html
+- uid: LunyScript.Script.Stage*
+  commentId: Overload:LunyScript.Script.Stage
+  href: LunyScript.Script.html#LunyScript_Script_Stage
+  name: Stage
+  nameWithType: Script.Stage
+  fullName: LunyScript.Script.Stage
+- uid: LunyScript.ApiPlaceholders.StageApi
+  commentId: T:LunyScript.ApiPlaceholders.StageApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.StageApi
+  nameWithType: ApiPlaceholders.StageApi
+  fullName: LunyScript.ApiPlaceholders.StageApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.StageApi
+    name: StageApi
+    href: LunyScript.ApiPlaceholders.StageApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.StageApi
+    name: StageApi
+    href: LunyScript.ApiPlaceholders.StageApi.html
+- uid: LunyScript.Script.Store*
+  commentId: Overload:LunyScript.Script.Store
+  href: LunyScript.Script.html#LunyScript_Script_Store
+  name: Store
+  nameWithType: Script.Store
+  fullName: LunyScript.Script.Store
+- uid: LunyScript.ApiPlaceholders.StoreApi
+  commentId: T:LunyScript.ApiPlaceholders.StoreApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.StoreApi
+  nameWithType: ApiPlaceholders.StoreApi
+  fullName: LunyScript.ApiPlaceholders.StoreApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.StoreApi
+    name: StoreApi
+    href: LunyScript.ApiPlaceholders.StoreApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.StoreApi
+    name: StoreApi
+    href: LunyScript.ApiPlaceholders.StoreApi.html
+- uid: LunyScript.Script.Terrain*
+  commentId: Overload:LunyScript.Script.Terrain
+  href: LunyScript.Script.html#LunyScript_Script_Terrain
+  name: Terrain
+  nameWithType: Script.Terrain
+  fullName: LunyScript.Script.Terrain
+- uid: LunyScript.ApiPlaceholders.TerrainApi
+  commentId: T:LunyScript.ApiPlaceholders.TerrainApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.TerrainApi
+  nameWithType: ApiPlaceholders.TerrainApi
+  fullName: LunyScript.ApiPlaceholders.TerrainApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.TerrainApi
+    name: TerrainApi
+    href: LunyScript.ApiPlaceholders.TerrainApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.TerrainApi
+    name: TerrainApi
+    href: LunyScript.ApiPlaceholders.TerrainApi.html
+- uid: LunyScript.Script.Tilemap*
+  commentId: Overload:LunyScript.Script.Tilemap
+  href: LunyScript.Script.html#LunyScript_Script_Tilemap
+  name: Tilemap
+  nameWithType: Script.Tilemap
+  fullName: LunyScript.Script.Tilemap
+- uid: LunyScript.ApiPlaceholders.TilemapApi
+  commentId: T:LunyScript.ApiPlaceholders.TilemapApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.TilemapApi
+  nameWithType: ApiPlaceholders.TilemapApi
+  fullName: LunyScript.ApiPlaceholders.TilemapApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.TilemapApi
+    name: TilemapApi
+    href: LunyScript.ApiPlaceholders.TilemapApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.TilemapApi
+    name: TilemapApi
+    href: LunyScript.ApiPlaceholders.TilemapApi.html
+- uid: LunyScript.Script.Tutorial*
+  commentId: Overload:LunyScript.Script.Tutorial
+  href: LunyScript.Script.html#LunyScript_Script_Tutorial
+  name: Tutorial
+  nameWithType: Script.Tutorial
+  fullName: LunyScript.Script.Tutorial
+- uid: LunyScript.ApiPlaceholders.TutorialApi
+  commentId: T:LunyScript.ApiPlaceholders.TutorialApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.TutorialApi
+  nameWithType: ApiPlaceholders.TutorialApi
+  fullName: LunyScript.ApiPlaceholders.TutorialApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.TutorialApi
+    name: TutorialApi
+    href: LunyScript.ApiPlaceholders.TutorialApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.TutorialApi
+    name: TutorialApi
+    href: LunyScript.ApiPlaceholders.TutorialApi.html
+- uid: LunyScript.Script.UI*
+  commentId: Overload:LunyScript.Script.UI
+  href: LunyScript.Script.html#LunyScript_Script_UI
+  name: UI
+  nameWithType: Script.UI
+  fullName: LunyScript.Script.UI
+- uid: LunyScript.ApiPlaceholders.UIApi
+  commentId: T:LunyScript.ApiPlaceholders.UIApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.UIApi
+  nameWithType: ApiPlaceholders.UIApi
+  fullName: LunyScript.ApiPlaceholders.UIApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.UIApi
+    name: UIApi
+    href: LunyScript.ApiPlaceholders.UIApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.UIApi
+    name: UIApi
+    href: LunyScript.ApiPlaceholders.UIApi.html
+- uid: LunyScript.Script.VFX*
+  commentId: Overload:LunyScript.Script.VFX
+  href: LunyScript.Script.html#LunyScript_Script_VFX
+  name: VFX
+  nameWithType: Script.VFX
+  fullName: LunyScript.Script.VFX
+- uid: LunyScript.ApiPlaceholders.VFXApi
+  commentId: T:LunyScript.ApiPlaceholders.VFXApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.VFXApi
+  nameWithType: ApiPlaceholders.VFXApi
+  fullName: LunyScript.ApiPlaceholders.VFXApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.VFXApi
+    name: VFXApi
+    href: LunyScript.ApiPlaceholders.VFXApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.VFXApi
+    name: VFXApi
+    href: LunyScript.ApiPlaceholders.VFXApi.html
+- uid: LunyScript.Script.Video*
+  commentId: Overload:LunyScript.Script.Video
+  href: LunyScript.Script.html#LunyScript_Script_Video
+  name: Video
+  nameWithType: Script.Video
+  fullName: LunyScript.Script.Video
+- uid: LunyScript.ApiPlaceholders.VideoApi
+  commentId: T:LunyScript.ApiPlaceholders.VideoApi
+  parent: LunyScript
+  href: LunyScript.ApiPlaceholders.html
+  name: ApiPlaceholders.VideoApi
+  nameWithType: ApiPlaceholders.VideoApi
+  fullName: LunyScript.ApiPlaceholders.VideoApi
+  spec.csharp:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.VideoApi
+    name: VideoApi
+    href: LunyScript.ApiPlaceholders.VideoApi.html
+  spec.vb:
+  - uid: LunyScript.ApiPlaceholders
+    name: ApiPlaceholders
+    href: LunyScript.ApiPlaceholders.html
+  - name: .
+  - uid: LunyScript.ApiPlaceholders.VideoApi
+    name: VideoApi
+    href: LunyScript.ApiPlaceholders.VideoApi.html

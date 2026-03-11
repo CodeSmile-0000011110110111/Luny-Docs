@@ -1,0 +1,733 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.SequenceBlock
+  commentId: T:LunyScript.Blocks.SequenceBlock
+  id: SequenceBlock
+  parent: LunyScript.Blocks
+  children:
+  - LunyScript.Blocks.SequenceBlock.#ctor(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
+  - LunyScript.Blocks.SequenceBlock.Blocks
+  - LunyScript.Blocks.SequenceBlock.Execute(LunyScript.IScriptRuntimeContext)
+  - LunyScript.Blocks.SequenceBlock.Id
+  - LunyScript.Blocks.SequenceBlock.IsEmpty
+  - LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
+  langs:
+  - csharp
+  - vb
+  name: SequenceBlock
+  nameWithType: SequenceBlock
+  fullName: LunyScript.Blocks.SequenceBlock
+  type: Class
+  source:
+    id: SequenceBlock
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\SequenceBlock.cs
+    startLine: 15
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Abstract base for sequence blocks that contain child action blocks.
+  example: []
+  syntax:
+    content: 'public sealed class SequenceBlock : ScriptActionBlock, IScriptBlock, ISequenceBlock'
+    content.vb: Public NotInheritable Class SequenceBlock Inherits ScriptActionBlock Implements IScriptBlock, ISequenceBlock
+  inheritance:
+  - System.Object
+  - LunyScript.Blocks.ScriptBlock
+  - LunyScript.Blocks.ScriptActionBlock
+  implements:
+  - LunyScript.Blocks.IScriptBlock
+  - LunyScript.Blocks.ISequenceBlock
+  inheritedMembers:
+  - LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: LunyScript.Blocks.SequenceBlock.Id
+  commentId: P:LunyScript.Blocks.SequenceBlock.Id
+  id: Id
+  parent: LunyScript.Blocks.SequenceBlock
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: SequenceBlock.Id
+  fullName: LunyScript.Blocks.SequenceBlock.Id
+  type: Property
+  source:
+    id: Id
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\SequenceBlock.cs
+    startLine: 17
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: public ScriptBlockId Id { get; }
+    parameters: []
+    return:
+      type: LunyScript.ScriptBlockId
+    content.vb: Public ReadOnly Property Id As ScriptBlockId
+  overload: LunyScript.Blocks.SequenceBlock.Id*
+  implements:
+  - LunyScript.Blocks.ISequenceBlock.Id
+- uid: LunyScript.Blocks.SequenceBlock.Blocks
+  commentId: P:LunyScript.Blocks.SequenceBlock.Blocks
+  id: Blocks
+  parent: LunyScript.Blocks.SequenceBlock
+  langs:
+  - csharp
+  - vb
+  name: Blocks
+  nameWithType: SequenceBlock.Blocks
+  fullName: LunyScript.Blocks.SequenceBlock.Blocks
+  type: Property
+  source:
+    id: Blocks
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\SequenceBlock.cs
+    startLine: 18
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: public IReadOnlyList<ScriptActionBlock> Blocks { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock}
+    content.vb: Public ReadOnly Property Blocks As IReadOnlyList(Of ScriptActionBlock)
+  overload: LunyScript.Blocks.SequenceBlock.Blocks*
+  implements:
+  - LunyScript.Blocks.ISequenceBlock.Blocks
+- uid: LunyScript.Blocks.SequenceBlock.IsEmpty
+  commentId: P:LunyScript.Blocks.SequenceBlock.IsEmpty
+  id: IsEmpty
+  parent: LunyScript.Blocks.SequenceBlock
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: SequenceBlock.IsEmpty
+  fullName: LunyScript.Blocks.SequenceBlock.IsEmpty
+  type: Property
+  source:
+    id: IsEmpty
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\SequenceBlock.cs
+    startLine: 19
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: LunyScript.Blocks.SequenceBlock.IsEmpty*
+  implements:
+  - LunyScript.Blocks.ISequenceBlock.IsEmpty
+- uid: LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
+  commentId: M:LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
+  id: TryCreate(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
+  parent: LunyScript.Blocks.SequenceBlock
+  langs:
+  - csharp
+  - vb
+  name: TryCreate(IReadOnlyList<ScriptActionBlock>)
+  nameWithType: SequenceBlock.TryCreate(IReadOnlyList<ScriptActionBlock>)
+  fullName: LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList<LunyScript.Blocks.ScriptActionBlock>)
+  type: Method
+  source:
+    id: TryCreate
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\SequenceBlock.cs
+    startLine: 21
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static SequenceBlock TryCreate(IReadOnlyList<ScriptActionBlock> blocks)
+    parameters:
+    - id: blocks
+      type: System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock}
+    return:
+      type: LunyScript.Blocks.SequenceBlock
+    content.vb: Public Shared Function TryCreate(blocks As IReadOnlyList(Of ScriptActionBlock)) As SequenceBlock
+  overload: LunyScript.Blocks.SequenceBlock.TryCreate*
+  nameWithType.vb: SequenceBlock.TryCreate(IReadOnlyList(Of ScriptActionBlock))
+  fullName.vb: LunyScript.Blocks.SequenceBlock.TryCreate(System.Collections.Generic.IReadOnlyList(Of LunyScript.Blocks.ScriptActionBlock))
+  name.vb: TryCreate(IReadOnlyList(Of ScriptActionBlock))
+- uid: LunyScript.Blocks.SequenceBlock.#ctor(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
+  commentId: M:LunyScript.Blocks.SequenceBlock.#ctor(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})
+  id: '#ctor(System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock})'
+  parent: LunyScript.Blocks.SequenceBlock
+  langs:
+  - csharp
+  - vb
+  name: SequenceBlock(IReadOnlyList<ScriptActionBlock>)
+  nameWithType: SequenceBlock.SequenceBlock(IReadOnlyList<ScriptActionBlock>)
+  fullName: LunyScript.Blocks.SequenceBlock.SequenceBlock(System.Collections.Generic.IReadOnlyList<LunyScript.Blocks.ScriptActionBlock>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\SequenceBlock.cs
+    startLine: 23
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public SequenceBlock(IReadOnlyList<ScriptActionBlock> blocks)
+    parameters:
+    - id: blocks
+      type: System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock}
+    content.vb: Public Sub New(blocks As IReadOnlyList(Of ScriptActionBlock))
+  overload: LunyScript.Blocks.SequenceBlock.#ctor*
+  nameWithType.vb: SequenceBlock.New(IReadOnlyList(Of ScriptActionBlock))
+  fullName.vb: LunyScript.Blocks.SequenceBlock.New(System.Collections.Generic.IReadOnlyList(Of LunyScript.Blocks.ScriptActionBlock))
+  name.vb: New(IReadOnlyList(Of ScriptActionBlock))
+- uid: LunyScript.Blocks.SequenceBlock.Execute(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.SequenceBlock.Execute(LunyScript.IScriptRuntimeContext)
+  id: Execute(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.SequenceBlock
+  langs:
+  - csharp
+  - vb
+  name: Execute(IScriptRuntimeContext)
+  nameWithType: SequenceBlock.Execute(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.SequenceBlock.Execute(LunyScript.IScriptRuntimeContext)
+  type: Method
+  source:
+    id: Execute
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\Blocks\SequenceBlock.cs
+    startLine: 32
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: protected override void Execute(IScriptRuntimeContext runtimeContext)
+    parameters:
+    - id: runtimeContext
+      type: LunyScript.IScriptRuntimeContext
+    content.vb: Protected Overrides Sub Execute(runtimeContext As IScriptRuntimeContext)
+  overridden: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  overload: LunyScript.Blocks.SequenceBlock.Execute*
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: LunyScript.Blocks.ScriptBlock
+  commentId: T:LunyScript.Blocks.ScriptBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.ScriptBlock.html
+  name: ScriptBlock
+  nameWithType: ScriptBlock
+  fullName: LunyScript.Blocks.ScriptBlock
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.IScriptBlock
+  commentId: T:LunyScript.Blocks.IScriptBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.IScriptBlock.html
+  name: IScriptBlock
+  nameWithType: IScriptBlock
+  fullName: LunyScript.Blocks.IScriptBlock
+- uid: LunyScript.Blocks.ISequenceBlock
+  commentId: T:LunyScript.Blocks.ISequenceBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.ISequenceBlock.html
+  name: ISequenceBlock
+  nameWithType: ISequenceBlock
+  fullName: LunyScript.Blocks.ISequenceBlock
+- uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.Blocks.ScriptActionBlock
+  href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+  name: IsNullOrEmpty(ScriptActionBlock[])
+  nameWithType: ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock[])
+  fullName: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  nameWithType.vb: ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock())
+  fullName.vb: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock())
+  name.vb: IsNullOrEmpty(ScriptActionBlock())
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+    name: IsNullOrEmpty
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+  - name: (
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+    name: IsNullOrEmpty
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+  - name: (
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks.SequenceBlock.Id*
+  commentId: Overload:LunyScript.Blocks.SequenceBlock.Id
+  href: LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock_Id
+  name: Id
+  nameWithType: SequenceBlock.Id
+  fullName: LunyScript.Blocks.SequenceBlock.Id
+- uid: LunyScript.Blocks.ISequenceBlock.Id
+  commentId: P:LunyScript.Blocks.ISequenceBlock.Id
+  parent: LunyScript.Blocks.ISequenceBlock
+  href: LunyScript.Blocks.ISequenceBlock.html#LunyScript_Blocks_ISequenceBlock_Id
+  name: Id
+  nameWithType: ISequenceBlock.Id
+  fullName: LunyScript.Blocks.ISequenceBlock.Id
+- uid: LunyScript.ScriptBlockId
+  commentId: T:LunyScript.ScriptBlockId
+  parent: LunyScript
+  href: LunyScript.ScriptBlockId.html
+  name: ScriptBlockId
+  nameWithType: ScriptBlockId
+  fullName: LunyScript.ScriptBlockId
+- uid: LunyScript
+  commentId: N:LunyScript
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.Blocks.SequenceBlock.Blocks*
+  commentId: Overload:LunyScript.Blocks.SequenceBlock.Blocks
+  href: LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock_Blocks
+  name: Blocks
+  nameWithType: SequenceBlock.Blocks
+  fullName: LunyScript.Blocks.SequenceBlock.Blocks
+- uid: LunyScript.Blocks.ISequenceBlock.Blocks
+  commentId: P:LunyScript.Blocks.ISequenceBlock.Blocks
+  parent: LunyScript.Blocks.ISequenceBlock
+  href: LunyScript.Blocks.ISequenceBlock.html#LunyScript_Blocks_ISequenceBlock_Blocks
+  name: Blocks
+  nameWithType: ISequenceBlock.Blocks
+  fullName: LunyScript.Blocks.ISequenceBlock.Blocks
+- uid: System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock}
+  commentId: T:System.Collections.Generic.IReadOnlyList{LunyScript.Blocks.ScriptActionBlock}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<ScriptActionBlock>
+  nameWithType: IReadOnlyList<ScriptActionBlock>
+  fullName: System.Collections.Generic.IReadOnlyList<LunyScript.Blocks.ScriptActionBlock>
+  nameWithType.vb: IReadOnlyList(Of ScriptActionBlock)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of LunyScript.Blocks.ScriptActionBlock)
+  name.vb: IReadOnlyList(Of ScriptActionBlock)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: LunyScript.Blocks.SequenceBlock.IsEmpty*
+  commentId: Overload:LunyScript.Blocks.SequenceBlock.IsEmpty
+  href: LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock_IsEmpty
+  name: IsEmpty
+  nameWithType: SequenceBlock.IsEmpty
+  fullName: LunyScript.Blocks.SequenceBlock.IsEmpty
+- uid: LunyScript.Blocks.ISequenceBlock.IsEmpty
+  commentId: P:LunyScript.Blocks.ISequenceBlock.IsEmpty
+  parent: LunyScript.Blocks.ISequenceBlock
+  href: LunyScript.Blocks.ISequenceBlock.html#LunyScript_Blocks_ISequenceBlock_IsEmpty
+  name: IsEmpty
+  nameWithType: ISequenceBlock.IsEmpty
+  fullName: LunyScript.Blocks.ISequenceBlock.IsEmpty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: LunyScript.Blocks.SequenceBlock.TryCreate*
+  commentId: Overload:LunyScript.Blocks.SequenceBlock.TryCreate
+  href: LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock_TryCreate_System_Collections_Generic_IReadOnlyList_LunyScript_Blocks_ScriptActionBlock__
+  name: TryCreate
+  nameWithType: SequenceBlock.TryCreate
+  fullName: LunyScript.Blocks.SequenceBlock.TryCreate
+- uid: LunyScript.Blocks.SequenceBlock
+  commentId: T:LunyScript.Blocks.SequenceBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.SequenceBlock.html
+  name: SequenceBlock
+  nameWithType: SequenceBlock
+  fullName: LunyScript.Blocks.SequenceBlock
+- uid: LunyScript.Blocks.SequenceBlock.#ctor*
+  commentId: Overload:LunyScript.Blocks.SequenceBlock.#ctor
+  href: LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock__ctor_System_Collections_Generic_IReadOnlyList_LunyScript_Blocks_ScriptActionBlock__
+  name: SequenceBlock
+  nameWithType: SequenceBlock.SequenceBlock
+  fullName: LunyScript.Blocks.SequenceBlock.SequenceBlock
+  nameWithType.vb: SequenceBlock.New
+  fullName.vb: LunyScript.Blocks.SequenceBlock.New
+  name.vb: New
+- uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.ScriptActionBlock
+  href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  name: Execute(IScriptRuntimeContext)
+  nameWithType: ScriptActionBlock.Execute(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+    name: Execute
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  - name: (
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+    name: Execute
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  - name: (
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+- uid: LunyScript.Blocks.SequenceBlock.Execute*
+  commentId: Overload:LunyScript.Blocks.SequenceBlock.Execute
+  href: LunyScript.Blocks.SequenceBlock.html#LunyScript_Blocks_SequenceBlock_Execute_LunyScript_IScriptRuntimeContext_
+  name: Execute
+  nameWithType: SequenceBlock.Execute
+  fullName: LunyScript.Blocks.SequenceBlock.Execute
+- uid: LunyScript.IScriptRuntimeContext
+  commentId: T:LunyScript.IScriptRuntimeContext
+  parent: LunyScript
+  href: LunyScript.IScriptRuntimeContext.html
+  name: IScriptRuntimeContext
+  nameWithType: IScriptRuntimeContext
+  fullName: LunyScript.IScriptRuntimeContext

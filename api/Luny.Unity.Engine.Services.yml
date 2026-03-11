@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Unity.Engine.Services
+  commentId: N:Luny.Unity.Engine.Services
+  id: Luny.Unity.Engine.Services
+  children:
+  - Luny.Unity.Engine.Services.UnityApplicationService
+  - Luny.Unity.Engine.Services.UnityAssetService
+  - Luny.Unity.Engine.Services.UnityDebugService
+  - Luny.Unity.Engine.Services.UnityEditorService
+  - Luny.Unity.Engine.Services.UnityInputService
+  - Luny.Unity.Engine.Services.UnityObjectService
+  - Luny.Unity.Engine.Services.UnitySceneService
+  - Luny.Unity.Engine.Services.UnityTimeService
+  langs:
+  - csharp
+  - vb
+  name: Luny.Unity.Engine.Services
+  nameWithType: Luny.Unity.Engine.Services
+  fullName: Luny.Unity.Engine.Services
+  type: Namespace
+  assemblies:
+  - Luny.Unity
+references:
+- uid: Luny.Unity.Engine.Services.UnityObjectService
+  commentId: T:Luny.Unity.Engine.Services.UnityObjectService
+  href: Luny.Unity.Engine.Services.UnityObjectService.html
+  name: UnityObjectService
+  nameWithType: UnityObjectService
+  fullName: Luny.Unity.Engine.Services.UnityObjectService
+- uid: Luny.Unity.Engine.Services.UnityDebugService
+  commentId: T:Luny.Unity.Engine.Services.UnityDebugService
+  href: Luny.Unity.Engine.Services.UnityDebugService.html
+  name: UnityDebugService
+  nameWithType: UnityDebugService
+  fullName: Luny.Unity.Engine.Services.UnityDebugService
+- uid: Luny.Unity.Engine.Services.UnityTimeService
+  commentId: T:Luny.Unity.Engine.Services.UnityTimeService
+  href: Luny.Unity.Engine.Services.UnityTimeService.html
+  name: UnityTimeService
+  nameWithType: UnityTimeService
+  fullName: Luny.Unity.Engine.Services.UnityTimeService
+- uid: Luny.Unity.Engine.Services.UnityEditorService
+  commentId: T:Luny.Unity.Engine.Services.UnityEditorService
+  href: Luny.Unity.Engine.Services.UnityEditorService.html
+  name: UnityEditorService
+  nameWithType: UnityEditorService
+  fullName: Luny.Unity.Engine.Services.UnityEditorService
+- uid: Luny.Unity.Engine.Services.UnityInputService
+  commentId: T:Luny.Unity.Engine.Services.UnityInputService
+  href: Luny.Unity.Engine.Services.UnityInputService.html
+  name: UnityInputService
+  nameWithType: UnityInputService
+  fullName: Luny.Unity.Engine.Services.UnityInputService
+- uid: Luny.Unity.Engine.Services.UnityApplicationService
+  commentId: T:Luny.Unity.Engine.Services.UnityApplicationService
+  href: Luny.Unity.Engine.Services.UnityApplicationService.html
+  name: UnityApplicationService
+  nameWithType: UnityApplicationService
+  fullName: Luny.Unity.Engine.Services.UnityApplicationService
+- uid: Luny.Unity.Engine.Services.UnityAssetService
+  commentId: T:Luny.Unity.Engine.Services.UnityAssetService
+  href: Luny.Unity.Engine.Services.UnityAssetService.html
+  name: UnityAssetService
+  nameWithType: UnityAssetService
+  fullName: Luny.Unity.Engine.Services.UnityAssetService
+- uid: Luny.Unity.Engine.Services.UnitySceneService
+  commentId: T:Luny.Unity.Engine.Services.UnitySceneService
+  href: Luny.Unity.Engine.Services.UnitySceneService.html
+  name: UnitySceneService
+  nameWithType: UnitySceneService
+  fullName: Luny.Unity.Engine.Services.UnitySceneService

@@ -1,0 +1,1754 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.TransformBuilder
+  commentId: T:LunyScript.TransformBuilder
+  id: TransformBuilder
+  parent: LunyScript
+  children:
+  - LunyScript.TransformBuilder.LookAt(Luny.Engine.Bridge.ILunyObject)
+  - LunyScript.TransformBuilder.MoveBack(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.MoveBy(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2},LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.MoveDown(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.MoveForward(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.MoveLeft(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.MoveRight(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.MoveTowards(Luny.Engine.Bridge.ILunyObject)
+  - LunyScript.TransformBuilder.MoveUp(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.RotateTowards(Luny.Engine.Bridge.ILunyObject)
+  - LunyScript.TransformBuilder.ScaleTowards(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  - LunyScript.TransformBuilder.SetLocalPosition(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  - LunyScript.TransformBuilder.SetLocalRotation(Luny.Engine.Bridge.LunyVector3)
+  - LunyScript.TransformBuilder.SetLocalRotation(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  - LunyScript.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  - LunyScript.TransformBuilder.SetLocalScale(System.Double)
+  - LunyScript.TransformBuilder.SetPosition(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  - LunyScript.TransformBuilder.SetRotation(Luny.Engine.Bridge.LunyVector3)
+  - LunyScript.TransformBuilder.SetRotation(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  - LunyScript.TransformBuilder.ShiftBack(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.ShiftBy(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2},LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.ShiftDown(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.ShiftForward(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.ShiftLeft(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.ShiftRight(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  - LunyScript.TransformBuilder.ShiftUp(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  langs:
+  - csharp
+  - vb
+  name: TransformBuilder
+  nameWithType: TransformBuilder
+  fullName: LunyScript.TransformBuilder
+  type: Struct
+  source:
+    id: TransformBuilder
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 11
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public readonly struct TransformBuilder
+    content.vb: Public Structure TransformBuilder
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LunyScript.TransformBuilder.SetPosition(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  commentId: M:LunyScript.TransformBuilder.SetPosition(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  id: SetPosition(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetPosition(VariableBlock<LunyVector3>)
+  nameWithType: TransformBuilder.SetPosition(VariableBlock<LunyVector3>)
+  fullName: LunyScript.TransformBuilder.SetPosition(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector3>)
+  type: Method
+  source:
+    id: SetPosition
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 20
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Instantly set the World position.
+  example: []
+  syntax:
+    content: public TransformPositionSetWorldBlock SetPosition(VariableBlock<LunyVector3> position)
+    parameters:
+    - id: position
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3}
+    return:
+      type: LunyScript.Blocks.TransformPositionSetWorldBlock
+    content.vb: Public Function SetPosition(position As VariableBlock(Of LunyVector3)) As TransformPositionSetWorldBlock
+  overload: LunyScript.TransformBuilder.SetPosition*
+  nameWithType.vb: TransformBuilder.SetPosition(VariableBlock(Of LunyVector3))
+  fullName.vb: LunyScript.TransformBuilder.SetPosition(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: SetPosition(VariableBlock(Of LunyVector3))
+- uid: LunyScript.TransformBuilder.SetLocalPosition(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  commentId: M:LunyScript.TransformBuilder.SetLocalPosition(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  id: SetLocalPosition(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetLocalPosition(VariableBlock<LunyVector3>)
+  nameWithType: TransformBuilder.SetLocalPosition(VariableBlock<LunyVector3>)
+  fullName: LunyScript.TransformBuilder.SetLocalPosition(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector3>)
+  type: Method
+  source:
+    id: SetLocalPosition
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 24
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Instantly set the Local position.
+  example: []
+  syntax:
+    content: public TransformPositionSetLocalBlock SetLocalPosition(VariableBlock<LunyVector3> position)
+    parameters:
+    - id: position
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3}
+    return:
+      type: LunyScript.Blocks.TransformPositionSetLocalBlock
+    content.vb: Public Function SetLocalPosition(position As VariableBlock(Of LunyVector3)) As TransformPositionSetLocalBlock
+  overload: LunyScript.TransformBuilder.SetLocalPosition*
+  nameWithType.vb: TransformBuilder.SetLocalPosition(VariableBlock(Of LunyVector3))
+  fullName.vb: LunyScript.TransformBuilder.SetLocalPosition(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: SetLocalPosition(VariableBlock(Of LunyVector3))
+- uid: LunyScript.TransformBuilder.SetRotation(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:LunyScript.TransformBuilder.SetRotation(Luny.Engine.Bridge.LunyVector3)
+  id: SetRotation(Luny.Engine.Bridge.LunyVector3)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetRotation(LunyVector3)
+  nameWithType: TransformBuilder.SetRotation(LunyVector3)
+  fullName: LunyScript.TransformBuilder.SetRotation(Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: SetRotation
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 28
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Instantly set the World rotation.
+  example: []
+  syntax:
+    content: public TransformRotationSetWorldBlock SetRotation(LunyVector3 eulerAngles)
+    parameters:
+    - id: eulerAngles
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: LunyScript.Blocks.TransformRotationSetWorldBlock
+    content.vb: Public Function SetRotation(eulerAngles As LunyVector3) As TransformRotationSetWorldBlock
+  overload: LunyScript.TransformBuilder.SetRotation*
+- uid: LunyScript.TransformBuilder.SetRotation(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  commentId: M:LunyScript.TransformBuilder.SetRotation(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  id: SetRotation(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetRotation(VariableBlock<LunyQuaternion>)
+  nameWithType: TransformBuilder.SetRotation(VariableBlock<LunyQuaternion>)
+  fullName: LunyScript.TransformBuilder.SetRotation(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyQuaternion>)
+  type: Method
+  source:
+    id: SetRotation
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 32
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Instantly set the World rotation.
+  example: []
+  syntax:
+    content: public TransformRotationSetWorldBlock SetRotation(VariableBlock<LunyQuaternion> rotation)
+    parameters:
+    - id: rotation
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
+    return:
+      type: LunyScript.Blocks.TransformRotationSetWorldBlock
+    content.vb: Public Function SetRotation(rotation As VariableBlock(Of LunyQuaternion)) As TransformRotationSetWorldBlock
+  overload: LunyScript.TransformBuilder.SetRotation*
+  nameWithType.vb: TransformBuilder.SetRotation(VariableBlock(Of LunyQuaternion))
+  fullName.vb: LunyScript.TransformBuilder.SetRotation(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyQuaternion))
+  name.vb: SetRotation(VariableBlock(Of LunyQuaternion))
+- uid: LunyScript.TransformBuilder.SetLocalRotation(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:LunyScript.TransformBuilder.SetLocalRotation(Luny.Engine.Bridge.LunyVector3)
+  id: SetLocalRotation(Luny.Engine.Bridge.LunyVector3)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetLocalRotation(LunyVector3)
+  nameWithType: TransformBuilder.SetLocalRotation(LunyVector3)
+  fullName: LunyScript.TransformBuilder.SetLocalRotation(Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  source:
+    id: SetLocalRotation
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 36
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Instantly set the Local rotation.
+  example: []
+  syntax:
+    content: public TransformRotationSetLocalBlock SetLocalRotation(LunyVector3 eulerAngles)
+    parameters:
+    - id: eulerAngles
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: LunyScript.Blocks.TransformRotationSetLocalBlock
+    content.vb: Public Function SetLocalRotation(eulerAngles As LunyVector3) As TransformRotationSetLocalBlock
+  overload: LunyScript.TransformBuilder.SetLocalRotation*
+- uid: LunyScript.TransformBuilder.SetLocalRotation(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  commentId: M:LunyScript.TransformBuilder.SetLocalRotation(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  id: SetLocalRotation(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetLocalRotation(VariableBlock<LunyQuaternion>)
+  nameWithType: TransformBuilder.SetLocalRotation(VariableBlock<LunyQuaternion>)
+  fullName: LunyScript.TransformBuilder.SetLocalRotation(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyQuaternion>)
+  type: Method
+  source:
+    id: SetLocalRotation
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 40
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Instantly set the Local rotation.
+  example: []
+  syntax:
+    content: public TransformRotationSetLocalBlock SetLocalRotation(VariableBlock<LunyQuaternion> rotation)
+    parameters:
+    - id: rotation
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
+    return:
+      type: LunyScript.Blocks.TransformRotationSetLocalBlock
+    content.vb: Public Function SetLocalRotation(rotation As VariableBlock(Of LunyQuaternion)) As TransformRotationSetLocalBlock
+  overload: LunyScript.TransformBuilder.SetLocalRotation*
+  nameWithType.vb: TransformBuilder.SetLocalRotation(VariableBlock(Of LunyQuaternion))
+  fullName.vb: LunyScript.TransformBuilder.SetLocalRotation(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyQuaternion))
+  name.vb: SetLocalRotation(VariableBlock(Of LunyQuaternion))
+- uid: LunyScript.TransformBuilder.SetLocalScale(System.Double)
+  commentId: M:LunyScript.TransformBuilder.SetLocalScale(System.Double)
+  id: SetLocalScale(System.Double)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetLocalScale(double)
+  nameWithType: TransformBuilder.SetLocalScale(double)
+  fullName: LunyScript.TransformBuilder.SetLocalScale(double)
+  type: Method
+  source:
+    id: SetLocalScale
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 44
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Instantly set the Local scale.
+  example: []
+  syntax:
+    content: public TransformScaleSetLocalBlock SetLocalScale(double scale)
+    parameters:
+    - id: scale
+      type: System.Double
+    return:
+      type: LunyScript.Blocks.TransformScaleSetLocalBlock
+    content.vb: Public Function SetLocalScale(scale As Double) As TransformScaleSetLocalBlock
+  overload: LunyScript.TransformBuilder.SetLocalScale*
+  nameWithType.vb: TransformBuilder.SetLocalScale(Double)
+  fullName.vb: LunyScript.TransformBuilder.SetLocalScale(Double)
+  name.vb: SetLocalScale(Double)
+- uid: LunyScript.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock)
+  id: SetLocalScale(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetLocalScale(VariableBlock)
+  nameWithType: TransformBuilder.SetLocalScale(VariableBlock)
+  fullName: LunyScript.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: SetLocalScale
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 46
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public TransformScaleSetLocalBlock SetLocalScale(VariableBlock scale)
+    parameters:
+    - id: scale
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformScaleSetLocalBlock
+    content.vb: Public Function SetLocalScale(scale As VariableBlock) As TransformScaleSetLocalBlock
+  overload: LunyScript.TransformBuilder.SetLocalScale*
+- uid: LunyScript.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  commentId: M:LunyScript.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  id: SetLocalScale(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: SetLocalScale(VariableBlock<LunyVector3>)
+  nameWithType: TransformBuilder.SetLocalScale(VariableBlock<LunyVector3>)
+  fullName: LunyScript.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector3>)
+  type: Method
+  source:
+    id: SetLocalScale
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 50
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Instantly set the Local scale.
+  example: []
+  syntax:
+    content: public TransformScaleSetLocalBlock SetLocalScale(VariableBlock<LunyVector3> scale)
+    parameters:
+    - id: scale
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3}
+    return:
+      type: LunyScript.Blocks.TransformScaleSetLocalBlock
+    content.vb: Public Function SetLocalScale(scale As VariableBlock(Of LunyVector3)) As TransformScaleSetLocalBlock
+  overload: LunyScript.TransformBuilder.SetLocalScale*
+  nameWithType.vb: TransformBuilder.SetLocalScale(VariableBlock(Of LunyVector3))
+  fullName.vb: LunyScript.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: SetLocalScale(VariableBlock(Of LunyVector3))
+- uid: LunyScript.TransformBuilder.LookAt(Luny.Engine.Bridge.ILunyObject)
+  commentId: M:LunyScript.TransformBuilder.LookAt(Luny.Engine.Bridge.ILunyObject)
+  id: LookAt(Luny.Engine.Bridge.ILunyObject)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: LookAt(ILunyObject)
+  nameWithType: TransformBuilder.LookAt(ILunyObject)
+  fullName: LunyScript.TransformBuilder.LookAt(Luny.Engine.Bridge.ILunyObject)
+  type: Method
+  source:
+    id: LookAt
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 58
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Instantly orient to face the target.
+
+    Chain <code>.WorldUp(v)</code>, <code>.LockX()</code>, <code>.LockY()</code>, <code>.LockZ()</code> then call <code>.Do()</code>.
+  example: []
+  syntax:
+    content: public TransformLookAtBuilder<TransformBuilderReady> LookAt(ILunyObject target)
+    parameters:
+    - id: target
+      type: Luny.Engine.Bridge.ILunyObject
+    return:
+      type: LunyScript.TransformLookAtBuilder{LunyScript.TransformBuilderReady}
+    content.vb: Public Function LookAt(target As ILunyObject) As TransformLookAtBuilder(Of TransformBuilderReady)
+  overload: LunyScript.TransformBuilder.LookAt*
+- uid: LunyScript.TransformBuilder.MoveTowards(Luny.Engine.Bridge.ILunyObject)
+  commentId: M:LunyScript.TransformBuilder.MoveTowards(Luny.Engine.Bridge.ILunyObject)
+  id: MoveTowards(Luny.Engine.Bridge.ILunyObject)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: MoveTowards(ILunyObject)
+  nameWithType: TransformBuilder.MoveTowards(ILunyObject)
+  fullName: LunyScript.TransformBuilder.MoveTowards(Luny.Engine.Bridge.ILunyObject)
+  type: Method
+  source:
+    id: MoveTowards
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 72
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Move toward the target position each frame.
+
+    Chain <code>.Speed(n)</code>, <code>.Responsiveness(n)</code>, <code>.DeadZone(n)</code>, <code>.LockX/Y/Z()</code>
+
+    then call <code>.Do()</code> (linear), <code>.Lerp()</code> or <code>.Slerp()</code>.
+  example: []
+  syntax:
+    content: public TransformPositionBuilder<TransformBuilderReady> MoveTowards(ILunyObject target)
+    parameters:
+    - id: target
+      type: Luny.Engine.Bridge.ILunyObject
+    return:
+      type: LunyScript.TransformPositionBuilder{LunyScript.TransformBuilderReady}
+    content.vb: Public Function MoveTowards(target As ILunyObject) As TransformPositionBuilder(Of TransformBuilderReady)
+  overload: LunyScript.TransformBuilder.MoveTowards*
+- uid: LunyScript.TransformBuilder.RotateTowards(Luny.Engine.Bridge.ILunyObject)
+  commentId: M:LunyScript.TransformBuilder.RotateTowards(Luny.Engine.Bridge.ILunyObject)
+  id: RotateTowards(Luny.Engine.Bridge.ILunyObject)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: RotateTowards(ILunyObject)
+  nameWithType: TransformBuilder.RotateTowards(ILunyObject)
+  fullName: LunyScript.TransformBuilder.RotateTowards(Luny.Engine.Bridge.ILunyObject)
+  type: Method
+  source:
+    id: RotateTowards
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 89
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Rotate toward the target orientation each frame.
+
+    Chain <code>.Speed(n)</code>, <code>.Responsiveness(n)</code>, <code>.DeadZone(n)</code>, <code>.LockX/Y/Z()</code>
+
+    then call <code>.Do()</code> (degrees/sec), <code>.Lerp()</code> or <code>.Slerp()</code>.
+  example: []
+  syntax:
+    content: public TransformRotationBuilder<TransformBuilderReady> RotateTowards(ILunyObject target)
+    parameters:
+    - id: target
+      type: Luny.Engine.Bridge.ILunyObject
+    return:
+      type: LunyScript.TransformRotationBuilder{LunyScript.TransformBuilderReady}
+    content.vb: Public Function RotateTowards(target As ILunyObject) As TransformRotationBuilder(Of TransformBuilderReady)
+  overload: LunyScript.TransformBuilder.RotateTowards*
+- uid: LunyScript.TransformBuilder.ScaleTowards(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  commentId: M:LunyScript.TransformBuilder.ScaleTowards(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  id: ScaleTowards(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: ScaleTowards(VariableBlock<LunyVector3>)
+  nameWithType: TransformBuilder.ScaleTowards(VariableBlock<LunyVector3>)
+  fullName: LunyScript.TransformBuilder.ScaleTowards(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector3>)
+  type: Method
+  source:
+    id: ScaleTowards
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 107
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Scale toward the target scale each frame.
+
+    Chain <code>.Speed(n)</code>, <code>.Responsiveness(n)</code>, <code>.DeadZone(n)</code>, <code>.LockX/Y/Z()</code>
+
+    then call <code>.Do()</code> (linear), <code>.Lerp()</code> or <code>.Slerp()</code>.
+  example: []
+  syntax:
+    content: public TransformScaleBuilder<TransformBuilderReady> ScaleTowards(VariableBlock<LunyVector3> targetScale)
+    parameters:
+    - id: targetScale
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3}
+    return:
+      type: LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+    content.vb: Public Function ScaleTowards(targetScale As VariableBlock(Of LunyVector3)) As TransformScaleBuilder(Of TransformBuilderReady)
+  overload: LunyScript.TransformBuilder.ScaleTowards*
+  nameWithType.vb: TransformBuilder.ScaleTowards(VariableBlock(Of LunyVector3))
+  fullName.vb: LunyScript.TransformBuilder.ScaleTowards(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: ScaleTowards(VariableBlock(Of LunyVector3))
+- uid: LunyScript.TransformBuilder.MoveBy(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2},LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.MoveBy(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2},LunyScript.Blocks.VariableBlock)
+  id: MoveBy(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2},LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: MoveBy(VariableBlock<LunyVector2>, VariableBlock)
+  nameWithType: TransformBuilder.MoveBy(VariableBlock<LunyVector2>, VariableBlock)
+  fullName: LunyScript.TransformBuilder.MoveBy(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector2>, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: MoveBy
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 129
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Forward/Backward based on orientation.
+  example: []
+  syntax:
+    content: public TransformPositionMoveByBlock MoveBy(VariableBlock<LunyVector2> direction, VariableBlock speed = null)
+    parameters:
+    - id: direction
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2}
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveByBlock
+    content.vb: Public Function MoveBy(direction As VariableBlock(Of LunyVector2), speed As VariableBlock = Nothing) As TransformPositionMoveByBlock
+  overload: LunyScript.TransformBuilder.MoveBy*
+  nameWithType.vb: TransformBuilder.MoveBy(VariableBlock(Of LunyVector2), VariableBlock)
+  fullName.vb: LunyScript.TransformBuilder.MoveBy(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector2), LunyScript.Blocks.VariableBlock)
+  name.vb: MoveBy(VariableBlock(Of LunyVector2), VariableBlock)
+- uid: LunyScript.TransformBuilder.MoveForward(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.MoveForward(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: MoveForward(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: MoveForward(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.MoveForward(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.MoveForward(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: MoveForward
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 133
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Forward/Backward based on orientation.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock MoveForward(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function MoveForward(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.MoveForward*
+- uid: LunyScript.TransformBuilder.MoveRight(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.MoveRight(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: MoveRight(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: MoveRight(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.MoveRight(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.MoveRight(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: MoveRight
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 137
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Sideways relative to orientation.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock MoveRight(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function MoveRight(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.MoveRight*
+- uid: LunyScript.TransformBuilder.MoveUp(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.MoveUp(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: MoveUp(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: MoveUp(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.MoveUp(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.MoveUp(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: MoveUp
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 141
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Sideways relative to orientation.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock MoveUp(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function MoveUp(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.MoveUp*
+- uid: LunyScript.TransformBuilder.MoveBack(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.MoveBack(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: MoveBack(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: MoveBack(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.MoveBack(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.MoveBack(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: MoveBack
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 145
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Forward/Backward based on orientation.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock MoveBack(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function MoveBack(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.MoveBack*
+- uid: LunyScript.TransformBuilder.MoveLeft(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.MoveLeft(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: MoveLeft(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: MoveLeft(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.MoveLeft(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.MoveLeft(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: MoveLeft
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 149
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Sideways relative to orientation.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock MoveLeft(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function MoveLeft(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.MoveLeft*
+- uid: LunyScript.TransformBuilder.MoveDown(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.MoveDown(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: MoveDown(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: MoveDown(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.MoveDown(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.MoveDown(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: MoveDown
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 153
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Sideways relative to orientation.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock MoveDown(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function MoveDown(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.MoveDown*
+- uid: LunyScript.TransformBuilder.ShiftBy(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2},LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.ShiftBy(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2},LunyScript.Blocks.VariableBlock)
+  id: ShiftBy(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2},LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: ShiftBy(VariableBlock<LunyVector2>, VariableBlock)
+  nameWithType: TransformBuilder.ShiftBy(VariableBlock<LunyVector2>, VariableBlock)
+  fullName: LunyScript.TransformBuilder.ShiftBy(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector2>, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: ShiftBy
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 159
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Forward/Backward based on orientation.
+  example: []
+  syntax:
+    content: public TransformPositionMoveByBlock ShiftBy(VariableBlock<LunyVector2> direction, VariableBlock speed = null)
+    parameters:
+    - id: direction
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2}
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveByBlock
+    content.vb: Public Function ShiftBy(direction As VariableBlock(Of LunyVector2), speed As VariableBlock = Nothing) As TransformPositionMoveByBlock
+  overload: LunyScript.TransformBuilder.ShiftBy*
+  nameWithType.vb: TransformBuilder.ShiftBy(VariableBlock(Of LunyVector2), VariableBlock)
+  fullName.vb: LunyScript.TransformBuilder.ShiftBy(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector2), LunyScript.Blocks.VariableBlock)
+  name.vb: ShiftBy(VariableBlock(Of LunyVector2), VariableBlock)
+- uid: LunyScript.TransformBuilder.ShiftForward(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.ShiftForward(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: ShiftForward(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: ShiftForward(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.ShiftForward(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.ShiftForward(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: ShiftForward
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 163
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Forward/backward on the World forward axis.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock ShiftForward(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function ShiftForward(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.ShiftForward*
+- uid: LunyScript.TransformBuilder.ShiftRight(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.ShiftRight(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: ShiftRight(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: ShiftRight(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.ShiftRight(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.ShiftRight(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: ShiftRight
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 167
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Left/Right on the World right axis.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock ShiftRight(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function ShiftRight(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.ShiftRight*
+- uid: LunyScript.TransformBuilder.ShiftUp(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.ShiftUp(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: ShiftUp(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: ShiftUp(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.ShiftUp(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.ShiftUp(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: ShiftUp
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 171
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Up/Down on the World up axis.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock ShiftUp(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function ShiftUp(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.ShiftUp*
+- uid: LunyScript.TransformBuilder.ShiftBack(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.ShiftBack(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: ShiftBack(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: ShiftBack(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.ShiftBack(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.ShiftBack(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: ShiftBack
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 175
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Forward/backward on the World forward axis.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock ShiftBack(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function ShiftBack(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.ShiftBack*
+- uid: LunyScript.TransformBuilder.ShiftLeft(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.ShiftLeft(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: ShiftLeft(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: ShiftLeft(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.ShiftLeft(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.ShiftLeft(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: ShiftLeft
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 179
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Left/Right on the World right axis.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock ShiftLeft(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function ShiftLeft(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.ShiftLeft*
+- uid: LunyScript.TransformBuilder.ShiftDown(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.TransformBuilder.ShiftDown(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: ShiftDown(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.TransformBuilder
+  langs:
+  - csharp
+  - vb
+  name: ShiftDown(VariableBlock, VariableBlock)
+  nameWithType: TransformBuilder.ShiftDown(VariableBlock, VariableBlock)
+  fullName: LunyScript.TransformBuilder.ShiftDown(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
+  type: Method
+  source:
+    id: ShiftDown
+    path: U:\LunyScratch\LunyScript_Examples_Unity\Packages\de.codesmile.lunyscript\LunyScript\ScriptApi\Transform\TransformBuilder.cs
+    startLine: 183
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Up/Down on the World up axis.
+  example: []
+  syntax:
+    content: public TransformPositionMoveRelativeBlock ShiftDown(VariableBlock amount, VariableBlock speed = null)
+    parameters:
+    - id: amount
+      type: LunyScript.Blocks.VariableBlock
+    - id: speed
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    content.vb: Public Function ShiftDown(amount As VariableBlock, speed As VariableBlock = Nothing) As TransformPositionMoveRelativeBlock
+  overload: LunyScript.TransformBuilder.ShiftDown*
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.TransformBuilder.SetPosition*
+  commentId: Overload:LunyScript.TransformBuilder.SetPosition
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_SetPosition_LunyScript_Blocks_VariableBlock_Luny_Engine_Bridge_LunyVector3__
+  name: SetPosition
+  nameWithType: TransformBuilder.SetPosition
+  fullName: LunyScript.TransformBuilder.SetPosition
+- uid: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3}
+  commentId: T:LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3}
+  parent: LunyScript.Blocks
+  definition: LunyScript.Blocks.VariableBlock`1
+  href: LunyScript.Blocks.VariableBlock-1.html
+  name: VariableBlock<LunyVector3>
+  nameWithType: VariableBlock<LunyVector3>
+  fullName: LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector3>
+  nameWithType.vb: VariableBlock(Of LunyVector3)
+  fullName.vb: LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector3)
+  name.vb: VariableBlock(Of LunyVector3)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: <
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    href: Luny.Engine.Bridge.LunyVector3.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    href: Luny.Engine.Bridge.LunyVector3.html
+  - name: )
+- uid: LunyScript.Blocks.TransformPositionSetWorldBlock
+  commentId: T:LunyScript.Blocks.TransformPositionSetWorldBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.TransformPositionSetWorldBlock.html
+  name: TransformPositionSetWorldBlock
+  nameWithType: TransformPositionSetWorldBlock
+  fullName: LunyScript.Blocks.TransformPositionSetWorldBlock
+- uid: LunyScript.Blocks.VariableBlock`1
+  commentId: T:LunyScript.Blocks.VariableBlock`1
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.VariableBlock-1.html
+  name: VariableBlock<T>
+  nameWithType: VariableBlock<T>
+  fullName: LunyScript.Blocks.VariableBlock<T>
+  nameWithType.vb: VariableBlock(Of T)
+  fullName.vb: LunyScript.Blocks.VariableBlock(Of T)
+  name.vb: VariableBlock(Of T)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    href: LunyScript.Blocks.html
+- uid: LunyScript.TransformBuilder.SetLocalPosition*
+  commentId: Overload:LunyScript.TransformBuilder.SetLocalPosition
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_SetLocalPosition_LunyScript_Blocks_VariableBlock_Luny_Engine_Bridge_LunyVector3__
+  name: SetLocalPosition
+  nameWithType: TransformBuilder.SetLocalPosition
+  fullName: LunyScript.TransformBuilder.SetLocalPosition
+- uid: LunyScript.Blocks.TransformPositionSetLocalBlock
+  commentId: T:LunyScript.Blocks.TransformPositionSetLocalBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.TransformPositionSetLocalBlock.html
+  name: TransformPositionSetLocalBlock
+  nameWithType: TransformPositionSetLocalBlock
+  fullName: LunyScript.Blocks.TransformPositionSetLocalBlock
+- uid: LunyScript.TransformBuilder.SetRotation*
+  commentId: Overload:LunyScript.TransformBuilder.SetRotation
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_SetRotation_Luny_Engine_Bridge_LunyVector3_
+  name: SetRotation
+  nameWithType: TransformBuilder.SetRotation
+  fullName: LunyScript.TransformBuilder.SetRotation
+- uid: Luny.Engine.Bridge.LunyVector3
+  commentId: T:Luny.Engine.Bridge.LunyVector3
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.LunyVector3.html
+  name: LunyVector3
+  nameWithType: LunyVector3
+  fullName: Luny.Engine.Bridge.LunyVector3
+- uid: LunyScript.Blocks.TransformRotationSetWorldBlock
+  commentId: T:LunyScript.Blocks.TransformRotationSetWorldBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.TransformRotationSetWorldBlock.html
+  name: TransformRotationSetWorldBlock
+  nameWithType: TransformRotationSetWorldBlock
+  fullName: LunyScript.Blocks.TransformRotationSetWorldBlock
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    href: Luny.Engine.Bridge.html
+- uid: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
+  commentId: T:LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
+  parent: LunyScript.Blocks
+  definition: LunyScript.Blocks.VariableBlock`1
+  href: LunyScript.Blocks.VariableBlock-1.html
+  name: VariableBlock<LunyQuaternion>
+  nameWithType: VariableBlock<LunyQuaternion>
+  fullName: LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyQuaternion>
+  nameWithType.vb: VariableBlock(Of LunyQuaternion)
+  fullName.vb: LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyQuaternion)
+  name.vb: VariableBlock(Of LunyQuaternion)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: <
+  - uid: Luny.Engine.Bridge.LunyQuaternion
+    name: LunyQuaternion
+    href: Luny.Engine.Bridge.LunyQuaternion.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyQuaternion
+    name: LunyQuaternion
+    href: Luny.Engine.Bridge.LunyQuaternion.html
+  - name: )
+- uid: LunyScript.TransformBuilder.SetLocalRotation*
+  commentId: Overload:LunyScript.TransformBuilder.SetLocalRotation
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_SetLocalRotation_Luny_Engine_Bridge_LunyVector3_
+  name: SetLocalRotation
+  nameWithType: TransformBuilder.SetLocalRotation
+  fullName: LunyScript.TransformBuilder.SetLocalRotation
+- uid: LunyScript.Blocks.TransformRotationSetLocalBlock
+  commentId: T:LunyScript.Blocks.TransformRotationSetLocalBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.TransformRotationSetLocalBlock.html
+  name: TransformRotationSetLocalBlock
+  nameWithType: TransformRotationSetLocalBlock
+  fullName: LunyScript.Blocks.TransformRotationSetLocalBlock
+- uid: LunyScript.TransformBuilder.SetLocalScale*
+  commentId: Overload:LunyScript.TransformBuilder.SetLocalScale
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_SetLocalScale_System_Double_
+  name: SetLocalScale
+  nameWithType: TransformBuilder.SetLocalScale
+  fullName: LunyScript.TransformBuilder.SetLocalScale
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: LunyScript.Blocks.TransformScaleSetLocalBlock
+  commentId: T:LunyScript.Blocks.TransformScaleSetLocalBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.TransformScaleSetLocalBlock.html
+  name: TransformScaleSetLocalBlock
+  nameWithType: TransformScaleSetLocalBlock
+  fullName: LunyScript.Blocks.TransformScaleSetLocalBlock
+- uid: LunyScript.Blocks.VariableBlock
+  commentId: T:LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.VariableBlock.html
+  name: VariableBlock
+  nameWithType: VariableBlock
+  fullName: LunyScript.Blocks.VariableBlock
+- uid: LunyScript.TransformBuilder.LookAt*
+  commentId: Overload:LunyScript.TransformBuilder.LookAt
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_LookAt_Luny_Engine_Bridge_ILunyObject_
+  name: LookAt
+  nameWithType: TransformBuilder.LookAt
+  fullName: LunyScript.TransformBuilder.LookAt
+- uid: Luny.Engine.Bridge.ILunyObject
+  commentId: T:Luny.Engine.Bridge.ILunyObject
+  parent: Luny.Engine.Bridge
+  href: Luny.Engine.Bridge.ILunyObject.html
+  name: ILunyObject
+  nameWithType: ILunyObject
+  fullName: Luny.Engine.Bridge.ILunyObject
+- uid: LunyScript.TransformLookAtBuilder{LunyScript.TransformBuilderReady}
+  commentId: T:LunyScript.TransformLookAtBuilder{LunyScript.TransformBuilderReady}
+  parent: LunyScript
+  definition: LunyScript.TransformLookAtBuilder`1
+  href: LunyScript.TransformLookAtBuilder-1.html
+  name: TransformLookAtBuilder<TransformBuilderReady>
+  nameWithType: TransformLookAtBuilder<TransformBuilderReady>
+  fullName: LunyScript.TransformLookAtBuilder<LunyScript.TransformBuilderReady>
+  nameWithType.vb: TransformLookAtBuilder(Of TransformBuilderReady)
+  fullName.vb: LunyScript.TransformLookAtBuilder(Of LunyScript.TransformBuilderReady)
+  name.vb: TransformLookAtBuilder(Of TransformBuilderReady)
+  spec.csharp:
+  - uid: LunyScript.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    href: LunyScript.TransformLookAtBuilder-1.html
+  - name: <
+  - uid: LunyScript.TransformBuilderReady
+    name: TransformBuilderReady
+    href: LunyScript.TransformBuilderReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    href: LunyScript.TransformLookAtBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.TransformBuilderReady
+    name: TransformBuilderReady
+    href: LunyScript.TransformBuilderReady.html
+  - name: )
+- uid: LunyScript.TransformLookAtBuilder`1
+  commentId: T:LunyScript.TransformLookAtBuilder`1
+  parent: LunyScript
+  href: LunyScript.TransformLookAtBuilder-1.html
+  name: TransformLookAtBuilder<T>
+  nameWithType: TransformLookAtBuilder<T>
+  fullName: LunyScript.TransformLookAtBuilder<T>
+  nameWithType.vb: TransformLookAtBuilder(Of T)
+  fullName.vb: LunyScript.TransformLookAtBuilder(Of T)
+  name.vb: TransformLookAtBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    href: LunyScript.TransformLookAtBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    href: LunyScript.TransformLookAtBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.TransformBuilder.MoveTowards*
+  commentId: Overload:LunyScript.TransformBuilder.MoveTowards
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_MoveTowards_Luny_Engine_Bridge_ILunyObject_
+  name: MoveTowards
+  nameWithType: TransformBuilder.MoveTowards
+  fullName: LunyScript.TransformBuilder.MoveTowards
+- uid: LunyScript.TransformPositionBuilder{LunyScript.TransformBuilderReady}
+  commentId: T:LunyScript.TransformPositionBuilder{LunyScript.TransformBuilderReady}
+  parent: LunyScript
+  definition: LunyScript.TransformPositionBuilder`1
+  href: LunyScript.TransformPositionBuilder-1.html
+  name: TransformPositionBuilder<TransformBuilderReady>
+  nameWithType: TransformPositionBuilder<TransformBuilderReady>
+  fullName: LunyScript.TransformPositionBuilder<LunyScript.TransformBuilderReady>
+  nameWithType.vb: TransformPositionBuilder(Of TransformBuilderReady)
+  fullName.vb: LunyScript.TransformPositionBuilder(Of LunyScript.TransformBuilderReady)
+  name.vb: TransformPositionBuilder(Of TransformBuilderReady)
+  spec.csharp:
+  - uid: LunyScript.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    href: LunyScript.TransformPositionBuilder-1.html
+  - name: <
+  - uid: LunyScript.TransformBuilderReady
+    name: TransformBuilderReady
+    href: LunyScript.TransformBuilderReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    href: LunyScript.TransformPositionBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.TransformBuilderReady
+    name: TransformBuilderReady
+    href: LunyScript.TransformBuilderReady.html
+  - name: )
+- uid: LunyScript.TransformPositionBuilder`1
+  commentId: T:LunyScript.TransformPositionBuilder`1
+  parent: LunyScript
+  href: LunyScript.TransformPositionBuilder-1.html
+  name: TransformPositionBuilder<T>
+  nameWithType: TransformPositionBuilder<T>
+  fullName: LunyScript.TransformPositionBuilder<T>
+  nameWithType.vb: TransformPositionBuilder(Of T)
+  fullName.vb: LunyScript.TransformPositionBuilder(Of T)
+  name.vb: TransformPositionBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    href: LunyScript.TransformPositionBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    href: LunyScript.TransformPositionBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.TransformBuilder.RotateTowards*
+  commentId: Overload:LunyScript.TransformBuilder.RotateTowards
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_RotateTowards_Luny_Engine_Bridge_ILunyObject_
+  name: RotateTowards
+  nameWithType: TransformBuilder.RotateTowards
+  fullName: LunyScript.TransformBuilder.RotateTowards
+- uid: LunyScript.TransformRotationBuilder{LunyScript.TransformBuilderReady}
+  commentId: T:LunyScript.TransformRotationBuilder{LunyScript.TransformBuilderReady}
+  parent: LunyScript
+  definition: LunyScript.TransformRotationBuilder`1
+  href: LunyScript.TransformRotationBuilder-1.html
+  name: TransformRotationBuilder<TransformBuilderReady>
+  nameWithType: TransformRotationBuilder<TransformBuilderReady>
+  fullName: LunyScript.TransformRotationBuilder<LunyScript.TransformBuilderReady>
+  nameWithType.vb: TransformRotationBuilder(Of TransformBuilderReady)
+  fullName.vb: LunyScript.TransformRotationBuilder(Of LunyScript.TransformBuilderReady)
+  name.vb: TransformRotationBuilder(Of TransformBuilderReady)
+  spec.csharp:
+  - uid: LunyScript.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    href: LunyScript.TransformRotationBuilder-1.html
+  - name: <
+  - uid: LunyScript.TransformBuilderReady
+    name: TransformBuilderReady
+    href: LunyScript.TransformBuilderReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    href: LunyScript.TransformRotationBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.TransformBuilderReady
+    name: TransformBuilderReady
+    href: LunyScript.TransformBuilderReady.html
+  - name: )
+- uid: LunyScript.TransformRotationBuilder`1
+  commentId: T:LunyScript.TransformRotationBuilder`1
+  parent: LunyScript
+  href: LunyScript.TransformRotationBuilder-1.html
+  name: TransformRotationBuilder<T>
+  nameWithType: TransformRotationBuilder<T>
+  fullName: LunyScript.TransformRotationBuilder<T>
+  nameWithType.vb: TransformRotationBuilder(Of T)
+  fullName.vb: LunyScript.TransformRotationBuilder(Of T)
+  name.vb: TransformRotationBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    href: LunyScript.TransformRotationBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    href: LunyScript.TransformRotationBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.TransformBuilder.ScaleTowards*
+  commentId: Overload:LunyScript.TransformBuilder.ScaleTowards
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_ScaleTowards_LunyScript_Blocks_VariableBlock_Luny_Engine_Bridge_LunyVector3__
+  name: ScaleTowards
+  nameWithType: TransformBuilder.ScaleTowards
+  fullName: LunyScript.TransformBuilder.ScaleTowards
+- uid: LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+  commentId: T:LunyScript.TransformScaleBuilder{LunyScript.TransformBuilderReady}
+  parent: LunyScript
+  definition: LunyScript.TransformScaleBuilder`1
+  href: LunyScript.TransformScaleBuilder-1.html
+  name: TransformScaleBuilder<TransformBuilderReady>
+  nameWithType: TransformScaleBuilder<TransformBuilderReady>
+  fullName: LunyScript.TransformScaleBuilder<LunyScript.TransformBuilderReady>
+  nameWithType.vb: TransformScaleBuilder(Of TransformBuilderReady)
+  fullName.vb: LunyScript.TransformScaleBuilder(Of LunyScript.TransformBuilderReady)
+  name.vb: TransformScaleBuilder(Of TransformBuilderReady)
+  spec.csharp:
+  - uid: LunyScript.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    href: LunyScript.TransformScaleBuilder-1.html
+  - name: <
+  - uid: LunyScript.TransformBuilderReady
+    name: TransformBuilderReady
+    href: LunyScript.TransformBuilderReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    href: LunyScript.TransformScaleBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.TransformBuilderReady
+    name: TransformBuilderReady
+    href: LunyScript.TransformBuilderReady.html
+  - name: )
+- uid: LunyScript.TransformScaleBuilder`1
+  commentId: T:LunyScript.TransformScaleBuilder`1
+  parent: LunyScript
+  href: LunyScript.TransformScaleBuilder-1.html
+  name: TransformScaleBuilder<T>
+  nameWithType: TransformScaleBuilder<T>
+  fullName: LunyScript.TransformScaleBuilder<T>
+  nameWithType.vb: TransformScaleBuilder(Of T)
+  fullName.vb: LunyScript.TransformScaleBuilder(Of T)
+  name.vb: TransformScaleBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    href: LunyScript.TransformScaleBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    href: LunyScript.TransformScaleBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.TransformBuilder.MoveBy*
+  commentId: Overload:LunyScript.TransformBuilder.MoveBy
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_MoveBy_LunyScript_Blocks_VariableBlock_Luny_Engine_Bridge_LunyVector2__LunyScript_Blocks_VariableBlock_
+  name: MoveBy
+  nameWithType: TransformBuilder.MoveBy
+  fullName: LunyScript.TransformBuilder.MoveBy
+- uid: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2}
+  commentId: T:LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2}
+  parent: LunyScript.Blocks
+  definition: LunyScript.Blocks.VariableBlock`1
+  href: LunyScript.Blocks.VariableBlock-1.html
+  name: VariableBlock<LunyVector2>
+  nameWithType: VariableBlock<LunyVector2>
+  fullName: LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector2>
+  nameWithType.vb: VariableBlock(Of LunyVector2)
+  fullName.vb: LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector2)
+  name.vb: VariableBlock(Of LunyVector2)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: <
+  - uid: Luny.Engine.Bridge.LunyVector2
+    name: LunyVector2
+    href: Luny.Engine.Bridge.LunyVector2.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector2
+    name: LunyVector2
+    href: Luny.Engine.Bridge.LunyVector2.html
+  - name: )
+- uid: LunyScript.Blocks.TransformPositionMoveByBlock
+  commentId: T:LunyScript.Blocks.TransformPositionMoveByBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.TransformPositionMoveByBlock.html
+  name: TransformPositionMoveByBlock
+  nameWithType: TransformPositionMoveByBlock
+  fullName: LunyScript.Blocks.TransformPositionMoveByBlock
+- uid: LunyScript.TransformBuilder.MoveForward*
+  commentId: Overload:LunyScript.TransformBuilder.MoveForward
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_MoveForward_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: MoveForward
+  nameWithType: TransformBuilder.MoveForward
+  fullName: LunyScript.TransformBuilder.MoveForward
+- uid: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+  commentId: T:LunyScript.Blocks.TransformPositionMoveRelativeBlock
+  parent: LunyScript.Blocks
+  href: LunyScript.Blocks.TransformPositionMoveRelativeBlock.html
+  name: TransformPositionMoveRelativeBlock
+  nameWithType: TransformPositionMoveRelativeBlock
+  fullName: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+- uid: LunyScript.TransformBuilder.MoveRight*
+  commentId: Overload:LunyScript.TransformBuilder.MoveRight
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_MoveRight_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: MoveRight
+  nameWithType: TransformBuilder.MoveRight
+  fullName: LunyScript.TransformBuilder.MoveRight
+- uid: LunyScript.TransformBuilder.MoveUp*
+  commentId: Overload:LunyScript.TransformBuilder.MoveUp
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_MoveUp_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: MoveUp
+  nameWithType: TransformBuilder.MoveUp
+  fullName: LunyScript.TransformBuilder.MoveUp
+- uid: LunyScript.TransformBuilder.MoveBack*
+  commentId: Overload:LunyScript.TransformBuilder.MoveBack
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_MoveBack_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: MoveBack
+  nameWithType: TransformBuilder.MoveBack
+  fullName: LunyScript.TransformBuilder.MoveBack
+- uid: LunyScript.TransformBuilder.MoveLeft*
+  commentId: Overload:LunyScript.TransformBuilder.MoveLeft
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_MoveLeft_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: MoveLeft
+  nameWithType: TransformBuilder.MoveLeft
+  fullName: LunyScript.TransformBuilder.MoveLeft
+- uid: LunyScript.TransformBuilder.MoveDown*
+  commentId: Overload:LunyScript.TransformBuilder.MoveDown
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_MoveDown_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: MoveDown
+  nameWithType: TransformBuilder.MoveDown
+  fullName: LunyScript.TransformBuilder.MoveDown
+- uid: LunyScript.TransformBuilder.ShiftBy*
+  commentId: Overload:LunyScript.TransformBuilder.ShiftBy
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_ShiftBy_LunyScript_Blocks_VariableBlock_Luny_Engine_Bridge_LunyVector2__LunyScript_Blocks_VariableBlock_
+  name: ShiftBy
+  nameWithType: TransformBuilder.ShiftBy
+  fullName: LunyScript.TransformBuilder.ShiftBy
+- uid: LunyScript.TransformBuilder.ShiftForward*
+  commentId: Overload:LunyScript.TransformBuilder.ShiftForward
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_ShiftForward_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: ShiftForward
+  nameWithType: TransformBuilder.ShiftForward
+  fullName: LunyScript.TransformBuilder.ShiftForward
+- uid: LunyScript.TransformBuilder.ShiftRight*
+  commentId: Overload:LunyScript.TransformBuilder.ShiftRight
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_ShiftRight_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: ShiftRight
+  nameWithType: TransformBuilder.ShiftRight
+  fullName: LunyScript.TransformBuilder.ShiftRight
+- uid: LunyScript.TransformBuilder.ShiftUp*
+  commentId: Overload:LunyScript.TransformBuilder.ShiftUp
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_ShiftUp_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: ShiftUp
+  nameWithType: TransformBuilder.ShiftUp
+  fullName: LunyScript.TransformBuilder.ShiftUp
+- uid: LunyScript.TransformBuilder.ShiftBack*
+  commentId: Overload:LunyScript.TransformBuilder.ShiftBack
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_ShiftBack_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: ShiftBack
+  nameWithType: TransformBuilder.ShiftBack
+  fullName: LunyScript.TransformBuilder.ShiftBack
+- uid: LunyScript.TransformBuilder.ShiftLeft*
+  commentId: Overload:LunyScript.TransformBuilder.ShiftLeft
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_ShiftLeft_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: ShiftLeft
+  nameWithType: TransformBuilder.ShiftLeft
+  fullName: LunyScript.TransformBuilder.ShiftLeft
+- uid: LunyScript.TransformBuilder.ShiftDown*
+  commentId: Overload:LunyScript.TransformBuilder.ShiftDown
+  href: LunyScript.TransformBuilder.html#LunyScript_TransformBuilder_ShiftDown_LunyScript_Blocks_VariableBlock_LunyScript_Blocks_VariableBlock_
+  name: ShiftDown
+  nameWithType: TransformBuilder.ShiftDown
+  fullName: LunyScript.TransformBuilder.ShiftDown
