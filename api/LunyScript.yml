@@ -149,7 +149,6 @@ references:
   fullName: LunyScript.IScriptRuntimeContext
 - uid: LunyScript.Script
   commentId: T:LunyScript.Script
-  parent: LunyScript
   isExternal: true
   href: LunyScript.Script.html
   name: Script

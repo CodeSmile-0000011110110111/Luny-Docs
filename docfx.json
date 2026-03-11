@@ -16,6 +16,7 @@
       "includePrivateMembers": false,
       "disableGitFeatures": true,
       "disableDefaultFilter": false,
+      "filter": "filterConfig.yml",
       "properties": {
         "AllowUnsafeBlocks": "true",
         "LangVersion": "9.0"
@@ -23,6 +24,10 @@
     }
   ],
   "build": {
+    "sitemap": {
+      "baseUrl": "https://lunyscript.com/documentation",
+      "changefreq": "daily"
+    },
     "content": [
       {
         "files": [

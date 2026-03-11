@@ -32,13 +32,6 @@ items:
   - System.Object
   implements:
   - Luny.ILunyLogger
-  inheritedMembers:
-  - System.Object.GetType
-  - System.Object.ToString
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.GetHashCode
 - uid: Luny.Unity.Engine.Bridge.UnityLogger.LogInfo(System.Object)
   commentId: M:Luny.Unity.Engine.Bridge.UnityLogger.LogInfo(System.Object)
   id: LogInfo(System.Object)
@@ -298,7 +291,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -313,205 +305,9 @@ references:
   name: ILunyLogger
   nameWithType: ILunyLogger
   fullName: Luny.ILunyLogger
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  name: Equals(object)
-  nameWithType: object.Equals(object)
-  fullName: object.Equals(object)
-  nameWithType.vb: Object.Equals(Object)
-  fullName.vb: Object.Equals(Object)
-  name.vb: Equals(Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  name: Equals(object, object)
-  nameWithType: object.Equals(object, object)
-  fullName: object.Equals(object, object)
-  nameWithType.vb: Object.Equals(Object, Object)
-  fullName.vb: Object.Equals(Object, Object)
-  name.vb: Equals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -533,7 +329,6 @@ references:
   commentId: M:Luny.ILunyLogger.LogInfo(System.Object)
   parent: Luny.ILunyLogger
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: LogInfo(object)
   nameWithType: ILunyLogger.LogInfo(object)
   fullName: Luny.ILunyLogger.LogInfo(object)
@@ -548,7 +343,6 @@ references:
   - uid: System.Object
     name: object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogInfo(System.Object)
@@ -558,7 +352,6 @@ references:
   - uid: System.Object
     name: Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: Luny.Unity.Engine.Bridge.UnityLogger.LogWarning*
   commentId: Overload:Luny.Unity.Engine.Bridge.UnityLogger.LogWarning
@@ -571,7 +364,6 @@ references:
   commentId: M:Luny.ILunyLogger.LogWarning(System.Object)
   parent: Luny.ILunyLogger
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: LogWarning(object)
   nameWithType: ILunyLogger.LogWarning(object)
   fullName: Luny.ILunyLogger.LogWarning(object)
@@ -586,7 +378,6 @@ references:
   - uid: System.Object
     name: object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogWarning(System.Object)
@@ -596,7 +387,6 @@ references:
   - uid: System.Object
     name: Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: Luny.Unity.Engine.Bridge.UnityLogger.LogError*
   commentId: Overload:Luny.Unity.Engine.Bridge.UnityLogger.LogError
@@ -609,7 +399,6 @@ references:
   commentId: M:Luny.ILunyLogger.LogError(System.Object)
   parent: Luny.ILunyLogger
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: LogError(object)
   nameWithType: ILunyLogger.LogError(object)
   fullName: Luny.ILunyLogger.LogError(object)
@@ -624,7 +413,6 @@ references:
   - uid: System.Object
     name: object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogError(System.Object)
@@ -634,13 +422,11 @@ references:
   - uid: System.Object
     name: Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: Luny.ILunyLogger.LogInfo(System.String)
   commentId: M:Luny.ILunyLogger.LogInfo(System.String)
   parent: Luny.ILunyLogger
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
   name: LogInfo(string)
   nameWithType: ILunyLogger.LogInfo(string)
   fullName: Luny.ILunyLogger.LogInfo(string)
@@ -655,7 +441,6 @@ references:
   - uid: System.String
     name: string
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogInfo(System.String)
@@ -665,13 +450,11 @@ references:
   - uid: System.String
     name: String
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -682,7 +465,6 @@ references:
   commentId: M:Luny.ILunyLogger.LogWarning(System.String)
   parent: Luny.ILunyLogger
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
   name: LogWarning(string)
   nameWithType: ILunyLogger.LogWarning(string)
   fullName: Luny.ILunyLogger.LogWarning(string)
@@ -697,7 +479,6 @@ references:
   - uid: System.String
     name: string
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogWarning(System.String)
@@ -707,13 +488,11 @@ references:
   - uid: System.String
     name: String
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.ILunyLogger.LogError(System.String)
   commentId: M:Luny.ILunyLogger.LogError(System.String)
   parent: Luny.ILunyLogger
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
   name: LogError(string)
   nameWithType: ILunyLogger.LogError(string)
   fullName: Luny.ILunyLogger.LogError(string)
@@ -728,7 +507,6 @@ references:
   - uid: System.String
     name: string
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogError(System.String)
@@ -738,7 +516,6 @@ references:
   - uid: System.String
     name: String
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Unity.Engine.Bridge.UnityLogger.LogException*
   commentId: Overload:Luny.Unity.Engine.Bridge.UnityLogger.LogException
@@ -751,7 +528,6 @@ references:
   commentId: M:Luny.ILunyLogger.LogException(System.Exception)
   parent: Luny.ILunyLogger
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.exception
   name: LogException(Exception)
   nameWithType: ILunyLogger.LogException(Exception)
   fullName: Luny.ILunyLogger.LogException(System.Exception)
@@ -763,7 +539,6 @@ references:
   - uid: System.Exception
     name: Exception
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.exception
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogException(System.Exception)
@@ -773,13 +548,11 @@ references:
   - uid: System.Exception
     name: Exception
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.exception
   - name: )
 - uid: System.Exception
   commentId: T:System.Exception
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.exception
   name: Exception
   nameWithType: Exception
   fullName: System.Exception

@@ -210,7 +210,6 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -268,7 +267,6 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -312,7 +310,6 @@ references:
 - uid: System.Nullable`1
   commentId: T:System.Nullable`1
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
   name: Nullable<T>
   nameWithType: Nullable<T>
   fullName: System.Nullable<T>
@@ -323,7 +320,6 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
   - name: <
   - name: T
   - name: '>'
@@ -331,7 +327,6 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
   - name: (
   - name: Of
   - name: " "

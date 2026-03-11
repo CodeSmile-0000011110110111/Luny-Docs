@@ -53,11 +53,6 @@ items:
   - LunyScript.Script.Time
   - LunyScript.Script.Transform
   - LunyScript.Script.When
-  - System.Object.GetType
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.GetHashCode
 - uid: LunyScript.SmokeTests.Lifecycle.Assert_Runs_OnDisabled.Build(LunyScript.ScriptContext)
   commentId: M:LunyScript.SmokeTests.Lifecycle.Assert_Runs_OnDisabled.Build(LunyScript.ScriptContext)
   id: Build(LunyScript.ScriptContext)
@@ -151,7 +146,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -178,7 +172,6 @@ references:
   commentId: M:LunyScript.Script.Coroutine(System.String)
   parent: LunyScript.Script
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
   name: Coroutine(string)
   nameWithType: Script.Coroutine(string)
   fullName: LunyScript.Script.Coroutine(string)
@@ -193,7 +186,6 @@ references:
   - uid: System.String
     name: string
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: LunyScript.Script.Coroutine(System.String)
@@ -203,7 +195,6 @@ references:
   - uid: System.String
     name: String
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
   commentId: M:LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
@@ -281,7 +272,6 @@ references:
   commentId: M:LunyScript.Script.For(System.Int32)
   parent: LunyScript.Script
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: For(int)
   nameWithType: Script.For(int)
   fullName: LunyScript.Script.For(int)
@@ -296,7 +286,6 @@ references:
   - uid: System.Int32
     name: int
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
   - uid: LunyScript.Script.For(System.Int32)
@@ -306,13 +295,11 @@ references:
   - uid: System.Int32
     name: Integer
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: LunyScript.Script.For(System.Int32,System.Int32)
   commentId: M:LunyScript.Script.For(System.Int32,System.Int32)
   parent: LunyScript.Script
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: For(int, int)
   nameWithType: Script.For(int, int)
   fullName: LunyScript.Script.For(int, int)
@@ -327,13 +314,11 @@ references:
   - uid: System.Int32
     name: int
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
   - uid: System.Int32
     name: int
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
   - uid: LunyScript.Script.For(System.Int32,System.Int32)
@@ -343,19 +328,16 @@ references:
   - uid: System.Int32
     name: Integer
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
   - uid: System.Int32
     name: Integer
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: LunyScript.Script.Check(System.Func{System.Boolean})
   commentId: M:LunyScript.Script.Check(System.Func{System.Boolean})
   parent: LunyScript.Script
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.func-1
   name: Check(Func<bool>)
   nameWithType: Script.Check(Func<bool>)
   fullName: LunyScript.Script.Check(System.Func<bool>)
@@ -370,12 +352,10 @@ references:
   - uid: System.Func`1
     name: Func
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-1
   - name: <
   - uid: System.Boolean
     name: bool
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'
   - name: )
   spec.vb:
@@ -386,21 +366,18 @@ references:
   - uid: System.Func`1
     name: Func
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-1
   - name: (
   - name: Of
   - name: " "
   - uid: System.Boolean
     name: Boolean
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
   - name: )
 - uid: LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   commentId: M:LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   parent: LunyScript.Script
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.func-2
   name: Check(Func<IScriptRuntimeContext, bool>)
   nameWithType: Script.Check(Func<IScriptRuntimeContext, bool>)
   fullName: LunyScript.Script.Check(System.Func<LunyScript.IScriptRuntimeContext, bool>)
@@ -415,7 +392,6 @@ references:
   - uid: System.Func`2
     name: Func
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: <
   - uid: LunyScript.IScriptRuntimeContext
     name: IScriptRuntimeContext
@@ -425,7 +401,6 @@ references:
   - uid: System.Boolean
     name: bool
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'
   - name: )
   spec.vb:
@@ -436,7 +411,6 @@ references:
   - uid: System.Func`2
     name: Func
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: (
   - name: Of
   - name: " "
@@ -448,14 +422,12 @@ references:
   - uid: System.Boolean
     name: Boolean
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
   - name: )
 - uid: LunyScript.Script.Run(System.Action)
   commentId: M:LunyScript.Script.Run(System.Action)
   parent: LunyScript.Script
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.action
   name: Run(Action)
   nameWithType: Script.Run(Action)
   fullName: LunyScript.Script.Run(System.Action)
@@ -467,7 +439,6 @@ references:
   - uid: System.Action
     name: Action
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action
   - name: )
   spec.vb:
   - uid: LunyScript.Script.Run(System.Action)
@@ -477,13 +448,11 @@ references:
   - uid: System.Action
     name: Action
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action
   - name: )
 - uid: LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
   commentId: M:LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
   parent: LunyScript.Script
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Run(Action<IScriptRuntimeContext>)
   nameWithType: Script.Run(Action<IScriptRuntimeContext>)
   fullName: LunyScript.Script.Run(System.Action<LunyScript.IScriptRuntimeContext>)
@@ -498,7 +467,6 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - uid: LunyScript.IScriptRuntimeContext
     name: IScriptRuntimeContext
@@ -513,7 +481,6 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -743,181 +710,9 @@ references:
   name: When
   nameWithType: Script.When
   fullName: LunyScript.Script.When
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  name: Equals(object)
-  nameWithType: object.Equals(object)
-  fullName: object.Equals(object)
-  nameWithType.vb: Object.Equals(Object)
-  fullName.vb: Object.Equals(Object)
-  name.vb: Equals(Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  name: Equals(object, object)
-  nameWithType: object.Equals(object, object)
-  fullName: object.Equals(object, object)
-  nameWithType.vb: Object.Equals(Object, Object)
-  fullName.vb: Object.Equals(Object, Object)
-  name.vb: Equals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System

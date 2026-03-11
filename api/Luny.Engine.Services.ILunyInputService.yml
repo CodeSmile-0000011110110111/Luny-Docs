@@ -437,7 +437,6 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -455,7 +454,6 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -530,7 +528,6 @@ references:
   commentId: T:System.Single
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
   name: float
   nameWithType: float
   fullName: float
@@ -548,7 +545,6 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool
@@ -578,7 +574,6 @@ references:
   fullName: Luny.Engine.Services.ILunyInputService.SetControlSchemes
 - uid: System.String[]
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string[]
   nameWithType: string[]
   fullName: string[]
@@ -589,14 +584,12 @@ references:
   - uid: System.String
     name: string
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
   - name: ']'
   spec.vb:
   - uid: System.String
     name: String
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
   - name: )
 - uid: Luny.Engine.Services.ILunyInputService.AssignUserToLastDevice*
@@ -610,7 +603,6 @@ references:
   commentId: T:System.Int32
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: int
   nameWithType: int
   fullName: int
@@ -650,7 +642,7 @@ references:
   commentId: T:System.Action{Luny.Engine.Bridge.LunyInputActionEvent}
   parent: System
   definition: System.Action`1
-  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  href: Luny.Engine.Bridge.LunyInputActionEvent.html
   name: Action<LunyInputActionEvent>
   nameWithType: Action<LunyInputActionEvent>
   fullName: System.Action<Luny.Engine.Bridge.LunyInputActionEvent>
@@ -661,7 +653,6 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - uid: Luny.Engine.Bridge.LunyInputActionEvent
     name: LunyInputActionEvent
@@ -672,7 +663,6 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -684,7 +674,6 @@ references:
 - uid: System.Action`1
   commentId: T:System.Action`1
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<T>
   nameWithType: Action<T>
   fullName: System.Action<T>
@@ -695,7 +684,6 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - name: T
   - name: '>'
@@ -703,7 +691,6 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
