@@ -1,5 +1,7 @@
 # LunyScript Manual
 
+(very early work in progress)
+
 ## About LunyScript
 
 LunyScript brings declarative, block-based C# game scripting to Unity. And perhaps other C# game engines in the future.
