@@ -1,0 +1,6 @@
+- name: Manual
+  href: index.md
+- name: Scripting API
+  href: api/
+- name: Changelog
+  href: CHANGELOG.md

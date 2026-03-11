@@ -4,7 +4,7 @@ Welcome to the LunyScript documentation.
 
 ## Overview
 
-LunyScript is a cross-engine game programming DSL for Unity and other game engines.
+LunyScript brings declarative, block-based C# game scripting to Unity. And perhaps other C# game engines in the future.
 
 ## Getting Started
 
@@ -18,4 +18,5 @@ Explore the API Reference to discover all available LunyScript APIs.
 ## Links
 
 - [Homepage](https://lunyscript.com)
-- [GitHub](https://github.com/CodeSmile-0000011110110111/LunyScript-Unity)
+- [LunyScript Unity npm package repository](https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage)
+- [LunyScript Unity Examples Project repository](https://github.com/CodeSmile-0000011110110111/LunyScript_Examples_Unity)
