@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.ICoroutineTimerBuilderState
+  commentId: T:LunyScript.ScriptApi.ICoroutineTimerBuilderState
+  id: ICoroutineTimerBuilderState
+  parent: LunyScript.ScriptApi
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICoroutineTimerBuilderState
+  nameWithType: ICoroutineTimerBuilderState
+  fullName: LunyScript.ScriptApi.ICoroutineTimerBuilderState
+  type: Interface
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public interface ICoroutineTimerBuilderState
+    content.vb: Public Interface ICoroutineTimerBuilderState
+  derivedClasses:
+  - LunyScript.ScriptApi.CoroutineTimerAmountSet
+  - LunyScript.ScriptApi.CoroutineTimerUnitSet
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html

@@ -1,0 +1,144 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup
+  commentId: T:LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup
+  id: GlobalTestSceneSetup
+  parent: LunyScript.UnityEditor.SmokeTests
+  children:
+  - LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.#ctor
+  - LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.ModifyOptions(UnityEditor.BuildPlayerOptions)
+  langs:
+  - csharp
+  - vb
+  name: GlobalTestSceneSetup
+  nameWithType: GlobalTestSceneSetup
+  fullName: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup
+  type: Class
+  assemblies:
+  - LunyScript.UnityEditor.SmokeTests
+  namespace: LunyScript.UnityEditor.SmokeTests
+  syntax:
+    content: public class GlobalTestSceneSetup
+    content.vb: Public Class GlobalTestSceneSetup
+  inheritance:
+  - System.Object
+- uid: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.ModifyOptions(UnityEditor.BuildPlayerOptions)
+  commentId: M:LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.ModifyOptions(UnityEditor.BuildPlayerOptions)
+  id: ModifyOptions(UnityEditor.BuildPlayerOptions)
+  parent: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup
+  langs:
+  - csharp
+  - vb
+  name: ModifyOptions(BuildPlayerOptions)
+  nameWithType: GlobalTestSceneSetup.ModifyOptions(BuildPlayerOptions)
+  fullName: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.ModifyOptions(UnityEditor.BuildPlayerOptions)
+  type: Method
+  assemblies:
+  - LunyScript.UnityEditor.SmokeTests
+  namespace: LunyScript.UnityEditor.SmokeTests
+  syntax:
+    content: public BuildPlayerOptions ModifyOptions(BuildPlayerOptions playerOptions)
+    parameters:
+    - id: playerOptions
+      type: UnityEditor.BuildPlayerOptions
+    return:
+      type: UnityEditor.BuildPlayerOptions
+    content.vb: Public Function ModifyOptions(playerOptions As BuildPlayerOptions) As BuildPlayerOptions
+  overload: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.ModifyOptions*
+- uid: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.#ctor
+  commentId: M:LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.#ctor
+  id: '#ctor'
+  parent: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup
+  langs:
+  - csharp
+  - vb
+  name: GlobalTestSceneSetup()
+  nameWithType: GlobalTestSceneSetup.GlobalTestSceneSetup()
+  fullName: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.GlobalTestSceneSetup()
+  type: Constructor
+  assemblies:
+  - LunyScript.UnityEditor.SmokeTests
+  namespace: LunyScript.UnityEditor.SmokeTests
+  syntax:
+    content: public GlobalTestSceneSetup()
+    content.vb: Public Sub New()
+  overload: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.#ctor*
+  nameWithType.vb: GlobalTestSceneSetup.New()
+  fullName.vb: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.New()
+  name.vb: New()
+references:
+- uid: LunyScript.UnityEditor.SmokeTests
+  commentId: N:LunyScript.UnityEditor.SmokeTests
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.UnityEditor.SmokeTests
+  nameWithType: LunyScript.UnityEditor.SmokeTests
+  fullName: LunyScript.UnityEditor.SmokeTests
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.UnityEditor
+    name: UnityEditor
+    isExternal: true
+    href: LunyScript.UnityEditor.html
+  - name: .
+  - uid: LunyScript.UnityEditor.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.UnityEditor.SmokeTests.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.UnityEditor
+    name: UnityEditor
+    isExternal: true
+    href: LunyScript.UnityEditor.html
+  - name: .
+  - uid: LunyScript.UnityEditor.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.UnityEditor.SmokeTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.ModifyOptions*
+  commentId: Overload:LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.ModifyOptions
+  isExternal: true
+  href: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.html#LunyScript_UnityEditor_SmokeTests_GlobalTestSceneSetup_ModifyOptions_UnityEditor_BuildPlayerOptions_
+  name: ModifyOptions
+  nameWithType: GlobalTestSceneSetup.ModifyOptions
+  fullName: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.ModifyOptions
+- uid: UnityEditor.BuildPlayerOptions
+  isExternal: true
+  name: BuildPlayerOptions
+  nameWithType: BuildPlayerOptions
+  fullName: UnityEditor.BuildPlayerOptions
+- uid: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.#ctor*
+  commentId: Overload:LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.#ctor
+  isExternal: true
+  href: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.html#LunyScript_UnityEditor_SmokeTests_GlobalTestSceneSetup__ctor
+  name: GlobalTestSceneSetup
+  nameWithType: GlobalTestSceneSetup.GlobalTestSceneSetup
+  fullName: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.GlobalTestSceneSetup
+  nameWithType.vb: GlobalTestSceneSetup.New
+  fullName.vb: LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.New
+  name.vb: New

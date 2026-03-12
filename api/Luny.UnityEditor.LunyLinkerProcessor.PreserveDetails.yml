@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+  commentId: T:Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+  id: LunyLinkerProcessor.PreserveDetails
+  parent: Luny.UnityEditor
+  children:
+  - Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.Assembly
+  - Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.Types
+  langs:
+  - csharp
+  - vb
+  name: LunyLinkerProcessor.PreserveDetails
+  nameWithType: LunyLinkerProcessor.PreserveDetails
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+  type: Struct
+  assemblies:
+  - Luny.UnityEditor
+  namespace: Luny.UnityEditor
+  syntax:
+    content: public struct LunyLinkerProcessor.PreserveDetails
+    content.vb: Public Structure LunyLinkerProcessor.PreserveDetails
+- uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.Assembly
+  commentId: F:Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.Assembly
+  id: Assembly
+  parent: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+  langs:
+  - csharp
+  - vb
+  name: Assembly
+  nameWithType: LunyLinkerProcessor.PreserveDetails.Assembly
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.Assembly
+  type: Field
+  assemblies:
+  - Luny.UnityEditor
+  namespace: Luny.UnityEditor
+  syntax:
+    content: public string Assembly
+    return:
+      type: System.String
+    content.vb: Public Assembly As String
+- uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.Types
+  commentId: F:Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.Types
+  id: Types
+  parent: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+  langs:
+  - csharp
+  - vb
+  name: Types
+  nameWithType: LunyLinkerProcessor.PreserveDetails.Types
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.Types
+  type: Field
+  assemblies:
+  - Luny.UnityEditor
+  namespace: Luny.UnityEditor
+  syntax:
+    content: public string[] Types
+    return:
+      type: System.String[]
+    content.vb: Public Types As String()
+references:
+- uid: Luny.UnityEditor
+  commentId: N:Luny.UnityEditor
+  isExternal: true
+  href: Luny.html
+  name: Luny.UnityEditor
+  nameWithType: Luny.UnityEditor
+  fullName: Luny.UnityEditor
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.UnityEditor
+    name: UnityEditor
+    isExternal: true
+    href: Luny.UnityEditor.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.UnityEditor
+    name: UnityEditor
+    isExternal: true
+    href: Luny.UnityEditor.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String[]
+  isExternal: true
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )

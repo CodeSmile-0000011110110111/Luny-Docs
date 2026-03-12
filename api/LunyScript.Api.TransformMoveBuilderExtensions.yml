@@ -1,0 +1,522 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.TransformMoveBuilderExtensions
+  commentId: T:LunyScript.Api.TransformMoveBuilderExtensions
+  id: TransformMoveBuilderExtensions
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.TransformMoveBuilderExtensions.DeadZone``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  - LunyScript.Api.TransformMoveBuilderExtensions.Lerp``1(LunyScript.Api.TransformPositionBuilder{``0})
+  - LunyScript.Api.TransformMoveBuilderExtensions.LockX``1(LunyScript.Api.TransformPositionBuilder{``0})
+  - LunyScript.Api.TransformMoveBuilderExtensions.LockY``1(LunyScript.Api.TransformPositionBuilder{``0})
+  - LunyScript.Api.TransformMoveBuilderExtensions.LockZ``1(LunyScript.Api.TransformPositionBuilder{``0})
+  - LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  - LunyScript.Api.TransformMoveBuilderExtensions.Slerp``1(LunyScript.Api.TransformPositionBuilder{``0})
+  - LunyScript.Api.TransformMoveBuilderExtensions.Speed``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  langs:
+  - csharp
+  - vb
+  name: TransformMoveBuilderExtensions
+  nameWithType: TransformMoveBuilderExtensions
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static class TransformMoveBuilderExtensions
+    content.vb: Public Module TransformMoveBuilderExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.Speed``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.Speed``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  id: Speed``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformMoveBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Speed<T>(TransformPositionBuilder<T>, double)
+  nameWithType: TransformMoveBuilderExtensions.Speed<T>(TransformPositionBuilder<T>, double)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Speed<T>(LunyScript.Api.TransformPositionBuilder<T>, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Movement speed in units per second (for linear) or lerp factor (for <code>Lerp()</code>/<code>Slerp()</code>).
+  example: []
+  syntax:
+    content: 'public static TransformPositionBuilder<TransformBuilderReady> Speed<T>(this TransformPositionBuilder<T> b, double speed) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformPositionBuilder{{T}}
+    - id: speed
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
+    content.vb: Public Shared Function Speed(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T), speed As Double) As TransformPositionBuilder(Of TransformBuilderReady)
+  overload: LunyScript.Api.TransformMoveBuilderExtensions.Speed*
+  nameWithType.vb: TransformMoveBuilderExtensions.Speed(Of T)(TransformPositionBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.Speed(Of T)(LunyScript.Api.TransformPositionBuilder(Of T), Double)
+  name.vb: Speed(Of T)(TransformPositionBuilder(Of T), Double)
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.DeadZone``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  id: DeadZone``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformMoveBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeadZone<T>(TransformPositionBuilder<T>, double)
+  nameWithType: TransformMoveBuilderExtensions.DeadZone<T>(TransformPositionBuilder<T>, double)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone<T>(LunyScript.Api.TransformPositionBuilder<T>, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Minimum distance threshold before movement begins (prevents micro-jitter).
+  example: []
+  syntax:
+    content: 'public static TransformPositionBuilder<TransformBuilderReady> DeadZone<T>(this TransformPositionBuilder<T> b, double deadZone) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformPositionBuilder{{T}}
+    - id: deadZone
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
+    content.vb: Public Shared Function DeadZone(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T), deadZone As Double) As TransformPositionBuilder(Of TransformBuilderReady)
+  overload: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone*
+  nameWithType.vb: TransformMoveBuilderExtensions.DeadZone(Of T)(TransformPositionBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone(Of T)(LunyScript.Api.TransformPositionBuilder(Of T), Double)
+  name.vb: DeadZone(Of T)(TransformPositionBuilder(Of T), Double)
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  id: Responsiveness``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformMoveBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Responsiveness<T>(TransformPositionBuilder<T>, double)
+  nameWithType: TransformMoveBuilderExtensions.Responsiveness<T>(TransformPositionBuilder<T>, double)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness<T>(LunyScript.Api.TransformPositionBuilder<T>, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Multiplies delta time; larger values produce faster approach.
+  example: []
+  syntax:
+    content: 'public static TransformPositionBuilder<TransformBuilderReady> Responsiveness<T>(this TransformPositionBuilder<T> b, double responsiveness) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformPositionBuilder{{T}}
+    - id: responsiveness
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
+    content.vb: Public Shared Function Responsiveness(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T), responsiveness As Double) As TransformPositionBuilder(Of TransformBuilderReady)
+  overload: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness*
+  nameWithType.vb: TransformMoveBuilderExtensions.Responsiveness(Of T)(TransformPositionBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness(Of T)(LunyScript.Api.TransformPositionBuilder(Of T), Double)
+  name.vb: Responsiveness(Of T)(TransformPositionBuilder(Of T), Double)
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.LockX``1(LunyScript.Api.TransformPositionBuilder{``0})
+  commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.LockX``1(LunyScript.Api.TransformPositionBuilder{``0})
+  id: LockX``1(LunyScript.Api.TransformPositionBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformMoveBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockX<T>(TransformPositionBuilder<T>)
+  nameWithType: TransformMoveBuilderExtensions.LockX<T>(TransformPositionBuilder<T>)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.LockX<T>(LunyScript.Api.TransformPositionBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Prevents movement along the X axis.
+  example: []
+  syntax:
+    content: 'public static TransformPositionBuilder<TransformBuilderReady> LockX<T>(this TransformPositionBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformPositionBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
+    content.vb: Public Shared Function LockX(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T)) As TransformPositionBuilder(Of TransformBuilderReady)
+  overload: LunyScript.Api.TransformMoveBuilderExtensions.LockX*
+  nameWithType.vb: TransformMoveBuilderExtensions.LockX(Of T)(TransformPositionBuilder(Of T))
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.LockX(Of T)(LunyScript.Api.TransformPositionBuilder(Of T))
+  name.vb: LockX(Of T)(TransformPositionBuilder(Of T))
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.LockY``1(LunyScript.Api.TransformPositionBuilder{``0})
+  commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.LockY``1(LunyScript.Api.TransformPositionBuilder{``0})
+  id: LockY``1(LunyScript.Api.TransformPositionBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformMoveBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockY<T>(TransformPositionBuilder<T>)
+  nameWithType: TransformMoveBuilderExtensions.LockY<T>(TransformPositionBuilder<T>)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.LockY<T>(LunyScript.Api.TransformPositionBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Prevents movement along the Y axis.
+  example: []
+  syntax:
+    content: 'public static TransformPositionBuilder<TransformBuilderReady> LockY<T>(this TransformPositionBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformPositionBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
+    content.vb: Public Shared Function LockY(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T)) As TransformPositionBuilder(Of TransformBuilderReady)
+  overload: LunyScript.Api.TransformMoveBuilderExtensions.LockY*
+  nameWithType.vb: TransformMoveBuilderExtensions.LockY(Of T)(TransformPositionBuilder(Of T))
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.LockY(Of T)(LunyScript.Api.TransformPositionBuilder(Of T))
+  name.vb: LockY(Of T)(TransformPositionBuilder(Of T))
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.LockZ``1(LunyScript.Api.TransformPositionBuilder{``0})
+  commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.LockZ``1(LunyScript.Api.TransformPositionBuilder{``0})
+  id: LockZ``1(LunyScript.Api.TransformPositionBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformMoveBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockZ<T>(TransformPositionBuilder<T>)
+  nameWithType: TransformMoveBuilderExtensions.LockZ<T>(TransformPositionBuilder<T>)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.LockZ<T>(LunyScript.Api.TransformPositionBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Prevents movement along the Z axis.
+  example: []
+  syntax:
+    content: 'public static TransformPositionBuilder<TransformBuilderReady> LockZ<T>(this TransformPositionBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformPositionBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
+    content.vb: Public Shared Function LockZ(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T)) As TransformPositionBuilder(Of TransformBuilderReady)
+  overload: LunyScript.Api.TransformMoveBuilderExtensions.LockZ*
+  nameWithType.vb: TransformMoveBuilderExtensions.LockZ(Of T)(TransformPositionBuilder(Of T))
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.LockZ(Of T)(LunyScript.Api.TransformPositionBuilder(Of T))
+  name.vb: LockZ(Of T)(TransformPositionBuilder(Of T))
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.Lerp``1(LunyScript.Api.TransformPositionBuilder{``0})
+  commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.Lerp``1(LunyScript.Api.TransformPositionBuilder{``0})
+  id: Lerp``1(LunyScript.Api.TransformPositionBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformMoveBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Lerp<T>(TransformPositionBuilder<T>)
+  nameWithType: TransformMoveBuilderExtensions.Lerp<T>(TransformPositionBuilder<T>)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Lerp<T>(LunyScript.Api.TransformPositionBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Lerp interpolation — speed is the lerp factor.
+  example: []
+  syntax:
+    content: 'public static TransformPositionLerpTowardsObjectBlock Lerp<T>(this TransformPositionBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformPositionBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Blocks.TransformPositionLerpTowardsObjectBlock
+    content.vb: Public Shared Function Lerp(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T)) As TransformPositionLerpTowardsObjectBlock
+  overload: LunyScript.Api.TransformMoveBuilderExtensions.Lerp*
+  nameWithType.vb: TransformMoveBuilderExtensions.Lerp(Of T)(TransformPositionBuilder(Of T))
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.Lerp(Of T)(LunyScript.Api.TransformPositionBuilder(Of T))
+  name.vb: Lerp(Of T)(TransformPositionBuilder(Of T))
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.Slerp``1(LunyScript.Api.TransformPositionBuilder{``0})
+  commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.Slerp``1(LunyScript.Api.TransformPositionBuilder{``0})
+  id: Slerp``1(LunyScript.Api.TransformPositionBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformMoveBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Slerp<T>(TransformPositionBuilder<T>)
+  nameWithType: TransformMoveBuilderExtensions.Slerp<T>(TransformPositionBuilder<T>)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Slerp<T>(LunyScript.Api.TransformPositionBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Spherical interpolation — speed is the slerp factor.
+  example: []
+  syntax:
+    content: 'public static TransformPositionLerpTowardsObjectBlock Slerp<T>(this TransformPositionBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformPositionBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Blocks.TransformPositionLerpTowardsObjectBlock
+    content.vb: Public Shared Function Slerp(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T)) As TransformPositionLerpTowardsObjectBlock
+  overload: LunyScript.Api.TransformMoveBuilderExtensions.Slerp*
+  nameWithType.vb: TransformMoveBuilderExtensions.Slerp(Of T)(TransformPositionBuilder(Of T))
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.Slerp(Of T)(LunyScript.Api.TransformPositionBuilder(Of T))
+  name.vb: Slerp(Of T)(TransformPositionBuilder(Of T))
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.Speed*
+  commentId: Overload:LunyScript.Api.TransformMoveBuilderExtensions.Speed
+  isExternal: true
+  href: LunyScript.Api.TransformMoveBuilderExtensions.html#LunyScript_Api_TransformMoveBuilderExtensions_Speed__1_LunyScript_Api_TransformPositionBuilder___0__System_Double_
+  name: Speed
+  nameWithType: TransformMoveBuilderExtensions.Speed
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Speed
+- uid: LunyScript.Api.TransformPositionBuilder{{T}}
+  commentId: T:LunyScript.Api.TransformPositionBuilder{``0}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TransformPositionBuilder`1
+  href: LunyScript.Api.TransformPositionBuilder-1.html
+  name: TransformPositionBuilder<T>
+  nameWithType: TransformPositionBuilder<T>
+  fullName: LunyScript.Api.TransformPositionBuilder<T>
+  nameWithType.vb: TransformPositionBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformPositionBuilder(Of T)
+  name.vb: TransformPositionBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformPositionBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformPositionBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
+  commentId: T:LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TransformPositionBuilder`1
+  href: LunyScript.Api.TransformPositionBuilder-1.html
+  name: TransformPositionBuilder<TransformBuilderReady>
+  nameWithType: TransformPositionBuilder<TransformBuilderReady>
+  fullName: LunyScript.Api.TransformPositionBuilder<LunyScript.Api.TransformBuilderReady>
+  nameWithType.vb: TransformPositionBuilder(Of TransformBuilderReady)
+  fullName.vb: LunyScript.Api.TransformPositionBuilder(Of LunyScript.Api.TransformBuilderReady)
+  name.vb: TransformPositionBuilder(Of TransformBuilderReady)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformPositionBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.TransformBuilderReady
+    name: TransformBuilderReady
+    isExternal: true
+    href: LunyScript.Api.TransformBuilderReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformPositionBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.TransformBuilderReady
+    name: TransformBuilderReady
+    isExternal: true
+    href: LunyScript.Api.TransformBuilderReady.html
+  - name: )
+- uid: LunyScript.Api.TransformPositionBuilder`1
+  commentId: T:LunyScript.Api.TransformPositionBuilder`1
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TransformPositionBuilder-1.html
+  name: TransformPositionBuilder<T>
+  nameWithType: TransformPositionBuilder<T>
+  fullName: LunyScript.Api.TransformPositionBuilder<T>
+  nameWithType.vb: TransformPositionBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformPositionBuilder(Of T)
+  name.vb: TransformPositionBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformPositionBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformPositionBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone*
+  commentId: Overload:LunyScript.Api.TransformMoveBuilderExtensions.DeadZone
+  isExternal: true
+  href: LunyScript.Api.TransformMoveBuilderExtensions.html#LunyScript_Api_TransformMoveBuilderExtensions_DeadZone__1_LunyScript_Api_TransformPositionBuilder___0__System_Double_
+  name: DeadZone
+  nameWithType: TransformMoveBuilderExtensions.DeadZone
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness*
+  commentId: Overload:LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness
+  isExternal: true
+  href: LunyScript.Api.TransformMoveBuilderExtensions.html#LunyScript_Api_TransformMoveBuilderExtensions_Responsiveness__1_LunyScript_Api_TransformPositionBuilder___0__System_Double_
+  name: Responsiveness
+  nameWithType: TransformMoveBuilderExtensions.Responsiveness
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.LockX*
+  commentId: Overload:LunyScript.Api.TransformMoveBuilderExtensions.LockX
+  isExternal: true
+  href: LunyScript.Api.TransformMoveBuilderExtensions.html#LunyScript_Api_TransformMoveBuilderExtensions_LockX__1_LunyScript_Api_TransformPositionBuilder___0__
+  name: LockX
+  nameWithType: TransformMoveBuilderExtensions.LockX
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.LockX
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.LockY*
+  commentId: Overload:LunyScript.Api.TransformMoveBuilderExtensions.LockY
+  isExternal: true
+  href: LunyScript.Api.TransformMoveBuilderExtensions.html#LunyScript_Api_TransformMoveBuilderExtensions_LockY__1_LunyScript_Api_TransformPositionBuilder___0__
+  name: LockY
+  nameWithType: TransformMoveBuilderExtensions.LockY
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.LockY
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.LockZ*
+  commentId: Overload:LunyScript.Api.TransformMoveBuilderExtensions.LockZ
+  isExternal: true
+  href: LunyScript.Api.TransformMoveBuilderExtensions.html#LunyScript_Api_TransformMoveBuilderExtensions_LockZ__1_LunyScript_Api_TransformPositionBuilder___0__
+  name: LockZ
+  nameWithType: TransformMoveBuilderExtensions.LockZ
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.LockZ
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.Lerp*
+  commentId: Overload:LunyScript.Api.TransformMoveBuilderExtensions.Lerp
+  isExternal: true
+  href: LunyScript.Api.TransformMoveBuilderExtensions.html#LunyScript_Api_TransformMoveBuilderExtensions_Lerp__1_LunyScript_Api_TransformPositionBuilder___0__
+  name: Lerp
+  nameWithType: TransformMoveBuilderExtensions.Lerp
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Lerp
+- uid: LunyScript.Blocks.TransformPositionLerpTowardsObjectBlock
+  commentId: T:LunyScript.Blocks.TransformPositionLerpTowardsObjectBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.TransformPositionLerpTowardsObjectBlock.html
+  name: TransformPositionLerpTowardsObjectBlock
+  nameWithType: TransformPositionLerpTowardsObjectBlock
+  fullName: LunyScript.Blocks.TransformPositionLerpTowardsObjectBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.Api.TransformMoveBuilderExtensions.Slerp*
+  commentId: Overload:LunyScript.Api.TransformMoveBuilderExtensions.Slerp
+  isExternal: true
+  href: LunyScript.Api.TransformMoveBuilderExtensions.html#LunyScript_Api_TransformMoveBuilderExtensions_Slerp__1_LunyScript_Api_TransformPositionBuilder___0__
+  name: Slerp
+  nameWithType: TransformMoveBuilderExtensions.Slerp
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Slerp

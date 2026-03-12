@@ -1,0 +1,264 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions
+  commentId: T:LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions
+  id: TimerBuilderCounterUnitExtensions
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Frames``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  - LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Heartbeats``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  langs:
+  - csharp
+  - vb
+  name: TimerBuilderCounterUnitExtensions
+  nameWithType: TimerBuilderCounterUnitExtensions
+  fullName: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public static class TimerBuilderCounterUnitExtensions
+    content.vb: Public Module TimerBuilderCounterUnitExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Frames``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  commentId: M:LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Frames``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  id: Frames``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions
+  langs:
+  - csharp
+  - vb
+  name: Frames<T>(CoroutineTimerBuilder<T>)
+  nameWithType: TimerBuilderCounterUnitExtensions.Frames<T>(CoroutineTimerBuilder<T>)
+  fullName: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Frames<T>(LunyScript.ScriptApi.CoroutineTimerBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Counts frame updates.
+  example: []
+  syntax:
+    content: 'public static CoroutineCounterBuilder<CoroutineCounterBuilderUnitSet> Frames<T>(this CoroutineTimerBuilder<T> b) where T : struct, ICoroutineTimerAmountSet'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.CoroutineTimerBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.CoroutineCounterBuilder{LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet}
+    content.vb: Public Shared Function Frames(Of T As {Structure, ICoroutineTimerAmountSet})(b As CoroutineTimerBuilder(Of T)) As CoroutineCounterBuilder(Of CoroutineCounterBuilderUnitSet)
+  overload: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Frames*
+  nameWithType.vb: TimerBuilderCounterUnitExtensions.Frames(Of T)(CoroutineTimerBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Frames(Of T)(LunyScript.ScriptApi.CoroutineTimerBuilder(Of T))
+  name.vb: Frames(Of T)(CoroutineTimerBuilder(Of T))
+- uid: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Heartbeats``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  commentId: M:LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Heartbeats``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  id: Heartbeats``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions
+  langs:
+  - csharp
+  - vb
+  name: Heartbeats<T>(CoroutineTimerBuilder<T>)
+  nameWithType: TimerBuilderCounterUnitExtensions.Heartbeats<T>(CoroutineTimerBuilder<T>)
+  fullName: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Heartbeats<T>(LunyScript.ScriptApi.CoroutineTimerBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Counts heartbeat (fixed step) updates.
+  example: []
+  syntax:
+    content: 'public static CoroutineCounterBuilder<CoroutineCounterBuilderUnitSet> Heartbeats<T>(this CoroutineTimerBuilder<T> b) where T : struct, ICoroutineTimerAmountSet'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.CoroutineTimerBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.CoroutineCounterBuilder{LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet}
+    content.vb: Public Shared Function Heartbeats(Of T As {Structure, ICoroutineTimerAmountSet})(b As CoroutineTimerBuilder(Of T)) As CoroutineCounterBuilder(Of CoroutineCounterBuilderUnitSet)
+  overload: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Heartbeats*
+  nameWithType.vb: TimerBuilderCounterUnitExtensions.Heartbeats(Of T)(CoroutineTimerBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Heartbeats(Of T)(LunyScript.ScriptApi.CoroutineTimerBuilder(Of T))
+  name.vb: Heartbeats(Of T)(CoroutineTimerBuilder(Of T))
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Frames*
+  commentId: Overload:LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Frames
+  isExternal: true
+  href: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.html#LunyScript_ScriptApi_TimerBuilderCounterUnitExtensions_Frames__1_LunyScript_ScriptApi_CoroutineTimerBuilder___0__
+  name: Frames
+  nameWithType: TimerBuilderCounterUnitExtensions.Frames
+  fullName: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Frames
+- uid: LunyScript.ScriptApi.CoroutineTimerBuilder{{T}}
+  commentId: T:LunyScript.ScriptApi.CoroutineTimerBuilder{``0}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+  href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.ScriptApi.CoroutineTimerBuilder<T>
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.ScriptApi.CoroutineCounterBuilder{LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet}
+  commentId: T:LunyScript.ScriptApi.CoroutineCounterBuilder{LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.CoroutineCounterBuilder`1
+  href: LunyScript.ScriptApi.CoroutineCounterBuilder-1.html
+  name: CoroutineCounterBuilder<CoroutineCounterBuilderUnitSet>
+  nameWithType: CoroutineCounterBuilder<CoroutineCounterBuilderUnitSet>
+  fullName: LunyScript.ScriptApi.CoroutineCounterBuilder<LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet>
+  nameWithType.vb: CoroutineCounterBuilder(Of CoroutineCounterBuilderUnitSet)
+  fullName.vb: LunyScript.ScriptApi.CoroutineCounterBuilder(Of LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet)
+  name.vb: CoroutineCounterBuilder(Of CoroutineCounterBuilderUnitSet)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineCounterBuilder-1.html
+  - name: <
+  - uid: LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet
+    name: CoroutineCounterBuilderUnitSet
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineCounterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet
+    name: CoroutineCounterBuilderUnitSet
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet.html
+  - name: )
+- uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+  commentId: T:LunyScript.ScriptApi.CoroutineTimerBuilder`1
+  isExternal: true
+  href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.ScriptApi.CoroutineTimerBuilder<T>
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.ScriptApi.CoroutineCounterBuilder`1
+  commentId: T:LunyScript.ScriptApi.CoroutineCounterBuilder`1
+  isExternal: true
+  href: LunyScript.ScriptApi.CoroutineCounterBuilder-1.html
+  name: CoroutineCounterBuilder<T>
+  nameWithType: CoroutineCounterBuilder<T>
+  fullName: LunyScript.ScriptApi.CoroutineCounterBuilder<T>
+  nameWithType.vb: CoroutineCounterBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.CoroutineCounterBuilder(Of T)
+  name.vb: CoroutineCounterBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineCounterBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineCounterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Heartbeats*
+  commentId: Overload:LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Heartbeats
+  isExternal: true
+  href: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.html#LunyScript_ScriptApi_TimerBuilderCounterUnitExtensions_Heartbeats__1_LunyScript_ScriptApi_CoroutineTimerBuilder___0__
+  name: Heartbeats
+  nameWithType: TimerBuilderCounterUnitExtensions.Heartbeats
+  fullName: LunyScript.ScriptApi.TimerBuilderCounterUnitExtensions.Heartbeats

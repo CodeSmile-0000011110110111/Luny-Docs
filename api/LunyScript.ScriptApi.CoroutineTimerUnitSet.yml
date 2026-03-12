@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.CoroutineTimerUnitSet
+  commentId: T:LunyScript.ScriptApi.CoroutineTimerUnitSet
+  id: CoroutineTimerUnitSet
+  parent: LunyScript.ScriptApi
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CoroutineTimerUnitSet
+  nameWithType: CoroutineTimerUnitSet
+  fullName: LunyScript.ScriptApi.CoroutineTimerUnitSet
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: 'public struct CoroutineTimerUnitSet : ICoroutineTimerUnitSet, ICoroutineTimerWhen, ICoroutineTimerBuilderState'
+    content.vb: Public Structure CoroutineTimerUnitSet Implements ICoroutineTimerUnitSet, ICoroutineTimerWhen, ICoroutineTimerBuilderState
+  implements:
+  - LunyScript.ScriptApi.ICoroutineTimerUnitSet
+  - LunyScript.ScriptApi.ICoroutineTimerWhen
+  - LunyScript.ScriptApi.ICoroutineTimerBuilderState
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.ICoroutineTimerUnitSet
+  commentId: T:LunyScript.ScriptApi.ICoroutineTimerUnitSet
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ICoroutineTimerUnitSet.html
+  name: ICoroutineTimerUnitSet
+  nameWithType: ICoroutineTimerUnitSet
+  fullName: LunyScript.ScriptApi.ICoroutineTimerUnitSet
+- uid: LunyScript.ScriptApi.ICoroutineTimerWhen
+  commentId: T:LunyScript.ScriptApi.ICoroutineTimerWhen
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ICoroutineTimerWhen.html
+  name: ICoroutineTimerWhen
+  nameWithType: ICoroutineTimerWhen
+  fullName: LunyScript.ScriptApi.ICoroutineTimerWhen
+- uid: LunyScript.ScriptApi.ICoroutineTimerBuilderState
+  commentId: T:LunyScript.ScriptApi.ICoroutineTimerBuilderState
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ICoroutineTimerBuilderState.html
+  name: ICoroutineTimerBuilderState
+  nameWithType: ICoroutineTimerBuilderState
+  fullName: LunyScript.ScriptApi.ICoroutineTimerBuilderState

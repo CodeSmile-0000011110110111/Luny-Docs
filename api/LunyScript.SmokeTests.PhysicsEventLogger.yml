@@ -1,0 +1,168 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.PhysicsEventLogger
+  commentId: T:LunyScript.SmokeTests.PhysicsEventLogger
+  id: PhysicsEventLogger
+  parent: LunyScript.SmokeTests
+  children:
+  - LunyScript.SmokeTests.PhysicsEventLogger.#ctor
+  - LunyScript.SmokeTests.PhysicsEventLogger.LogCollisionEvents
+  - LunyScript.SmokeTests.PhysicsEventLogger.LogStayEvents
+  - LunyScript.SmokeTests.PhysicsEventLogger.LogTriggerEvents
+  langs:
+  - csharp
+  - vb
+  name: PhysicsEventLogger
+  nameWithType: PhysicsEventLogger
+  fullName: LunyScript.SmokeTests.PhysicsEventLogger
+  type: Class
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: 'public sealed class PhysicsEventLogger : MonoBehaviour'
+    content.vb: Public NotInheritable Class PhysicsEventLogger Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: LunyScript.SmokeTests.PhysicsEventLogger.LogTriggerEvents
+  commentId: F:LunyScript.SmokeTests.PhysicsEventLogger.LogTriggerEvents
+  id: LogTriggerEvents
+  parent: LunyScript.SmokeTests.PhysicsEventLogger
+  langs:
+  - csharp
+  - vb
+  name: LogTriggerEvents
+  nameWithType: PhysicsEventLogger.LogTriggerEvents
+  fullName: LunyScript.SmokeTests.PhysicsEventLogger.LogTriggerEvents
+  type: Field
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public bool LogTriggerEvents
+    return:
+      type: System.Boolean
+    content.vb: Public LogTriggerEvents As Boolean
+- uid: LunyScript.SmokeTests.PhysicsEventLogger.LogCollisionEvents
+  commentId: F:LunyScript.SmokeTests.PhysicsEventLogger.LogCollisionEvents
+  id: LogCollisionEvents
+  parent: LunyScript.SmokeTests.PhysicsEventLogger
+  langs:
+  - csharp
+  - vb
+  name: LogCollisionEvents
+  nameWithType: PhysicsEventLogger.LogCollisionEvents
+  fullName: LunyScript.SmokeTests.PhysicsEventLogger.LogCollisionEvents
+  type: Field
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public bool LogCollisionEvents
+    return:
+      type: System.Boolean
+    content.vb: Public LogCollisionEvents As Boolean
+- uid: LunyScript.SmokeTests.PhysicsEventLogger.LogStayEvents
+  commentId: F:LunyScript.SmokeTests.PhysicsEventLogger.LogStayEvents
+  id: LogStayEvents
+  parent: LunyScript.SmokeTests.PhysicsEventLogger
+  langs:
+  - csharp
+  - vb
+  name: LogStayEvents
+  nameWithType: PhysicsEventLogger.LogStayEvents
+  fullName: LunyScript.SmokeTests.PhysicsEventLogger.LogStayEvents
+  type: Field
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public bool LogStayEvents
+    return:
+      type: System.Boolean
+    content.vb: Public LogStayEvents As Boolean
+- uid: LunyScript.SmokeTests.PhysicsEventLogger.#ctor
+  commentId: M:LunyScript.SmokeTests.PhysicsEventLogger.#ctor
+  id: '#ctor'
+  parent: LunyScript.SmokeTests.PhysicsEventLogger
+  langs:
+  - csharp
+  - vb
+  name: PhysicsEventLogger()
+  nameWithType: PhysicsEventLogger.PhysicsEventLogger()
+  fullName: LunyScript.SmokeTests.PhysicsEventLogger.PhysicsEventLogger()
+  type: Constructor
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public PhysicsEventLogger()
+    content.vb: Public Sub New()
+  overload: LunyScript.SmokeTests.PhysicsEventLogger.#ctor*
+  nameWithType.vb: PhysicsEventLogger.New()
+  fullName.vb: LunyScript.SmokeTests.PhysicsEventLogger.New()
+  name.vb: New()
+references:
+- uid: LunyScript.SmokeTests
+  commentId: N:LunyScript.SmokeTests
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.SmokeTests
+  nameWithType: LunyScript.SmokeTests
+  fullName: LunyScript.SmokeTests
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: LunyScript.SmokeTests.PhysicsEventLogger.#ctor*
+  commentId: Overload:LunyScript.SmokeTests.PhysicsEventLogger.#ctor
+  isExternal: true
+  href: LunyScript.SmokeTests.PhysicsEventLogger.html#LunyScript_SmokeTests_PhysicsEventLogger__ctor
+  name: PhysicsEventLogger
+  nameWithType: PhysicsEventLogger.PhysicsEventLogger
+  fullName: LunyScript.SmokeTests.PhysicsEventLogger.PhysicsEventLogger
+  nameWithType.vb: PhysicsEventLogger.New
+  fullName.vb: LunyScript.SmokeTests.PhysicsEventLogger.New
+  name.vb: New

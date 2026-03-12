@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.CoroutineBuilder
+  commentId: T:LunyScript.Api.CoroutineBuilder
+  id: CoroutineBuilder
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.CoroutineBuilder.Every(System.Double)
+  - LunyScript.Api.CoroutineBuilder.In(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: CoroutineBuilder
+  nameWithType: CoroutineBuilder
+  fullName: LunyScript.Api.CoroutineBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Entry point for the Coroutine fluent builder chain.
+
+    Usage: Coroutine("name").For(3).Seconds().OnFrameUpdate(blocks).WhenElapsed(blocks);
+           Coroutine("name").OnFrameUpdate(blocks).WhenStopped(blocks).Do(blocks);
+           Coroutine("name").OnHeartbeat(blocks).Do(blocks);
+  example: []
+  syntax:
+    content: public readonly struct CoroutineBuilder
+    content.vb: Public Structure CoroutineBuilder
+- uid: LunyScript.Api.CoroutineBuilder.In(System.Double)
+  commentId: M:LunyScript.Api.CoroutineBuilder.In(System.Double)
+  id: In(System.Double)
+  parent: LunyScript.Api.CoroutineBuilder
+  langs:
+  - csharp
+  - vb
+  name: In(double)
+  nameWithType: CoroutineBuilder.In(double)
+  fullName: LunyScript.Api.CoroutineBuilder.In(double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: A finite timer coroutine which fires after the specified duration. The Do(blocks) execute when elapsed.
+  example: []
+  syntax:
+    content: public CoroutineTimerBuilder<CoroutineTimerAmountSet> In(double duration)
+    parameters:
+    - id: duration
+      type: System.Double
+    return:
+      type: LunyScript.Api.CoroutineTimerBuilder{LunyScript.Api.CoroutineTimerAmountSet}
+    content.vb: Public Function [In](duration As Double) As CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
+  overload: LunyScript.Api.CoroutineBuilder.In*
+  nameWithType.vb: CoroutineBuilder.In(Double)
+  fullName.vb: LunyScript.Api.CoroutineBuilder.In(Double)
+  name.vb: In(Double)
+- uid: LunyScript.Api.CoroutineBuilder.Every(System.Double)
+  commentId: M:LunyScript.Api.CoroutineBuilder.Every(System.Double)
+  id: Every(System.Double)
+  parent: LunyScript.Api.CoroutineBuilder
+  langs:
+  - csharp
+  - vb
+  name: Every(double)
+  nameWithType: CoroutineBuilder.Every(double)
+  fullName: LunyScript.Api.CoroutineBuilder.Every(double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: A repeating timer coroutine which fires at the specified interval. The Do(blocks) execute on every interval elapse.
+  example: []
+  syntax:
+    content: public CoroutineTimerBuilder<CoroutineTimerAmountSet> Every(double interval)
+    parameters:
+    - id: interval
+      type: System.Double
+    return:
+      type: LunyScript.Api.CoroutineTimerBuilder{LunyScript.Api.CoroutineTimerAmountSet}
+    content.vb: Public Function Every(interval As Double) As CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
+  overload: LunyScript.Api.CoroutineBuilder.Every*
+  nameWithType.vb: CoroutineBuilder.Every(Double)
+  fullName.vb: LunyScript.Api.CoroutineBuilder.Every(Double)
+  name.vb: Every(Double)
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Api.CoroutineBuilder.In*
+  commentId: Overload:LunyScript.Api.CoroutineBuilder.In
+  isExternal: true
+  href: LunyScript.Api.CoroutineBuilder.html#LunyScript_Api_CoroutineBuilder_In_System_Double_
+  name: In
+  nameWithType: CoroutineBuilder.In
+  fullName: LunyScript.Api.CoroutineBuilder.In
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: LunyScript.Api.CoroutineTimerBuilder{LunyScript.Api.CoroutineTimerAmountSet}
+  commentId: T:LunyScript.Api.CoroutineTimerBuilder{LunyScript.Api.CoroutineTimerAmountSet}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.CoroutineTimerBuilder`1
+  href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<CoroutineTimerAmountSet>
+  nameWithType: CoroutineTimerBuilder<CoroutineTimerAmountSet>
+  fullName: LunyScript.Api.CoroutineTimerBuilder<LunyScript.Api.CoroutineTimerAmountSet>
+  nameWithType.vb: CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
+  fullName.vb: LunyScript.Api.CoroutineTimerBuilder(Of LunyScript.Api.CoroutineTimerAmountSet)
+  name.vb: CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
+  spec.csharp:
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.CoroutineTimerAmountSet
+    name: CoroutineTimerAmountSet
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerAmountSet.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.CoroutineTimerAmountSet
+    name: CoroutineTimerAmountSet
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerAmountSet.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Api.CoroutineTimerBuilder`1
+  commentId: T:LunyScript.Api.CoroutineTimerBuilder`1
+  isExternal: true
+  href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.Api.CoroutineTimerBuilder<T>
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.Api.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.CoroutineBuilder.Every*
+  commentId: Overload:LunyScript.Api.CoroutineBuilder.Every
+  isExternal: true
+  href: LunyScript.Api.CoroutineBuilder.html#LunyScript_Api_CoroutineBuilder_Every_System_Double_
+  name: Every
+  nameWithType: CoroutineBuilder.Every
+  fullName: LunyScript.Api.CoroutineBuilder.Every

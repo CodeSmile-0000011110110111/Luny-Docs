@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.LunyBridgeException
+  commentId: T:Luny.LunyBridgeException
+  id: LunyBridgeException
+  parent: Luny
+  children:
+  - Luny.LunyBridgeException.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: LunyBridgeException
+  nameWithType: LunyBridgeException
+  fullName: Luny.LunyBridgeException
+  type: Class
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Exception thrown when a bridging exception occurs in the Luny framework,
+
+    such as initializing a proxy object with a null reference.
+  example: []
+  syntax:
+    content: 'public sealed class LunyBridgeException : LunyException'
+    content.vb: Public NotInheritable Class LunyBridgeException Inherits LunyException
+  inheritance:
+  - System.Object
+  - System.Exception
+  - Luny.LunyException
+- uid: Luny.LunyBridgeException.#ctor(System.String)
+  commentId: M:Luny.LunyBridgeException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Luny.LunyBridgeException
+  langs:
+  - csharp
+  - vb
+  name: LunyBridgeException(string)
+  nameWithType: LunyBridgeException.LunyBridgeException(string)
+  fullName: Luny.LunyBridgeException.LunyBridgeException(string)
+  type: Constructor
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public LunyBridgeException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: Luny.LunyBridgeException.#ctor*
+  nameWithType.vb: LunyBridgeException.New(String)
+  fullName.vb: Luny.LunyBridgeException.New(String)
+  name.vb: New(String)
+references:
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Luny.LunyException
+  commentId: T:Luny.LunyException
+  parent: Luny
+  isExternal: true
+  href: Luny.LunyException.html
+  name: LunyException
+  nameWithType: LunyException
+  fullName: Luny.LunyException
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.LunyBridgeException.#ctor*
+  commentId: Overload:Luny.LunyBridgeException.#ctor
+  isExternal: true
+  href: Luny.LunyBridgeException.html#Luny_LunyBridgeException__ctor_System_String_
+  name: LunyBridgeException
+  nameWithType: LunyBridgeException.LunyBridgeException
+  fullName: Luny.LunyBridgeException.LunyBridgeException
+  nameWithType.vb: LunyBridgeException.New
+  fullName.vb: Luny.LunyBridgeException.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,1529 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Alarm
+  commentId: T:Luny.Alarm
+  id: Alarm
+  parent: Luny
+  children:
+  - Luny.Alarm.#ctor(System.Double)
+  - Luny.Alarm.At(System.Double)
+  - Luny.Alarm.At(System.Int64)
+  - Luny.Alarm.CompareTo(Luny.Alarm)
+  - Luny.Alarm.CompareTo(System.Double)
+  - Luny.Alarm.Equals(Luny.Alarm)
+  - Luny.Alarm.Equals(System.Double)
+  - Luny.Alarm.Equals(System.Object)
+  - Luny.Alarm.From(System.Double)
+  - Luny.Alarm.From(System.Int64)
+  - Luny.Alarm.GetHashCode
+  - Luny.Alarm.In(System.Double)
+  - Luny.Alarm.In(System.Int64)
+  - Luny.Alarm.InHours(System.Double)
+  - Luny.Alarm.InMilliseconds(System.Double)
+  - Luny.Alarm.InMinutes(System.Double)
+  - Luny.Alarm.IsElapsed(System.Double)
+  - Luny.Alarm.RemainingMilliseconds(System.Double)
+  - Luny.Alarm.RemainingMinutes(System.Double)
+  - Luny.Alarm.RemainingSeconds(System.Double)
+  - Luny.Alarm.Target
+  - Luny.Alarm.ToString
+  - Luny.Alarm.op_Equality(Luny.Alarm,Luny.Alarm)
+  - Luny.Alarm.op_Equality(Luny.Alarm,System.Double)
+  - Luny.Alarm.op_Equality(System.Double,Luny.Alarm)
+  - Luny.Alarm.op_GreaterThan(Luny.Alarm,Luny.Alarm)
+  - Luny.Alarm.op_GreaterThan(Luny.Alarm,System.Double)
+  - Luny.Alarm.op_GreaterThan(System.Double,Luny.Alarm)
+  - Luny.Alarm.op_GreaterThanOrEqual(Luny.Alarm,Luny.Alarm)
+  - Luny.Alarm.op_GreaterThanOrEqual(Luny.Alarm,System.Double)
+  - Luny.Alarm.op_GreaterThanOrEqual(System.Double,Luny.Alarm)
+  - Luny.Alarm.op_Inequality(Luny.Alarm,Luny.Alarm)
+  - Luny.Alarm.op_Inequality(Luny.Alarm,System.Double)
+  - Luny.Alarm.op_Inequality(System.Double,Luny.Alarm)
+  - Luny.Alarm.op_LessThan(Luny.Alarm,Luny.Alarm)
+  - Luny.Alarm.op_LessThan(Luny.Alarm,System.Double)
+  - Luny.Alarm.op_LessThan(System.Double,Luny.Alarm)
+  - Luny.Alarm.op_LessThanOrEqual(Luny.Alarm,Luny.Alarm)
+  - Luny.Alarm.op_LessThanOrEqual(Luny.Alarm,System.Double)
+  - Luny.Alarm.op_LessThanOrEqual(System.Double,Luny.Alarm)
+  langs:
+  - csharp
+  - vb
+  name: Alarm
+  nameWithType: Alarm
+  fullName: Luny.Alarm
+  type: Struct
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    A lightweight readonly struct representing a fixed point in the future.
+
+    Used for high-performance polling in update loops.
+  example: []
+  syntax:
+    content: public readonly struct Alarm
+    content.vb: Public Structure Alarm
+- uid: Luny.Alarm.Target
+  commentId: F:Luny.Alarm.Target
+  id: Target
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: Alarm.Target
+  fullName: Luny.Alarm.Target
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public readonly double Target
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Target As Double
+- uid: Luny.Alarm.#ctor(System.Double)
+  commentId: M:Luny.Alarm.#ctor(System.Double)
+  id: '#ctor(System.Double)'
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: Alarm(double)
+  nameWithType: Alarm.Alarm(double)
+  fullName: Luny.Alarm.Alarm(double)
+  type: Constructor
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Creates an alarm set to fire after the specified time or ticks.
+  example: []
+  syntax:
+    content: public Alarm(double target)
+    parameters:
+    - id: target
+      type: System.Double
+    content.vb: Public Sub New(target As Double)
+  overload: Luny.Alarm.#ctor*
+  nameWithType.vb: Alarm.New(Double)
+  fullName.vb: Luny.Alarm.New(Double)
+  name.vb: New(Double)
+- uid: Luny.Alarm.In(System.Double)
+  commentId: M:Luny.Alarm.In(System.Double)
+  id: In(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: In(double)
+  nameWithType: Alarm.In(double)
+  fullName: Luny.Alarm.In(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Creates an alarm set to fire after the specified seconds.
+
+    Note: Use From(now) to make it relative to a specific time.
+  example: []
+  syntax:
+    content: public static Alarm In(double seconds)
+    parameters:
+    - id: seconds
+      type: System.Double
+    return:
+      type: Luny.Alarm
+    content.vb: Public Shared Function [In](seconds As Double) As Alarm
+  overload: Luny.Alarm.In*
+  nameWithType.vb: Alarm.In(Double)
+  fullName.vb: Luny.Alarm.In(Double)
+  name.vb: In(Double)
+- uid: Luny.Alarm.In(System.Int64)
+  commentId: M:Luny.Alarm.In(System.Int64)
+  id: In(System.Int64)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: In(long)
+  nameWithType: Alarm.In(long)
+  fullName: Luny.Alarm.In(long)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Creates an alarm set to fire after the specified number of ticks.
+
+    Note: Use From(now) to make it relative to a specific tick count.
+  example: []
+  syntax:
+    content: public static Alarm In(long ticks)
+    parameters:
+    - id: ticks
+      type: System.Int64
+    return:
+      type: Luny.Alarm
+    content.vb: Public Shared Function [In](ticks As Long) As Alarm
+  overload: Luny.Alarm.In*
+  nameWithType.vb: Alarm.In(Long)
+  fullName.vb: Luny.Alarm.In(Long)
+  name.vb: In(Long)
+- uid: Luny.Alarm.InMilliseconds(System.Double)
+  commentId: M:Luny.Alarm.InMilliseconds(System.Double)
+  id: InMilliseconds(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: InMilliseconds(double)
+  nameWithType: Alarm.InMilliseconds(double)
+  fullName: Luny.Alarm.InMilliseconds(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Creates an alarm set to fire after the specified milliseconds.
+  example: []
+  syntax:
+    content: public static Alarm InMilliseconds(double ms)
+    parameters:
+    - id: ms
+      type: System.Double
+    return:
+      type: Luny.Alarm
+    content.vb: Public Shared Function InMilliseconds(ms As Double) As Alarm
+  overload: Luny.Alarm.InMilliseconds*
+  nameWithType.vb: Alarm.InMilliseconds(Double)
+  fullName.vb: Luny.Alarm.InMilliseconds(Double)
+  name.vb: InMilliseconds(Double)
+- uid: Luny.Alarm.InMinutes(System.Double)
+  commentId: M:Luny.Alarm.InMinutes(System.Double)
+  id: InMinutes(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: InMinutes(double)
+  nameWithType: Alarm.InMinutes(double)
+  fullName: Luny.Alarm.InMinutes(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Creates an alarm set to fire after the specified minutes.
+  example: []
+  syntax:
+    content: public static Alarm InMinutes(double m)
+    parameters:
+    - id: m
+      type: System.Double
+    return:
+      type: Luny.Alarm
+    content.vb: Public Shared Function InMinutes(m As Double) As Alarm
+  overload: Luny.Alarm.InMinutes*
+  nameWithType.vb: Alarm.InMinutes(Double)
+  fullName.vb: Luny.Alarm.InMinutes(Double)
+  name.vb: InMinutes(Double)
+- uid: Luny.Alarm.InHours(System.Double)
+  commentId: M:Luny.Alarm.InHours(System.Double)
+  id: InHours(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: InHours(double)
+  nameWithType: Alarm.InHours(double)
+  fullName: Luny.Alarm.InHours(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Creates an alarm set to fire after the specified hours.
+  example: []
+  syntax:
+    content: public static Alarm InHours(double h)
+    parameters:
+    - id: h
+      type: System.Double
+    return:
+      type: Luny.Alarm
+    content.vb: Public Shared Function InHours(h As Double) As Alarm
+  overload: Luny.Alarm.InHours*
+  nameWithType.vb: Alarm.InHours(Double)
+  fullName.vb: Luny.Alarm.InHours(Double)
+  name.vb: InHours(Double)
+- uid: Luny.Alarm.At(System.Double)
+  commentId: M:Luny.Alarm.At(System.Double)
+  id: At(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: At(double)
+  nameWithType: Alarm.At(double)
+  fullName: Luny.Alarm.At(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Creates an alarm at a specific absolute time.
+  example: []
+  syntax:
+    content: public static Alarm At(double absoluteTime)
+    parameters:
+    - id: absoluteTime
+      type: System.Double
+    return:
+      type: Luny.Alarm
+    content.vb: Public Shared Function At(absoluteTime As Double) As Alarm
+  overload: Luny.Alarm.At*
+  nameWithType.vb: Alarm.At(Double)
+  fullName.vb: Luny.Alarm.At(Double)
+  name.vb: At(Double)
+- uid: Luny.Alarm.At(System.Int64)
+  commentId: M:Luny.Alarm.At(System.Int64)
+  id: At(System.Int64)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: At(long)
+  nameWithType: Alarm.At(long)
+  fullName: Luny.Alarm.At(long)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Creates an alarm at a specific total number of ticks.
+  example: []
+  syntax:
+    content: public static Alarm At(long totalTicks)
+    parameters:
+    - id: totalTicks
+      type: System.Int64
+    return:
+      type: Luny.Alarm
+    content.vb: Public Shared Function At(totalTicks As Long) As Alarm
+  overload: Luny.Alarm.At*
+  nameWithType.vb: Alarm.At(Long)
+  fullName.vb: Luny.Alarm.At(Long)
+  name.vb: At(Long)
+- uid: Luny.Alarm.From(System.Double)
+  commentId: M:Luny.Alarm.From(System.Double)
+  id: From(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: From(double)
+  nameWithType: Alarm.From(double)
+  fullName: Luny.Alarm.From(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Returns a new alarm relative to the provided time.
+
+    Example: `Alarm.In(5).From(Time.ElapsedSeconds)`
+  example: []
+  syntax:
+    content: public Alarm From(double now)
+    parameters:
+    - id: now
+      type: System.Double
+    return:
+      type: Luny.Alarm
+    content.vb: Public Function From(now As Double) As Alarm
+  overload: Luny.Alarm.From*
+  nameWithType.vb: Alarm.From(Double)
+  fullName.vb: Luny.Alarm.From(Double)
+  name.vb: From(Double)
+- uid: Luny.Alarm.From(System.Int64)
+  commentId: M:Luny.Alarm.From(System.Int64)
+  id: From(System.Int64)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: From(long)
+  nameWithType: Alarm.From(long)
+  fullName: Luny.Alarm.From(long)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Returns a new alarm relative to the provided tick.
+
+    Example: `Alarm.In(5).From(Time.FrameCount)`
+  example: []
+  syntax:
+    content: public Alarm From(long currentTick)
+    parameters:
+    - id: currentTick
+      type: System.Int64
+    return:
+      type: Luny.Alarm
+    content.vb: Public Function From(currentTick As Long) As Alarm
+  overload: Luny.Alarm.From*
+  nameWithType.vb: Alarm.From(Long)
+  fullName.vb: Luny.Alarm.From(Long)
+  name.vb: From(Long)
+- uid: Luny.Alarm.IsElapsed(System.Double)
+  commentId: M:Luny.Alarm.IsElapsed(System.Double)
+  id: IsElapsed(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: IsElapsed(double)
+  nameWithType: Alarm.IsElapsed(double)
+  fullName: Luny.Alarm.IsElapsed(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Returns true if the target time has been reached or passed.
+  example: []
+  syntax:
+    content: public bool IsElapsed(double now)
+    parameters:
+    - id: now
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsElapsed(now As Double) As Boolean
+  overload: Luny.Alarm.IsElapsed*
+  nameWithType.vb: Alarm.IsElapsed(Double)
+  fullName.vb: Luny.Alarm.IsElapsed(Double)
+  name.vb: IsElapsed(Double)
+- uid: Luny.Alarm.RemainingSeconds(System.Double)
+  commentId: M:Luny.Alarm.RemainingSeconds(System.Double)
+  id: RemainingSeconds(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: RemainingSeconds(double)
+  nameWithType: Alarm.RemainingSeconds(double)
+  fullName: Luny.Alarm.RemainingSeconds(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Returns the remaining time in seconds.
+  example: []
+  syntax:
+    content: public double RemainingSeconds(double now)
+    parameters:
+    - id: now
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function RemainingSeconds(now As Double) As Double
+  overload: Luny.Alarm.RemainingSeconds*
+  nameWithType.vb: Alarm.RemainingSeconds(Double)
+  fullName.vb: Luny.Alarm.RemainingSeconds(Double)
+  name.vb: RemainingSeconds(Double)
+- uid: Luny.Alarm.RemainingMilliseconds(System.Double)
+  commentId: M:Luny.Alarm.RemainingMilliseconds(System.Double)
+  id: RemainingMilliseconds(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: RemainingMilliseconds(double)
+  nameWithType: Alarm.RemainingMilliseconds(double)
+  fullName: Luny.Alarm.RemainingMilliseconds(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Returns the remaining time in milliseconds.
+  example: []
+  syntax:
+    content: public double RemainingMilliseconds(double now)
+    parameters:
+    - id: now
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function RemainingMilliseconds(now As Double) As Double
+  overload: Luny.Alarm.RemainingMilliseconds*
+  nameWithType.vb: Alarm.RemainingMilliseconds(Double)
+  fullName.vb: Luny.Alarm.RemainingMilliseconds(Double)
+  name.vb: RemainingMilliseconds(Double)
+- uid: Luny.Alarm.RemainingMinutes(System.Double)
+  commentId: M:Luny.Alarm.RemainingMinutes(System.Double)
+  id: RemainingMinutes(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: RemainingMinutes(double)
+  nameWithType: Alarm.RemainingMinutes(double)
+  fullName: Luny.Alarm.RemainingMinutes(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Returns the remaining time in minutes.
+  example: []
+  syntax:
+    content: public double RemainingMinutes(double now)
+    parameters:
+    - id: now
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function RemainingMinutes(now As Double) As Double
+  overload: Luny.Alarm.RemainingMinutes*
+  nameWithType.vb: Alarm.RemainingMinutes(Double)
+  fullName.vb: Luny.Alarm.RemainingMinutes(Double)
+  name.vb: RemainingMinutes(Double)
+- uid: Luny.Alarm.CompareTo(Luny.Alarm)
+  commentId: M:Luny.Alarm.CompareTo(Luny.Alarm)
+  id: CompareTo(Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Alarm)
+  nameWithType: Alarm.CompareTo(Alarm)
+  fullName: Luny.Alarm.CompareTo(Luny.Alarm)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public int CompareTo(Alarm other)
+    parameters:
+    - id: other
+      type: Luny.Alarm
+    return:
+      type: System.Int32
+    content.vb: Public Function CompareTo(other As Alarm) As Integer
+  overload: Luny.Alarm.CompareTo*
+- uid: Luny.Alarm.CompareTo(System.Double)
+  commentId: M:Luny.Alarm.CompareTo(System.Double)
+  id: CompareTo(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(double)
+  nameWithType: Alarm.CompareTo(double)
+  fullName: Luny.Alarm.CompareTo(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public int CompareTo(double other)
+    parameters:
+    - id: other
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Public Function CompareTo(other As Double) As Integer
+  overload: Luny.Alarm.CompareTo*
+  nameWithType.vb: Alarm.CompareTo(Double)
+  fullName.vb: Luny.Alarm.CompareTo(Double)
+  name.vb: CompareTo(Double)
+- uid: Luny.Alarm.Equals(Luny.Alarm)
+  commentId: M:Luny.Alarm.Equals(Luny.Alarm)
+  id: Equals(Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: Equals(Alarm)
+  nameWithType: Alarm.Equals(Alarm)
+  fullName: Luny.Alarm.Equals(Luny.Alarm)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public bool Equals(Alarm other)
+    parameters:
+    - id: other
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Alarm) As Boolean
+  overload: Luny.Alarm.Equals*
+- uid: Luny.Alarm.Equals(System.Double)
+  commentId: M:Luny.Alarm.Equals(System.Double)
+  id: Equals(System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: Equals(double)
+  nameWithType: Alarm.Equals(double)
+  fullName: Luny.Alarm.Equals(double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public bool Equals(double other)
+    parameters:
+    - id: other
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Double) As Boolean
+  overload: Luny.Alarm.Equals*
+  nameWithType.vb: Alarm.Equals(Double)
+  fullName.vb: Luny.Alarm.Equals(Double)
+  name.vb: Equals(Double)
+- uid: Luny.Alarm.Equals(System.Object)
+  commentId: M:Luny.Alarm.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Alarm.Equals(object)
+  fullName: Luny.Alarm.Equals(object)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Luny.Alarm.Equals*
+  nameWithType.vb: Alarm.Equals(Object)
+  fullName.vb: Luny.Alarm.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Luny.Alarm.GetHashCode
+  commentId: M:Luny.Alarm.GetHashCode
+  id: GetHashCode
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Alarm.GetHashCode()
+  fullName: Luny.Alarm.GetHashCode()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Luny.Alarm.GetHashCode*
+- uid: Luny.Alarm.ToString
+  commentId: M:Luny.Alarm.ToString
+  id: ToString
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Alarm.ToString()
+  fullName: Luny.Alarm.ToString()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Luny.Alarm.ToString*
+- uid: Luny.Alarm.op_Equality(Luny.Alarm,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_Equality(Luny.Alarm,Luny.Alarm)
+  id: op_Equality(Luny.Alarm,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Alarm, Alarm)
+  nameWithType: Alarm.operator ==(Alarm, Alarm)
+  fullName: Luny.Alarm.operator ==(Luny.Alarm, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator ==(Alarm left, Alarm right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Alarm, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_Equality*
+  nameWithType.vb: Alarm.=(Alarm, Alarm)
+  fullName.vb: Luny.Alarm.=(Luny.Alarm, Luny.Alarm)
+  name.vb: =(Alarm, Alarm)
+- uid: Luny.Alarm.op_Inequality(Luny.Alarm,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_Inequality(Luny.Alarm,Luny.Alarm)
+  id: op_Inequality(Luny.Alarm,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Alarm, Alarm)
+  nameWithType: Alarm.operator !=(Alarm, Alarm)
+  fullName: Luny.Alarm.operator !=(Luny.Alarm, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator !=(Alarm left, Alarm right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Alarm, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_Inequality*
+  nameWithType.vb: Alarm.<>(Alarm, Alarm)
+  fullName.vb: Luny.Alarm.<>(Luny.Alarm, Luny.Alarm)
+  name.vb: <>(Alarm, Alarm)
+- uid: Luny.Alarm.op_LessThan(Luny.Alarm,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_LessThan(Luny.Alarm,Luny.Alarm)
+  id: op_LessThan(Luny.Alarm,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator <(Alarm, Alarm)
+  nameWithType: Alarm.operator <(Alarm, Alarm)
+  fullName: Luny.Alarm.operator <(Luny.Alarm, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator <(Alarm left, Alarm right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(left As Alarm, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_LessThan*
+  nameWithType.vb: Alarm.<(Alarm, Alarm)
+  fullName.vb: Luny.Alarm.<(Luny.Alarm, Luny.Alarm)
+  name.vb: <(Alarm, Alarm)
+- uid: Luny.Alarm.op_GreaterThan(Luny.Alarm,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_GreaterThan(Luny.Alarm,Luny.Alarm)
+  id: op_GreaterThan(Luny.Alarm,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator >(Alarm, Alarm)
+  nameWithType: Alarm.operator >(Alarm, Alarm)
+  fullName: Luny.Alarm.operator >(Luny.Alarm, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator >(Alarm left, Alarm right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >(left As Alarm, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_GreaterThan*
+  nameWithType.vb: Alarm.>(Alarm, Alarm)
+  fullName.vb: Luny.Alarm.>(Luny.Alarm, Luny.Alarm)
+  name.vb: '>(Alarm, Alarm)'
+- uid: Luny.Alarm.op_LessThanOrEqual(Luny.Alarm,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_LessThanOrEqual(Luny.Alarm,Luny.Alarm)
+  id: op_LessThanOrEqual(Luny.Alarm,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator <=(Alarm, Alarm)
+  nameWithType: Alarm.operator <=(Alarm, Alarm)
+  fullName: Luny.Alarm.operator <=(Luny.Alarm, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator <=(Alarm left, Alarm right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(left As Alarm, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_LessThanOrEqual*
+  nameWithType.vb: Alarm.<=(Alarm, Alarm)
+  fullName.vb: Luny.Alarm.<=(Luny.Alarm, Luny.Alarm)
+  name.vb: <=(Alarm, Alarm)
+- uid: Luny.Alarm.op_GreaterThanOrEqual(Luny.Alarm,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_GreaterThanOrEqual(Luny.Alarm,Luny.Alarm)
+  id: op_GreaterThanOrEqual(Luny.Alarm,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator >=(Alarm, Alarm)
+  nameWithType: Alarm.operator >=(Alarm, Alarm)
+  fullName: Luny.Alarm.operator >=(Luny.Alarm, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator >=(Alarm left, Alarm right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(left As Alarm, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_GreaterThanOrEqual*
+  nameWithType.vb: Alarm.>=(Alarm, Alarm)
+  fullName.vb: Luny.Alarm.>=(Luny.Alarm, Luny.Alarm)
+  name.vb: '>=(Alarm, Alarm)'
+- uid: Luny.Alarm.op_Equality(System.Double,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_Equality(System.Double,Luny.Alarm)
+  id: op_Equality(System.Double,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator ==(double, Alarm)
+  nameWithType: Alarm.operator ==(double, Alarm)
+  fullName: Luny.Alarm.operator ==(double, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator ==(double left, Alarm right)
+    parameters:
+    - id: left
+      type: System.Double
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Double, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_Equality*
+  nameWithType.vb: Alarm.=(Double, Alarm)
+  fullName.vb: Luny.Alarm.=(Double, Luny.Alarm)
+  name.vb: =(Double, Alarm)
+- uid: Luny.Alarm.op_Inequality(System.Double,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_Inequality(System.Double,Luny.Alarm)
+  id: op_Inequality(System.Double,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator !=(double, Alarm)
+  nameWithType: Alarm.operator !=(double, Alarm)
+  fullName: Luny.Alarm.operator !=(double, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator !=(double left, Alarm right)
+    parameters:
+    - id: left
+      type: System.Double
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Double, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_Inequality*
+  nameWithType.vb: Alarm.<>(Double, Alarm)
+  fullName.vb: Luny.Alarm.<>(Double, Luny.Alarm)
+  name.vb: <>(Double, Alarm)
+- uid: Luny.Alarm.op_LessThan(System.Double,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_LessThan(System.Double,Luny.Alarm)
+  id: op_LessThan(System.Double,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator <(double, Alarm)
+  nameWithType: Alarm.operator <(double, Alarm)
+  fullName: Luny.Alarm.operator <(double, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator <(double left, Alarm right)
+    parameters:
+    - id: left
+      type: System.Double
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(left As Double, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_LessThan*
+  nameWithType.vb: Alarm.<(Double, Alarm)
+  fullName.vb: Luny.Alarm.<(Double, Luny.Alarm)
+  name.vb: <(Double, Alarm)
+- uid: Luny.Alarm.op_GreaterThan(System.Double,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_GreaterThan(System.Double,Luny.Alarm)
+  id: op_GreaterThan(System.Double,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator >(double, Alarm)
+  nameWithType: Alarm.operator >(double, Alarm)
+  fullName: Luny.Alarm.operator >(double, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator >(double left, Alarm right)
+    parameters:
+    - id: left
+      type: System.Double
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >(left As Double, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_GreaterThan*
+  nameWithType.vb: Alarm.>(Double, Alarm)
+  fullName.vb: Luny.Alarm.>(Double, Luny.Alarm)
+  name.vb: '>(Double, Alarm)'
+- uid: Luny.Alarm.op_LessThanOrEqual(System.Double,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_LessThanOrEqual(System.Double,Luny.Alarm)
+  id: op_LessThanOrEqual(System.Double,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator <=(double, Alarm)
+  nameWithType: Alarm.operator <=(double, Alarm)
+  fullName: Luny.Alarm.operator <=(double, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator <=(double left, Alarm right)
+    parameters:
+    - id: left
+      type: System.Double
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(left As Double, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_LessThanOrEqual*
+  nameWithType.vb: Alarm.<=(Double, Alarm)
+  fullName.vb: Luny.Alarm.<=(Double, Luny.Alarm)
+  name.vb: <=(Double, Alarm)
+- uid: Luny.Alarm.op_GreaterThanOrEqual(System.Double,Luny.Alarm)
+  commentId: M:Luny.Alarm.op_GreaterThanOrEqual(System.Double,Luny.Alarm)
+  id: op_GreaterThanOrEqual(System.Double,Luny.Alarm)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator >=(double, Alarm)
+  nameWithType: Alarm.operator >=(double, Alarm)
+  fullName: Luny.Alarm.operator >=(double, Luny.Alarm)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator >=(double left, Alarm right)
+    parameters:
+    - id: left
+      type: System.Double
+    - id: right
+      type: Luny.Alarm
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(left As Double, right As Alarm) As Boolean
+  overload: Luny.Alarm.op_GreaterThanOrEqual*
+  nameWithType.vb: Alarm.>=(Double, Alarm)
+  fullName.vb: Luny.Alarm.>=(Double, Luny.Alarm)
+  name.vb: '>=(Double, Alarm)'
+- uid: Luny.Alarm.op_Equality(Luny.Alarm,System.Double)
+  commentId: M:Luny.Alarm.op_Equality(Luny.Alarm,System.Double)
+  id: op_Equality(Luny.Alarm,System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Alarm, double)
+  nameWithType: Alarm.operator ==(Alarm, double)
+  fullName: Luny.Alarm.operator ==(Luny.Alarm, double)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator ==(Alarm left, double right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Alarm, right As Double) As Boolean
+  overload: Luny.Alarm.op_Equality*
+  nameWithType.vb: Alarm.=(Alarm, Double)
+  fullName.vb: Luny.Alarm.=(Luny.Alarm, Double)
+  name.vb: =(Alarm, Double)
+- uid: Luny.Alarm.op_Inequality(Luny.Alarm,System.Double)
+  commentId: M:Luny.Alarm.op_Inequality(Luny.Alarm,System.Double)
+  id: op_Inequality(Luny.Alarm,System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Alarm, double)
+  nameWithType: Alarm.operator !=(Alarm, double)
+  fullName: Luny.Alarm.operator !=(Luny.Alarm, double)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator !=(Alarm left, double right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Alarm, right As Double) As Boolean
+  overload: Luny.Alarm.op_Inequality*
+  nameWithType.vb: Alarm.<>(Alarm, Double)
+  fullName.vb: Luny.Alarm.<>(Luny.Alarm, Double)
+  name.vb: <>(Alarm, Double)
+- uid: Luny.Alarm.op_LessThan(Luny.Alarm,System.Double)
+  commentId: M:Luny.Alarm.op_LessThan(Luny.Alarm,System.Double)
+  id: op_LessThan(Luny.Alarm,System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator <(Alarm, double)
+  nameWithType: Alarm.operator <(Alarm, double)
+  fullName: Luny.Alarm.operator <(Luny.Alarm, double)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator <(Alarm left, double right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(left As Alarm, right As Double) As Boolean
+  overload: Luny.Alarm.op_LessThan*
+  nameWithType.vb: Alarm.<(Alarm, Double)
+  fullName.vb: Luny.Alarm.<(Luny.Alarm, Double)
+  name.vb: <(Alarm, Double)
+- uid: Luny.Alarm.op_GreaterThan(Luny.Alarm,System.Double)
+  commentId: M:Luny.Alarm.op_GreaterThan(Luny.Alarm,System.Double)
+  id: op_GreaterThan(Luny.Alarm,System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator >(Alarm, double)
+  nameWithType: Alarm.operator >(Alarm, double)
+  fullName: Luny.Alarm.operator >(Luny.Alarm, double)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator >(Alarm left, double right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >(left As Alarm, right As Double) As Boolean
+  overload: Luny.Alarm.op_GreaterThan*
+  nameWithType.vb: Alarm.>(Alarm, Double)
+  fullName.vb: Luny.Alarm.>(Luny.Alarm, Double)
+  name.vb: '>(Alarm, Double)'
+- uid: Luny.Alarm.op_LessThanOrEqual(Luny.Alarm,System.Double)
+  commentId: M:Luny.Alarm.op_LessThanOrEqual(Luny.Alarm,System.Double)
+  id: op_LessThanOrEqual(Luny.Alarm,System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator <=(Alarm, double)
+  nameWithType: Alarm.operator <=(Alarm, double)
+  fullName: Luny.Alarm.operator <=(Luny.Alarm, double)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator <=(Alarm left, double right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(left As Alarm, right As Double) As Boolean
+  overload: Luny.Alarm.op_LessThanOrEqual*
+  nameWithType.vb: Alarm.<=(Alarm, Double)
+  fullName.vb: Luny.Alarm.<=(Luny.Alarm, Double)
+  name.vb: <=(Alarm, Double)
+- uid: Luny.Alarm.op_GreaterThanOrEqual(Luny.Alarm,System.Double)
+  commentId: M:Luny.Alarm.op_GreaterThanOrEqual(Luny.Alarm,System.Double)
+  id: op_GreaterThanOrEqual(Luny.Alarm,System.Double)
+  parent: Luny.Alarm
+  langs:
+  - csharp
+  - vb
+  name: operator >=(Alarm, double)
+  nameWithType: Alarm.operator >=(Alarm, double)
+  fullName: Luny.Alarm.operator >=(Luny.Alarm, double)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public static bool operator >=(Alarm left, double right)
+    parameters:
+    - id: left
+      type: Luny.Alarm
+    - id: right
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(left As Alarm, right As Double) As Boolean
+  overload: Luny.Alarm.op_GreaterThanOrEqual*
+  nameWithType.vb: Alarm.>=(Alarm, Double)
+  fullName.vb: Luny.Alarm.>=(Luny.Alarm, Double)
+  name.vb: '>=(Alarm, Double)'
+references:
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Alarm.#ctor*
+  commentId: Overload:Luny.Alarm.#ctor
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm__ctor_System_Double_
+  name: Alarm
+  nameWithType: Alarm.Alarm
+  fullName: Luny.Alarm.Alarm
+  nameWithType.vb: Alarm.New
+  fullName.vb: Luny.Alarm.New
+  name.vb: New
+- uid: Luny.Alarm.In*
+  commentId: Overload:Luny.Alarm.In
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_In_System_Double_
+  name: In
+  nameWithType: Alarm.In
+  fullName: Luny.Alarm.In
+- uid: Luny.Alarm
+  commentId: T:Luny.Alarm
+  parent: Luny
+  isExternal: true
+  href: Luny.Alarm.html
+  name: Alarm
+  nameWithType: Alarm
+  fullName: Luny.Alarm
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Luny.Alarm.InMilliseconds*
+  commentId: Overload:Luny.Alarm.InMilliseconds
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_InMilliseconds_System_Double_
+  name: InMilliseconds
+  nameWithType: Alarm.InMilliseconds
+  fullName: Luny.Alarm.InMilliseconds
+- uid: Luny.Alarm.InMinutes*
+  commentId: Overload:Luny.Alarm.InMinutes
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_InMinutes_System_Double_
+  name: InMinutes
+  nameWithType: Alarm.InMinutes
+  fullName: Luny.Alarm.InMinutes
+- uid: Luny.Alarm.InHours*
+  commentId: Overload:Luny.Alarm.InHours
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_InHours_System_Double_
+  name: InHours
+  nameWithType: Alarm.InHours
+  fullName: Luny.Alarm.InHours
+- uid: Luny.Alarm.At*
+  commentId: Overload:Luny.Alarm.At
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_At_System_Double_
+  name: At
+  nameWithType: Alarm.At
+  fullName: Luny.Alarm.At
+- uid: Luny.Alarm.From*
+  commentId: Overload:Luny.Alarm.From
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_From_System_Double_
+  name: From
+  nameWithType: Alarm.From
+  fullName: Luny.Alarm.From
+- uid: Luny.Alarm.IsElapsed*
+  commentId: Overload:Luny.Alarm.IsElapsed
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_IsElapsed_System_Double_
+  name: IsElapsed
+  nameWithType: Alarm.IsElapsed
+  fullName: Luny.Alarm.IsElapsed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Luny.Alarm.RemainingSeconds*
+  commentId: Overload:Luny.Alarm.RemainingSeconds
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_RemainingSeconds_System_Double_
+  name: RemainingSeconds
+  nameWithType: Alarm.RemainingSeconds
+  fullName: Luny.Alarm.RemainingSeconds
+- uid: Luny.Alarm.RemainingMilliseconds*
+  commentId: Overload:Luny.Alarm.RemainingMilliseconds
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_RemainingMilliseconds_System_Double_
+  name: RemainingMilliseconds
+  nameWithType: Alarm.RemainingMilliseconds
+  fullName: Luny.Alarm.RemainingMilliseconds
+- uid: Luny.Alarm.RemainingMinutes*
+  commentId: Overload:Luny.Alarm.RemainingMinutes
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_RemainingMinutes_System_Double_
+  name: RemainingMinutes
+  nameWithType: Alarm.RemainingMinutes
+  fullName: Luny.Alarm.RemainingMinutes
+- uid: Luny.Alarm.CompareTo*
+  commentId: Overload:Luny.Alarm.CompareTo
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_CompareTo_Luny_Alarm_
+  name: CompareTo
+  nameWithType: Alarm.CompareTo
+  fullName: Luny.Alarm.CompareTo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Luny.Alarm.Equals*
+  commentId: Overload:Luny.Alarm.Equals
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_Equals_Luny_Alarm_
+  name: Equals
+  nameWithType: Alarm.Equals
+  fullName: Luny.Alarm.Equals
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Luny.Alarm.GetHashCode*
+  commentId: Overload:Luny.Alarm.GetHashCode
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_GetHashCode
+  name: GetHashCode
+  nameWithType: Alarm.GetHashCode
+  fullName: Luny.Alarm.GetHashCode
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Luny.Alarm.ToString*
+  commentId: Overload:Luny.Alarm.ToString
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_ToString
+  name: ToString
+  nameWithType: Alarm.ToString
+  fullName: Luny.Alarm.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Alarm.op_Equality*
+  commentId: Overload:Luny.Alarm.op_Equality
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_op_Equality_Luny_Alarm_Luny_Alarm_
+  name: operator ==
+  nameWithType: Alarm.operator ==
+  fullName: Luny.Alarm.operator ==
+  nameWithType.vb: Alarm.=
+  fullName.vb: Luny.Alarm.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Alarm.op_Equality*
+    name: ==
+    isExternal: true
+    href: Luny.Alarm.html#Luny_Alarm_op_Equality_Luny_Alarm_Luny_Alarm_
+- uid: Luny.Alarm.op_Inequality*
+  commentId: Overload:Luny.Alarm.op_Inequality
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_op_Inequality_Luny_Alarm_Luny_Alarm_
+  name: operator !=
+  nameWithType: Alarm.operator !=
+  fullName: Luny.Alarm.operator !=
+  nameWithType.vb: Alarm.<>
+  fullName.vb: Luny.Alarm.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Alarm.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Luny.Alarm.html#Luny_Alarm_op_Inequality_Luny_Alarm_Luny_Alarm_
+- uid: Luny.Alarm.op_LessThan*
+  commentId: Overload:Luny.Alarm.op_LessThan
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_op_LessThan_Luny_Alarm_Luny_Alarm_
+  name: operator <
+  nameWithType: Alarm.operator <
+  fullName: Luny.Alarm.operator <
+  nameWithType.vb: Alarm.<
+  fullName.vb: Luny.Alarm.<
+  name.vb: <
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Alarm.op_LessThan*
+    name: <
+    isExternal: true
+    href: Luny.Alarm.html#Luny_Alarm_op_LessThan_Luny_Alarm_Luny_Alarm_
+- uid: Luny.Alarm.op_GreaterThan*
+  commentId: Overload:Luny.Alarm.op_GreaterThan
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_op_GreaterThan_Luny_Alarm_Luny_Alarm_
+  name: operator >
+  nameWithType: Alarm.operator >
+  fullName: Luny.Alarm.operator >
+  nameWithType.vb: Alarm.>
+  fullName.vb: Luny.Alarm.>
+  name.vb: '>'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Alarm.op_GreaterThan*
+    name: '>'
+    isExternal: true
+    href: Luny.Alarm.html#Luny_Alarm_op_GreaterThan_Luny_Alarm_Luny_Alarm_
+- uid: Luny.Alarm.op_LessThanOrEqual*
+  commentId: Overload:Luny.Alarm.op_LessThanOrEqual
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_op_LessThanOrEqual_Luny_Alarm_Luny_Alarm_
+  name: operator <=
+  nameWithType: Alarm.operator <=
+  fullName: Luny.Alarm.operator <=
+  nameWithType.vb: Alarm.<=
+  fullName.vb: Luny.Alarm.<=
+  name.vb: <=
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Alarm.op_LessThanOrEqual*
+    name: <=
+    isExternal: true
+    href: Luny.Alarm.html#Luny_Alarm_op_LessThanOrEqual_Luny_Alarm_Luny_Alarm_
+- uid: Luny.Alarm.op_GreaterThanOrEqual*
+  commentId: Overload:Luny.Alarm.op_GreaterThanOrEqual
+  isExternal: true
+  href: Luny.Alarm.html#Luny_Alarm_op_GreaterThanOrEqual_Luny_Alarm_Luny_Alarm_
+  name: operator >=
+  nameWithType: Alarm.operator >=
+  fullName: Luny.Alarm.operator >=
+  nameWithType.vb: Alarm.>=
+  fullName.vb: Luny.Alarm.>=
+  name.vb: '>='
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Alarm.op_GreaterThanOrEqual*
+    name: '>='
+    isExternal: true
+    href: Luny.Alarm.html#Luny_Alarm_op_GreaterThanOrEqual_Luny_Alarm_Luny_Alarm_

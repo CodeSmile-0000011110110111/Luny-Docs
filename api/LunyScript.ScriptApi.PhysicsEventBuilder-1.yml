@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  commentId: T:LunyScript.ScriptApi.PhysicsEventBuilder`1
+  id: PhysicsEventBuilder`1
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.PhysicsEventBuilder`1.Begins(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.PhysicsEventBuilder`1.Continues(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.PhysicsEventBuilder`1.Cooldown(System.Double)
+  - LunyScript.ScriptApi.PhysicsEventBuilder`1.Ends(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.PhysicsEventBuilder`1.Layered(System.String[])
+  - LunyScript.ScriptApi.PhysicsEventBuilder`1.Tagged(System.String[])
+  - LunyScript.ScriptApi.PhysicsEventBuilder`1.Typed(System.Type[])
+  - LunyScript.ScriptApi.PhysicsEventBuilder`1.With(System.String[])
+  langs:
+  - csharp
+  - vb
+  name: PhysicsEventBuilder<T>
+  nameWithType: PhysicsEventBuilder<T>
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Fluent builder for filtered collision/trigger event sequences.
+
+    Filters (Tagged, Named, Layered, Masked, Typed) are order-independent and accumulate.
+
+    Event handlers (Begins, Updates, Ends) are also order-independent.
+
+    Parameters within a filter kind are OR-combined; different kinds are AND-combined.
+  example: []
+  syntax:
+    content: 'public readonly struct PhysicsEventBuilder<T> where T : struct, ICollisionBuilderState'
+    typeParameters:
+    - id: T
+    content.vb: Public Structure PhysicsEventBuilder(Of T As {Structure, ICollisionBuilderState})
+  nameWithType.vb: PhysicsEventBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T)
+  name.vb: PhysicsEventBuilder(Of T)
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Tagged(System.String[])
+  commentId: M:LunyScript.ScriptApi.PhysicsEventBuilder`1.Tagged(System.String[])
+  id: Tagged(System.String[])
+  parent: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Tagged(params string[])
+  nameWithType: PhysicsEventBuilder<T>.Tagged(params string[])
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Tagged(params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Only react when the other object has one of the given tags (OR logic).
+
+    Combine with other filter kinds for AND logic across kinds.
+  example: []
+  syntax:
+    content: public PhysicsEventBuilder<CollisionBuilderReady> Tagged(params string[] tags)
+    parameters:
+    - id: tags
+      type: System.String[]
+    return:
+      type: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderReady}
+    content.vb: Public Function Tagged(ParamArray tags As String()) As PhysicsEventBuilder(Of CollisionBuilderReady)
+  overload: LunyScript.ScriptApi.PhysicsEventBuilder`1.Tagged*
+  nameWithType.vb: PhysicsEventBuilder(Of T).Tagged(ParamArray String())
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Tagged(ParamArray String())
+  name.vb: Tagged(ParamArray String())
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.With(System.String[])
+  commentId: M:LunyScript.ScriptApi.PhysicsEventBuilder`1.With(System.String[])
+  id: With(System.String[])
+  parent: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: With(params string[])
+  nameWithType: PhysicsEventBuilder<T>.With(params string[])
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.With(params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Only react when the other object's name matches one of the given names (OR logic).
+  example: []
+  syntax:
+    content: public PhysicsEventBuilder<CollisionBuilderReady> With(params string[] names)
+    parameters:
+    - id: names
+      type: System.String[]
+    return:
+      type: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderReady}
+    content.vb: Public Function [With](ParamArray names As String()) As PhysicsEventBuilder(Of CollisionBuilderReady)
+  overload: LunyScript.ScriptApi.PhysicsEventBuilder`1.With*
+  nameWithType.vb: PhysicsEventBuilder(Of T).With(ParamArray String())
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).With(ParamArray String())
+  name.vb: With(ParamArray String())
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Layered(System.String[])
+  commentId: M:LunyScript.ScriptApi.PhysicsEventBuilder`1.Layered(System.String[])
+  id: Layered(System.String[])
+  parent: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Layered(params string[])
+  nameWithType: PhysicsEventBuilder<T>.Layered(params string[])
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Layered(params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Only react when the other object is on one of the given layers (OR logic).
+
+    Mutually exclusive with Masked() — Masked() becomes unavailable after calling this.
+  example: []
+  syntax:
+    content: public PhysicsEventBuilder<CollisionBuilderLayered> Layered(params string[] layerNames)
+    parameters:
+    - id: layerNames
+      type: System.String[]
+    return:
+      type: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderLayered}
+    content.vb: Public Function Layered(ParamArray layerNames As String()) As PhysicsEventBuilder(Of CollisionBuilderLayered)
+  overload: LunyScript.ScriptApi.PhysicsEventBuilder`1.Layered*
+  nameWithType.vb: PhysicsEventBuilder(Of T).Layered(ParamArray String())
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Layered(ParamArray String())
+  name.vb: Layered(ParamArray String())
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Typed(System.Type[])
+  commentId: M:LunyScript.ScriptApi.PhysicsEventBuilder`1.Typed(System.Type[])
+  id: Typed(System.Type[])
+  parent: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Typed(params Type[])
+  nameWithType: PhysicsEventBuilder<T>.Typed(params Type[])
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Typed(params System.Type[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Only react when the other object's component list contains at least one of the given types (OR logic).
+  example: []
+  syntax:
+    content: public PhysicsEventBuilder<CollisionBuilderReady> Typed(params Type[] componentTypes)
+    parameters:
+    - id: componentTypes
+      type: System.Type[]
+    return:
+      type: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderReady}
+    content.vb: Public Function Typed(ParamArray componentTypes As Type()) As PhysicsEventBuilder(Of CollisionBuilderReady)
+  overload: LunyScript.ScriptApi.PhysicsEventBuilder`1.Typed*
+  nameWithType.vb: PhysicsEventBuilder(Of T).Typed(ParamArray Type())
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Typed(ParamArray System.Type())
+  name.vb: Typed(ParamArray Type())
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Begins(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.PhysicsEventBuilder`1.Begins(LunyScript.Blocks.ScriptActionBlock[])
+  id: Begins(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Begins(params ScriptActionBlock[])
+  nameWithType: PhysicsEventBuilder<T>.Begins(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Begins(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Blocks to run when the collision/trigger begins.
+  example: []
+  syntax:
+    content: public PhysicsEventBuilder<CollisionBuilderReady> Begins(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderReady}
+    content.vb: Public Function Begins(ParamArray blocks As ScriptActionBlock()) As PhysicsEventBuilder(Of CollisionBuilderReady)
+  overload: LunyScript.ScriptApi.PhysicsEventBuilder`1.Begins*
+  nameWithType.vb: PhysicsEventBuilder(Of T).Begins(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Begins(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: Begins(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Continues(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.PhysicsEventBuilder`1.Continues(LunyScript.Blocks.ScriptActionBlock[])
+  id: Continues(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Continues(params ScriptActionBlock[])
+  nameWithType: PhysicsEventBuilder<T>.Continues(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Continues(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Blocks to run each physics step while the collision/trigger persists.
+  example: []
+  syntax:
+    content: public PhysicsEventBuilder<CollisionBuilderReady> Continues(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderReady}
+    content.vb: Public Function Continues(ParamArray blocks As ScriptActionBlock()) As PhysicsEventBuilder(Of CollisionBuilderReady)
+  overload: LunyScript.ScriptApi.PhysicsEventBuilder`1.Continues*
+  nameWithType.vb: PhysicsEventBuilder(Of T).Continues(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Continues(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: Continues(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Ends(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.PhysicsEventBuilder`1.Ends(LunyScript.Blocks.ScriptActionBlock[])
+  id: Ends(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Ends(params ScriptActionBlock[])
+  nameWithType: PhysicsEventBuilder<T>.Ends(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Ends(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Blocks to run when the collision/trigger ends.
+  example: []
+  syntax:
+    content: public PhysicsEventBuilder<CollisionBuilderReady> Ends(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderReady}
+    content.vb: Public Function Ends(ParamArray blocks As ScriptActionBlock()) As PhysicsEventBuilder(Of CollisionBuilderReady)
+  overload: LunyScript.ScriptApi.PhysicsEventBuilder`1.Ends*
+  nameWithType.vb: PhysicsEventBuilder(Of T).Ends(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Ends(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: Ends(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Cooldown(System.Double)
+  commentId: M:LunyScript.ScriptApi.PhysicsEventBuilder`1.Cooldown(System.Double)
+  id: Cooldown(System.Double)
+  parent: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Cooldown(double)
+  nameWithType: PhysicsEventBuilder<T>.Cooldown(double)
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Cooldown(double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Minimum seconds between successive reactions. Zero (default) means no cooldown.
+
+    The cooldown is checked before collision predicates; evaluated per event sequence.
+  example: []
+  syntax:
+    content: public PhysicsEventBuilder<CollisionBuilderReady> Cooldown(double seconds)
+    parameters:
+    - id: seconds
+      type: System.Double
+    return:
+      type: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderReady}
+    content.vb: Public Function Cooldown(seconds As Double) As PhysicsEventBuilder(Of CollisionBuilderReady)
+  overload: LunyScript.ScriptApi.PhysicsEventBuilder`1.Cooldown*
+  nameWithType.vb: PhysicsEventBuilder(Of T).Cooldown(Double)
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Cooldown(Double)
+  name.vb: Cooldown(Double)
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Tagged*
+  commentId: Overload:LunyScript.ScriptApi.PhysicsEventBuilder`1.Tagged
+  isExternal: true
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html#LunyScript_ScriptApi_PhysicsEventBuilder_1_Tagged_System_String___
+  name: Tagged
+  nameWithType: PhysicsEventBuilder<T>.Tagged
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Tagged
+  nameWithType.vb: PhysicsEventBuilder(Of T).Tagged
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Tagged
+- uid: System.String[]
+  isExternal: true
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderReady}
+  commentId: T:LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderReady}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  name: PhysicsEventBuilder<CollisionBuilderReady>
+  nameWithType: PhysicsEventBuilder<CollisionBuilderReady>
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<LunyScript.ScriptApi.CollisionBuilderReady>
+  nameWithType.vb: PhysicsEventBuilder(Of CollisionBuilderReady)
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of LunyScript.ScriptApi.CollisionBuilderReady)
+  name.vb: PhysicsEventBuilder(Of CollisionBuilderReady)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.ScriptApi.CollisionBuilderReady
+    name: CollisionBuilderReady
+    isExternal: true
+    href: LunyScript.ScriptApi.CollisionBuilderReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.ScriptApi.CollisionBuilderReady
+    name: CollisionBuilderReady
+    isExternal: true
+    href: LunyScript.ScriptApi.CollisionBuilderReady.html
+  - name: )
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  commentId: T:LunyScript.ScriptApi.PhysicsEventBuilder`1
+  isExternal: true
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  name: PhysicsEventBuilder<T>
+  nameWithType: PhysicsEventBuilder<T>
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>
+  nameWithType.vb: PhysicsEventBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T)
+  name.vb: PhysicsEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.With*
+  commentId: Overload:LunyScript.ScriptApi.PhysicsEventBuilder`1.With
+  isExternal: true
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html#LunyScript_ScriptApi_PhysicsEventBuilder_1_With_System_String___
+  name: With
+  nameWithType: PhysicsEventBuilder<T>.With
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.With
+  nameWithType.vb: PhysicsEventBuilder(Of T).With
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).With
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Layered*
+  commentId: Overload:LunyScript.ScriptApi.PhysicsEventBuilder`1.Layered
+  isExternal: true
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html#LunyScript_ScriptApi_PhysicsEventBuilder_1_Layered_System_String___
+  name: Layered
+  nameWithType: PhysicsEventBuilder<T>.Layered
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Layered
+  nameWithType.vb: PhysicsEventBuilder(Of T).Layered
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Layered
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderLayered}
+  commentId: T:LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderLayered}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  name: PhysicsEventBuilder<CollisionBuilderLayered>
+  nameWithType: PhysicsEventBuilder<CollisionBuilderLayered>
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<LunyScript.ScriptApi.CollisionBuilderLayered>
+  nameWithType.vb: PhysicsEventBuilder(Of CollisionBuilderLayered)
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of LunyScript.ScriptApi.CollisionBuilderLayered)
+  name.vb: PhysicsEventBuilder(Of CollisionBuilderLayered)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.ScriptApi.CollisionBuilderLayered
+    name: CollisionBuilderLayered
+    isExternal: true
+    href: LunyScript.ScriptApi.CollisionBuilderLayered.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.ScriptApi.CollisionBuilderLayered
+    name: CollisionBuilderLayered
+    isExternal: true
+    href: LunyScript.ScriptApi.CollisionBuilderLayered.html
+  - name: )
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Typed*
+  commentId: Overload:LunyScript.ScriptApi.PhysicsEventBuilder`1.Typed
+  isExternal: true
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html#LunyScript_ScriptApi_PhysicsEventBuilder_1_Typed_System_Type___
+  name: Typed
+  nameWithType: PhysicsEventBuilder<T>.Typed
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Typed
+  nameWithType.vb: PhysicsEventBuilder(Of T).Typed
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Typed
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+  - name: (
+  - name: )
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Begins*
+  commentId: Overload:LunyScript.ScriptApi.PhysicsEventBuilder`1.Begins
+  isExternal: true
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html#LunyScript_ScriptApi_PhysicsEventBuilder_1_Begins_LunyScript_Blocks_ScriptActionBlock___
+  name: Begins
+  nameWithType: PhysicsEventBuilder<T>.Begins
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Begins
+  nameWithType.vb: PhysicsEventBuilder(Of T).Begins
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Begins
+- uid: LunyScript.Blocks.ScriptActionBlock[]
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock[]
+  nameWithType: ScriptActionBlock[]
+  fullName: LunyScript.Blocks.ScriptActionBlock[]
+  nameWithType.vb: ScriptActionBlock()
+  fullName.vb: LunyScript.Blocks.ScriptActionBlock()
+  name.vb: ScriptActionBlock()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: (
+  - name: )
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Continues*
+  commentId: Overload:LunyScript.ScriptApi.PhysicsEventBuilder`1.Continues
+  isExternal: true
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html#LunyScript_ScriptApi_PhysicsEventBuilder_1_Continues_LunyScript_Blocks_ScriptActionBlock___
+  name: Continues
+  nameWithType: PhysicsEventBuilder<T>.Continues
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Continues
+  nameWithType.vb: PhysicsEventBuilder(Of T).Continues
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Continues
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Ends*
+  commentId: Overload:LunyScript.ScriptApi.PhysicsEventBuilder`1.Ends
+  isExternal: true
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html#LunyScript_ScriptApi_PhysicsEventBuilder_1_Ends_LunyScript_Blocks_ScriptActionBlock___
+  name: Ends
+  nameWithType: PhysicsEventBuilder<T>.Ends
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Ends
+  nameWithType.vb: PhysicsEventBuilder(Of T).Ends
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Ends
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1.Cooldown*
+  commentId: Overload:LunyScript.ScriptApi.PhysicsEventBuilder`1.Cooldown
+  isExternal: true
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html#LunyScript_ScriptApi_PhysicsEventBuilder_1_Cooldown_System_Double_
+  name: Cooldown
+  nameWithType: PhysicsEventBuilder<T>.Cooldown
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>.Cooldown
+  nameWithType.vb: PhysicsEventBuilder(Of T).Cooldown
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T).Cooldown
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

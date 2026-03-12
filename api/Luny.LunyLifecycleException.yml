@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.LunyLifecycleException
+  commentId: T:Luny.LunyLifecycleException
+  id: LunyLifecycleException
+  parent: Luny
+  children:
+  - Luny.LunyLifecycleException.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: LunyLifecycleException
+  nameWithType: LunyLifecycleException
+  fullName: Luny.LunyLifecycleException
+  type: Class
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Exception thrown when a lifecycle-related error occurs in the Luny framework,
+
+    such as singleton duplication or unexpected adapter removal.
+  example: []
+  syntax:
+    content: 'public sealed class LunyLifecycleException : LunyException'
+    content.vb: Public NotInheritable Class LunyLifecycleException Inherits LunyException
+  inheritance:
+  - System.Object
+  - System.Exception
+  - Luny.LunyException
+- uid: Luny.LunyLifecycleException.#ctor(System.String)
+  commentId: M:Luny.LunyLifecycleException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Luny.LunyLifecycleException
+  langs:
+  - csharp
+  - vb
+  name: LunyLifecycleException(string)
+  nameWithType: LunyLifecycleException.LunyLifecycleException(string)
+  fullName: Luny.LunyLifecycleException.LunyLifecycleException(string)
+  type: Constructor
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public LunyLifecycleException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: Luny.LunyLifecycleException.#ctor*
+  nameWithType.vb: LunyLifecycleException.New(String)
+  fullName.vb: Luny.LunyLifecycleException.New(String)
+  name.vb: New(String)
+references:
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Luny.LunyException
+  commentId: T:Luny.LunyException
+  parent: Luny
+  isExternal: true
+  href: Luny.LunyException.html
+  name: LunyException
+  nameWithType: LunyException
+  fullName: Luny.LunyException
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.LunyLifecycleException.#ctor*
+  commentId: Overload:Luny.LunyLifecycleException.#ctor
+  isExternal: true
+  href: Luny.LunyLifecycleException.html#Luny_LunyLifecycleException__ctor_System_String_
+  name: LunyLifecycleException
+  nameWithType: LunyLifecycleException.LunyLifecycleException
+  fullName: Luny.LunyLifecycleException.LunyLifecycleException
+  nameWithType.vb: LunyLifecycleException.New
+  fullName.vb: Luny.LunyLifecycleException.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.TransformBuilderReady
+  commentId: T:LunyScript.Api.TransformBuilderReady
+  id: TransformBuilderReady
+  parent: LunyScript.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: TransformBuilderReady
+  nameWithType: TransformBuilderReady
+  fullName: LunyScript.Api.TransformBuilderReady
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: 'public struct TransformBuilderReady : ITransformBuilderReady, ITransformBuilderState'
+    content.vb: Public Structure TransformBuilderReady Implements ITransformBuilderReady, ITransformBuilderState
+  implements:
+  - LunyScript.Api.ITransformBuilderReady
+  - LunyScript.Api.ITransformBuilderState
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Api.ITransformBuilderReady
+  commentId: T:LunyScript.Api.ITransformBuilderReady
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ITransformBuilderReady.html
+  name: ITransformBuilderReady
+  nameWithType: ITransformBuilderReady
+  fullName: LunyScript.Api.ITransformBuilderReady
+- uid: LunyScript.Api.ITransformBuilderState
+  commentId: T:LunyScript.Api.ITransformBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ITransformBuilderState.html
+  name: ITransformBuilderState
+  nameWithType: ITransformBuilderState
+  fullName: LunyScript.Api.ITransformBuilderState

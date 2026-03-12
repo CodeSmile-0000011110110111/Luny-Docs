@@ -1,0 +1,231 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.InputHelper
+  commentId: T:LunyScript.SmokeTests.InputHelper
+  id: InputHelper
+  parent: LunyScript.SmokeTests
+  children:
+  - LunyScript.SmokeTests.InputHelper.GetDownKeyPressed
+  - LunyScript.SmokeTests.InputHelper.GetHorizontalInput
+  - LunyScript.SmokeTests.InputHelper.GetMovementInput
+  - LunyScript.SmokeTests.InputHelper.GetUpKeyPressed
+  - LunyScript.SmokeTests.InputHelper.GetVerticalInput
+  langs:
+  - csharp
+  - vb
+  name: InputHelper
+  nameWithType: InputHelper
+  fullName: LunyScript.SmokeTests.InputHelper
+  type: Class
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public static class InputHelper
+    content.vb: Public Module InputHelper
+  inheritance:
+  - System.Object
+- uid: LunyScript.SmokeTests.InputHelper.GetMovementInput
+  commentId: M:LunyScript.SmokeTests.InputHelper.GetMovementInput
+  id: GetMovementInput
+  parent: LunyScript.SmokeTests.InputHelper
+  langs:
+  - csharp
+  - vb
+  name: GetMovementInput()
+  nameWithType: InputHelper.GetMovementInput()
+  fullName: LunyScript.SmokeTests.InputHelper.GetMovementInput()
+  type: Method
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public static Vector2 GetMovementInput()
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Shared Function GetMovementInput() As Vector2
+  overload: LunyScript.SmokeTests.InputHelper.GetMovementInput*
+- uid: LunyScript.SmokeTests.InputHelper.GetHorizontalInput
+  commentId: M:LunyScript.SmokeTests.InputHelper.GetHorizontalInput
+  id: GetHorizontalInput
+  parent: LunyScript.SmokeTests.InputHelper
+  langs:
+  - csharp
+  - vb
+  name: GetHorizontalInput()
+  nameWithType: InputHelper.GetHorizontalInput()
+  fullName: LunyScript.SmokeTests.InputHelper.GetHorizontalInput()
+  type: Method
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public static float GetHorizontalInput()
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetHorizontalInput() As Single
+  overload: LunyScript.SmokeTests.InputHelper.GetHorizontalInput*
+- uid: LunyScript.SmokeTests.InputHelper.GetVerticalInput
+  commentId: M:LunyScript.SmokeTests.InputHelper.GetVerticalInput
+  id: GetVerticalInput
+  parent: LunyScript.SmokeTests.InputHelper
+  langs:
+  - csharp
+  - vb
+  name: GetVerticalInput()
+  nameWithType: InputHelper.GetVerticalInput()
+  fullName: LunyScript.SmokeTests.InputHelper.GetVerticalInput()
+  type: Method
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public static float GetVerticalInput()
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetVerticalInput() As Single
+  overload: LunyScript.SmokeTests.InputHelper.GetVerticalInput*
+- uid: LunyScript.SmokeTests.InputHelper.GetUpKeyPressed
+  commentId: M:LunyScript.SmokeTests.InputHelper.GetUpKeyPressed
+  id: GetUpKeyPressed
+  parent: LunyScript.SmokeTests.InputHelper
+  langs:
+  - csharp
+  - vb
+  name: GetUpKeyPressed()
+  nameWithType: InputHelper.GetUpKeyPressed()
+  fullName: LunyScript.SmokeTests.InputHelper.GetUpKeyPressed()
+  type: Method
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public static bool GetUpKeyPressed()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function GetUpKeyPressed() As Boolean
+  overload: LunyScript.SmokeTests.InputHelper.GetUpKeyPressed*
+- uid: LunyScript.SmokeTests.InputHelper.GetDownKeyPressed
+  commentId: M:LunyScript.SmokeTests.InputHelper.GetDownKeyPressed
+  id: GetDownKeyPressed
+  parent: LunyScript.SmokeTests.InputHelper
+  langs:
+  - csharp
+  - vb
+  name: GetDownKeyPressed()
+  nameWithType: InputHelper.GetDownKeyPressed()
+  fullName: LunyScript.SmokeTests.InputHelper.GetDownKeyPressed()
+  type: Method
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public static bool GetDownKeyPressed()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function GetDownKeyPressed() As Boolean
+  overload: LunyScript.SmokeTests.InputHelper.GetDownKeyPressed*
+references:
+- uid: LunyScript.SmokeTests
+  commentId: N:LunyScript.SmokeTests
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.SmokeTests
+  nameWithType: LunyScript.SmokeTests
+  fullName: LunyScript.SmokeTests
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.SmokeTests.InputHelper.GetMovementInput*
+  commentId: Overload:LunyScript.SmokeTests.InputHelper.GetMovementInput
+  isExternal: true
+  href: LunyScript.SmokeTests.InputHelper.html#LunyScript_SmokeTests_InputHelper_GetMovementInput
+  name: GetMovementInput
+  nameWithType: InputHelper.GetMovementInput
+  fullName: LunyScript.SmokeTests.InputHelper.GetMovementInput
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: LunyScript.SmokeTests.InputHelper.GetHorizontalInput*
+  commentId: Overload:LunyScript.SmokeTests.InputHelper.GetHorizontalInput
+  isExternal: true
+  href: LunyScript.SmokeTests.InputHelper.html#LunyScript_SmokeTests_InputHelper_GetHorizontalInput
+  name: GetHorizontalInput
+  nameWithType: InputHelper.GetHorizontalInput
+  fullName: LunyScript.SmokeTests.InputHelper.GetHorizontalInput
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: LunyScript.SmokeTests.InputHelper.GetVerticalInput*
+  commentId: Overload:LunyScript.SmokeTests.InputHelper.GetVerticalInput
+  isExternal: true
+  href: LunyScript.SmokeTests.InputHelper.html#LunyScript_SmokeTests_InputHelper_GetVerticalInput
+  name: GetVerticalInput
+  nameWithType: InputHelper.GetVerticalInput
+  fullName: LunyScript.SmokeTests.InputHelper.GetVerticalInput
+- uid: LunyScript.SmokeTests.InputHelper.GetUpKeyPressed*
+  commentId: Overload:LunyScript.SmokeTests.InputHelper.GetUpKeyPressed
+  isExternal: true
+  href: LunyScript.SmokeTests.InputHelper.html#LunyScript_SmokeTests_InputHelper_GetUpKeyPressed
+  name: GetUpKeyPressed
+  nameWithType: InputHelper.GetUpKeyPressed
+  fullName: LunyScript.SmokeTests.InputHelper.GetUpKeyPressed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: LunyScript.SmokeTests.InputHelper.GetDownKeyPressed*
+  commentId: Overload:LunyScript.SmokeTests.InputHelper.GetDownKeyPressed
+  isExternal: true
+  href: LunyScript.SmokeTests.InputHelper.html#LunyScript_SmokeTests_InputHelper_GetDownKeyPressed
+  name: GetDownKeyPressed
+  nameWithType: InputHelper.GetDownKeyPressed
+  fullName: LunyScript.SmokeTests.InputHelper.GetDownKeyPressed

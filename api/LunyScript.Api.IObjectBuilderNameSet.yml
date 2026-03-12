@@ -1,0 +1,50 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.IObjectBuilderNameSet
+  commentId: T:LunyScript.Api.IObjectBuilderNameSet
+  id: IObjectBuilderNameSet
+  parent: LunyScript.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IObjectBuilderNameSet
+  nameWithType: IObjectBuilderNameSet
+  fullName: LunyScript.Api.IObjectBuilderNameSet
+  type: Interface
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: 'public interface IObjectBuilderNameSet : IObjectBuilderState, IObjectBuilderCanFinish'
+    content.vb: Public Interface IObjectBuilderNameSet Inherits IObjectBuilderState, IObjectBuilderCanFinish
+  derivedClasses:
+  - LunyScript.Api.ObjectBuilderNameSet
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html

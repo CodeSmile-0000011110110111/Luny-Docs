@@ -1,0 +1,169 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.TransformLookAtBuilder`1
+  commentId: T:LunyScript.Api.TransformLookAtBuilder`1
+  id: TransformLookAtBuilder`1
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.TransformLookAtBuilder`1.op_Implicit(LunyScript.Api.TransformLookAtBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  langs:
+  - csharp
+  - vb
+  name: TransformLookAtBuilder<T>
+  nameWithType: TransformLookAtBuilder<T>
+  fullName: LunyScript.Api.TransformLookAtBuilder<T>
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Fluent builder for <xref href="LunyScript.Blocks.TransformRotationLookAtBlock" data-throw-if-not-resolved="false"></xref>.
+
+    Usage: Transform.LookAt(target).WorldUp(v).LockX()
+  example: []
+  syntax:
+    content: 'public readonly struct TransformLookAtBuilder<T> where T : struct, ITransformBuilderState'
+    typeParameters:
+    - id: T
+    content.vb: Public Structure TransformLookAtBuilder(Of T As {Structure, ITransformBuilderState})
+  nameWithType.vb: TransformLookAtBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformLookAtBuilder(Of T)
+  name.vb: TransformLookAtBuilder(Of T)
+- uid: LunyScript.Api.TransformLookAtBuilder`1.op_Implicit(LunyScript.Api.TransformLookAtBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  commentId: M:LunyScript.Api.TransformLookAtBuilder`1.op_Implicit(LunyScript.Api.TransformLookAtBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  id: op_Implicit(LunyScript.Api.TransformLookAtBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Api.TransformLookAtBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ScriptActionBlock(TransformLookAtBuilder<T>)
+  nameWithType: TransformLookAtBuilder<T>.implicit operator ScriptActionBlock(TransformLookAtBuilder<T>)
+  fullName: LunyScript.Api.TransformLookAtBuilder<T>.implicit operator LunyScript.Blocks.ScriptActionBlock(LunyScript.Api.TransformLookAtBuilder<T>)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static implicit operator ScriptActionBlock(TransformLookAtBuilder<T> b)
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformLookAtBuilder`1
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Shared Widening Operator CType(b As TransformLookAtBuilder(Of T)) As ScriptActionBlock
+  overload: LunyScript.Api.TransformLookAtBuilder`1.op_Implicit*
+  nameWithType.vb: TransformLookAtBuilder(Of T).CType(TransformLookAtBuilder(Of T))
+  fullName.vb: LunyScript.Api.TransformLookAtBuilder(Of T).CType(LunyScript.Api.TransformLookAtBuilder(Of T))
+  name.vb: CType(TransformLookAtBuilder(Of T))
+references:
+- uid: LunyScript.Blocks.TransformRotationLookAtBlock
+  commentId: T:LunyScript.Blocks.TransformRotationLookAtBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.TransformRotationLookAtBlock.html
+  name: TransformRotationLookAtBlock
+  nameWithType: TransformRotationLookAtBlock
+  fullName: LunyScript.Blocks.TransformRotationLookAtBlock
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.Api.TransformLookAtBuilder`1.op_Implicit*
+  commentId: Overload:LunyScript.Api.TransformLookAtBuilder`1.op_Implicit
+  name: implicit operator
+  nameWithType: TransformLookAtBuilder<T>.implicit operator
+  fullName: LunyScript.Api.TransformLookAtBuilder<T>.implicit operator
+  nameWithType.vb: TransformLookAtBuilder(Of T).CType
+  fullName.vb: LunyScript.Api.TransformLookAtBuilder(Of T).CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: LunyScript.Api.TransformLookAtBuilder`1
+  commentId: T:LunyScript.Api.TransformLookAtBuilder`1
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TransformLookAtBuilder-1.html
+  name: TransformLookAtBuilder<T>
+  nameWithType: TransformLookAtBuilder<T>
+  fullName: LunyScript.Api.TransformLookAtBuilder<T>
+  nameWithType.vb: TransformLookAtBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformLookAtBuilder(Of T)
+  name.vb: TransformLookAtBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformLookAtBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformLookAtBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock

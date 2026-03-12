@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.ICollisionBuilderState
+  commentId: T:LunyScript.ScriptApi.ICollisionBuilderState
+  id: ICollisionBuilderState
+  parent: LunyScript.ScriptApi
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICollisionBuilderState
+  nameWithType: ICollisionBuilderState
+  fullName: LunyScript.ScriptApi.ICollisionBuilderState
+  type: Interface
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public interface ICollisionBuilderState
+    content.vb: Public Interface ICollisionBuilderState
+  derivedClasses:
+  - LunyScript.ScriptApi.CollisionBuilderLayered
+  - LunyScript.ScriptApi.CollisionBuilderMasked
+  - LunyScript.ScriptApi.CollisionBuilderReady
+  - LunyScript.ScriptApi.CollisionBuilderStart
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html

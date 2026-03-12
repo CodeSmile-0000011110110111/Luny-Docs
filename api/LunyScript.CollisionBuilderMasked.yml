@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.CollisionBuilderMasked
+  commentId: T:LunyScript.CollisionBuilderMasked
+  id: CollisionBuilderMasked
+  parent: LunyScript
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CollisionBuilderMasked
+  nameWithType: CollisionBuilderMasked
+  fullName: LunyScript.CollisionBuilderMasked
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: 'public struct CollisionBuilderMasked : ICollisionBuilderMasked, ICollisionBuilderReady, ICollisionBuilderState'
+    content.vb: Public Structure CollisionBuilderMasked Implements ICollisionBuilderMasked, ICollisionBuilderReady, ICollisionBuilderState
+  implements:
+  - LunyScript.ICollisionBuilderMasked
+  - LunyScript.ICollisionBuilderReady
+  - LunyScript.ICollisionBuilderState
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.ICollisionBuilderMasked
+  commentId: T:LunyScript.ICollisionBuilderMasked
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ICollisionBuilderMasked.html
+  name: ICollisionBuilderMasked
+  nameWithType: ICollisionBuilderMasked
+  fullName: LunyScript.ICollisionBuilderMasked
+- uid: LunyScript.ICollisionBuilderReady
+  commentId: T:LunyScript.ICollisionBuilderReady
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ICollisionBuilderReady.html
+  name: ICollisionBuilderReady
+  nameWithType: ICollisionBuilderReady
+  fullName: LunyScript.ICollisionBuilderReady
+- uid: LunyScript.ICollisionBuilderState
+  commentId: T:LunyScript.ICollisionBuilderState
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ICollisionBuilderState.html
+  name: ICollisionBuilderState
+  nameWithType: ICollisionBuilderState
+  fullName: LunyScript.ICollisionBuilderState

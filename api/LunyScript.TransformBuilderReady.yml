@@ -1,0 +1,47 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.TransformBuilderReady
+  commentId: T:LunyScript.TransformBuilderReady
+  id: TransformBuilderReady
+  parent: LunyScript
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: TransformBuilderReady
+  nameWithType: TransformBuilderReady
+  fullName: LunyScript.TransformBuilderReady
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: 'public struct TransformBuilderReady : ITransformBuilderReady, ITransformBuilderState'
+    content.vb: Public Structure TransformBuilderReady Implements ITransformBuilderReady, ITransformBuilderState
+  implements:
+  - LunyScript.ITransformBuilderReady
+  - LunyScript.ITransformBuilderState
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.ITransformBuilderReady
+  commentId: T:LunyScript.ITransformBuilderReady
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ITransformBuilderReady.html
+  name: ITransformBuilderReady
+  nameWithType: ITransformBuilderReady
+  fullName: LunyScript.ITransformBuilderReady
+- uid: LunyScript.ITransformBuilderState
+  commentId: T:LunyScript.ITransformBuilderState
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ITransformBuilderState.html
+  name: ITransformBuilderState
+  nameWithType: ITransformBuilderState
+  fullName: LunyScript.ITransformBuilderState

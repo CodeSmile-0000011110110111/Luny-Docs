@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.InputActionBuilder
+  commentId: T:LunyScript.InputActionBuilder
+  id: InputActionBuilder
+  parent: LunyScript
+  children:
+  - LunyScript.InputActionBuilder.#ctor(System.String)
+  - LunyScript.InputActionBuilder.Disable
+  - LunyScript.InputActionBuilder.Enable
+  langs:
+  - csharp
+  - vb
+  name: InputActionBuilder
+  nameWithType: InputActionBuilder
+  fullName: LunyScript.InputActionBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public readonly struct InputActionBuilder
+    content.vb: Public Structure InputActionBuilder
+- uid: LunyScript.InputActionBuilder.#ctor(System.String)
+  commentId: M:LunyScript.InputActionBuilder.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: LunyScript.InputActionBuilder
+  langs:
+  - csharp
+  - vb
+  name: InputActionBuilder(string)
+  nameWithType: InputActionBuilder.InputActionBuilder(string)
+  fullName: LunyScript.InputActionBuilder.InputActionBuilder(string)
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public InputActionBuilder(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+    content.vb: Public Sub New(actionName As String)
+  overload: LunyScript.InputActionBuilder.#ctor*
+  nameWithType.vb: InputActionBuilder.New(String)
+  fullName.vb: LunyScript.InputActionBuilder.New(String)
+  name.vb: New(String)
+- uid: LunyScript.InputActionBuilder.Enable
+  commentId: M:LunyScript.InputActionBuilder.Enable
+  id: Enable
+  parent: LunyScript.InputActionBuilder
+  langs:
+  - csharp
+  - vb
+  name: Enable()
+  nameWithType: InputActionBuilder.Enable()
+  fullName: LunyScript.InputActionBuilder.Enable()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptActionBlock Enable()
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Enable() As ScriptActionBlock
+  overload: LunyScript.InputActionBuilder.Enable*
+- uid: LunyScript.InputActionBuilder.Disable
+  commentId: M:LunyScript.InputActionBuilder.Disable
+  id: Disable
+  parent: LunyScript.InputActionBuilder
+  langs:
+  - csharp
+  - vb
+  name: Disable()
+  nameWithType: InputActionBuilder.Disable()
+  fullName: LunyScript.InputActionBuilder.Disable()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptActionBlock Disable()
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Disable() As ScriptActionBlock
+  overload: LunyScript.InputActionBuilder.Disable*
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.InputActionBuilder.#ctor*
+  commentId: Overload:LunyScript.InputActionBuilder.#ctor
+  isExternal: true
+  href: LunyScript.InputActionBuilder.html#LunyScript_InputActionBuilder__ctor_System_String_
+  name: InputActionBuilder
+  nameWithType: InputActionBuilder.InputActionBuilder
+  fullName: LunyScript.InputActionBuilder.InputActionBuilder
+  nameWithType.vb: InputActionBuilder.New
+  fullName.vb: LunyScript.InputActionBuilder.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.InputActionBuilder.Enable*
+  commentId: Overload:LunyScript.InputActionBuilder.Enable
+  isExternal: true
+  href: LunyScript.InputActionBuilder.html#LunyScript_InputActionBuilder_Enable
+  name: Enable
+  nameWithType: InputActionBuilder.Enable
+  fullName: LunyScript.InputActionBuilder.Enable
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.InputActionBuilder.Disable*
+  commentId: Overload:LunyScript.InputActionBuilder.Disable
+  isExternal: true
+  href: LunyScript.InputActionBuilder.html#LunyScript_InputActionBuilder_Disable
+  name: Disable
+  nameWithType: InputActionBuilder.Disable
+  fullName: LunyScript.InputActionBuilder.Disable

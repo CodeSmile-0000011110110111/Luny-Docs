@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.CollisionBuilderReady
+  commentId: T:LunyScript.ScriptApi.CollisionBuilderReady
+  id: CollisionBuilderReady
+  parent: LunyScript.ScriptApi
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CollisionBuilderReady
+  nameWithType: CollisionBuilderReady
+  fullName: LunyScript.ScriptApi.CollisionBuilderReady
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: 'public struct CollisionBuilderReady : ICollisionBuilderReady, ICollisionBuilderState'
+    content.vb: Public Structure CollisionBuilderReady Implements ICollisionBuilderReady, ICollisionBuilderState
+  implements:
+  - LunyScript.ScriptApi.ICollisionBuilderReady
+  - LunyScript.ScriptApi.ICollisionBuilderState
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.ICollisionBuilderReady
+  commentId: T:LunyScript.ScriptApi.ICollisionBuilderReady
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ICollisionBuilderReady.html
+  name: ICollisionBuilderReady
+  nameWithType: ICollisionBuilderReady
+  fullName: LunyScript.ScriptApi.ICollisionBuilderReady
+- uid: LunyScript.ScriptApi.ICollisionBuilderState
+  commentId: T:LunyScript.ScriptApi.ICollisionBuilderState
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ICollisionBuilderState.html
+  name: ICollisionBuilderState
+  nameWithType: ICollisionBuilderState
+  fullName: LunyScript.ScriptApi.ICollisionBuilderState

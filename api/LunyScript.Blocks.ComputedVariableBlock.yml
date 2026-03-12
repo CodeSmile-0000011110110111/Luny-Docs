@@ -1,0 +1,598 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.ComputedVariableBlock
+  commentId: T:LunyScript.Blocks.ComputedVariableBlock
+  id: ComputedVariableBlock
+  parent: LunyScript.Blocks
+  children:
+  - LunyScript.Blocks.ComputedVariableBlock.#ctor
+  langs:
+  - csharp
+  - vb
+  name: ComputedVariableBlock
+  nameWithType: ComputedVariableBlock
+  fullName: LunyScript.Blocks.ComputedVariableBlock
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: >-
+    Abstract base for variable blocks that compute their value on-the-fly from runtime context
+
+    rather than reading from a Table entry. TargetHandle is permanently null, so Set/Add/etc.
+
+    will throw LunyScriptVariableException ("Cannot modify read-only variable").
+  example: []
+  syntax:
+    content: 'public abstract class ComputedVariableBlock : VariableBlock, IScriptBlock'
+    content.vb: Public MustInherit Class ComputedVariableBlock Inherits VariableBlock Implements IScriptBlock
+  inheritance:
+  - System.Object
+  - LunyScript.Blocks.ScriptBlock
+  - LunyScript.Blocks.ScriptConditionBlock
+  - LunyScript.Blocks.VariableBlock
+  implements:
+  - LunyScript.Blocks.IScriptBlock
+  inheritedMembers:
+  - LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  - LunyScript.Blocks.VariableBlock.Equals(System.Object)
+  - LunyScript.Blocks.VariableBlock.GetHashCode
+  - LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Inc
+  - LunyScript.Blocks.VariableBlock.Dec
+  - LunyScript.Blocks.VariableBlock.Toggle
+- uid: LunyScript.Blocks.ComputedVariableBlock.#ctor
+  commentId: M:LunyScript.Blocks.ComputedVariableBlock.#ctor
+  id: '#ctor'
+  parent: LunyScript.Blocks.ComputedVariableBlock
+  langs:
+  - csharp
+  - vb
+  name: ComputedVariableBlock()
+  nameWithType: ComputedVariableBlock.ComputedVariableBlock()
+  fullName: LunyScript.Blocks.ComputedVariableBlock.ComputedVariableBlock()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: protected ComputedVariableBlock()
+    content.vb: Protected Sub New()
+  overload: LunyScript.Blocks.ComputedVariableBlock.#ctor*
+  nameWithType.vb: ComputedVariableBlock.New()
+  fullName.vb: LunyScript.Blocks.ComputedVariableBlock.New()
+  name.vb: New()
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: LunyScript.Blocks.ScriptBlock
+  commentId: T:LunyScript.Blocks.ScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptBlock.html
+  name: ScriptBlock
+  nameWithType: ScriptBlock
+  fullName: LunyScript.Blocks.ScriptBlock
+- uid: LunyScript.Blocks.ScriptConditionBlock
+  commentId: T:LunyScript.Blocks.ScriptConditionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptConditionBlock.html
+  name: ScriptConditionBlock
+  nameWithType: ScriptConditionBlock
+  fullName: LunyScript.Blocks.ScriptConditionBlock
+- uid: LunyScript.Blocks.VariableBlock
+  commentId: T:LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html
+  name: VariableBlock
+  nameWithType: VariableBlock
+  fullName: LunyScript.Blocks.VariableBlock
+- uid: LunyScript.Blocks.IScriptBlock
+  commentId: T:LunyScript.Blocks.IScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.IScriptBlock.html
+  name: IScriptBlock
+  nameWithType: IScriptBlock
+  fullName: LunyScript.Blocks.IScriptBlock
+- uid: LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Evaluate_LunyScript_IScriptRuntimeContext_
+  name: Evaluate(IScriptRuntimeContext)
+  nameWithType: VariableBlock.Evaluate(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+    name: Evaluate
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Evaluate_LunyScript_IScriptRuntimeContext_
+  - name: (
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+    name: Evaluate
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Evaluate_LunyScript_IScriptRuntimeContext_
+  - name: (
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Equals(System.Object)
+  commentId: M:LunyScript.Blocks.VariableBlock.Equals(System.Object)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: VariableBlock.Equals(object)
+  fullName: LunyScript.Blocks.VariableBlock.Equals(object)
+  nameWithType.vb: VariableBlock.Equals(Object)
+  fullName.vb: LunyScript.Blocks.VariableBlock.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.GetHashCode
+  commentId: M:LunyScript.Blocks.VariableBlock.GetHashCode
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_GetHashCode
+  name: GetHashCode()
+  nameWithType: VariableBlock.GetHashCode()
+  fullName: LunyScript.Blocks.VariableBlock.GetHashCode()
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_GetHashCode
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Set_Luny_Variable_
+  name: Set(Variable)
+  nameWithType: VariableBlock.Set(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
+    name: Set
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Set_Luny_Variable_
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
+    name: Set
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Set_Luny_Variable_
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Set_LunyScript_Blocks_VariableBlock_
+  name: Set(VariableBlock)
+  nameWithType: VariableBlock.Set(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
+    name: Set
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Set_LunyScript_Blocks_VariableBlock_
+  - name: (
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
+    name: Set
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Set_LunyScript_Blocks_VariableBlock_
+  - name: (
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Add_Luny_Variable_
+  name: Add(Variable)
+  nameWithType: VariableBlock.Add(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
+    name: Add
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Add_Luny_Variable_
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
+    name: Add
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Add_Luny_Variable_
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Add_LunyScript_Blocks_VariableBlock_
+  name: Add(VariableBlock)
+  nameWithType: VariableBlock.Add(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
+    name: Add
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Add_LunyScript_Blocks_VariableBlock_
+  - name: (
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
+    name: Add
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Add_LunyScript_Blocks_VariableBlock_
+  - name: (
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Sub_Luny_Variable_
+  name: Sub(Variable)
+  nameWithType: VariableBlock.Sub(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
+    name: Sub
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Sub_Luny_Variable_
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
+    name: Sub
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Sub_Luny_Variable_
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Sub_LunyScript_Blocks_VariableBlock_
+  name: Sub(VariableBlock)
+  nameWithType: VariableBlock.Sub(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+    name: Sub
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Sub_LunyScript_Blocks_VariableBlock_
+  - name: (
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+    name: Sub
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Sub_LunyScript_Blocks_VariableBlock_
+  - name: (
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Mul_Luny_Variable_
+  name: Mul(Variable)
+  nameWithType: VariableBlock.Mul(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
+    name: Mul
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Mul_Luny_Variable_
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
+    name: Mul
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Mul_Luny_Variable_
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Mul_LunyScript_Blocks_VariableBlock_
+  name: Mul(VariableBlock)
+  nameWithType: VariableBlock.Mul(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+    name: Mul
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Mul_LunyScript_Blocks_VariableBlock_
+  - name: (
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+    name: Mul
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Mul_LunyScript_Blocks_VariableBlock_
+  - name: (
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Div_Luny_Variable_
+  name: Div(Variable)
+  nameWithType: VariableBlock.Div(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
+    name: Div
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Div_Luny_Variable_
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
+    name: Div
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Div_Luny_Variable_
+  - name: (
+  - uid: Luny.Variable
+    name: Variable
+    isExternal: true
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Div_LunyScript_Blocks_VariableBlock_
+  name: Div(VariableBlock)
+  nameWithType: VariableBlock.Div(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+    name: Div
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Div_LunyScript_Blocks_VariableBlock_
+  - name: (
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+    name: Div
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Div_LunyScript_Blocks_VariableBlock_
+  - name: (
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Inc
+  commentId: M:LunyScript.Blocks.VariableBlock.Inc
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Inc
+  name: Inc()
+  nameWithType: VariableBlock.Inc()
+  fullName: LunyScript.Blocks.VariableBlock.Inc()
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Inc
+    name: Inc
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Inc
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Inc
+    name: Inc
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Inc
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Dec
+  commentId: M:LunyScript.Blocks.VariableBlock.Dec
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Dec
+  name: Dec()
+  nameWithType: VariableBlock.Dec()
+  fullName: LunyScript.Blocks.VariableBlock.Dec()
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Dec
+    name: Dec
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Dec
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Dec
+    name: Dec
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Dec
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.Toggle
+  commentId: M:LunyScript.Blocks.VariableBlock.Toggle
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Toggle
+  name: Toggle()
+  nameWithType: VariableBlock.Toggle()
+  fullName: LunyScript.Blocks.VariableBlock.Toggle()
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock.Toggle
+    name: Toggle
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Toggle
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock.Toggle
+    name: Toggle
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Toggle
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks.ComputedVariableBlock.#ctor*
+  commentId: Overload:LunyScript.Blocks.ComputedVariableBlock.#ctor
+  isExternal: true
+  href: LunyScript.Blocks.ComputedVariableBlock.html#LunyScript_Blocks_ComputedVariableBlock__ctor
+  name: ComputedVariableBlock
+  nameWithType: ComputedVariableBlock.ComputedVariableBlock
+  fullName: LunyScript.Blocks.ComputedVariableBlock.ComputedVariableBlock
+  nameWithType.vb: ComputedVariableBlock.New
+  fullName.vb: LunyScript.Blocks.ComputedVariableBlock.New
+  name.vb: New

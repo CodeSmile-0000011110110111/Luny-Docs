@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptOptions
+  commentId: T:LunyScript.ScriptOptions
+  id: ScriptOptions
+  parent: LunyScript
+  children:
+  - LunyScript.ScriptOptions.PatternMatching
+  - LunyScript.ScriptOptions.Singleton
+  langs:
+  - csharp
+  - vb
+  name: ScriptOptions
+  nameWithType: ScriptOptions
+  fullName: LunyScript.ScriptOptions
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public struct ScriptOptions
+    content.vb: Public Structure ScriptOptions
+- uid: LunyScript.ScriptOptions.Singleton
+  commentId: P:LunyScript.ScriptOptions.Singleton
+  id: Singleton
+  parent: LunyScript.ScriptOptions
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: ScriptOptions.Singleton
+  fullName: LunyScript.ScriptOptions.Singleton
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public bool Singleton { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Singleton As Boolean
+  overload: LunyScript.ScriptOptions.Singleton*
+- uid: LunyScript.ScriptOptions.PatternMatching
+  commentId: P:LunyScript.ScriptOptions.PatternMatching
+  id: PatternMatching
+  parent: LunyScript.ScriptOptions
+  langs:
+  - csharp
+  - vb
+  name: PatternMatching
+  nameWithType: ScriptOptions.PatternMatching
+  fullName: LunyScript.ScriptOptions.PatternMatching
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public bool PatternMatching { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property PatternMatching As Boolean
+  overload: LunyScript.ScriptOptions.PatternMatching*
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.ScriptOptions.Singleton*
+  commentId: Overload:LunyScript.ScriptOptions.Singleton
+  isExternal: true
+  href: LunyScript.ScriptOptions.html#LunyScript_ScriptOptions_Singleton
+  name: Singleton
+  nameWithType: ScriptOptions.Singleton
+  fullName: LunyScript.ScriptOptions.Singleton
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptOptions.PatternMatching*
+  commentId: Overload:LunyScript.ScriptOptions.PatternMatching
+  isExternal: true
+  href: LunyScript.ScriptOptions.html#LunyScript_ScriptOptions_PatternMatching
+  name: PatternMatching
+  nameWithType: ScriptOptions.PatternMatching
+  fullName: LunyScript.ScriptOptions.PatternMatching

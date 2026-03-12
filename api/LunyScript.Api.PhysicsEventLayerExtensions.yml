@@ -1,0 +1,269 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.PhysicsEventLayerExtensions
+  commentId: T:LunyScript.Api.PhysicsEventLayerExtensions
+  id: PhysicsEventLayerExtensions
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.PhysicsEventLayerExtensions.Masked``1(LunyScript.Api.PhysicsEventBuilder{``0},System.Int32)
+  - LunyScript.Api.PhysicsEventLayerExtensions.Masked``1(LunyScript.Api.PhysicsEventBuilder{``0},System.String[])
+  langs:
+  - csharp
+  - vb
+  name: PhysicsEventLayerExtensions
+  nameWithType: PhysicsEventLayerExtensions
+  fullName: LunyScript.Api.PhysicsEventLayerExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static class PhysicsEventLayerExtensions
+    content.vb: Public Module PhysicsEventLayerExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.Api.PhysicsEventLayerExtensions.Masked``1(LunyScript.Api.PhysicsEventBuilder{``0},System.String[])
+  commentId: M:LunyScript.Api.PhysicsEventLayerExtensions.Masked``1(LunyScript.Api.PhysicsEventBuilder{``0},System.String[])
+  id: Masked``1(LunyScript.Api.PhysicsEventBuilder{``0},System.String[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.PhysicsEventLayerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Masked<T>(PhysicsEventBuilder<T>, params string[])
+  nameWithType: PhysicsEventLayerExtensions.Masked<T>(PhysicsEventBuilder<T>, params string[])
+  fullName: LunyScript.Api.PhysicsEventLayerExtensions.Masked<T>(LunyScript.Api.PhysicsEventBuilder<T>, params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Only react when the other object's layer name matches one of the given names (OR logic).
+
+    Mutually exclusive with Layered() — unavailable after Layered() is called.
+  example: []
+  syntax:
+    content: 'public static PhysicsEventBuilder<CollisionBuilderMasked> Masked<T>(this PhysicsEventBuilder<T> b, params string[] layerNames) where T : struct, ICollisionBuilderStart'
+    parameters:
+    - id: b
+      type: LunyScript.Api.PhysicsEventBuilder{{T}}
+    - id: layerNames
+      type: System.String[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.PhysicsEventBuilder{LunyScript.Api.CollisionBuilderMasked}
+    content.vb: Public Shared Function Masked(Of T As {Structure, ICollisionBuilderStart})(b As PhysicsEventBuilder(Of T), ParamArray layerNames As String()) As PhysicsEventBuilder(Of CollisionBuilderMasked)
+  overload: LunyScript.Api.PhysicsEventLayerExtensions.Masked*
+  nameWithType.vb: PhysicsEventLayerExtensions.Masked(Of T)(PhysicsEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.PhysicsEventLayerExtensions.Masked(Of T)(LunyScript.Api.PhysicsEventBuilder(Of T), ParamArray String())
+  name.vb: Masked(Of T)(PhysicsEventBuilder(Of T), ParamArray String())
+- uid: LunyScript.Api.PhysicsEventLayerExtensions.Masked``1(LunyScript.Api.PhysicsEventBuilder{``0},System.Int32)
+  commentId: M:LunyScript.Api.PhysicsEventLayerExtensions.Masked``1(LunyScript.Api.PhysicsEventBuilder{``0},System.Int32)
+  id: Masked``1(LunyScript.Api.PhysicsEventBuilder{``0},System.Int32)
+  isExtensionMethod: true
+  parent: LunyScript.Api.PhysicsEventLayerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Masked<T>(PhysicsEventBuilder<T>, int)
+  nameWithType: PhysicsEventLayerExtensions.Masked<T>(PhysicsEventBuilder<T>, int)
+  fullName: LunyScript.Api.PhysicsEventLayerExtensions.Masked<T>(LunyScript.Api.PhysicsEventBuilder<T>, int)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Only react when the other object's layer is included in the given bitmask.
+
+    Mutually exclusive with Layered() — unavailable after Layered() is called.
+  example: []
+  syntax:
+    content: 'public static PhysicsEventBuilder<CollisionBuilderMasked> Masked<T>(this PhysicsEventBuilder<T> b, int layerMask) where T : struct, ICollisionBuilderStart'
+    parameters:
+    - id: b
+      type: LunyScript.Api.PhysicsEventBuilder{{T}}
+    - id: layerMask
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.PhysicsEventBuilder{LunyScript.Api.CollisionBuilderMasked}
+    content.vb: Public Shared Function Masked(Of T As {Structure, ICollisionBuilderStart})(b As PhysicsEventBuilder(Of T), layerMask As Integer) As PhysicsEventBuilder(Of CollisionBuilderMasked)
+  overload: LunyScript.Api.PhysicsEventLayerExtensions.Masked*
+  nameWithType.vb: PhysicsEventLayerExtensions.Masked(Of T)(PhysicsEventBuilder(Of T), Integer)
+  fullName.vb: LunyScript.Api.PhysicsEventLayerExtensions.Masked(Of T)(LunyScript.Api.PhysicsEventBuilder(Of T), Integer)
+  name.vb: Masked(Of T)(PhysicsEventBuilder(Of T), Integer)
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Api.PhysicsEventLayerExtensions.Masked*
+  commentId: Overload:LunyScript.Api.PhysicsEventLayerExtensions.Masked
+  isExternal: true
+  href: LunyScript.Api.PhysicsEventLayerExtensions.html#LunyScript_Api_PhysicsEventLayerExtensions_Masked__1_LunyScript_Api_PhysicsEventBuilder___0__System_String___
+  name: Masked
+  nameWithType: PhysicsEventLayerExtensions.Masked
+  fullName: LunyScript.Api.PhysicsEventLayerExtensions.Masked
+- uid: LunyScript.Api.PhysicsEventBuilder{{T}}
+  commentId: T:LunyScript.Api.PhysicsEventBuilder{``0}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.PhysicsEventBuilder`1
+  href: LunyScript.Api.PhysicsEventBuilder-1.html
+  name: PhysicsEventBuilder<T>
+  nameWithType: PhysicsEventBuilder<T>
+  fullName: LunyScript.Api.PhysicsEventBuilder<T>
+  nameWithType.vb: PhysicsEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T)
+  name.vb: PhysicsEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.Api.PhysicsEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.Api.PhysicsEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.String[]
+  isExternal: true
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )
+- uid: LunyScript.Api.PhysicsEventBuilder{LunyScript.Api.CollisionBuilderMasked}
+  commentId: T:LunyScript.Api.PhysicsEventBuilder{LunyScript.Api.CollisionBuilderMasked}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.PhysicsEventBuilder`1
+  href: LunyScript.Api.PhysicsEventBuilder-1.html
+  name: PhysicsEventBuilder<CollisionBuilderMasked>
+  nameWithType: PhysicsEventBuilder<CollisionBuilderMasked>
+  fullName: LunyScript.Api.PhysicsEventBuilder<LunyScript.Api.CollisionBuilderMasked>
+  nameWithType.vb: PhysicsEventBuilder(Of CollisionBuilderMasked)
+  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of LunyScript.Api.CollisionBuilderMasked)
+  name.vb: PhysicsEventBuilder(Of CollisionBuilderMasked)
+  spec.csharp:
+  - uid: LunyScript.Api.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.Api.PhysicsEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.CollisionBuilderMasked
+    name: CollisionBuilderMasked
+    isExternal: true
+    href: LunyScript.Api.CollisionBuilderMasked.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.Api.PhysicsEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.CollisionBuilderMasked
+    name: CollisionBuilderMasked
+    isExternal: true
+    href: LunyScript.Api.CollisionBuilderMasked.html
+  - name: )
+- uid: LunyScript.Api.PhysicsEventBuilder`1
+  commentId: T:LunyScript.Api.PhysicsEventBuilder`1
+  isExternal: true
+  href: LunyScript.Api.PhysicsEventBuilder-1.html
+  name: PhysicsEventBuilder<T>
+  nameWithType: PhysicsEventBuilder<T>
+  fullName: LunyScript.Api.PhysicsEventBuilder<T>
+  nameWithType.vb: PhysicsEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T)
+  name.vb: PhysicsEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.Api.PhysicsEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.Api.PhysicsEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

@@ -1,0 +1,50 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.ICoroutineCounterWhen
+  commentId: T:LunyScript.Api.ICoroutineCounterWhen
+  id: ICoroutineCounterWhen
+  parent: LunyScript.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICoroutineCounterWhen
+  nameWithType: ICoroutineCounterWhen
+  fullName: LunyScript.Api.ICoroutineCounterWhen
+  type: Interface
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: 'public interface ICoroutineCounterWhen : ICoroutineCounterBuilderState'
+    content.vb: Public Interface ICoroutineCounterWhen Inherits ICoroutineCounterBuilderState
+  derivedClasses:
+  - LunyScript.Api.CoroutineCounterBuilderUnitSet
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html

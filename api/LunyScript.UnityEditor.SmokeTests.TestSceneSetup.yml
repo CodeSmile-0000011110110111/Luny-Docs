@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.UnityEditor.SmokeTests.TestSceneSetup
+  commentId: T:LunyScript.UnityEditor.SmokeTests.TestSceneSetup
+  id: TestSceneSetup
+  parent: LunyScript.UnityEditor.SmokeTests
+  children:
+  - LunyScript.UnityEditor.SmokeTests.TestSceneSetup.#ctor
+  - LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Cleanup
+  - LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Setup
+  langs:
+  - csharp
+  - vb
+  name: TestSceneSetup
+  nameWithType: TestSceneSetup
+  fullName: LunyScript.UnityEditor.SmokeTests.TestSceneSetup
+  type: Class
+  assemblies:
+  - LunyScript.UnityEditor.SmokeTests
+  namespace: LunyScript.UnityEditor.SmokeTests
+  syntax:
+    content: public sealed class TestSceneSetup
+    content.vb: Public NotInheritable Class TestSceneSetup
+  inheritance:
+  - System.Object
+- uid: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Cleanup
+  commentId: M:LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Cleanup
+  id: Cleanup
+  parent: LunyScript.UnityEditor.SmokeTests.TestSceneSetup
+  langs:
+  - csharp
+  - vb
+  name: Cleanup()
+  nameWithType: TestSceneSetup.Cleanup()
+  fullName: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Cleanup()
+  type: Method
+  assemblies:
+  - LunyScript.UnityEditor.SmokeTests
+  namespace: LunyScript.UnityEditor.SmokeTests
+  syntax:
+    content: public void Cleanup()
+    content.vb: Public Sub Cleanup()
+  overload: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Cleanup*
+- uid: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Setup
+  commentId: M:LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Setup
+  id: Setup
+  parent: LunyScript.UnityEditor.SmokeTests.TestSceneSetup
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: TestSceneSetup.Setup()
+  fullName: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Setup()
+  type: Method
+  assemblies:
+  - LunyScript.UnityEditor.SmokeTests
+  namespace: LunyScript.UnityEditor.SmokeTests
+  syntax:
+    content: public void Setup()
+    content.vb: Public Sub Setup()
+  overload: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Setup*
+- uid: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.#ctor
+  commentId: M:LunyScript.UnityEditor.SmokeTests.TestSceneSetup.#ctor
+  id: '#ctor'
+  parent: LunyScript.UnityEditor.SmokeTests.TestSceneSetup
+  langs:
+  - csharp
+  - vb
+  name: TestSceneSetup()
+  nameWithType: TestSceneSetup.TestSceneSetup()
+  fullName: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.TestSceneSetup()
+  type: Constructor
+  assemblies:
+  - LunyScript.UnityEditor.SmokeTests
+  namespace: LunyScript.UnityEditor.SmokeTests
+  syntax:
+    content: public TestSceneSetup()
+    content.vb: Public Sub New()
+  overload: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.#ctor*
+  nameWithType.vb: TestSceneSetup.New()
+  fullName.vb: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.New()
+  name.vb: New()
+references:
+- uid: LunyScript.UnityEditor.SmokeTests
+  commentId: N:LunyScript.UnityEditor.SmokeTests
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.UnityEditor.SmokeTests
+  nameWithType: LunyScript.UnityEditor.SmokeTests
+  fullName: LunyScript.UnityEditor.SmokeTests
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.UnityEditor
+    name: UnityEditor
+    isExternal: true
+    href: LunyScript.UnityEditor.html
+  - name: .
+  - uid: LunyScript.UnityEditor.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.UnityEditor.SmokeTests.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.UnityEditor
+    name: UnityEditor
+    isExternal: true
+    href: LunyScript.UnityEditor.html
+  - name: .
+  - uid: LunyScript.UnityEditor.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.UnityEditor.SmokeTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Cleanup*
+  commentId: Overload:LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Cleanup
+  isExternal: true
+  href: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.html#LunyScript_UnityEditor_SmokeTests_TestSceneSetup_Cleanup
+  name: Cleanup
+  nameWithType: TestSceneSetup.Cleanup
+  fullName: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Cleanup
+- uid: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Setup*
+  commentId: Overload:LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Setup
+  isExternal: true
+  href: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.html#LunyScript_UnityEditor_SmokeTests_TestSceneSetup_Setup
+  name: Setup
+  nameWithType: TestSceneSetup.Setup
+  fullName: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.Setup
+- uid: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.#ctor*
+  commentId: Overload:LunyScript.UnityEditor.SmokeTests.TestSceneSetup.#ctor
+  isExternal: true
+  href: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.html#LunyScript_UnityEditor_SmokeTests_TestSceneSetup__ctor
+  name: TestSceneSetup
+  nameWithType: TestSceneSetup.TestSceneSetup
+  fullName: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.TestSceneSetup
+  nameWithType.vb: TestSceneSetup.New
+  fullName.vb: LunyScript.UnityEditor.SmokeTests.TestSceneSetup.New
+  name.vb: New

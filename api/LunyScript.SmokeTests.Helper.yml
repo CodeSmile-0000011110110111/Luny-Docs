@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.Helper
+  commentId: N:LunyScript.SmokeTests.Helper
+  id: LunyScript.SmokeTests.Helper
+  children:
+  - LunyScript.SmokeTests.Helper.ChangeMaterialOnContact
+  - LunyScript.SmokeTests.Helper.ChangeMaterialWhenRigidbodySleeps
+  - LunyScript.SmokeTests.Helper.PhysicsEventLogger
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.SmokeTests.Helper
+  nameWithType: LunyScript.SmokeTests.Helper
+  fullName: LunyScript.SmokeTests.Helper
+  type: Namespace
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+references:
+- uid: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact
+  commentId: T:LunyScript.SmokeTests.Helper.ChangeMaterialOnContact
+  isExternal: true
+  href: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact.html
+  name: ChangeMaterialOnContact
+  nameWithType: ChangeMaterialOnContact
+  fullName: LunyScript.SmokeTests.Helper.ChangeMaterialOnContact
+- uid: LunyScript.SmokeTests.Helper.ChangeMaterialWhenRigidbodySleeps
+  commentId: T:LunyScript.SmokeTests.Helper.ChangeMaterialWhenRigidbodySleeps
+  isExternal: true
+  href: LunyScript.SmokeTests.Helper.ChangeMaterialWhenRigidbodySleeps.html
+  name: ChangeMaterialWhenRigidbodySleeps
+  nameWithType: ChangeMaterialWhenRigidbodySleeps
+  fullName: LunyScript.SmokeTests.Helper.ChangeMaterialWhenRigidbodySleeps
+- uid: LunyScript.SmokeTests.Helper.PhysicsEventLogger
+  commentId: T:LunyScript.SmokeTests.Helper.PhysicsEventLogger
+  isExternal: true
+  href: LunyScript.SmokeTests.Helper.PhysicsEventLogger.html
+  name: PhysicsEventLogger
+  nameWithType: PhysicsEventLogger
+  fullName: LunyScript.SmokeTests.Helper.PhysicsEventLogger

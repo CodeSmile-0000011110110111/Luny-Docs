@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.LunyScriptVariableException
+  commentId: T:LunyScript.LunyScriptVariableException
+  id: LunyScriptVariableException
+  parent: LunyScript
+  children:
+  - LunyScript.LunyScriptVariableException.#ctor(System.String)
+  - LunyScript.LunyScriptVariableException.#ctor(System.String,System.Exception)
+  langs:
+  - csharp
+  - vb
+  name: LunyScriptVariableException
+  nameWithType: LunyScriptVariableException
+  fullName: LunyScript.LunyScriptVariableException
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: 'public sealed class LunyScriptVariableException : LunyScriptException'
+    content.vb: Public NotInheritable Class LunyScriptVariableException Inherits LunyScriptException
+  inheritance:
+  - System.Object
+  - System.Exception
+  - Luny.LunyException
+  - LunyScript.LunyScriptException
+- uid: LunyScript.LunyScriptVariableException.#ctor(System.String)
+  commentId: M:LunyScript.LunyScriptVariableException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: LunyScript.LunyScriptVariableException
+  langs:
+  - csharp
+  - vb
+  name: LunyScriptVariableException(string)
+  nameWithType: LunyScriptVariableException.LunyScriptVariableException(string)
+  fullName: LunyScript.LunyScriptVariableException.LunyScriptVariableException(string)
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public LunyScriptVariableException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: LunyScript.LunyScriptVariableException.#ctor*
+  nameWithType.vb: LunyScriptVariableException.New(String)
+  fullName.vb: LunyScript.LunyScriptVariableException.New(String)
+  name.vb: New(String)
+- uid: LunyScript.LunyScriptVariableException.#ctor(System.String,System.Exception)
+  commentId: M:LunyScript.LunyScriptVariableException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: LunyScript.LunyScriptVariableException
+  langs:
+  - csharp
+  - vb
+  name: LunyScriptVariableException(string, Exception)
+  nameWithType: LunyScriptVariableException.LunyScriptVariableException(string, Exception)
+  fullName: LunyScript.LunyScriptVariableException.LunyScriptVariableException(string, System.Exception)
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public LunyScriptVariableException(string message, Exception innerException)
+    parameters:
+    - id: message
+      type: System.String
+    - id: innerException
+      type: System.Exception
+    content.vb: Public Sub New(message As String, innerException As Exception)
+  overload: LunyScript.LunyScriptVariableException.#ctor*
+  nameWithType.vb: LunyScriptVariableException.New(String, Exception)
+  fullName.vb: LunyScript.LunyScriptVariableException.New(String, System.Exception)
+  name.vb: New(String, Exception)
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Luny.LunyException
+  commentId: T:Luny.LunyException
+  parent: Luny
+  isExternal: true
+  href: Luny.LunyException.html
+  name: LunyException
+  nameWithType: LunyException
+  fullName: Luny.LunyException
+- uid: LunyScript.LunyScriptException
+  commentId: T:LunyScript.LunyScriptException
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.LunyScriptException.html
+  name: LunyScriptException
+  nameWithType: LunyScriptException
+  fullName: LunyScript.LunyScriptException
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: LunyScript.LunyScriptVariableException.#ctor*
+  commentId: Overload:LunyScript.LunyScriptVariableException.#ctor
+  isExternal: true
+  href: LunyScript.LunyScriptVariableException.html#LunyScript_LunyScriptVariableException__ctor_System_String_
+  name: LunyScriptVariableException
+  nameWithType: LunyScriptVariableException.LunyScriptVariableException
+  fullName: LunyScript.LunyScriptVariableException.LunyScriptVariableException
+  nameWithType.vb: LunyScriptVariableException.New
+  fullName.vb: LunyScript.LunyScriptVariableException.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

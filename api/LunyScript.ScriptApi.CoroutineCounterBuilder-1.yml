@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.CoroutineCounterBuilder`1
+  commentId: T:LunyScript.ScriptApi.CoroutineCounterBuilder`1
+  id: CoroutineCounterBuilder`1
+  parent: LunyScript.ScriptApi
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CoroutineCounterBuilder<T>
+  nameWithType: CoroutineCounterBuilder<T>
+  fullName: LunyScript.ScriptApi.CoroutineCounterBuilder<T>
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Counter runs blocks either once or repeatedly after a given number of frames/heartbeats.
+
+    Usage: Counter("name").In(5).Frames().Do(blocks);
+           Counter("name").Every(10).Heartbeats().Do(blocks);
+  example: []
+  syntax:
+    content: 'public readonly struct CoroutineCounterBuilder<T> where T : struct, ICoroutineCounterBuilderState'
+    typeParameters:
+    - id: T
+    content.vb: Public Structure CoroutineCounterBuilder(Of T As {Structure, ICoroutineCounterBuilderState})
+  nameWithType.vb: CoroutineCounterBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.CoroutineCounterBuilder(Of T)
+  name.vb: CoroutineCounterBuilder(Of T)
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html

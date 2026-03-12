@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps
+  commentId: T:LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps
+  id: ChangeMaterialWhenRigidbodySleeps
+  parent: LunyScript.SmokeTests
+  children:
+  - LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.#ctor
+  langs:
+  - csharp
+  - vb
+  name: ChangeMaterialWhenRigidbodySleeps
+  nameWithType: ChangeMaterialWhenRigidbodySleeps
+  fullName: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps
+  type: Class
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: 'public sealed class ChangeMaterialWhenRigidbodySleeps : MonoBehaviour'
+    content.vb: Public NotInheritable Class ChangeMaterialWhenRigidbodySleeps Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.#ctor
+  commentId: M:LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.#ctor
+  id: '#ctor'
+  parent: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps
+  langs:
+  - csharp
+  - vb
+  name: ChangeMaterialWhenRigidbodySleeps()
+  nameWithType: ChangeMaterialWhenRigidbodySleeps.ChangeMaterialWhenRigidbodySleeps()
+  fullName: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.ChangeMaterialWhenRigidbodySleeps()
+  type: Constructor
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public ChangeMaterialWhenRigidbodySleeps()
+    content.vb: Public Sub New()
+  overload: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.#ctor*
+  nameWithType.vb: ChangeMaterialWhenRigidbodySleeps.New()
+  fullName.vb: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.New()
+  name.vb: New()
+references:
+- uid: LunyScript.SmokeTests
+  commentId: N:LunyScript.SmokeTests
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.SmokeTests
+  nameWithType: LunyScript.SmokeTests
+  fullName: LunyScript.SmokeTests
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.#ctor*
+  commentId: Overload:LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.#ctor
+  isExternal: true
+  href: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.html#LunyScript_SmokeTests_ChangeMaterialWhenRigidbodySleeps__ctor
+  name: ChangeMaterialWhenRigidbodySleeps
+  nameWithType: ChangeMaterialWhenRigidbodySleeps.ChangeMaterialWhenRigidbodySleeps
+  fullName: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.ChangeMaterialWhenRigidbodySleeps
+  nameWithType.vb: ChangeMaterialWhenRigidbodySleeps.New
+  fullName.vb: LunyScript.SmokeTests.ChangeMaterialWhenRigidbodySleeps.New
+  name.vb: New

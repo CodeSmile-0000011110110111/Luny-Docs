@@ -1,0 +1,143 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptContext
+  commentId: T:LunyScript.ScriptContext
+  id: ScriptContext
+  parent: LunyScript
+  children:
+  - LunyScript.ScriptContext.#ctor
+  - LunyScript.ScriptContext.Options
+  - LunyScript.ScriptContext.Settings
+  langs:
+  - csharp
+  - vb
+  name: ScriptContext
+  nameWithType: ScriptContext
+  fullName: LunyScript.ScriptContext
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public sealed class ScriptContext
+    content.vb: Public NotInheritable Class ScriptContext
+  inheritance:
+  - System.Object
+- uid: LunyScript.ScriptContext.Options
+  commentId: F:LunyScript.ScriptContext.Options
+  id: Options
+  parent: LunyScript.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: ScriptContext.Options
+  fullName: LunyScript.ScriptContext.Options
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptOptions Options
+    return:
+      type: LunyScript.ScriptOptions
+    content.vb: Public Options As ScriptOptions
+- uid: LunyScript.ScriptContext.#ctor
+  commentId: M:LunyScript.ScriptContext.#ctor
+  id: '#ctor'
+  parent: LunyScript.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: ScriptContext()
+  nameWithType: ScriptContext.ScriptContext()
+  fullName: LunyScript.ScriptContext.ScriptContext()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptContext()
+    content.vb: Public Sub New()
+  overload: LunyScript.ScriptContext.#ctor*
+  nameWithType.vb: ScriptContext.New()
+  fullName.vb: LunyScript.ScriptContext.New()
+  name.vb: New()
+- uid: LunyScript.ScriptContext.Settings
+  commentId: P:LunyScript.ScriptContext.Settings
+  id: Settings
+  parent: LunyScript.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: ScriptContext.Settings
+  fullName: LunyScript.ScriptContext.Settings
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptSettings Settings { get; }
+    parameters: []
+    return:
+      type: LunyScript.ScriptSettings
+    content.vb: Public ReadOnly Property Settings As ScriptSettings
+  overload: LunyScript.ScriptContext.Settings*
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptOptions
+  commentId: T:LunyScript.ScriptOptions
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ScriptOptions.html
+  name: ScriptOptions
+  nameWithType: ScriptOptions
+  fullName: LunyScript.ScriptOptions
+- uid: LunyScript.ScriptContext.#ctor*
+  commentId: Overload:LunyScript.ScriptContext.#ctor
+  isExternal: true
+  href: LunyScript.ScriptContext.html#LunyScript_ScriptContext__ctor
+  name: ScriptContext
+  nameWithType: ScriptContext.ScriptContext
+  fullName: LunyScript.ScriptContext.ScriptContext
+  nameWithType.vb: ScriptContext.New
+  fullName.vb: LunyScript.ScriptContext.New
+  name.vb: New
+- uid: LunyScript.ScriptContext.Settings*
+  commentId: Overload:LunyScript.ScriptContext.Settings
+  isExternal: true
+  href: LunyScript.ScriptContext.html#LunyScript_ScriptContext_Settings
+  name: Settings
+  nameWithType: ScriptContext.Settings
+  fullName: LunyScript.ScriptContext.Settings
+- uid: LunyScript.ScriptSettings
+  commentId: T:LunyScript.ScriptSettings
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ScriptSettings.html
+  name: ScriptSettings
+  nameWithType: ScriptSettings
+  fullName: LunyScript.ScriptSettings

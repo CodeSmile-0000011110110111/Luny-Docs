@@ -1,0 +1,301 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.ObjectBuilder
+  commentId: T:LunyScript.ScriptApi.ObjectBuilder
+  id: ObjectBuilder
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.ObjectBuilder.Create(System.String)
+  - LunyScript.ScriptApi.ObjectBuilder.Destroy(System.String)
+  - LunyScript.ScriptApi.ObjectBuilder.Disable(System.String)
+  - LunyScript.ScriptApi.ObjectBuilder.Enable(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ObjectBuilder
+  nameWithType: ObjectBuilder
+  fullName: LunyScript.ScriptApi.ObjectBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Provides operations for objects.
+  example: []
+  syntax:
+    content: public readonly struct ObjectBuilder
+    content.vb: Public Structure ObjectBuilder
+- uid: LunyScript.ScriptApi.ObjectBuilder.Enable(System.String)
+  commentId: M:LunyScript.ScriptApi.ObjectBuilder.Enable(System.String)
+  id: Enable(System.String)
+  parent: LunyScript.ScriptApi.ObjectBuilder
+  langs:
+  - csharp
+  - vb
+  name: Enable(string)
+  nameWithType: ObjectBuilder.Enable(string)
+  fullName: LunyScript.ScriptApi.ObjectBuilder.Enable(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ScriptActionBlock Enable(string name = null)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Enable(name As String = Nothing) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.ObjectBuilder.Enable*
+  nameWithType.vb: ObjectBuilder.Enable(String)
+  fullName.vb: LunyScript.ScriptApi.ObjectBuilder.Enable(String)
+  name.vb: Enable(String)
+- uid: LunyScript.ScriptApi.ObjectBuilder.Disable(System.String)
+  commentId: M:LunyScript.ScriptApi.ObjectBuilder.Disable(System.String)
+  id: Disable(System.String)
+  parent: LunyScript.ScriptApi.ObjectBuilder
+  langs:
+  - csharp
+  - vb
+  name: Disable(string)
+  nameWithType: ObjectBuilder.Disable(string)
+  fullName: LunyScript.ScriptApi.ObjectBuilder.Disable(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ScriptActionBlock Disable(string name = null)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Disable(name As String = Nothing) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.ObjectBuilder.Disable*
+  nameWithType.vb: ObjectBuilder.Disable(String)
+  fullName.vb: LunyScript.ScriptApi.ObjectBuilder.Disable(String)
+  name.vb: Disable(String)
+- uid: LunyScript.ScriptApi.ObjectBuilder.Create(System.String)
+  commentId: M:LunyScript.ScriptApi.ObjectBuilder.Create(System.String)
+  id: Create(System.String)
+  parent: LunyScript.ScriptApi.ObjectBuilder
+  langs:
+  - csharp
+  - vb
+  name: Create(string)
+  nameWithType: ObjectBuilder.Create(string)
+  fullName: LunyScript.ScriptApi.ObjectBuilder.Create(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<ObjectBuilderNameSet> Create(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder{LunyScript.ScriptApi.ObjectBuilderNameSet}
+    content.vb: Public Function Create(name As String) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
+  overload: LunyScript.ScriptApi.ObjectBuilder.Create*
+  nameWithType.vb: ObjectBuilder.Create(String)
+  fullName.vb: LunyScript.ScriptApi.ObjectBuilder.Create(String)
+  name.vb: Create(String)
+- uid: LunyScript.ScriptApi.ObjectBuilder.Destroy(System.String)
+  commentId: M:LunyScript.ScriptApi.ObjectBuilder.Destroy(System.String)
+  id: Destroy(System.String)
+  parent: LunyScript.ScriptApi.ObjectBuilder
+  langs:
+  - csharp
+  - vb
+  name: Destroy(string)
+  nameWithType: ObjectBuilder.Destroy(string)
+  fullName: LunyScript.ScriptApi.ObjectBuilder.Destroy(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ScriptActionBlock Destroy(string name = null)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Destroy(name As String = Nothing) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.ObjectBuilder.Destroy*
+  nameWithType.vb: ObjectBuilder.Destroy(String)
+  fullName.vb: LunyScript.ScriptApi.ObjectBuilder.Destroy(String)
+  name.vb: Destroy(String)
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.ObjectBuilder.Enable*
+  commentId: Overload:LunyScript.ScriptApi.ObjectBuilder.Enable
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectBuilder.html#LunyScript_ScriptApi_ObjectBuilder_Enable_System_String_
+  name: Enable
+  nameWithType: ObjectBuilder.Enable
+  fullName: LunyScript.ScriptApi.ObjectBuilder.Enable
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.ScriptApi.ObjectBuilder.Disable*
+  commentId: Overload:LunyScript.ScriptApi.ObjectBuilder.Disable
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectBuilder.html#LunyScript_ScriptApi_ObjectBuilder_Disable_System_String_
+  name: Disable
+  nameWithType: ObjectBuilder.Disable
+  fullName: LunyScript.ScriptApi.ObjectBuilder.Disable
+- uid: LunyScript.ScriptApi.ObjectBuilder.Create*
+  commentId: Overload:LunyScript.ScriptApi.ObjectBuilder.Create
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectBuilder.html#LunyScript_ScriptApi_ObjectBuilder_Create_System_String_
+  name: Create
+  nameWithType: ObjectBuilder.Create
+  fullName: LunyScript.ScriptApi.ObjectBuilder.Create
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder{LunyScript.ScriptApi.ObjectBuilderNameSet}
+  commentId: T:LunyScript.ScriptApi.ObjectCreateBuilder{LunyScript.ScriptApi.ObjectBuilderNameSet}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  name: ObjectCreateBuilder<ObjectBuilderNameSet>
+  nameWithType: ObjectCreateBuilder<ObjectBuilderNameSet>
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<LunyScript.ScriptApi.ObjectBuilderNameSet>
+  nameWithType.vb: ObjectCreateBuilder(Of ObjectBuilderNameSet)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of LunyScript.ScriptApi.ObjectBuilderNameSet)
+  name.vb: ObjectCreateBuilder(Of ObjectBuilderNameSet)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  - name: <
+  - uid: LunyScript.ScriptApi.ObjectBuilderNameSet
+    name: ObjectBuilderNameSet
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectBuilderNameSet.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.ScriptApi.ObjectBuilderNameSet
+    name: ObjectBuilderNameSet
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectBuilderNameSet.html
+  - name: )
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  commentId: T:LunyScript.ScriptApi.ObjectCreateBuilder`1
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  name: ObjectCreateBuilder<T>
+  nameWithType: ObjectCreateBuilder<T>
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>
+  nameWithType.vb: ObjectCreateBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T)
+  name.vb: ObjectCreateBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.ScriptApi.ObjectBuilder.Destroy*
+  commentId: Overload:LunyScript.ScriptApi.ObjectBuilder.Destroy
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectBuilder.html#LunyScript_ScriptApi_ObjectBuilder_Destroy_System_String_
+  name: Destroy
+  nameWithType: ObjectBuilder.Destroy
+  fullName: LunyScript.ScriptApi.ObjectBuilder.Destroy

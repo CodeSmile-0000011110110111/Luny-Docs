@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.UnityEditor
+  commentId: N:Luny.UnityEditor
+  id: Luny.UnityEditor
+  children:
+  - Luny.UnityEditor.LunyLinkerProcessor
+  - Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+  - Luny.UnityEditor.NoteEditor
+  langs:
+  - csharp
+  - vb
+  name: Luny.UnityEditor
+  nameWithType: Luny.UnityEditor
+  fullName: Luny.UnityEditor
+  type: Namespace
+  assemblies:
+  - Luny.UnityEditor
+references:
+- uid: Luny.UnityEditor.LunyLinkerProcessor
+  commentId: T:Luny.UnityEditor.LunyLinkerProcessor
+  isExternal: true
+  href: Luny.UnityEditor.LunyLinkerProcessor.html
+  name: LunyLinkerProcessor
+  nameWithType: LunyLinkerProcessor
+  fullName: Luny.UnityEditor.LunyLinkerProcessor
+- uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+  commentId: T:Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+  isExternal: true
+  href: Luny.UnityEditor.LunyLinkerProcessor.html
+  name: LunyLinkerProcessor.PreserveDetails
+  nameWithType: LunyLinkerProcessor.PreserveDetails
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+  spec.csharp:
+  - uid: Luny.UnityEditor.LunyLinkerProcessor
+    name: LunyLinkerProcessor
+    isExternal: true
+    href: Luny.UnityEditor.LunyLinkerProcessor.html
+  - name: .
+  - uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+    name: PreserveDetails
+    isExternal: true
+    href: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.html
+  spec.vb:
+  - uid: Luny.UnityEditor.LunyLinkerProcessor
+    name: LunyLinkerProcessor
+    isExternal: true
+    href: Luny.UnityEditor.LunyLinkerProcessor.html
+  - name: .
+  - uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+    name: PreserveDetails
+    isExternal: true
+    href: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.html
+- uid: Luny.UnityEditor.NoteEditor
+  commentId: T:Luny.UnityEditor.NoteEditor
+  isExternal: true
+  href: Luny.UnityEditor.NoteEditor.html
+  name: NoteEditor
+  nameWithType: NoteEditor
+  fullName: Luny.UnityEditor.NoteEditor

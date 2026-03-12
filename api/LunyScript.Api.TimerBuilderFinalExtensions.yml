@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.TimerBuilderFinalExtensions
+  commentId: T:LunyScript.Api.TimerBuilderFinalExtensions
+  id: TimerBuilderFinalExtensions
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  langs:
+  - csharp
+  - vb
+  name: TimerBuilderFinalExtensions
+  nameWithType: TimerBuilderFinalExtensions
+  fullName: LunyScript.Api.TimerBuilderFinalExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static class TimerBuilderFinalExtensions
+    content.vb: Public Module TimerBuilderFinalExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  id: WhenElapsed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.TimerBuilderFinalExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhenElapsed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
+  nameWithType: TimerBuilderFinalExtensions.WhenElapsed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
+  fullName: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Completes the timer and (optional) specifies blocks to run every frame.
+  example: []
+  syntax:
+    content: 'public static ITimerCoroutineBlock WhenElapsed<T>(this CoroutineTimerBuilder<T> b, params ScriptActionBlock[] elapsedBlocks) where T : struct, ICoroutineTimerUnitSet'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CoroutineTimerBuilder{{T}}
+    - id: elapsedBlocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Blocks.ITimerCoroutineBlock
+    content.vb: Public Shared Function WhenElapsed(Of T As {Structure, ICoroutineTimerUnitSet})(b As CoroutineTimerBuilder(Of T), ParamArray elapsedBlocks As ScriptActionBlock()) As ITimerCoroutineBlock
+  overload: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed*
+  nameWithType.vb: TimerBuilderFinalExtensions.WhenElapsed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: WhenElapsed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed*
+  commentId: Overload:LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed
+  isExternal: true
+  href: LunyScript.Api.TimerBuilderFinalExtensions.html#LunyScript_Api_TimerBuilderFinalExtensions_WhenElapsed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  name: WhenElapsed
+  nameWithType: TimerBuilderFinalExtensions.WhenElapsed
+  fullName: LunyScript.Api.TimerBuilderFinalExtensions.WhenElapsed
+- uid: LunyScript.Api.CoroutineTimerBuilder{{T}}
+  commentId: T:LunyScript.Api.CoroutineTimerBuilder{``0}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.CoroutineTimerBuilder`1
+  href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.Api.CoroutineTimerBuilder<T>
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.Api.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks.ScriptActionBlock[]
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock[]
+  nameWithType: ScriptActionBlock[]
+  fullName: LunyScript.Blocks.ScriptActionBlock[]
+  nameWithType.vb: ScriptActionBlock()
+  fullName.vb: LunyScript.Blocks.ScriptActionBlock()
+  name.vb: ScriptActionBlock()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ITimerCoroutineBlock
+  commentId: T:LunyScript.Blocks.ITimerCoroutineBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ITimerCoroutineBlock.html
+  name: ITimerCoroutineBlock
+  nameWithType: ITimerCoroutineBlock
+  fullName: LunyScript.Blocks.ITimerCoroutineBlock
+- uid: LunyScript.Api.CoroutineTimerBuilder`1
+  commentId: T:LunyScript.Api.CoroutineTimerBuilder`1
+  isExternal: true
+  href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.Api.CoroutineTimerBuilder<T>
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.Api.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html

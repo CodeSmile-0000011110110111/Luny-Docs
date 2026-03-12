@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.CoroutineTimerAmountSet
+  commentId: T:LunyScript.Api.CoroutineTimerAmountSet
+  id: CoroutineTimerAmountSet
+  parent: LunyScript.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CoroutineTimerAmountSet
+  nameWithType: CoroutineTimerAmountSet
+  fullName: LunyScript.Api.CoroutineTimerAmountSet
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: 'public struct CoroutineTimerAmountSet : ICoroutineTimerAmountSet, ICoroutineTimerBuilderState'
+    content.vb: Public Structure CoroutineTimerAmountSet Implements ICoroutineTimerAmountSet, ICoroutineTimerBuilderState
+  implements:
+  - LunyScript.Api.ICoroutineTimerAmountSet
+  - LunyScript.Api.ICoroutineTimerBuilderState
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Api.ICoroutineTimerAmountSet
+  commentId: T:LunyScript.Api.ICoroutineTimerAmountSet
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICoroutineTimerAmountSet.html
+  name: ICoroutineTimerAmountSet
+  nameWithType: ICoroutineTimerAmountSet
+  fullName: LunyScript.Api.ICoroutineTimerAmountSet
+- uid: LunyScript.Api.ICoroutineTimerBuilderState
+  commentId: T:LunyScript.Api.ICoroutineTimerBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICoroutineTimerBuilderState.html
+  name: ICoroutineTimerBuilderState
+  nameWithType: ICoroutineTimerBuilderState
+  fullName: LunyScript.Api.ICoroutineTimerBuilderState

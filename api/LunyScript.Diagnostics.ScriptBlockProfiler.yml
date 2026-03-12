@@ -1,0 +1,437 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler
+  commentId: T:LunyScript.Diagnostics.ScriptBlockProfiler
+  id: ScriptBlockProfiler
+  parent: LunyScript.Diagnostics
+  children:
+  - LunyScript.Diagnostics.ScriptBlockProfiler.#ctor
+  - LunyScript.Diagnostics.ScriptBlockProfiler.BeginBlock(LunyScript.ScriptBlockId)
+  - LunyScript.Diagnostics.ScriptBlockProfiler.EndBlock(LunyScript.ScriptBlockId,System.Type)
+  - LunyScript.Diagnostics.ScriptBlockProfiler.RecordError(LunyScript.ScriptBlockId,System.Exception)
+  - LunyScript.Diagnostics.ScriptBlockProfiler.Reset
+  - LunyScript.Diagnostics.ScriptBlockProfiler.RollingAverageWindow
+  - LunyScript.Diagnostics.ScriptBlockProfiler.TakeSnapshot
+  langs:
+  - csharp
+  - vb
+  name: ScriptBlockProfiler
+  nameWithType: ScriptBlockProfiler
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  summary: >-
+    Concrete implementation of block-level profiling for LunyScript execution.
+
+    Tracks execution time for each sequence/block with configurable rolling average.
+
+    Public methods use [Conditional] attributes - completely stripped in release builds unless DEBUG or LUNYSCRIPT_DEBUG defined.
+  example: []
+  syntax:
+    content: public sealed class ScriptBlockProfiler
+    content.vb: Public NotInheritable Class ScriptBlockProfiler
+  inheritance:
+  - System.Object
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.BeginBlock(LunyScript.ScriptBlockId)
+  commentId: M:LunyScript.Diagnostics.ScriptBlockProfiler.BeginBlock(LunyScript.ScriptBlockId)
+  id: BeginBlock(LunyScript.ScriptBlockId)
+  parent: LunyScript.Diagnostics.ScriptBlockProfiler
+  langs:
+  - csharp
+  - vb
+  name: BeginBlock(ScriptBlockId)
+  nameWithType: ScriptBlockProfiler.BeginBlock(ScriptBlockId)
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.BeginBlock(LunyScript.ScriptBlockId)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      [Conditional("LUNYSCRIPT_DEBUG")]
+
+      public void BeginBlock(ScriptBlockId scriptBlockId)
+    parameters:
+    - id: scriptBlockId
+      type: LunyScript.ScriptBlockId
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      <Conditional("LUNYSCRIPT_DEBUG")>
+
+      Public Sub BeginBlock(scriptBlockId As ScriptBlockId)
+  overload: LunyScript.Diagnostics.ScriptBlockProfiler.BeginBlock*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LUNYSCRIPT_DEBUG
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.EndBlock(LunyScript.ScriptBlockId,System.Type)
+  commentId: M:LunyScript.Diagnostics.ScriptBlockProfiler.EndBlock(LunyScript.ScriptBlockId,System.Type)
+  id: EndBlock(LunyScript.ScriptBlockId,System.Type)
+  parent: LunyScript.Diagnostics.ScriptBlockProfiler
+  langs:
+  - csharp
+  - vb
+  name: EndBlock(ScriptBlockId, Type)
+  nameWithType: ScriptBlockProfiler.EndBlock(ScriptBlockId, Type)
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.EndBlock(LunyScript.ScriptBlockId, System.Type)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      [Conditional("LUNYSCRIPT_DEBUG")]
+
+      [Conditional("LUNYSCRIPT_PROFILE")]
+
+      public void EndBlock(ScriptBlockId scriptBlockId, Type blockType)
+    parameters:
+    - id: scriptBlockId
+      type: LunyScript.ScriptBlockId
+    - id: blockType
+      type: System.Type
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      <Conditional("LUNYSCRIPT_DEBUG")>
+
+      <Conditional("LUNYSCRIPT_PROFILE")>
+
+      Public Sub EndBlock(scriptBlockId As ScriptBlockId, blockType As Type)
+  overload: LunyScript.Diagnostics.ScriptBlockProfiler.EndBlock*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LUNYSCRIPT_DEBUG
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LUNYSCRIPT_PROFILE
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.RecordError(LunyScript.ScriptBlockId,System.Exception)
+  commentId: M:LunyScript.Diagnostics.ScriptBlockProfiler.RecordError(LunyScript.ScriptBlockId,System.Exception)
+  id: RecordError(LunyScript.ScriptBlockId,System.Exception)
+  parent: LunyScript.Diagnostics.ScriptBlockProfiler
+  langs:
+  - csharp
+  - vb
+  name: RecordError(ScriptBlockId, Exception)
+  nameWithType: ScriptBlockProfiler.RecordError(ScriptBlockId, Exception)
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.RecordError(LunyScript.ScriptBlockId, System.Exception)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      [Conditional("LUNYSCRIPT_DEBUG")]
+
+      [Conditional("LUNYSCRIPT_PROFILE")]
+
+      public void RecordError(ScriptBlockId scriptBlockId, Exception ex)
+    parameters:
+    - id: scriptBlockId
+      type: LunyScript.ScriptBlockId
+    - id: ex
+      type: System.Exception
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      <Conditional("LUNYSCRIPT_DEBUG")>
+
+      <Conditional("LUNYSCRIPT_PROFILE")>
+
+      Public Sub RecordError(scriptBlockId As ScriptBlockId, ex As Exception)
+  overload: LunyScript.Diagnostics.ScriptBlockProfiler.RecordError*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LUNYSCRIPT_DEBUG
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LUNYSCRIPT_PROFILE
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.TakeSnapshot
+  commentId: M:LunyScript.Diagnostics.ScriptBlockProfiler.TakeSnapshot
+  id: TakeSnapshot
+  parent: LunyScript.Diagnostics.ScriptBlockProfiler
+  langs:
+  - csharp
+  - vb
+  name: TakeSnapshot()
+  nameWithType: ScriptBlockProfiler.TakeSnapshot()
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.TakeSnapshot()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public ScriptBlockProfilerSnapshot TakeSnapshot()
+    return:
+      type: LunyScript.Diagnostics.ScriptBlockProfilerSnapshot
+    content.vb: Public Function TakeSnapshot() As ScriptBlockProfilerSnapshot
+  overload: LunyScript.Diagnostics.ScriptBlockProfiler.TakeSnapshot*
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.Reset
+  commentId: M:LunyScript.Diagnostics.ScriptBlockProfiler.Reset
+  id: Reset
+  parent: LunyScript.Diagnostics.ScriptBlockProfiler
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: ScriptBlockProfiler.Reset()
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.Reset()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      [Conditional("LUNYSCRIPT_DEBUG")]
+
+      [Conditional("LUNYSCRIPT_PROFILE")]
+
+      public void Reset()
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      <Conditional("LUNYSCRIPT_DEBUG")>
+
+      <Conditional("LUNYSCRIPT_PROFILE")>
+
+      Public Sub Reset()
+  overload: LunyScript.Diagnostics.ScriptBlockProfiler.Reset*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LUNYSCRIPT_DEBUG
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LUNYSCRIPT_PROFILE
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.#ctor
+  commentId: M:LunyScript.Diagnostics.ScriptBlockProfiler.#ctor
+  id: '#ctor'
+  parent: LunyScript.Diagnostics.ScriptBlockProfiler
+  langs:
+  - csharp
+  - vb
+  name: ScriptBlockProfiler()
+  nameWithType: ScriptBlockProfiler.ScriptBlockProfiler()
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.ScriptBlockProfiler()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public ScriptBlockProfiler()
+    content.vb: Public Sub New()
+  overload: LunyScript.Diagnostics.ScriptBlockProfiler.#ctor*
+  nameWithType.vb: ScriptBlockProfiler.New()
+  fullName.vb: LunyScript.Diagnostics.ScriptBlockProfiler.New()
+  name.vb: New()
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.RollingAverageWindow
+  commentId: P:LunyScript.Diagnostics.ScriptBlockProfiler.RollingAverageWindow
+  id: RollingAverageWindow
+  parent: LunyScript.Diagnostics.ScriptBlockProfiler
+  langs:
+  - csharp
+  - vb
+  name: RollingAverageWindow
+  nameWithType: ScriptBlockProfiler.RollingAverageWindow
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.RollingAverageWindow
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public int RollingAverageWindow { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RollingAverageWindow As Integer
+  overload: LunyScript.Diagnostics.ScriptBlockProfiler.RollingAverageWindow*
+references:
+- uid: LunyScript.Diagnostics
+  commentId: N:LunyScript.Diagnostics
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Diagnostics
+  nameWithType: LunyScript.Diagnostics
+  fullName: LunyScript.Diagnostics
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: LunyScript.Diagnostics.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: LunyScript.Diagnostics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.BeginBlock*
+  commentId: Overload:LunyScript.Diagnostics.ScriptBlockProfiler.BeginBlock
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptBlockProfiler.html#LunyScript_Diagnostics_ScriptBlockProfiler_BeginBlock_LunyScript_ScriptBlockId_
+  name: BeginBlock
+  nameWithType: ScriptBlockProfiler.BeginBlock
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.BeginBlock
+- uid: LunyScript.ScriptBlockId
+  commentId: T:LunyScript.ScriptBlockId
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ScriptBlockId.html
+  name: ScriptBlockId
+  nameWithType: ScriptBlockId
+  fullName: LunyScript.ScriptBlockId
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.EndBlock*
+  commentId: Overload:LunyScript.Diagnostics.ScriptBlockProfiler.EndBlock
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptBlockProfiler.html#LunyScript_Diagnostics_ScriptBlockProfiler_EndBlock_LunyScript_ScriptBlockId_System_Type_
+  name: EndBlock
+  nameWithType: ScriptBlockProfiler.EndBlock
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.EndBlock
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.RecordError*
+  commentId: Overload:LunyScript.Diagnostics.ScriptBlockProfiler.RecordError
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptBlockProfiler.html#LunyScript_Diagnostics_ScriptBlockProfiler_RecordError_LunyScript_ScriptBlockId_System_Exception_
+  name: RecordError
+  nameWithType: ScriptBlockProfiler.RecordError
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.RecordError
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.TakeSnapshot*
+  commentId: Overload:LunyScript.Diagnostics.ScriptBlockProfiler.TakeSnapshot
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptBlockProfiler.html#LunyScript_Diagnostics_ScriptBlockProfiler_TakeSnapshot
+  name: TakeSnapshot
+  nameWithType: ScriptBlockProfiler.TakeSnapshot
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.TakeSnapshot
+- uid: LunyScript.Diagnostics.ScriptBlockProfilerSnapshot
+  commentId: T:LunyScript.Diagnostics.ScriptBlockProfilerSnapshot
+  parent: LunyScript.Diagnostics
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptBlockProfilerSnapshot.html
+  name: ScriptBlockProfilerSnapshot
+  nameWithType: ScriptBlockProfilerSnapshot
+  fullName: LunyScript.Diagnostics.ScriptBlockProfilerSnapshot
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.Reset*
+  commentId: Overload:LunyScript.Diagnostics.ScriptBlockProfiler.Reset
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptBlockProfiler.html#LunyScript_Diagnostics_ScriptBlockProfiler_Reset
+  name: Reset
+  nameWithType: ScriptBlockProfiler.Reset
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.Reset
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.#ctor*
+  commentId: Overload:LunyScript.Diagnostics.ScriptBlockProfiler.#ctor
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptBlockProfiler.html#LunyScript_Diagnostics_ScriptBlockProfiler__ctor
+  name: ScriptBlockProfiler
+  nameWithType: ScriptBlockProfiler.ScriptBlockProfiler
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.ScriptBlockProfiler
+  nameWithType.vb: ScriptBlockProfiler.New
+  fullName.vb: LunyScript.Diagnostics.ScriptBlockProfiler.New
+  name.vb: New
+- uid: LunyScript.Diagnostics.ScriptBlockProfiler.RollingAverageWindow*
+  commentId: Overload:LunyScript.Diagnostics.ScriptBlockProfiler.RollingAverageWindow
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptBlockProfiler.html#LunyScript_Diagnostics_ScriptBlockProfiler_RollingAverageWindow
+  name: RollingAverageWindow
+  nameWithType: ScriptBlockProfiler.RollingAverageWindow
+  fullName: LunyScript.Diagnostics.ScriptBlockProfiler.RollingAverageWindow
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

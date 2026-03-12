@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.InputButtonBuilder
+  commentId: T:LunyScript.ScriptApi.InputButtonBuilder
+  id: InputButtonBuilder
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.InputButtonBuilder.IsJustPressed
+  - LunyScript.ScriptApi.InputButtonBuilder.IsPressed
+  - LunyScript.ScriptApi.InputButtonBuilder.Strength
+  langs:
+  - csharp
+  - vb
+  name: InputButtonBuilder
+  nameWithType: InputButtonBuilder
+  fullName: LunyScript.ScriptApi.InputButtonBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Provides condition and value accessors for a named button input action.
+  example: []
+  syntax:
+    content: public readonly struct InputButtonBuilder
+    content.vb: Public Structure InputButtonBuilder
+- uid: LunyScript.ScriptApi.InputButtonBuilder.IsJustPressed
+  commentId: P:LunyScript.ScriptApi.InputButtonBuilder.IsJustPressed
+  id: IsJustPressed
+  parent: LunyScript.ScriptApi.InputButtonBuilder
+  langs:
+  - csharp
+  - vb
+  name: IsJustPressed
+  nameWithType: InputButtonBuilder.IsJustPressed
+  fullName: LunyScript.ScriptApi.InputButtonBuilder.IsJustPressed
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: True only on the frame the button was pressed (transition).
+  example: []
+  syntax:
+    content: public VariableBlock IsJustPressed { get; }
+    parameters: []
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public ReadOnly Property IsJustPressed As VariableBlock
+  overload: LunyScript.ScriptApi.InputButtonBuilder.IsJustPressed*
+- uid: LunyScript.ScriptApi.InputButtonBuilder.IsPressed
+  commentId: P:LunyScript.ScriptApi.InputButtonBuilder.IsPressed
+  id: IsPressed
+  parent: LunyScript.ScriptApi.InputButtonBuilder
+  langs:
+  - csharp
+  - vb
+  name: IsPressed
+  nameWithType: InputButtonBuilder.IsPressed
+  fullName: LunyScript.ScriptApi.InputButtonBuilder.IsPressed
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: True while the button is held down.
+  example: []
+  syntax:
+    content: public VariableBlock IsPressed { get; }
+    parameters: []
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public ReadOnly Property IsPressed As VariableBlock
+  overload: LunyScript.ScriptApi.InputButtonBuilder.IsPressed*
+- uid: LunyScript.ScriptApi.InputButtonBuilder.Strength
+  commentId: P:LunyScript.ScriptApi.InputButtonBuilder.Strength
+  id: Strength
+  parent: LunyScript.ScriptApi.InputButtonBuilder
+  langs:
+  - csharp
+  - vb
+  name: Strength
+  nameWithType: InputButtonBuilder.Strength
+  fullName: LunyScript.ScriptApi.InputButtonBuilder.Strength
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Returns button's value while held down.
+  example: []
+  syntax:
+    content: public VariableBlock Strength { get; }
+    parameters: []
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public ReadOnly Property Strength As VariableBlock
+  overload: LunyScript.ScriptApi.InputButtonBuilder.Strength*
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.InputButtonBuilder.IsJustPressed*
+  commentId: Overload:LunyScript.ScriptApi.InputButtonBuilder.IsJustPressed
+  isExternal: true
+  href: LunyScript.ScriptApi.InputButtonBuilder.html#LunyScript_ScriptApi_InputButtonBuilder_IsJustPressed
+  name: IsJustPressed
+  nameWithType: InputButtonBuilder.IsJustPressed
+  fullName: LunyScript.ScriptApi.InputButtonBuilder.IsJustPressed
+- uid: LunyScript.Blocks.VariableBlock
+  commentId: T:LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html
+  name: VariableBlock
+  nameWithType: VariableBlock
+  fullName: LunyScript.Blocks.VariableBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.ScriptApi.InputButtonBuilder.IsPressed*
+  commentId: Overload:LunyScript.ScriptApi.InputButtonBuilder.IsPressed
+  isExternal: true
+  href: LunyScript.ScriptApi.InputButtonBuilder.html#LunyScript_ScriptApi_InputButtonBuilder_IsPressed
+  name: IsPressed
+  nameWithType: InputButtonBuilder.IsPressed
+  fullName: LunyScript.ScriptApi.InputButtonBuilder.IsPressed
+- uid: LunyScript.ScriptApi.InputButtonBuilder.Strength*
+  commentId: Overload:LunyScript.ScriptApi.InputButtonBuilder.Strength
+  isExternal: true
+  href: LunyScript.ScriptApi.InputButtonBuilder.html#LunyScript_ScriptApi_InputButtonBuilder_Strength
+  name: Strength
+  nameWithType: InputButtonBuilder.Strength
+  fullName: LunyScript.ScriptApi.InputButtonBuilder.Strength

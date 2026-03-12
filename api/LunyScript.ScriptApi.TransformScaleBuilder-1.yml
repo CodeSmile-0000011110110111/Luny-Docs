@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.TransformScaleBuilder`1
+  commentId: T:LunyScript.ScriptApi.TransformScaleBuilder`1
+  id: TransformScaleBuilder`1
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.TransformScaleBuilder`1.op_Implicit(LunyScript.ScriptApi.TransformScaleBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  langs:
+  - csharp
+  - vb
+  name: TransformScaleBuilder<T>
+  nameWithType: TransformScaleBuilder<T>
+  fullName: LunyScript.ScriptApi.TransformScaleBuilder<T>
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Fluent builder for Scale-Towards blocks.
+
+    Usage: Transform.ScaleTowards(targetScale).Speed(1).Responsiveness(2).LockY()
+           Transform.ScaleTowards(targetScale).Speed(1).Lerp()
+           Transform.ScaleTowards(targetScale).Speed(1).Slerp()
+  example: []
+  syntax:
+    content: 'public readonly struct TransformScaleBuilder<T> where T : struct, ITransformBuilderState'
+    typeParameters:
+    - id: T
+    content.vb: Public Structure TransformScaleBuilder(Of T As {Structure, ITransformBuilderState})
+  nameWithType.vb: TransformScaleBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.TransformScaleBuilder(Of T)
+  name.vb: TransformScaleBuilder(Of T)
+- uid: LunyScript.ScriptApi.TransformScaleBuilder`1.op_Implicit(LunyScript.ScriptApi.TransformScaleBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  commentId: M:LunyScript.ScriptApi.TransformScaleBuilder`1.op_Implicit(LunyScript.ScriptApi.TransformScaleBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  id: op_Implicit(LunyScript.ScriptApi.TransformScaleBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.ScriptApi.TransformScaleBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ScriptActionBlock(TransformScaleBuilder<T>)
+  nameWithType: TransformScaleBuilder<T>.implicit operator ScriptActionBlock(TransformScaleBuilder<T>)
+  fullName: LunyScript.ScriptApi.TransformScaleBuilder<T>.implicit operator LunyScript.Blocks.ScriptActionBlock(LunyScript.ScriptApi.TransformScaleBuilder<T>)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public static implicit operator ScriptActionBlock(TransformScaleBuilder<T> b)
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.TransformScaleBuilder`1
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Shared Widening Operator CType(b As TransformScaleBuilder(Of T)) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.TransformScaleBuilder`1.op_Implicit*
+  nameWithType.vb: TransformScaleBuilder(Of T).CType(TransformScaleBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TransformScaleBuilder(Of T).CType(LunyScript.ScriptApi.TransformScaleBuilder(Of T))
+  name.vb: CType(TransformScaleBuilder(Of T))
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.TransformScaleBuilder`1.op_Implicit*
+  commentId: Overload:LunyScript.ScriptApi.TransformScaleBuilder`1.op_Implicit
+  name: implicit operator
+  nameWithType: TransformScaleBuilder<T>.implicit operator
+  fullName: LunyScript.ScriptApi.TransformScaleBuilder<T>.implicit operator
+  nameWithType.vb: TransformScaleBuilder(Of T).CType
+  fullName.vb: LunyScript.ScriptApi.TransformScaleBuilder(Of T).CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: LunyScript.ScriptApi.TransformScaleBuilder`1
+  commentId: T:LunyScript.ScriptApi.TransformScaleBuilder`1
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.TransformScaleBuilder-1.html
+  name: TransformScaleBuilder<T>
+  nameWithType: TransformScaleBuilder<T>
+  fullName: LunyScript.ScriptApi.TransformScaleBuilder<T>
+  nameWithType.vb: TransformScaleBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.TransformScaleBuilder(Of T)
+  name.vb: TransformScaleBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.TransformScaleBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.TransformScaleBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html

@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.PrefabBuilder
+  commentId: T:LunyScript.ScriptApi.PrefabBuilder
+  id: PrefabBuilder
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.PrefabBuilder.Instantiate(System.String)
+  langs:
+  - csharp
+  - vb
+  name: PrefabBuilder
+  nameWithType: PrefabBuilder
+  fullName: LunyScript.ScriptApi.PrefabBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public readonly struct PrefabBuilder
+    content.vb: Public Structure PrefabBuilder
+- uid: LunyScript.ScriptApi.PrefabBuilder.Instantiate(System.String)
+  commentId: M:LunyScript.ScriptApi.PrefabBuilder.Instantiate(System.String)
+  id: Instantiate(System.String)
+  parent: LunyScript.ScriptApi.PrefabBuilder
+  langs:
+  - csharp
+  - vb
+  name: Instantiate(string)
+  nameWithType: PrefabBuilder.Instantiate(string)
+  fullName: LunyScript.ScriptApi.PrefabBuilder.Instantiate(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<ObjectBuilderNameSet> Instantiate(string prefabName)
+    parameters:
+    - id: prefabName
+      type: System.String
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder{LunyScript.ScriptApi.ObjectBuilderNameSet}
+    content.vb: Public Function Instantiate(prefabName As String) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
+  overload: LunyScript.ScriptApi.PrefabBuilder.Instantiate*
+  nameWithType.vb: PrefabBuilder.Instantiate(String)
+  fullName.vb: LunyScript.ScriptApi.PrefabBuilder.Instantiate(String)
+  name.vb: Instantiate(String)
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.PrefabBuilder.Instantiate*
+  commentId: Overload:LunyScript.ScriptApi.PrefabBuilder.Instantiate
+  isExternal: true
+  href: LunyScript.ScriptApi.PrefabBuilder.html#LunyScript_ScriptApi_PrefabBuilder_Instantiate_System_String_
+  name: Instantiate
+  nameWithType: PrefabBuilder.Instantiate
+  fullName: LunyScript.ScriptApi.PrefabBuilder.Instantiate
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder{LunyScript.ScriptApi.ObjectBuilderNameSet}
+  commentId: T:LunyScript.ScriptApi.ObjectCreateBuilder{LunyScript.ScriptApi.ObjectBuilderNameSet}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  name: ObjectCreateBuilder<ObjectBuilderNameSet>
+  nameWithType: ObjectCreateBuilder<ObjectBuilderNameSet>
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<LunyScript.ScriptApi.ObjectBuilderNameSet>
+  nameWithType.vb: ObjectCreateBuilder(Of ObjectBuilderNameSet)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of LunyScript.ScriptApi.ObjectBuilderNameSet)
+  name.vb: ObjectCreateBuilder(Of ObjectBuilderNameSet)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  - name: <
+  - uid: LunyScript.ScriptApi.ObjectBuilderNameSet
+    name: ObjectBuilderNameSet
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectBuilderNameSet.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.ScriptApi.ObjectBuilderNameSet
+    name: ObjectBuilderNameSet
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectBuilderNameSet.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  commentId: T:LunyScript.ScriptApi.ObjectCreateBuilder`1
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  name: ObjectCreateBuilder<T>
+  nameWithType: ObjectCreateBuilder<T>
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>
+  nameWithType.vb: ObjectCreateBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T)
+  name.vb: ObjectCreateBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

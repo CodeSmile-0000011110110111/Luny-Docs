@@ -1,0 +1,527 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Counter
+  commentId: T:Luny.Counter
+  id: Counter
+  parent: Luny
+  children:
+  - Luny.Counter.#ctor(System.Int32)
+  - Luny.Counter.AutoRepeat
+  - Luny.Counter.Current
+  - Luny.Counter.Increment
+  - Luny.Counter.IsRunning
+  - Luny.Counter.OnElapsed
+  - Luny.Counter.Pause
+  - Luny.Counter.Progress
+  - Luny.Counter.Remaining
+  - Luny.Counter.Resume
+  - Luny.Counter.Start
+  - Luny.Counter.Stop
+  - Luny.Counter.Target
+  - Luny.Counter.ToString
+  langs:
+  - csharp
+  - vb
+  name: Counter
+  nameWithType: Counter
+  fullName: Luny.Counter
+  type: Class
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    A stateful manager for discrete integer counts (e.g., frames or heartbeats).
+
+    Supports auto-repeat and progress tracking.
+  example: []
+  syntax:
+    content: public sealed class Counter
+    content.vb: Public NotInheritable Class Counter
+  inheritance:
+  - System.Object
+- uid: Luny.Counter.#ctor(System.Int32)
+  commentId: M:Luny.Counter.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: Counter(int)
+  nameWithType: Counter.Counter(int)
+  fullName: Luny.Counter.Counter(int)
+  type: Constructor
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Creates a counter with a count-towards target.
+  example: []
+  syntax:
+    content: public Counter(int target)
+    parameters:
+    - id: target
+      type: System.Int32
+    content.vb: Public Sub New(target As Integer)
+  overload: Luny.Counter.#ctor*
+  nameWithType.vb: Counter.New(Integer)
+  fullName.vb: Luny.Counter.New(Integer)
+  name.vb: New(Integer)
+- uid: Luny.Counter.Start
+  commentId: M:Luny.Counter.Start
+  id: Start
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: Counter.Start()
+  fullName: Luny.Counter.Start()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Starts or restarts the counter from zero. Unpauses Counter if paused.
+  example: []
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start()
+  overload: Luny.Counter.Start*
+- uid: Luny.Counter.Pause
+  commentId: M:Luny.Counter.Pause
+  id: Pause
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: Counter.Pause()
+  fullName: Luny.Counter.Pause()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Pauses the counter. Does not reset Current count.
+  example: []
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause()
+  overload: Luny.Counter.Pause*
+- uid: Luny.Counter.Resume
+  commentId: M:Luny.Counter.Resume
+  id: Resume
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: Counter.Resume()
+  fullName: Luny.Counter.Resume()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Resumes the counter if paused. Does nothing if not paused.
+  example: []
+  syntax:
+    content: public void Resume()
+    content.vb: Public Sub [Resume]()
+  overload: Luny.Counter.Resume*
+- uid: Luny.Counter.Stop
+  commentId: M:Luny.Counter.Stop
+  id: Stop
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: Counter.Stop()
+  fullName: Luny.Counter.Stop()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Stops the counter and resets Current count to zero.
+  example: []
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub [Stop]()
+  overload: Luny.Counter.Stop*
+- uid: Luny.Counter.Increment
+  commentId: M:Luny.Counter.Increment
+  id: Increment
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: Increment()
+  nameWithType: Counter.Increment()
+  fullName: Luny.Counter.Increment()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Increments the counter by one, unless paused.
+
+    Fires OnElapsed if target is reached.
+  example: []
+  syntax:
+    content: public void Increment()
+    content.vb: Public Sub Increment()
+  overload: Luny.Counter.Increment*
+- uid: Luny.Counter.ToString
+  commentId: M:Luny.Counter.ToString
+  id: ToString
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Counter.ToString()
+  fullName: Luny.Counter.ToString()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Luny.Counter.ToString*
+- uid: Luny.Counter.Current
+  commentId: P:Luny.Counter.Current
+  id: Current
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: Counter.Current
+  fullName: Luny.Counter.Current
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public int Current { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Current As Integer
+  overload: Luny.Counter.Current*
+- uid: Luny.Counter.Target
+  commentId: P:Luny.Counter.Target
+  id: Target
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: Counter.Target
+  fullName: Luny.Counter.Target
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public int Target { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Target As Integer
+  overload: Luny.Counter.Target*
+- uid: Luny.Counter.IsRunning
+  commentId: P:Luny.Counter.IsRunning
+  id: IsRunning
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: Counter.IsRunning
+  fullName: Luny.Counter.IsRunning
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public bool IsRunning { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRunning As Boolean
+  overload: Luny.Counter.IsRunning*
+- uid: Luny.Counter.AutoRepeat
+  commentId: P:Luny.Counter.AutoRepeat
+  id: AutoRepeat
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: AutoRepeat
+  nameWithType: Counter.AutoRepeat
+  fullName: Luny.Counter.AutoRepeat
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public bool AutoRepeat { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AutoRepeat As Boolean
+  overload: Luny.Counter.AutoRepeat*
+- uid: Luny.Counter.Progress
+  commentId: P:Luny.Counter.Progress
+  id: Progress
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: Counter.Progress
+  fullName: Luny.Counter.Progress
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Returns the progress as a normalized value (0.0 to 1.0).
+  example: []
+  syntax:
+    content: public double Progress { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Progress As Double
+  overload: Luny.Counter.Progress*
+- uid: Luny.Counter.Remaining
+  commentId: P:Luny.Counter.Remaining
+  id: Remaining
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: Remaining
+  nameWithType: Counter.Remaining
+  fullName: Luny.Counter.Remaining
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Returns the remaining count.
+  example: []
+  syntax:
+    content: public int Remaining { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Remaining As Integer
+  overload: Luny.Counter.Remaining*
+- uid: Luny.Counter.OnElapsed
+  commentId: E:Luny.Counter.OnElapsed
+  id: OnElapsed
+  parent: Luny.Counter
+  langs:
+  - csharp
+  - vb
+  name: OnElapsed
+  nameWithType: Counter.OnElapsed
+  fullName: Luny.Counter.OnElapsed
+  type: Event
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public event Action OnElapsed
+    return:
+      type: System.Action
+    content.vb: Public Event OnElapsed As Action
+references:
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Counter.#ctor*
+  commentId: Overload:Luny.Counter.#ctor
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter__ctor_System_Int32_
+  name: Counter
+  nameWithType: Counter.Counter
+  fullName: Luny.Counter.Counter
+  nameWithType.vb: Counter.New
+  fullName.vb: Luny.Counter.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Luny.Counter.Start*
+  commentId: Overload:Luny.Counter.Start
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_Start
+  name: Start
+  nameWithType: Counter.Start
+  fullName: Luny.Counter.Start
+- uid: Luny.Counter.Pause*
+  commentId: Overload:Luny.Counter.Pause
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_Pause
+  name: Pause
+  nameWithType: Counter.Pause
+  fullName: Luny.Counter.Pause
+- uid: Luny.Counter.Resume*
+  commentId: Overload:Luny.Counter.Resume
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_Resume
+  name: Resume
+  nameWithType: Counter.Resume
+  fullName: Luny.Counter.Resume
+- uid: Luny.Counter.Stop*
+  commentId: Overload:Luny.Counter.Stop
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_Stop
+  name: Stop
+  nameWithType: Counter.Stop
+  fullName: Luny.Counter.Stop
+- uid: Luny.Counter.Increment*
+  commentId: Overload:Luny.Counter.Increment
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_Increment
+  name: Increment
+  nameWithType: Counter.Increment
+  fullName: Luny.Counter.Increment
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Luny.Counter.ToString*
+  commentId: Overload:Luny.Counter.ToString
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_ToString
+  name: ToString
+  nameWithType: Counter.ToString
+  fullName: Luny.Counter.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Counter.Current*
+  commentId: Overload:Luny.Counter.Current
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_Current
+  name: Current
+  nameWithType: Counter.Current
+  fullName: Luny.Counter.Current
+- uid: Luny.Counter.Target*
+  commentId: Overload:Luny.Counter.Target
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_Target
+  name: Target
+  nameWithType: Counter.Target
+  fullName: Luny.Counter.Target
+- uid: Luny.Counter.IsRunning*
+  commentId: Overload:Luny.Counter.IsRunning
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_IsRunning
+  name: IsRunning
+  nameWithType: Counter.IsRunning
+  fullName: Luny.Counter.IsRunning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Luny.Counter.AutoRepeat*
+  commentId: Overload:Luny.Counter.AutoRepeat
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_AutoRepeat
+  name: AutoRepeat
+  nameWithType: Counter.AutoRepeat
+  fullName: Luny.Counter.AutoRepeat
+- uid: Luny.Counter.Progress*
+  commentId: Overload:Luny.Counter.Progress
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_Progress
+  name: Progress
+  nameWithType: Counter.Progress
+  fullName: Luny.Counter.Progress
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Luny.Counter.Remaining*
+  commentId: Overload:Luny.Counter.Remaining
+  isExternal: true
+  href: Luny.Counter.html#Luny_Counter_Remaining
+  name: Remaining
+  nameWithType: Counter.Remaining
+  fullName: Luny.Counter.Remaining
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action

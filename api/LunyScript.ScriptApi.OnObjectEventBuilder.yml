@@ -1,0 +1,540 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder
+  commentId: T:LunyScript.ScriptApi.OnObjectEventBuilder
+  id: OnObjectEventBuilder
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.OnObjectEventBuilder.AfterFrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.OnObjectEventBuilder.Collision
+  - LunyScript.ScriptApi.OnObjectEventBuilder.Created(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.OnObjectEventBuilder.Destroyed(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.OnObjectEventBuilder.Disabled(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.OnObjectEventBuilder.Enabled(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.OnObjectEventBuilder.FrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.OnObjectEventBuilder.Heartbeat(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.OnObjectEventBuilder.Ready(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.ScriptApi.OnObjectEventBuilder.Trigger
+  langs:
+  - csharp
+  - vb
+  name: OnObjectEventBuilder
+  nameWithType: OnObjectEventBuilder
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Handles object centered/targeted events, eg state, update, collision events.
+  example: []
+  syntax:
+    content: public readonly struct OnObjectEventBuilder
+    content.vb: Public Structure OnObjectEventBuilder
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Created(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.OnObjectEventBuilder.Created(LunyScript.Blocks.ScriptActionBlock[])
+  id: Created(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.OnObjectEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Created(params ScriptActionBlock[])
+  nameWithType: OnObjectEventBuilder.Created(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Created(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Runs once the moment when the object is instantiated.
+  example: []
+  syntax:
+    content: public ISequenceBlock Created(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.Blocks.ISequenceBlock
+    content.vb: Public Function Created(ParamArray blocks As ScriptActionBlock()) As ISequenceBlock
+  overload: LunyScript.ScriptApi.OnObjectEventBuilder.Created*
+  nameWithType.vb: OnObjectEventBuilder.Created(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.OnObjectEventBuilder.Created(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: Created(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Enabled(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.OnObjectEventBuilder.Enabled(LunyScript.Blocks.ScriptActionBlock[])
+  id: Enabled(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.OnObjectEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Enabled(params ScriptActionBlock[])
+  nameWithType: OnObjectEventBuilder.Enabled(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Enabled(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Runs every time the object's state changes to 'enabled' (visible and participating).
+
+    Runs directly after 'Created' if the object was just instantiated.
+  example: []
+  syntax:
+    content: public ISequenceBlock Enabled(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.Blocks.ISequenceBlock
+    content.vb: Public Function Enabled(ParamArray blocks As ScriptActionBlock()) As ISequenceBlock
+  overload: LunyScript.ScriptApi.OnObjectEventBuilder.Enabled*
+  nameWithType.vb: OnObjectEventBuilder.Enabled(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.OnObjectEventBuilder.Enabled(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: Enabled(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Ready(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.OnObjectEventBuilder.Ready(LunyScript.Blocks.ScriptActionBlock[])
+  id: Ready(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.OnObjectEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Ready(params ScriptActionBlock[])
+  nameWithType: OnObjectEventBuilder.Ready(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Ready(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Runs once per lifetime just before the object starts processing frame/time-step events.
+  example: []
+  syntax:
+    content: public ISequenceBlock Ready(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.Blocks.ISequenceBlock
+    content.vb: Public Function Ready(ParamArray blocks As ScriptActionBlock()) As ISequenceBlock
+  overload: LunyScript.ScriptApi.OnObjectEventBuilder.Ready*
+  nameWithType.vb: OnObjectEventBuilder.Ready(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.OnObjectEventBuilder.Ready(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: Ready(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Disabled(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.OnObjectEventBuilder.Disabled(LunyScript.Blocks.ScriptActionBlock[])
+  id: Disabled(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.OnObjectEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Disabled(params ScriptActionBlock[])
+  nameWithType: OnObjectEventBuilder.Disabled(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Disabled(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Runs every time the object's state changes to 'disabled' (not visible, not participating).
+
+    Runs directly before 'Destroyed' if the object was enabled as it got destroyed.
+  example: []
+  syntax:
+    content: public ISequenceBlock Disabled(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.Blocks.ISequenceBlock
+    content.vb: Public Function Disabled(ParamArray blocks As ScriptActionBlock()) As ISequenceBlock
+  overload: LunyScript.ScriptApi.OnObjectEventBuilder.Disabled*
+  nameWithType.vb: OnObjectEventBuilder.Disabled(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.OnObjectEventBuilder.Disabled(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: Disabled(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Destroyed(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.OnObjectEventBuilder.Destroyed(LunyScript.Blocks.ScriptActionBlock[])
+  id: Destroyed(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.OnObjectEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Destroyed(params ScriptActionBlock[])
+  nameWithType: OnObjectEventBuilder.Destroyed(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Destroyed(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Runs once when the object gets destroyed. The object is already disabled, the native engine instance still exists.
+  example: []
+  syntax:
+    content: public ISequenceBlock Destroyed(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.Blocks.ISequenceBlock
+    content.vb: Public Function Destroyed(ParamArray blocks As ScriptActionBlock()) As ISequenceBlock
+  overload: LunyScript.ScriptApi.OnObjectEventBuilder.Destroyed*
+  nameWithType.vb: OnObjectEventBuilder.Destroyed(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.OnObjectEventBuilder.Destroyed(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: Destroyed(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.FrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.OnObjectEventBuilder.FrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
+  id: FrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.OnObjectEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: FrameUpdate(params ScriptActionBlock[])
+  nameWithType: OnObjectEventBuilder.FrameUpdate(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.FrameUpdate(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Runs every frame while object is enabled.
+  example: []
+  syntax:
+    content: public ISequenceBlock FrameUpdate(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.Blocks.ISequenceBlock
+    content.vb: Public Function FrameUpdate(ParamArray blocks As ScriptActionBlock()) As ISequenceBlock
+  overload: LunyScript.ScriptApi.OnObjectEventBuilder.FrameUpdate*
+  nameWithType.vb: OnObjectEventBuilder.FrameUpdate(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.OnObjectEventBuilder.FrameUpdate(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: FrameUpdate(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.AfterFrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.OnObjectEventBuilder.AfterFrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
+  id: AfterFrameUpdate(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.OnObjectEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: AfterFrameUpdate(params ScriptActionBlock[])
+  nameWithType: OnObjectEventBuilder.AfterFrameUpdate(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.AfterFrameUpdate(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Runs after frame update while object is enabled.
+  example: []
+  syntax:
+    content: public ISequenceBlock AfterFrameUpdate(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.Blocks.ISequenceBlock
+    content.vb: Public Function AfterFrameUpdate(ParamArray blocks As ScriptActionBlock()) As ISequenceBlock
+  overload: LunyScript.ScriptApi.OnObjectEventBuilder.AfterFrameUpdate*
+  nameWithType.vb: OnObjectEventBuilder.AfterFrameUpdate(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.OnObjectEventBuilder.AfterFrameUpdate(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: AfterFrameUpdate(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Heartbeat(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.ScriptApi.OnObjectEventBuilder.Heartbeat(LunyScript.Blocks.ScriptActionBlock[])
+  id: Heartbeat(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.ScriptApi.OnObjectEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Heartbeat(params ScriptActionBlock[])
+  nameWithType: OnObjectEventBuilder.Heartbeat(params ScriptActionBlock[])
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Heartbeat(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Runs on fixed-rate stepping while object is enabled.
+
+    Scheduling depends on engine and Time settings, but typically runs 30 or 50 times per second.
+
+    May run multiple times per frame and may not run in every frame.
+  example: []
+  syntax:
+    content: public ISequenceBlock Heartbeat(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.Blocks.ISequenceBlock
+    content.vb: Public Function Heartbeat(ParamArray blocks As ScriptActionBlock()) As ISequenceBlock
+  overload: LunyScript.ScriptApi.OnObjectEventBuilder.Heartbeat*
+  nameWithType.vb: OnObjectEventBuilder.Heartbeat(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.ScriptApi.OnObjectEventBuilder.Heartbeat(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: Heartbeat(ParamArray ScriptActionBlock())
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Collision
+  commentId: M:LunyScript.ScriptApi.OnObjectEventBuilder.Collision
+  id: Collision
+  parent: LunyScript.ScriptApi.OnObjectEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Collision()
+  nameWithType: OnObjectEventBuilder.Collision()
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Collision()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Starts a filtered 3D collision event builder.
+
+    Chain filter methods (Tagged, Named, Layered, Masked, Typed, Cooldown) then event handlers
+
+    (Begins, Updates, Ends) and finalize with Do().
+  example: []
+  syntax:
+    content: public PhysicsEventBuilder<CollisionBuilderStart> Collision()
+    return:
+      type: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderStart}
+    content.vb: Public Function Collision() As PhysicsEventBuilder(Of CollisionBuilderStart)
+  overload: LunyScript.ScriptApi.OnObjectEventBuilder.Collision*
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Trigger
+  commentId: M:LunyScript.ScriptApi.OnObjectEventBuilder.Trigger
+  id: Trigger
+  parent: LunyScript.ScriptApi.OnObjectEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Trigger()
+  nameWithType: OnObjectEventBuilder.Trigger()
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Trigger()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Starts a filtered 3D trigger event builder.
+
+    Chain filter methods (Tagged, Named, Layered, Masked, Typed, Cooldown) then event handlers
+
+    (Begins, Updates, Ends) and finalize with Do().
+  example: []
+  syntax:
+    content: public PhysicsEventBuilder<CollisionBuilderStart> Trigger()
+    return:
+      type: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderStart}
+    content.vb: Public Function Trigger() As PhysicsEventBuilder(Of CollisionBuilderStart)
+  overload: LunyScript.ScriptApi.OnObjectEventBuilder.Trigger*
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Created*
+  commentId: Overload:LunyScript.ScriptApi.OnObjectEventBuilder.Created
+  isExternal: true
+  href: LunyScript.ScriptApi.OnObjectEventBuilder.html#LunyScript_ScriptApi_OnObjectEventBuilder_Created_LunyScript_Blocks_ScriptActionBlock___
+  name: Created
+  nameWithType: OnObjectEventBuilder.Created
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Created
+- uid: LunyScript.Blocks.ScriptActionBlock[]
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock[]
+  nameWithType: ScriptActionBlock[]
+  fullName: LunyScript.Blocks.ScriptActionBlock[]
+  nameWithType.vb: ScriptActionBlock()
+  fullName.vb: LunyScript.Blocks.ScriptActionBlock()
+  name.vb: ScriptActionBlock()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ISequenceBlock
+  commentId: T:LunyScript.Blocks.ISequenceBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ISequenceBlock.html
+  name: ISequenceBlock
+  nameWithType: ISequenceBlock
+  fullName: LunyScript.Blocks.ISequenceBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Enabled*
+  commentId: Overload:LunyScript.ScriptApi.OnObjectEventBuilder.Enabled
+  isExternal: true
+  href: LunyScript.ScriptApi.OnObjectEventBuilder.html#LunyScript_ScriptApi_OnObjectEventBuilder_Enabled_LunyScript_Blocks_ScriptActionBlock___
+  name: Enabled
+  nameWithType: OnObjectEventBuilder.Enabled
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Enabled
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Ready*
+  commentId: Overload:LunyScript.ScriptApi.OnObjectEventBuilder.Ready
+  isExternal: true
+  href: LunyScript.ScriptApi.OnObjectEventBuilder.html#LunyScript_ScriptApi_OnObjectEventBuilder_Ready_LunyScript_Blocks_ScriptActionBlock___
+  name: Ready
+  nameWithType: OnObjectEventBuilder.Ready
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Ready
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Disabled*
+  commentId: Overload:LunyScript.ScriptApi.OnObjectEventBuilder.Disabled
+  isExternal: true
+  href: LunyScript.ScriptApi.OnObjectEventBuilder.html#LunyScript_ScriptApi_OnObjectEventBuilder_Disabled_LunyScript_Blocks_ScriptActionBlock___
+  name: Disabled
+  nameWithType: OnObjectEventBuilder.Disabled
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Disabled
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Destroyed*
+  commentId: Overload:LunyScript.ScriptApi.OnObjectEventBuilder.Destroyed
+  isExternal: true
+  href: LunyScript.ScriptApi.OnObjectEventBuilder.html#LunyScript_ScriptApi_OnObjectEventBuilder_Destroyed_LunyScript_Blocks_ScriptActionBlock___
+  name: Destroyed
+  nameWithType: OnObjectEventBuilder.Destroyed
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Destroyed
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.FrameUpdate*
+  commentId: Overload:LunyScript.ScriptApi.OnObjectEventBuilder.FrameUpdate
+  isExternal: true
+  href: LunyScript.ScriptApi.OnObjectEventBuilder.html#LunyScript_ScriptApi_OnObjectEventBuilder_FrameUpdate_LunyScript_Blocks_ScriptActionBlock___
+  name: FrameUpdate
+  nameWithType: OnObjectEventBuilder.FrameUpdate
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.FrameUpdate
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.AfterFrameUpdate*
+  commentId: Overload:LunyScript.ScriptApi.OnObjectEventBuilder.AfterFrameUpdate
+  isExternal: true
+  href: LunyScript.ScriptApi.OnObjectEventBuilder.html#LunyScript_ScriptApi_OnObjectEventBuilder_AfterFrameUpdate_LunyScript_Blocks_ScriptActionBlock___
+  name: AfterFrameUpdate
+  nameWithType: OnObjectEventBuilder.AfterFrameUpdate
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.AfterFrameUpdate
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Heartbeat*
+  commentId: Overload:LunyScript.ScriptApi.OnObjectEventBuilder.Heartbeat
+  isExternal: true
+  href: LunyScript.ScriptApi.OnObjectEventBuilder.html#LunyScript_ScriptApi_OnObjectEventBuilder_Heartbeat_LunyScript_Blocks_ScriptActionBlock___
+  name: Heartbeat
+  nameWithType: OnObjectEventBuilder.Heartbeat
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Heartbeat
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Collision*
+  commentId: Overload:LunyScript.ScriptApi.OnObjectEventBuilder.Collision
+  isExternal: true
+  href: LunyScript.ScriptApi.OnObjectEventBuilder.html#LunyScript_ScriptApi_OnObjectEventBuilder_Collision
+  name: Collision
+  nameWithType: OnObjectEventBuilder.Collision
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Collision
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderStart}
+  commentId: T:LunyScript.ScriptApi.PhysicsEventBuilder{LunyScript.ScriptApi.CollisionBuilderStart}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  name: PhysicsEventBuilder<CollisionBuilderStart>
+  nameWithType: PhysicsEventBuilder<CollisionBuilderStart>
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<LunyScript.ScriptApi.CollisionBuilderStart>
+  nameWithType.vb: PhysicsEventBuilder(Of CollisionBuilderStart)
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of LunyScript.ScriptApi.CollisionBuilderStart)
+  name.vb: PhysicsEventBuilder(Of CollisionBuilderStart)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.ScriptApi.CollisionBuilderStart
+    name: CollisionBuilderStart
+    isExternal: true
+    href: LunyScript.ScriptApi.CollisionBuilderStart.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.ScriptApi.CollisionBuilderStart
+    name: CollisionBuilderStart
+    isExternal: true
+    href: LunyScript.ScriptApi.CollisionBuilderStart.html
+  - name: )
+- uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+  commentId: T:LunyScript.ScriptApi.PhysicsEventBuilder`1
+  isExternal: true
+  href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  name: PhysicsEventBuilder<T>
+  nameWithType: PhysicsEventBuilder<T>
+  fullName: LunyScript.ScriptApi.PhysicsEventBuilder<T>
+  nameWithType.vb: PhysicsEventBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.PhysicsEventBuilder(Of T)
+  name.vb: PhysicsEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.PhysicsEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.ScriptApi.OnObjectEventBuilder.Trigger*
+  commentId: Overload:LunyScript.ScriptApi.OnObjectEventBuilder.Trigger
+  isExternal: true
+  href: LunyScript.ScriptApi.OnObjectEventBuilder.html#LunyScript_ScriptApi_OnObjectEventBuilder_Trigger
+  name: Trigger
+  nameWithType: OnObjectEventBuilder.Trigger
+  fullName: LunyScript.ScriptApi.OnObjectEventBuilder.Trigger

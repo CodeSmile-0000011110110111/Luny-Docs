@@ -1,0 +1,553 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  commentId: T:LunyScript.ScriptApi.ObjectCreateBuilder`1
+  id: ObjectCreateBuilder`1
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalPosition(Luny.Engine.Bridge.LunyVector3)
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalPosition(System.Double,System.Double,System.Double)
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation(Luny.Engine.Bridge.LunyQuaternion)
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation(Luny.Engine.Bridge.LunyVector3)
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation(System.Double,System.Double,System.Double)
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale(Luny.Engine.Bridge.LunyVector3)
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale(System.Double)
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale(System.Double,System.Double,System.Double)
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.Parent(Luny.Engine.Bridge.ILunyObject)
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.Parent(Luny.Engine.Bridge.LunyObjectRef)
+  - LunyScript.ScriptApi.ObjectCreateBuilder`1.op_Implicit(LunyScript.ScriptApi.ObjectCreateBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  langs:
+  - csharp
+  - vb
+  name: ObjectCreateBuilder<T>
+  nameWithType: ObjectCreateBuilder<T>
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: 'public readonly struct ObjectCreateBuilder<T> where T : struct, IObjectBuilderState'
+    typeParameters:
+    - id: T
+    content.vb: Public Structure ObjectCreateBuilder(Of T As {Structure, IObjectBuilderState})
+  nameWithType.vb: ObjectCreateBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T)
+  name.vb: ObjectCreateBuilder(Of T)
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.op_Implicit(LunyScript.ScriptApi.ObjectCreateBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.op_Implicit(LunyScript.ScriptApi.ObjectCreateBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  id: op_Implicit(LunyScript.ScriptApi.ObjectCreateBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ScriptActionBlock(ObjectCreateBuilder<T>)
+  nameWithType: ObjectCreateBuilder<T>.implicit operator ScriptActionBlock(ObjectCreateBuilder<T>)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.implicit operator LunyScript.Blocks.ScriptActionBlock(LunyScript.ScriptApi.ObjectCreateBuilder<T>)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public static implicit operator ScriptActionBlock(ObjectCreateBuilder<T> builder)
+    parameters:
+    - id: builder
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Shared Widening Operator CType(builder As ObjectCreateBuilder(Of T)) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.op_Implicit*
+  nameWithType.vb: ObjectCreateBuilder(Of T).CType(ObjectCreateBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).CType(LunyScript.ScriptApi.ObjectCreateBuilder(Of T))
+  name.vb: CType(ObjectCreateBuilder(Of T))
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.Parent(Luny.Engine.Bridge.LunyObjectRef)
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.Parent(Luny.Engine.Bridge.LunyObjectRef)
+  id: Parent(Luny.Engine.Bridge.LunyObjectRef)
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Parent(LunyObjectRef)
+  nameWithType: ObjectCreateBuilder<T>.Parent(LunyObjectRef)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.Parent(Luny.Engine.Bridge.LunyObjectRef)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<T> Parent(LunyObjectRef parent)
+    parameters:
+    - id: parent
+      type: Luny.Engine.Bridge.LunyObjectRef
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    content.vb: Public Function Parent(parent As LunyObjectRef) As ObjectCreateBuilder(Of T)
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.Parent*
+  nameWithType.vb: ObjectCreateBuilder(Of T).Parent(LunyObjectRef)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).Parent(Luny.Engine.Bridge.LunyObjectRef)
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.Parent(Luny.Engine.Bridge.ILunyObject)
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.Parent(Luny.Engine.Bridge.ILunyObject)
+  id: Parent(Luny.Engine.Bridge.ILunyObject)
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Parent(ILunyObject)
+  nameWithType: ObjectCreateBuilder<T>.Parent(ILunyObject)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.Parent(Luny.Engine.Bridge.ILunyObject)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<T> Parent(ILunyObject parent)
+    parameters:
+    - id: parent
+      type: Luny.Engine.Bridge.ILunyObject
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    content.vb: Public Function Parent(parent As ILunyObject) As ObjectCreateBuilder(Of T)
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.Parent*
+  nameWithType.vb: ObjectCreateBuilder(Of T).Parent(ILunyObject)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).Parent(Luny.Engine.Bridge.ILunyObject)
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalPosition(System.Double,System.Double,System.Double)
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalPosition(System.Double,System.Double,System.Double)
+  id: LocalPosition(System.Double,System.Double,System.Double)
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: LocalPosition(double, double, double)
+  nameWithType: ObjectCreateBuilder<T>.LocalPosition(double, double, double)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalPosition(double, double, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<T> LocalPosition(double x, double y, double z)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: z
+      type: System.Double
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    content.vb: Public Function LocalPosition(x As Double, y As Double, z As Double) As ObjectCreateBuilder(Of T)
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalPosition*
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalPosition(Double, Double, Double)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalPosition(Double, Double, Double)
+  name.vb: LocalPosition(Double, Double, Double)
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalPosition(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalPosition(Luny.Engine.Bridge.LunyVector3)
+  id: LocalPosition(Luny.Engine.Bridge.LunyVector3)
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: LocalPosition(LunyVector3)
+  nameWithType: ObjectCreateBuilder<T>.LocalPosition(LunyVector3)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalPosition(Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<T> LocalPosition(LunyVector3 localPosition)
+    parameters:
+    - id: localPosition
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    content.vb: Public Function LocalPosition(localPosition As LunyVector3) As ObjectCreateBuilder(Of T)
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalPosition*
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalPosition(LunyVector3)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalPosition(Luny.Engine.Bridge.LunyVector3)
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation(System.Double,System.Double,System.Double)
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation(System.Double,System.Double,System.Double)
+  id: LocalRotation(System.Double,System.Double,System.Double)
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: LocalRotation(double, double, double)
+  nameWithType: ObjectCreateBuilder<T>.LocalRotation(double, double, double)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalRotation(double, double, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<T> LocalRotation(double x, double y, double z)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: z
+      type: System.Double
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    content.vb: Public Function LocalRotation(x As Double, y As Double, z As Double) As ObjectCreateBuilder(Of T)
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation*
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalRotation(Double, Double, Double)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalRotation(Double, Double, Double)
+  name.vb: LocalRotation(Double, Double, Double)
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation(Luny.Engine.Bridge.LunyVector3)
+  id: LocalRotation(Luny.Engine.Bridge.LunyVector3)
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: LocalRotation(LunyVector3)
+  nameWithType: ObjectCreateBuilder<T>.LocalRotation(LunyVector3)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalRotation(Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<T> LocalRotation(LunyVector3 localEulerAngles)
+    parameters:
+    - id: localEulerAngles
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    content.vb: Public Function LocalRotation(localEulerAngles As LunyVector3) As ObjectCreateBuilder(Of T)
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation*
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalRotation(LunyVector3)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalRotation(Luny.Engine.Bridge.LunyVector3)
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation(Luny.Engine.Bridge.LunyQuaternion)
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation(Luny.Engine.Bridge.LunyQuaternion)
+  id: LocalRotation(Luny.Engine.Bridge.LunyQuaternion)
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: LocalRotation(LunyQuaternion)
+  nameWithType: ObjectCreateBuilder<T>.LocalRotation(LunyQuaternion)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalRotation(Luny.Engine.Bridge.LunyQuaternion)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<T> LocalRotation(LunyQuaternion localRotation)
+    parameters:
+    - id: localRotation
+      type: Luny.Engine.Bridge.LunyQuaternion
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    content.vb: Public Function LocalRotation(localRotation As LunyQuaternion) As ObjectCreateBuilder(Of T)
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation*
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalRotation(LunyQuaternion)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalRotation(Luny.Engine.Bridge.LunyQuaternion)
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale(System.Double)
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale(System.Double)
+  id: LocalScale(System.Double)
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: LocalScale(double)
+  nameWithType: ObjectCreateBuilder<T>.LocalScale(double)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalScale(double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<T> LocalScale(double uniformLocalScale)
+    parameters:
+    - id: uniformLocalScale
+      type: System.Double
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    content.vb: Public Function LocalScale(uniformLocalScale As Double) As ObjectCreateBuilder(Of T)
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale*
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalScale(Double)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalScale(Double)
+  name.vb: LocalScale(Double)
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale(System.Double,System.Double,System.Double)
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale(System.Double,System.Double,System.Double)
+  id: LocalScale(System.Double,System.Double,System.Double)
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: LocalScale(double, double, double)
+  nameWithType: ObjectCreateBuilder<T>.LocalScale(double, double, double)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalScale(double, double, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<T> LocalScale(double x, double y, double z)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: z
+      type: System.Double
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    content.vb: Public Function LocalScale(x As Double, y As Double, z As Double) As ObjectCreateBuilder(Of T)
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale*
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalScale(Double, Double, Double)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalScale(Double, Double, Double)
+  name.vb: LocalScale(Double, Double, Double)
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale(Luny.Engine.Bridge.LunyVector3)
+  id: LocalScale(Luny.Engine.Bridge.LunyVector3)
+  parent: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: LocalScale(LunyVector3)
+  nameWithType: ObjectCreateBuilder<T>.LocalScale(LunyVector3)
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalScale(Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ObjectCreateBuilder<T> LocalScale(LunyVector3 localScale)
+    parameters:
+    - id: localScale
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    content.vb: Public Function LocalScale(localScale As LunyVector3) As ObjectCreateBuilder(Of T)
+  overload: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale*
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalScale(LunyVector3)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalScale(Luny.Engine.Bridge.LunyVector3)
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.op_Implicit*
+  commentId: Overload:LunyScript.ScriptApi.ObjectCreateBuilder`1.op_Implicit
+  name: implicit operator
+  nameWithType: ObjectCreateBuilder<T>.implicit operator
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.implicit operator
+  nameWithType.vb: ObjectCreateBuilder(Of T).CType
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+  commentId: T:LunyScript.ScriptApi.ObjectCreateBuilder`1
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  name: ObjectCreateBuilder<T>
+  nameWithType: ObjectCreateBuilder<T>
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>
+  nameWithType.vb: ObjectCreateBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T)
+  name.vb: ObjectCreateBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.Parent*
+  commentId: Overload:LunyScript.ScriptApi.ObjectCreateBuilder`1.Parent
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html#LunyScript_ScriptApi_ObjectCreateBuilder_1_Parent_Luny_Engine_Bridge_LunyObjectRef_
+  name: Parent
+  nameWithType: ObjectCreateBuilder<T>.Parent
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.Parent
+  nameWithType.vb: ObjectCreateBuilder(Of T).Parent
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).Parent
+- uid: Luny.Engine.Bridge.LunyObjectRef
+  commentId: T:Luny.Engine.Bridge.LunyObjectRef
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyObjectRef.html
+  name: LunyObjectRef
+  nameWithType: LunyObjectRef
+  fullName: Luny.Engine.Bridge.LunyObjectRef
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+- uid: Luny.Engine.Bridge.ILunyObject
+  commentId: T:Luny.Engine.Bridge.ILunyObject
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.ILunyObject.html
+  name: ILunyObject
+  nameWithType: ILunyObject
+  fullName: Luny.Engine.Bridge.ILunyObject
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalPosition*
+  commentId: Overload:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalPosition
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html#LunyScript_ScriptApi_ObjectCreateBuilder_1_LocalPosition_System_Double_System_Double_System_Double_
+  name: LocalPosition
+  nameWithType: ObjectCreateBuilder<T>.LocalPosition
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalPosition
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalPosition
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalPosition
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Engine.Bridge.LunyVector3
+  commentId: T:Luny.Engine.Bridge.LunyVector3
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyVector3.html
+  name: LunyVector3
+  nameWithType: LunyVector3
+  fullName: Luny.Engine.Bridge.LunyVector3
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation*
+  commentId: Overload:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalRotation
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html#LunyScript_ScriptApi_ObjectCreateBuilder_1_LocalRotation_System_Double_System_Double_System_Double_
+  name: LocalRotation
+  nameWithType: ObjectCreateBuilder<T>.LocalRotation
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalRotation
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalRotation
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalRotation
+- uid: Luny.Engine.Bridge.LunyQuaternion
+  commentId: T:Luny.Engine.Bridge.LunyQuaternion
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html
+  name: LunyQuaternion
+  nameWithType: LunyQuaternion
+  fullName: Luny.Engine.Bridge.LunyQuaternion
+- uid: LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale*
+  commentId: Overload:LunyScript.ScriptApi.ObjectCreateBuilder`1.LocalScale
+  isExternal: true
+  href: LunyScript.ScriptApi.ObjectCreateBuilder-1.html#LunyScript_ScriptApi_ObjectCreateBuilder_1_LocalScale_System_Double_
+  name: LocalScale
+  nameWithType: ObjectCreateBuilder<T>.LocalScale
+  fullName: LunyScript.ScriptApi.ObjectCreateBuilder<T>.LocalScale
+  nameWithType.vb: ObjectCreateBuilder(Of T).LocalScale
+  fullName.vb: LunyScript.ScriptApi.ObjectCreateBuilder(Of T).LocalScale

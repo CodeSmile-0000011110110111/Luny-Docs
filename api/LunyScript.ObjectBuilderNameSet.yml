@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ObjectBuilderNameSet
+  commentId: T:LunyScript.ObjectBuilderNameSet
+  id: ObjectBuilderNameSet
+  parent: LunyScript
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ObjectBuilderNameSet
+  nameWithType: ObjectBuilderNameSet
+  fullName: LunyScript.ObjectBuilderNameSet
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: 'public struct ObjectBuilderNameSet : IObjectBuilderNameSet, IObjectBuilderState, IObjectBuilderCanFinish'
+    content.vb: Public Structure ObjectBuilderNameSet Implements IObjectBuilderNameSet, IObjectBuilderState, IObjectBuilderCanFinish
+  implements:
+  - LunyScript.IObjectBuilderNameSet
+  - LunyScript.IObjectBuilderState
+  - LunyScript.IObjectBuilderCanFinish
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.IObjectBuilderNameSet
+  commentId: T:LunyScript.IObjectBuilderNameSet
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.IObjectBuilderNameSet.html
+  name: IObjectBuilderNameSet
+  nameWithType: IObjectBuilderNameSet
+  fullName: LunyScript.IObjectBuilderNameSet
+- uid: LunyScript.IObjectBuilderState
+  commentId: T:LunyScript.IObjectBuilderState
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.IObjectBuilderState.html
+  name: IObjectBuilderState
+  nameWithType: IObjectBuilderState
+  fullName: LunyScript.IObjectBuilderState
+- uid: LunyScript.IObjectBuilderCanFinish
+  commentId: T:LunyScript.IObjectBuilderCanFinish
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.IObjectBuilderCanFinish.html
+  name: IObjectBuilderCanFinish
+  nameWithType: IObjectBuilderCanFinish
+  fullName: LunyScript.IObjectBuilderCanFinish

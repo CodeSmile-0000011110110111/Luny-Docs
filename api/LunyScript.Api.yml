@@ -1,0 +1,798 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  id: LunyScript.Api
+  children:
+  - LunyScript.Api.CollisionBuilderLayered
+  - LunyScript.Api.CollisionBuilderMasked
+  - LunyScript.Api.CollisionBuilderReady
+  - LunyScript.Api.CollisionBuilderStart
+  - LunyScript.Api.ComponentApi
+  - LunyScript.Api.CoroutineBuilder
+  - LunyScript.Api.CoroutineCounterBuilderUnitSet
+  - LunyScript.Api.CoroutineCounterBuilder`1
+  - LunyScript.Api.CoroutineTimerAmountSet
+  - LunyScript.Api.CoroutineTimerBuilder`1
+  - LunyScript.Api.CoroutineTimerUnitSet
+  - LunyScript.Api.CounterBuilderFinalExtensions
+  - LunyScript.Api.CounterBuilderWhenExtensions
+  - LunyScript.Api.DebugApi
+  - LunyScript.Api.EditorApi
+  - LunyScript.Api.ForBlockBuilder
+  - LunyScript.Api.ICollisionBuilderLayered
+  - LunyScript.Api.ICollisionBuilderMasked
+  - LunyScript.Api.ICollisionBuilderReady
+  - LunyScript.Api.ICollisionBuilderStart
+  - LunyScript.Api.ICollisionBuilderState
+  - LunyScript.Api.ICoroutineCounterBuilderState
+  - LunyScript.Api.ICoroutineCounterBuilderUnitSet
+  - LunyScript.Api.ICoroutineCounterWhen
+  - LunyScript.Api.ICoroutineTimerAmountSet
+  - LunyScript.Api.ICoroutineTimerBuilderState
+  - LunyScript.Api.ICoroutineTimerUnitSet
+  - LunyScript.Api.ICoroutineTimerWhen
+  - LunyScript.Api.IObjectBuilderCanFinish
+  - LunyScript.Api.IObjectBuilderNameSet
+  - LunyScript.Api.IObjectBuilderState
+  - LunyScript.Api.ITransformBuilderReady
+  - LunyScript.Api.ITransformBuilderState
+  - LunyScript.Api.InputActionBuilder
+  - LunyScript.Api.InputAxisBuilder
+  - LunyScript.Api.InputBuilder
+  - LunyScript.Api.InputButtonBuilder
+  - LunyScript.Api.ObjectBuilder
+  - LunyScript.Api.ObjectBuilderExtensions
+  - LunyScript.Api.ObjectBuilderNameSet
+  - LunyScript.Api.ObjectCreateBuilder`1
+  - LunyScript.Api.OnInputEventBuilder
+  - LunyScript.Api.OnObjectEventBuilder
+  - LunyScript.Api.PhysicsEventBuilder`1
+  - LunyScript.Api.PhysicsEventLayerExtensions
+  - LunyScript.Api.PrefabBuilder
+  - LunyScript.Api.SceneApi
+  - LunyScript.Api.TimeApi
+  - LunyScript.Api.TimerBuilderCounterUnitExtensions
+  - LunyScript.Api.TimerBuilderFinalExtensions
+  - LunyScript.Api.TimerBuilderUnitExtensions
+  - LunyScript.Api.TimerBuilderWhenExtensions
+  - LunyScript.Api.TransformBuilder
+  - LunyScript.Api.TransformBuilderReady
+  - LunyScript.Api.TransformLookAtBuilderExtensions
+  - LunyScript.Api.TransformLookAtBuilder`1
+  - LunyScript.Api.TransformMoveBuilderExtensions
+  - LunyScript.Api.TransformPositionBuilder`1
+  - LunyScript.Api.TransformRotateBuilderExtensions
+  - LunyScript.Api.TransformRotationBuilder`1
+  - LunyScript.Api.TransformScaleBuilderExtensions
+  - LunyScript.Api.TransformScaleBuilder`1
+  - LunyScript.Api.WhenGlobalEventBuilder
+  - LunyScript.Api.WhenInputActionBuilder
+  - LunyScript.Api.WhenInputActionBuilderExtensions
+  - LunyScript.Api.WhenInputEventBuilder
+  - LunyScript.Api.WhenSceneEventBuilder
+  - LunyScript.Api.WhileBlockBuilder
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  type: Namespace
+  assemblies:
+  - LunyScript
+references:
+- uid: LunyScript.Api.ComponentApi
+  commentId: T:LunyScript.Api.ComponentApi
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ComponentApi.html
+  name: ComponentApi
+  nameWithType: ComponentApi
+  fullName: LunyScript.Api.ComponentApi
+- uid: LunyScript.Api.DebugApi
+  commentId: T:LunyScript.Api.DebugApi
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.DebugApi.html
+  name: DebugApi
+  nameWithType: DebugApi
+  fullName: LunyScript.Api.DebugApi
+- uid: LunyScript.Api.EditorApi
+  commentId: T:LunyScript.Api.EditorApi
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.EditorApi.html
+  name: EditorApi
+  nameWithType: EditorApi
+  fullName: LunyScript.Api.EditorApi
+- uid: LunyScript.Api.SceneApi
+  commentId: T:LunyScript.Api.SceneApi
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.SceneApi.html
+  name: SceneApi
+  nameWithType: SceneApi
+  fullName: LunyScript.Api.SceneApi
+- uid: LunyScript.Api.TimeApi
+  commentId: T:LunyScript.Api.TimeApi
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TimeApi.html
+  name: TimeApi
+  nameWithType: TimeApi
+  fullName: LunyScript.Api.TimeApi
+- uid: LunyScript.Api.ForBlockBuilder
+  commentId: T:LunyScript.Api.ForBlockBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ForBlockBuilder.html
+  name: ForBlockBuilder
+  nameWithType: ForBlockBuilder
+  fullName: LunyScript.Api.ForBlockBuilder
+- uid: LunyScript.Api.WhileBlockBuilder
+  commentId: T:LunyScript.Api.WhileBlockBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.WhileBlockBuilder.html
+  name: WhileBlockBuilder
+  nameWithType: WhileBlockBuilder
+  fullName: LunyScript.Api.WhileBlockBuilder
+- uid: LunyScript.Api.CoroutineBuilder
+  commentId: T:LunyScript.Api.CoroutineBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.CoroutineBuilder.html
+  name: CoroutineBuilder
+  nameWithType: CoroutineBuilder
+  fullName: LunyScript.Api.CoroutineBuilder
+- uid: LunyScript.Api.ICoroutineCounterBuilderState
+  commentId: T:LunyScript.Api.ICoroutineCounterBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICoroutineCounterBuilderState.html
+  name: ICoroutineCounterBuilderState
+  nameWithType: ICoroutineCounterBuilderState
+  fullName: LunyScript.Api.ICoroutineCounterBuilderState
+- uid: LunyScript.Api.ICoroutineCounterWhen
+  commentId: T:LunyScript.Api.ICoroutineCounterWhen
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICoroutineCounterWhen.html
+  name: ICoroutineCounterWhen
+  nameWithType: ICoroutineCounterWhen
+  fullName: LunyScript.Api.ICoroutineCounterWhen
+- uid: LunyScript.Api.ICoroutineCounterBuilderUnitSet
+  commentId: T:LunyScript.Api.ICoroutineCounterBuilderUnitSet
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICoroutineCounterBuilderUnitSet.html
+  name: ICoroutineCounterBuilderUnitSet
+  nameWithType: ICoroutineCounterBuilderUnitSet
+  fullName: LunyScript.Api.ICoroutineCounterBuilderUnitSet
+- uid: LunyScript.Api.CoroutineCounterBuilderUnitSet
+  commentId: T:LunyScript.Api.CoroutineCounterBuilderUnitSet
+  isExternal: true
+  href: LunyScript.Api.CoroutineCounterBuilderUnitSet.html
+  name: CoroutineCounterBuilderUnitSet
+  nameWithType: CoroutineCounterBuilderUnitSet
+  fullName: LunyScript.Api.CoroutineCounterBuilderUnitSet
+- uid: LunyScript.Api.CoroutineCounterBuilder`1
+  commentId: T:LunyScript.Api.CoroutineCounterBuilder`1
+  isExternal: true
+  href: LunyScript.Api.CoroutineCounterBuilder-1.html
+  name: CoroutineCounterBuilder<T>
+  nameWithType: CoroutineCounterBuilder<T>
+  fullName: LunyScript.Api.CoroutineCounterBuilder<T>
+  nameWithType.vb: CoroutineCounterBuilder(Of T)
+  fullName.vb: LunyScript.Api.CoroutineCounterBuilder(Of T)
+  name.vb: CoroutineCounterBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineCounterBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineCounterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.CounterBuilderWhenExtensions
+  commentId: T:LunyScript.Api.CounterBuilderWhenExtensions
+  isExternal: true
+  href: LunyScript.Api.CounterBuilderWhenExtensions.html
+  name: CounterBuilderWhenExtensions
+  nameWithType: CounterBuilderWhenExtensions
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions
+- uid: LunyScript.Api.CounterBuilderFinalExtensions
+  commentId: T:LunyScript.Api.CounterBuilderFinalExtensions
+  isExternal: true
+  href: LunyScript.Api.CounterBuilderFinalExtensions.html
+  name: CounterBuilderFinalExtensions
+  nameWithType: CounterBuilderFinalExtensions
+  fullName: LunyScript.Api.CounterBuilderFinalExtensions
+- uid: LunyScript.Api.ICoroutineTimerBuilderState
+  commentId: T:LunyScript.Api.ICoroutineTimerBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICoroutineTimerBuilderState.html
+  name: ICoroutineTimerBuilderState
+  nameWithType: ICoroutineTimerBuilderState
+  fullName: LunyScript.Api.ICoroutineTimerBuilderState
+- uid: LunyScript.Api.ICoroutineTimerAmountSet
+  commentId: T:LunyScript.Api.ICoroutineTimerAmountSet
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICoroutineTimerAmountSet.html
+  name: ICoroutineTimerAmountSet
+  nameWithType: ICoroutineTimerAmountSet
+  fullName: LunyScript.Api.ICoroutineTimerAmountSet
+- uid: LunyScript.Api.CoroutineTimerAmountSet
+  commentId: T:LunyScript.Api.CoroutineTimerAmountSet
+  isExternal: true
+  href: LunyScript.Api.CoroutineTimerAmountSet.html
+  name: CoroutineTimerAmountSet
+  nameWithType: CoroutineTimerAmountSet
+  fullName: LunyScript.Api.CoroutineTimerAmountSet
+- uid: LunyScript.Api.ICoroutineTimerWhen
+  commentId: T:LunyScript.Api.ICoroutineTimerWhen
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICoroutineTimerWhen.html
+  name: ICoroutineTimerWhen
+  nameWithType: ICoroutineTimerWhen
+  fullName: LunyScript.Api.ICoroutineTimerWhen
+- uid: LunyScript.Api.ICoroutineTimerUnitSet
+  commentId: T:LunyScript.Api.ICoroutineTimerUnitSet
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICoroutineTimerUnitSet.html
+  name: ICoroutineTimerUnitSet
+  nameWithType: ICoroutineTimerUnitSet
+  fullName: LunyScript.Api.ICoroutineTimerUnitSet
+- uid: LunyScript.Api.CoroutineTimerUnitSet
+  commentId: T:LunyScript.Api.CoroutineTimerUnitSet
+  isExternal: true
+  href: LunyScript.Api.CoroutineTimerUnitSet.html
+  name: CoroutineTimerUnitSet
+  nameWithType: CoroutineTimerUnitSet
+  fullName: LunyScript.Api.CoroutineTimerUnitSet
+- uid: LunyScript.Api.CoroutineTimerBuilder`1
+  commentId: T:LunyScript.Api.CoroutineTimerBuilder`1
+  isExternal: true
+  href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.Api.CoroutineTimerBuilder<T>
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.Api.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.TimerBuilderUnitExtensions
+  commentId: T:LunyScript.Api.TimerBuilderUnitExtensions
+  isExternal: true
+  href: LunyScript.Api.TimerBuilderUnitExtensions.html
+  name: TimerBuilderUnitExtensions
+  nameWithType: TimerBuilderUnitExtensions
+  fullName: LunyScript.Api.TimerBuilderUnitExtensions
+- uid: LunyScript.Api.TimerBuilderCounterUnitExtensions
+  commentId: T:LunyScript.Api.TimerBuilderCounterUnitExtensions
+  isExternal: true
+  href: LunyScript.Api.TimerBuilderCounterUnitExtensions.html
+  name: TimerBuilderCounterUnitExtensions
+  nameWithType: TimerBuilderCounterUnitExtensions
+  fullName: LunyScript.Api.TimerBuilderCounterUnitExtensions
+- uid: LunyScript.Api.TimerBuilderWhenExtensions
+  commentId: T:LunyScript.Api.TimerBuilderWhenExtensions
+  isExternal: true
+  href: LunyScript.Api.TimerBuilderWhenExtensions.html
+  name: TimerBuilderWhenExtensions
+  nameWithType: TimerBuilderWhenExtensions
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions
+- uid: LunyScript.Api.TimerBuilderFinalExtensions
+  commentId: T:LunyScript.Api.TimerBuilderFinalExtensions
+  isExternal: true
+  href: LunyScript.Api.TimerBuilderFinalExtensions.html
+  name: TimerBuilderFinalExtensions
+  nameWithType: TimerBuilderFinalExtensions
+  fullName: LunyScript.Api.TimerBuilderFinalExtensions
+- uid: LunyScript.Api.OnInputEventBuilder
+  commentId: T:LunyScript.Api.OnInputEventBuilder
+  isExternal: true
+  href: LunyScript.Api.OnInputEventBuilder.html
+  name: OnInputEventBuilder
+  nameWithType: OnInputEventBuilder
+  fullName: LunyScript.Api.OnInputEventBuilder
+- uid: LunyScript.Api.OnObjectEventBuilder
+  commentId: T:LunyScript.Api.OnObjectEventBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.OnObjectEventBuilder.html
+  name: OnObjectEventBuilder
+  nameWithType: OnObjectEventBuilder
+  fullName: LunyScript.Api.OnObjectEventBuilder
+- uid: LunyScript.Api.ICollisionBuilderState
+  commentId: T:LunyScript.Api.ICollisionBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionBuilderState.html
+  name: ICollisionBuilderState
+  nameWithType: ICollisionBuilderState
+  fullName: LunyScript.Api.ICollisionBuilderState
+- uid: LunyScript.Api.ICollisionBuilderStart
+  commentId: T:LunyScript.Api.ICollisionBuilderStart
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionBuilderStart.html
+  name: ICollisionBuilderStart
+  nameWithType: ICollisionBuilderStart
+  fullName: LunyScript.Api.ICollisionBuilderStart
+- uid: LunyScript.Api.CollisionBuilderStart
+  commentId: T:LunyScript.Api.CollisionBuilderStart
+  isExternal: true
+  href: LunyScript.Api.CollisionBuilderStart.html
+  name: CollisionBuilderStart
+  nameWithType: CollisionBuilderStart
+  fullName: LunyScript.Api.CollisionBuilderStart
+- uid: LunyScript.Api.ICollisionBuilderReady
+  commentId: T:LunyScript.Api.ICollisionBuilderReady
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionBuilderReady.html
+  name: ICollisionBuilderReady
+  nameWithType: ICollisionBuilderReady
+  fullName: LunyScript.Api.ICollisionBuilderReady
+- uid: LunyScript.Api.CollisionBuilderReady
+  commentId: T:LunyScript.Api.CollisionBuilderReady
+  isExternal: true
+  href: LunyScript.Api.CollisionBuilderReady.html
+  name: CollisionBuilderReady
+  nameWithType: CollisionBuilderReady
+  fullName: LunyScript.Api.CollisionBuilderReady
+- uid: LunyScript.Api.ICollisionBuilderLayered
+  commentId: T:LunyScript.Api.ICollisionBuilderLayered
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionBuilderLayered.html
+  name: ICollisionBuilderLayered
+  nameWithType: ICollisionBuilderLayered
+  fullName: LunyScript.Api.ICollisionBuilderLayered
+- uid: LunyScript.Api.CollisionBuilderLayered
+  commentId: T:LunyScript.Api.CollisionBuilderLayered
+  isExternal: true
+  href: LunyScript.Api.CollisionBuilderLayered.html
+  name: CollisionBuilderLayered
+  nameWithType: CollisionBuilderLayered
+  fullName: LunyScript.Api.CollisionBuilderLayered
+- uid: LunyScript.Api.ICollisionBuilderMasked
+  commentId: T:LunyScript.Api.ICollisionBuilderMasked
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionBuilderMasked.html
+  name: ICollisionBuilderMasked
+  nameWithType: ICollisionBuilderMasked
+  fullName: LunyScript.Api.ICollisionBuilderMasked
+- uid: LunyScript.Api.CollisionBuilderMasked
+  commentId: T:LunyScript.Api.CollisionBuilderMasked
+  isExternal: true
+  href: LunyScript.Api.CollisionBuilderMasked.html
+  name: CollisionBuilderMasked
+  nameWithType: CollisionBuilderMasked
+  fullName: LunyScript.Api.CollisionBuilderMasked
+- uid: LunyScript.Api.PhysicsEventBuilder`1
+  commentId: T:LunyScript.Api.PhysicsEventBuilder`1
+  isExternal: true
+  href: LunyScript.Api.PhysicsEventBuilder-1.html
+  name: PhysicsEventBuilder<T>
+  nameWithType: PhysicsEventBuilder<T>
+  fullName: LunyScript.Api.PhysicsEventBuilder<T>
+  nameWithType.vb: PhysicsEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T)
+  name.vb: PhysicsEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.Api.PhysicsEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder
+    isExternal: true
+    href: LunyScript.Api.PhysicsEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.PhysicsEventLayerExtensions
+  commentId: T:LunyScript.Api.PhysicsEventLayerExtensions
+  isExternal: true
+  href: LunyScript.Api.PhysicsEventLayerExtensions.html
+  name: PhysicsEventLayerExtensions
+  nameWithType: PhysicsEventLayerExtensions
+  fullName: LunyScript.Api.PhysicsEventLayerExtensions
+- uid: LunyScript.Api.WhenGlobalEventBuilder
+  commentId: T:LunyScript.Api.WhenGlobalEventBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.WhenGlobalEventBuilder.html
+  name: WhenGlobalEventBuilder
+  nameWithType: WhenGlobalEventBuilder
+  fullName: LunyScript.Api.WhenGlobalEventBuilder
+- uid: LunyScript.Api.WhenInputEventBuilder
+  commentId: T:LunyScript.Api.WhenInputEventBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.WhenInputEventBuilder.html
+  name: WhenInputEventBuilder
+  nameWithType: WhenInputEventBuilder
+  fullName: LunyScript.Api.WhenInputEventBuilder
+- uid: LunyScript.Api.WhenSceneEventBuilder
+  commentId: T:LunyScript.Api.WhenSceneEventBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.WhenSceneEventBuilder.html
+  name: WhenSceneEventBuilder
+  nameWithType: WhenSceneEventBuilder
+  fullName: LunyScript.Api.WhenSceneEventBuilder
+- uid: LunyScript.Api.InputBuilder
+  commentId: T:LunyScript.Api.InputBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.InputBuilder.html
+  name: InputBuilder
+  nameWithType: InputBuilder
+  fullName: LunyScript.Api.InputBuilder
+- uid: LunyScript.Api.InputActionBuilder
+  commentId: T:LunyScript.Api.InputActionBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.InputActionBuilder.html
+  name: InputActionBuilder
+  nameWithType: InputActionBuilder
+  fullName: LunyScript.Api.InputActionBuilder
+- uid: LunyScript.Api.InputButtonBuilder
+  commentId: T:LunyScript.Api.InputButtonBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.InputButtonBuilder.html
+  name: InputButtonBuilder
+  nameWithType: InputButtonBuilder
+  fullName: LunyScript.Api.InputButtonBuilder
+- uid: LunyScript.Api.InputAxisBuilder
+  commentId: T:LunyScript.Api.InputAxisBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.InputAxisBuilder.html
+  name: InputAxisBuilder
+  nameWithType: InputAxisBuilder
+  fullName: LunyScript.Api.InputAxisBuilder
+- uid: LunyScript.Api.WhenInputActionBuilder
+  commentId: T:LunyScript.Api.WhenInputActionBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.WhenInputActionBuilder.html
+  name: WhenInputActionBuilder
+  nameWithType: WhenInputActionBuilder
+  fullName: LunyScript.Api.WhenInputActionBuilder
+- uid: LunyScript.Api.WhenInputActionBuilderExtensions
+  commentId: T:LunyScript.Api.WhenInputActionBuilderExtensions
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.WhenInputActionBuilderExtensions.html
+  name: WhenInputActionBuilderExtensions
+  nameWithType: WhenInputActionBuilderExtensions
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions
+- uid: LunyScript.Api.IObjectBuilderState
+  commentId: T:LunyScript.Api.IObjectBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.IObjectBuilderState.html
+  name: IObjectBuilderState
+  nameWithType: IObjectBuilderState
+  fullName: LunyScript.Api.IObjectBuilderState
+- uid: LunyScript.Api.IObjectBuilderNameSet
+  commentId: T:LunyScript.Api.IObjectBuilderNameSet
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.IObjectBuilderNameSet.html
+  name: IObjectBuilderNameSet
+  nameWithType: IObjectBuilderNameSet
+  fullName: LunyScript.Api.IObjectBuilderNameSet
+- uid: LunyScript.Api.ObjectBuilderNameSet
+  commentId: T:LunyScript.Api.ObjectBuilderNameSet
+  isExternal: true
+  href: LunyScript.Api.ObjectBuilderNameSet.html
+  name: ObjectBuilderNameSet
+  nameWithType: ObjectBuilderNameSet
+  fullName: LunyScript.Api.ObjectBuilderNameSet
+- uid: LunyScript.Api.IObjectBuilderCanFinish
+  commentId: T:LunyScript.Api.IObjectBuilderCanFinish
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.IObjectBuilderCanFinish.html
+  name: IObjectBuilderCanFinish
+  nameWithType: IObjectBuilderCanFinish
+  fullName: LunyScript.Api.IObjectBuilderCanFinish
+- uid: LunyScript.Api.ObjectBuilder
+  commentId: T:LunyScript.Api.ObjectBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ObjectBuilder.html
+  name: ObjectBuilder
+  nameWithType: ObjectBuilder
+  fullName: LunyScript.Api.ObjectBuilder
+- uid: LunyScript.Api.PrefabBuilder
+  commentId: T:LunyScript.Api.PrefabBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.PrefabBuilder.html
+  name: PrefabBuilder
+  nameWithType: PrefabBuilder
+  fullName: LunyScript.Api.PrefabBuilder
+- uid: LunyScript.Api.ObjectBuilderExtensions
+  commentId: T:LunyScript.Api.ObjectBuilderExtensions
+  isExternal: true
+  href: LunyScript.Api.ObjectBuilderExtensions.html
+  name: ObjectBuilderExtensions
+  nameWithType: ObjectBuilderExtensions
+  fullName: LunyScript.Api.ObjectBuilderExtensions
+- uid: LunyScript.Api.ObjectCreateBuilder`1
+  commentId: T:LunyScript.Api.ObjectCreateBuilder`1
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ObjectCreateBuilder-1.html
+  name: ObjectCreateBuilder<T>
+  nameWithType: ObjectCreateBuilder<T>
+  fullName: LunyScript.Api.ObjectCreateBuilder<T>
+  nameWithType.vb: ObjectCreateBuilder(Of T)
+  fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T)
+  name.vb: ObjectCreateBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.Api.ObjectCreateBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder
+    isExternal: true
+    href: LunyScript.Api.ObjectCreateBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.ITransformBuilderState
+  commentId: T:LunyScript.Api.ITransformBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ITransformBuilderState.html
+  name: ITransformBuilderState
+  nameWithType: ITransformBuilderState
+  fullName: LunyScript.Api.ITransformBuilderState
+- uid: LunyScript.Api.ITransformBuilderReady
+  commentId: T:LunyScript.Api.ITransformBuilderReady
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ITransformBuilderReady.html
+  name: ITransformBuilderReady
+  nameWithType: ITransformBuilderReady
+  fullName: LunyScript.Api.ITransformBuilderReady
+- uid: LunyScript.Api.TransformBuilderReady
+  commentId: T:LunyScript.Api.TransformBuilderReady
+  isExternal: true
+  href: LunyScript.Api.TransformBuilderReady.html
+  name: TransformBuilderReady
+  nameWithType: TransformBuilderReady
+  fullName: LunyScript.Api.TransformBuilderReady
+- uid: LunyScript.Api.TransformBuilder
+  commentId: T:LunyScript.Api.TransformBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TransformBuilder.html
+  name: TransformBuilder
+  nameWithType: TransformBuilder
+  fullName: LunyScript.Api.TransformBuilder
+- uid: LunyScript.Api.TransformLookAtBuilder`1
+  commentId: T:LunyScript.Api.TransformLookAtBuilder`1
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TransformLookAtBuilder-1.html
+  name: TransformLookAtBuilder<T>
+  nameWithType: TransformLookAtBuilder<T>
+  fullName: LunyScript.Api.TransformLookAtBuilder<T>
+  nameWithType.vb: TransformLookAtBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformLookAtBuilder(Of T)
+  name.vb: TransformLookAtBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformLookAtBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformLookAtBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.TransformLookAtBuilderExtensions
+  commentId: T:LunyScript.Api.TransformLookAtBuilderExtensions
+  isExternal: true
+  href: LunyScript.Api.TransformLookAtBuilderExtensions.html
+  name: TransformLookAtBuilderExtensions
+  nameWithType: TransformLookAtBuilderExtensions
+  fullName: LunyScript.Api.TransformLookAtBuilderExtensions
+- uid: LunyScript.Api.TransformPositionBuilder`1
+  commentId: T:LunyScript.Api.TransformPositionBuilder`1
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TransformPositionBuilder-1.html
+  name: TransformPositionBuilder<T>
+  nameWithType: TransformPositionBuilder<T>
+  fullName: LunyScript.Api.TransformPositionBuilder<T>
+  nameWithType.vb: TransformPositionBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformPositionBuilder(Of T)
+  name.vb: TransformPositionBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformPositionBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformPositionBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.TransformMoveBuilderExtensions
+  commentId: T:LunyScript.Api.TransformMoveBuilderExtensions
+  isExternal: true
+  href: LunyScript.Api.TransformMoveBuilderExtensions.html
+  name: TransformMoveBuilderExtensions
+  nameWithType: TransformMoveBuilderExtensions
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions
+- uid: LunyScript.Api.TransformRotationBuilder`1
+  commentId: T:LunyScript.Api.TransformRotationBuilder`1
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TransformRotationBuilder-1.html
+  name: TransformRotationBuilder<T>
+  nameWithType: TransformRotationBuilder<T>
+  fullName: LunyScript.Api.TransformRotationBuilder<T>
+  nameWithType.vb: TransformRotationBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformRotationBuilder(Of T)
+  name.vb: TransformRotationBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformRotationBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformRotationBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.TransformRotateBuilderExtensions
+  commentId: T:LunyScript.Api.TransformRotateBuilderExtensions
+  isExternal: true
+  href: LunyScript.Api.TransformRotateBuilderExtensions.html
+  name: TransformRotateBuilderExtensions
+  nameWithType: TransformRotateBuilderExtensions
+  fullName: LunyScript.Api.TransformRotateBuilderExtensions
+- uid: LunyScript.Api.TransformScaleBuilder`1
+  commentId: T:LunyScript.Api.TransformScaleBuilder`1
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TransformScaleBuilder-1.html
+  name: TransformScaleBuilder<T>
+  nameWithType: TransformScaleBuilder<T>
+  fullName: LunyScript.Api.TransformScaleBuilder<T>
+  nameWithType.vb: TransformScaleBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformScaleBuilder(Of T)
+  name.vb: TransformScaleBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformScaleBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformScaleBuilder`1
+    name: TransformScaleBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformScaleBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.TransformScaleBuilderExtensions
+  commentId: T:LunyScript.Api.TransformScaleBuilderExtensions
+  isExternal: true
+  href: LunyScript.Api.TransformScaleBuilderExtensions.html
+  name: TransformScaleBuilderExtensions
+  nameWithType: TransformScaleBuilderExtensions
+  fullName: LunyScript.Api.TransformScaleBuilderExtensions
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html

@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Unity.Bridge
+  commentId: N:Luny.Unity.Bridge
+  id: Luny.Unity.Bridge
+  children:
+  - Luny.Unity.Bridge.LunyVectorExt
+  - Luny.Unity.Bridge.UnityCollider
+  - Luny.Unity.Bridge.UnityCollision
+  - Luny.Unity.Bridge.UnityLogger
+  - Luny.Unity.Bridge.UnityPathConverter
+  - Luny.Unity.Bridge.UnityPrefab
+  - Luny.Unity.Bridge.UnityScene
+  langs:
+  - csharp
+  - vb
+  name: Luny.Unity.Bridge
+  nameWithType: Luny.Unity.Bridge
+  fullName: Luny.Unity.Bridge
+  type: Namespace
+  assemblies:
+  - Luny.Unity
+references:
+- uid: Luny.Unity.Bridge.LunyVectorExt
+  commentId: T:Luny.Unity.Bridge.LunyVectorExt
+  isExternal: true
+  href: Luny.Unity.Bridge.LunyVectorExt.html
+  name: LunyVectorExt
+  nameWithType: LunyVectorExt
+  fullName: Luny.Unity.Bridge.LunyVectorExt
+- uid: Luny.Unity.Bridge.UnityCollider
+  commentId: T:Luny.Unity.Bridge.UnityCollider
+  isExternal: true
+  href: Luny.Unity.Bridge.UnityCollider.html
+  name: UnityCollider
+  nameWithType: UnityCollider
+  fullName: Luny.Unity.Bridge.UnityCollider
+- uid: Luny.Unity.Bridge.UnityCollision
+  commentId: T:Luny.Unity.Bridge.UnityCollision
+  isExternal: true
+  href: Luny.Unity.Bridge.UnityCollision.html
+  name: UnityCollision
+  nameWithType: UnityCollision
+  fullName: Luny.Unity.Bridge.UnityCollision
+- uid: Luny.Unity.Bridge.UnityLogger
+  commentId: T:Luny.Unity.Bridge.UnityLogger
+  isExternal: true
+  href: Luny.Unity.Bridge.UnityLogger.html
+  name: UnityLogger
+  nameWithType: UnityLogger
+  fullName: Luny.Unity.Bridge.UnityLogger
+- uid: Luny.Unity.Bridge.UnityPathConverter
+  commentId: T:Luny.Unity.Bridge.UnityPathConverter
+  isExternal: true
+  href: Luny.Unity.Bridge.UnityPathConverter.html
+  name: UnityPathConverter
+  nameWithType: UnityPathConverter
+  fullName: Luny.Unity.Bridge.UnityPathConverter
+- uid: Luny.Unity.Bridge.UnityPrefab
+  commentId: T:Luny.Unity.Bridge.UnityPrefab
+  isExternal: true
+  href: Luny.Unity.Bridge.UnityPrefab.html
+  name: UnityPrefab
+  nameWithType: UnityPrefab
+  fullName: Luny.Unity.Bridge.UnityPrefab
+- uid: Luny.Unity.Bridge.UnityScene
+  commentId: T:Luny.Unity.Bridge.UnityScene
+  isExternal: true
+  href: Luny.Unity.Bridge.UnityScene.html
+  name: UnityScene
+  nameWithType: UnityScene
+  fullName: Luny.Unity.Bridge.UnityScene

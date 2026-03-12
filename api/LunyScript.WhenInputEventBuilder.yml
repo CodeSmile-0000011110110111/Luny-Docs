@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.WhenInputEventBuilder
+  commentId: T:LunyScript.WhenInputEventBuilder
+  id: WhenInputEventBuilder
+  parent: LunyScript
+  children:
+  - LunyScript.WhenInputEventBuilder.Action(System.String)
+  langs:
+  - csharp
+  - vb
+  name: WhenInputEventBuilder
+  nameWithType: WhenInputEventBuilder
+  fullName: LunyScript.WhenInputEventBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public readonly struct WhenInputEventBuilder
+    content.vb: Public Structure WhenInputEventBuilder
+- uid: LunyScript.WhenInputEventBuilder.Action(System.String)
+  commentId: M:LunyScript.WhenInputEventBuilder.Action(System.String)
+  id: Action(System.String)
+  parent: LunyScript.WhenInputEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Action(string)
+  nameWithType: WhenInputEventBuilder.Action(string)
+  fullName: LunyScript.WhenInputEventBuilder.Action(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public WhenInputActionBuilder Action(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+    return:
+      type: LunyScript.WhenInputActionBuilder
+    content.vb: Public Function Action(actionName As String) As WhenInputActionBuilder
+  overload: LunyScript.WhenInputEventBuilder.Action*
+  nameWithType.vb: WhenInputEventBuilder.Action(String)
+  fullName.vb: LunyScript.WhenInputEventBuilder.Action(String)
+  name.vb: Action(String)
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.WhenInputEventBuilder.Action*
+  commentId: Overload:LunyScript.WhenInputEventBuilder.Action
+  isExternal: true
+  href: LunyScript.WhenInputEventBuilder.html#LunyScript_WhenInputEventBuilder_Action_System_String_
+  name: Action
+  nameWithType: WhenInputEventBuilder.Action
+  fullName: LunyScript.WhenInputEventBuilder.Action
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LunyScript.WhenInputActionBuilder
+  commentId: T:LunyScript.WhenInputActionBuilder
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.WhenInputActionBuilder.html
+  name: WhenInputActionBuilder
+  nameWithType: WhenInputActionBuilder
+  fullName: LunyScript.WhenInputActionBuilder
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

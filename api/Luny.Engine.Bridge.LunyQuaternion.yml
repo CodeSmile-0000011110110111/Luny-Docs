@@ -1,0 +1,1377 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.Bridge.LunyQuaternion
+  commentId: T:Luny.Engine.Bridge.LunyQuaternion
+  id: LunyQuaternion
+  parent: Luny.Engine.Bridge
+  children:
+  - Luny.Engine.Bridge.LunyQuaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - Luny.Engine.Bridge.LunyQuaternion.Angle(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  - Luny.Engine.Bridge.LunyQuaternion.AngleAxis(System.Single,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyQuaternion.Conjugate(Luny.Engine.Bridge.LunyQuaternion)
+  - Luny.Engine.Bridge.LunyQuaternion.Dot(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  - Luny.Engine.Bridge.LunyQuaternion.Equals(Luny.Engine.Bridge.LunyQuaternion)
+  - Luny.Engine.Bridge.LunyQuaternion.Equals(System.Object)
+  - Luny.Engine.Bridge.LunyQuaternion.Euler(Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyQuaternion.Euler(System.Double,System.Double,System.Double)
+  - Luny.Engine.Bridge.LunyQuaternion.Euler(System.Single,System.Single,System.Single)
+  - Luny.Engine.Bridge.LunyQuaternion.EulerAngles
+  - Luny.Engine.Bridge.LunyQuaternion.GetHashCode
+  - Luny.Engine.Bridge.LunyQuaternion.Identity
+  - Luny.Engine.Bridge.LunyQuaternion.Inverse(Luny.Engine.Bridge.LunyQuaternion)
+  - Luny.Engine.Bridge.LunyQuaternion.Item(System.Int32)
+  - Luny.Engine.Bridge.LunyQuaternion.Lerp(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  - Luny.Engine.Bridge.LunyQuaternion.LerpUnclamped(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  - Luny.Engine.Bridge.LunyQuaternion.LookRotation(Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyQuaternion.LookRotation(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Bridge.LunyQuaternion.Normalize
+  - Luny.Engine.Bridge.LunyQuaternion.Normalized
+  - Luny.Engine.Bridge.LunyQuaternion.RotateTowards(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  - Luny.Engine.Bridge.LunyQuaternion.Set(System.Single,System.Single,System.Single,System.Single)
+  - Luny.Engine.Bridge.LunyQuaternion.Slerp(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  - Luny.Engine.Bridge.LunyQuaternion.SlerpUnclamped(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  - Luny.Engine.Bridge.LunyQuaternion.ToString
+  - Luny.Engine.Bridge.LunyQuaternion.ToString(System.String)
+  - Luny.Engine.Bridge.LunyQuaternion.W
+  - Luny.Engine.Bridge.LunyQuaternion.X
+  - Luny.Engine.Bridge.LunyQuaternion.Y
+  - Luny.Engine.Bridge.LunyQuaternion.Z
+  - Luny.Engine.Bridge.LunyQuaternion.op_Equality(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  - Luny.Engine.Bridge.LunyQuaternion.op_Inequality(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  - Luny.Engine.Bridge.LunyQuaternion.op_Multiply(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  - Luny.Engine.Bridge.LunyQuaternion.op_Multiply(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyVector3)
+  langs:
+  - csharp
+  - vb
+  name: LunyQuaternion
+  nameWithType: LunyQuaternion
+  fullName: Luny.Engine.Bridge.LunyQuaternion
+  type: Struct
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public struct LunyQuaternion
+    content.vb: Public Structure LunyQuaternion
+- uid: Luny.Engine.Bridge.LunyQuaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: LunyQuaternion(float, float, float, float)
+  nameWithType: LunyQuaternion.LunyQuaternion(float, float, float, float)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.LunyQuaternion(float, float, float, float)
+  type: Constructor
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public LunyQuaternion(float x, float y, float z, float w)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    - id: w
+      type: System.Single
+    content.vb: Public Sub New(x As Single, y As Single, z As Single, w As Single)
+  overload: Luny.Engine.Bridge.LunyQuaternion.#ctor*
+  nameWithType.vb: LunyQuaternion.New(Single, Single, Single, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.New(Single, Single, Single, Single)
+  name.vb: New(Single, Single, Single, Single)
+- uid: Luny.Engine.Bridge.LunyQuaternion.Normalize
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Normalize
+  id: Normalize
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Normalize()
+  nameWithType: LunyQuaternion.Normalize()
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Normalize()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public void Normalize()
+    content.vb: Public Sub Normalize()
+  overload: Luny.Engine.Bridge.LunyQuaternion.Normalize*
+- uid: Luny.Engine.Bridge.LunyQuaternion.Set(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Set(System.Single,System.Single,System.Single,System.Single)
+  id: Set(System.Single,System.Single,System.Single,System.Single)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Set(float, float, float, float)
+  nameWithType: LunyQuaternion.Set(float, float, float, float)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Set(float, float, float, float)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public void Set(float newX, float newY, float newZ, float newW)
+    parameters:
+    - id: newX
+      type: System.Single
+    - id: newY
+      type: System.Single
+    - id: newZ
+      type: System.Single
+    - id: newW
+      type: System.Single
+    content.vb: Public Sub [Set](newX As Single, newY As Single, newZ As Single, newW As Single)
+  overload: Luny.Engine.Bridge.LunyQuaternion.Set*
+  nameWithType.vb: LunyQuaternion.Set(Single, Single, Single, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.Set(Single, Single, Single, Single)
+  name.vb: Set(Single, Single, Single, Single)
+- uid: Luny.Engine.Bridge.LunyQuaternion.Dot(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Dot(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  id: Dot(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Dot(LunyQuaternion, LunyQuaternion)
+  nameWithType: LunyQuaternion.Dot(LunyQuaternion, LunyQuaternion)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Dot(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static float Dot(LunyQuaternion a, LunyQuaternion b)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: b
+      type: Luny.Engine.Bridge.LunyQuaternion
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Dot(a As LunyQuaternion, b As LunyQuaternion) As Single
+  overload: Luny.Engine.Bridge.LunyQuaternion.Dot*
+- uid: Luny.Engine.Bridge.LunyQuaternion.Slerp(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Slerp(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  id: Slerp(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Slerp(LunyQuaternion, LunyQuaternion, float)
+  nameWithType: LunyQuaternion.Slerp(LunyQuaternion, LunyQuaternion, float)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Slerp(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion, float)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion Slerp(LunyQuaternion a, LunyQuaternion b, float t)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: b
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: t
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function Slerp(a As LunyQuaternion, b As LunyQuaternion, t As Single) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.Slerp*
+  nameWithType.vb: LunyQuaternion.Slerp(LunyQuaternion, LunyQuaternion, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.Slerp(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion, Single)
+  name.vb: Slerp(LunyQuaternion, LunyQuaternion, Single)
+- uid: Luny.Engine.Bridge.LunyQuaternion.SlerpUnclamped(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.SlerpUnclamped(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  id: SlerpUnclamped(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: SlerpUnclamped(LunyQuaternion, LunyQuaternion, float)
+  nameWithType: LunyQuaternion.SlerpUnclamped(LunyQuaternion, LunyQuaternion, float)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.SlerpUnclamped(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion, float)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion SlerpUnclamped(LunyQuaternion a, LunyQuaternion b, float t)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: b
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: t
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function SlerpUnclamped(a As LunyQuaternion, b As LunyQuaternion, t As Single) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.SlerpUnclamped*
+  nameWithType.vb: LunyQuaternion.SlerpUnclamped(LunyQuaternion, LunyQuaternion, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.SlerpUnclamped(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion, Single)
+  name.vb: SlerpUnclamped(LunyQuaternion, LunyQuaternion, Single)
+- uid: Luny.Engine.Bridge.LunyQuaternion.Lerp(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Lerp(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  id: Lerp(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Lerp(LunyQuaternion, LunyQuaternion, float)
+  nameWithType: LunyQuaternion.Lerp(LunyQuaternion, LunyQuaternion, float)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Lerp(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion, float)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion Lerp(LunyQuaternion a, LunyQuaternion b, float t)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: b
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: t
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function Lerp(a As LunyQuaternion, b As LunyQuaternion, t As Single) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.Lerp*
+  nameWithType.vb: LunyQuaternion.Lerp(LunyQuaternion, LunyQuaternion, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.Lerp(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion, Single)
+  name.vb: Lerp(LunyQuaternion, LunyQuaternion, Single)
+- uid: Luny.Engine.Bridge.LunyQuaternion.LerpUnclamped(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.LerpUnclamped(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  id: LerpUnclamped(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: LerpUnclamped(LunyQuaternion, LunyQuaternion, float)
+  nameWithType: LunyQuaternion.LerpUnclamped(LunyQuaternion, LunyQuaternion, float)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.LerpUnclamped(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion, float)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion LerpUnclamped(LunyQuaternion a, LunyQuaternion b, float t)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: b
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: t
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function LerpUnclamped(a As LunyQuaternion, b As LunyQuaternion, t As Single) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.LerpUnclamped*
+  nameWithType.vb: LunyQuaternion.LerpUnclamped(LunyQuaternion, LunyQuaternion, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.LerpUnclamped(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion, Single)
+  name.vb: LerpUnclamped(LunyQuaternion, LunyQuaternion, Single)
+- uid: Luny.Engine.Bridge.LunyQuaternion.Inverse(Luny.Engine.Bridge.LunyQuaternion)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Inverse(Luny.Engine.Bridge.LunyQuaternion)
+  id: Inverse(Luny.Engine.Bridge.LunyQuaternion)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Inverse(LunyQuaternion)
+  nameWithType: LunyQuaternion.Inverse(LunyQuaternion)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Inverse(Luny.Engine.Bridge.LunyQuaternion)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion Inverse(LunyQuaternion rotation)
+    parameters:
+    - id: rotation
+      type: Luny.Engine.Bridge.LunyQuaternion
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function Inverse(rotation As LunyQuaternion) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.Inverse*
+- uid: Luny.Engine.Bridge.LunyQuaternion.Conjugate(Luny.Engine.Bridge.LunyQuaternion)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Conjugate(Luny.Engine.Bridge.LunyQuaternion)
+  id: Conjugate(Luny.Engine.Bridge.LunyQuaternion)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Conjugate(LunyQuaternion)
+  nameWithType: LunyQuaternion.Conjugate(LunyQuaternion)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Conjugate(Luny.Engine.Bridge.LunyQuaternion)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion Conjugate(LunyQuaternion value)
+    parameters:
+    - id: value
+      type: Luny.Engine.Bridge.LunyQuaternion
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function Conjugate(value As LunyQuaternion) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.Conjugate*
+- uid: Luny.Engine.Bridge.LunyQuaternion.Angle(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Angle(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  id: Angle(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Angle(LunyQuaternion, LunyQuaternion)
+  nameWithType: LunyQuaternion.Angle(LunyQuaternion, LunyQuaternion)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Angle(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static float Angle(LunyQuaternion a, LunyQuaternion b)
+    parameters:
+    - id: a
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: b
+      type: Luny.Engine.Bridge.LunyQuaternion
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Angle(a As LunyQuaternion, b As LunyQuaternion) As Single
+  overload: Luny.Engine.Bridge.LunyQuaternion.Angle*
+- uid: Luny.Engine.Bridge.LunyQuaternion.Euler(System.Single,System.Single,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Euler(System.Single,System.Single,System.Single)
+  id: Euler(System.Single,System.Single,System.Single)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Euler(float, float, float)
+  nameWithType: LunyQuaternion.Euler(float, float, float)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Euler(float, float, float)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion Euler(float x, float y, float z)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function Euler(x As Single, y As Single, z As Single) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.Euler*
+  nameWithType.vb: LunyQuaternion.Euler(Single, Single, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.Euler(Single, Single, Single)
+  name.vb: Euler(Single, Single, Single)
+- uid: Luny.Engine.Bridge.LunyQuaternion.Euler(System.Double,System.Double,System.Double)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Euler(System.Double,System.Double,System.Double)
+  id: Euler(System.Double,System.Double,System.Double)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Euler(double, double, double)
+  nameWithType: LunyQuaternion.Euler(double, double, double)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Euler(double, double, double)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion Euler(double x, double y, double z)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: z
+      type: System.Double
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function Euler(x As Double, y As Double, z As Double) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.Euler*
+  nameWithType.vb: LunyQuaternion.Euler(Double, Double, Double)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.Euler(Double, Double, Double)
+  name.vb: Euler(Double, Double, Double)
+- uid: Luny.Engine.Bridge.LunyQuaternion.Euler(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Euler(Luny.Engine.Bridge.LunyVector3)
+  id: Euler(Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Euler(LunyVector3)
+  nameWithType: LunyQuaternion.Euler(LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Euler(Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion Euler(LunyVector3 euler)
+    parameters:
+    - id: euler
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function Euler(euler As LunyVector3) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.Euler*
+- uid: Luny.Engine.Bridge.LunyQuaternion.AngleAxis(System.Single,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.AngleAxis(System.Single,Luny.Engine.Bridge.LunyVector3)
+  id: AngleAxis(System.Single,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: AngleAxis(float, LunyVector3)
+  nameWithType: LunyQuaternion.AngleAxis(float, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.AngleAxis(float, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion AngleAxis(float angle, LunyVector3 axis)
+    parameters:
+    - id: angle
+      type: System.Single
+    - id: axis
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function AngleAxis(angle As Single, axis As LunyVector3) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.AngleAxis*
+  nameWithType.vb: LunyQuaternion.AngleAxis(Single, LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.AngleAxis(Single, Luny.Engine.Bridge.LunyVector3)
+  name.vb: AngleAxis(Single, LunyVector3)
+- uid: Luny.Engine.Bridge.LunyQuaternion.LookRotation(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.LookRotation(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  id: LookRotation(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: LookRotation(LunyVector3, LunyVector3)
+  nameWithType: LunyQuaternion.LookRotation(LunyVector3, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.LookRotation(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion LookRotation(LunyVector3 forward, LunyVector3 upwards)
+    parameters:
+    - id: forward
+      type: Luny.Engine.Bridge.LunyVector3
+    - id: upwards
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function LookRotation(forward As LunyVector3, upwards As LunyVector3) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.LookRotation*
+- uid: Luny.Engine.Bridge.LunyQuaternion.LookRotation(Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.LookRotation(Luny.Engine.Bridge.LunyVector3)
+  id: LookRotation(Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: LookRotation(LunyVector3)
+  nameWithType: LunyQuaternion.LookRotation(LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.LookRotation(Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion LookRotation(LunyVector3 forward)
+    parameters:
+    - id: forward
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function LookRotation(forward As LunyVector3) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.LookRotation*
+- uid: Luny.Engine.Bridge.LunyQuaternion.RotateTowards(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.RotateTowards(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  id: RotateTowards(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion,System.Single)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: RotateTowards(LunyQuaternion, LunyQuaternion, float)
+  nameWithType: LunyQuaternion.RotateTowards(LunyQuaternion, LunyQuaternion, float)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.RotateTowards(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion, float)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion RotateTowards(LunyQuaternion from, LunyQuaternion to, float maxDegreesDelta)
+    parameters:
+    - id: from
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: to
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: maxDegreesDelta
+      type: System.Single
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Function RotateTowards(from As LunyQuaternion, [to] As LunyQuaternion, maxDegreesDelta As Single) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.RotateTowards*
+  nameWithType.vb: LunyQuaternion.RotateTowards(LunyQuaternion, LunyQuaternion, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.RotateTowards(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion, Single)
+  name.vb: RotateTowards(LunyQuaternion, LunyQuaternion, Single)
+- uid: Luny.Engine.Bridge.LunyQuaternion.op_Multiply(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.op_Multiply(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyVector3)
+  id: op_Multiply(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: operator *(LunyQuaternion, LunyVector3)
+  nameWithType: LunyQuaternion.operator *(LunyQuaternion, LunyVector3)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.operator *(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyVector3)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyVector3 operator *(LunyQuaternion rotation, LunyVector3 point)
+    parameters:
+    - id: rotation
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: point
+      type: Luny.Engine.Bridge.LunyVector3
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Shared Operator *(rotation As LunyQuaternion, point As LunyVector3) As LunyVector3
+  overload: Luny.Engine.Bridge.LunyQuaternion.op_Multiply*
+  nameWithType.vb: LunyQuaternion.*(LunyQuaternion, LunyVector3)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.*(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyVector3)
+  name.vb: '*(LunyQuaternion, LunyVector3)'
+- uid: Luny.Engine.Bridge.LunyQuaternion.op_Multiply(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.op_Multiply(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  id: op_Multiply(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: operator *(LunyQuaternion, LunyQuaternion)
+  nameWithType: LunyQuaternion.operator *(LunyQuaternion, LunyQuaternion)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.operator *(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion operator *(LunyQuaternion lhs, LunyQuaternion rhs)
+    parameters:
+    - id: lhs
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: rhs
+      type: Luny.Engine.Bridge.LunyQuaternion
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared Operator *(lhs As LunyQuaternion, rhs As LunyQuaternion) As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.op_Multiply*
+  nameWithType.vb: LunyQuaternion.*(LunyQuaternion, LunyQuaternion)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.*(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion)
+  name.vb: '*(LunyQuaternion, LunyQuaternion)'
+- uid: Luny.Engine.Bridge.LunyQuaternion.op_Equality(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.op_Equality(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  id: op_Equality(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: operator ==(LunyQuaternion, LunyQuaternion)
+  nameWithType: LunyQuaternion.operator ==(LunyQuaternion, LunyQuaternion)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.operator ==(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static bool operator ==(LunyQuaternion lhs, LunyQuaternion rhs)
+    parameters:
+    - id: lhs
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: rhs
+      type: Luny.Engine.Bridge.LunyQuaternion
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(lhs As LunyQuaternion, rhs As LunyQuaternion) As Boolean
+  overload: Luny.Engine.Bridge.LunyQuaternion.op_Equality*
+  nameWithType.vb: LunyQuaternion.=(LunyQuaternion, LunyQuaternion)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.=(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion)
+  name.vb: =(LunyQuaternion, LunyQuaternion)
+- uid: Luny.Engine.Bridge.LunyQuaternion.op_Inequality(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.op_Inequality(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  id: op_Inequality(Luny.Engine.Bridge.LunyQuaternion,Luny.Engine.Bridge.LunyQuaternion)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: operator !=(LunyQuaternion, LunyQuaternion)
+  nameWithType: LunyQuaternion.operator !=(LunyQuaternion, LunyQuaternion)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.operator !=(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static bool operator !=(LunyQuaternion lhs, LunyQuaternion rhs)
+    parameters:
+    - id: lhs
+      type: Luny.Engine.Bridge.LunyQuaternion
+    - id: rhs
+      type: Luny.Engine.Bridge.LunyQuaternion
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(lhs As LunyQuaternion, rhs As LunyQuaternion) As Boolean
+  overload: Luny.Engine.Bridge.LunyQuaternion.op_Inequality*
+  nameWithType.vb: LunyQuaternion.<>(LunyQuaternion, LunyQuaternion)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.<>(Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion)
+  name.vb: <>(LunyQuaternion, LunyQuaternion)
+- uid: Luny.Engine.Bridge.LunyQuaternion.Equals(Luny.Engine.Bridge.LunyQuaternion)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Equals(Luny.Engine.Bridge.LunyQuaternion)
+  id: Equals(Luny.Engine.Bridge.LunyQuaternion)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Equals(LunyQuaternion)
+  nameWithType: LunyQuaternion.Equals(LunyQuaternion)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Equals(Luny.Engine.Bridge.LunyQuaternion)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public bool Equals(LunyQuaternion other)
+    parameters:
+    - id: other
+      type: Luny.Engine.Bridge.LunyQuaternion
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As LunyQuaternion) As Boolean
+  overload: Luny.Engine.Bridge.LunyQuaternion.Equals*
+- uid: Luny.Engine.Bridge.LunyQuaternion.Equals(System.Object)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: LunyQuaternion.Equals(object)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Equals(object)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Luny.Engine.Bridge.LunyQuaternion.Equals*
+  nameWithType.vb: LunyQuaternion.Equals(Object)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Luny.Engine.Bridge.LunyQuaternion.GetHashCode
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.GetHashCode
+  id: GetHashCode
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: LunyQuaternion.GetHashCode()
+  fullName: Luny.Engine.Bridge.LunyQuaternion.GetHashCode()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Luny.Engine.Bridge.LunyQuaternion.GetHashCode*
+- uid: Luny.Engine.Bridge.LunyQuaternion.ToString
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.ToString
+  id: ToString
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LunyQuaternion.ToString()
+  fullName: Luny.Engine.Bridge.LunyQuaternion.ToString()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Luny.Engine.Bridge.LunyQuaternion.ToString*
+- uid: Luny.Engine.Bridge.LunyQuaternion.ToString(System.String)
+  commentId: M:Luny.Engine.Bridge.LunyQuaternion.ToString(System.String)
+  id: ToString(System.String)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: ToString(string)
+  nameWithType: LunyQuaternion.ToString(string)
+  fullName: Luny.Engine.Bridge.LunyQuaternion.ToString(string)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public string ToString(string format)
+    parameters:
+    - id: format
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ToString(format As String) As String
+  overload: Luny.Engine.Bridge.LunyQuaternion.ToString*
+  nameWithType.vb: LunyQuaternion.ToString(String)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.ToString(String)
+  name.vb: ToString(String)
+- uid: Luny.Engine.Bridge.LunyQuaternion.X
+  commentId: P:Luny.Engine.Bridge.LunyQuaternion.X
+  id: X
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: LunyQuaternion.X
+  fullName: Luny.Engine.Bridge.LunyQuaternion.X
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float X { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property X As Single
+  overload: Luny.Engine.Bridge.LunyQuaternion.X*
+- uid: Luny.Engine.Bridge.LunyQuaternion.Y
+  commentId: P:Luny.Engine.Bridge.LunyQuaternion.Y
+  id: Y
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: LunyQuaternion.Y
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Y
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float Y { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Y As Single
+  overload: Luny.Engine.Bridge.LunyQuaternion.Y*
+- uid: Luny.Engine.Bridge.LunyQuaternion.Z
+  commentId: P:Luny.Engine.Bridge.LunyQuaternion.Z
+  id: Z
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: LunyQuaternion.Z
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Z
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float Z { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Z As Single
+  overload: Luny.Engine.Bridge.LunyQuaternion.Z*
+- uid: Luny.Engine.Bridge.LunyQuaternion.W
+  commentId: P:Luny.Engine.Bridge.LunyQuaternion.W
+  id: W
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: W
+  nameWithType: LunyQuaternion.W
+  fullName: Luny.Engine.Bridge.LunyQuaternion.W
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float W { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property W As Single
+  overload: Luny.Engine.Bridge.LunyQuaternion.W*
+- uid: Luny.Engine.Bridge.LunyQuaternion.Item(System.Int32)
+  commentId: P:Luny.Engine.Bridge.LunyQuaternion.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: LunyQuaternion.this[int]
+  fullName: Luny.Engine.Bridge.LunyQuaternion.this[int]
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public float this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Default Property this[](index As Integer) As Single
+  overload: Luny.Engine.Bridge.LunyQuaternion.Item*
+  nameWithType.vb: LunyQuaternion.this[](Integer)
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Luny.Engine.Bridge.LunyQuaternion.Identity
+  commentId: P:Luny.Engine.Bridge.LunyQuaternion.Identity
+  id: Identity
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: LunyQuaternion.Identity
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Identity
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static LunyQuaternion Identity { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public Shared ReadOnly Property Identity As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.Identity*
+- uid: Luny.Engine.Bridge.LunyQuaternion.EulerAngles
+  commentId: P:Luny.Engine.Bridge.LunyQuaternion.EulerAngles
+  id: EulerAngles
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: EulerAngles
+  nameWithType: LunyQuaternion.EulerAngles
+  fullName: Luny.Engine.Bridge.LunyQuaternion.EulerAngles
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public LunyVector3 EulerAngles { get; set; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyVector3
+    content.vb: Public Property EulerAngles As LunyVector3
+  overload: Luny.Engine.Bridge.LunyQuaternion.EulerAngles*
+- uid: Luny.Engine.Bridge.LunyQuaternion.Normalized
+  commentId: P:Luny.Engine.Bridge.LunyQuaternion.Normalized
+  id: Normalized
+  parent: Luny.Engine.Bridge.LunyQuaternion
+  langs:
+  - csharp
+  - vb
+  name: Normalized
+  nameWithType: LunyQuaternion.Normalized
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Normalized
+  type: Property
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public LunyQuaternion Normalized { get; }
+    parameters: []
+    return:
+      type: Luny.Engine.Bridge.LunyQuaternion
+    content.vb: Public ReadOnly Property Normalized As LunyQuaternion
+  overload: Luny.Engine.Bridge.LunyQuaternion.Normalized*
+references:
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+- uid: Luny.Engine.Bridge.LunyQuaternion.#ctor*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.#ctor
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion__ctor_System_Single_System_Single_System_Single_System_Single_
+  name: LunyQuaternion
+  nameWithType: LunyQuaternion.LunyQuaternion
+  fullName: Luny.Engine.Bridge.LunyQuaternion.LunyQuaternion
+  nameWithType.vb: LunyQuaternion.New
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.New
+  name.vb: New
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Engine.Bridge.LunyQuaternion.Normalize*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Normalize
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Normalize
+  name: Normalize
+  nameWithType: LunyQuaternion.Normalize
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Normalize
+- uid: Luny.Engine.Bridge.LunyQuaternion.Set*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Set
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Set_System_Single_System_Single_System_Single_System_Single_
+  name: Set
+  nameWithType: LunyQuaternion.Set
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Set
+- uid: Luny.Engine.Bridge.LunyQuaternion.Dot*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Dot
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Dot_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_
+  name: Dot
+  nameWithType: LunyQuaternion.Dot
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Dot
+- uid: Luny.Engine.Bridge.LunyQuaternion
+  commentId: T:Luny.Engine.Bridge.LunyQuaternion
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html
+  name: LunyQuaternion
+  nameWithType: LunyQuaternion
+  fullName: Luny.Engine.Bridge.LunyQuaternion
+- uid: Luny.Engine.Bridge.LunyQuaternion.Slerp*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Slerp
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Slerp_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_System_Single_
+  name: Slerp
+  nameWithType: LunyQuaternion.Slerp
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Slerp
+- uid: Luny.Engine.Bridge.LunyQuaternion.SlerpUnclamped*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.SlerpUnclamped
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_SlerpUnclamped_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_System_Single_
+  name: SlerpUnclamped
+  nameWithType: LunyQuaternion.SlerpUnclamped
+  fullName: Luny.Engine.Bridge.LunyQuaternion.SlerpUnclamped
+- uid: Luny.Engine.Bridge.LunyQuaternion.Lerp*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Lerp
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Lerp_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_System_Single_
+  name: Lerp
+  nameWithType: LunyQuaternion.Lerp
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Lerp
+- uid: Luny.Engine.Bridge.LunyQuaternion.LerpUnclamped*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.LerpUnclamped
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_LerpUnclamped_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_System_Single_
+  name: LerpUnclamped
+  nameWithType: LunyQuaternion.LerpUnclamped
+  fullName: Luny.Engine.Bridge.LunyQuaternion.LerpUnclamped
+- uid: Luny.Engine.Bridge.LunyQuaternion.Inverse*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Inverse
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Inverse_Luny_Engine_Bridge_LunyQuaternion_
+  name: Inverse
+  nameWithType: LunyQuaternion.Inverse
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Inverse
+- uid: Luny.Engine.Bridge.LunyQuaternion.Conjugate*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Conjugate
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Conjugate_Luny_Engine_Bridge_LunyQuaternion_
+  name: Conjugate
+  nameWithType: LunyQuaternion.Conjugate
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Conjugate
+- uid: Luny.Engine.Bridge.LunyQuaternion.Angle*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Angle
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Angle_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_
+  name: Angle
+  nameWithType: LunyQuaternion.Angle
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Angle
+- uid: Luny.Engine.Bridge.LunyQuaternion.Euler*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Euler
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Euler_System_Single_System_Single_System_Single_
+  name: Euler
+  nameWithType: LunyQuaternion.Euler
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Euler
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Luny.Engine.Bridge.LunyVector3
+  commentId: T:Luny.Engine.Bridge.LunyVector3
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyVector3.html
+  name: LunyVector3
+  nameWithType: LunyVector3
+  fullName: Luny.Engine.Bridge.LunyVector3
+- uid: Luny.Engine.Bridge.LunyQuaternion.AngleAxis*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.AngleAxis
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_AngleAxis_System_Single_Luny_Engine_Bridge_LunyVector3_
+  name: AngleAxis
+  nameWithType: LunyQuaternion.AngleAxis
+  fullName: Luny.Engine.Bridge.LunyQuaternion.AngleAxis
+- uid: Luny.Engine.Bridge.LunyQuaternion.LookRotation*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.LookRotation
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_LookRotation_Luny_Engine_Bridge_LunyVector3_Luny_Engine_Bridge_LunyVector3_
+  name: LookRotation
+  nameWithType: LunyQuaternion.LookRotation
+  fullName: Luny.Engine.Bridge.LunyQuaternion.LookRotation
+- uid: Luny.Engine.Bridge.LunyQuaternion.RotateTowards*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.RotateTowards
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_RotateTowards_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_System_Single_
+  name: RotateTowards
+  nameWithType: LunyQuaternion.RotateTowards
+  fullName: Luny.Engine.Bridge.LunyQuaternion.RotateTowards
+- uid: Luny.Engine.Bridge.LunyQuaternion.op_Multiply*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.op_Multiply
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_op_Multiply_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyVector3_
+  name: operator *
+  nameWithType: LunyQuaternion.operator *
+  fullName: Luny.Engine.Bridge.LunyQuaternion.operator *
+  nameWithType.vb: LunyQuaternion.*
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyQuaternion.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_op_Multiply_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyVector3_
+- uid: Luny.Engine.Bridge.LunyQuaternion.op_Equality*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.op_Equality
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_op_Equality_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_
+  name: operator ==
+  nameWithType: LunyQuaternion.operator ==
+  fullName: Luny.Engine.Bridge.LunyQuaternion.operator ==
+  nameWithType.vb: LunyQuaternion.=
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyQuaternion.op_Equality*
+    name: ==
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_op_Equality_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Luny.Engine.Bridge.LunyQuaternion.op_Inequality*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.op_Inequality
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_op_Inequality_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_
+  name: operator !=
+  nameWithType: LunyQuaternion.operator !=
+  fullName: Luny.Engine.Bridge.LunyQuaternion.operator !=
+  nameWithType.vb: LunyQuaternion.<>
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyQuaternion.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_op_Inequality_Luny_Engine_Bridge_LunyQuaternion_Luny_Engine_Bridge_LunyQuaternion_
+- uid: Luny.Engine.Bridge.LunyQuaternion.Equals*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Equals
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Equals_Luny_Engine_Bridge_LunyQuaternion_
+  name: Equals
+  nameWithType: LunyQuaternion.Equals
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Equals
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Luny.Engine.Bridge.LunyQuaternion.GetHashCode*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.GetHashCode
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_GetHashCode
+  name: GetHashCode
+  nameWithType: LunyQuaternion.GetHashCode
+  fullName: Luny.Engine.Bridge.LunyQuaternion.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Luny.Engine.Bridge.LunyQuaternion.ToString*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.ToString
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_ToString
+  name: ToString
+  nameWithType: LunyQuaternion.ToString
+  fullName: Luny.Engine.Bridge.LunyQuaternion.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Engine.Bridge.LunyQuaternion.X*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.X
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_X
+  name: X
+  nameWithType: LunyQuaternion.X
+  fullName: Luny.Engine.Bridge.LunyQuaternion.X
+- uid: Luny.Engine.Bridge.LunyQuaternion.Y*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Y
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Y
+  name: Y
+  nameWithType: LunyQuaternion.Y
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Y
+- uid: Luny.Engine.Bridge.LunyQuaternion.Z*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Z
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Z
+  name: Z
+  nameWithType: LunyQuaternion.Z
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Z
+- uid: Luny.Engine.Bridge.LunyQuaternion.W*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.W
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_W
+  name: W
+  nameWithType: LunyQuaternion.W
+  fullName: Luny.Engine.Bridge.LunyQuaternion.W
+- uid: Luny.Engine.Bridge.LunyQuaternion.Item*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Item
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Item_System_Int32_
+  name: this
+  nameWithType: LunyQuaternion.this
+  fullName: Luny.Engine.Bridge.LunyQuaternion.this
+  nameWithType.vb: LunyQuaternion.this[]
+  fullName.vb: Luny.Engine.Bridge.LunyQuaternion.this[]
+  name.vb: this[]
+- uid: Luny.Engine.Bridge.LunyQuaternion.Identity*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Identity
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Identity
+  name: Identity
+  nameWithType: LunyQuaternion.Identity
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Identity
+- uid: Luny.Engine.Bridge.LunyQuaternion.EulerAngles*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.EulerAngles
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_EulerAngles
+  name: EulerAngles
+  nameWithType: LunyQuaternion.EulerAngles
+  fullName: Luny.Engine.Bridge.LunyQuaternion.EulerAngles
+- uid: Luny.Engine.Bridge.LunyQuaternion.Normalized*
+  commentId: Overload:Luny.Engine.Bridge.LunyQuaternion.Normalized
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyQuaternion.html#Luny_Engine_Bridge_LunyQuaternion_Normalized
+  name: Normalized
+  nameWithType: LunyQuaternion.Normalized
+  fullName: Luny.Engine.Bridge.LunyQuaternion.Normalized

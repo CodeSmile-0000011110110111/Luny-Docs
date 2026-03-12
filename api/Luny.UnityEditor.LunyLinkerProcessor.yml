@@ -1,0 +1,402 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.UnityEditor.LunyLinkerProcessor
+  commentId: T:Luny.UnityEditor.LunyLinkerProcessor
+  id: LunyLinkerProcessor
+  parent: Luny.UnityEditor
+  children:
+  - Luny.UnityEditor.LunyLinkerProcessor.#ctor
+  - Luny.UnityEditor.LunyLinkerProcessor.GenerateAdditionalLinkXmlFile(UnityEditor.Build.Reporting.BuildReport,UnityEditor.UnityLinker.UnityLinkerBuildPipelineData)
+  - Luny.UnityEditor.LunyLinkerProcessor.GetAssemblyName
+  - Luny.UnityEditor.LunyLinkerProcessor.GetPreserveDetails
+  - Luny.UnityEditor.LunyLinkerProcessor.PreserveAllDerivedClasses``1
+  - Luny.UnityEditor.LunyLinkerProcessor.callbackOrder
+  langs:
+  - csharp
+  - vb
+  name: LunyLinkerProcessor
+  nameWithType: LunyLinkerProcessor
+  fullName: Luny.UnityEditor.LunyLinkerProcessor
+  type: Class
+  assemblies:
+  - Luny.UnityEditor
+  namespace: Luny.UnityEditor
+  syntax:
+    content: public abstract class LunyLinkerProcessor
+    content.vb: Public MustInherit Class LunyLinkerProcessor
+  inheritance:
+  - System.Object
+- uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveAllDerivedClasses``1
+  commentId: M:Luny.UnityEditor.LunyLinkerProcessor.PreserveAllDerivedClasses``1
+  id: PreserveAllDerivedClasses``1
+  parent: Luny.UnityEditor.LunyLinkerProcessor
+  langs:
+  - csharp
+  - vb
+  name: PreserveAllDerivedClasses<T>()
+  nameWithType: LunyLinkerProcessor.PreserveAllDerivedClasses<T>()
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.PreserveAllDerivedClasses<T>()
+  type: Method
+  assemblies:
+  - Luny.UnityEditor
+  namespace: Luny.UnityEditor
+  syntax:
+    content: protected static List<LunyLinkerProcessor.PreserveDetails> PreserveAllDerivedClasses<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.List{Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails}
+    content.vb: Protected Shared Function PreserveAllDerivedClasses(Of T)() As List(Of LunyLinkerProcessor.PreserveDetails)
+  overload: Luny.UnityEditor.LunyLinkerProcessor.PreserveAllDerivedClasses*
+  nameWithType.vb: LunyLinkerProcessor.PreserveAllDerivedClasses(Of T)()
+  fullName.vb: Luny.UnityEditor.LunyLinkerProcessor.PreserveAllDerivedClasses(Of T)()
+  name.vb: PreserveAllDerivedClasses(Of T)()
+- uid: Luny.UnityEditor.LunyLinkerProcessor.GenerateAdditionalLinkXmlFile(UnityEditor.Build.Reporting.BuildReport,UnityEditor.UnityLinker.UnityLinkerBuildPipelineData)
+  commentId: M:Luny.UnityEditor.LunyLinkerProcessor.GenerateAdditionalLinkXmlFile(UnityEditor.Build.Reporting.BuildReport,UnityEditor.UnityLinker.UnityLinkerBuildPipelineData)
+  id: GenerateAdditionalLinkXmlFile(UnityEditor.Build.Reporting.BuildReport,UnityEditor.UnityLinker.UnityLinkerBuildPipelineData)
+  parent: Luny.UnityEditor.LunyLinkerProcessor
+  langs:
+  - csharp
+  - vb
+  name: GenerateAdditionalLinkXmlFile(BuildReport, UnityLinkerBuildPipelineData)
+  nameWithType: LunyLinkerProcessor.GenerateAdditionalLinkXmlFile(BuildReport, UnityLinkerBuildPipelineData)
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.GenerateAdditionalLinkXmlFile(UnityEditor.Build.Reporting.BuildReport, UnityEditor.UnityLinker.UnityLinkerBuildPipelineData)
+  type: Method
+  assemblies:
+  - Luny.UnityEditor
+  namespace: Luny.UnityEditor
+  syntax:
+    content: public string GenerateAdditionalLinkXmlFile(BuildReport report, UnityLinkerBuildPipelineData data)
+    parameters:
+    - id: report
+      type: UnityEditor.Build.Reporting.BuildReport
+    - id: data
+      type: UnityEditor.UnityLinker.UnityLinkerBuildPipelineData
+    return:
+      type: System.String
+    content.vb: Public Function GenerateAdditionalLinkXmlFile(report As BuildReport, data As UnityLinkerBuildPipelineData) As String
+  overload: Luny.UnityEditor.LunyLinkerProcessor.GenerateAdditionalLinkXmlFile*
+- uid: Luny.UnityEditor.LunyLinkerProcessor.GetPreserveDetails
+  commentId: M:Luny.UnityEditor.LunyLinkerProcessor.GetPreserveDetails
+  id: GetPreserveDetails
+  parent: Luny.UnityEditor.LunyLinkerProcessor
+  langs:
+  - csharp
+  - vb
+  name: GetPreserveDetails()
+  nameWithType: LunyLinkerProcessor.GetPreserveDetails()
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.GetPreserveDetails()
+  type: Method
+  assemblies:
+  - Luny.UnityEditor
+  namespace: Luny.UnityEditor
+  syntax:
+    content: public abstract LunyLinkerProcessor.PreserveDetails[] GetPreserveDetails()
+    return:
+      type: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails[]
+    content.vb: Public MustOverride Function GetPreserveDetails() As LunyLinkerProcessor.PreserveDetails()
+  overload: Luny.UnityEditor.LunyLinkerProcessor.GetPreserveDetails*
+- uid: Luny.UnityEditor.LunyLinkerProcessor.GetAssemblyName
+  commentId: M:Luny.UnityEditor.LunyLinkerProcessor.GetAssemblyName
+  id: GetAssemblyName
+  parent: Luny.UnityEditor.LunyLinkerProcessor
+  langs:
+  - csharp
+  - vb
+  name: GetAssemblyName()
+  nameWithType: LunyLinkerProcessor.GetAssemblyName()
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.GetAssemblyName()
+  type: Method
+  assemblies:
+  - Luny.UnityEditor
+  namespace: Luny.UnityEditor
+  syntax:
+    content: public abstract string GetAssemblyName()
+    return:
+      type: System.String
+    content.vb: Public MustOverride Function GetAssemblyName() As String
+  overload: Luny.UnityEditor.LunyLinkerProcessor.GetAssemblyName*
+- uid: Luny.UnityEditor.LunyLinkerProcessor.#ctor
+  commentId: M:Luny.UnityEditor.LunyLinkerProcessor.#ctor
+  id: '#ctor'
+  parent: Luny.UnityEditor.LunyLinkerProcessor
+  langs:
+  - csharp
+  - vb
+  name: LunyLinkerProcessor()
+  nameWithType: LunyLinkerProcessor.LunyLinkerProcessor()
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.LunyLinkerProcessor()
+  type: Constructor
+  assemblies:
+  - Luny.UnityEditor
+  namespace: Luny.UnityEditor
+  syntax:
+    content: protected LunyLinkerProcessor()
+    content.vb: Protected Sub New()
+  overload: Luny.UnityEditor.LunyLinkerProcessor.#ctor*
+  nameWithType.vb: LunyLinkerProcessor.New()
+  fullName.vb: Luny.UnityEditor.LunyLinkerProcessor.New()
+  name.vb: New()
+- uid: Luny.UnityEditor.LunyLinkerProcessor.callbackOrder
+  commentId: P:Luny.UnityEditor.LunyLinkerProcessor.callbackOrder
+  id: callbackOrder
+  parent: Luny.UnityEditor.LunyLinkerProcessor
+  langs:
+  - csharp
+  - vb
+  name: callbackOrder
+  nameWithType: LunyLinkerProcessor.callbackOrder
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.callbackOrder
+  type: Property
+  assemblies:
+  - Luny.UnityEditor
+  namespace: Luny.UnityEditor
+  syntax:
+    content: public int callbackOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property callbackOrder As Integer
+  overload: Luny.UnityEditor.LunyLinkerProcessor.callbackOrder*
+references:
+- uid: Luny.UnityEditor
+  commentId: N:Luny.UnityEditor
+  isExternal: true
+  href: Luny.html
+  name: Luny.UnityEditor
+  nameWithType: Luny.UnityEditor
+  fullName: Luny.UnityEditor
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.UnityEditor
+    name: UnityEditor
+    isExternal: true
+    href: Luny.UnityEditor.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.UnityEditor
+    name: UnityEditor
+    isExternal: true
+    href: Luny.UnityEditor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveAllDerivedClasses*
+  commentId: Overload:Luny.UnityEditor.LunyLinkerProcessor.PreserveAllDerivedClasses
+  isExternal: true
+  href: Luny.UnityEditor.LunyLinkerProcessor.html#Luny_UnityEditor_LunyLinkerProcessor_PreserveAllDerivedClasses__1
+  name: PreserveAllDerivedClasses
+  nameWithType: LunyLinkerProcessor.PreserveAllDerivedClasses
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.PreserveAllDerivedClasses
+- uid: System.Collections.Generic.List{Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails}
+  commentId: T:System.Collections.Generic.List{Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: Luny.UnityEditor.LunyLinkerProcessor.html
+  name: List<LunyLinkerProcessor.PreserveDetails>
+  nameWithType: List<LunyLinkerProcessor.PreserveDetails>
+  fullName: System.Collections.Generic.List<Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails>
+  nameWithType.vb: List(Of LunyLinkerProcessor.PreserveDetails)
+  fullName.vb: System.Collections.Generic.List(Of Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails)
+  name.vb: List(Of LunyLinkerProcessor.PreserveDetails)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Luny.UnityEditor.LunyLinkerProcessor
+    name: LunyLinkerProcessor
+    isExternal: true
+    href: Luny.UnityEditor.LunyLinkerProcessor.html
+  - name: .
+  - uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+    name: PreserveDetails
+    isExternal: true
+    href: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.UnityEditor.LunyLinkerProcessor
+    name: LunyLinkerProcessor
+    isExternal: true
+    href: Luny.UnityEditor.LunyLinkerProcessor.html
+  - name: .
+  - uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+    name: PreserveDetails
+    isExternal: true
+    href: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Luny.UnityEditor.LunyLinkerProcessor.GenerateAdditionalLinkXmlFile*
+  commentId: Overload:Luny.UnityEditor.LunyLinkerProcessor.GenerateAdditionalLinkXmlFile
+  isExternal: true
+  href: Luny.UnityEditor.LunyLinkerProcessor.html#Luny_UnityEditor_LunyLinkerProcessor_GenerateAdditionalLinkXmlFile_UnityEditor_Build_Reporting_BuildReport_UnityEditor_UnityLinker_UnityLinkerBuildPipelineData_
+  name: GenerateAdditionalLinkXmlFile
+  nameWithType: LunyLinkerProcessor.GenerateAdditionalLinkXmlFile
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.GenerateAdditionalLinkXmlFile
+- uid: UnityEditor.Build.Reporting.BuildReport
+  commentId: '!:UnityEditor.Build.Reporting.BuildReport'
+  isExternal: true
+  name: BuildReport
+  nameWithType: BuildReport
+  fullName: UnityEditor.Build.Reporting.BuildReport
+- uid: UnityEditor.UnityLinker.UnityLinkerBuildPipelineData
+  commentId: '!:UnityEditor.UnityLinker.UnityLinkerBuildPipelineData'
+  isExternal: true
+  name: UnityLinkerBuildPipelineData
+  nameWithType: UnityLinkerBuildPipelineData
+  fullName: UnityEditor.UnityLinker.UnityLinkerBuildPipelineData
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.UnityEditor.LunyLinkerProcessor.GetPreserveDetails*
+  commentId: Overload:Luny.UnityEditor.LunyLinkerProcessor.GetPreserveDetails
+  isExternal: true
+  href: Luny.UnityEditor.LunyLinkerProcessor.html#Luny_UnityEditor_LunyLinkerProcessor_GetPreserveDetails
+  name: GetPreserveDetails
+  nameWithType: LunyLinkerProcessor.GetPreserveDetails
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.GetPreserveDetails
+- uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails[]
+  isExternal: true
+  href: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.html
+  name: PreserveDetails[]
+  nameWithType: LunyLinkerProcessor.PreserveDetails[]
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails[]
+  nameWithType.vb: LunyLinkerProcessor.PreserveDetails()
+  fullName.vb: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails()
+  name.vb: PreserveDetails()
+  spec.csharp:
+  - uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+    name: PreserveDetails
+    isExternal: true
+    href: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails
+    name: PreserveDetails
+    isExternal: true
+    href: Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.html
+  - name: (
+  - name: )
+- uid: Luny.UnityEditor.LunyLinkerProcessor.GetAssemblyName*
+  commentId: Overload:Luny.UnityEditor.LunyLinkerProcessor.GetAssemblyName
+  isExternal: true
+  href: Luny.UnityEditor.LunyLinkerProcessor.html#Luny_UnityEditor_LunyLinkerProcessor_GetAssemblyName
+  name: GetAssemblyName
+  nameWithType: LunyLinkerProcessor.GetAssemblyName
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.GetAssemblyName
+- uid: Luny.UnityEditor.LunyLinkerProcessor.#ctor*
+  commentId: Overload:Luny.UnityEditor.LunyLinkerProcessor.#ctor
+  isExternal: true
+  href: Luny.UnityEditor.LunyLinkerProcessor.html#Luny_UnityEditor_LunyLinkerProcessor__ctor
+  name: LunyLinkerProcessor
+  nameWithType: LunyLinkerProcessor.LunyLinkerProcessor
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.LunyLinkerProcessor
+  nameWithType.vb: LunyLinkerProcessor.New
+  fullName.vb: Luny.UnityEditor.LunyLinkerProcessor.New
+  name.vb: New
+- uid: Luny.UnityEditor.LunyLinkerProcessor.callbackOrder*
+  commentId: Overload:Luny.UnityEditor.LunyLinkerProcessor.callbackOrder
+  isExternal: true
+  href: Luny.UnityEditor.LunyLinkerProcessor.html#Luny_UnityEditor_LunyLinkerProcessor_callbackOrder
+  name: callbackOrder
+  nameWithType: LunyLinkerProcessor.callbackOrder
+  fullName: Luny.UnityEditor.LunyLinkerProcessor.callbackOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

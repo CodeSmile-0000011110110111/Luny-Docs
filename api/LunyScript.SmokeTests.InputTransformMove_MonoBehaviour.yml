@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour
+  commentId: T:LunyScript.SmokeTests.InputTransformMove_MonoBehaviour
+  id: InputTransformMove_MonoBehaviour
+  parent: LunyScript.SmokeTests
+  children:
+  - LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.#ctor
+  langs:
+  - csharp
+  - vb
+  name: InputTransformMove_MonoBehaviour
+  nameWithType: InputTransformMove_MonoBehaviour
+  fullName: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour
+  type: Class
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: 'public class InputTransformMove_MonoBehaviour : MonoBehaviour'
+    content.vb: Public Class InputTransformMove_MonoBehaviour Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.#ctor
+  commentId: M:LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.#ctor
+  id: '#ctor'
+  parent: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour
+  langs:
+  - csharp
+  - vb
+  name: InputTransformMove_MonoBehaviour()
+  nameWithType: InputTransformMove_MonoBehaviour.InputTransformMove_MonoBehaviour()
+  fullName: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.InputTransformMove_MonoBehaviour()
+  type: Constructor
+  assemblies:
+  - LunyScript.Unity.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public InputTransformMove_MonoBehaviour()
+    content.vb: Public Sub New()
+  overload: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.#ctor*
+  nameWithType.vb: InputTransformMove_MonoBehaviour.New()
+  fullName.vb: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.New()
+  name.vb: New()
+references:
+- uid: LunyScript.SmokeTests
+  commentId: N:LunyScript.SmokeTests
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.SmokeTests
+  nameWithType: LunyScript.SmokeTests
+  fullName: LunyScript.SmokeTests
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.#ctor*
+  commentId: Overload:LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.#ctor
+  isExternal: true
+  href: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.html#LunyScript_SmokeTests_InputTransformMove_MonoBehaviour__ctor
+  name: InputTransformMove_MonoBehaviour
+  nameWithType: InputTransformMove_MonoBehaviour.InputTransformMove_MonoBehaviour
+  fullName: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.InputTransformMove_MonoBehaviour
+  nameWithType.vb: InputTransformMove_MonoBehaviour.New
+  fullName.vb: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour.New
+  name.vb: New

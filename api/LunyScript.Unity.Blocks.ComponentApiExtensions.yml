@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Unity.Blocks.ComponentApiExtensions
+  commentId: T:LunyScript.Unity.Blocks.ComponentApiExtensions
+  id: ComponentApiExtensions
+  parent: LunyScript.Unity.Blocks
+  children:
+  - LunyScript.Unity.Blocks.ComponentApiExtensions.Disable(LunyScript.Api.ComponentApi,System.Type)
+  - LunyScript.Unity.Blocks.ComponentApiExtensions.Enable(LunyScript.Api.ComponentApi,System.Type)
+  langs:
+  - csharp
+  - vb
+  name: ComponentApiExtensions
+  nameWithType: ComponentApiExtensions
+  fullName: LunyScript.Unity.Blocks.ComponentApiExtensions
+  type: Class
+  assemblies:
+  - LunyScript.Unity
+  namespace: LunyScript.Unity.Blocks
+  syntax:
+    content: public static class ComponentApiExtensions
+    content.vb: Public Module ComponentApiExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.Unity.Blocks.ComponentApiExtensions.Enable(LunyScript.Api.ComponentApi,System.Type)
+  commentId: M:LunyScript.Unity.Blocks.ComponentApiExtensions.Enable(LunyScript.Api.ComponentApi,System.Type)
+  id: Enable(LunyScript.Api.ComponentApi,System.Type)
+  isExtensionMethod: true
+  parent: LunyScript.Unity.Blocks.ComponentApiExtensions
+  langs:
+  - csharp
+  - vb
+  name: Enable(ComponentApi, Type)
+  nameWithType: ComponentApiExtensions.Enable(ComponentApi, Type)
+  fullName: LunyScript.Unity.Blocks.ComponentApiExtensions.Enable(LunyScript.Api.ComponentApi, System.Type)
+  type: Method
+  assemblies:
+  - LunyScript.Unity
+  namespace: LunyScript.Unity.Blocks
+  syntax:
+    content: public static ScriptActionBlock Enable(this ComponentApi api, Type componentType)
+    parameters:
+    - id: api
+      type: LunyScript.Api.ComponentApi
+    - id: componentType
+      type: System.Type
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Shared Function Enable(api As ComponentApi, componentType As Type) As ScriptActionBlock
+  overload: LunyScript.Unity.Blocks.ComponentApiExtensions.Enable*
+- uid: LunyScript.Unity.Blocks.ComponentApiExtensions.Disable(LunyScript.Api.ComponentApi,System.Type)
+  commentId: M:LunyScript.Unity.Blocks.ComponentApiExtensions.Disable(LunyScript.Api.ComponentApi,System.Type)
+  id: Disable(LunyScript.Api.ComponentApi,System.Type)
+  isExtensionMethod: true
+  parent: LunyScript.Unity.Blocks.ComponentApiExtensions
+  langs:
+  - csharp
+  - vb
+  name: Disable(ComponentApi, Type)
+  nameWithType: ComponentApiExtensions.Disable(ComponentApi, Type)
+  fullName: LunyScript.Unity.Blocks.ComponentApiExtensions.Disable(LunyScript.Api.ComponentApi, System.Type)
+  type: Method
+  assemblies:
+  - LunyScript.Unity
+  namespace: LunyScript.Unity.Blocks
+  syntax:
+    content: public static ScriptActionBlock Disable(this ComponentApi api, Type componentType)
+    parameters:
+    - id: api
+      type: LunyScript.Api.ComponentApi
+    - id: componentType
+      type: System.Type
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Shared Function Disable(api As ComponentApi, componentType As Type) As ScriptActionBlock
+  overload: LunyScript.Unity.Blocks.ComponentApiExtensions.Disable*
+references:
+- uid: LunyScript.Unity.Blocks
+  commentId: N:LunyScript.Unity.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Unity.Blocks
+  nameWithType: LunyScript.Unity.Blocks
+  fullName: LunyScript.Unity.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Unity
+    name: Unity
+    isExternal: true
+    href: LunyScript.Unity.html
+  - name: .
+  - uid: LunyScript.Unity.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Unity.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Unity
+    name: Unity
+    isExternal: true
+    href: LunyScript.Unity.html
+  - name: .
+  - uid: LunyScript.Unity.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Unity.Blocks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Unity.Blocks.ComponentApiExtensions.Enable*
+  commentId: Overload:LunyScript.Unity.Blocks.ComponentApiExtensions.Enable
+  isExternal: true
+  href: LunyScript.Unity.Blocks.ComponentApiExtensions.html#LunyScript_Unity_Blocks_ComponentApiExtensions_Enable_LunyScript_Api_ComponentApi_System_Type_
+  name: Enable
+  nameWithType: ComponentApiExtensions.Enable
+  fullName: LunyScript.Unity.Blocks.ComponentApiExtensions.Enable
+- uid: LunyScript.Api.ComponentApi
+  commentId: T:LunyScript.Api.ComponentApi
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ComponentApi.html
+  name: ComponentApi
+  nameWithType: ComponentApi
+  fullName: LunyScript.Api.ComponentApi
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.Unity.Blocks.ComponentApiExtensions.Disable*
+  commentId: Overload:LunyScript.Unity.Blocks.ComponentApiExtensions.Disable
+  isExternal: true
+  href: LunyScript.Unity.Blocks.ComponentApiExtensions.html#LunyScript_Unity_Blocks_ComponentApiExtensions_Disable_LunyScript_Api_ComponentApi_System_Type_
+  name: Disable
+  nameWithType: ComponentApiExtensions.Disable
+  fullName: LunyScript.Unity.Blocks.ComponentApiExtensions.Disable

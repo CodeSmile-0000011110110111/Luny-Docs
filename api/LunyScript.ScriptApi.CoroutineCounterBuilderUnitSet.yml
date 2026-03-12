@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet
+  commentId: T:LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet
+  id: CoroutineCounterBuilderUnitSet
+  parent: LunyScript.ScriptApi
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CoroutineCounterBuilderUnitSet
+  nameWithType: CoroutineCounterBuilderUnitSet
+  fullName: LunyScript.ScriptApi.CoroutineCounterBuilderUnitSet
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: 'public struct CoroutineCounterBuilderUnitSet : ICoroutineCounterBuilderUnitSet, ICoroutineCounterWhen, ICoroutineCounterBuilderState'
+    content.vb: Public Structure CoroutineCounterBuilderUnitSet Implements ICoroutineCounterBuilderUnitSet, ICoroutineCounterWhen, ICoroutineCounterBuilderState
+  implements:
+  - LunyScript.ScriptApi.ICoroutineCounterBuilderUnitSet
+  - LunyScript.ScriptApi.ICoroutineCounterWhen
+  - LunyScript.ScriptApi.ICoroutineCounterBuilderState
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.ICoroutineCounterBuilderUnitSet
+  commentId: T:LunyScript.ScriptApi.ICoroutineCounterBuilderUnitSet
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ICoroutineCounterBuilderUnitSet.html
+  name: ICoroutineCounterBuilderUnitSet
+  nameWithType: ICoroutineCounterBuilderUnitSet
+  fullName: LunyScript.ScriptApi.ICoroutineCounterBuilderUnitSet
+- uid: LunyScript.ScriptApi.ICoroutineCounterWhen
+  commentId: T:LunyScript.ScriptApi.ICoroutineCounterWhen
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ICoroutineCounterWhen.html
+  name: ICoroutineCounterWhen
+  nameWithType: ICoroutineCounterWhen
+  fullName: LunyScript.ScriptApi.ICoroutineCounterWhen
+- uid: LunyScript.ScriptApi.ICoroutineCounterBuilderState
+  commentId: T:LunyScript.ScriptApi.ICoroutineCounterBuilderState
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.ICoroutineCounterBuilderState.html
+  name: ICoroutineCounterBuilderState
+  nameWithType: ICoroutineCounterBuilderState
+  fullName: LunyScript.ScriptApi.ICoroutineCounterBuilderState

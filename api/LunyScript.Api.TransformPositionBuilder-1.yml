@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.TransformPositionBuilder`1
+  commentId: T:LunyScript.Api.TransformPositionBuilder`1
+  id: TransformPositionBuilder`1
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.TransformPositionBuilder`1.op_Implicit(LunyScript.Api.TransformPositionBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  langs:
+  - csharp
+  - vb
+  name: TransformPositionBuilder<T>
+  nameWithType: TransformPositionBuilder<T>
+  fullName: LunyScript.Api.TransformPositionBuilder<T>
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Fluent builder for Move-Towards blocks.
+
+    Usage: Transform.MoveTowards(target).Speed(3).Responsiveness(2).LockY()
+           Transform.MoveTowards(target).Speed(3).Lerp()
+           Transform.MoveTowards(target).Speed(3).Slerp()
+  example: []
+  syntax:
+    content: 'public readonly struct TransformPositionBuilder<T> where T : struct, ITransformBuilderState'
+    typeParameters:
+    - id: T
+    content.vb: Public Structure TransformPositionBuilder(Of T As {Structure, ITransformBuilderState})
+  nameWithType.vb: TransformPositionBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformPositionBuilder(Of T)
+  name.vb: TransformPositionBuilder(Of T)
+- uid: LunyScript.Api.TransformPositionBuilder`1.op_Implicit(LunyScript.Api.TransformPositionBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  commentId: M:LunyScript.Api.TransformPositionBuilder`1.op_Implicit(LunyScript.Api.TransformPositionBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  id: op_Implicit(LunyScript.Api.TransformPositionBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Api.TransformPositionBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ScriptActionBlock(TransformPositionBuilder<T>)
+  nameWithType: TransformPositionBuilder<T>.implicit operator ScriptActionBlock(TransformPositionBuilder<T>)
+  fullName: LunyScript.Api.TransformPositionBuilder<T>.implicit operator LunyScript.Blocks.ScriptActionBlock(LunyScript.Api.TransformPositionBuilder<T>)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static implicit operator ScriptActionBlock(TransformPositionBuilder<T> b)
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformPositionBuilder`1
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Shared Widening Operator CType(b As TransformPositionBuilder(Of T)) As ScriptActionBlock
+  overload: LunyScript.Api.TransformPositionBuilder`1.op_Implicit*
+  nameWithType.vb: TransformPositionBuilder(Of T).CType(TransformPositionBuilder(Of T))
+  fullName.vb: LunyScript.Api.TransformPositionBuilder(Of T).CType(LunyScript.Api.TransformPositionBuilder(Of T))
+  name.vb: CType(TransformPositionBuilder(Of T))
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Api.TransformPositionBuilder`1.op_Implicit*
+  commentId: Overload:LunyScript.Api.TransformPositionBuilder`1.op_Implicit
+  name: implicit operator
+  nameWithType: TransformPositionBuilder<T>.implicit operator
+  fullName: LunyScript.Api.TransformPositionBuilder<T>.implicit operator
+  nameWithType.vb: TransformPositionBuilder(Of T).CType
+  fullName.vb: LunyScript.Api.TransformPositionBuilder(Of T).CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: LunyScript.Api.TransformPositionBuilder`1
+  commentId: T:LunyScript.Api.TransformPositionBuilder`1
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TransformPositionBuilder-1.html
+  name: TransformPositionBuilder<T>
+  nameWithType: TransformPositionBuilder<T>
+  fullName: LunyScript.Api.TransformPositionBuilder<T>
+  nameWithType.vb: TransformPositionBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformPositionBuilder(Of T)
+  name.vb: TransformPositionBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformPositionBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformPositionBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html

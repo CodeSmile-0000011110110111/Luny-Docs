@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.Bridge.LunyTriggerEvent
+  commentId: T:Luny.Engine.Bridge.LunyTriggerEvent
+  id: LunyTriggerEvent
+  parent: Luny.Engine.Bridge
+  children:
+  - Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerEntered
+  - Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerExited
+  - Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
+  langs:
+  - csharp
+  - vb
+  name: LunyTriggerEvent
+  nameWithType: LunyTriggerEvent
+  fullName: Luny.Engine.Bridge.LunyTriggerEvent
+  type: Enum
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public enum LunyTriggerEvent
+    content.vb: Public Enum LunyTriggerEvent
+- uid: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerEntered
+  commentId: F:Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerEntered
+  id: OnTriggerEntered
+  parent: Luny.Engine.Bridge.LunyTriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: OnTriggerEntered
+  nameWithType: LunyTriggerEvent.OnTriggerEntered
+  fullName: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerEntered
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: OnTriggerEntered = 0
+    return:
+      type: Luny.Engine.Bridge.LunyTriggerEvent
+- uid: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerExited
+  commentId: F:Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerExited
+  id: OnTriggerExited
+  parent: Luny.Engine.Bridge.LunyTriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: OnTriggerExited
+  nameWithType: LunyTriggerEvent.OnTriggerExited
+  fullName: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerExited
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: OnTriggerExited = 1
+    return:
+      type: Luny.Engine.Bridge.LunyTriggerEvent
+- uid: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
+  commentId: F:Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
+  id: OnTriggerUpdate
+  parent: Luny.Engine.Bridge.LunyTriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: OnTriggerUpdate
+  nameWithType: LunyTriggerEvent.OnTriggerUpdate
+  fullName: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: OnTriggerUpdate = 2
+    return:
+      type: Luny.Engine.Bridge.LunyTriggerEvent
+references:
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+- uid: Luny.Engine.Bridge.LunyTriggerEvent
+  commentId: T:Luny.Engine.Bridge.LunyTriggerEvent
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyTriggerEvent.html
+  name: LunyTriggerEvent
+  nameWithType: LunyTriggerEvent
+  fullName: Luny.Engine.Bridge.LunyTriggerEvent

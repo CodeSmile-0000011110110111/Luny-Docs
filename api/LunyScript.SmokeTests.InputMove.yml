@@ -1,0 +1,32 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.InputMove
+  commentId: N:LunyScript.SmokeTests.InputMove
+  id: LunyScript.SmokeTests.InputMove
+  children:
+  - LunyScript.SmokeTests.InputMove.InputTransformMove_LunyScript
+  - LunyScript.SmokeTests.InputMove.InputTransformShift_LunyScript
+  langs:
+  - csharp
+  - vb
+  name: LunyScript.SmokeTests.InputMove
+  nameWithType: LunyScript.SmokeTests.InputMove
+  fullName: LunyScript.SmokeTests.InputMove
+  type: Namespace
+  assemblies:
+  - LunyScript.SmokeTests
+references:
+- uid: LunyScript.SmokeTests.InputMove.InputTransformMove_LunyScript
+  commentId: T:LunyScript.SmokeTests.InputMove.InputTransformMove_LunyScript
+  isExternal: true
+  href: LunyScript.SmokeTests.InputMove.InputTransformMove_LunyScript.html
+  name: InputTransformMove_LunyScript
+  nameWithType: InputTransformMove_LunyScript
+  fullName: LunyScript.SmokeTests.InputMove.InputTransformMove_LunyScript
+- uid: LunyScript.SmokeTests.InputMove.InputTransformShift_LunyScript
+  commentId: T:LunyScript.SmokeTests.InputMove.InputTransformShift_LunyScript
+  isExternal: true
+  href: LunyScript.SmokeTests.InputMove.InputTransformShift_LunyScript.html
+  name: InputTransformShift_LunyScript
+  nameWithType: InputTransformShift_LunyScript
+  fullName: LunyScript.SmokeTests.InputMove.InputTransformShift_LunyScript

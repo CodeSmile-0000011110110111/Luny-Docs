@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.WhenGlobalEventBuilder
+  commentId: T:LunyScript.Api.WhenGlobalEventBuilder
+  id: WhenGlobalEventBuilder
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.WhenGlobalEventBuilder.Input
+  - LunyScript.Api.WhenGlobalEventBuilder.Scene
+  langs:
+  - csharp
+  - vb
+  name: WhenGlobalEventBuilder
+  nameWithType: WhenGlobalEventBuilder
+  fullName: LunyScript.Api.WhenGlobalEventBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: 'Handles external events: Scene, Input, Collision, Messages.'
+  example: []
+  syntax:
+    content: public readonly struct WhenGlobalEventBuilder
+    content.vb: Public Structure WhenGlobalEventBuilder
+- uid: LunyScript.Api.WhenGlobalEventBuilder.Input
+  commentId: P:LunyScript.Api.WhenGlobalEventBuilder.Input
+  id: Input
+  parent: LunyScript.Api.WhenGlobalEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Input
+  nameWithType: WhenGlobalEventBuilder.Input
+  fullName: LunyScript.Api.WhenGlobalEventBuilder.Input
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public WhenInputEventBuilder Input { get; }
+    parameters: []
+    return:
+      type: LunyScript.Api.WhenInputEventBuilder
+    content.vb: Public ReadOnly Property Input As WhenInputEventBuilder
+  overload: LunyScript.Api.WhenGlobalEventBuilder.Input*
+- uid: LunyScript.Api.WhenGlobalEventBuilder.Scene
+  commentId: P:LunyScript.Api.WhenGlobalEventBuilder.Scene
+  id: Scene
+  parent: LunyScript.Api.WhenGlobalEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: Scene
+  nameWithType: WhenGlobalEventBuilder.Scene
+  fullName: LunyScript.Api.WhenGlobalEventBuilder.Scene
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public WhenSceneEventBuilder Scene { get; }
+    parameters: []
+    return:
+      type: LunyScript.Api.WhenSceneEventBuilder
+    content.vb: Public ReadOnly Property Scene As WhenSceneEventBuilder
+  overload: LunyScript.Api.WhenGlobalEventBuilder.Scene*
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Api.WhenGlobalEventBuilder.Input*
+  commentId: Overload:LunyScript.Api.WhenGlobalEventBuilder.Input
+  isExternal: true
+  href: LunyScript.Api.WhenGlobalEventBuilder.html#LunyScript_Api_WhenGlobalEventBuilder_Input
+  name: Input
+  nameWithType: WhenGlobalEventBuilder.Input
+  fullName: LunyScript.Api.WhenGlobalEventBuilder.Input
+- uid: LunyScript.Api.WhenInputEventBuilder
+  commentId: T:LunyScript.Api.WhenInputEventBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.WhenInputEventBuilder.html
+  name: WhenInputEventBuilder
+  nameWithType: WhenInputEventBuilder
+  fullName: LunyScript.Api.WhenInputEventBuilder
+- uid: LunyScript.Api.WhenGlobalEventBuilder.Scene*
+  commentId: Overload:LunyScript.Api.WhenGlobalEventBuilder.Scene
+  isExternal: true
+  href: LunyScript.Api.WhenGlobalEventBuilder.html#LunyScript_Api_WhenGlobalEventBuilder_Scene
+  name: Scene
+  nameWithType: WhenGlobalEventBuilder.Scene
+  fullName: LunyScript.Api.WhenGlobalEventBuilder.Scene
+- uid: LunyScript.Api.WhenSceneEventBuilder
+  commentId: T:LunyScript.Api.WhenSceneEventBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.WhenSceneEventBuilder.html
+  name: WhenSceneEventBuilder
+  nameWithType: WhenSceneEventBuilder
+  fullName: LunyScript.Api.WhenSceneEventBuilder

@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptSettings
+  commentId: T:LunyScript.ScriptSettings
+  id: ScriptSettings
+  parent: LunyScript
+  children:
+  - LunyScript.ScriptSettings.#ctor
+  langs:
+  - csharp
+  - vb
+  name: ScriptSettings
+  nameWithType: ScriptSettings
+  fullName: LunyScript.ScriptSettings
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public sealed class ScriptSettings
+    content.vb: Public NotInheritable Class ScriptSettings
+  inheritance:
+  - System.Object
+- uid: LunyScript.ScriptSettings.#ctor
+  commentId: M:LunyScript.ScriptSettings.#ctor
+  id: '#ctor'
+  parent: LunyScript.ScriptSettings
+  langs:
+  - csharp
+  - vb
+  name: ScriptSettings()
+  nameWithType: ScriptSettings.ScriptSettings()
+  fullName: LunyScript.ScriptSettings.ScriptSettings()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptSettings()
+    content.vb: Public Sub New()
+  overload: LunyScript.ScriptSettings.#ctor*
+  nameWithType.vb: ScriptSettings.New()
+  fullName.vb: LunyScript.ScriptSettings.New()
+  name.vb: New()
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptSettings.#ctor*
+  commentId: Overload:LunyScript.ScriptSettings.#ctor
+  isExternal: true
+  href: LunyScript.ScriptSettings.html#LunyScript_ScriptSettings__ctor
+  name: ScriptSettings
+  nameWithType: ScriptSettings.ScriptSettings
+  fullName: LunyScript.ScriptSettings.ScriptSettings
+  nameWithType.vb: ScriptSettings.New
+  fullName.vb: LunyScript.ScriptSettings.New
+  name.vb: New

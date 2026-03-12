@@ -1,0 +1,756 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.SmokeTests.InputTransformShift_LunyScript
+  commentId: T:LunyScript.SmokeTests.InputTransformShift_LunyScript
+  id: InputTransformShift_LunyScript
+  parent: LunyScript.SmokeTests
+  children:
+  - LunyScript.SmokeTests.InputTransformShift_LunyScript.#ctor
+  - LunyScript.SmokeTests.InputTransformShift_LunyScript.Build(LunyScript.ScriptContext)
+  langs:
+  - csharp
+  - vb
+  name: InputTransformShift_LunyScript
+  nameWithType: InputTransformShift_LunyScript
+  fullName: LunyScript.SmokeTests.InputTransformShift_LunyScript
+  type: Class
+  assemblies:
+  - LunyScript.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: 'public sealed class InputTransformShift_LunyScript : Script'
+    content.vb: Public NotInheritable Class InputTransformShift_LunyScript Inherits Script
+  inheritance:
+  - System.Object
+  - LunyScript.Script
+  inheritedMembers:
+  - LunyScript.Script.Coroutine(System.String)
+  - LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.For(System.Int32)
+  - LunyScript.Script.For(System.Int32,System.Int32)
+  - LunyScript.Script.Check(System.Func{System.Boolean})
+  - LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
+  - LunyScript.Script.Run(System.Action)
+  - LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
+  - LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  - LunyScript.Script.ToString
+  - LunyScript.Script.Name
+  - LunyScript.Script.IsEditor
+  - LunyScript.Script.GVar
+  - LunyScript.Script.Var
+  - LunyScript.Script.Component
+  - LunyScript.Script.Debug
+  - LunyScript.Script.Editor
+  - LunyScript.Script.Input
+  - LunyScript.Script.Object
+  - LunyScript.Script.On
+  - LunyScript.Script.Prefab
+  - LunyScript.Script.Scene
+  - LunyScript.Script.Time
+  - LunyScript.Script.Transform
+  - LunyScript.Script.When
+- uid: LunyScript.SmokeTests.InputTransformShift_LunyScript.Build(LunyScript.ScriptContext)
+  commentId: M:LunyScript.SmokeTests.InputTransformShift_LunyScript.Build(LunyScript.ScriptContext)
+  id: Build(LunyScript.ScriptContext)
+  parent: LunyScript.SmokeTests.InputTransformShift_LunyScript
+  langs:
+  - csharp
+  - vb
+  name: Build(ScriptContext)
+  nameWithType: InputTransformShift_LunyScript.Build(ScriptContext)
+  fullName: LunyScript.SmokeTests.InputTransformShift_LunyScript.Build(LunyScript.ScriptContext)
+  type: Method
+  assemblies:
+  - LunyScript.SmokeTests
+  namespace: LunyScript.SmokeTests
+  summary: >-
+    Called once when the script is initialized.
+
+    Users construct their blocks (sequences, statemachines, behaviors) for execution here.
+
+    Users can use regular C# syntax (ie call methods, use loops) to construct complex and/or reusable blocks.
+  example: []
+  syntax:
+    content: public override void Build(ScriptContext context)
+    parameters:
+    - id: context
+      type: LunyScript.ScriptContext
+      description: ''
+    content.vb: Public Overrides Sub Build(context As ScriptContext)
+  overridden: LunyScript.Script.Build(LunyScript.ScriptContext)
+  overload: LunyScript.SmokeTests.InputTransformShift_LunyScript.Build*
+- uid: LunyScript.SmokeTests.InputTransformShift_LunyScript.#ctor
+  commentId: M:LunyScript.SmokeTests.InputTransformShift_LunyScript.#ctor
+  id: '#ctor'
+  parent: LunyScript.SmokeTests.InputTransformShift_LunyScript
+  langs:
+  - csharp
+  - vb
+  name: InputTransformShift_LunyScript()
+  nameWithType: InputTransformShift_LunyScript.InputTransformShift_LunyScript()
+  fullName: LunyScript.SmokeTests.InputTransformShift_LunyScript.InputTransformShift_LunyScript()
+  type: Constructor
+  assemblies:
+  - LunyScript.SmokeTests
+  namespace: LunyScript.SmokeTests
+  syntax:
+    content: public InputTransformShift_LunyScript()
+    content.vb: Public Sub New()
+  overload: LunyScript.SmokeTests.InputTransformShift_LunyScript.#ctor*
+  nameWithType.vb: InputTransformShift_LunyScript.New()
+  fullName.vb: LunyScript.SmokeTests.InputTransformShift_LunyScript.New()
+  name.vb: New()
+references:
+- uid: LunyScript.SmokeTests
+  commentId: N:LunyScript.SmokeTests
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.SmokeTests
+  nameWithType: LunyScript.SmokeTests
+  fullName: LunyScript.SmokeTests
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.SmokeTests
+    name: SmokeTests
+    isExternal: true
+    href: LunyScript.SmokeTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: LunyScript.Script
+  commentId: T:LunyScript.Script
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.Script.html
+  name: Script
+  nameWithType: Script
+  fullName: LunyScript.Script
+- uid: LunyScript.Script.Coroutine(System.String)
+  commentId: M:LunyScript.Script.Coroutine(System.String)
+  parent: LunyScript.Script
+  isExternal: true
+  name: Coroutine(string)
+  nameWithType: Script.Coroutine(string)
+  fullName: LunyScript.Script.Coroutine(string)
+  nameWithType.vb: Script.Coroutine(String)
+  fullName.vb: LunyScript.Script.Coroutine(String)
+  name.vb: Coroutine(String)
+  spec.csharp:
+  - uid: LunyScript.Script.Coroutine(System.String)
+    name: Coroutine
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.Coroutine(System.String)
+    name: Coroutine
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+  commentId: M:LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+  parent: LunyScript.Script
+  isExternal: true
+  name: If(params ScriptConditionBlock[])
+  nameWithType: Script.If(params ScriptConditionBlock[])
+  fullName: LunyScript.Script.If(params LunyScript.Blocks.ScriptConditionBlock[])
+  nameWithType.vb: Script.If(ParamArray ScriptConditionBlock())
+  fullName.vb: LunyScript.Script.If(ParamArray LunyScript.Blocks.ScriptConditionBlock())
+  name.vb: If(ParamArray ScriptConditionBlock())
+  spec.csharp:
+  - uid: LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+    name: If
+    isExternal: true
+  - name: (
+  - name: params
+  - name: " "
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+    name: If
+    isExternal: true
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+  commentId: M:LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+  parent: LunyScript.Script
+  isExternal: true
+  name: While(params ScriptConditionBlock[])
+  nameWithType: Script.While(params ScriptConditionBlock[])
+  fullName: LunyScript.Script.While(params LunyScript.Blocks.ScriptConditionBlock[])
+  nameWithType.vb: Script.While(ParamArray ScriptConditionBlock())
+  fullName.vb: LunyScript.Script.While(ParamArray LunyScript.Blocks.ScriptConditionBlock())
+  name.vb: While(ParamArray ScriptConditionBlock())
+  spec.csharp:
+  - uid: LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+    name: While
+    isExternal: true
+  - name: (
+  - name: params
+  - name: " "
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+    name: While
+    isExternal: true
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: LunyScript.Script.For(System.Int32)
+  commentId: M:LunyScript.Script.For(System.Int32)
+  parent: LunyScript.Script
+  isExternal: true
+  name: For(int)
+  nameWithType: Script.For(int)
+  fullName: LunyScript.Script.For(int)
+  nameWithType.vb: Script.For(Integer)
+  fullName.vb: LunyScript.Script.For(Integer)
+  name.vb: For(Integer)
+  spec.csharp:
+  - uid: LunyScript.Script.For(System.Int32)
+    name: For
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.For(System.Int32)
+    name: For
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: LunyScript.Script.For(System.Int32,System.Int32)
+  commentId: M:LunyScript.Script.For(System.Int32,System.Int32)
+  parent: LunyScript.Script
+  isExternal: true
+  name: For(int, int)
+  nameWithType: Script.For(int, int)
+  fullName: LunyScript.Script.For(int, int)
+  nameWithType.vb: Script.For(Integer, Integer)
+  fullName.vb: LunyScript.Script.For(Integer, Integer)
+  name.vb: For(Integer, Integer)
+  spec.csharp:
+  - uid: LunyScript.Script.For(System.Int32,System.Int32)
+    name: For
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.For(System.Int32,System.Int32)
+    name: For
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: LunyScript.Script.Check(System.Func{System.Boolean})
+  commentId: M:LunyScript.Script.Check(System.Func{System.Boolean})
+  parent: LunyScript.Script
+  isExternal: true
+  name: Check(Func<bool>)
+  nameWithType: Script.Check(Func<bool>)
+  fullName: LunyScript.Script.Check(System.Func<bool>)
+  nameWithType.vb: Script.Check(Func(Of Boolean))
+  fullName.vb: LunyScript.Script.Check(System.Func(Of Boolean))
+  name.vb: Check(Func(Of Boolean))
+  spec.csharp:
+  - uid: LunyScript.Script.Check(System.Func{System.Boolean})
+    name: Check
+    isExternal: true
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.Check(System.Func{System.Boolean})
+    name: Check
+    isExternal: true
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+  - name: )
+- uid: LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
+  commentId: M:LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
+  parent: LunyScript.Script
+  isExternal: true
+  name: Check(Func<IScriptRuntimeContext, bool>)
+  nameWithType: Script.Check(Func<IScriptRuntimeContext, bool>)
+  fullName: LunyScript.Script.Check(System.Func<LunyScript.IScriptRuntimeContext, bool>)
+  nameWithType.vb: Script.Check(Func(Of IScriptRuntimeContext, Boolean))
+  fullName.vb: LunyScript.Script.Check(System.Func(Of LunyScript.IScriptRuntimeContext, Boolean))
+  name.vb: Check(Func(Of IScriptRuntimeContext, Boolean))
+  spec.csharp:
+  - uid: LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
+    name: Check
+    isExternal: true
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
+    name: Check
+    isExternal: true
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+  - name: )
+- uid: LunyScript.Script.Run(System.Action)
+  commentId: M:LunyScript.Script.Run(System.Action)
+  parent: LunyScript.Script
+  isExternal: true
+  name: Run(Action)
+  nameWithType: Script.Run(Action)
+  fullName: LunyScript.Script.Run(System.Action)
+  spec.csharp:
+  - uid: LunyScript.Script.Run(System.Action)
+    name: Run
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.Run(System.Action)
+    name: Run
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+  - name: )
+- uid: LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
+  commentId: M:LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
+  parent: LunyScript.Script
+  isExternal: true
+  name: Run(Action<IScriptRuntimeContext>)
+  nameWithType: Script.Run(Action<IScriptRuntimeContext>)
+  fullName: LunyScript.Script.Run(System.Action<LunyScript.IScriptRuntimeContext>)
+  nameWithType.vb: Script.Run(Action(Of IScriptRuntimeContext))
+  fullName.vb: LunyScript.Script.Run(System.Action(Of LunyScript.IScriptRuntimeContext))
+  name.vb: Run(Action(Of IScriptRuntimeContext))
+  spec.csharp:
+  - uid: LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
+    name: Run
+    isExternal: true
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
+    name: Run
+    isExternal: true
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+  - name: )
+  - name: )
+- uid: LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+  commentId: M:LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+  parent: LunyScript.Script
+  isExternal: true
+  name: AND(params ScriptConditionBlock[])
+  nameWithType: Script.AND(params ScriptConditionBlock[])
+  fullName: LunyScript.Script.AND(params LunyScript.Blocks.ScriptConditionBlock[])
+  nameWithType.vb: Script.AND(ParamArray ScriptConditionBlock())
+  fullName.vb: LunyScript.Script.AND(ParamArray LunyScript.Blocks.ScriptConditionBlock())
+  name.vb: AND(ParamArray ScriptConditionBlock())
+  spec.csharp:
+  - uid: LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+    name: AND
+    isExternal: true
+  - name: (
+  - name: params
+  - name: " "
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+    name: AND
+    isExternal: true
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+  commentId: M:LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+  parent: LunyScript.Script
+  isExternal: true
+  name: OR(params ScriptConditionBlock[])
+  nameWithType: Script.OR(params ScriptConditionBlock[])
+  fullName: LunyScript.Script.OR(params LunyScript.Blocks.ScriptConditionBlock[])
+  nameWithType.vb: Script.OR(ParamArray ScriptConditionBlock())
+  fullName.vb: LunyScript.Script.OR(ParamArray LunyScript.Blocks.ScriptConditionBlock())
+  name.vb: OR(ParamArray ScriptConditionBlock())
+  spec.csharp:
+  - uid: LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+    name: OR
+    isExternal: true
+  - name: (
+  - name: params
+  - name: " "
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+    name: OR
+    isExternal: true
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  commentId: M:LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  parent: LunyScript.Script
+  isExternal: true
+  name: NOT(ScriptConditionBlock)
+  nameWithType: Script.NOT(ScriptConditionBlock)
+  fullName: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  spec.csharp:
+  - uid: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+    name: NOT
+    isExternal: true
+  - name: (
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+    name: NOT
+    isExternal: true
+  - name: (
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    isExternal: true
+  - name: )
+- uid: LunyScript.Script.ToString
+  commentId: M:LunyScript.Script.ToString
+  parent: LunyScript.Script
+  isExternal: true
+  name: ToString()
+  nameWithType: Script.ToString()
+  fullName: LunyScript.Script.ToString()
+  spec.csharp:
+  - uid: LunyScript.Script.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: LunyScript.Script.Name
+  commentId: P:LunyScript.Script.Name
+  parent: LunyScript.Script
+  isExternal: true
+  name: Name
+  nameWithType: Script.Name
+  fullName: LunyScript.Script.Name
+- uid: LunyScript.Script.IsEditor
+  commentId: P:LunyScript.Script.IsEditor
+  parent: LunyScript.Script
+  isExternal: true
+  name: IsEditor
+  nameWithType: Script.IsEditor
+  fullName: LunyScript.Script.IsEditor
+- uid: LunyScript.Script.GVar
+  commentId: P:LunyScript.Script.GVar
+  parent: LunyScript.Script
+  isExternal: true
+  name: GVar
+  nameWithType: Script.GVar
+  fullName: LunyScript.Script.GVar
+- uid: LunyScript.Script.Var
+  commentId: P:LunyScript.Script.Var
+  parent: LunyScript.Script
+  isExternal: true
+  name: Var
+  nameWithType: Script.Var
+  fullName: LunyScript.Script.Var
+- uid: LunyScript.Script.Component
+  commentId: P:LunyScript.Script.Component
+  parent: LunyScript.Script
+  isExternal: true
+  name: Component
+  nameWithType: Script.Component
+  fullName: LunyScript.Script.Component
+- uid: LunyScript.Script.Debug
+  commentId: P:LunyScript.Script.Debug
+  parent: LunyScript.Script
+  isExternal: true
+  name: Debug
+  nameWithType: Script.Debug
+  fullName: LunyScript.Script.Debug
+- uid: LunyScript.Script.Editor
+  commentId: P:LunyScript.Script.Editor
+  parent: LunyScript.Script
+  isExternal: true
+  name: Editor
+  nameWithType: Script.Editor
+  fullName: LunyScript.Script.Editor
+- uid: LunyScript.Script.Input
+  commentId: P:LunyScript.Script.Input
+  parent: LunyScript.Script
+  isExternal: true
+  name: Input
+  nameWithType: Script.Input
+  fullName: LunyScript.Script.Input
+- uid: LunyScript.Script.Object
+  commentId: P:LunyScript.Script.Object
+  parent: LunyScript.Script
+  isExternal: true
+  name: Object
+  nameWithType: Script.Object
+  fullName: LunyScript.Script.Object
+- uid: LunyScript.Script.On
+  commentId: P:LunyScript.Script.On
+  parent: LunyScript.Script
+  isExternal: true
+  name: On
+  nameWithType: Script.On
+  fullName: LunyScript.Script.On
+- uid: LunyScript.Script.Prefab
+  commentId: P:LunyScript.Script.Prefab
+  parent: LunyScript.Script
+  isExternal: true
+  name: Prefab
+  nameWithType: Script.Prefab
+  fullName: LunyScript.Script.Prefab
+- uid: LunyScript.Script.Scene
+  commentId: P:LunyScript.Script.Scene
+  parent: LunyScript.Script
+  isExternal: true
+  name: Scene
+  nameWithType: Script.Scene
+  fullName: LunyScript.Script.Scene
+- uid: LunyScript.Script.Time
+  commentId: P:LunyScript.Script.Time
+  parent: LunyScript.Script
+  isExternal: true
+  name: Time
+  nameWithType: Script.Time
+  fullName: LunyScript.Script.Time
+- uid: LunyScript.Script.Transform
+  commentId: P:LunyScript.Script.Transform
+  parent: LunyScript.Script
+  isExternal: true
+  name: Transform
+  nameWithType: Script.Transform
+  fullName: LunyScript.Script.Transform
+- uid: LunyScript.Script.When
+  commentId: P:LunyScript.Script.When
+  parent: LunyScript.Script
+  isExternal: true
+  name: When
+  nameWithType: Script.When
+  fullName: LunyScript.Script.When
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.Script.Build(LunyScript.ScriptContext)
+  commentId: M:LunyScript.Script.Build(LunyScript.ScriptContext)
+  parent: LunyScript.Script
+  isExternal: true
+  name: Build(ScriptContext)
+  nameWithType: Script.Build(ScriptContext)
+  fullName: LunyScript.Script.Build(LunyScript.ScriptContext)
+  spec.csharp:
+  - uid: LunyScript.Script.Build(LunyScript.ScriptContext)
+    name: Build
+    isExternal: true
+  - name: (
+  - uid: LunyScript.ScriptContext
+    name: ScriptContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.Build(LunyScript.ScriptContext)
+    name: Build
+    isExternal: true
+  - name: (
+  - uid: LunyScript.ScriptContext
+    name: ScriptContext
+    isExternal: true
+  - name: )
+- uid: LunyScript.SmokeTests.InputTransformShift_LunyScript.Build*
+  commentId: Overload:LunyScript.SmokeTests.InputTransformShift_LunyScript.Build
+  isExternal: true
+  href: LunyScript.SmokeTests.InputTransformShift_LunyScript.html#LunyScript_SmokeTests_InputTransformShift_LunyScript_Build_LunyScript_ScriptContext_
+  name: Build
+  nameWithType: InputTransformShift_LunyScript.Build
+  fullName: LunyScript.SmokeTests.InputTransformShift_LunyScript.Build
+- uid: LunyScript.ScriptContext
+  commentId: T:LunyScript.ScriptContext
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ScriptContext.html
+  name: ScriptContext
+  nameWithType: ScriptContext
+  fullName: LunyScript.ScriptContext
+- uid: LunyScript.SmokeTests.InputTransformShift_LunyScript.#ctor*
+  commentId: Overload:LunyScript.SmokeTests.InputTransformShift_LunyScript.#ctor
+  isExternal: true
+  href: LunyScript.SmokeTests.InputTransformShift_LunyScript.html#LunyScript_SmokeTests_InputTransformShift_LunyScript__ctor
+  name: InputTransformShift_LunyScript
+  nameWithType: InputTransformShift_LunyScript.InputTransformShift_LunyScript
+  fullName: LunyScript.SmokeTests.InputTransformShift_LunyScript.InputTransformShift_LunyScript
+  nameWithType.vb: InputTransformShift_LunyScript.New
+  fullName.vb: LunyScript.SmokeTests.InputTransformShift_LunyScript.New
+  name.vb: New

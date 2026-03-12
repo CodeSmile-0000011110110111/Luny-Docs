@@ -1,12 +1,16 @@
-/* Light mode - navigation bar background color */
+/* Navigation bar background color */
+[data-bs-theme="dark"] header.bg-body {
+  background-color: #252525;
+}
 [data-bs-theme="light"] header.bg-body {
-  background-color: #F5F6F4;
+    background-color: #F5F6F4;
 }
 
 /* Keep body background white */
 [data-bs-theme="light"] body {
   background-color: #fff;
 }
+
 /* Dark mode - "In This Article" sub-headlines (Constructors, Properties, etc) - more emphasis */
 [data-bs-theme="dark"] .affix ul li a.link-body-emphasis {
   color: rgba(255, 255, 255, 1);

@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.CollisionBuilderLayered
+  commentId: T:LunyScript.Api.CollisionBuilderLayered
+  id: CollisionBuilderLayered
+  parent: LunyScript.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CollisionBuilderLayered
+  nameWithType: CollisionBuilderLayered
+  fullName: LunyScript.Api.CollisionBuilderLayered
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: 'public struct CollisionBuilderLayered : ICollisionBuilderLayered, ICollisionBuilderReady, ICollisionBuilderState'
+    content.vb: Public Structure CollisionBuilderLayered Implements ICollisionBuilderLayered, ICollisionBuilderReady, ICollisionBuilderState
+  implements:
+  - LunyScript.Api.ICollisionBuilderLayered
+  - LunyScript.Api.ICollisionBuilderReady
+  - LunyScript.Api.ICollisionBuilderState
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Api.ICollisionBuilderLayered
+  commentId: T:LunyScript.Api.ICollisionBuilderLayered
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionBuilderLayered.html
+  name: ICollisionBuilderLayered
+  nameWithType: ICollisionBuilderLayered
+  fullName: LunyScript.Api.ICollisionBuilderLayered
+- uid: LunyScript.Api.ICollisionBuilderReady
+  commentId: T:LunyScript.Api.ICollisionBuilderReady
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionBuilderReady.html
+  name: ICollisionBuilderReady
+  nameWithType: ICollisionBuilderReady
+  fullName: LunyScript.Api.ICollisionBuilderReady
+- uid: LunyScript.Api.ICollisionBuilderState
+  commentId: T:LunyScript.Api.ICollisionBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionBuilderState.html
+  name: ICollisionBuilderState
+  nameWithType: ICollisionBuilderState
+  fullName: LunyScript.Api.ICollisionBuilderState

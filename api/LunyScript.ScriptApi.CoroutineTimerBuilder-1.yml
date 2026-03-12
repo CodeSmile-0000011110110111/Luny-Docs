@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+  commentId: T:LunyScript.ScriptApi.CoroutineTimerBuilder`1
+  id: CoroutineTimerBuilder`1
+  parent: LunyScript.ScriptApi
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.ScriptApi.CoroutineTimerBuilder<T>
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Fluent builder for timer coroutines.
+
+    Usage: Timer("name").In(3).Seconds().Do(blocks);
+           Timer("name").Every(1.5).Minutes().Do(blocks);
+  example: []
+  syntax:
+    content: 'public readonly struct CoroutineTimerBuilder<T> where T : struct, ICoroutineTimerBuilderState'
+    typeParameters:
+    - id: T
+    content.vb: Public Structure CoroutineTimerBuilder(Of T As {Structure, ICoroutineTimerBuilderState})
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html

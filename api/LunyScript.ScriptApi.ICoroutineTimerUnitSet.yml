@@ -1,0 +1,50 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.ICoroutineTimerUnitSet
+  commentId: T:LunyScript.ScriptApi.ICoroutineTimerUnitSet
+  id: ICoroutineTimerUnitSet
+  parent: LunyScript.ScriptApi
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICoroutineTimerUnitSet
+  nameWithType: ICoroutineTimerUnitSet
+  fullName: LunyScript.ScriptApi.ICoroutineTimerUnitSet
+  type: Interface
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: 'public interface ICoroutineTimerUnitSet : ICoroutineTimerWhen, ICoroutineTimerBuilderState'
+    content.vb: Public Interface ICoroutineTimerUnitSet Inherits ICoroutineTimerWhen, ICoroutineTimerBuilderState
+  derivedClasses:
+  - LunyScript.ScriptApi.CoroutineTimerUnitSet
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html

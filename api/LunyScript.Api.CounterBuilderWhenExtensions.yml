@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.CounterBuilderWhenExtensions
+  commentId: T:LunyScript.Api.CounterBuilderWhenExtensions
+  id: CounterBuilderWhenExtensions
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  langs:
+  - csharp
+  - vb
+  name: CounterBuilderWhenExtensions
+  nameWithType: CounterBuilderWhenExtensions
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static class CounterBuilderWhenExtensions
+    content.vb: Public Module CounterBuilderWhenExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  id: WhenStarted``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.CounterBuilderWhenExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhenStarted<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
+  nameWithType: CounterBuilderWhenExtensions.WhenStarted<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Blocks to run when the coroutine starts.
+  example: []
+  syntax:
+    content: 'public static CoroutineCounterBuilder<T> WhenStarted<T>(this CoroutineCounterBuilder<T> b, params ScriptActionBlock[] startedBlocks) where T : struct, ICoroutineCounterWhen'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CoroutineCounterBuilder{{T}}
+    - id: startedBlocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CoroutineCounterBuilder{{T}}
+    content.vb: Public Shared Function WhenStarted(Of T As {Structure, ICoroutineCounterWhen})(b As CoroutineCounterBuilder(Of T), ParamArray startedBlocks As ScriptActionBlock()) As CoroutineCounterBuilder(Of T)
+  overload: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted*
+  nameWithType.vb: CounterBuilderWhenExtensions.WhenStarted(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: WhenStarted(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  id: WhenStopped``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.CounterBuilderWhenExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhenStopped<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
+  nameWithType: CounterBuilderWhenExtensions.WhenStopped<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Blocks to run when the coroutine stops.
+  example: []
+  syntax:
+    content: 'public static CoroutineCounterBuilder<T> WhenStopped<T>(this CoroutineCounterBuilder<T> b, params ScriptActionBlock[] stoppedBlocks) where T : struct, ICoroutineCounterWhen'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CoroutineCounterBuilder{{T}}
+    - id: stoppedBlocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CoroutineCounterBuilder{{T}}
+    content.vb: Public Shared Function WhenStopped(Of T As {Structure, ICoroutineCounterWhen})(b As CoroutineCounterBuilder(Of T), ParamArray stoppedBlocks As ScriptActionBlock()) As CoroutineCounterBuilder(Of T)
+  overload: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped*
+  nameWithType.vb: CounterBuilderWhenExtensions.WhenStopped(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: WhenStopped(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  id: WhenPaused``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.CounterBuilderWhenExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhenPaused<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
+  nameWithType: CounterBuilderWhenExtensions.WhenPaused<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Blocks to run when the coroutine is paused.
+  example: []
+  syntax:
+    content: 'public static CoroutineCounterBuilder<T> WhenPaused<T>(this CoroutineCounterBuilder<T> b, params ScriptActionBlock[] pausedBlocks) where T : struct, ICoroutineCounterWhen'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CoroutineCounterBuilder{{T}}
+    - id: pausedBlocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CoroutineCounterBuilder{{T}}
+    content.vb: Public Shared Function WhenPaused(Of T As {Structure, ICoroutineCounterWhen})(b As CoroutineCounterBuilder(Of T), ParamArray pausedBlocks As ScriptActionBlock()) As CoroutineCounterBuilder(Of T)
+  overload: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused*
+  nameWithType.vb: CounterBuilderWhenExtensions.WhenPaused(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: WhenPaused(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  id: WhenResumed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.CounterBuilderWhenExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhenResumed<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
+  nameWithType: CounterBuilderWhenExtensions.WhenResumed<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Blocks to run when the coroutine is resumed.
+  example: []
+  syntax:
+    content: 'public static CoroutineCounterBuilder<T> WhenResumed<T>(this CoroutineCounterBuilder<T> b, params ScriptActionBlock[] resumedBlocks) where T : struct, ICoroutineCounterWhen'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CoroutineCounterBuilder{{T}}
+    - id: resumedBlocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CoroutineCounterBuilder{{T}}
+    content.vb: Public Shared Function WhenResumed(Of T As {Structure, ICoroutineCounterWhen})(b As CoroutineCounterBuilder(Of T), ParamArray resumedBlocks As ScriptActionBlock()) As CoroutineCounterBuilder(Of T)
+  overload: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed*
+  nameWithType.vb: CounterBuilderWhenExtensions.WhenResumed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: WhenResumed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  id: WhenProcessed``1(LunyScript.Api.CoroutineCounterBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.CounterBuilderWhenExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhenProcessed<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
+  nameWithType: CounterBuilderWhenExtensions.WhenProcessed<T>(CoroutineCounterBuilder<T>, params ScriptActionBlock[])
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed<T>(LunyScript.Api.CoroutineCounterBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: 'public static CoroutineCounterBuilder<T> WhenProcessed<T>(this CoroutineCounterBuilder<T> b, params ScriptActionBlock[] processBlocks) where T : struct, ICoroutineCounterWhen'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CoroutineCounterBuilder{{T}}
+    - id: processBlocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CoroutineCounterBuilder{{T}}
+    content.vb: Public Shared Function WhenProcessed(Of T As {Structure, ICoroutineCounterWhen})(b As CoroutineCounterBuilder(Of T), ParamArray processBlocks As ScriptActionBlock()) As CoroutineCounterBuilder(Of T)
+  overload: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed*
+  nameWithType.vb: CounterBuilderWhenExtensions.WhenProcessed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed(Of T)(LunyScript.Api.CoroutineCounterBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: WhenProcessed(Of T)(CoroutineCounterBuilder(Of T), ParamArray ScriptActionBlock())
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted*
+  commentId: Overload:LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted
+  isExternal: true
+  href: LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenStarted__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  name: WhenStarted
+  nameWithType: CounterBuilderWhenExtensions.WhenStarted
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenStarted
+- uid: LunyScript.Api.CoroutineCounterBuilder{{T}}
+  commentId: T:LunyScript.Api.CoroutineCounterBuilder{``0}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.CoroutineCounterBuilder`1
+  href: LunyScript.Api.CoroutineCounterBuilder-1.html
+  name: CoroutineCounterBuilder<T>
+  nameWithType: CoroutineCounterBuilder<T>
+  fullName: LunyScript.Api.CoroutineCounterBuilder<T>
+  nameWithType.vb: CoroutineCounterBuilder(Of T)
+  fullName.vb: LunyScript.Api.CoroutineCounterBuilder(Of T)
+  name.vb: CoroutineCounterBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineCounterBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineCounterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks.ScriptActionBlock[]
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock[]
+  nameWithType: ScriptActionBlock[]
+  fullName: LunyScript.Blocks.ScriptActionBlock[]
+  nameWithType.vb: ScriptActionBlock()
+  fullName.vb: LunyScript.Blocks.ScriptActionBlock()
+  name.vb: ScriptActionBlock()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: (
+  - name: )
+- uid: LunyScript.Api.CoroutineCounterBuilder`1
+  commentId: T:LunyScript.Api.CoroutineCounterBuilder`1
+  isExternal: true
+  href: LunyScript.Api.CoroutineCounterBuilder-1.html
+  name: CoroutineCounterBuilder<T>
+  nameWithType: CoroutineCounterBuilder<T>
+  fullName: LunyScript.Api.CoroutineCounterBuilder<T>
+  nameWithType.vb: CoroutineCounterBuilder(Of T)
+  fullName.vb: LunyScript.Api.CoroutineCounterBuilder(Of T)
+  name.vb: CoroutineCounterBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineCounterBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder
+    isExternal: true
+    href: LunyScript.Api.CoroutineCounterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped*
+  commentId: Overload:LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped
+  isExternal: true
+  href: LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenStopped__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  name: WhenStopped
+  nameWithType: CounterBuilderWhenExtensions.WhenStopped
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenStopped
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused*
+  commentId: Overload:LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused
+  isExternal: true
+  href: LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenPaused__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  name: WhenPaused
+  nameWithType: CounterBuilderWhenExtensions.WhenPaused
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenPaused
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed*
+  commentId: Overload:LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed
+  isExternal: true
+  href: LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenResumed__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  name: WhenResumed
+  nameWithType: CounterBuilderWhenExtensions.WhenResumed
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenResumed
+- uid: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed*
+  commentId: Overload:LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed
+  isExternal: true
+  href: LunyScript.Api.CounterBuilderWhenExtensions.html#LunyScript_Api_CounterBuilderWhenExtensions_WhenProcessed__1_LunyScript_Api_CoroutineCounterBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  name: WhenProcessed
+  nameWithType: CounterBuilderWhenExtensions.WhenProcessed
+  fullName: LunyScript.Api.CounterBuilderWhenExtensions.WhenProcessed

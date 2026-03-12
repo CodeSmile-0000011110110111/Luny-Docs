@@ -1,0 +1,362 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.TransformLookAtBuilderExtensions
+  commentId: T:LunyScript.Api.TransformLookAtBuilderExtensions
+  id: TransformLookAtBuilderExtensions
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.TransformLookAtBuilderExtensions.LockX``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  - LunyScript.Api.TransformLookAtBuilderExtensions.LockY``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  - LunyScript.Api.TransformLookAtBuilderExtensions.LockZ``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  - LunyScript.Api.TransformLookAtBuilderExtensions.WorldUp``1(LunyScript.Api.TransformLookAtBuilder{``0},Luny.Engine.Bridge.LunyVector3)
+  langs:
+  - csharp
+  - vb
+  name: TransformLookAtBuilderExtensions
+  nameWithType: TransformLookAtBuilderExtensions
+  fullName: LunyScript.Api.TransformLookAtBuilderExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static class TransformLookAtBuilderExtensions
+    content.vb: Public Module TransformLookAtBuilderExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.Api.TransformLookAtBuilderExtensions.WorldUp``1(LunyScript.Api.TransformLookAtBuilder{``0},Luny.Engine.Bridge.LunyVector3)
+  commentId: M:LunyScript.Api.TransformLookAtBuilderExtensions.WorldUp``1(LunyScript.Api.TransformLookAtBuilder{``0},Luny.Engine.Bridge.LunyVector3)
+  id: WorldUp``1(LunyScript.Api.TransformLookAtBuilder{``0},Luny.Engine.Bridge.LunyVector3)
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformLookAtBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: WorldUp<T>(TransformLookAtBuilder<T>, LunyVector3)
+  nameWithType: TransformLookAtBuilderExtensions.WorldUp<T>(TransformLookAtBuilder<T>, LunyVector3)
+  fullName: LunyScript.Api.TransformLookAtBuilderExtensions.WorldUp<T>(LunyScript.Api.TransformLookAtBuilder<T>, Luny.Engine.Bridge.LunyVector3)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Overrides the world-up vector used when computing the look rotation.
+  example: []
+  syntax:
+    content: 'public static TransformLookAtBuilder<TransformBuilderReady> WorldUp<T>(this TransformLookAtBuilder<T> b, LunyVector3 worldUp) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformLookAtBuilder{{T}}
+    - id: worldUp
+      type: Luny.Engine.Bridge.LunyVector3
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TransformLookAtBuilder{LunyScript.Api.TransformBuilderReady}
+    content.vb: Public Shared Function WorldUp(Of T As {Structure, ITransformBuilderReady})(b As TransformLookAtBuilder(Of T), worldUp As LunyVector3) As TransformLookAtBuilder(Of TransformBuilderReady)
+  overload: LunyScript.Api.TransformLookAtBuilderExtensions.WorldUp*
+  nameWithType.vb: TransformLookAtBuilderExtensions.WorldUp(Of T)(TransformLookAtBuilder(Of T), LunyVector3)
+  fullName.vb: LunyScript.Api.TransformLookAtBuilderExtensions.WorldUp(Of T)(LunyScript.Api.TransformLookAtBuilder(Of T), Luny.Engine.Bridge.LunyVector3)
+  name.vb: WorldUp(Of T)(TransformLookAtBuilder(Of T), LunyVector3)
+- uid: LunyScript.Api.TransformLookAtBuilderExtensions.LockX``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  commentId: M:LunyScript.Api.TransformLookAtBuilderExtensions.LockX``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  id: LockX``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformLookAtBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockX<T>(TransformLookAtBuilder<T>)
+  nameWithType: TransformLookAtBuilderExtensions.LockX<T>(TransformLookAtBuilder<T>)
+  fullName: LunyScript.Api.TransformLookAtBuilderExtensions.LockX<T>(LunyScript.Api.TransformLookAtBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: 'Locks the X axis: prevents the look direction from changing on the X axis.'
+  example: []
+  syntax:
+    content: 'public static TransformLookAtBuilder<TransformBuilderReady> LockX<T>(this TransformLookAtBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformLookAtBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TransformLookAtBuilder{LunyScript.Api.TransformBuilderReady}
+    content.vb: Public Shared Function LockX(Of T As {Structure, ITransformBuilderReady})(b As TransformLookAtBuilder(Of T)) As TransformLookAtBuilder(Of TransformBuilderReady)
+  overload: LunyScript.Api.TransformLookAtBuilderExtensions.LockX*
+  nameWithType.vb: TransformLookAtBuilderExtensions.LockX(Of T)(TransformLookAtBuilder(Of T))
+  fullName.vb: LunyScript.Api.TransformLookAtBuilderExtensions.LockX(Of T)(LunyScript.Api.TransformLookAtBuilder(Of T))
+  name.vb: LockX(Of T)(TransformLookAtBuilder(Of T))
+- uid: LunyScript.Api.TransformLookAtBuilderExtensions.LockY``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  commentId: M:LunyScript.Api.TransformLookAtBuilderExtensions.LockY``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  id: LockY``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformLookAtBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockY<T>(TransformLookAtBuilder<T>)
+  nameWithType: TransformLookAtBuilderExtensions.LockY<T>(TransformLookAtBuilder<T>)
+  fullName: LunyScript.Api.TransformLookAtBuilderExtensions.LockY<T>(LunyScript.Api.TransformLookAtBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: 'Locks the Y axis: prevents the look direction from changing on the Y axis.'
+  example: []
+  syntax:
+    content: 'public static TransformLookAtBuilder<TransformBuilderReady> LockY<T>(this TransformLookAtBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformLookAtBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TransformLookAtBuilder{LunyScript.Api.TransformBuilderReady}
+    content.vb: Public Shared Function LockY(Of T As {Structure, ITransformBuilderReady})(b As TransformLookAtBuilder(Of T)) As TransformLookAtBuilder(Of TransformBuilderReady)
+  overload: LunyScript.Api.TransformLookAtBuilderExtensions.LockY*
+  nameWithType.vb: TransformLookAtBuilderExtensions.LockY(Of T)(TransformLookAtBuilder(Of T))
+  fullName.vb: LunyScript.Api.TransformLookAtBuilderExtensions.LockY(Of T)(LunyScript.Api.TransformLookAtBuilder(Of T))
+  name.vb: LockY(Of T)(TransformLookAtBuilder(Of T))
+- uid: LunyScript.Api.TransformLookAtBuilderExtensions.LockZ``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  commentId: M:LunyScript.Api.TransformLookAtBuilderExtensions.LockZ``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  id: LockZ``1(LunyScript.Api.TransformLookAtBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.Api.TransformLookAtBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockZ<T>(TransformLookAtBuilder<T>)
+  nameWithType: TransformLookAtBuilderExtensions.LockZ<T>(TransformLookAtBuilder<T>)
+  fullName: LunyScript.Api.TransformLookAtBuilderExtensions.LockZ<T>(LunyScript.Api.TransformLookAtBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: 'Locks the Z axis: prevents the look direction from changing on the Z axis.'
+  example: []
+  syntax:
+    content: 'public static TransformLookAtBuilder<TransformBuilderReady> LockZ<T>(this TransformLookAtBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TransformLookAtBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TransformLookAtBuilder{LunyScript.Api.TransformBuilderReady}
+    content.vb: Public Shared Function LockZ(Of T As {Structure, ITransformBuilderReady})(b As TransformLookAtBuilder(Of T)) As TransformLookAtBuilder(Of TransformBuilderReady)
+  overload: LunyScript.Api.TransformLookAtBuilderExtensions.LockZ*
+  nameWithType.vb: TransformLookAtBuilderExtensions.LockZ(Of T)(TransformLookAtBuilder(Of T))
+  fullName.vb: LunyScript.Api.TransformLookAtBuilderExtensions.LockZ(Of T)(LunyScript.Api.TransformLookAtBuilder(Of T))
+  name.vb: LockZ(Of T)(TransformLookAtBuilder(Of T))
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Api.TransformLookAtBuilderExtensions.WorldUp*
+  commentId: Overload:LunyScript.Api.TransformLookAtBuilderExtensions.WorldUp
+  isExternal: true
+  href: LunyScript.Api.TransformLookAtBuilderExtensions.html#LunyScript_Api_TransformLookAtBuilderExtensions_WorldUp__1_LunyScript_Api_TransformLookAtBuilder___0__Luny_Engine_Bridge_LunyVector3_
+  name: WorldUp
+  nameWithType: TransformLookAtBuilderExtensions.WorldUp
+  fullName: LunyScript.Api.TransformLookAtBuilderExtensions.WorldUp
+- uid: LunyScript.Api.TransformLookAtBuilder{{T}}
+  commentId: T:LunyScript.Api.TransformLookAtBuilder{``0}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TransformLookAtBuilder`1
+  href: LunyScript.Api.TransformLookAtBuilder-1.html
+  name: TransformLookAtBuilder<T>
+  nameWithType: TransformLookAtBuilder<T>
+  fullName: LunyScript.Api.TransformLookAtBuilder<T>
+  nameWithType.vb: TransformLookAtBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformLookAtBuilder(Of T)
+  name.vb: TransformLookAtBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformLookAtBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformLookAtBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Luny.Engine.Bridge.LunyVector3
+  commentId: T:Luny.Engine.Bridge.LunyVector3
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyVector3.html
+  name: LunyVector3
+  nameWithType: LunyVector3
+  fullName: Luny.Engine.Bridge.LunyVector3
+- uid: LunyScript.Api.TransformLookAtBuilder{LunyScript.Api.TransformBuilderReady}
+  commentId: T:LunyScript.Api.TransformLookAtBuilder{LunyScript.Api.TransformBuilderReady}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TransformLookAtBuilder`1
+  href: LunyScript.Api.TransformLookAtBuilder-1.html
+  name: TransformLookAtBuilder<TransformBuilderReady>
+  nameWithType: TransformLookAtBuilder<TransformBuilderReady>
+  fullName: LunyScript.Api.TransformLookAtBuilder<LunyScript.Api.TransformBuilderReady>
+  nameWithType.vb: TransformLookAtBuilder(Of TransformBuilderReady)
+  fullName.vb: LunyScript.Api.TransformLookAtBuilder(Of LunyScript.Api.TransformBuilderReady)
+  name.vb: TransformLookAtBuilder(Of TransformBuilderReady)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformLookAtBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.TransformBuilderReady
+    name: TransformBuilderReady
+    isExternal: true
+    href: LunyScript.Api.TransformBuilderReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformLookAtBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.TransformBuilderReady
+    name: TransformBuilderReady
+    isExternal: true
+    href: LunyScript.Api.TransformBuilderReady.html
+  - name: )
+- uid: LunyScript.Api.TransformLookAtBuilder`1
+  commentId: T:LunyScript.Api.TransformLookAtBuilder`1
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TransformLookAtBuilder-1.html
+  name: TransformLookAtBuilder<T>
+  nameWithType: TransformLookAtBuilder<T>
+  fullName: LunyScript.Api.TransformLookAtBuilder<T>
+  nameWithType.vb: TransformLookAtBuilder(Of T)
+  fullName.vb: LunyScript.Api.TransformLookAtBuilder(Of T)
+  name.vb: TransformLookAtBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformLookAtBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder
+    isExternal: true
+    href: LunyScript.Api.TransformLookAtBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+- uid: LunyScript.Api.TransformLookAtBuilderExtensions.LockX*
+  commentId: Overload:LunyScript.Api.TransformLookAtBuilderExtensions.LockX
+  isExternal: true
+  href: LunyScript.Api.TransformLookAtBuilderExtensions.html#LunyScript_Api_TransformLookAtBuilderExtensions_LockX__1_LunyScript_Api_TransformLookAtBuilder___0__
+  name: LockX
+  nameWithType: TransformLookAtBuilderExtensions.LockX
+  fullName: LunyScript.Api.TransformLookAtBuilderExtensions.LockX
+- uid: LunyScript.Api.TransformLookAtBuilderExtensions.LockY*
+  commentId: Overload:LunyScript.Api.TransformLookAtBuilderExtensions.LockY
+  isExternal: true
+  href: LunyScript.Api.TransformLookAtBuilderExtensions.html#LunyScript_Api_TransformLookAtBuilderExtensions_LockY__1_LunyScript_Api_TransformLookAtBuilder___0__
+  name: LockY
+  nameWithType: TransformLookAtBuilderExtensions.LockY
+  fullName: LunyScript.Api.TransformLookAtBuilderExtensions.LockY
+- uid: LunyScript.Api.TransformLookAtBuilderExtensions.LockZ*
+  commentId: Overload:LunyScript.Api.TransformLookAtBuilderExtensions.LockZ
+  isExternal: true
+  href: LunyScript.Api.TransformLookAtBuilderExtensions.html#LunyScript_Api_TransformLookAtBuilderExtensions_LockZ__1_LunyScript_Api_TransformLookAtBuilder___0__
+  name: LockZ
+  nameWithType: TransformLookAtBuilderExtensions.LockZ
+  fullName: LunyScript.Api.TransformLookAtBuilderExtensions.LockZ

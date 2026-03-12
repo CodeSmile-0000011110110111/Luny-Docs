@@ -1,0 +1,33 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ICollisionBuilderState
+  commentId: T:LunyScript.ICollisionBuilderState
+  id: ICollisionBuilderState
+  parent: LunyScript
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICollisionBuilderState
+  nameWithType: ICollisionBuilderState
+  fullName: LunyScript.ICollisionBuilderState
+  type: Interface
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public interface ICollisionBuilderState
+    content.vb: Public Interface ICollisionBuilderState
+  derivedClasses:
+  - LunyScript.CollisionBuilderLayered
+  - LunyScript.CollisionBuilderMasked
+  - LunyScript.CollisionBuilderReady
+  - LunyScript.CollisionBuilderStart
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript

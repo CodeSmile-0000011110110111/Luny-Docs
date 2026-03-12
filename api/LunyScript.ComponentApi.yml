@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ComponentApi
+  commentId: T:LunyScript.ComponentApi
+  id: ComponentApi
+  parent: LunyScript
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ComponentApi
+  nameWithType: ComponentApi
+  fullName: LunyScript.ComponentApi
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public struct ComponentApi
+    content.vb: Public Structure ComponentApi
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript

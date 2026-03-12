@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.EditorApi
+  commentId: T:LunyScript.EditorApi
+  id: EditorApi
+  parent: LunyScript
+  children:
+  - LunyScript.EditorApi.PausePlayer(System.String)
+  langs:
+  - csharp
+  - vb
+  name: EditorApi
+  nameWithType: EditorApi
+  fullName: LunyScript.EditorApi
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Provides Editor-only functionality.
+
+    In builds these blocks are ignored (no-op).
+  example: []
+  syntax:
+    content: public readonly struct EditorApi
+    content.vb: Public Structure EditorApi
+- uid: LunyScript.EditorApi.PausePlayer(System.String)
+  commentId: M:LunyScript.EditorApi.PausePlayer(System.String)
+  id: PausePlayer(System.String)
+  parent: LunyScript.EditorApi
+  langs:
+  - csharp
+  - vb
+  name: PausePlayer(string)
+  nameWithType: EditorApi.PausePlayer(string)
+  fullName: LunyScript.EditorApi.PausePlayer(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Pauses playmode.
+  example: []
+  syntax:
+    content: public ScriptActionBlock PausePlayer(string message = null)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function PausePlayer(message As String = Nothing) As ScriptActionBlock
+  overload: LunyScript.EditorApi.PausePlayer*
+  nameWithType.vb: EditorApi.PausePlayer(String)
+  fullName.vb: LunyScript.EditorApi.PausePlayer(String)
+  name.vb: PausePlayer(String)
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.EditorApi.PausePlayer*
+  commentId: Overload:LunyScript.EditorApi.PausePlayer
+  isExternal: true
+  href: LunyScript.EditorApi.html#LunyScript_EditorApi_PausePlayer_System_String_
+  name: PausePlayer
+  nameWithType: EditorApi.PausePlayer
+  fullName: LunyScript.EditorApi.PausePlayer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html

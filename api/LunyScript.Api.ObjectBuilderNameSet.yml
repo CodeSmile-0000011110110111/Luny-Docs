@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.ObjectBuilderNameSet
+  commentId: T:LunyScript.Api.ObjectBuilderNameSet
+  id: ObjectBuilderNameSet
+  parent: LunyScript.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ObjectBuilderNameSet
+  nameWithType: ObjectBuilderNameSet
+  fullName: LunyScript.Api.ObjectBuilderNameSet
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: 'public struct ObjectBuilderNameSet : IObjectBuilderNameSet, IObjectBuilderState, IObjectBuilderCanFinish'
+    content.vb: Public Structure ObjectBuilderNameSet Implements IObjectBuilderNameSet, IObjectBuilderState, IObjectBuilderCanFinish
+  implements:
+  - LunyScript.Api.IObjectBuilderNameSet
+  - LunyScript.Api.IObjectBuilderState
+  - LunyScript.Api.IObjectBuilderCanFinish
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Api.IObjectBuilderNameSet
+  commentId: T:LunyScript.Api.IObjectBuilderNameSet
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.IObjectBuilderNameSet.html
+  name: IObjectBuilderNameSet
+  nameWithType: IObjectBuilderNameSet
+  fullName: LunyScript.Api.IObjectBuilderNameSet
+- uid: LunyScript.Api.IObjectBuilderState
+  commentId: T:LunyScript.Api.IObjectBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.IObjectBuilderState.html
+  name: IObjectBuilderState
+  nameWithType: IObjectBuilderState
+  fullName: LunyScript.Api.IObjectBuilderState
+- uid: LunyScript.Api.IObjectBuilderCanFinish
+  commentId: T:LunyScript.Api.IObjectBuilderCanFinish
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.IObjectBuilderCanFinish.html
+  name: IObjectBuilderCanFinish
+  nameWithType: IObjectBuilderCanFinish
+  fullName: LunyScript.Api.IObjectBuilderCanFinish

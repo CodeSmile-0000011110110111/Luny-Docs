@@ -1,0 +1,840 @@
+### YamlMime:TableOfContent
+items:
+- uid: Luny
+  name: Luny
+  type: Namespace
+  items:
+  - uid: Luny.Alarm
+    name: Alarm
+    type: Struct
+  - uid: Luny.Counter
+    name: Counter
+    type: Class
+  - uid: Luny.ILunyEngine
+    name: ILunyEngine
+    type: Interface
+  - uid: Luny.ILunyEngineLifecycle
+    name: ILunyEngineLifecycle
+    type: Interface
+  - uid: Luny.ILunyEngineNativeAdapter
+    name: ILunyEngineNativeAdapter
+    type: Interface
+  - uid: Luny.ILunyEngineObserver
+    name: ILunyEngineObserver
+    type: Interface
+  - uid: Luny.ILunyLogger
+    name: ILunyLogger
+    type: Interface
+  - uid: Luny.ILunyObjectRegistry
+    name: ILunyObjectRegistry
+    type: Interface
+  - uid: Luny.ILunyObserverRegistry
+    name: ILunyObserverRegistry
+    type: Interface
+  - uid: Luny.ILunyServiceRegistry
+    name: ILunyServiceRegistry
+    type: Interface
+  - uid: Luny.ILunyServiceRegistryInternal
+    name: ILunyServiceRegistryInternal
+    type: Interface
+  - uid: Luny.ITable
+    name: ITable
+    type: Interface
+  - uid: Luny.LogEntry
+    name: LogEntry
+    type: Struct
+  - uid: Luny.LogLevel
+    name: LogLevel
+    type: Enum
+  - uid: Luny.LunyBridgeException
+    name: LunyBridgeException
+    type: Class
+  - uid: Luny.LunyEngine
+    name: LunyEngine
+    type: Class
+  - uid: Luny.LunyException
+    name: LunyException
+    type: Class
+  - uid: Luny.LunyLifecycleException
+    name: LunyLifecycleException
+    type: Class
+  - uid: Luny.LunyLogger
+    name: LunyLogger
+    type: Class
+  - uid: Luny.LunyServiceException
+    name: LunyServiceException
+    type: Class
+  - uid: Luny.LunyTraceLogger
+    name: LunyTraceLogger
+    type: Class
+  - uid: Luny.Number
+    name: Number
+    type: Struct
+  - uid: Luny.Stopwatch
+    name: Stopwatch
+    type: Struct
+  - uid: Luny.SystemDoubleExtensions
+    name: SystemDoubleExtensions
+    type: Class
+  - uid: Luny.SystemStringExtensions
+    name: SystemStringExtensions
+    type: Class
+  - uid: Luny.SystemTypeExtensions
+    name: SystemTypeExtensions
+    type: Class
+  - uid: Luny.Table
+    name: Table
+    type: Class
+  - uid: Luny.Table.ScalarVarHandle
+    name: Table.ScalarVarHandle
+    type: Class
+  - uid: Luny.Table.VarHandle
+    name: Table.VarHandle
+    type: Class
+  - uid: Luny.Table.VarHandle`1
+    name: Table.VarHandle<T>
+    type: Class
+  - uid: Luny.Timer
+    name: Timer
+    type: Class
+  - uid: Luny.Variable
+    name: Variable
+    type: Struct
+  - uid: Luny.Variable.ValueType
+    name: Variable.ValueType
+    type: Enum
+  - uid: Luny.VariableChangedArgs
+    name: VariableChangedArgs
+    type: Class
+  - uid: Luny.Variable`1
+    name: Variable<T>
+    type: Struct
+  - uid: Luny.Variable`1.ValueType
+    name: Variable<T>.ValueType
+    type: Enum
+- uid: Luny.Engine.Bridge
+  name: Luny.Engine.Bridge
+  type: Namespace
+  items:
+  - uid: Luny.Engine.Bridge.ILunyAsset
+    name: ILunyAsset
+    type: Interface
+  - uid: Luny.Engine.Bridge.ILunyObject
+    name: ILunyObject
+    type: Interface
+  - uid: Luny.Engine.Bridge.ILunyPath
+    name: ILunyPath
+    type: Interface
+  - uid: Luny.Engine.Bridge.ILunyPathConverter
+    name: ILunyPathConverter
+    type: Interface
+  - uid: Luny.Engine.Bridge.ILunyPrefab
+    name: ILunyPrefab
+    type: Interface
+  - uid: Luny.Engine.Bridge.ILunyScene
+    name: ILunyScene
+    type: Interface
+  - uid: Luny.Engine.Bridge.LunyAsset
+    name: LunyAsset
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyAssetId
+    name: LunyAssetId
+    type: Struct
+  - uid: Luny.Engine.Bridge.LunyAssetPath
+    name: LunyAssetPath
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyAssetRef
+    name: LunyAssetRef
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyCollider
+    name: LunyCollider
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyCollider2D
+    name: LunyCollider2D
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyCollision
+    name: LunyCollision
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyCollision2D
+    name: LunyCollision2D
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyCollision2DEvent
+    name: LunyCollision2DEvent
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyCollisionEvent
+    name: LunyCollisionEvent
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyInputActionEvent
+    name: LunyInputActionEvent
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyInputActionPhase
+    name: LunyInputActionPhase
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyInputActionType
+    name: LunyInputActionType
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyInputUserProfile
+    name: LunyInputUserProfile
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyMath
+    name: LunyMath
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyNativeObjectId
+    name: LunyNativeObjectId
+    type: Struct
+  - uid: Luny.Engine.Bridge.LunyObject
+    name: LunyObject
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyObjectEvent
+    name: LunyObjectEvent
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyObjectId
+    name: LunyObjectId
+    type: Struct
+  - uid: Luny.Engine.Bridge.LunyObjectRef
+    name: LunyObjectRef
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyPath
+    name: LunyPath
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyPathType
+    name: LunyPathType
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyPrefab
+    name: LunyPrefab
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyPrimitiveType
+    name: LunyPrimitiveType
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyQuaternion
+    name: LunyQuaternion
+    type: Struct
+  - uid: Luny.Engine.Bridge.LunyRef`1
+    name: LunyRef<T>
+    type: Class
+  - uid: Luny.Engine.Bridge.LunySavePath
+    name: LunySavePath
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyScene
+    name: LunyScene
+    type: Class
+  - uid: Luny.Engine.Bridge.LunySceneEvent
+    name: LunySceneEvent
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyTime
+    name: LunyTime
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyTransform
+    name: LunyTransform
+    type: Class
+  - uid: Luny.Engine.Bridge.LunyTransformSpace
+    name: LunyTransformSpace
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyTrigger2DEvent
+    name: LunyTrigger2DEvent
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyTriggerEvent
+    name: LunyTriggerEvent
+    type: Enum
+  - uid: Luny.Engine.Bridge.LunyVector2
+    name: LunyVector2
+    type: Struct
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    type: Struct
+  - uid: Luny.Engine.Bridge.NativeEngine
+    name: NativeEngine
+    type: Enum
+  - uid: Luny.Engine.Bridge.VectorUtil
+    name: VectorUtil
+    type: Class
+- uid: Luny.Engine.Diagnostics
+  name: Luny.Engine.Diagnostics
+  type: Namespace
+  items:
+  - uid: Luny.Engine.Diagnostics.ILunyEngineProfiler
+    name: ILunyEngineProfiler
+    type: Interface
+  - uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot
+    name: ILunyEngineProfilerSnapshot
+    type: Interface
+  - uid: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
+    name: LunyEngineLifecycleEvents
+    type: Enum
+  - uid: Luny.Engine.Diagnostics.LunyObserverMetrics
+    name: LunyObserverMetrics
+    type: Class
+- uid: Luny.Engine.Services
+  name: Luny.Engine.Services
+  type: Namespace
+  items:
+  - uid: Luny.Engine.Services.ILunyApplicationService
+    name: ILunyApplicationService
+    type: Interface
+  - uid: Luny.Engine.Services.ILunyAssetService
+    name: ILunyAssetService
+    type: Interface
+  - uid: Luny.Engine.Services.ILunyDebugService
+    name: ILunyDebugService
+    type: Interface
+  - uid: Luny.Engine.Services.ILunyEditorService
+    name: ILunyEditorService
+    type: Interface
+  - uid: Luny.Engine.Services.ILunyEngineService
+    name: ILunyEngineService
+    type: Interface
+  - uid: Luny.Engine.Services.ILunyInputService
+    name: ILunyInputService
+    type: Interface
+  - uid: Luny.Engine.Services.ILunyObjectService
+    name: ILunyObjectService
+    type: Interface
+  - uid: Luny.Engine.Services.ILunySceneService
+    name: ILunySceneService
+    type: Interface
+  - uid: Luny.Engine.Services.ILunyTimeService
+    name: ILunyTimeService
+    type: Interface
+  - uid: Luny.Engine.Services.LunyApplicationServiceBase
+    name: LunyApplicationServiceBase
+    type: Class
+  - uid: Luny.Engine.Services.LunyAssetServiceBase
+    name: LunyAssetServiceBase
+    type: Class
+  - uid: Luny.Engine.Services.LunyDebugServiceBase
+    name: LunyDebugServiceBase
+    type: Class
+  - uid: Luny.Engine.Services.LunyEditorServiceBase
+    name: LunyEditorServiceBase
+    type: Class
+  - uid: Luny.Engine.Services.LunyEngineServiceBase
+    name: LunyEngineServiceBase
+    type: Class
+  - uid: Luny.Engine.Services.LunyInputServiceBase
+    name: LunyInputServiceBase
+    type: Class
+  - uid: Luny.Engine.Services.LunyObjectServiceBase
+    name: LunyObjectServiceBase
+    type: Class
+  - uid: Luny.Engine.Services.LunySceneServiceBase
+    name: LunySceneServiceBase
+    type: Class
+  - uid: Luny.Engine.Services.LunyTimeServiceBase
+    name: LunyTimeServiceBase
+    type: Class
+- uid: Luny.Unity.Bridge
+  name: Luny.Unity.Bridge
+  type: Namespace
+  items:
+  - uid: Luny.Unity.Bridge.LunyVectorExt
+    name: LunyVectorExt
+    type: Class
+  - uid: Luny.Unity.Bridge.UnityCollider
+    name: UnityCollider
+    type: Class
+  - uid: Luny.Unity.Bridge.UnityCollision
+    name: UnityCollision
+    type: Class
+  - uid: Luny.Unity.Bridge.UnityLogger
+    name: UnityLogger
+    type: Class
+  - uid: Luny.Unity.Bridge.UnityPathConverter
+    name: UnityPathConverter
+    type: Class
+  - uid: Luny.Unity.Bridge.UnityPrefab
+    name: UnityPrefab
+    type: Class
+  - uid: Luny.Unity.Bridge.UnityScene
+    name: UnityScene
+    type: Class
+- uid: Luny.Unity.Services
+  name: Luny.Unity.Services
+  type: Namespace
+  items:
+  - uid: Luny.Unity.Services.UnityApplicationService
+    name: UnityApplicationService
+    type: Class
+  - uid: Luny.Unity.Services.UnityAssetService
+    name: UnityAssetService
+    type: Class
+  - uid: Luny.Unity.Services.UnityDebugService
+    name: UnityDebugService
+    type: Class
+  - uid: Luny.Unity.Services.UnityEditorService
+    name: UnityEditorService
+    type: Class
+  - uid: Luny.Unity.Services.UnityInputService
+    name: UnityInputService
+    type: Class
+  - uid: Luny.Unity.Services.UnityObjectService
+    name: UnityObjectService
+    type: Class
+  - uid: Luny.Unity.Services.UnitySceneService
+    name: UnitySceneService
+    type: Class
+  - uid: Luny.Unity.Services.UnityTimeService
+    name: UnityTimeService
+    type: Class
+- uid: LunyScript
+  name: LunyScript
+  type: Namespace
+  items:
+  - uid: LunyScript.IScriptDefinition
+    name: IScriptDefinition
+    type: Interface
+  - uid: LunyScript.IScriptEngine
+    name: IScriptEngine
+    type: Interface
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    type: Interface
+  - uid: LunyScript.LunyScriptException
+    name: LunyScriptException
+    type: Class
+  - uid: LunyScript.LunyScriptMaxIterationException
+    name: LunyScriptMaxIterationException
+    type: Class
+  - uid: LunyScript.LunyScriptVariableException
+    name: LunyScriptVariableException
+    type: Class
+  - uid: LunyScript.Script
+    name: Script
+    type: Class
+  - uid: LunyScript.ScriptBlockId
+    name: ScriptBlockId
+    type: Struct
+  - uid: LunyScript.ScriptContext
+    name: ScriptContext
+    type: Class
+  - uid: LunyScript.ScriptEngine
+    name: ScriptEngine
+    type: Class
+  - uid: LunyScript.ScriptId
+    name: ScriptId
+    type: Struct
+  - uid: LunyScript.ScriptOptions
+    name: ScriptOptions
+    type: Struct
+  - uid: LunyScript.ScriptSettings
+    name: ScriptSettings
+    type: Class
+- uid: LunyScript.Api
+  name: LunyScript.Api
+  type: Namespace
+  items:
+  - uid: LunyScript.Api.CollisionBuilderLayered
+    name: CollisionBuilderLayered
+    type: Struct
+  - uid: LunyScript.Api.CollisionBuilderMasked
+    name: CollisionBuilderMasked
+    type: Struct
+  - uid: LunyScript.Api.CollisionBuilderReady
+    name: CollisionBuilderReady
+    type: Struct
+  - uid: LunyScript.Api.CollisionBuilderStart
+    name: CollisionBuilderStart
+    type: Struct
+  - uid: LunyScript.Api.ComponentApi
+    name: ComponentApi
+    type: Struct
+  - uid: LunyScript.Api.CoroutineBuilder
+    name: CoroutineBuilder
+    type: Struct
+  - uid: LunyScript.Api.CoroutineCounterBuilderUnitSet
+    name: CoroutineCounterBuilderUnitSet
+    type: Struct
+  - uid: LunyScript.Api.CoroutineCounterBuilder`1
+    name: CoroutineCounterBuilder<T>
+    type: Struct
+  - uid: LunyScript.Api.CoroutineTimerAmountSet
+    name: CoroutineTimerAmountSet
+    type: Struct
+  - uid: LunyScript.Api.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder<T>
+    type: Struct
+  - uid: LunyScript.Api.CoroutineTimerUnitSet
+    name: CoroutineTimerUnitSet
+    type: Struct
+  - uid: LunyScript.Api.CounterBuilderFinalExtensions
+    name: CounterBuilderFinalExtensions
+    type: Class
+  - uid: LunyScript.Api.CounterBuilderWhenExtensions
+    name: CounterBuilderWhenExtensions
+    type: Class
+  - uid: LunyScript.Api.DebugApi
+    name: DebugApi
+    type: Struct
+  - uid: LunyScript.Api.EditorApi
+    name: EditorApi
+    type: Struct
+  - uid: LunyScript.Api.ForBlockBuilder
+    name: ForBlockBuilder
+    type: Struct
+  - uid: LunyScript.Api.ICollisionBuilderLayered
+    name: ICollisionBuilderLayered
+    type: Interface
+  - uid: LunyScript.Api.ICollisionBuilderMasked
+    name: ICollisionBuilderMasked
+    type: Interface
+  - uid: LunyScript.Api.ICollisionBuilderReady
+    name: ICollisionBuilderReady
+    type: Interface
+  - uid: LunyScript.Api.ICollisionBuilderStart
+    name: ICollisionBuilderStart
+    type: Interface
+  - uid: LunyScript.Api.ICollisionBuilderState
+    name: ICollisionBuilderState
+    type: Interface
+  - uid: LunyScript.Api.ICoroutineCounterBuilderState
+    name: ICoroutineCounterBuilderState
+    type: Interface
+  - uid: LunyScript.Api.ICoroutineCounterBuilderUnitSet
+    name: ICoroutineCounterBuilderUnitSet
+    type: Interface
+  - uid: LunyScript.Api.ICoroutineCounterWhen
+    name: ICoroutineCounterWhen
+    type: Interface
+  - uid: LunyScript.Api.ICoroutineTimerAmountSet
+    name: ICoroutineTimerAmountSet
+    type: Interface
+  - uid: LunyScript.Api.ICoroutineTimerBuilderState
+    name: ICoroutineTimerBuilderState
+    type: Interface
+  - uid: LunyScript.Api.ICoroutineTimerUnitSet
+    name: ICoroutineTimerUnitSet
+    type: Interface
+  - uid: LunyScript.Api.ICoroutineTimerWhen
+    name: ICoroutineTimerWhen
+    type: Interface
+  - uid: LunyScript.Api.IObjectBuilderCanFinish
+    name: IObjectBuilderCanFinish
+    type: Interface
+  - uid: LunyScript.Api.IObjectBuilderNameSet
+    name: IObjectBuilderNameSet
+    type: Interface
+  - uid: LunyScript.Api.IObjectBuilderState
+    name: IObjectBuilderState
+    type: Interface
+  - uid: LunyScript.Api.ITransformBuilderReady
+    name: ITransformBuilderReady
+    type: Interface
+  - uid: LunyScript.Api.ITransformBuilderState
+    name: ITransformBuilderState
+    type: Interface
+  - uid: LunyScript.Api.InputActionBuilder
+    name: InputActionBuilder
+    type: Struct
+  - uid: LunyScript.Api.InputAxisBuilder
+    name: InputAxisBuilder
+    type: Struct
+  - uid: LunyScript.Api.InputBuilder
+    name: InputBuilder
+    type: Struct
+  - uid: LunyScript.Api.InputButtonBuilder
+    name: InputButtonBuilder
+    type: Struct
+  - uid: LunyScript.Api.ObjectBuilder
+    name: ObjectBuilder
+    type: Struct
+  - uid: LunyScript.Api.ObjectBuilderExtensions
+    name: ObjectBuilderExtensions
+    type: Class
+  - uid: LunyScript.Api.ObjectBuilderNameSet
+    name: ObjectBuilderNameSet
+    type: Struct
+  - uid: LunyScript.Api.ObjectCreateBuilder`1
+    name: ObjectCreateBuilder<T>
+    type: Struct
+  - uid: LunyScript.Api.OnInputEventBuilder
+    name: OnInputEventBuilder
+    type: Struct
+  - uid: LunyScript.Api.OnObjectEventBuilder
+    name: OnObjectEventBuilder
+    type: Struct
+  - uid: LunyScript.Api.PhysicsEventBuilder`1
+    name: PhysicsEventBuilder<T>
+    type: Struct
+  - uid: LunyScript.Api.PhysicsEventLayerExtensions
+    name: PhysicsEventLayerExtensions
+    type: Class
+  - uid: LunyScript.Api.PrefabBuilder
+    name: PrefabBuilder
+    type: Struct
+  - uid: LunyScript.Api.SceneApi
+    name: SceneApi
+    type: Struct
+  - uid: LunyScript.Api.TimeApi
+    name: TimeApi
+    type: Struct
+  - uid: LunyScript.Api.TimerBuilderCounterUnitExtensions
+    name: TimerBuilderCounterUnitExtensions
+    type: Class
+  - uid: LunyScript.Api.TimerBuilderFinalExtensions
+    name: TimerBuilderFinalExtensions
+    type: Class
+  - uid: LunyScript.Api.TimerBuilderUnitExtensions
+    name: TimerBuilderUnitExtensions
+    type: Class
+  - uid: LunyScript.Api.TimerBuilderWhenExtensions
+    name: TimerBuilderWhenExtensions
+    type: Class
+  - uid: LunyScript.Api.TransformBuilder
+    name: TransformBuilder
+    type: Struct
+  - uid: LunyScript.Api.TransformBuilderReady
+    name: TransformBuilderReady
+    type: Struct
+  - uid: LunyScript.Api.TransformLookAtBuilderExtensions
+    name: TransformLookAtBuilderExtensions
+    type: Class
+  - uid: LunyScript.Api.TransformLookAtBuilder`1
+    name: TransformLookAtBuilder<T>
+    type: Struct
+  - uid: LunyScript.Api.TransformMoveBuilderExtensions
+    name: TransformMoveBuilderExtensions
+    type: Class
+  - uid: LunyScript.Api.TransformPositionBuilder`1
+    name: TransformPositionBuilder<T>
+    type: Struct
+  - uid: LunyScript.Api.TransformRotateBuilderExtensions
+    name: TransformRotateBuilderExtensions
+    type: Class
+  - uid: LunyScript.Api.TransformRotationBuilder`1
+    name: TransformRotationBuilder<T>
+    type: Struct
+  - uid: LunyScript.Api.TransformScaleBuilderExtensions
+    name: TransformScaleBuilderExtensions
+    type: Class
+  - uid: LunyScript.Api.TransformScaleBuilder`1
+    name: TransformScaleBuilder<T>
+    type: Struct
+  - uid: LunyScript.Api.WhenGlobalEventBuilder
+    name: WhenGlobalEventBuilder
+    type: Struct
+  - uid: LunyScript.Api.WhenInputActionBuilder
+    name: WhenInputActionBuilder
+    type: Struct
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions
+    name: WhenInputActionBuilderExtensions
+    type: Class
+  - uid: LunyScript.Api.WhenInputEventBuilder
+    name: WhenInputEventBuilder
+    type: Struct
+  - uid: LunyScript.Api.WhenSceneEventBuilder
+    name: WhenSceneEventBuilder
+    type: Struct
+  - uid: LunyScript.Api.WhileBlockBuilder
+    name: WhileBlockBuilder
+    type: Struct
+- uid: LunyScript.Blocks
+  name: LunyScript.Blocks
+  type: Namespace
+  items:
+  - uid: LunyScript.Blocks.ComputedVariableBlock
+    name: ComputedVariableBlock
+    type: Class
+  - uid: LunyScript.Blocks.ConstantVariableBlock
+    name: ConstantVariableBlock
+    type: Class
+  - uid: LunyScript.Blocks.ControlFlow
+    name: ControlFlow
+    type: Class
+  - uid: LunyScript.Blocks.ICoroutineBlock
+    name: ICoroutineBlock
+    type: Interface
+  - uid: LunyScript.Blocks.ICounterCoroutineBlock
+    name: ICounterCoroutineBlock
+    type: Interface
+  - uid: LunyScript.Blocks.IScriptBlock
+    name: IScriptBlock
+    type: Interface
+  - uid: LunyScript.Blocks.ISequenceBlock
+    name: ISequenceBlock
+    type: Interface
+  - uid: LunyScript.Blocks.ITimerCoroutineBlock
+    name: ITimerCoroutineBlock
+    type: Interface
+  - uid: LunyScript.Blocks.IfBlock
+    name: IfBlock
+    type: Class
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    type: Class
+  - uid: LunyScript.Blocks.ScriptBlock
+    name: ScriptBlock
+    type: Class
+  - uid: LunyScript.Blocks.ScriptConditionBlock
+    name: ScriptConditionBlock
+    type: Class
+  - uid: LunyScript.Blocks.SequenceBlock
+    name: SequenceBlock
+    type: Class
+  - uid: LunyScript.Blocks.TableVariableBlock
+    name: TableVariableBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformInterpolateBlock
+    name: TransformInterpolateBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock
+    name: TransformInterpolateTowardsObjectBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformInterpolateTowardsVariableBlock
+    name: TransformInterpolateTowardsVariableBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformPositionLerpTowardsObjectBlock
+    name: TransformPositionLerpTowardsObjectBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformPositionLinearTowardsObjectBlock
+    name: TransformPositionLinearTowardsObjectBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformPositionMoveByBlock
+    name: TransformPositionMoveByBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformPositionMoveRelativeBlock
+    name: TransformPositionMoveRelativeBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformPositionSetLocalBlock
+    name: TransformPositionSetLocalBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformPositionSetWorldBlock
+    name: TransformPositionSetWorldBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock
+    name: TransformRotationLerpTowardsObjectBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformRotationLinearTowardsObjectBlock
+    name: TransformRotationLinearTowardsObjectBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformRotationLookAtBlock
+    name: TransformRotationLookAtBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformRotationSetLocalBlock
+    name: TransformRotationSetLocalBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformRotationSetWorldBlock
+    name: TransformRotationSetWorldBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformScaleSetLocalBlock
+    name: TransformScaleSetLocalBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformScaleTowardsBlock
+    name: TransformScaleTowardsBlock
+    type: Class
+  - uid: LunyScript.Blocks.TransformScaleTowardsLerpBlock
+    name: TransformScaleTowardsLerpBlock
+    type: Class
+  - uid: LunyScript.Blocks.VarAccessor
+    name: VarAccessor
+    type: Class
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
+    type: Class
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock<T>
+    type: Class
+- uid: LunyScript.Diagnostics
+  name: LunyScript.Diagnostics
+  type: Namespace
+  items:
+  - uid: LunyScript.Diagnostics.ScriptBlockMetrics
+    name: ScriptBlockMetrics
+    type: Class
+  - uid: LunyScript.Diagnostics.ScriptBlockProfiler
+    name: ScriptBlockProfiler
+    type: Class
+  - uid: LunyScript.Diagnostics.ScriptBlockProfilerSnapshot
+    name: ScriptBlockProfilerSnapshot
+    type: Class
+  - uid: LunyScript.Diagnostics.ScriptDebugHooks
+    name: ScriptDebugHooks
+    type: Class
+  - uid: LunyScript.Diagnostics.ScriptExecutionTrace
+    name: ScriptExecutionTrace
+    type: Struct
+- uid: LunyScript.SmokeTests
+  name: LunyScript.SmokeTests
+  type: Namespace
+  items:
+  - uid: LunyScript.SmokeTests.Assert_Runs_OnCreated
+    name: Assert_Runs_OnCreated
+    type: Class
+  - uid: LunyScript.SmokeTests.Assert_Runs_OnDestroyed
+    name: Assert_Runs_OnDestroyed
+    type: Class
+  - uid: LunyScript.SmokeTests.Assert_Runs_OnDisabled
+    name: Assert_Runs_OnDisabled
+    type: Class
+  - uid: LunyScript.SmokeTests.Assert_Runs_OnEnabled
+    name: Assert_Runs_OnEnabled
+    type: Class
+  - uid: LunyScript.SmokeTests.Assert_Runs_OnFrameLateUpdate
+    name: Assert_Runs_OnFrameLateUpdate
+    type: Class
+  - uid: LunyScript.SmokeTests.Assert_Runs_OnFrameUpdate
+    name: Assert_Runs_OnFrameUpdate
+    type: Class
+  - uid: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat
+    name: Assert_Runs_OnHeartbeat
+    type: Class
+  - uid: LunyScript.SmokeTests.Assert_Runs_OnReady
+    name: Assert_Runs_OnReady
+    type: Class
+  - uid: LunyScript.SmokeTests.CollisionEvents
+    name: CollisionEvents
+    type: Class
+  - uid: LunyScript.SmokeTests.CoroutineCounter
+    name: CoroutineCounter
+    type: Class
+  - uid: LunyScript.SmokeTests.CoroutineEvery
+    name: CoroutineEvery
+    type: Class
+  - uid: LunyScript.SmokeTests.CoroutineFor
+    name: CoroutineFor
+    type: Class
+  - uid: LunyScript.SmokeTests.CoroutineTimer
+    name: CoroutineTimer
+    type: Class
+  - uid: LunyScript.SmokeTests.InputTest
+    name: InputTest
+    type: Class
+  - uid: LunyScript.SmokeTests.InputTransformMove_LunyScript
+    name: InputTransformMove_LunyScript
+    type: Class
+  - uid: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour
+    name: InputTransformMove_MonoBehaviour
+    type: Class
+  - uid: LunyScript.SmokeTests.InputTransformShift_LunyScript
+    name: InputTransformShift_LunyScript
+    type: Class
+  - uid: LunyScript.SmokeTests.InputTransformShift_MonoBehaviour
+    name: InputTransformShift_MonoBehaviour
+    type: Class
+  - uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase
+    name: LunyScriptSmokeTestBase
+    type: Class
+  - uid: LunyScript.SmokeTests.ObjectCreateTestScript
+    name: ObjectCreateTestScript
+    type: Class
+  - uid: LunyScript.SmokeTests.Player1
+    name: Player1
+    type: Class
+  - uid: LunyScript.SmokeTests.Player2
+    name: Player2
+    type: Class
+  - uid: LunyScript.SmokeTests.Player3
+    name: Player3
+    type: Class
+  - uid: LunyScript.SmokeTests.Player4
+    name: Player4
+    type: Class
+  - uid: LunyScript.SmokeTests.TriggerEvents
+    name: TriggerEvents
+    type: Class
+- uid: LunyScript.Unity.Blocks
+  name: LunyScript.Unity.Blocks
+  type: Namespace
+  items:
+  - uid: LunyScript.Unity.Blocks.ComponentApiExtensions
+    name: ComponentApiExtensions
+    type: Class
+memberLayout: SamePage

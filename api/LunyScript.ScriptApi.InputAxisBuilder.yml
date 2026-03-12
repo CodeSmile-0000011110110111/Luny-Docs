@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.InputAxisBuilder
+  commentId: T:LunyScript.ScriptApi.InputAxisBuilder
+  id: InputAxisBuilder
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.InputAxisBuilder.Value
+  langs:
+  - csharp
+  - vb
+  name: InputAxisBuilder
+  nameWithType: InputAxisBuilder
+  fullName: LunyScript.ScriptApi.InputAxisBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Provides condition and value accessors for a named axis input action.
+  example: []
+  syntax:
+    content: public readonly struct InputAxisBuilder
+    content.vb: Public Structure InputAxisBuilder
+- uid: LunyScript.ScriptApi.InputAxisBuilder.Value
+  commentId: P:LunyScript.ScriptApi.InputAxisBuilder.Value
+  id: Value
+  parent: LunyScript.ScriptApi.InputAxisBuilder
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: InputAxisBuilder.Value
+  fullName: LunyScript.ScriptApi.InputAxisBuilder.Value
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Analog trigger value (0.0–1.0).
+  example: []
+  syntax:
+    content: public VariableBlock Value { get; }
+    parameters: []
+    return:
+      type: LunyScript.Blocks.VariableBlock
+    content.vb: Public ReadOnly Property Value As VariableBlock
+  overload: LunyScript.ScriptApi.InputAxisBuilder.Value*
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.InputAxisBuilder.Value*
+  commentId: Overload:LunyScript.ScriptApi.InputAxisBuilder.Value
+  isExternal: true
+  href: LunyScript.ScriptApi.InputAxisBuilder.html#LunyScript_ScriptApi_InputAxisBuilder_Value
+  name: Value
+  nameWithType: InputAxisBuilder.Value
+  fullName: LunyScript.ScriptApi.InputAxisBuilder.Value
+- uid: LunyScript.Blocks.VariableBlock
+  commentId: T:LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html
+  name: VariableBlock
+  nameWithType: VariableBlock
+  fullName: LunyScript.Blocks.VariableBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html

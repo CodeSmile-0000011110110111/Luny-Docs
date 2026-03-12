@@ -1,0 +1,364 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.DebugApi
+  commentId: T:LunyScript.ScriptApi.DebugApi
+  id: DebugApi
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.DebugApi.Break(System.String)
+  - LunyScript.ScriptApi.DebugApi.Log(LunyScript.Blocks.VariableBlock)
+  - LunyScript.ScriptApi.DebugApi.Log(System.String)
+  - LunyScript.ScriptApi.DebugApi.LogError(System.String)
+  - LunyScript.ScriptApi.DebugApi.LogInfo(LunyScript.Blocks.VariableBlock)
+  - LunyScript.ScriptApi.DebugApi.LogInfo(System.String)
+  - LunyScript.ScriptApi.DebugApi.LogWarning(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DebugApi
+  nameWithType: DebugApi
+  fullName: LunyScript.ScriptApi.DebugApi
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Provides diagnostics blocks which are omitted from release builds,
+
+    unless the scripting symbol LUNYSCRIPT_DEBUG is defined.
+  example: []
+  syntax:
+    content: public readonly struct DebugApi
+    content.vb: Public Structure DebugApi
+- uid: LunyScript.ScriptApi.DebugApi.Log(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.ScriptApi.DebugApi.Log(LunyScript.Blocks.VariableBlock)
+  id: Log(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.ScriptApi.DebugApi
+  langs:
+  - csharp
+  - vb
+  name: Log(VariableBlock)
+  nameWithType: DebugApi.Log(VariableBlock)
+  fullName: LunyScript.ScriptApi.DebugApi.Log(LunyScript.Blocks.VariableBlock)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Logs a variable. Alias for LogInfo().
+  example: []
+  syntax:
+    content: public ScriptActionBlock Log(VariableBlock variableBlock)
+    parameters:
+    - id: variableBlock
+      type: LunyScript.Blocks.VariableBlock
+      description: ''
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+      description: ''
+    content.vb: Public Function Log(variableBlock As VariableBlock) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.DebugApi.Log*
+- uid: LunyScript.ScriptApi.DebugApi.Log(System.String)
+  commentId: M:LunyScript.ScriptApi.DebugApi.Log(System.String)
+  id: Log(System.String)
+  parent: LunyScript.ScriptApi.DebugApi
+  langs:
+  - csharp
+  - vb
+  name: Log(string)
+  nameWithType: DebugApi.Log(string)
+  fullName: LunyScript.ScriptApi.DebugApi.Log(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Logs a message. Alias for LogInfo().
+  example: []
+  syntax:
+    content: public ScriptActionBlock Log(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+      description: ''
+    content.vb: Public Function Log(message As String) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.DebugApi.Log*
+  nameWithType.vb: DebugApi.Log(String)
+  fullName.vb: LunyScript.ScriptApi.DebugApi.Log(String)
+  name.vb: Log(String)
+- uid: LunyScript.ScriptApi.DebugApi.LogInfo(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.ScriptApi.DebugApi.LogInfo(LunyScript.Blocks.VariableBlock)
+  id: LogInfo(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.ScriptApi.DebugApi
+  langs:
+  - csharp
+  - vb
+  name: LogInfo(VariableBlock)
+  nameWithType: DebugApi.LogInfo(VariableBlock)
+  fullName: LunyScript.ScriptApi.DebugApi.LogInfo(LunyScript.Blocks.VariableBlock)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Logs a variable.
+  example: []
+  syntax:
+    content: public ScriptActionBlock LogInfo(VariableBlock variableBlock)
+    parameters:
+    - id: variableBlock
+      type: LunyScript.Blocks.VariableBlock
+      description: ''
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+      description: ''
+    content.vb: Public Function LogInfo(variableBlock As VariableBlock) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.DebugApi.LogInfo*
+- uid: LunyScript.ScriptApi.DebugApi.LogInfo(System.String)
+  commentId: M:LunyScript.ScriptApi.DebugApi.LogInfo(System.String)
+  id: LogInfo(System.String)
+  parent: LunyScript.ScriptApi.DebugApi
+  langs:
+  - csharp
+  - vb
+  name: LogInfo(string)
+  nameWithType: DebugApi.LogInfo(string)
+  fullName: LunyScript.ScriptApi.DebugApi.LogInfo(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Logs a debug message that is completely stripped in release builds.
+
+    Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined.
+  example: []
+  syntax:
+    content: public ScriptActionBlock LogInfo(string message)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function LogInfo(message As String) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.DebugApi.LogInfo*
+  nameWithType.vb: DebugApi.LogInfo(String)
+  fullName.vb: LunyScript.ScriptApi.DebugApi.LogInfo(String)
+  name.vb: LogInfo(String)
+- uid: LunyScript.ScriptApi.DebugApi.LogWarning(System.String)
+  commentId: M:LunyScript.ScriptApi.DebugApi.LogWarning(System.String)
+  id: LogWarning(System.String)
+  parent: LunyScript.ScriptApi.DebugApi
+  langs:
+  - csharp
+  - vb
+  name: LogWarning(string)
+  nameWithType: DebugApi.LogWarning(string)
+  fullName: LunyScript.ScriptApi.DebugApi.LogWarning(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Logs a debug "warning" (yellow text) message.
+
+    Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
+  example: []
+  syntax:
+    content: public ScriptActionBlock LogWarning(string message)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function LogWarning(message As String) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.DebugApi.LogWarning*
+  nameWithType.vb: DebugApi.LogWarning(String)
+  fullName.vb: LunyScript.ScriptApi.DebugApi.LogWarning(String)
+  name.vb: LogWarning(String)
+- uid: LunyScript.ScriptApi.DebugApi.LogError(System.String)
+  commentId: M:LunyScript.ScriptApi.DebugApi.LogError(System.String)
+  id: LogError(System.String)
+  parent: LunyScript.ScriptApi.DebugApi
+  langs:
+  - csharp
+  - vb
+  name: LogError(string)
+  nameWithType: DebugApi.LogError(string)
+  fullName: LunyScript.ScriptApi.DebugApi.LogError(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Logs a debug "error" (red text) message.
+
+    Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
+  example: []
+  syntax:
+    content: public ScriptActionBlock LogError(string message)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function LogError(message As String) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.DebugApi.LogError*
+  nameWithType.vb: DebugApi.LogError(String)
+  fullName.vb: LunyScript.ScriptApi.DebugApi.LogError(String)
+  name.vb: LogError(String)
+- uid: LunyScript.ScriptApi.DebugApi.Break(System.String)
+  commentId: M:LunyScript.ScriptApi.DebugApi.Break(System.String)
+  id: Break(System.String)
+  parent: LunyScript.ScriptApi.DebugApi
+  langs:
+  - csharp
+  - vb
+  name: Break(string)
+  nameWithType: DebugApi.Break(string)
+  fullName: LunyScript.ScriptApi.DebugApi.Break(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: >-
+    Triggers a debugger breakpoint if debugger is attached by calling System.Diagnostics.Debugger.Break().
+
+    Completely stripped in release builds.
+
+    Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.
+  example: []
+  syntax:
+    content: public ScriptActionBlock Break(string message = null)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Break(message As String = Nothing) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.DebugApi.Break*
+  nameWithType.vb: DebugApi.Break(String)
+  fullName.vb: LunyScript.ScriptApi.DebugApi.Break(String)
+  name.vb: Break(String)
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.DebugApi.Log*
+  commentId: Overload:LunyScript.ScriptApi.DebugApi.Log
+  isExternal: true
+  href: LunyScript.ScriptApi.DebugApi.html#LunyScript_ScriptApi_DebugApi_Log_LunyScript_Blocks_VariableBlock_
+  name: Log
+  nameWithType: DebugApi.Log
+  fullName: LunyScript.ScriptApi.DebugApi.Log
+- uid: LunyScript.Blocks.VariableBlock
+  commentId: T:LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html
+  name: VariableBlock
+  nameWithType: VariableBlock
+  fullName: LunyScript.Blocks.VariableBlock
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptApi.DebugApi.LogInfo*
+  commentId: Overload:LunyScript.ScriptApi.DebugApi.LogInfo
+  isExternal: true
+  href: LunyScript.ScriptApi.DebugApi.html#LunyScript_ScriptApi_DebugApi_LogInfo_LunyScript_Blocks_VariableBlock_
+  name: LogInfo
+  nameWithType: DebugApi.LogInfo
+  fullName: LunyScript.ScriptApi.DebugApi.LogInfo
+- uid: LunyScript.ScriptApi.DebugApi.LogWarning*
+  commentId: Overload:LunyScript.ScriptApi.DebugApi.LogWarning
+  isExternal: true
+  href: LunyScript.ScriptApi.DebugApi.html#LunyScript_ScriptApi_DebugApi_LogWarning_System_String_
+  name: LogWarning
+  nameWithType: DebugApi.LogWarning
+  fullName: LunyScript.ScriptApi.DebugApi.LogWarning
+- uid: LunyScript.ScriptApi.DebugApi.LogError*
+  commentId: Overload:LunyScript.ScriptApi.DebugApi.LogError
+  isExternal: true
+  href: LunyScript.ScriptApi.DebugApi.html#LunyScript_ScriptApi_DebugApi_LogError_System_String_
+  name: LogError
+  nameWithType: DebugApi.LogError
+  fullName: LunyScript.ScriptApi.DebugApi.LogError
+- uid: LunyScript.ScriptApi.DebugApi.Break*
+  commentId: Overload:LunyScript.ScriptApi.DebugApi.Break
+  isExternal: true
+  href: LunyScript.ScriptApi.DebugApi.html#LunyScript_ScriptApi_DebugApi_Break_System_String_
+  name: Break
+  nameWithType: DebugApi.Break
+  fullName: LunyScript.ScriptApi.DebugApi.Break

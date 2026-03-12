@@ -1,0 +1,39 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.CoroutineTimerBuilder`1
+  commentId: T:LunyScript.CoroutineTimerBuilder`1
+  id: CoroutineTimerBuilder`1
+  parent: LunyScript
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.CoroutineTimerBuilder<T>
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Fluent builder for timer coroutines.
+
+    Usage: Timer("name").In(3).Seconds().Do(blocks);
+           Timer("name").Every(1.5).Minutes().Do(blocks);
+  example: []
+  syntax:
+    content: 'public readonly struct CoroutineTimerBuilder<T> where T : struct, ICoroutineTimerBuilderState'
+    typeParameters:
+    - id: T
+    content.vb: Public Structure CoroutineTimerBuilder(Of T As {Structure, ICoroutineTimerBuilderState})
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript

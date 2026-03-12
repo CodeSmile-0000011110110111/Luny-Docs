@@ -1,0 +1,522 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  commentId: T:LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  id: TransformRotateBuilderExtensions
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.TransformRotateBuilderExtensions.DeadZone``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  - LunyScript.ScriptApi.TransformRotateBuilderExtensions.Lerp``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  - LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockX``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  - LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockY``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  - LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockZ``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  - LunyScript.ScriptApi.TransformRotateBuilderExtensions.Responsiveness``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  - LunyScript.ScriptApi.TransformRotateBuilderExtensions.Slerp``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  - LunyScript.ScriptApi.TransformRotateBuilderExtensions.Speed``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  langs:
+  - csharp
+  - vb
+  name: TransformRotateBuilderExtensions
+  nameWithType: TransformRotateBuilderExtensions
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public static class TransformRotateBuilderExtensions
+    content.vb: Public Module TransformRotateBuilderExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Speed``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  commentId: M:LunyScript.ScriptApi.TransformRotateBuilderExtensions.Speed``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  id: Speed``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Speed<T>(TransformRotationBuilder<T>, double)
+  nameWithType: TransformRotateBuilderExtensions.Speed<T>(TransformRotationBuilder<T>, double)
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Speed<T>(LunyScript.ScriptApi.TransformRotationBuilder<T>, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Rotation speed in degrees per second (for linear) or lerp factor (for <code>Lerp()</code>/<code>Slerp()</code>).
+  example: []
+  syntax:
+    content: 'public static TransformRotationBuilder<TransformBuilderReady> Speed<T>(this TransformRotationBuilder<T> b, double speed) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.TransformRotationBuilder{{T}}
+    - id: speed
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.TransformRotationBuilder{LunyScript.ScriptApi.TransformBuilderReady}
+    content.vb: Public Shared Function Speed(Of T As {Structure, ITransformBuilderReady})(b As TransformRotationBuilder(Of T), speed As Double) As TransformRotationBuilder(Of TransformBuilderReady)
+  overload: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Speed*
+  nameWithType.vb: TransformRotateBuilderExtensions.Speed(Of T)(TransformRotationBuilder(Of T), Double)
+  fullName.vb: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Speed(Of T)(LunyScript.ScriptApi.TransformRotationBuilder(Of T), Double)
+  name.vb: Speed(Of T)(TransformRotationBuilder(Of T), Double)
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.DeadZone``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  commentId: M:LunyScript.ScriptApi.TransformRotateBuilderExtensions.DeadZone``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  id: DeadZone``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeadZone<T>(TransformRotationBuilder<T>, double)
+  nameWithType: TransformRotateBuilderExtensions.DeadZone<T>(TransformRotationBuilder<T>, double)
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.DeadZone<T>(LunyScript.ScriptApi.TransformRotationBuilder<T>, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Minimum angle threshold in degrees before rotation begins (prevents micro-jitter).
+  example: []
+  syntax:
+    content: 'public static TransformRotationBuilder<TransformBuilderReady> DeadZone<T>(this TransformRotationBuilder<T> b, double deadZone) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.TransformRotationBuilder{{T}}
+    - id: deadZone
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.TransformRotationBuilder{LunyScript.ScriptApi.TransformBuilderReady}
+    content.vb: Public Shared Function DeadZone(Of T As {Structure, ITransformBuilderReady})(b As TransformRotationBuilder(Of T), deadZone As Double) As TransformRotationBuilder(Of TransformBuilderReady)
+  overload: LunyScript.ScriptApi.TransformRotateBuilderExtensions.DeadZone*
+  nameWithType.vb: TransformRotateBuilderExtensions.DeadZone(Of T)(TransformRotationBuilder(Of T), Double)
+  fullName.vb: LunyScript.ScriptApi.TransformRotateBuilderExtensions.DeadZone(Of T)(LunyScript.ScriptApi.TransformRotationBuilder(Of T), Double)
+  name.vb: DeadZone(Of T)(TransformRotationBuilder(Of T), Double)
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Responsiveness``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  commentId: M:LunyScript.ScriptApi.TransformRotateBuilderExtensions.Responsiveness``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  id: Responsiveness``1(LunyScript.ScriptApi.TransformRotationBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Responsiveness<T>(TransformRotationBuilder<T>, double)
+  nameWithType: TransformRotateBuilderExtensions.Responsiveness<T>(TransformRotationBuilder<T>, double)
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Responsiveness<T>(LunyScript.ScriptApi.TransformRotationBuilder<T>, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Multiplies delta time; larger values produce faster approach.
+  example: []
+  syntax:
+    content: 'public static TransformRotationBuilder<TransformBuilderReady> Responsiveness<T>(this TransformRotationBuilder<T> b, double responsiveness) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.TransformRotationBuilder{{T}}
+    - id: responsiveness
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.TransformRotationBuilder{LunyScript.ScriptApi.TransformBuilderReady}
+    content.vb: Public Shared Function Responsiveness(Of T As {Structure, ITransformBuilderReady})(b As TransformRotationBuilder(Of T), responsiveness As Double) As TransformRotationBuilder(Of TransformBuilderReady)
+  overload: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Responsiveness*
+  nameWithType.vb: TransformRotateBuilderExtensions.Responsiveness(Of T)(TransformRotationBuilder(Of T), Double)
+  fullName.vb: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Responsiveness(Of T)(LunyScript.ScriptApi.TransformRotationBuilder(Of T), Double)
+  name.vb: Responsiveness(Of T)(TransformRotationBuilder(Of T), Double)
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockX``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  commentId: M:LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockX``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  id: LockX``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockX<T>(TransformRotationBuilder<T>)
+  nameWithType: TransformRotateBuilderExtensions.LockX<T>(TransformRotationBuilder<T>)
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockX<T>(LunyScript.ScriptApi.TransformRotationBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Prevents rotation around the X axis.
+  example: []
+  syntax:
+    content: 'public static TransformRotationBuilder<TransformBuilderReady> LockX<T>(this TransformRotationBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.TransformRotationBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.TransformRotationBuilder{LunyScript.ScriptApi.TransformBuilderReady}
+    content.vb: Public Shared Function LockX(Of T As {Structure, ITransformBuilderReady})(b As TransformRotationBuilder(Of T)) As TransformRotationBuilder(Of TransformBuilderReady)
+  overload: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockX*
+  nameWithType.vb: TransformRotateBuilderExtensions.LockX(Of T)(TransformRotationBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockX(Of T)(LunyScript.ScriptApi.TransformRotationBuilder(Of T))
+  name.vb: LockX(Of T)(TransformRotationBuilder(Of T))
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockY``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  commentId: M:LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockY``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  id: LockY``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockY<T>(TransformRotationBuilder<T>)
+  nameWithType: TransformRotateBuilderExtensions.LockY<T>(TransformRotationBuilder<T>)
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockY<T>(LunyScript.ScriptApi.TransformRotationBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Prevents rotation around the Y axis.
+  example: []
+  syntax:
+    content: 'public static TransformRotationBuilder<TransformBuilderReady> LockY<T>(this TransformRotationBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.TransformRotationBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.TransformRotationBuilder{LunyScript.ScriptApi.TransformBuilderReady}
+    content.vb: Public Shared Function LockY(Of T As {Structure, ITransformBuilderReady})(b As TransformRotationBuilder(Of T)) As TransformRotationBuilder(Of TransformBuilderReady)
+  overload: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockY*
+  nameWithType.vb: TransformRotateBuilderExtensions.LockY(Of T)(TransformRotationBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockY(Of T)(LunyScript.ScriptApi.TransformRotationBuilder(Of T))
+  name.vb: LockY(Of T)(TransformRotationBuilder(Of T))
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockZ``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  commentId: M:LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockZ``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  id: LockZ``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LockZ<T>(TransformRotationBuilder<T>)
+  nameWithType: TransformRotateBuilderExtensions.LockZ<T>(TransformRotationBuilder<T>)
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockZ<T>(LunyScript.ScriptApi.TransformRotationBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Prevents rotation around the Z axis.
+  example: []
+  syntax:
+    content: 'public static TransformRotationBuilder<TransformBuilderReady> LockZ<T>(this TransformRotationBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.TransformRotationBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.TransformRotationBuilder{LunyScript.ScriptApi.TransformBuilderReady}
+    content.vb: Public Shared Function LockZ(Of T As {Structure, ITransformBuilderReady})(b As TransformRotationBuilder(Of T)) As TransformRotationBuilder(Of TransformBuilderReady)
+  overload: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockZ*
+  nameWithType.vb: TransformRotateBuilderExtensions.LockZ(Of T)(TransformRotationBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockZ(Of T)(LunyScript.ScriptApi.TransformRotationBuilder(Of T))
+  name.vb: LockZ(Of T)(TransformRotationBuilder(Of T))
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Lerp``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  commentId: M:LunyScript.ScriptApi.TransformRotateBuilderExtensions.Lerp``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  id: Lerp``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Lerp<T>(TransformRotationBuilder<T>)
+  nameWithType: TransformRotateBuilderExtensions.Lerp<T>(TransformRotationBuilder<T>)
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Lerp<T>(LunyScript.ScriptApi.TransformRotationBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Lerp interpolation — speed is the lerp factor.
+  example: []
+  syntax:
+    content: 'public static TransformRotationLerpTowardsObjectBlock Lerp<T>(this TransformRotationBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.TransformRotationBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock
+    content.vb: Public Shared Function Lerp(Of T As {Structure, ITransformBuilderReady})(b As TransformRotationBuilder(Of T)) As TransformRotationLerpTowardsObjectBlock
+  overload: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Lerp*
+  nameWithType.vb: TransformRotateBuilderExtensions.Lerp(Of T)(TransformRotationBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Lerp(Of T)(LunyScript.ScriptApi.TransformRotationBuilder(Of T))
+  name.vb: Lerp(Of T)(TransformRotationBuilder(Of T))
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Slerp``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  commentId: M:LunyScript.ScriptApi.TransformRotateBuilderExtensions.Slerp``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  id: Slerp``1(LunyScript.ScriptApi.TransformRotationBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TransformRotateBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Slerp<T>(TransformRotationBuilder<T>)
+  nameWithType: TransformRotateBuilderExtensions.Slerp<T>(TransformRotationBuilder<T>)
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Slerp<T>(LunyScript.ScriptApi.TransformRotationBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Spherical interpolation — speed is the slerp factor.
+  example: []
+  syntax:
+    content: 'public static TransformRotationLerpTowardsObjectBlock Slerp<T>(this TransformRotationBuilder<T> b) where T : struct, ITransformBuilderReady'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.TransformRotationBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock
+    content.vb: Public Shared Function Slerp(Of T As {Structure, ITransformBuilderReady})(b As TransformRotationBuilder(Of T)) As TransformRotationLerpTowardsObjectBlock
+  overload: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Slerp*
+  nameWithType.vb: TransformRotateBuilderExtensions.Slerp(Of T)(TransformRotationBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Slerp(Of T)(LunyScript.ScriptApi.TransformRotationBuilder(Of T))
+  name.vb: Slerp(Of T)(TransformRotationBuilder(Of T))
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Speed*
+  commentId: Overload:LunyScript.ScriptApi.TransformRotateBuilderExtensions.Speed
+  isExternal: true
+  href: LunyScript.ScriptApi.TransformRotateBuilderExtensions.html#LunyScript_ScriptApi_TransformRotateBuilderExtensions_Speed__1_LunyScript_ScriptApi_TransformRotationBuilder___0__System_Double_
+  name: Speed
+  nameWithType: TransformRotateBuilderExtensions.Speed
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Speed
+- uid: LunyScript.ScriptApi.TransformRotationBuilder{{T}}
+  commentId: T:LunyScript.ScriptApi.TransformRotationBuilder{``0}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.TransformRotationBuilder`1
+  href: LunyScript.ScriptApi.TransformRotationBuilder-1.html
+  name: TransformRotationBuilder<T>
+  nameWithType: TransformRotationBuilder<T>
+  fullName: LunyScript.ScriptApi.TransformRotationBuilder<T>
+  nameWithType.vb: TransformRotationBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.TransformRotationBuilder(Of T)
+  name.vb: TransformRotationBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.TransformRotationBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.TransformRotationBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: LunyScript.ScriptApi.TransformRotationBuilder{LunyScript.ScriptApi.TransformBuilderReady}
+  commentId: T:LunyScript.ScriptApi.TransformRotationBuilder{LunyScript.ScriptApi.TransformBuilderReady}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.TransformRotationBuilder`1
+  href: LunyScript.ScriptApi.TransformRotationBuilder-1.html
+  name: TransformRotationBuilder<TransformBuilderReady>
+  nameWithType: TransformRotationBuilder<TransformBuilderReady>
+  fullName: LunyScript.ScriptApi.TransformRotationBuilder<LunyScript.ScriptApi.TransformBuilderReady>
+  nameWithType.vb: TransformRotationBuilder(Of TransformBuilderReady)
+  fullName.vb: LunyScript.ScriptApi.TransformRotationBuilder(Of LunyScript.ScriptApi.TransformBuilderReady)
+  name.vb: TransformRotationBuilder(Of TransformBuilderReady)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.TransformRotationBuilder-1.html
+  - name: <
+  - uid: LunyScript.ScriptApi.TransformBuilderReady
+    name: TransformBuilderReady
+    isExternal: true
+    href: LunyScript.ScriptApi.TransformBuilderReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.TransformRotationBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.ScriptApi.TransformBuilderReady
+    name: TransformBuilderReady
+    isExternal: true
+    href: LunyScript.ScriptApi.TransformBuilderReady.html
+  - name: )
+- uid: LunyScript.ScriptApi.TransformRotationBuilder`1
+  commentId: T:LunyScript.ScriptApi.TransformRotationBuilder`1
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.TransformRotationBuilder-1.html
+  name: TransformRotationBuilder<T>
+  nameWithType: TransformRotationBuilder<T>
+  fullName: LunyScript.ScriptApi.TransformRotationBuilder<T>
+  nameWithType.vb: TransformRotationBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.TransformRotationBuilder(Of T)
+  name.vb: TransformRotationBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.TransformRotationBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.TransformRotationBuilder`1
+    name: TransformRotationBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.TransformRotationBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.DeadZone*
+  commentId: Overload:LunyScript.ScriptApi.TransformRotateBuilderExtensions.DeadZone
+  isExternal: true
+  href: LunyScript.ScriptApi.TransformRotateBuilderExtensions.html#LunyScript_ScriptApi_TransformRotateBuilderExtensions_DeadZone__1_LunyScript_ScriptApi_TransformRotationBuilder___0__System_Double_
+  name: DeadZone
+  nameWithType: TransformRotateBuilderExtensions.DeadZone
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.DeadZone
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Responsiveness*
+  commentId: Overload:LunyScript.ScriptApi.TransformRotateBuilderExtensions.Responsiveness
+  isExternal: true
+  href: LunyScript.ScriptApi.TransformRotateBuilderExtensions.html#LunyScript_ScriptApi_TransformRotateBuilderExtensions_Responsiveness__1_LunyScript_ScriptApi_TransformRotationBuilder___0__System_Double_
+  name: Responsiveness
+  nameWithType: TransformRotateBuilderExtensions.Responsiveness
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Responsiveness
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockX*
+  commentId: Overload:LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockX
+  isExternal: true
+  href: LunyScript.ScriptApi.TransformRotateBuilderExtensions.html#LunyScript_ScriptApi_TransformRotateBuilderExtensions_LockX__1_LunyScript_ScriptApi_TransformRotationBuilder___0__
+  name: LockX
+  nameWithType: TransformRotateBuilderExtensions.LockX
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockX
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockY*
+  commentId: Overload:LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockY
+  isExternal: true
+  href: LunyScript.ScriptApi.TransformRotateBuilderExtensions.html#LunyScript_ScriptApi_TransformRotateBuilderExtensions_LockY__1_LunyScript_ScriptApi_TransformRotationBuilder___0__
+  name: LockY
+  nameWithType: TransformRotateBuilderExtensions.LockY
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockY
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockZ*
+  commentId: Overload:LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockZ
+  isExternal: true
+  href: LunyScript.ScriptApi.TransformRotateBuilderExtensions.html#LunyScript_ScriptApi_TransformRotateBuilderExtensions_LockZ__1_LunyScript_ScriptApi_TransformRotationBuilder___0__
+  name: LockZ
+  nameWithType: TransformRotateBuilderExtensions.LockZ
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.LockZ
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Lerp*
+  commentId: Overload:LunyScript.ScriptApi.TransformRotateBuilderExtensions.Lerp
+  isExternal: true
+  href: LunyScript.ScriptApi.TransformRotateBuilderExtensions.html#LunyScript_ScriptApi_TransformRotateBuilderExtensions_Lerp__1_LunyScript_ScriptApi_TransformRotationBuilder___0__
+  name: Lerp
+  nameWithType: TransformRotateBuilderExtensions.Lerp
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Lerp
+- uid: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock
+  commentId: T:LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock.html
+  name: TransformRotationLerpTowardsObjectBlock
+  nameWithType: TransformRotationLerpTowardsObjectBlock
+  fullName: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Slerp*
+  commentId: Overload:LunyScript.ScriptApi.TransformRotateBuilderExtensions.Slerp
+  isExternal: true
+  href: LunyScript.ScriptApi.TransformRotateBuilderExtensions.html#LunyScript_ScriptApi_TransformRotateBuilderExtensions_Slerp__1_LunyScript_ScriptApi_TransformRotationBuilder___0__
+  name: Slerp
+  nameWithType: TransformRotateBuilderExtensions.Slerp
+  fullName: LunyScript.ScriptApi.TransformRotateBuilderExtensions.Slerp

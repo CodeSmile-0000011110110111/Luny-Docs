@@ -1,0 +1,374 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.TransformRotationSetWorldBlock
+  commentId: T:LunyScript.Blocks.TransformRotationSetWorldBlock
+  id: TransformRotationSetWorldBlock
+  parent: LunyScript.Blocks
+  children:
+  - LunyScript.Blocks.TransformRotationSetWorldBlock.Create(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  - LunyScript.Blocks.TransformRotationSetWorldBlock.Execute(LunyScript.IScriptRuntimeContext)
+  - LunyScript.Blocks.TransformRotationSetWorldBlock.ToString
+  langs:
+  - csharp
+  - vb
+  name: TransformRotationSetWorldBlock
+  nameWithType: TransformRotationSetWorldBlock
+  fullName: LunyScript.Blocks.TransformRotationSetWorldBlock
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: 'public sealed class TransformRotationSetWorldBlock : ScriptActionBlock, IScriptBlock'
+    content.vb: Public NotInheritable Class TransformRotationSetWorldBlock Inherits ScriptActionBlock Implements IScriptBlock
+  inheritance:
+  - System.Object
+  - LunyScript.Blocks.ScriptBlock
+  - LunyScript.Blocks.ScriptActionBlock
+  implements:
+  - LunyScript.Blocks.IScriptBlock
+  inheritedMembers:
+  - LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+- uid: LunyScript.Blocks.TransformRotationSetWorldBlock.Create(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  commentId: M:LunyScript.Blocks.TransformRotationSetWorldBlock.Create(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  id: Create(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion})
+  parent: LunyScript.Blocks.TransformRotationSetWorldBlock
+  langs:
+  - csharp
+  - vb
+  name: Create(VariableBlock<LunyQuaternion>)
+  nameWithType: TransformRotationSetWorldBlock.Create(VariableBlock<LunyQuaternion>)
+  fullName: LunyScript.Blocks.TransformRotationSetWorldBlock.Create(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyQuaternion>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static TransformRotationSetWorldBlock Create(VariableBlock<LunyQuaternion> rotation)
+    parameters:
+    - id: rotation
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
+    return:
+      type: LunyScript.Blocks.TransformRotationSetWorldBlock
+    content.vb: Public Shared Function Create(rotation As VariableBlock(Of LunyQuaternion)) As TransformRotationSetWorldBlock
+  overload: LunyScript.Blocks.TransformRotationSetWorldBlock.Create*
+  nameWithType.vb: TransformRotationSetWorldBlock.Create(VariableBlock(Of LunyQuaternion))
+  fullName.vb: LunyScript.Blocks.TransformRotationSetWorldBlock.Create(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyQuaternion))
+  name.vb: Create(VariableBlock(Of LunyQuaternion))
+- uid: LunyScript.Blocks.TransformRotationSetWorldBlock.Execute(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.TransformRotationSetWorldBlock.Execute(LunyScript.IScriptRuntimeContext)
+  id: Execute(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.TransformRotationSetWorldBlock
+  langs:
+  - csharp
+  - vb
+  name: Execute(IScriptRuntimeContext)
+  nameWithType: TransformRotationSetWorldBlock.Execute(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.TransformRotationSetWorldBlock.Execute(LunyScript.IScriptRuntimeContext)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: protected override void Execute(IScriptRuntimeContext runtimeContext)
+    parameters:
+    - id: runtimeContext
+      type: LunyScript.IScriptRuntimeContext
+    content.vb: Protected Overrides Sub Execute(runtimeContext As IScriptRuntimeContext)
+  overridden: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  overload: LunyScript.Blocks.TransformRotationSetWorldBlock.Execute*
+- uid: LunyScript.Blocks.TransformRotationSetWorldBlock.ToString
+  commentId: M:LunyScript.Blocks.TransformRotationSetWorldBlock.ToString
+  id: ToString
+  parent: LunyScript.Blocks.TransformRotationSetWorldBlock
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TransformRotationSetWorldBlock.ToString()
+  fullName: LunyScript.Blocks.TransformRotationSetWorldBlock.ToString()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: LunyScript.Blocks.TransformRotationSetWorldBlock.ToString*
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: LunyScript.Blocks.ScriptBlock
+  commentId: T:LunyScript.Blocks.ScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptBlock.html
+  name: ScriptBlock
+  nameWithType: ScriptBlock
+  fullName: LunyScript.Blocks.ScriptBlock
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.IScriptBlock
+  commentId: T:LunyScript.Blocks.IScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.IScriptBlock.html
+  name: IScriptBlock
+  nameWithType: IScriptBlock
+  fullName: LunyScript.Blocks.IScriptBlock
+- uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.Blocks.ScriptActionBlock
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+  name: IsNullOrEmpty(ScriptActionBlock[])
+  nameWithType: ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock[])
+  fullName: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  nameWithType.vb: ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock())
+  fullName.vb: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock())
+  name.vb: IsNullOrEmpty(ScriptActionBlock())
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+    name: IsNullOrEmpty
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+  - name: (
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+    name: IsNullOrEmpty
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+  - name: (
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: (
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks.TransformRotationSetWorldBlock.Create*
+  commentId: Overload:LunyScript.Blocks.TransformRotationSetWorldBlock.Create
+  isExternal: true
+  href: LunyScript.Blocks.TransformRotationSetWorldBlock.html#LunyScript_Blocks_TransformRotationSetWorldBlock_Create_LunyScript_Blocks_VariableBlock_Luny_Engine_Bridge_LunyQuaternion__
+  name: Create
+  nameWithType: TransformRotationSetWorldBlock.Create
+  fullName: LunyScript.Blocks.TransformRotationSetWorldBlock.Create
+- uid: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
+  commentId: T:LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
+  parent: LunyScript.Blocks
+  definition: LunyScript.Blocks.VariableBlock`1
+  href: LunyScript.Blocks.VariableBlock-1.html
+  name: VariableBlock<LunyQuaternion>
+  nameWithType: VariableBlock<LunyQuaternion>
+  fullName: LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyQuaternion>
+  nameWithType.vb: VariableBlock(Of LunyQuaternion)
+  fullName.vb: LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyQuaternion)
+  name.vb: VariableBlock(Of LunyQuaternion)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: <
+  - uid: Luny.Engine.Bridge.LunyQuaternion
+    name: LunyQuaternion
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyQuaternion
+    name: LunyQuaternion
+    isExternal: true
+  - name: )
+- uid: LunyScript.Blocks.TransformRotationSetWorldBlock
+  commentId: T:LunyScript.Blocks.TransformRotationSetWorldBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.TransformRotationSetWorldBlock.html
+  name: TransformRotationSetWorldBlock
+  nameWithType: TransformRotationSetWorldBlock
+  fullName: LunyScript.Blocks.TransformRotationSetWorldBlock
+- uid: LunyScript.Blocks.VariableBlock`1
+  commentId: T:LunyScript.Blocks.VariableBlock`1
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock-1.html
+  name: VariableBlock<T>
+  nameWithType: VariableBlock<T>
+  fullName: LunyScript.Blocks.VariableBlock<T>
+  nameWithType.vb: VariableBlock(Of T)
+  fullName.vb: LunyScript.Blocks.VariableBlock(Of T)
+  name.vb: VariableBlock(Of T)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.ScriptActionBlock
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  name: Execute(IScriptRuntimeContext)
+  nameWithType: ScriptActionBlock.Execute(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+    name: Execute
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  - name: (
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+    name: Execute
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  - name: (
+  - uid: LunyScript.IScriptRuntimeContext
+    name: IScriptRuntimeContext
+    isExternal: true
+    href: LunyScript.IScriptRuntimeContext.html
+  - name: )
+- uid: LunyScript.Blocks.TransformRotationSetWorldBlock.Execute*
+  commentId: Overload:LunyScript.Blocks.TransformRotationSetWorldBlock.Execute
+  isExternal: true
+  href: LunyScript.Blocks.TransformRotationSetWorldBlock.html#LunyScript_Blocks_TransformRotationSetWorldBlock_Execute_LunyScript_IScriptRuntimeContext_
+  name: Execute
+  nameWithType: TransformRotationSetWorldBlock.Execute
+  fullName: LunyScript.Blocks.TransformRotationSetWorldBlock.Execute
+- uid: LunyScript.IScriptRuntimeContext
+  commentId: T:LunyScript.IScriptRuntimeContext
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html
+  name: IScriptRuntimeContext
+  nameWithType: IScriptRuntimeContext
+  fullName: LunyScript.IScriptRuntimeContext
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.TransformRotationSetWorldBlock.ToString*
+  commentId: Overload:LunyScript.Blocks.TransformRotationSetWorldBlock.ToString
+  isExternal: true
+  href: LunyScript.Blocks.TransformRotationSetWorldBlock.html#LunyScript_Blocks_TransformRotationSetWorldBlock_ToString
+  name: ToString
+  nameWithType: TransformRotationSetWorldBlock.ToString
+  fullName: LunyScript.Blocks.TransformRotationSetWorldBlock.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

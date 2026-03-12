@@ -1,0 +1,1068 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Unity.Engine.Services.UnityInputService
+  commentId: T:Luny.Unity.Engine.Services.UnityInputService
+  id: UnityInputService
+  parent: Luny.Unity.Engine.Services
+  children:
+  - Luny.Unity.Engine.Services.UnityInputService.#ctor
+  - Luny.Unity.Engine.Services.UnityInputService.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
+  - Luny.Unity.Engine.Services.UnityInputService.EnableInputAction(System.String,System.Boolean)
+  - Luny.Unity.Engine.Services.UnityInputService.IsUserPairedWithDevice(System.String,System.Int32)
+  - Luny.Unity.Engine.Services.UnityInputService.OnServiceInitialize
+  - Luny.Unity.Engine.Services.UnityInputService.OnServiceShutdown
+  - Luny.Unity.Engine.Services.UnityInputService.OnServiceStartup
+  - Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(Luny.Engine.Bridge.LunyInputUserProfile,System.String[])
+  - Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(System.String[])
+  - Luny.Unity.Engine.Services.UnityInputService.UnassignUser(System.String)
+  langs:
+  - csharp
+  - vb
+  name: UnityInputService
+  nameWithType: UnityInputService
+  fullName: Luny.Unity.Engine.Services.UnityInputService
+  type: Class
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  summary: >-
+    Unity implementation of input service.
+
+    Subscribes to InputSystem action map callbacks and raises Luny input events.
+  example: []
+  syntax:
+    content: 'public sealed class UnityInputService : LunyInputServiceBase, ILunyInputService, ILunyEngineService'
+    content.vb: Public NotInheritable Class UnityInputService Inherits LunyInputServiceBase Implements ILunyInputService, ILunyEngineService
+  inheritance:
+  - System.Object
+  - Luny.Engine.Services.LunyEngineServiceBase
+  - Luny.Engine.Services.LunyInputServiceBase
+  implements:
+  - Luny.Engine.Services.ILunyInputService
+  - Luny.Engine.Services.ILunyEngineService
+  inheritedMembers:
+  - Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)
+  - Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
+  - Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
+  - Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)
+  - Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
+  - Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
+  - Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
+  - Luny.Engine.Services.LunyInputServiceBase.OnInputAction
+- uid: Luny.Unity.Engine.Services.UnityInputService.UnassignUser(System.String)
+  commentId: M:Luny.Unity.Engine.Services.UnityInputService.UnassignUser(System.String)
+  id: UnassignUser(System.String)
+  parent: Luny.Unity.Engine.Services.UnityInputService
+  langs:
+  - csharp
+  - vb
+  name: UnassignUser(string)
+  nameWithType: UnityInputService.UnassignUser(string)
+  fullName: Luny.Unity.Engine.Services.UnityInputService.UnassignUser(string)
+  type: Method
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  example: []
+  syntax:
+    content: public override void UnassignUser(string userName)
+    parameters:
+    - id: userName
+      type: System.String
+    content.vb: Public Overrides Sub UnassignUser(userName As String)
+  overridden: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)
+  overload: Luny.Unity.Engine.Services.UnityInputService.UnassignUser*
+  nameWithType.vb: UnityInputService.UnassignUser(String)
+  fullName.vb: Luny.Unity.Engine.Services.UnityInputService.UnassignUser(String)
+  name.vb: UnassignUser(String)
+- uid: Luny.Unity.Engine.Services.UnityInputService.IsUserPairedWithDevice(System.String,System.Int32)
+  commentId: M:Luny.Unity.Engine.Services.UnityInputService.IsUserPairedWithDevice(System.String,System.Int32)
+  id: IsUserPairedWithDevice(System.String,System.Int32)
+  parent: Luny.Unity.Engine.Services.UnityInputService
+  langs:
+  - csharp
+  - vb
+  name: IsUserPairedWithDevice(string, int)
+  nameWithType: UnityInputService.IsUserPairedWithDevice(string, int)
+  fullName: Luny.Unity.Engine.Services.UnityInputService.IsUserPairedWithDevice(string, int)
+  type: Method
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  example: []
+  syntax:
+    content: public override bool IsUserPairedWithDevice(string userName, int deviceId)
+    parameters:
+    - id: userName
+      type: System.String
+    - id: deviceId
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function IsUserPairedWithDevice(userName As String, deviceId As Integer) As Boolean
+  overridden: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)
+  overload: Luny.Unity.Engine.Services.UnityInputService.IsUserPairedWithDevice*
+  nameWithType.vb: UnityInputService.IsUserPairedWithDevice(String, Integer)
+  fullName.vb: Luny.Unity.Engine.Services.UnityInputService.IsUserPairedWithDevice(String, Integer)
+  name.vb: IsUserPairedWithDevice(String, Integer)
+- uid: Luny.Unity.Engine.Services.UnityInputService.EnableInputAction(System.String,System.Boolean)
+  commentId: M:Luny.Unity.Engine.Services.UnityInputService.EnableInputAction(System.String,System.Boolean)
+  id: EnableInputAction(System.String,System.Boolean)
+  parent: Luny.Unity.Engine.Services.UnityInputService
+  langs:
+  - csharp
+  - vb
+  name: EnableInputAction(string, bool)
+  nameWithType: UnityInputService.EnableInputAction(string, bool)
+  fullName: Luny.Unity.Engine.Services.UnityInputService.EnableInputAction(string, bool)
+  type: Method
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  example: []
+  syntax:
+    content: public override void EnableInputAction(string actionName, bool enabled)
+    parameters:
+    - id: actionName
+      type: System.String
+    - id: enabled
+      type: System.Boolean
+    content.vb: Public Overrides Sub EnableInputAction(actionName As String, enabled As Boolean)
+  overridden: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)
+  overload: Luny.Unity.Engine.Services.UnityInputService.EnableInputAction*
+  nameWithType.vb: UnityInputService.EnableInputAction(String, Boolean)
+  fullName.vb: Luny.Unity.Engine.Services.UnityInputService.EnableInputAction(String, Boolean)
+  name.vb: EnableInputAction(String, Boolean)
+- uid: Luny.Unity.Engine.Services.UnityInputService.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
+  commentId: M:Luny.Unity.Engine.Services.UnityInputService.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
+  id: AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
+  parent: Luny.Unity.Engine.Services.UnityInputService
+  langs:
+  - csharp
+  - vb
+  name: AssignUserToLastDevice(string, int, ILunyObject)
+  nameWithType: UnityInputService.AssignUserToLastDevice(string, int, ILunyObject)
+  fullName: Luny.Unity.Engine.Services.UnityInputService.AssignUserToLastDevice(string, int, Luny.Engine.Bridge.ILunyObject)
+  type: Method
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  example: []
+  syntax:
+    content: public override void AssignUserToLastDevice(string userName, int deviceId, ILunyObject lunyObject)
+    parameters:
+    - id: userName
+      type: System.String
+    - id: deviceId
+      type: System.Int32
+    - id: lunyObject
+      type: Luny.Engine.Bridge.ILunyObject
+    content.vb: Public Overrides Sub AssignUserToLastDevice(userName As String, deviceId As Integer, lunyObject As ILunyObject)
+  overridden: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
+  overload: Luny.Unity.Engine.Services.UnityInputService.AssignUserToLastDevice*
+  nameWithType.vb: UnityInputService.AssignUserToLastDevice(String, Integer, ILunyObject)
+  fullName.vb: Luny.Unity.Engine.Services.UnityInputService.AssignUserToLastDevice(String, Integer, Luny.Engine.Bridge.ILunyObject)
+  name.vb: AssignUserToLastDevice(String, Integer, ILunyObject)
+- uid: Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(Luny.Engine.Bridge.LunyInputUserProfile,System.String[])
+  commentId: M:Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(Luny.Engine.Bridge.LunyInputUserProfile,System.String[])
+  id: SetControlSchemes(Luny.Engine.Bridge.LunyInputUserProfile,System.String[])
+  parent: Luny.Unity.Engine.Services.UnityInputService
+  langs:
+  - csharp
+  - vb
+  name: SetControlSchemes(LunyInputUserProfile, params string[])
+  nameWithType: UnityInputService.SetControlSchemes(LunyInputUserProfile, params string[])
+  fullName: Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(Luny.Engine.Bridge.LunyInputUserProfile, params string[])
+  type: Method
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  syntax:
+    content: public void SetControlSchemes(LunyInputUserProfile profile, params string[] schemeNames)
+    parameters:
+    - id: profile
+      type: Luny.Engine.Bridge.LunyInputUserProfile
+    - id: schemeNames
+      type: System.String[]
+    content.vb: Public Sub SetControlSchemes(profile As LunyInputUserProfile, ParamArray schemeNames As String())
+  overload: Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes*
+  nameWithType.vb: UnityInputService.SetControlSchemes(LunyInputUserProfile, ParamArray String())
+  fullName.vb: Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(Luny.Engine.Bridge.LunyInputUserProfile, ParamArray String())
+  name.vb: SetControlSchemes(LunyInputUserProfile, ParamArray String())
+- uid: Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(System.String[])
+  commentId: M:Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(System.String[])
+  id: SetControlSchemes(System.String[])
+  parent: Luny.Unity.Engine.Services.UnityInputService
+  langs:
+  - csharp
+  - vb
+  name: SetControlSchemes(params string[])
+  nameWithType: UnityInputService.SetControlSchemes(params string[])
+  fullName: Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(params string[])
+  type: Method
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  summary: Activate a given control scheme eg `Gamepad` or `Keyboard&Mouse` to prevent other device input from coming through.
+  example: []
+  syntax:
+    content: public override void SetControlSchemes(params string[] schemeNames)
+    parameters:
+    - id: schemeNames
+      type: System.String[]
+    content.vb: Public Overrides Sub SetControlSchemes(ParamArray schemeNames As String())
+  overridden: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])
+  overload: Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes*
+  nameWithType.vb: UnityInputService.SetControlSchemes(ParamArray String())
+  fullName.vb: Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(ParamArray String())
+  name.vb: SetControlSchemes(ParamArray String())
+- uid: Luny.Unity.Engine.Services.UnityInputService.OnServiceInitialize
+  commentId: M:Luny.Unity.Engine.Services.UnityInputService.OnServiceInitialize
+  id: OnServiceInitialize
+  parent: Luny.Unity.Engine.Services.UnityInputService
+  langs:
+  - csharp
+  - vb
+  name: OnServiceInitialize()
+  nameWithType: UnityInputService.OnServiceInitialize()
+  fullName: Luny.Unity.Engine.Services.UnityInputService.OnServiceInitialize()
+  type: Method
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  example: []
+  syntax:
+    content: protected override void OnServiceInitialize()
+    content.vb: Protected Overrides Sub OnServiceInitialize()
+  overridden: Luny.Engine.Services.LunyEngineServiceBase.OnServiceInitialize
+  overload: Luny.Unity.Engine.Services.UnityInputService.OnServiceInitialize*
+- uid: Luny.Unity.Engine.Services.UnityInputService.OnServiceStartup
+  commentId: M:Luny.Unity.Engine.Services.UnityInputService.OnServiceStartup
+  id: OnServiceStartup
+  parent: Luny.Unity.Engine.Services.UnityInputService
+  langs:
+  - csharp
+  - vb
+  name: OnServiceStartup()
+  nameWithType: UnityInputService.OnServiceStartup()
+  fullName: Luny.Unity.Engine.Services.UnityInputService.OnServiceStartup()
+  type: Method
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  example: []
+  syntax:
+    content: protected override void OnServiceStartup()
+    content.vb: Protected Overrides Sub OnServiceStartup()
+  overridden: Luny.Engine.Services.LunyEngineServiceBase.OnServiceStartup
+  overload: Luny.Unity.Engine.Services.UnityInputService.OnServiceStartup*
+- uid: Luny.Unity.Engine.Services.UnityInputService.OnServiceShutdown
+  commentId: M:Luny.Unity.Engine.Services.UnityInputService.OnServiceShutdown
+  id: OnServiceShutdown
+  parent: Luny.Unity.Engine.Services.UnityInputService
+  langs:
+  - csharp
+  - vb
+  name: OnServiceShutdown()
+  nameWithType: UnityInputService.OnServiceShutdown()
+  fullName: Luny.Unity.Engine.Services.UnityInputService.OnServiceShutdown()
+  type: Method
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  example: []
+  syntax:
+    content: protected override void OnServiceShutdown()
+    content.vb: Protected Overrides Sub OnServiceShutdown()
+  overridden: Luny.Engine.Services.LunyEngineServiceBase.OnServiceShutdown
+  overload: Luny.Unity.Engine.Services.UnityInputService.OnServiceShutdown*
+- uid: Luny.Unity.Engine.Services.UnityInputService.#ctor
+  commentId: M:Luny.Unity.Engine.Services.UnityInputService.#ctor
+  id: '#ctor'
+  parent: Luny.Unity.Engine.Services.UnityInputService
+  langs:
+  - csharp
+  - vb
+  name: UnityInputService()
+  nameWithType: UnityInputService.UnityInputService()
+  fullName: Luny.Unity.Engine.Services.UnityInputService.UnityInputService()
+  type: Constructor
+  assemblies:
+  - Luny.Unity
+  namespace: Luny.Unity.Engine.Services
+  syntax:
+    content: public UnityInputService()
+    content.vb: Public Sub New()
+  overload: Luny.Unity.Engine.Services.UnityInputService.#ctor*
+  nameWithType.vb: UnityInputService.New()
+  fullName.vb: Luny.Unity.Engine.Services.UnityInputService.New()
+  name.vb: New()
+references:
+- uid: Luny.Unity.Engine.Services
+  commentId: N:Luny.Unity.Engine.Services
+  isExternal: true
+  href: Luny.html
+  name: Luny.Unity.Engine.Services
+  nameWithType: Luny.Unity.Engine.Services
+  fullName: Luny.Unity.Engine.Services
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Unity
+    name: Unity
+    isExternal: true
+    href: Luny.Unity.html
+  - name: .
+  - uid: Luny.Unity.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Unity.Engine.html
+  - name: .
+  - uid: Luny.Unity.Engine.Services
+    name: Services
+    isExternal: true
+    href: Luny.Unity.Engine.Services.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Unity
+    name: Unity
+    isExternal: true
+    href: Luny.Unity.html
+  - name: .
+  - uid: Luny.Unity.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Unity.Engine.html
+  - name: .
+  - uid: Luny.Unity.Engine.Services
+    name: Services
+    isExternal: true
+    href: Luny.Unity.Engine.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Luny.Engine.Services.LunyEngineServiceBase
+  commentId: T:Luny.Engine.Services.LunyEngineServiceBase
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.LunyEngineServiceBase.html
+  name: LunyEngineServiceBase
+  nameWithType: LunyEngineServiceBase
+  fullName: Luny.Engine.Services.LunyEngineServiceBase
+- uid: Luny.Engine.Services.LunyInputServiceBase
+  commentId: T:Luny.Engine.Services.LunyInputServiceBase
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.LunyInputServiceBase.html
+  name: LunyInputServiceBase
+  nameWithType: LunyInputServiceBase
+  fullName: Luny.Engine.Services.LunyInputServiceBase
+- uid: Luny.Engine.Services.ILunyInputService
+  commentId: T:Luny.Engine.Services.ILunyInputService
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.ILunyInputService.html
+  name: ILunyInputService
+  nameWithType: ILunyInputService
+  fullName: Luny.Engine.Services.ILunyInputService
+- uid: Luny.Engine.Services.ILunyEngineService
+  commentId: T:Luny.Engine.Services.ILunyEngineService
+  parent: Luny.Engine.Services
+  isExternal: true
+  href: Luny.Engine.Services.ILunyEngineService.html
+  name: ILunyEngineService
+  nameWithType: ILunyEngineService
+  fullName: Luny.Engine.Services.ILunyEngineService
+- uid: Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: GetDirection(string)
+  nameWithType: LunyInputServiceBase.GetDirection(string)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetDirection(string)
+  nameWithType.vb: LunyInputServiceBase.GetDirection(String)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetDirection(String)
+  name.vb: GetDirection(String)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)
+    name: GetDirection
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)
+    name: GetDirection
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: GetRotation(string)
+  nameWithType: LunyInputServiceBase.GetRotation(string)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetRotation(string)
+  nameWithType.vb: LunyInputServiceBase.GetRotation(String)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetRotation(String)
+  name.vb: GetRotation(String)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
+    name: GetRotation
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
+    name: GetRotation
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: GetRotation(string, LunyVector3)
+  nameWithType: LunyInputServiceBase.GetRotation(string, LunyVector3)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetRotation(string, Luny.Engine.Bridge.LunyVector3)
+  nameWithType.vb: LunyInputServiceBase.GetRotation(String, LunyVector3)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetRotation(String, Luny.Engine.Bridge.LunyVector3)
+  name.vb: GetRotation(String, LunyVector3)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
+    name: GetRotation
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
+    name: GetRotation
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector3
+    name: LunyVector3
+    isExternal: true
+  - name: )
+- uid: Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: GetAxis(string)
+  nameWithType: LunyInputServiceBase.GetAxis(string)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetAxis(string)
+  nameWithType.vb: LunyInputServiceBase.GetAxis(String)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetAxis(String)
+  name.vb: GetAxis(String)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)
+    name: GetAxis
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)
+    name: GetAxis
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: GetButtonStrength(string)
+  nameWithType: LunyInputServiceBase.GetButtonStrength(string)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(string)
+  nameWithType.vb: LunyInputServiceBase.GetButtonStrength(String)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(String)
+  name.vb: GetButtonStrength(String)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
+    name: GetButtonStrength
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
+    name: GetButtonStrength
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: GetButtonPressed(string)
+  nameWithType: LunyInputServiceBase.GetButtonPressed(string)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(string)
+  nameWithType.vb: LunyInputServiceBase.GetButtonPressed(String)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(String)
+  name.vb: GetButtonPressed(String)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
+    name: GetButtonPressed
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
+    name: GetButtonPressed
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: GetButtonJustPressed(string)
+  nameWithType: LunyInputServiceBase.GetButtonJustPressed(string)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(string)
+  nameWithType.vb: LunyInputServiceBase.GetButtonJustPressed(String)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(String)
+  name.vb: GetButtonJustPressed(String)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
+    name: GetButtonJustPressed
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
+    name: GetButtonJustPressed
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Luny.Engine.Services.LunyInputServiceBase.OnInputAction
+  commentId: E:Luny.Engine.Services.LunyInputServiceBase.OnInputAction
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: OnInputAction
+  nameWithType: LunyInputServiceBase.OnInputAction
+  fullName: Luny.Engine.Services.LunyInputServiceBase.OnInputAction
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Engine.Services
+  commentId: N:Luny.Engine.Services
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Services
+  nameWithType: Luny.Engine.Services
+  fullName: Luny.Engine.Services
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Services
+    name: Services
+    isExternal: true
+    href: Luny.Engine.Services.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Services
+    name: Services
+    isExternal: true
+    href: Luny.Engine.Services.html
+- uid: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: UnassignUser(string)
+  nameWithType: LunyInputServiceBase.UnassignUser(string)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(string)
+  nameWithType.vb: LunyInputServiceBase.UnassignUser(String)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(String)
+  name.vb: UnassignUser(String)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)
+    name: UnassignUser
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)
+    name: UnassignUser
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: Luny.Unity.Engine.Services.UnityInputService.UnassignUser*
+  commentId: Overload:Luny.Unity.Engine.Services.UnityInputService.UnassignUser
+  isExternal: true
+  href: Luny.Unity.Engine.Services.UnityInputService.html#Luny_Unity_Engine_Services_UnityInputService_UnassignUser_System_String_
+  name: UnassignUser
+  nameWithType: UnityInputService.UnassignUser
+  fullName: Luny.Unity.Engine.Services.UnityInputService.UnassignUser
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: IsUserPairedWithDevice(string, int)
+  nameWithType: LunyInputServiceBase.IsUserPairedWithDevice(string, int)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(string, int)
+  nameWithType.vb: LunyInputServiceBase.IsUserPairedWithDevice(String, Integer)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(String, Integer)
+  name.vb: IsUserPairedWithDevice(String, Integer)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)
+    name: IsUserPairedWithDevice
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)
+    name: IsUserPairedWithDevice
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: Luny.Unity.Engine.Services.UnityInputService.IsUserPairedWithDevice*
+  commentId: Overload:Luny.Unity.Engine.Services.UnityInputService.IsUserPairedWithDevice
+  isExternal: true
+  href: Luny.Unity.Engine.Services.UnityInputService.html#Luny_Unity_Engine_Services_UnityInputService_IsUserPairedWithDevice_System_String_System_Int32_
+  name: IsUserPairedWithDevice
+  nameWithType: UnityInputService.IsUserPairedWithDevice
+  fullName: Luny.Unity.Engine.Services.UnityInputService.IsUserPairedWithDevice
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: EnableInputAction(string, bool)
+  nameWithType: LunyInputServiceBase.EnableInputAction(string, bool)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(string, bool)
+  nameWithType.vb: LunyInputServiceBase.EnableInputAction(String, Boolean)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(String, Boolean)
+  name.vb: EnableInputAction(String, Boolean)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)
+    name: EnableInputAction
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)
+    name: EnableInputAction
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: Luny.Unity.Engine.Services.UnityInputService.EnableInputAction*
+  commentId: Overload:Luny.Unity.Engine.Services.UnityInputService.EnableInputAction
+  isExternal: true
+  href: Luny.Unity.Engine.Services.UnityInputService.html#Luny_Unity_Engine_Services_UnityInputService_EnableInputAction_System_String_System_Boolean_
+  name: EnableInputAction
+  nameWithType: UnityInputService.EnableInputAction
+  fullName: Luny.Unity.Engine.Services.UnityInputService.EnableInputAction
+- uid: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: AssignUserToLastDevice(string, int, ILunyObject)
+  nameWithType: LunyInputServiceBase.AssignUserToLastDevice(string, int, ILunyObject)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(string, int, Luny.Engine.Bridge.ILunyObject)
+  nameWithType.vb: LunyInputServiceBase.AssignUserToLastDevice(String, Integer, ILunyObject)
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(String, Integer, Luny.Engine.Bridge.ILunyObject)
+  name.vb: AssignUserToLastDevice(String, Integer, ILunyObject)
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
+    name: AssignUserToLastDevice
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Luny.Engine.Bridge.ILunyObject
+    name: ILunyObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
+    name: AssignUserToLastDevice
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Luny.Engine.Bridge.ILunyObject
+    name: ILunyObject
+    isExternal: true
+  - name: )
+- uid: Luny.Unity.Engine.Services.UnityInputService.AssignUserToLastDevice*
+  commentId: Overload:Luny.Unity.Engine.Services.UnityInputService.AssignUserToLastDevice
+  isExternal: true
+  href: Luny.Unity.Engine.Services.UnityInputService.html#Luny_Unity_Engine_Services_UnityInputService_AssignUserToLastDevice_System_String_System_Int32_Luny_Engine_Bridge_ILunyObject_
+  name: AssignUserToLastDevice
+  nameWithType: UnityInputService.AssignUserToLastDevice
+  fullName: Luny.Unity.Engine.Services.UnityInputService.AssignUserToLastDevice
+- uid: Luny.Engine.Bridge.ILunyObject
+  commentId: T:Luny.Engine.Bridge.ILunyObject
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.ILunyObject.html
+  name: ILunyObject
+  nameWithType: ILunyObject
+  fullName: Luny.Engine.Bridge.ILunyObject
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+- uid: Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes*
+  commentId: Overload:Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes
+  isExternal: true
+  href: Luny.Unity.Engine.Services.UnityInputService.html#Luny_Unity_Engine_Services_UnityInputService_SetControlSchemes_Luny_Engine_Bridge_LunyInputUserProfile_System_String___
+  name: SetControlSchemes
+  nameWithType: UnityInputService.SetControlSchemes
+  fullName: Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes
+- uid: Luny.Engine.Bridge.LunyInputUserProfile
+  commentId: T:Luny.Engine.Bridge.LunyInputUserProfile
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyInputUserProfile.html
+  name: LunyInputUserProfile
+  nameWithType: LunyInputUserProfile
+  fullName: Luny.Engine.Bridge.LunyInputUserProfile
+- uid: System.String[]
+  isExternal: true
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])
+  parent: Luny.Engine.Services.LunyInputServiceBase
+  isExternal: true
+  name: SetControlSchemes(params string[])
+  nameWithType: LunyInputServiceBase.SetControlSchemes(params string[])
+  fullName: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(params string[])
+  nameWithType.vb: LunyInputServiceBase.SetControlSchemes(ParamArray String())
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(ParamArray String())
+  name.vb: SetControlSchemes(ParamArray String())
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])
+    name: SetControlSchemes
+    isExternal: true
+  - name: (
+  - name: params
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])
+    name: SetControlSchemes
+    isExternal: true
+  - name: (
+  - name: ParamArray
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceInitialize
+  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceInitialize
+  parent: Luny.Engine.Services.LunyEngineServiceBase
+  isExternal: true
+  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceInitialize
+  name: OnServiceInitialize()
+  nameWithType: LunyEngineServiceBase.OnServiceInitialize()
+  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServiceInitialize()
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceInitialize
+    name: OnServiceInitialize
+    isExternal: true
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceInitialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceInitialize
+    name: OnServiceInitialize
+    isExternal: true
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceInitialize
+  - name: (
+  - name: )
+- uid: Luny.Unity.Engine.Services.UnityInputService.OnServiceInitialize*
+  commentId: Overload:Luny.Unity.Engine.Services.UnityInputService.OnServiceInitialize
+  isExternal: true
+  href: Luny.Unity.Engine.Services.UnityInputService.html#Luny_Unity_Engine_Services_UnityInputService_OnServiceInitialize
+  name: OnServiceInitialize
+  nameWithType: UnityInputService.OnServiceInitialize
+  fullName: Luny.Unity.Engine.Services.UnityInputService.OnServiceInitialize
+- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceStartup
+  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceStartup
+  parent: Luny.Engine.Services.LunyEngineServiceBase
+  isExternal: true
+  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceStartup
+  name: OnServiceStartup()
+  nameWithType: LunyEngineServiceBase.OnServiceStartup()
+  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServiceStartup()
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceStartup
+    name: OnServiceStartup
+    isExternal: true
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceStartup
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceStartup
+    name: OnServiceStartup
+    isExternal: true
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceStartup
+  - name: (
+  - name: )
+- uid: Luny.Unity.Engine.Services.UnityInputService.OnServiceStartup*
+  commentId: Overload:Luny.Unity.Engine.Services.UnityInputService.OnServiceStartup
+  isExternal: true
+  href: Luny.Unity.Engine.Services.UnityInputService.html#Luny_Unity_Engine_Services_UnityInputService_OnServiceStartup
+  name: OnServiceStartup
+  nameWithType: UnityInputService.OnServiceStartup
+  fullName: Luny.Unity.Engine.Services.UnityInputService.OnServiceStartup
+- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceShutdown
+  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceShutdown
+  parent: Luny.Engine.Services.LunyEngineServiceBase
+  isExternal: true
+  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceShutdown
+  name: OnServiceShutdown()
+  nameWithType: LunyEngineServiceBase.OnServiceShutdown()
+  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServiceShutdown()
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceShutdown
+    name: OnServiceShutdown
+    isExternal: true
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceShutdown
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceShutdown
+    name: OnServiceShutdown
+    isExternal: true
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceShutdown
+  - name: (
+  - name: )
+- uid: Luny.Unity.Engine.Services.UnityInputService.OnServiceShutdown*
+  commentId: Overload:Luny.Unity.Engine.Services.UnityInputService.OnServiceShutdown
+  isExternal: true
+  href: Luny.Unity.Engine.Services.UnityInputService.html#Luny_Unity_Engine_Services_UnityInputService_OnServiceShutdown
+  name: OnServiceShutdown
+  nameWithType: UnityInputService.OnServiceShutdown
+  fullName: Luny.Unity.Engine.Services.UnityInputService.OnServiceShutdown
+- uid: Luny.Unity.Engine.Services.UnityInputService.#ctor*
+  commentId: Overload:Luny.Unity.Engine.Services.UnityInputService.#ctor
+  isExternal: true
+  href: Luny.Unity.Engine.Services.UnityInputService.html#Luny_Unity_Engine_Services_UnityInputService__ctor
+  name: UnityInputService
+  nameWithType: UnityInputService.UnityInputService
+  fullName: Luny.Unity.Engine.Services.UnityInputService.UnityInputService
+  nameWithType.vb: UnityInputService.New
+  fullName.vb: Luny.Unity.Engine.Services.UnityInputService.New
+  name.vb: New

@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.TimerBuilderUnitExtensions
+  commentId: T:LunyScript.ScriptApi.TimerBuilderUnitExtensions
+  id: TimerBuilderUnitExtensions
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.TimerBuilderUnitExtensions.Milliseconds``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  - LunyScript.ScriptApi.TimerBuilderUnitExtensions.Minutes``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  - LunyScript.ScriptApi.TimerBuilderUnitExtensions.Seconds``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  langs:
+  - csharp
+  - vb
+  name: TimerBuilderUnitExtensions
+  nameWithType: TimerBuilderUnitExtensions
+  fullName: LunyScript.ScriptApi.TimerBuilderUnitExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public static class TimerBuilderUnitExtensions
+    content.vb: Public Module TimerBuilderUnitExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Seconds``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  commentId: M:LunyScript.ScriptApi.TimerBuilderUnitExtensions.Seconds``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  id: Seconds``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TimerBuilderUnitExtensions
+  langs:
+  - csharp
+  - vb
+  name: Seconds<T>(CoroutineTimerBuilder<T>)
+  nameWithType: TimerBuilderUnitExtensions.Seconds<T>(CoroutineTimerBuilder<T>)
+  fullName: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Seconds<T>(LunyScript.ScriptApi.CoroutineTimerBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Duration in seconds.
+  example: []
+  syntax:
+    content: 'public static CoroutineTimerBuilder<CoroutineTimerUnitSet> Seconds<T>(this CoroutineTimerBuilder<T> b) where T : struct, ICoroutineTimerAmountSet'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.CoroutineTimerBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.CoroutineTimerBuilder{LunyScript.ScriptApi.CoroutineTimerUnitSet}
+    content.vb: Public Shared Function Seconds(Of T As {Structure, ICoroutineTimerAmountSet})(b As CoroutineTimerBuilder(Of T)) As CoroutineTimerBuilder(Of CoroutineTimerUnitSet)
+  overload: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Seconds*
+  nameWithType.vb: TimerBuilderUnitExtensions.Seconds(Of T)(CoroutineTimerBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Seconds(Of T)(LunyScript.ScriptApi.CoroutineTimerBuilder(Of T))
+  name.vb: Seconds(Of T)(CoroutineTimerBuilder(Of T))
+- uid: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Milliseconds``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  commentId: M:LunyScript.ScriptApi.TimerBuilderUnitExtensions.Milliseconds``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  id: Milliseconds``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TimerBuilderUnitExtensions
+  langs:
+  - csharp
+  - vb
+  name: Milliseconds<T>(CoroutineTimerBuilder<T>)
+  nameWithType: TimerBuilderUnitExtensions.Milliseconds<T>(CoroutineTimerBuilder<T>)
+  fullName: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Milliseconds<T>(LunyScript.ScriptApi.CoroutineTimerBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Duration in milliseconds.
+  example: []
+  syntax:
+    content: 'public static CoroutineTimerBuilder<CoroutineTimerUnitSet> Milliseconds<T>(this CoroutineTimerBuilder<T> b) where T : struct, ICoroutineTimerAmountSet'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.CoroutineTimerBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.CoroutineTimerBuilder{LunyScript.ScriptApi.CoroutineTimerUnitSet}
+    content.vb: Public Shared Function Milliseconds(Of T As {Structure, ICoroutineTimerAmountSet})(b As CoroutineTimerBuilder(Of T)) As CoroutineTimerBuilder(Of CoroutineTimerUnitSet)
+  overload: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Milliseconds*
+  nameWithType.vb: TimerBuilderUnitExtensions.Milliseconds(Of T)(CoroutineTimerBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Milliseconds(Of T)(LunyScript.ScriptApi.CoroutineTimerBuilder(Of T))
+  name.vb: Milliseconds(Of T)(CoroutineTimerBuilder(Of T))
+- uid: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Minutes``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  commentId: M:LunyScript.ScriptApi.TimerBuilderUnitExtensions.Minutes``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  id: Minutes``1(LunyScript.ScriptApi.CoroutineTimerBuilder{``0})
+  isExtensionMethod: true
+  parent: LunyScript.ScriptApi.TimerBuilderUnitExtensions
+  langs:
+  - csharp
+  - vb
+  name: Minutes<T>(CoroutineTimerBuilder<T>)
+  nameWithType: TimerBuilderUnitExtensions.Minutes<T>(CoroutineTimerBuilder<T>)
+  fullName: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Minutes<T>(LunyScript.ScriptApi.CoroutineTimerBuilder<T>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Duration in minutes.
+  example: []
+  syntax:
+    content: 'public static CoroutineTimerBuilder<CoroutineTimerUnitSet> Minutes<T>(this CoroutineTimerBuilder<T> b) where T : struct, ICoroutineTimerAmountSet'
+    parameters:
+    - id: b
+      type: LunyScript.ScriptApi.CoroutineTimerBuilder{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.ScriptApi.CoroutineTimerBuilder{LunyScript.ScriptApi.CoroutineTimerUnitSet}
+    content.vb: Public Shared Function Minutes(Of T As {Structure, ICoroutineTimerAmountSet})(b As CoroutineTimerBuilder(Of T)) As CoroutineTimerBuilder(Of CoroutineTimerUnitSet)
+  overload: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Minutes*
+  nameWithType.vb: TimerBuilderUnitExtensions.Minutes(Of T)(CoroutineTimerBuilder(Of T))
+  fullName.vb: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Minutes(Of T)(LunyScript.ScriptApi.CoroutineTimerBuilder(Of T))
+  name.vb: Minutes(Of T)(CoroutineTimerBuilder(Of T))
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Seconds*
+  commentId: Overload:LunyScript.ScriptApi.TimerBuilderUnitExtensions.Seconds
+  isExternal: true
+  href: LunyScript.ScriptApi.TimerBuilderUnitExtensions.html#LunyScript_ScriptApi_TimerBuilderUnitExtensions_Seconds__1_LunyScript_ScriptApi_CoroutineTimerBuilder___0__
+  name: Seconds
+  nameWithType: TimerBuilderUnitExtensions.Seconds
+  fullName: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Seconds
+- uid: LunyScript.ScriptApi.CoroutineTimerBuilder{{T}}
+  commentId: T:LunyScript.ScriptApi.CoroutineTimerBuilder{``0}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+  href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.ScriptApi.CoroutineTimerBuilder<T>
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.ScriptApi.CoroutineTimerBuilder{LunyScript.ScriptApi.CoroutineTimerUnitSet}
+  commentId: T:LunyScript.ScriptApi.CoroutineTimerBuilder{LunyScript.ScriptApi.CoroutineTimerUnitSet}
+  parent: LunyScript.ScriptApi
+  definition: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+  href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<CoroutineTimerUnitSet>
+  nameWithType: CoroutineTimerBuilder<CoroutineTimerUnitSet>
+  fullName: LunyScript.ScriptApi.CoroutineTimerBuilder<LunyScript.ScriptApi.CoroutineTimerUnitSet>
+  nameWithType.vb: CoroutineTimerBuilder(Of CoroutineTimerUnitSet)
+  fullName.vb: LunyScript.ScriptApi.CoroutineTimerBuilder(Of LunyScript.ScriptApi.CoroutineTimerUnitSet)
+  name.vb: CoroutineTimerBuilder(Of CoroutineTimerUnitSet)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  - name: <
+  - uid: LunyScript.ScriptApi.CoroutineTimerUnitSet
+    name: CoroutineTimerUnitSet
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerUnitSet.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.ScriptApi.CoroutineTimerUnitSet
+    name: CoroutineTimerUnitSet
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerUnitSet.html
+  - name: )
+- uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+  commentId: T:LunyScript.ScriptApi.CoroutineTimerBuilder`1
+  isExternal: true
+  href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  name: CoroutineTimerBuilder<T>
+  nameWithType: CoroutineTimerBuilder<T>
+  fullName: LunyScript.ScriptApi.CoroutineTimerBuilder<T>
+  nameWithType.vb: CoroutineTimerBuilder(Of T)
+  fullName.vb: LunyScript.ScriptApi.CoroutineTimerBuilder(Of T)
+  name.vb: CoroutineTimerBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.ScriptApi.CoroutineTimerBuilder`1
+    name: CoroutineTimerBuilder
+    isExternal: true
+    href: LunyScript.ScriptApi.CoroutineTimerBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Milliseconds*
+  commentId: Overload:LunyScript.ScriptApi.TimerBuilderUnitExtensions.Milliseconds
+  isExternal: true
+  href: LunyScript.ScriptApi.TimerBuilderUnitExtensions.html#LunyScript_ScriptApi_TimerBuilderUnitExtensions_Milliseconds__1_LunyScript_ScriptApi_CoroutineTimerBuilder___0__
+  name: Milliseconds
+  nameWithType: TimerBuilderUnitExtensions.Milliseconds
+  fullName: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Milliseconds
+- uid: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Minutes*
+  commentId: Overload:LunyScript.ScriptApi.TimerBuilderUnitExtensions.Minutes
+  isExternal: true
+  href: LunyScript.ScriptApi.TimerBuilderUnitExtensions.html#LunyScript_ScriptApi_TimerBuilderUnitExtensions_Minutes__1_LunyScript_ScriptApi_CoroutineTimerBuilder___0__
+  name: Minutes
+  nameWithType: TimerBuilderUnitExtensions.Minutes
+  fullName: LunyScript.ScriptApi.TimerBuilderUnitExtensions.Minutes

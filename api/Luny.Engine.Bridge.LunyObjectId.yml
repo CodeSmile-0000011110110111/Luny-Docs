@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.Engine.Bridge.LunyObjectId
+  commentId: T:Luny.Engine.Bridge.LunyObjectId
+  id: LunyObjectId
+  parent: Luny.Engine.Bridge
+  children:
+  - Luny.Engine.Bridge.LunyObjectId.CompareTo(Luny.Engine.Bridge.LunyObjectId)
+  - Luny.Engine.Bridge.LunyObjectId.Equals(Luny.Engine.Bridge.LunyObjectId)
+  - Luny.Engine.Bridge.LunyObjectId.Equals(System.Object)
+  - Luny.Engine.Bridge.LunyObjectId.Generate
+  - Luny.Engine.Bridge.LunyObjectId.GetHashCode
+  - Luny.Engine.Bridge.LunyObjectId.ToString
+  - Luny.Engine.Bridge.LunyObjectId.Value
+  - Luny.Engine.Bridge.LunyObjectId.op_Equality(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.LunyObjectId)
+  - Luny.Engine.Bridge.LunyObjectId.op_Inequality(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.LunyObjectId)
+  langs:
+  - csharp
+  - vb
+  name: LunyObjectId
+  nameWithType: LunyObjectId
+  fullName: Luny.Engine.Bridge.LunyObjectId
+  type: Struct
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  summary: >-
+    Unique identifier for an engine object/node in a LunyScript context.
+
+    Separate from engine's native GetInstanceID() for cross-engine compatibility.
+
+    Sequential integers for deterministic ordering and debugging.
+  example: []
+  syntax:
+    content: public readonly struct LunyObjectId
+    content.vb: Public Structure LunyObjectId
+- uid: Luny.Engine.Bridge.LunyObjectId.Value
+  commentId: F:Luny.Engine.Bridge.LunyObjectId.Value
+  id: Value
+  parent: Luny.Engine.Bridge.LunyObjectId
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: LunyObjectId.Value
+  fullName: Luny.Engine.Bridge.LunyObjectId.Value
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public readonly int Value
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Value As Integer
+- uid: Luny.Engine.Bridge.LunyObjectId.Generate
+  commentId: M:Luny.Engine.Bridge.LunyObjectId.Generate
+  id: Generate
+  parent: Luny.Engine.Bridge.LunyObjectId
+  langs:
+  - csharp
+  - vb
+  name: Generate()
+  nameWithType: LunyObjectId.Generate()
+  fullName: Luny.Engine.Bridge.LunyObjectId.Generate()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  summary: Generates a new unique ObjectID.
+  example: []
+  syntax:
+    content: public static LunyObjectId Generate()
+    return:
+      type: Luny.Engine.Bridge.LunyObjectId
+    content.vb: Public Shared Function Generate() As LunyObjectId
+  overload: Luny.Engine.Bridge.LunyObjectId.Generate*
+- uid: Luny.Engine.Bridge.LunyObjectId.Equals(Luny.Engine.Bridge.LunyObjectId)
+  commentId: M:Luny.Engine.Bridge.LunyObjectId.Equals(Luny.Engine.Bridge.LunyObjectId)
+  id: Equals(Luny.Engine.Bridge.LunyObjectId)
+  parent: Luny.Engine.Bridge.LunyObjectId
+  langs:
+  - csharp
+  - vb
+  name: Equals(LunyObjectId)
+  nameWithType: LunyObjectId.Equals(LunyObjectId)
+  fullName: Luny.Engine.Bridge.LunyObjectId.Equals(Luny.Engine.Bridge.LunyObjectId)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public bool Equals(LunyObjectId other)
+    parameters:
+    - id: other
+      type: Luny.Engine.Bridge.LunyObjectId
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As LunyObjectId) As Boolean
+  overload: Luny.Engine.Bridge.LunyObjectId.Equals*
+- uid: Luny.Engine.Bridge.LunyObjectId.Equals(System.Object)
+  commentId: M:Luny.Engine.Bridge.LunyObjectId.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Luny.Engine.Bridge.LunyObjectId
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: LunyObjectId.Equals(object)
+  fullName: Luny.Engine.Bridge.LunyObjectId.Equals(object)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Luny.Engine.Bridge.LunyObjectId.Equals*
+  nameWithType.vb: LunyObjectId.Equals(Object)
+  fullName.vb: Luny.Engine.Bridge.LunyObjectId.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Luny.Engine.Bridge.LunyObjectId.GetHashCode
+  commentId: M:Luny.Engine.Bridge.LunyObjectId.GetHashCode
+  id: GetHashCode
+  parent: Luny.Engine.Bridge.LunyObjectId
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: LunyObjectId.GetHashCode()
+  fullName: Luny.Engine.Bridge.LunyObjectId.GetHashCode()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Luny.Engine.Bridge.LunyObjectId.GetHashCode*
+- uid: Luny.Engine.Bridge.LunyObjectId.CompareTo(Luny.Engine.Bridge.LunyObjectId)
+  commentId: M:Luny.Engine.Bridge.LunyObjectId.CompareTo(Luny.Engine.Bridge.LunyObjectId)
+  id: CompareTo(Luny.Engine.Bridge.LunyObjectId)
+  parent: Luny.Engine.Bridge.LunyObjectId
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(LunyObjectId)
+  nameWithType: LunyObjectId.CompareTo(LunyObjectId)
+  fullName: Luny.Engine.Bridge.LunyObjectId.CompareTo(Luny.Engine.Bridge.LunyObjectId)
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public int CompareTo(LunyObjectId other)
+    parameters:
+    - id: other
+      type: Luny.Engine.Bridge.LunyObjectId
+    return:
+      type: System.Int32
+    content.vb: Public Function CompareTo(other As LunyObjectId) As Integer
+  overload: Luny.Engine.Bridge.LunyObjectId.CompareTo*
+- uid: Luny.Engine.Bridge.LunyObjectId.ToString
+  commentId: M:Luny.Engine.Bridge.LunyObjectId.ToString
+  id: ToString
+  parent: Luny.Engine.Bridge.LunyObjectId
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LunyObjectId.ToString()
+  fullName: Luny.Engine.Bridge.LunyObjectId.ToString()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Luny.Engine.Bridge.LunyObjectId.ToString*
+- uid: Luny.Engine.Bridge.LunyObjectId.op_Equality(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.LunyObjectId)
+  commentId: M:Luny.Engine.Bridge.LunyObjectId.op_Equality(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.LunyObjectId)
+  id: op_Equality(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.LunyObjectId)
+  parent: Luny.Engine.Bridge.LunyObjectId
+  langs:
+  - csharp
+  - vb
+  name: operator ==(LunyObjectId, LunyObjectId)
+  nameWithType: LunyObjectId.operator ==(LunyObjectId, LunyObjectId)
+  fullName: Luny.Engine.Bridge.LunyObjectId.operator ==(Luny.Engine.Bridge.LunyObjectId, Luny.Engine.Bridge.LunyObjectId)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static bool operator ==(LunyObjectId left, LunyObjectId right)
+    parameters:
+    - id: left
+      type: Luny.Engine.Bridge.LunyObjectId
+    - id: right
+      type: Luny.Engine.Bridge.LunyObjectId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As LunyObjectId, right As LunyObjectId) As Boolean
+  overload: Luny.Engine.Bridge.LunyObjectId.op_Equality*
+  nameWithType.vb: LunyObjectId.=(LunyObjectId, LunyObjectId)
+  fullName.vb: Luny.Engine.Bridge.LunyObjectId.=(Luny.Engine.Bridge.LunyObjectId, Luny.Engine.Bridge.LunyObjectId)
+  name.vb: =(LunyObjectId, LunyObjectId)
+- uid: Luny.Engine.Bridge.LunyObjectId.op_Inequality(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.LunyObjectId)
+  commentId: M:Luny.Engine.Bridge.LunyObjectId.op_Inequality(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.LunyObjectId)
+  id: op_Inequality(Luny.Engine.Bridge.LunyObjectId,Luny.Engine.Bridge.LunyObjectId)
+  parent: Luny.Engine.Bridge.LunyObjectId
+  langs:
+  - csharp
+  - vb
+  name: operator !=(LunyObjectId, LunyObjectId)
+  nameWithType: LunyObjectId.operator !=(LunyObjectId, LunyObjectId)
+  fullName: Luny.Engine.Bridge.LunyObjectId.operator !=(Luny.Engine.Bridge.LunyObjectId, Luny.Engine.Bridge.LunyObjectId)
+  type: Operator
+  assemblies:
+  - Luny
+  namespace: Luny.Engine.Bridge
+  syntax:
+    content: public static bool operator !=(LunyObjectId left, LunyObjectId right)
+    parameters:
+    - id: left
+      type: Luny.Engine.Bridge.LunyObjectId
+    - id: right
+      type: Luny.Engine.Bridge.LunyObjectId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As LunyObjectId, right As LunyObjectId) As Boolean
+  overload: Luny.Engine.Bridge.LunyObjectId.op_Inequality*
+  nameWithType.vb: LunyObjectId.<>(LunyObjectId, LunyObjectId)
+  fullName.vb: Luny.Engine.Bridge.LunyObjectId.<>(Luny.Engine.Bridge.LunyObjectId, Luny.Engine.Bridge.LunyObjectId)
+  name.vb: <>(LunyObjectId, LunyObjectId)
+references:
+- uid: Luny.Engine.Bridge
+  commentId: N:Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.html
+  name: Luny.Engine.Bridge
+  nameWithType: Luny.Engine.Bridge
+  fullName: Luny.Engine.Bridge
+  spec.csharp:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+  spec.vb:
+  - uid: Luny
+    name: Luny
+    isExternal: true
+    href: Luny.html
+  - name: .
+  - uid: Luny.Engine
+    name: Engine
+    isExternal: true
+    href: Luny.Engine.html
+  - name: .
+  - uid: Luny.Engine.Bridge
+    name: Bridge
+    isExternal: true
+    href: Luny.Engine.Bridge.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny.Engine.Bridge.LunyObjectId.Generate*
+  commentId: Overload:Luny.Engine.Bridge.LunyObjectId.Generate
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyObjectId.html#Luny_Engine_Bridge_LunyObjectId_Generate
+  name: Generate
+  nameWithType: LunyObjectId.Generate
+  fullName: Luny.Engine.Bridge.LunyObjectId.Generate
+- uid: Luny.Engine.Bridge.LunyObjectId
+  commentId: T:Luny.Engine.Bridge.LunyObjectId
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyObjectId.html
+  name: LunyObjectId
+  nameWithType: LunyObjectId
+  fullName: Luny.Engine.Bridge.LunyObjectId
+- uid: Luny.Engine.Bridge.LunyObjectId.Equals*
+  commentId: Overload:Luny.Engine.Bridge.LunyObjectId.Equals
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyObjectId.html#Luny_Engine_Bridge_LunyObjectId_Equals_Luny_Engine_Bridge_LunyObjectId_
+  name: Equals
+  nameWithType: LunyObjectId.Equals
+  fullName: Luny.Engine.Bridge.LunyObjectId.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Luny.Engine.Bridge.LunyObjectId.GetHashCode*
+  commentId: Overload:Luny.Engine.Bridge.LunyObjectId.GetHashCode
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyObjectId.html#Luny_Engine_Bridge_LunyObjectId_GetHashCode
+  name: GetHashCode
+  nameWithType: LunyObjectId.GetHashCode
+  fullName: Luny.Engine.Bridge.LunyObjectId.GetHashCode
+- uid: Luny.Engine.Bridge.LunyObjectId.CompareTo*
+  commentId: Overload:Luny.Engine.Bridge.LunyObjectId.CompareTo
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyObjectId.html#Luny_Engine_Bridge_LunyObjectId_CompareTo_Luny_Engine_Bridge_LunyObjectId_
+  name: CompareTo
+  nameWithType: LunyObjectId.CompareTo
+  fullName: Luny.Engine.Bridge.LunyObjectId.CompareTo
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Luny.Engine.Bridge.LunyObjectId.ToString*
+  commentId: Overload:Luny.Engine.Bridge.LunyObjectId.ToString
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyObjectId.html#Luny_Engine_Bridge_LunyObjectId_ToString
+  name: ToString
+  nameWithType: LunyObjectId.ToString
+  fullName: Luny.Engine.Bridge.LunyObjectId.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Luny.Engine.Bridge.LunyObjectId.op_Equality*
+  commentId: Overload:Luny.Engine.Bridge.LunyObjectId.op_Equality
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyObjectId.html#Luny_Engine_Bridge_LunyObjectId_op_Equality_Luny_Engine_Bridge_LunyObjectId_Luny_Engine_Bridge_LunyObjectId_
+  name: operator ==
+  nameWithType: LunyObjectId.operator ==
+  fullName: Luny.Engine.Bridge.LunyObjectId.operator ==
+  nameWithType.vb: LunyObjectId.=
+  fullName.vb: Luny.Engine.Bridge.LunyObjectId.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyObjectId.op_Equality*
+    name: ==
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyObjectId.html#Luny_Engine_Bridge_LunyObjectId_op_Equality_Luny_Engine_Bridge_LunyObjectId_Luny_Engine_Bridge_LunyObjectId_
+- uid: Luny.Engine.Bridge.LunyObjectId.op_Inequality*
+  commentId: Overload:Luny.Engine.Bridge.LunyObjectId.op_Inequality
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyObjectId.html#Luny_Engine_Bridge_LunyObjectId_op_Inequality_Luny_Engine_Bridge_LunyObjectId_Luny_Engine_Bridge_LunyObjectId_
+  name: operator !=
+  nameWithType: LunyObjectId.operator !=
+  fullName: Luny.Engine.Bridge.LunyObjectId.operator !=
+  nameWithType.vb: LunyObjectId.<>
+  fullName.vb: Luny.Engine.Bridge.LunyObjectId.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyObjectId.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyObjectId.html#Luny_Engine_Bridge_LunyObjectId_op_Inequality_Luny_Engine_Bridge_LunyObjectId_Luny_Engine_Bridge_LunyObjectId_

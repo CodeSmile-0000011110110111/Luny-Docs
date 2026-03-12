@@ -1,0 +1,508 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptApi.InputBuilder
+  commentId: T:LunyScript.ScriptApi.InputBuilder
+  id: InputBuilder
+  parent: LunyScript.ScriptApi
+  children:
+  - LunyScript.ScriptApi.InputBuilder.Action(System.String)
+  - LunyScript.ScriptApi.InputBuilder.Axis(System.String)
+  - LunyScript.ScriptApi.InputBuilder.Button(System.String)
+  - LunyScript.ScriptApi.InputBuilder.Direction(System.String)
+  - LunyScript.ScriptApi.InputBuilder.IsPaired(System.String)
+  - LunyScript.ScriptApi.InputBuilder.Pair(System.String)
+  - LunyScript.ScriptApi.InputBuilder.Rotation(System.String)
+  - LunyScript.ScriptApi.InputBuilder.Unpair(System.String)
+  langs:
+  - csharp
+  - vb
+  name: InputBuilder
+  nameWithType: InputBuilder
+  fullName: LunyScript.ScriptApi.InputBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Provides access to input action values. Blocks poll the input service for last known state.
+  example: []
+  syntax:
+    content: public readonly struct InputBuilder
+    content.vb: Public Structure InputBuilder
+- uid: LunyScript.ScriptApi.InputBuilder.Direction(System.String)
+  commentId: M:LunyScript.ScriptApi.InputBuilder.Direction(System.String)
+  id: Direction(System.String)
+  parent: LunyScript.ScriptApi.InputBuilder
+  langs:
+  - csharp
+  - vb
+  name: Direction(string)
+  nameWithType: InputBuilder.Direction(string)
+  fullName: LunyScript.ScriptApi.InputBuilder.Direction(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Returns a VariableBlock reading the last known axis value (Vector2) for the named action.
+  example: []
+  syntax:
+    content: public VariableBlock<LunyVector2> Direction(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+    return:
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2}
+    content.vb: Public Function Direction(actionName As String) As VariableBlock(Of LunyVector2)
+  overload: LunyScript.ScriptApi.InputBuilder.Direction*
+  nameWithType.vb: InputBuilder.Direction(String)
+  fullName.vb: LunyScript.ScriptApi.InputBuilder.Direction(String)
+  name.vb: Direction(String)
+- uid: LunyScript.ScriptApi.InputBuilder.Rotation(System.String)
+  commentId: M:LunyScript.ScriptApi.InputBuilder.Rotation(System.String)
+  id: Rotation(System.String)
+  parent: LunyScript.ScriptApi.InputBuilder
+  langs:
+  - csharp
+  - vb
+  name: Rotation(string)
+  nameWithType: InputBuilder.Rotation(string)
+  fullName: LunyScript.ScriptApi.InputBuilder.Rotation(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Returns a VariableBlock reading the last known axis value (Vector2) for the named action.
+  example: []
+  syntax:
+    content: public VariableBlock<LunyQuaternion> Rotation(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+    return:
+      type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
+    content.vb: Public Function Rotation(actionName As String) As VariableBlock(Of LunyQuaternion)
+  overload: LunyScript.ScriptApi.InputBuilder.Rotation*
+  nameWithType.vb: InputBuilder.Rotation(String)
+  fullName.vb: LunyScript.ScriptApi.InputBuilder.Rotation(String)
+  name.vb: Rotation(String)
+- uid: LunyScript.ScriptApi.InputBuilder.Pair(System.String)
+  commentId: M:LunyScript.ScriptApi.InputBuilder.Pair(System.String)
+  id: Pair(System.String)
+  parent: LunyScript.ScriptApi.InputBuilder
+  langs:
+  - csharp
+  - vb
+  name: Pair(string)
+  nameWithType: InputBuilder.Pair(string)
+  fullName: LunyScript.ScriptApi.InputBuilder.Pair(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ScriptActionBlock Pair(string userName)
+    parameters:
+    - id: userName
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Pair(userName As String) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.InputBuilder.Pair*
+  nameWithType.vb: InputBuilder.Pair(String)
+  fullName.vb: LunyScript.ScriptApi.InputBuilder.Pair(String)
+  name.vb: Pair(String)
+- uid: LunyScript.ScriptApi.InputBuilder.Unpair(System.String)
+  commentId: M:LunyScript.ScriptApi.InputBuilder.Unpair(System.String)
+  id: Unpair(System.String)
+  parent: LunyScript.ScriptApi.InputBuilder
+  langs:
+  - csharp
+  - vb
+  name: Unpair(string)
+  nameWithType: InputBuilder.Unpair(string)
+  fullName: LunyScript.ScriptApi.InputBuilder.Unpair(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ScriptActionBlock Unpair(string userName)
+    parameters:
+    - id: userName
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function Unpair(userName As String) As ScriptActionBlock
+  overload: LunyScript.ScriptApi.InputBuilder.Unpair*
+  nameWithType.vb: InputBuilder.Unpair(String)
+  fullName.vb: LunyScript.ScriptApi.InputBuilder.Unpair(String)
+  name.vb: Unpair(String)
+- uid: LunyScript.ScriptApi.InputBuilder.IsPaired(System.String)
+  commentId: M:LunyScript.ScriptApi.InputBuilder.IsPaired(System.String)
+  id: IsPaired(System.String)
+  parent: LunyScript.ScriptApi.InputBuilder
+  langs:
+  - csharp
+  - vb
+  name: IsPaired(string)
+  nameWithType: InputBuilder.IsPaired(string)
+  fullName: LunyScript.ScriptApi.InputBuilder.IsPaired(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public ScriptConditionBlock IsPaired(string userName)
+    parameters:
+    - id: userName
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptConditionBlock
+    content.vb: Public Function IsPaired(userName As String) As ScriptConditionBlock
+  overload: LunyScript.ScriptApi.InputBuilder.IsPaired*
+  nameWithType.vb: InputBuilder.IsPaired(String)
+  fullName.vb: LunyScript.ScriptApi.InputBuilder.IsPaired(String)
+  name.vb: IsPaired(String)
+- uid: LunyScript.ScriptApi.InputBuilder.Button(System.String)
+  commentId: M:LunyScript.ScriptApi.InputBuilder.Button(System.String)
+  id: Button(System.String)
+  parent: LunyScript.ScriptApi.InputBuilder
+  langs:
+  - csharp
+  - vb
+  name: Button(string)
+  nameWithType: InputBuilder.Button(string)
+  fullName: LunyScript.ScriptApi.InputBuilder.Button(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Returns a button handle with condition and value accessors for the named action.
+  example: []
+  syntax:
+    content: public InputButtonBuilder Button(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+    return:
+      type: LunyScript.ScriptApi.InputButtonBuilder
+    content.vb: Public Function Button(actionName As String) As InputButtonBuilder
+  overload: LunyScript.ScriptApi.InputBuilder.Button*
+  nameWithType.vb: InputBuilder.Button(String)
+  fullName.vb: LunyScript.ScriptApi.InputBuilder.Button(String)
+  name.vb: Button(String)
+- uid: LunyScript.ScriptApi.InputBuilder.Axis(System.String)
+  commentId: M:LunyScript.ScriptApi.InputBuilder.Axis(System.String)
+  id: Axis(System.String)
+  parent: LunyScript.ScriptApi.InputBuilder
+  langs:
+  - csharp
+  - vb
+  name: Axis(string)
+  nameWithType: InputBuilder.Axis(string)
+  fullName: LunyScript.ScriptApi.InputBuilder.Axis(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  summary: Returns a axis handle with condition and value accessors for the named action.
+  example: []
+  syntax:
+    content: public InputAxisBuilder Axis(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+    return:
+      type: LunyScript.ScriptApi.InputAxisBuilder
+    content.vb: Public Function Axis(actionName As String) As InputAxisBuilder
+  overload: LunyScript.ScriptApi.InputBuilder.Axis*
+  nameWithType.vb: InputBuilder.Axis(String)
+  fullName.vb: LunyScript.ScriptApi.InputBuilder.Axis(String)
+  name.vb: Axis(String)
+- uid: LunyScript.ScriptApi.InputBuilder.Action(System.String)
+  commentId: M:LunyScript.ScriptApi.InputBuilder.Action(System.String)
+  id: Action(System.String)
+  parent: LunyScript.ScriptApi.InputBuilder
+  langs:
+  - csharp
+  - vb
+  name: Action(string)
+  nameWithType: InputBuilder.Action(string)
+  fullName: LunyScript.ScriptApi.InputBuilder.Action(string)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.ScriptApi
+  syntax:
+    content: public InputActionBuilder Action(string actionName)
+    parameters:
+    - id: actionName
+      type: System.String
+    return:
+      type: LunyScript.ScriptApi.InputActionBuilder
+    content.vb: Public Function Action(actionName As String) As InputActionBuilder
+  overload: LunyScript.ScriptApi.InputBuilder.Action*
+  nameWithType.vb: InputBuilder.Action(String)
+  fullName.vb: LunyScript.ScriptApi.InputBuilder.Action(String)
+  name.vb: Action(String)
+references:
+- uid: LunyScript.ScriptApi
+  commentId: N:LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.ScriptApi
+  nameWithType: LunyScript.ScriptApi
+  fullName: LunyScript.ScriptApi
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.ScriptApi
+    name: ScriptApi
+    isExternal: true
+    href: LunyScript.ScriptApi.html
+- uid: LunyScript.ScriptApi.InputBuilder.Direction*
+  commentId: Overload:LunyScript.ScriptApi.InputBuilder.Direction
+  isExternal: true
+  href: LunyScript.ScriptApi.InputBuilder.html#LunyScript_ScriptApi_InputBuilder_Direction_System_String_
+  name: Direction
+  nameWithType: InputBuilder.Direction
+  fullName: LunyScript.ScriptApi.InputBuilder.Direction
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2}
+  commentId: T:LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2}
+  parent: LunyScript.Blocks
+  definition: LunyScript.Blocks.VariableBlock`1
+  href: LunyScript.Blocks.VariableBlock-1.html
+  name: VariableBlock<LunyVector2>
+  nameWithType: VariableBlock<LunyVector2>
+  fullName: LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector2>
+  nameWithType.vb: VariableBlock(Of LunyVector2)
+  fullName.vb: LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector2)
+  name.vb: VariableBlock(Of LunyVector2)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: <
+  - uid: Luny.Engine.Bridge.LunyVector2
+    name: LunyVector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyVector2
+    name: LunyVector2
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks.VariableBlock`1
+  commentId: T:LunyScript.Blocks.VariableBlock`1
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock-1.html
+  name: VariableBlock<T>
+  nameWithType: VariableBlock<T>
+  fullName: LunyScript.Blocks.VariableBlock<T>
+  nameWithType.vb: VariableBlock(Of T)
+  fullName.vb: LunyScript.Blocks.VariableBlock(Of T)
+  name.vb: VariableBlock(Of T)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: LunyScript.ScriptApi.InputBuilder.Rotation*
+  commentId: Overload:LunyScript.ScriptApi.InputBuilder.Rotation
+  isExternal: true
+  href: LunyScript.ScriptApi.InputBuilder.html#LunyScript_ScriptApi_InputBuilder_Rotation_System_String_
+  name: Rotation
+  nameWithType: InputBuilder.Rotation
+  fullName: LunyScript.ScriptApi.InputBuilder.Rotation
+- uid: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
+  commentId: T:LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
+  parent: LunyScript.Blocks
+  definition: LunyScript.Blocks.VariableBlock`1
+  href: LunyScript.Blocks.VariableBlock-1.html
+  name: VariableBlock<LunyQuaternion>
+  nameWithType: VariableBlock<LunyQuaternion>
+  fullName: LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyQuaternion>
+  nameWithType.vb: VariableBlock(Of LunyQuaternion)
+  fullName.vb: LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyQuaternion)
+  name.vb: VariableBlock(Of LunyQuaternion)
+  spec.csharp:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: <
+  - uid: Luny.Engine.Bridge.LunyQuaternion
+    name: LunyQuaternion
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Blocks.VariableBlock`1
+    name: VariableBlock
+    isExternal: true
+    href: LunyScript.Blocks.VariableBlock-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyQuaternion
+    name: LunyQuaternion
+    isExternal: true
+  - name: )
+- uid: LunyScript.ScriptApi.InputBuilder.Pair*
+  commentId: Overload:LunyScript.ScriptApi.InputBuilder.Pair
+  isExternal: true
+  href: LunyScript.ScriptApi.InputBuilder.html#LunyScript_ScriptApi_InputBuilder_Pair_System_String_
+  name: Pair
+  nameWithType: InputBuilder.Pair
+  fullName: LunyScript.ScriptApi.InputBuilder.Pair
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.ScriptApi.InputBuilder.Unpair*
+  commentId: Overload:LunyScript.ScriptApi.InputBuilder.Unpair
+  isExternal: true
+  href: LunyScript.ScriptApi.InputBuilder.html#LunyScript_ScriptApi_InputBuilder_Unpair_System_String_
+  name: Unpair
+  nameWithType: InputBuilder.Unpair
+  fullName: LunyScript.ScriptApi.InputBuilder.Unpair
+- uid: LunyScript.ScriptApi.InputBuilder.IsPaired*
+  commentId: Overload:LunyScript.ScriptApi.InputBuilder.IsPaired
+  isExternal: true
+  href: LunyScript.ScriptApi.InputBuilder.html#LunyScript_ScriptApi_InputBuilder_IsPaired_System_String_
+  name: IsPaired
+  nameWithType: InputBuilder.IsPaired
+  fullName: LunyScript.ScriptApi.InputBuilder.IsPaired
+- uid: LunyScript.Blocks.ScriptConditionBlock
+  commentId: T:LunyScript.Blocks.ScriptConditionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptConditionBlock.html
+  name: ScriptConditionBlock
+  nameWithType: ScriptConditionBlock
+  fullName: LunyScript.Blocks.ScriptConditionBlock
+- uid: LunyScript.ScriptApi.InputBuilder.Button*
+  commentId: Overload:LunyScript.ScriptApi.InputBuilder.Button
+  isExternal: true
+  href: LunyScript.ScriptApi.InputBuilder.html#LunyScript_ScriptApi_InputBuilder_Button_System_String_
+  name: Button
+  nameWithType: InputBuilder.Button
+  fullName: LunyScript.ScriptApi.InputBuilder.Button
+- uid: LunyScript.ScriptApi.InputButtonBuilder
+  commentId: T:LunyScript.ScriptApi.InputButtonBuilder
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.InputButtonBuilder.html
+  name: InputButtonBuilder
+  nameWithType: InputButtonBuilder
+  fullName: LunyScript.ScriptApi.InputButtonBuilder
+- uid: LunyScript.ScriptApi.InputBuilder.Axis*
+  commentId: Overload:LunyScript.ScriptApi.InputBuilder.Axis
+  isExternal: true
+  href: LunyScript.ScriptApi.InputBuilder.html#LunyScript_ScriptApi_InputBuilder_Axis_System_String_
+  name: Axis
+  nameWithType: InputBuilder.Axis
+  fullName: LunyScript.ScriptApi.InputBuilder.Axis
+- uid: LunyScript.ScriptApi.InputAxisBuilder
+  commentId: T:LunyScript.ScriptApi.InputAxisBuilder
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.InputAxisBuilder.html
+  name: InputAxisBuilder
+  nameWithType: InputAxisBuilder
+  fullName: LunyScript.ScriptApi.InputAxisBuilder
+- uid: LunyScript.ScriptApi.InputBuilder.Action*
+  commentId: Overload:LunyScript.ScriptApi.InputBuilder.Action
+  isExternal: true
+  href: LunyScript.ScriptApi.InputBuilder.html#LunyScript_ScriptApi_InputBuilder_Action_System_String_
+  name: Action
+  nameWithType: InputBuilder.Action
+  fullName: LunyScript.ScriptApi.InputBuilder.Action
+- uid: LunyScript.ScriptApi.InputActionBuilder
+  commentId: T:LunyScript.ScriptApi.InputActionBuilder
+  parent: LunyScript.ScriptApi
+  isExternal: true
+  href: LunyScript.ScriptApi.InputActionBuilder.html
+  name: InputActionBuilder
+  nameWithType: InputActionBuilder
+  fullName: LunyScript.ScriptApi.InputActionBuilder

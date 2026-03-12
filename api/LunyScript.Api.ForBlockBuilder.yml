@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.ForBlockBuilder
+  commentId: T:LunyScript.Api.ForBlockBuilder
+  id: ForBlockBuilder
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.ForBlockBuilder.Do(LunyScript.Blocks.ScriptActionBlock[])
+  langs:
+  - csharp
+  - vb
+  name: ForBlockBuilder
+  nameWithType: ForBlockBuilder
+  fullName: LunyScript.Api.ForBlockBuilder
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Builder for 'For' loops.
+  example: []
+  syntax:
+    content: public readonly struct ForBlockBuilder
+    content.vb: Public Structure ForBlockBuilder
+- uid: LunyScript.Api.ForBlockBuilder.Do(LunyScript.Blocks.ScriptActionBlock[])
+  commentId: M:LunyScript.Api.ForBlockBuilder.Do(LunyScript.Blocks.ScriptActionBlock[])
+  id: Do(LunyScript.Blocks.ScriptActionBlock[])
+  parent: LunyScript.Api.ForBlockBuilder
+  langs:
+  - csharp
+  - vb
+  name: Do(params ScriptActionBlock[])
+  nameWithType: ForBlockBuilder.Do(params ScriptActionBlock[])
+  fullName: LunyScript.Api.ForBlockBuilder.Do(params LunyScript.Blocks.ScriptActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public ScriptActionBlock Do(params ScriptActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ScriptActionBlock[]
+    return:
+      type: LunyScript.Blocks.ScriptActionBlock
+    content.vb: Public Function [Do](ParamArray blocks As ScriptActionBlock()) As ScriptActionBlock
+  overload: LunyScript.Api.ForBlockBuilder.Do*
+  nameWithType.vb: ForBlockBuilder.Do(ParamArray ScriptActionBlock())
+  fullName.vb: LunyScript.Api.ForBlockBuilder.Do(ParamArray LunyScript.Blocks.ScriptActionBlock())
+  name.vb: Do(ParamArray ScriptActionBlock())
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Api.ForBlockBuilder.Do*
+  commentId: Overload:LunyScript.Api.ForBlockBuilder.Do
+  isExternal: true
+  href: LunyScript.Api.ForBlockBuilder.html#LunyScript_Api_ForBlockBuilder_Do_LunyScript_Blocks_ScriptActionBlock___
+  name: Do
+  nameWithType: ForBlockBuilder.Do
+  fullName: LunyScript.Api.ForBlockBuilder.Do
+- uid: LunyScript.Blocks.ScriptActionBlock[]
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock[]
+  nameWithType: ScriptActionBlock[]
+  fullName: LunyScript.Blocks.ScriptActionBlock[]
+  nameWithType.vb: ScriptActionBlock()
+  fullName.vb: LunyScript.Blocks.ScriptActionBlock()
+  name.vb: ScriptActionBlock()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: LunyScript.Blocks.ScriptActionBlock
+    name: ScriptActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ScriptActionBlock.html
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.ScriptActionBlock
+  commentId: T:LunyScript.Blocks.ScriptActionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptActionBlock.html
+  name: ScriptActionBlock
+  nameWithType: ScriptActionBlock
+  fullName: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html

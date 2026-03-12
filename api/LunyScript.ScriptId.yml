@@ -1,0 +1,455 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptId
+  commentId: T:LunyScript.ScriptId
+  id: ScriptId
+  parent: LunyScript
+  children:
+  - LunyScript.ScriptId.CompareTo(LunyScript.ScriptId)
+  - LunyScript.ScriptId.Equals(LunyScript.ScriptId)
+  - LunyScript.ScriptId.Equals(System.Object)
+  - LunyScript.ScriptId.Generate
+  - LunyScript.ScriptId.GetHashCode
+  - LunyScript.ScriptId.ToString
+  - LunyScript.ScriptId.Value
+  - LunyScript.ScriptId.op_Equality(LunyScript.ScriptId,LunyScript.ScriptId)
+  - LunyScript.ScriptId.op_Inequality(LunyScript.ScriptId,LunyScript.ScriptId)
+  langs:
+  - csharp
+  - vb
+  name: ScriptId
+  nameWithType: ScriptId
+  fullName: LunyScript.ScriptId
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Unique identifier for a LunyScript definition (type).
+
+    Sequential integers for deterministic ordering and debugging.
+  example: []
+  syntax:
+    content: public readonly struct ScriptId
+    content.vb: Public Structure ScriptId
+- uid: LunyScript.ScriptId.Value
+  commentId: F:LunyScript.ScriptId.Value
+  id: Value
+  parent: LunyScript.ScriptId
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ScriptId.Value
+  fullName: LunyScript.ScriptId.Value
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public readonly int Value
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Value As Integer
+- uid: LunyScript.ScriptId.Generate
+  commentId: M:LunyScript.ScriptId.Generate
+  id: Generate
+  parent: LunyScript.ScriptId
+  langs:
+  - csharp
+  - vb
+  name: Generate()
+  nameWithType: ScriptId.Generate()
+  fullName: LunyScript.ScriptId.Generate()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Generates a new unique ScriptID.
+  example: []
+  syntax:
+    content: public static ScriptId Generate()
+    return:
+      type: LunyScript.ScriptId
+    content.vb: Public Shared Function Generate() As ScriptId
+  overload: LunyScript.ScriptId.Generate*
+- uid: LunyScript.ScriptId.Equals(LunyScript.ScriptId)
+  commentId: M:LunyScript.ScriptId.Equals(LunyScript.ScriptId)
+  id: Equals(LunyScript.ScriptId)
+  parent: LunyScript.ScriptId
+  langs:
+  - csharp
+  - vb
+  name: Equals(ScriptId)
+  nameWithType: ScriptId.Equals(ScriptId)
+  fullName: LunyScript.ScriptId.Equals(LunyScript.ScriptId)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  example: []
+  syntax:
+    content: public bool Equals(ScriptId other)
+    parameters:
+    - id: other
+      type: LunyScript.ScriptId
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As ScriptId) As Boolean
+  overload: LunyScript.ScriptId.Equals*
+- uid: LunyScript.ScriptId.Equals(System.Object)
+  commentId: M:LunyScript.ScriptId.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: LunyScript.ScriptId
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ScriptId.Equals(object)
+  fullName: LunyScript.ScriptId.Equals(object)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: LunyScript.ScriptId.Equals*
+  nameWithType.vb: ScriptId.Equals(Object)
+  fullName.vb: LunyScript.ScriptId.Equals(Object)
+  name.vb: Equals(Object)
+- uid: LunyScript.ScriptId.GetHashCode
+  commentId: M:LunyScript.ScriptId.GetHashCode
+  id: GetHashCode
+  parent: LunyScript.ScriptId
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ScriptId.GetHashCode()
+  fullName: LunyScript.ScriptId.GetHashCode()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: LunyScript.ScriptId.GetHashCode*
+- uid: LunyScript.ScriptId.CompareTo(LunyScript.ScriptId)
+  commentId: M:LunyScript.ScriptId.CompareTo(LunyScript.ScriptId)
+  id: CompareTo(LunyScript.ScriptId)
+  parent: LunyScript.ScriptId
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(ScriptId)
+  nameWithType: ScriptId.CompareTo(ScriptId)
+  fullName: LunyScript.ScriptId.CompareTo(LunyScript.ScriptId)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  example: []
+  syntax:
+    content: public int CompareTo(ScriptId other)
+    parameters:
+    - id: other
+      type: LunyScript.ScriptId
+    return:
+      type: System.Int32
+    content.vb: Public Function CompareTo(other As ScriptId) As Integer
+  overload: LunyScript.ScriptId.CompareTo*
+- uid: LunyScript.ScriptId.ToString
+  commentId: M:LunyScript.ScriptId.ToString
+  id: ToString
+  parent: LunyScript.ScriptId
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ScriptId.ToString()
+  fullName: LunyScript.ScriptId.ToString()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: LunyScript.ScriptId.ToString*
+- uid: LunyScript.ScriptId.op_Equality(LunyScript.ScriptId,LunyScript.ScriptId)
+  commentId: M:LunyScript.ScriptId.op_Equality(LunyScript.ScriptId,LunyScript.ScriptId)
+  id: op_Equality(LunyScript.ScriptId,LunyScript.ScriptId)
+  parent: LunyScript.ScriptId
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ScriptId, ScriptId)
+  nameWithType: ScriptId.operator ==(ScriptId, ScriptId)
+  fullName: LunyScript.ScriptId.operator ==(LunyScript.ScriptId, LunyScript.ScriptId)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public static bool operator ==(ScriptId left, ScriptId right)
+    parameters:
+    - id: left
+      type: LunyScript.ScriptId
+    - id: right
+      type: LunyScript.ScriptId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As ScriptId, right As ScriptId) As Boolean
+  overload: LunyScript.ScriptId.op_Equality*
+  nameWithType.vb: ScriptId.=(ScriptId, ScriptId)
+  fullName.vb: LunyScript.ScriptId.=(LunyScript.ScriptId, LunyScript.ScriptId)
+  name.vb: =(ScriptId, ScriptId)
+- uid: LunyScript.ScriptId.op_Inequality(LunyScript.ScriptId,LunyScript.ScriptId)
+  commentId: M:LunyScript.ScriptId.op_Inequality(LunyScript.ScriptId,LunyScript.ScriptId)
+  id: op_Inequality(LunyScript.ScriptId,LunyScript.ScriptId)
+  parent: LunyScript.ScriptId
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ScriptId, ScriptId)
+  nameWithType: ScriptId.operator !=(ScriptId, ScriptId)
+  fullName: LunyScript.ScriptId.operator !=(LunyScript.ScriptId, LunyScript.ScriptId)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public static bool operator !=(ScriptId left, ScriptId right)
+    parameters:
+    - id: left
+      type: LunyScript.ScriptId
+    - id: right
+      type: LunyScript.ScriptId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As ScriptId, right As ScriptId) As Boolean
+  overload: LunyScript.ScriptId.op_Inequality*
+  nameWithType.vb: ScriptId.<>(ScriptId, ScriptId)
+  fullName.vb: LunyScript.ScriptId.<>(LunyScript.ScriptId, LunyScript.ScriptId)
+  name.vb: <>(ScriptId, ScriptId)
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptId.Generate*
+  commentId: Overload:LunyScript.ScriptId.Generate
+  isExternal: true
+  href: LunyScript.ScriptId.html#LunyScript_ScriptId_Generate
+  name: Generate
+  nameWithType: ScriptId.Generate
+  fullName: LunyScript.ScriptId.Generate
+- uid: LunyScript.ScriptId
+  commentId: T:LunyScript.ScriptId
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ScriptId.html
+  name: ScriptId
+  nameWithType: ScriptId
+  fullName: LunyScript.ScriptId
+- uid: LunyScript.ScriptId.Equals*
+  commentId: Overload:LunyScript.ScriptId.Equals
+  isExternal: true
+  href: LunyScript.ScriptId.html#LunyScript_ScriptId_Equals_LunyScript_ScriptId_
+  name: Equals
+  nameWithType: ScriptId.Equals
+  fullName: LunyScript.ScriptId.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: LunyScript.ScriptId.GetHashCode*
+  commentId: Overload:LunyScript.ScriptId.GetHashCode
+  isExternal: true
+  href: LunyScript.ScriptId.html#LunyScript_ScriptId_GetHashCode
+  name: GetHashCode
+  nameWithType: ScriptId.GetHashCode
+  fullName: LunyScript.ScriptId.GetHashCode
+- uid: LunyScript.ScriptId.CompareTo*
+  commentId: Overload:LunyScript.ScriptId.CompareTo
+  isExternal: true
+  href: LunyScript.ScriptId.html#LunyScript_ScriptId_CompareTo_LunyScript_ScriptId_
+  name: CompareTo
+  nameWithType: ScriptId.CompareTo
+  fullName: LunyScript.ScriptId.CompareTo
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: LunyScript.ScriptId.ToString*
+  commentId: Overload:LunyScript.ScriptId.ToString
+  isExternal: true
+  href: LunyScript.ScriptId.html#LunyScript_ScriptId_ToString
+  name: ToString
+  nameWithType: ScriptId.ToString
+  fullName: LunyScript.ScriptId.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LunyScript.ScriptId.op_Equality*
+  commentId: Overload:LunyScript.ScriptId.op_Equality
+  isExternal: true
+  href: LunyScript.ScriptId.html#LunyScript_ScriptId_op_Equality_LunyScript_ScriptId_LunyScript_ScriptId_
+  name: operator ==
+  nameWithType: ScriptId.operator ==
+  fullName: LunyScript.ScriptId.operator ==
+  nameWithType.vb: ScriptId.=
+  fullName.vb: LunyScript.ScriptId.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.ScriptId.op_Equality*
+    name: ==
+    isExternal: true
+    href: LunyScript.ScriptId.html#LunyScript_ScriptId_op_Equality_LunyScript_ScriptId_LunyScript_ScriptId_
+- uid: LunyScript.ScriptId.op_Inequality*
+  commentId: Overload:LunyScript.ScriptId.op_Inequality
+  isExternal: true
+  href: LunyScript.ScriptId.html#LunyScript_ScriptId_op_Inequality_LunyScript_ScriptId_LunyScript_ScriptId_
+  name: operator !=
+  nameWithType: ScriptId.operator !=
+  fullName: LunyScript.ScriptId.operator !=
+  nameWithType.vb: ScriptId.<>
+  fullName.vb: LunyScript.ScriptId.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.ScriptId.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: LunyScript.ScriptId.html#LunyScript_ScriptId_op_Inequality_LunyScript_ScriptId_LunyScript_ScriptId_
