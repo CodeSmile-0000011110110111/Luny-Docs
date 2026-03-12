@@ -7,7 +7,6 @@
 			"Library/XmlDocs/Luny*.dll"
           ],
           "exclude": [
-            "*SmokeTests*"
           ],
           "src": "../../.."
         }

@@ -8,11 +8,8 @@ apiRules:
     uidRegex: ^LunyScript
     type: Namespace
 - exclude:
-    uidRegex: ^Unity
-    type: Namespace
-- exclude:
-    uidRegex: ^LunyScript.SmokeTests
-    type: Namespace
-- exclude:
     uidRegex: .*
     type: Namespace
+- exclude:
+    uidRegex: ^System\.Object
+    type: Type

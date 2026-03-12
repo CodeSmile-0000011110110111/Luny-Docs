@@ -2,10 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.0] - TBD
+## [0.1.0] - 2026-03-12 Documentation Release
 
 ### Added
-- Initial release
-- Cross-engine abstraction layer
+- This documentation with Scripting API
+- LunyEngine + LunyScript (pre-alpha, work in progress)
 - Unity implementation
-- Core scripting API
