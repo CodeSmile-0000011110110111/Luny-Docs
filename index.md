@@ -12,4 +12,4 @@ _disableAffix: true
 
 # Redirecting...
 
-If you are not redirected automatically, [click here](manual/index.html).
+If you are not redirected automatically, [click here](manual/index.md).
