@@ -6,9 +6,19 @@ LunyEngine is the engine-agnostic developer SDK and portable foundation for Luny
 
 The ultimate goal: 100% portable, standardized game logic. Code shall no longer be the only "asset type" we cannot transfer between engines.
 
+## Roadmap
+
+Development focus is on Unity initially.
+
+- Q1+Q2 2026: Feature development, enough to build a Megabonk-like game
+- Summer 2026: Alpha/Beta-Testing
+- Autumn 2026: Release v1.0
+
 ## Getting Started
 
-For now: Explore the API Reference to discover all available LunyScript APIs.
+- [Your first Luny Script](first-script.md) 
+
+For now: Explore the [Scripting API](/api/) to discover all available LunyScript APIs.
 
 ## Links
 
