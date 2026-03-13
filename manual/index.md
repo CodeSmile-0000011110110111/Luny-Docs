@@ -16,9 +16,8 @@ Development focus is on Unity initially.
 
 ## Getting Started
 
-- [Your first Luny Script](first-script.md) 
-
-For now: Explore the [Scripting API](/api/) to discover all available LunyScript APIs.
+- [Your First Luny Script](first-script-overview.md) 
+- Explore the [Scripting API](/api/) to discover the LunyEngine and LunyScript APIs.
 
 ## Links
 

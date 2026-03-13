@@ -1,2 +1,9 @@
 - name: Introduction
   href: index.md
+- name: Your First Luny Script
+  href: first-script-overview.md
+  items:
+  - name: Luny Script vs Unity MonoBehaviour
+    href: first-script-unity.md
+  - name: Luny Script vs Godot GDScript
+    href: first-script-godot.md

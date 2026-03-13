@@ -23,6 +23,9 @@
     }
   ],
   "build": {
+    "xref": [
+      "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml"
+    ],
     "sitemap": {
       "baseUrl": "https://lunyscript.com/documentation",
       "changefreq": "daily"
@@ -48,14 +51,12 @@
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ]
+        "files": ["images/**"],
+        "src": "."
       },
       {
-        "files": [
-          "styles/**"
-        ]
+        "files": ["styles/**"],
+        "src": "."
       }
     ],
     "output": "../../../docfx-output",
@@ -71,6 +72,8 @@
       "_enableSearch": true,
       "_appLogoPath": "images/Luny-logo-133x54.png",
       "_appFaviconPath": "images/luny-logo-56x56.png",
+      "_googleAnalyticsTagId": "",
+      "_lang": "en",
       "_appLogoUrl": "/",
       "_extraCss": [
         "styles/main.css"

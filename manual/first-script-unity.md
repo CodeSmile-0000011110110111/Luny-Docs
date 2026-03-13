@@ -1,12 +1,15 @@
-﻿# Your first Luny Script
+﻿# Your first Luny Script in Unity
 
-You have a blank scene in Unity. You want to create a character controller.
+**Goal**: You want to create a controllable capsule as your first "Player" in a blank scene.
 
-## Status Quo
+## Status Quo (Unity)
 
-- **Hierarchy**: `Right-click: 3D Object -> Capsule`. Name it "Player".
+First, let's see what you would currently have to do in Unity:
+
+- **Project**: `Right-click: Create -> Scene -> Scene`. Name it whatever you like.
 - **Project**: `Right-click: Create -> MonoBehaviour Script`. Name it "Player".
-- **Hierarchy**: Select "Player". `Inspector: Add Component -> Player`.
+- **Hierarchy**: `Right-click: 3D Object -> Capsule`. Name it "Player".
+- **Inspector**: Select "Player". `Inspector: Add Component -> Player`.
 - You check the Internet for a "simple" Unity 'Player' script and found this:
 
 ```csharp
@@ -64,13 +67,16 @@ public class Player : MonoBehaviour
 }
 ```
 
-**It's 'only' 51 lines! 🤯**
+**It's 'only' 52 lines for something trivial. 🤯**
 
 ## With LunyScript
 
-- **Hierarchy**: `Right-click: 3D Object -> Capsule`. Name it "Player".
+Now let's compare the same process with LunyScript:
+
+- **Project**: `Right-click: Create -> Scene -> Scene`. Name it whatever you like.
 - **Project**: `Right-click: Create -> Luny Script`. Name it "Player".
-- _Component: optional. Luny scripts run on the object matching the script's name._
+- **Hierarchy**: `Right-click: 3D Object -> Capsule`. Name it "Player".
+- **Inspector**: _Optional: Luny scripts run on the object matching the script's name._
 - **Edit** the `Player.cs` script and add this to its `Build()` method:
 
 ```csharp
@@ -89,6 +95,6 @@ public partial class Player : Script
 }
 ```
 
-**That's 12 lines! 😎**
+**That's 13 lines! Four times less! 😎**
 
 Enter playmode and try it.

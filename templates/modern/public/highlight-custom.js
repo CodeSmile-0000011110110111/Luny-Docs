@@ -1,5 +1,4 @@
 // Custom C# type highlighter - post-processes after hljs runs
-console.log('=== CUSTOM C# HIGHLIGHTER LOADED ===');
 
 // Unity types
 const unityTypes = [
@@ -91,8 +90,6 @@ function highlightCustomTypes(codeBlock) {
 
     Array.from(tempDiv.childNodes).forEach(processNode);
     codeBlock.innerHTML = tempDiv.innerHTML;
-
-    console.log('Enhanced code block with custom types');
 }
 
 function processAllCodeBlocks() {
@@ -104,10 +101,6 @@ function processAllCodeBlocks() {
             highlightCustomTypes(block);
         }
     });
-
-    if (codeBlocks.length > 0) {
-        console.log('=== Processed', codeBlocks.length, 'C# code blocks ===');
-    }
 }
 
 // Try processing immediately
