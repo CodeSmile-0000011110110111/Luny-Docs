@@ -10,10 +10,9 @@ items:
   - Luny.Engine.Bridge.ILunyObject.Clone
   - Luny.Engine.Bridge.ILunyObject.Clone(Luny.Engine.Bridge.LunyTransform)
   - Luny.Engine.Bridge.ILunyObject.Destroy
-  - Luny.Engine.Bridge.ILunyObject.Initialize
-  - Luny.Engine.Bridge.ILunyObject.IsDestroyed
   - Luny.Engine.Bridge.ILunyObject.IsEnabled
   - Luny.Engine.Bridge.ILunyObject.IsEnabledInHierarchy
+  - Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
   - Luny.Engine.Bridge.ILunyObject.IsValid
   - Luny.Engine.Bridge.ILunyObject.IsVisible
   - Luny.Engine.Bridge.ILunyObject.LunyObjectId
@@ -26,10 +25,10 @@ items:
   - Luny.Engine.Bridge.ILunyObject.OnCollisionExited2D
   - Luny.Engine.Bridge.ILunyObject.OnCollisionUpdate
   - Luny.Engine.Bridge.ILunyObject.OnCollisionUpdate2D
-  - Luny.Engine.Bridge.ILunyObject.OnCreate
-  - Luny.Engine.Bridge.ILunyObject.OnDestroy
-  - Luny.Engine.Bridge.ILunyObject.OnDisable
-  - Luny.Engine.Bridge.ILunyObject.OnEnable
+  - Luny.Engine.Bridge.ILunyObject.OnCreated
+  - Luny.Engine.Bridge.ILunyObject.OnDestroyed
+  - Luny.Engine.Bridge.ILunyObject.OnDisabled
+  - Luny.Engine.Bridge.ILunyObject.OnEnabled
   - Luny.Engine.Bridge.ILunyObject.OnReady
   - Luny.Engine.Bridge.ILunyObject.OnTriggerEntered
   - Luny.Engine.Bridge.ILunyObject.OnTriggerEntered2D
@@ -48,45 +47,13 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: >-
-    Engine-agnostic interface for engine objects/nodes.
-
-    Provides unified access to common object properties and operations.
-
-    Safeguards all access to avoid exceptions when the engine-native object may have been destroyed.
+  summary: 'See implementation: <xref href="Luny.Engine.Bridge.LunyObject" data-throw-if-not-resolved="false"></xref>'
   example: []
   syntax:
     content: public interface ILunyObject
     content.vb: Public Interface ILunyObject
   derivedClasses:
   - Luny.Engine.Bridge.LunyObject
-- uid: Luny.Engine.Bridge.ILunyObject.Initialize
-  commentId: M:Luny.Engine.Bridge.ILunyObject.Initialize
-  id: Initialize
-  parent: Luny.Engine.Bridge.ILunyObject
-  langs:
-  - csharp
-  - vb
-  name: Initialize()
-  nameWithType: ILunyObject.Initialize()
-  fullName: Luny.Engine.Bridge.ILunyObject.Initialize()
-  type: Method
-  assemblies:
-  - Luny
-  namespace: Luny.Engine.Bridge
-  summary: >-
-    Called when the framework decides to work with the object ("object awakes").
-
-    This sends the OnCreate event and - if Enabled - the OnEnable event.
-  remarks: >-
-    Must only be called once prior to using the LunyObject instance.
-
-    LunyScript will automatically call this.
-  example: []
-  syntax:
-    content: void Initialize()
-    content.vb: Sub Initialize()
-  overload: Luny.Engine.Bridge.ILunyObject.Initialize*
 - uid: Luny.Engine.Bridge.ILunyObject.As``1
   commentId: M:Luny.Engine.Bridge.ILunyObject.As``1
   id: As``1
@@ -159,12 +126,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: >-
-    Marks this object for destruction.
-
-    Triggers OnDisable (if object is enabled) and OnDestroy events.
-
-    The engine-native object is destroyed at the end of the current frame.
+  summary: Marks this object for destruction. If object is enabled, will run its OnDisabled event. Then it run its OnDestroyed event.
+  remarks: The engine-native object destruction is deferred until the end of the current frame to prevent exceptions.
   example: []
   syntax:
     content: void Destroy()
@@ -184,10 +147,13 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
+  summary: Creates a new instance of the current object.
+  example: []
   syntax:
     content: ILunyObject Clone()
     return:
       type: Luny.Engine.Bridge.ILunyObject
+      description: ''
     content.vb: Function Clone() As ILunyObject
   overload: Luny.Engine.Bridge.ILunyObject.Clone*
 - uid: Luny.Engine.Bridge.ILunyObject.Clone(Luny.Engine.Bridge.LunyTransform)
@@ -204,13 +170,17 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
+  summary: Creates a new instance of the current object and parents it.
+  example: []
   syntax:
     content: ILunyObject Clone(LunyTransform parent)
     parameters:
     - id: parent
       type: Luny.Engine.Bridge.LunyTransform
+      description: ''
     return:
       type: Luny.Engine.Bridge.ILunyObject
+      description: ''
     content.vb: Function Clone(parent As LunyTransform) As ILunyObject
   overload: Luny.Engine.Bridge.ILunyObject.Clone*
 - uid: Luny.Engine.Bridge.ILunyObject.LunyObjectId
@@ -227,7 +197,7 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: LunyScript-specific unique, immutable identifier. This ID is distinct from engine's native object ID!
+  summary: Unique, immutable identifier for LunyObject. This ID is distinct from engine's native object ID!
   example: []
   syntax:
     content: LunyObjectId LunyObjectId { get; }
@@ -250,10 +220,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: >-
-    Engine-specific unique, immutable identifier, subject to engine's behaviour (ie may change between runs, or not).
-
-    The ID is valid even after the engine-native object has been destroyed to aid debugging.
+  summary: Engine-native object's unique, immutable identifier. Subject to engine's behaviour (ie may change between runs).
+  remarks: To aid debugging, this ID remains valid after the engine-native object has been destroyed.
   example: []
   syntax:
     content: LunyNativeObjectId NativeObjectId { get; }
@@ -302,7 +270,7 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: The transform of this object.
+  summary: The <xref href="Luny.Engine.Bridge.LunyTransform" data-throw-if-not-resolved="false"></xref> of this object.
   example: []
   syntax:
     content: LunyTransform Transform { get; }
@@ -326,6 +294,7 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   summary: The name of the object in the scene hierarchy.
+  remarks: To aid debugging, this property remains valid even after the object has been destroyed.
   example: []
   syntax:
     content: string Name { get; set; }
@@ -348,10 +317,7 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: >-
-    Whether the underlying engine object is valid/exists. Most commonly this means "not null" but in some engines like Godot,
-
-    it also means the object is still in the scene hierarchy.
+  summary: Whether the object and its native representation are valid (not null, not destroyed).
   example: []
   syntax:
     content: bool IsValid { get; }
@@ -360,29 +326,29 @@ items:
       type: System.Boolean
     content.vb: ReadOnly Property IsValid As Boolean
   overload: Luny.Engine.Bridge.ILunyObject.IsValid*
-- uid: Luny.Engine.Bridge.ILunyObject.IsDestroyed
-  commentId: P:Luny.Engine.Bridge.ILunyObject.IsDestroyed
-  id: IsDestroyed
+- uid: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
+  commentId: P:Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
+  id: IsNativeObjectValid
   parent: Luny.Engine.Bridge.ILunyObject
   langs:
   - csharp
   - vb
-  name: IsDestroyed
-  nameWithType: ILunyObject.IsDestroyed
-  fullName: Luny.Engine.Bridge.ILunyObject.IsDestroyed
+  name: IsNativeObjectValid
+  nameWithType: ILunyObject.IsNativeObjectValid
+  fullName: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
   type: Property
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: Set when Destroy() was called. Some actions may still be valid at this point though.
+  summary: Is true when Destroy() was called on the NativeObject and it was set to null.
   example: []
   syntax:
-    content: bool IsDestroyed { get; }
+    content: bool IsNativeObjectValid { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: ReadOnly Property IsDestroyed As Boolean
-  overload: Luny.Engine.Bridge.ILunyObject.IsDestroyed*
+    content.vb: ReadOnly Property IsNativeObjectValid As Boolean
+  overload: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid*
 - uid: Luny.Engine.Bridge.ILunyObject.IsEnabled
   commentId: P:Luny.Engine.Bridge.ILunyObject.IsEnabled
   id: IsEnabled
@@ -397,18 +363,13 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: >-
-    Whether the engine object is processing and visible.
-
-    Matches the "Active" state of Unity. Most events (update, input, collision, ..) will not run when the object is disabled.
-
-    OnDestroy is the exception: It will run for a disabled object when it gets destroyed.
+  summary: Whether the engine object is processing and visible. Matches the "Active" state of Unity.
   remarks: >-
-    CAUTION: IsEnabled also toggles visibility. If the object's IsVisible is set to false,
+    The object may be enabled, but still be disabled in the hierarchy due to a parent not being enabled.
 
-    and then is disabled and enabled again, it will also be visible. If you wish the object to remain invisible,
+    IsEnabled also toggles visibility. If the object's IsVisible was set to false, and then the object gets enabled,
 
-    you will have to set IsVisible=false after re-enabling the object. This is a decent compromise supported by all engines.
+    the object's IsVisible state will also change to true.
   example: []
   syntax:
     content: bool IsEnabled { get; set; }
@@ -454,14 +415,11 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: >-
-    Whether the object is visible (gets rendered).
+  summary: Whether the object is visible (will render).
+  remarks: >-
+    This property does NOT imply that the object is currently visible on screen. It is technically visible, but may still
 
-    CAUTION: This property does not imply that the object can be "seen"! IsVisible might be true while the object isn't visible
-
-    on the screen, for example because it's outside the camera's viewport, obstructed by other objects closer to the camera,
-
-    scaled infinitely small, completely transparent, or missing a resource (shader, texture, mesh) required to display it.
+    be outside the camera's frame, obstructed by other objects, fully transparent, scaled infinitely small, etc.
   example: []
   syntax:
     content: bool IsVisible { get; set; }
@@ -470,59 +428,53 @@ items:
       type: System.Boolean
     content.vb: Property IsVisible As Boolean
   overload: Luny.Engine.Bridge.ILunyObject.IsVisible*
-- uid: Luny.Engine.Bridge.ILunyObject.OnCreate
-  commentId: E:Luny.Engine.Bridge.ILunyObject.OnCreate
-  id: OnCreate
+- uid: Luny.Engine.Bridge.ILunyObject.OnCreated
+  commentId: E:Luny.Engine.Bridge.ILunyObject.OnCreated
+  id: OnCreated
   parent: Luny.Engine.Bridge.ILunyObject
   langs:
   - csharp
   - vb
-  name: OnCreate
-  nameWithType: ILunyObject.OnCreate
-  fullName: Luny.Engine.Bridge.ILunyObject.OnCreate
+  name: OnCreated
+  nameWithType: ILunyObject.OnCreated
+  fullName: Luny.Engine.Bridge.ILunyObject.OnCreated
   type: Event
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: >-
-    Sent once when the object is "created". Guaranteed to be the object's first lifecycle event.
-
-    Runs even if the object starts disabled.
+  summary: Runs when the object was created or ownership was transferred to LunyEngine. Runs even if the object starts disabled.
   remarks: >-
-    Runs only when an object gets 'registered' with Luny, not when the engine-native object is created. Engine-native
+    Engine-native creation events (Unity: Awake, OnEnable / Godot: ctor, _init) will run before <xref href="Luny.Engine.Bridge.ILunyObject.OnCreated" data-throw-if-not-resolved="false"></xref>.
 
-    creation events (Unity: Awake / Godot: _init or ctor) will run before OnCreate.
+    <xref href="Luny.Engine.Bridge.ILunyObject.OnEnabled" data-throw-if-not-resolved="false"></xref> will run right after <xref href="Luny.Engine.Bridge.ILunyObject.OnCreated" data-throw-if-not-resolved="false"></xref> if the object starts enabled.
   example: []
   syntax:
-    content: event Action OnCreate
+    content: event Action OnCreated
     return:
       type: System.Action
-    content.vb: Event OnCreate As Action
-- uid: Luny.Engine.Bridge.ILunyObject.OnDestroy
-  commentId: E:Luny.Engine.Bridge.ILunyObject.OnDestroy
-  id: OnDestroy
+    content.vb: Event OnCreated As Action
+- uid: Luny.Engine.Bridge.ILunyObject.OnDestroyed
+  commentId: E:Luny.Engine.Bridge.ILunyObject.OnDestroyed
+  id: OnDestroyed
   parent: Luny.Engine.Bridge.ILunyObject
   langs:
   - csharp
   - vb
-  name: OnDestroy
-  nameWithType: ILunyObject.OnDestroy
-  fullName: Luny.Engine.Bridge.ILunyObject.OnDestroy
+  name: OnDestroyed
+  nameWithType: ILunyObject.OnDestroyed
+  fullName: Luny.Engine.Bridge.ILunyObject.OnDestroyed
   type: Event
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: >-
-    Sent once when the object is "destroyed". Guaranteed to be the object's last lifecycle event.
-
-    Runs even for disabled objects.
-  remarks: Runs when the object is marked for deletion in Luny. The engine's native object is set inactive, but not yet destroyed.
+  summary: Runs when the object was destroyed. Runs even if the object is disabled.
+  remarks: The object's <xref href="Luny.Engine.Bridge.ILunyObject.NativeObject" data-throw-if-not-resolved="false"></xref> reference is still accessible, it has not been destroyed yet.
   example: []
   syntax:
-    content: event Action OnDestroy
+    content: event Action OnDestroyed
     return:
       type: System.Action
-    content.vb: Event OnDestroy As Action
+    content.vb: Event OnDestroyed As Action
 - uid: Luny.Engine.Bridge.ILunyObject.OnReady
   commentId: E:Luny.Engine.Bridge.ILunyObject.OnReady
   id: OnReady
@@ -538,75 +490,65 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   summary: >-
-    Sent once just before the object runs its first OnUpdate (or OnFixedUpdate, see below).
+    Runs once before the object's first frame processing, before OnFrameUpdate and OnHeartbeat.
 
-    If the object starts disabled, OnReady is deferred until the object gets enabled.
-
-    If the object gets or is enabled, OnEnable is guaranteed to run before OnReady. Both run in the same frame.
+    If the object starts disabled, OnReady runs after the object first gets enabled.
   remarks: >-
-    Depending on whether OnFixedStep happens to run in the frame the object becomes "ready", the event order is either:
-    	OnReady =&gt; OnUpdate (first) =&gt; OnLateUpdate (first)
+    It is not guaranteed that the object will simulate physics in its first active frame. The event order is either:
+    	OnReady =&gt; OnFrameUpdate (object's first)
     or:
-    	OnReady =&gt; OnFixedStep (first) =&gt; OnUpdate (first) =&gt; OnLateUpdate (first)
+    	OnReady =&gt; OnHeartbeat (object's first) =&gt; OnFrameUpdate (object's first)
   example: []
   syntax:
     content: event Action OnReady
     return:
       type: System.Action
     content.vb: Event OnReady As Action
-- uid: Luny.Engine.Bridge.ILunyObject.OnEnable
-  commentId: E:Luny.Engine.Bridge.ILunyObject.OnEnable
-  id: OnEnable
+- uid: Luny.Engine.Bridge.ILunyObject.OnEnabled
+  commentId: E:Luny.Engine.Bridge.ILunyObject.OnEnabled
+  id: OnEnabled
   parent: Luny.Engine.Bridge.ILunyObject
   langs:
   - csharp
   - vb
-  name: OnEnable
-  nameWithType: ILunyObject.OnEnable
-  fullName: Luny.Engine.Bridge.ILunyObject.OnEnable
+  name: OnEnabled
+  nameWithType: ILunyObject.OnEnabled
+  fullName: Luny.Engine.Bridge.ILunyObject.OnEnabled
   type: Event
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   summary: >-
-    Sent every time the object's enabled state changes to "enabled": visible, updating, receiving events, interacting with other objects.
+    Runs when the object's enabled state changes to "enabled": visible, updating, receiving events, interacting with other objects.
 
-    Also runs right after OnCreate if the object starts enabled.
-
-    The engine-native object is already set enabled when this event runs.
-  remarks: OnDestroy event will run even when a disabled object gets destroyed.
+    Also runs right after OnCreated if the object starts enabled.
   example: []
   syntax:
-    content: event Action OnEnable
+    content: event Action OnEnabled
     return:
       type: System.Action
-    content.vb: Event OnEnable As Action
-- uid: Luny.Engine.Bridge.ILunyObject.OnDisable
-  commentId: E:Luny.Engine.Bridge.ILunyObject.OnDisable
-  id: OnDisable
+    content.vb: Event OnEnabled As Action
+- uid: Luny.Engine.Bridge.ILunyObject.OnDisabled
+  commentId: E:Luny.Engine.Bridge.ILunyObject.OnDisabled
+  id: OnDisabled
   parent: Luny.Engine.Bridge.ILunyObject
   langs:
   - csharp
   - vb
-  name: OnDisable
-  nameWithType: ILunyObject.OnDisable
-  fullName: Luny.Engine.Bridge.ILunyObject.OnDisable
+  name: OnDisabled
+  nameWithType: ILunyObject.OnDisabled
+  fullName: Luny.Engine.Bridge.ILunyObject.OnDisabled
   type: Event
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
-  summary: >-
-    Sent every time the object's enabled state changes to "disabled": hidden, not updating, not receiving events, not interacting with other objects.
-
-    If the object is enabled and gets destroyed, OnDisable will run before OnDestroy.
-
-    The engine-native object is already set disabled when this event runs.
+  summary: "Runs when the object's enabled state changes to \"disabled\": hidden, not updating, not receiving events, not interacting with other objects."
   example: []
   syntax:
-    content: event Action OnDisable
+    content: event Action OnDisabled
     return:
       type: System.Action
-    content.vb: Event OnDisable As Action
+    content.vb: Event OnDisabled As Action
 - uid: Luny.Engine.Bridge.ILunyObject.OnCollisionEntered
   commentId: E:Luny.Engine.Bridge.ILunyObject.OnCollisionEntered
   id: OnCollisionEntered
@@ -621,6 +563,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
+  summary: Runs when the object's collider has "entered" (overlaps) another static or non-kinematic collider.
+  example: []
   syntax:
     content: event Action<LunyCollision> OnCollisionEntered
     return:
@@ -640,6 +584,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
+  summary: Runs when the object's collider stops overlapping/touching another static or non-kinematic collider.
+  example: []
   syntax:
     content: event Action<LunyCollision> OnCollisionExited
     return:
@@ -659,6 +605,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
+  summary: Runs every heartbeat while the collision is ongoing.
+  example: []
   syntax:
     content: event Action<LunyCollision> OnCollisionUpdate
     return:
@@ -678,6 +626,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
+  summary: Runs when first overlapping a trigger collider.
+  example: []
   syntax:
     content: event Action<LunyCollider> OnTriggerEntered
     return:
@@ -697,6 +647,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
+  summary: Runs when leaving a trigger collider.
+  example: []
   syntax:
     content: event Action<LunyCollider> OnTriggerExited
     return:
@@ -716,6 +668,12 @@ items:
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
+  summary: Runs while overlapping a trigger collider.
+  remarks: >-
+    In Unity, to receive this event you have to explicitly enable it:
+
+    **Project Settings**: Physics/Settings -&gt; GameObject -&gt; Generate On Trigger Stay Events
+  example: []
   syntax:
     content: event Action<LunyCollider> OnTriggerUpdate
     return:
@@ -836,6 +794,14 @@ items:
       type: System.Action{Luny.Engine.Bridge.LunyCollider2D}
     content.vb: Event OnTriggerUpdate2D As Action(Of LunyCollider2D)
 references:
+- uid: Luny.Engine.Bridge.LunyObject
+  commentId: T:Luny.Engine.Bridge.LunyObject
+  parent: Luny.Engine.Bridge
+  isExternal: true
+  href: Luny.Engine.Bridge.LunyObject.html
+  name: LunyObject
+  nameWithType: LunyObject
+  fullName: Luny.Engine.Bridge.LunyObject
 - uid: Luny.Engine.Bridge
   commentId: N:Luny.Engine.Bridge
   isExternal: true
@@ -873,13 +839,6 @@ references:
     name: Bridge
     isExternal: true
     href: Luny.Engine.Bridge.html
-- uid: Luny.Engine.Bridge.ILunyObject.Initialize*
-  commentId: Overload:Luny.Engine.Bridge.ILunyObject.Initialize
-  isExternal: true
-  href: Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_Initialize
-  name: Initialize
-  nameWithType: ILunyObject.Initialize
-  fullName: Luny.Engine.Bridge.ILunyObject.Initialize
 - uid: Luny.Engine.Bridge.ILunyObject.As*
   commentId: Overload:Luny.Engine.Bridge.ILunyObject.As
   isExternal: true
@@ -1094,13 +1053,13 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: Luny.Engine.Bridge.ILunyObject.IsDestroyed*
-  commentId: Overload:Luny.Engine.Bridge.ILunyObject.IsDestroyed
+- uid: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid*
+  commentId: Overload:Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
   isExternal: true
-  href: Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_IsDestroyed
-  name: IsDestroyed
-  nameWithType: ILunyObject.IsDestroyed
-  fullName: Luny.Engine.Bridge.ILunyObject.IsDestroyed
+  href: Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_IsNativeObjectValid
+  name: IsNativeObjectValid
+  nameWithType: ILunyObject.IsNativeObjectValid
+  fullName: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
 - uid: Luny.Engine.Bridge.ILunyObject.IsEnabled*
   commentId: Overload:Luny.Engine.Bridge.ILunyObject.IsEnabled
   isExternal: true
@@ -1122,6 +1081,22 @@ references:
   name: IsVisible
   nameWithType: ILunyObject.IsVisible
   fullName: Luny.Engine.Bridge.ILunyObject.IsVisible
+- uid: Luny.Engine.Bridge.ILunyObject.OnCreated
+  commentId: E:Luny.Engine.Bridge.ILunyObject.OnCreated
+  parent: Luny.Engine.Bridge.ILunyObject
+  isExternal: true
+  href: Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnCreated
+  name: OnCreated
+  nameWithType: ILunyObject.OnCreated
+  fullName: Luny.Engine.Bridge.ILunyObject.OnCreated
+- uid: Luny.Engine.Bridge.ILunyObject.OnEnabled
+  commentId: E:Luny.Engine.Bridge.ILunyObject.OnEnabled
+  parent: Luny.Engine.Bridge.ILunyObject
+  isExternal: true
+  href: Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_OnEnabled
+  name: OnEnabled
+  nameWithType: ILunyObject.OnEnabled
+  fullName: Luny.Engine.Bridge.ILunyObject.OnEnabled
 - uid: System.Action
   commentId: T:System.Action
   parent: System
@@ -1129,6 +1104,14 @@ references:
   name: Action
   nameWithType: Action
   fullName: System.Action
+- uid: Luny.Engine.Bridge.ILunyObject.NativeObject
+  commentId: P:Luny.Engine.Bridge.ILunyObject.NativeObject
+  parent: Luny.Engine.Bridge.ILunyObject
+  isExternal: true
+  href: Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Bridge_ILunyObject_NativeObject
+  name: NativeObject
+  nameWithType: ILunyObject.NativeObject
+  fullName: Luny.Engine.Bridge.ILunyObject.NativeObject
 - uid: System.Action{Luny.Engine.Bridge.LunyCollision}
   commentId: T:System.Action{Luny.Engine.Bridge.LunyCollision}
   parent: System

@@ -33,7 +33,7 @@ items:
   assemblies:
   - Luny
   namespace: Luny
-  summary: LunyEngine interface - receives callbacks from engine adapters and provides service access.
+  summary: 'See implementation: <xref href="Luny.LunyEngine" data-throw-if-not-resolved="false"></xref>'
   example: []
   syntax:
     content: public interface ILunyEngine
@@ -54,7 +54,7 @@ items:
   assemblies:
   - Luny
   namespace: Luny
-  summary: Will try to find an object by name in the scene. Queries already-cached objects first.
+  summary: Will try to find an object by name in the scene. Queries already-cached objects first. Wraps found objects in a `LunyObject` instance.
   example: []
   syntax:
     content: ILunyObject TryGetObject(string name, string callerFilePath = "", int callerLineNumber = 0)
@@ -182,12 +182,16 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: 'Gets a service by type. Throws if the service is not registered. Note: essential services are exposed as properties.'
+  example: []
   syntax:
     content: 'TService GetService<TService>() where TService : LunyEngineServiceBase'
     typeParameters:
     - id: TService
+      description: ''
     return:
       type: '{TService}'
+      description: ''
     content.vb: Function GetService(Of TService As LunyEngineServiceBase)() As TService
   overload: Luny.ILunyEngine.GetService*
   nameWithType.vb: ILunyEngine.GetService(Of TService)()
@@ -207,15 +211,20 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: Gets a service by type, may return false/null.
+  example: []
   syntax:
     content: 'bool TryGetService<TService>(out TService service) where TService : LunyEngineServiceBase'
     parameters:
     - id: service
       type: '{TService}'
+      description: ''
     typeParameters:
     - id: TService
+      description: ''
     return:
       type: System.Boolean
+      description: ''
     content.vb: Function TryGetService(Of TService As LunyEngineServiceBase)(service As TService) As Boolean
   overload: Luny.ILunyEngine.TryGetService*
   nameWithType.vb: ILunyEngine.TryGetService(Of TService)(TService)
@@ -235,12 +244,16 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: Queries if a service type is registered.
+  example: []
   syntax:
     content: 'bool HasService<TService>() where TService : LunyEngineServiceBase'
     typeParameters:
     - id: TService
+      description: ''
     return:
       type: System.Boolean
+      description: ''
     content.vb: Function HasService(Of TService As LunyEngineServiceBase)() As Boolean
   overload: Luny.ILunyEngine.HasService*
   nameWithType.vb: ILunyEngine.HasService(Of TService)()
@@ -260,6 +273,11 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: >-
+    Application-level services, similar to [UnityEngine.Application](xref:UnityEngine.Application) and
+
+    [UnityEditor.EditorApplication](xref:UnityEditor.EditorApplication).
+  example: []
   syntax:
     content: ILunyApplicationService Application { get; }
     parameters: []
@@ -281,6 +299,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: Asset loading/unloading and caching. Enables asset lookup by path/name. Returns placeholder assets instead of throwing exceptions.
+  example: []
   syntax:
     content: ILunyAssetService Asset { get; }
     parameters: []
@@ -302,6 +322,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: Debug services, eg logging.
+  example: []
   syntax:
     content: ILunyDebugService Debug { get; }
     parameters: []
@@ -323,6 +345,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: Editor services. Safe to call in runtime code (no-op, returning defaults).
+  example: []
   syntax:
     content: ILunyEditorService Editor { get; }
     parameters: []
@@ -344,6 +368,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: Input services, forwards Action Map events and provides access to most recent input state.
+  example: []
   syntax:
     content: ILunyInputService Input { get; }
     parameters: []
@@ -365,6 +391,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: Object services, mainly creating new prefab/primitive instances.
+  example: []
   syntax:
     content: ILunyObjectService Object { get; }
     parameters: []
@@ -386,6 +414,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: Scene services, including in-scene object queries by name/path/type and scene load/unload.
+  example: []
   syntax:
     content: ILunySceneService Scene { get; }
     parameters: []
@@ -407,6 +437,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: Time services, eg delta time, elapsed seconds, frame count.
+  example: []
   syntax:
     content: ILunyTimeService Time { get; }
     parameters: []
@@ -428,6 +460,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: In-scene LunyObject instances get registered (cached) here after creation or ownership transfer to LunyEngine.
+  example: []
   syntax:
     content: ILunyObjectRegistry Objects { get; }
     parameters: []
@@ -449,6 +483,8 @@ items:
   assemblies:
   - Luny
   namespace: Luny
+  summary: LunyEngine profiler maintains a runtime record of observer execution metrics.
+  example: []
   syntax:
     content: ILunyEngineProfiler Profiler { get; }
     parameters: []
@@ -457,6 +493,13 @@ items:
     content.vb: ReadOnly Property Profiler As ILunyEngineProfiler
   overload: Luny.ILunyEngine.Profiler*
 references:
+- uid: Luny.LunyEngine
+  commentId: T:Luny.LunyEngine
+  isExternal: true
+  href: Luny.LunyEngine.html
+  name: LunyEngine
+  nameWithType: LunyEngine
+  fullName: Luny.LunyEngine
 - uid: Luny
   commentId: N:Luny
   isExternal: true

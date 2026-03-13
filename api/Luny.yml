@@ -7,8 +7,6 @@ items:
   - Luny.Alarm
   - Luny.Counter
   - Luny.ILunyEngine
-  - Luny.ILunyEngineLifecycle
-  - Luny.ILunyEngineNativeAdapter
   - Luny.ILunyEngineObserver
   - Luny.ILunyLogger
   - Luny.ILunyObjectRegistry
@@ -20,6 +18,7 @@ items:
   - Luny.LogLevel
   - Luny.LunyBridgeException
   - Luny.LunyEngine
+  - Luny.LunyEngineLifecycleEvents
   - Luny.LunyException
   - Luny.LunyLifecycleException
   - Luny.LunyLogger
@@ -137,14 +136,6 @@ references:
   name: LunyServiceException
   nameWithType: LunyServiceException
   fullName: Luny.LunyServiceException
-- uid: Luny.ILunyEngineNativeAdapter
-  commentId: T:Luny.ILunyEngineNativeAdapter
-  parent: Luny
-  isExternal: true
-  href: Luny.ILunyEngineNativeAdapter.html
-  name: ILunyEngineNativeAdapter
-  nameWithType: ILunyEngineNativeAdapter
-  fullName: Luny.ILunyEngineNativeAdapter
 - uid: Luny.ILunyEngineObserver
   commentId: T:Luny.ILunyEngineObserver
   isExternal: true
@@ -154,7 +145,6 @@ references:
   fullName: Luny.ILunyEngineObserver
 - uid: Luny.LunyEngine
   commentId: T:Luny.LunyEngine
-  parent: Luny
   isExternal: true
   href: Luny.LunyEngine.html
   name: LunyEngine
@@ -168,14 +158,14 @@ references:
   name: ILunyEngine
   nameWithType: ILunyEngine
   fullName: Luny.ILunyEngine
-- uid: Luny.ILunyEngineLifecycle
-  commentId: T:Luny.ILunyEngineLifecycle
+- uid: Luny.LunyEngineLifecycleEvents
+  commentId: T:Luny.LunyEngineLifecycleEvents
   parent: Luny
   isExternal: true
-  href: Luny.ILunyEngineLifecycle.html
-  name: ILunyEngineLifecycle
-  nameWithType: ILunyEngineLifecycle
-  fullName: Luny.ILunyEngineLifecycle
+  href: Luny.LunyEngineLifecycleEvents.html
+  name: LunyEngineLifecycleEvents
+  nameWithType: LunyEngineLifecycleEvents
+  fullName: Luny.LunyEngineLifecycleEvents
 - uid: Luny.ILunyObserverRegistry
   commentId: T:Luny.ILunyObserverRegistry
   isExternal: true

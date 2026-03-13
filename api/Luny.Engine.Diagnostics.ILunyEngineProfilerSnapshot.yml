@@ -44,7 +44,7 @@ items:
     content: IReadOnlyDictionary<LunyEngineLifecycleEvents, IReadOnlyList<LunyObserverMetrics>> CategorizedMetrics { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.IReadOnlyDictionary{Luny.Engine.Diagnostics.LunyEngineLifecycleEvents,System.Collections.Generic.IReadOnlyList{Luny.Engine.Diagnostics.LunyObserverMetrics}}
+      type: System.Collections.Generic.IReadOnlyDictionary{Luny.LunyEngineLifecycleEvents,System.Collections.Generic.IReadOnlyList{Luny.Engine.Diagnostics.LunyObserverMetrics}}
     content.vb: ReadOnly Property CategorizedMetrics As IReadOnlyDictionary(Of LunyEngineLifecycleEvents, IReadOnlyList(Of LunyObserverMetrics))
   overload: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.CategorizedMetrics*
 - uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp
@@ -134,26 +134,26 @@ references:
   name: CategorizedMetrics
   nameWithType: ILunyEngineProfilerSnapshot.CategorizedMetrics
   fullName: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.CategorizedMetrics
-- uid: System.Collections.Generic.IReadOnlyDictionary{Luny.Engine.Diagnostics.LunyEngineLifecycleEvents,System.Collections.Generic.IReadOnlyList{Luny.Engine.Diagnostics.LunyObserverMetrics}}
-  commentId: T:System.Collections.Generic.IReadOnlyDictionary{Luny.Engine.Diagnostics.LunyEngineLifecycleEvents,System.Collections.Generic.IReadOnlyList{Luny.Engine.Diagnostics.LunyObserverMetrics}}
+- uid: System.Collections.Generic.IReadOnlyDictionary{Luny.LunyEngineLifecycleEvents,System.Collections.Generic.IReadOnlyList{Luny.Engine.Diagnostics.LunyObserverMetrics}}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{Luny.LunyEngineLifecycleEvents,System.Collections.Generic.IReadOnlyList{Luny.Engine.Diagnostics.LunyObserverMetrics}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyDictionary`2
-  href: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents.html
+  href: Luny.LunyEngineLifecycleEvents.html
   name: IReadOnlyDictionary<LunyEngineLifecycleEvents, IReadOnlyList<LunyObserverMetrics>>
   nameWithType: IReadOnlyDictionary<LunyEngineLifecycleEvents, IReadOnlyList<LunyObserverMetrics>>
-  fullName: System.Collections.Generic.IReadOnlyDictionary<Luny.Engine.Diagnostics.LunyEngineLifecycleEvents, System.Collections.Generic.IReadOnlyList<Luny.Engine.Diagnostics.LunyObserverMetrics>>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Luny.LunyEngineLifecycleEvents, System.Collections.Generic.IReadOnlyList<Luny.Engine.Diagnostics.LunyObserverMetrics>>
   nameWithType.vb: IReadOnlyDictionary(Of LunyEngineLifecycleEvents, IReadOnlyList(Of LunyObserverMetrics))
-  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Luny.Engine.Diagnostics.LunyEngineLifecycleEvents, System.Collections.Generic.IReadOnlyList(Of Luny.Engine.Diagnostics.LunyObserverMetrics))
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Luny.LunyEngineLifecycleEvents, System.Collections.Generic.IReadOnlyList(Of Luny.Engine.Diagnostics.LunyObserverMetrics))
   name.vb: IReadOnlyDictionary(Of LunyEngineLifecycleEvents, IReadOnlyList(Of LunyObserverMetrics))
   spec.csharp:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     isExternal: true
   - name: <
-  - uid: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
+  - uid: Luny.LunyEngineLifecycleEvents
     name: LunyEngineLifecycleEvents
     isExternal: true
-    href: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents.html
+    href: Luny.LunyEngineLifecycleEvents.html
   - name: ','
   - name: " "
   - uid: System.Collections.Generic.IReadOnlyList`1
@@ -173,10 +173,10 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
+  - uid: Luny.LunyEngineLifecycleEvents
     name: LunyEngineLifecycleEvents
     isExternal: true
-    href: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents.html
+    href: Luny.LunyEngineLifecycleEvents.html
   - name: ','
   - name: " "
   - uid: System.Collections.Generic.IReadOnlyList`1

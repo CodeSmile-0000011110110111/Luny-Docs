@@ -71,7 +71,7 @@ items:
   syntax:
     content: public LunyEngineLifecycleEvents Category
     return:
-      type: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
+      type: Luny.LunyEngineLifecycleEvents
     content.vb: Public Category As LunyEngineLifecycleEvents
 - uid: Luny.Engine.Diagnostics.LunyObserverMetrics.CallCount
   commentId: F:Luny.Engine.Diagnostics.LunyObserverMetrics.CallCount
@@ -294,14 +294,21 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
-  commentId: T:Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
-  parent: Luny.Engine.Diagnostics
+- uid: Luny.LunyEngineLifecycleEvents
+  commentId: T:Luny.LunyEngineLifecycleEvents
+  parent: Luny
   isExternal: true
-  href: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents.html
+  href: Luny.LunyEngineLifecycleEvents.html
   name: LunyEngineLifecycleEvents
   nameWithType: LunyEngineLifecycleEvents
-  fullName: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
+  fullName: Luny.LunyEngineLifecycleEvents
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: Luny.LunyEngineLifecycleEvents
+  commentId: T:Luny.LunyEngineLifecycleEvents
+  id: LunyEngineLifecycleEvents
+  parent: Luny
+  children:
+  - Luny.LunyEngineLifecycleEvents.OnEngineHeartbeat
+  - Luny.LunyEngineLifecycleEvents.OnEngineLateUpdate
+  - Luny.LunyEngineLifecycleEvents.OnEnginePostUpdate
+  - Luny.LunyEngineLifecycleEvents.OnEnginePreUpdate
+  - Luny.LunyEngineLifecycleEvents.OnEngineSceneLoaded
+  - Luny.LunyEngineLifecycleEvents.OnEngineSceneUnloaded
+  - Luny.LunyEngineLifecycleEvents.OnEngineShutdown
+  - Luny.LunyEngineLifecycleEvents.OnEngineStartup
+  - Luny.LunyEngineLifecycleEvents.OnEngineUpdate
+  - Luny.LunyEngineLifecycleEvents.OnObjectCreated
+  - Luny.LunyEngineLifecycleEvents.OnObjectDestroyed
+  langs:
+  - csharp
+  - vb
+  name: LunyEngineLifecycleEvents
+  nameWithType: LunyEngineLifecycleEvents
+  fullName: Luny.LunyEngineLifecycleEvents
+  type: Enum
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: LunyScript lifecycle events.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum LunyEngineLifecycleEvents
+    content.vb: >-
+      <Flags>
+
+      Public Enum LunyEngineLifecycleEvents
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineStartup
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineStartup
+  id: OnEngineStartup
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnEngineStartup
+  nameWithType: LunyEngineLifecycleEvents.OnEngineStartup
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineStartup
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Runs once when application (runtime player) launches. Does not re-run when loading scenes.
+  example: []
+  syntax:
+    content: OnEngineStartup = 1
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineShutdown
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineShutdown
+  id: OnEngineShutdown
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnEngineShutdown
+  nameWithType: LunyEngineLifecycleEvents.OnEngineShutdown
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineShutdown
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Runs once when application (runtime player) exits.
+  example: []
+  syntax:
+    content: OnEngineShutdown = 2
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnEnginePreUpdate
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEnginePreUpdate
+  id: OnEnginePreUpdate
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnEnginePreUpdate
+  nameWithType: LunyEngineLifecycleEvents.OnEnginePreUpdate
+  fullName: Luny.LunyEngineLifecycleEvents.OnEnginePreUpdate
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Runs at the beginning of a frame, before update and fixed step.
+  example: []
+  syntax:
+    content: OnEnginePreUpdate = 4
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnEnginePostUpdate
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEnginePostUpdate
+  id: OnEnginePostUpdate
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnEnginePostUpdate
+  nameWithType: LunyEngineLifecycleEvents.OnEnginePostUpdate
+  fullName: Luny.LunyEngineLifecycleEvents.OnEnginePostUpdate
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Runs at the end of a frame, after late update.
+  example: []
+  syntax:
+    content: OnEnginePostUpdate = 8
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineHeartbeat
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineHeartbeat
+  id: OnEngineHeartbeat
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnEngineHeartbeat
+  nameWithType: LunyEngineLifecycleEvents.OnEngineHeartbeat
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineHeartbeat
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Runs in sync with engine's "fixed update" or "physics processing" event.
+  example: []
+  syntax:
+    content: OnEngineHeartbeat = 16
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineUpdate
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineUpdate
+  id: OnEngineUpdate
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnEngineUpdate
+  nameWithType: LunyEngineLifecycleEvents.OnEngineUpdate
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineUpdate
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: Runs in sync with engine's "update/process" event.
+  example: []
+  syntax:
+    content: OnEngineUpdate = 32
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineLateUpdate
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineLateUpdate
+  id: OnEngineLateUpdate
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnEngineLateUpdate
+  nameWithType: LunyEngineLifecycleEvents.OnEngineLateUpdate
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineLateUpdate
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  summary: >-
+    Runs in sync with engine's "late update" event.
+
+    Where unsupported (Godot) the native engine adapter calls this at the end of the engine's update event.
+  example: []
+  syntax:
+    content: OnEngineLateUpdate = 64
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineSceneUnloaded
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineSceneUnloaded
+  id: OnEngineSceneUnloaded
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnEngineSceneUnloaded
+  nameWithType: LunyEngineLifecycleEvents.OnEngineSceneUnloaded
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineSceneUnloaded
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: OnEngineSceneUnloaded = 256
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnEngineSceneLoaded
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnEngineSceneLoaded
+  id: OnEngineSceneLoaded
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnEngineSceneLoaded
+  nameWithType: LunyEngineLifecycleEvents.OnEngineSceneLoaded
+  fullName: Luny.LunyEngineLifecycleEvents.OnEngineSceneLoaded
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: OnEngineSceneLoaded = 512
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnObjectCreated
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnObjectCreated
+  id: OnObjectCreated
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnObjectCreated
+  nameWithType: LunyEngineLifecycleEvents.OnObjectCreated
+  fullName: Luny.LunyEngineLifecycleEvents.OnObjectCreated
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: OnObjectCreated = 1024
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+- uid: Luny.LunyEngineLifecycleEvents.OnObjectDestroyed
+  commentId: F:Luny.LunyEngineLifecycleEvents.OnObjectDestroyed
+  id: OnObjectDestroyed
+  parent: Luny.LunyEngineLifecycleEvents
+  langs:
+  - csharp
+  - vb
+  name: OnObjectDestroyed
+  nameWithType: LunyEngineLifecycleEvents.OnObjectDestroyed
+  fullName: Luny.LunyEngineLifecycleEvents.OnObjectDestroyed
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: OnObjectDestroyed = 2048
+    return:
+      type: Luny.LunyEngineLifecycleEvents
+references:
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: Luny.LunyEngineLifecycleEvents
+  commentId: T:Luny.LunyEngineLifecycleEvents
+  parent: Luny
+  isExternal: true
+  href: Luny.LunyEngineLifecycleEvents.html
+  name: LunyEngineLifecycleEvents
+  nameWithType: LunyEngineLifecycleEvents
+  fullName: Luny.LunyEngineLifecycleEvents

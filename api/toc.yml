@@ -13,12 +13,6 @@ items:
   - uid: Luny.ILunyEngine
     name: ILunyEngine
     type: Interface
-  - uid: Luny.ILunyEngineLifecycle
-    name: ILunyEngineLifecycle
-    type: Interface
-  - uid: Luny.ILunyEngineNativeAdapter
-    name: ILunyEngineNativeAdapter
-    type: Interface
   - uid: Luny.ILunyEngineObserver
     name: ILunyEngineObserver
     type: Interface
@@ -52,6 +46,9 @@ items:
   - uid: Luny.LunyEngine
     name: LunyEngine
     type: Class
+  - uid: Luny.LunyEngineLifecycleEvents
+    name: LunyEngineLifecycleEvents
+    type: Enum
   - uid: Luny.LunyException
     name: LunyException
     type: Class
@@ -258,9 +255,6 @@ items:
   - uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot
     name: ILunyEngineProfilerSnapshot
     type: Interface
-  - uid: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
-    name: LunyEngineLifecycleEvents
-    type: Enum
   - uid: Luny.Engine.Diagnostics.LunyObserverMetrics
     name: LunyObserverMetrics
     type: Class

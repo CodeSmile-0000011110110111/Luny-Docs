@@ -6,7 +6,6 @@ items:
   children:
   - Luny.Engine.Diagnostics.ILunyEngineProfiler
   - Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot
-  - Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
   - Luny.Engine.Diagnostics.LunyObserverMetrics
   langs:
   - csharp
@@ -18,14 +17,6 @@ items:
   assemblies:
   - Luny
 references:
-- uid: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
-  commentId: T:Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
-  parent: Luny.Engine.Diagnostics
-  isExternal: true
-  href: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents.html
-  name: LunyEngineLifecycleEvents
-  nameWithType: LunyEngineLifecycleEvents
-  fullName: Luny.Engine.Diagnostics.LunyEngineLifecycleEvents
 - uid: Luny.Engine.Diagnostics.ILunyEngineProfiler
   commentId: T:Luny.Engine.Diagnostics.ILunyEngineProfiler
   parent: Luny.Engine.Diagnostics
