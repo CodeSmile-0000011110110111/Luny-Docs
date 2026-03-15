@@ -3,7 +3,38 @@
 - name: Your First Luny Script
   href: first-script-overview.md
   items:
-  - name: Luny Script vs Unity MonoBehaviour
+  - name: First Luny Script
+    href: first-script.md
+  - name: Compared with MonoBehaviour (Unity 6.x)
     href: first-script-unity.md
-  - name: Luny Script vs Godot GDScript
+  - name: Compared with GDScript (Godot 4.x)
     href: first-script-godot.md
+- name: API Overview
+  href: api-overview.md
+  items:
+    - name: Object Lifecycle Events
+      href: api-events.md
+    - name: Global Events
+      href: api-events.md
+    - name: Global 6 Local Variables
+      href: api-variables.md
+    - name: Assets
+      href: api-assets.md
+    - name: Object API
+      href: api-object.md
+    - name: Transform API
+      href: api-transform.md
+    - name: Component API
+      href: api-component.md
+    - name: Physics API
+      href: api-physics.md
+    - name: Input API
+      href: api-input.md
+    - name: Debug API
+      href: api-debug.md
+    - name: Scene API
+      href: api-scene.md
+    - name: Time API
+      href: api-time.md
+    - name: Application API
+      href: api-application.md

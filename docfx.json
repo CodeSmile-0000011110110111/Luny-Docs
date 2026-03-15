@@ -83,7 +83,9 @@
     "markdownEngineProperties": {
       "markdigExtensions": [
         "attributes",
-        "customcontainers"
+        "customcontainers",
+        "Abbreviations",
+        "Footnotes"
       ]
     }
   }
