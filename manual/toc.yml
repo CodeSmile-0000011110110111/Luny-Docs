@@ -12,24 +12,45 @@
 - name: API Overview
   href: api-overview.md
   items:
-    - name: Object Lifecycle Events
+    - name: Events
       href: api-events.md
-    - name: Global Events
-      href: api-events.md
-    - name: Global 6 Local Variables
+      items:
+      - name: Object Lifecycle Events (On.*)
+        href: api-events-lifecycle.md
+      - name: Global Events (When.*)
+        href: api-events-global.md
+    - name: Variables
       href: api-variables.md
+      items:
+      - name: Number
+        href: api-numbers.md
+      - name: Table
+        href: api-table.md
     - name: Assets
       href: api-assets.md
     - name: Object API
       href: api-object.md
+      items:
+      - name: Prefabs
+        href: api-object-prefab.md
+      - name: Primitives
+        href: api-object-primitive.md
     - name: Transform API
       href: api-transform.md
+      items:
+      - name: Axis-aligned
+        href: api-transform-shift.md
+      - name: Object-aligned
+        href: api-transform-move.md
     - name: Component API
       href: api-component.md
     - name: Physics API
       href: api-physics.md
     - name: Input API
       href: api-input.md
+      items:
+      - name: Local Multiplayer
+        href: api-input-local-multiplayer.md
     - name: Debug API
       href: api-debug.md
     - name: Scene API
