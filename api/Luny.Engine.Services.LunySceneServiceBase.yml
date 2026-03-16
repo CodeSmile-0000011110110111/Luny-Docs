@@ -503,6 +503,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -562,10 +563,12 @@ references:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   - name: <
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
   - name: )
   spec.vb:
@@ -577,18 +580,21 @@ references:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   - name: (
   - name: Of
   - name: " "
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   - name: )
 - uid: System.Collections.Generic.IReadOnlyCollection{System.String}
   commentId: T:System.Collections.Generic.IReadOnlyCollection{System.String}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   name: IReadOnlyCollection<string>
   nameWithType: IReadOnlyCollection<string>
   fullName: System.Collections.Generic.IReadOnlyCollection<string>
@@ -599,27 +605,31 @@ references:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   - name: <
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   - name: (
   - name: Of
   - name: " "
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.Collections.Generic.IReadOnlyList{Luny.Engine.Bridge.ILunyObject}
   commentId: T:System.Collections.Generic.IReadOnlyList{Luny.Engine.Bridge.ILunyObject}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyList`1
-  href: Luny.Engine.Bridge.ILunyObject.html
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   name: IReadOnlyList<ILunyObject>
   nameWithType: IReadOnlyList<ILunyObject>
   fullName: System.Collections.Generic.IReadOnlyList<Luny.Engine.Bridge.ILunyObject>
@@ -630,6 +640,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: <
   - uid: Luny.Engine.Bridge.ILunyObject
     name: ILunyObject
@@ -640,6 +651,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: (
   - name: Of
   - name: " "
@@ -651,6 +663,7 @@ references:
 - uid: System.Collections.Generic.IReadOnlyCollection`1
   commentId: T:System.Collections.Generic.IReadOnlyCollection`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   name: IReadOnlyCollection<T>
   nameWithType: IReadOnlyCollection<T>
   fullName: System.Collections.Generic.IReadOnlyCollection<T>
@@ -661,6 +674,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   - name: <
   - name: T
   - name: '>'
@@ -668,6 +682,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
     name: IReadOnlyCollection
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   - name: (
   - name: Of
   - name: " "
@@ -676,6 +691,7 @@ references:
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
@@ -683,29 +699,36 @@ references:
   - uid: System
     name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
   spec.vb:
   - uid: System
     name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: System.Collections.Generic.IReadOnlyList`1
   commentId: T:System.Collections.Generic.IReadOnlyList`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   name: IReadOnlyList<T>
   nameWithType: IReadOnlyList<T>
   fullName: System.Collections.Generic.IReadOnlyList<T>
@@ -716,6 +739,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: <
   - name: T
   - name: '>'
@@ -723,6 +747,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: (
   - name: Of
   - name: " "
@@ -755,6 +780,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunySceneService.FindObjectByName(System.String)
@@ -765,11 +791,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -900,7 +928,7 @@ references:
   commentId: T:System.Action{Luny.Engine.Bridge.ILunyScene}
   parent: System
   definition: System.Action`1
-  href: Luny.Engine.Bridge.ILunyScene.html
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<ILunyScene>
   nameWithType: Action<ILunyScene>
   fullName: System.Action<Luny.Engine.Bridge.ILunyScene>
@@ -911,6 +939,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - uid: Luny.Engine.Bridge.ILunyScene
     name: ILunyScene
@@ -921,6 +950,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -932,6 +962,7 @@ references:
 - uid: System.Action`1
   commentId: T:System.Action`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<T>
   nameWithType: Action<T>
   fullName: System.Action<T>
@@ -942,6 +973,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - name: T
   - name: '>'
@@ -949,6 +981,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "

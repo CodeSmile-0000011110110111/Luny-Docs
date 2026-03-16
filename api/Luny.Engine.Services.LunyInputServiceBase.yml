@@ -830,6 +830,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -860,6 +861,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyInputService.GetDirection(System.String)
@@ -870,11 +872,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -953,6 +957,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyInputService.GetRotation(System.String)
@@ -963,6 +968,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Bridge.LunyQuaternion
   commentId: T:Luny.Engine.Bridge.LunyQuaternion
@@ -992,6 +998,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
@@ -1008,6 +1015,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
@@ -1050,6 +1058,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyInputService.GetAxis(System.String)
@@ -1060,11 +1069,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.Single
   commentId: T:System.Single
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
   name: float
   nameWithType: float
   fullName: float
@@ -1098,6 +1109,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyInputService.GetButtonStrength(System.String)
@@ -1108,6 +1120,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed*
   commentId: Overload:Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed
@@ -1136,6 +1149,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyInputService.GetButtonPressed(System.String)
@@ -1146,11 +1160,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool
@@ -1184,6 +1200,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyInputService.GetButtonJustPressed(System.String)
@@ -1194,6 +1211,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes*
   commentId: Overload:Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes
@@ -1224,6 +1242,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
   - name: ']'
   - name: )
@@ -1238,11 +1257,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
   - name: )
   - name: )
 - uid: System.String[]
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string[]
   nameWithType: string[]
   fullName: string[]
@@ -1253,12 +1274,14 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
   - name: ']'
   spec.vb:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice*
@@ -1288,11 +1311,13 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
     name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.ILunyObject
@@ -1309,11 +1334,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
     name: Integer
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.ILunyObject
@@ -1325,6 +1352,7 @@ references:
   commentId: T:System.Int32
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: int
   nameWithType: int
   fullName: int
@@ -1366,6 +1394,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyInputService.UnassignUser(System.String)
@@ -1376,6 +1405,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice*
   commentId: Overload:Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice
@@ -1404,11 +1434,13 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
     name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyInputService.IsUserPairedWithDevice(System.String,System.Int32)
@@ -1419,11 +1451,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
     name: Integer
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction*
   commentId: Overload:Luny.Engine.Services.LunyInputServiceBase.EnableInputAction
@@ -1452,11 +1486,13 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Boolean
     name: bool
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyInputService.EnableInputAction(System.String,System.Boolean)
@@ -1467,11 +1503,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Boolean
     name: Boolean
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.SetDirectionalInput*
   commentId: Overload:Luny.Engine.Services.LunyInputServiceBase.SetDirectionalInput
@@ -1603,7 +1641,7 @@ references:
   commentId: T:System.Action{Luny.Engine.Bridge.LunyInputActionEvent}
   parent: System
   definition: System.Action`1
-  href: Luny.Engine.Bridge.LunyInputActionEvent.html
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<LunyInputActionEvent>
   nameWithType: Action<LunyInputActionEvent>
   fullName: System.Action<Luny.Engine.Bridge.LunyInputActionEvent>
@@ -1614,6 +1652,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - uid: Luny.Engine.Bridge.LunyInputActionEvent
     name: LunyInputActionEvent
@@ -1624,6 +1663,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -1635,6 +1675,7 @@ references:
 - uid: System.Action`1
   commentId: T:System.Action`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<T>
   nameWithType: Action<T>
   fullName: System.Action<T>
@@ -1645,6 +1686,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - name: T
   - name: '>'
@@ -1652,6 +1694,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "

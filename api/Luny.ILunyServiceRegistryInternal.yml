@@ -108,12 +108,14 @@ references:
   commentId: T:System.Type
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
   name: Type
   nameWithType: Type
   fullName: System.Type
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -126,6 +128,7 @@ references:
   fullName: Luny.ILunyServiceRegistryInternal.ThrowImplementsMultipleServiceInterfaces
 - uid: System.Type[]
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
   name: Type[]
   nameWithType: Type[]
   fullName: System.Type[]
@@ -136,12 +139,14 @@ references:
   - uid: System.Type
     name: Type
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
   - name: '['
   - name: ']'
   spec.vb:
   - uid: System.Type
     name: Type
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
   - name: (
   - name: )
 - uid: Luny.ILunyServiceRegistryInternal.RegisterService*

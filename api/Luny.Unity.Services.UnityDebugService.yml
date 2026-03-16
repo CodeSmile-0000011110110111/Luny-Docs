@@ -308,6 +308,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -352,6 +353,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyDebugServiceBase.LogInfo(System.String)
   parent: Luny.Engine.Services.LunyDebugServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: LogInfo(string)
   nameWithType: LunyDebugServiceBase.LogInfo(string)
   fullName: Luny.Engine.Services.LunyDebugServiceBase.LogInfo(string)
@@ -366,6 +368,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyDebugServiceBase.LogInfo(System.String)
@@ -375,6 +378,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Unity.Services.UnityDebugService.LogInfo*
   commentId: Overload:Luny.Unity.Services.UnityDebugService.LogInfo
@@ -403,6 +407,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyDebugService.LogInfo(System.String)
@@ -413,11 +418,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -428,6 +435,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyDebugServiceBase.LogWarning(System.String)
   parent: Luny.Engine.Services.LunyDebugServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: LogWarning(string)
   nameWithType: LunyDebugServiceBase.LogWarning(string)
   fullName: Luny.Engine.Services.LunyDebugServiceBase.LogWarning(string)
@@ -442,6 +450,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyDebugServiceBase.LogWarning(System.String)
@@ -451,6 +460,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Unity.Services.UnityDebugService.LogWarning*
   commentId: Overload:Luny.Unity.Services.UnityDebugService.LogWarning
@@ -479,6 +489,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyDebugService.LogWarning(System.String)
@@ -489,11 +500,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyDebugServiceBase.LogError(System.String)
   commentId: M:Luny.Engine.Services.LunyDebugServiceBase.LogError(System.String)
   parent: Luny.Engine.Services.LunyDebugServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: LogError(string)
   nameWithType: LunyDebugServiceBase.LogError(string)
   fullName: Luny.Engine.Services.LunyDebugServiceBase.LogError(string)
@@ -508,6 +521,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyDebugServiceBase.LogError(System.String)
@@ -517,6 +531,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Unity.Services.UnityDebugService.LogError*
   commentId: Overload:Luny.Unity.Services.UnityDebugService.LogError
@@ -545,6 +560,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyDebugService.LogError(System.String)
@@ -555,11 +571,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyDebugServiceBase.LogException(System.Exception)
   commentId: M:Luny.Engine.Services.LunyDebugServiceBase.LogException(System.Exception)
   parent: Luny.Engine.Services.LunyDebugServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
   name: LogException(Exception)
   nameWithType: LunyDebugServiceBase.LogException(Exception)
   fullName: Luny.Engine.Services.LunyDebugServiceBase.LogException(System.Exception)
@@ -571,6 +589,7 @@ references:
   - uid: System.Exception
     name: Exception
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyDebugServiceBase.LogException(System.Exception)
@@ -580,6 +599,7 @@ references:
   - uid: System.Exception
     name: Exception
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
   - name: )
 - uid: Luny.Unity.Services.UnityDebugService.LogException*
   commentId: Overload:Luny.Unity.Services.UnityDebugService.LogException
@@ -605,6 +625,7 @@ references:
   - uid: System.Exception
     name: Exception
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyDebugService.LogException(System.Exception)
@@ -615,11 +636,13 @@ references:
   - uid: System.Exception
     name: Exception
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
   - name: )
 - uid: System.Exception
   commentId: T:System.Exception
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
   name: Exception
   nameWithType: Exception
   fullName: System.Exception

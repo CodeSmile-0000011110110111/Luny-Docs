@@ -333,6 +333,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -369,6 +370,7 @@ references:
   commentId: T:System.Type
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
   name: Type
   nameWithType: Type
   fullName: System.Type
@@ -383,6 +385,7 @@ references:
   commentId: T:System.Exception
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
   name: Exception
   nameWithType: Exception
   fullName: System.Exception
@@ -429,6 +432,7 @@ references:
   commentId: T:System.Int32
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: int
   nameWithType: int
   fullName: int

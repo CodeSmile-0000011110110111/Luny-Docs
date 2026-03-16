@@ -26,6 +26,8 @@ items:
   inheritance:
   - System.Object
   - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
 - uid: Luny.VariableChangedArgs.ToString
   commentId: M:Luny.VariableChangedArgs.ToString
   id: ToString
@@ -154,12 +156,22 @@ references:
   commentId: T:System.EventArgs
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
   name: EventArgs
   nameWithType: EventArgs
   fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs.empty
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -195,6 +207,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string

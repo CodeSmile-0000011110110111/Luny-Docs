@@ -1,0 +1,401 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.ConditionBlock
+  commentId: T:LunyScript.Blocks.ConditionBlock
+  id: ConditionBlock
+  parent: LunyScript.Blocks
+  children:
+  - LunyScript.Blocks.ConditionBlock.#ctor
+  - LunyScript.Blocks.ConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  - LunyScript.Blocks.ConditionBlock.op_BitwiseAnd(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  - LunyScript.Blocks.ConditionBlock.op_BitwiseOr(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  - LunyScript.Blocks.ConditionBlock.op_False(LunyScript.Blocks.ConditionBlock)
+  - LunyScript.Blocks.ConditionBlock.op_LogicalNot(LunyScript.Blocks.ConditionBlock)
+  - LunyScript.Blocks.ConditionBlock.op_True(LunyScript.Blocks.ConditionBlock)
+  langs:
+  - csharp
+  - vb
+  name: ConditionBlock
+  nameWithType: ConditionBlock
+  fullName: LunyScript.Blocks.ConditionBlock
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Abstract base for condition blocks that evaluate to a boolean result.
+  example: []
+  syntax:
+    content: 'public abstract class ConditionBlock : ScriptBlock, IScriptBlock'
+    content.vb: Public MustInherit Class ConditionBlock Inherits ScriptBlock Implements IScriptBlock
+  inheritance:
+  - System.Object
+  - LunyScript.Blocks.ScriptBlock
+  derivedClasses:
+  - LunyScript.Blocks.VariableBlock
+  implements:
+  - LunyScript.Blocks.IScriptBlock
+- uid: LunyScript.Blocks.ConditionBlock.op_LogicalNot(LunyScript.Blocks.ConditionBlock)
+  commentId: M:LunyScript.Blocks.ConditionBlock.op_LogicalNot(LunyScript.Blocks.ConditionBlock)
+  id: op_LogicalNot(LunyScript.Blocks.ConditionBlock)
+  parent: LunyScript.Blocks.ConditionBlock
+  langs:
+  - csharp
+  - vb
+  name: operator !(ConditionBlock)
+  nameWithType: ConditionBlock.operator !(ConditionBlock)
+  fullName: LunyScript.Blocks.ConditionBlock.operator !(LunyScript.Blocks.ConditionBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static ConditionBlock operator !(ConditionBlock block)
+    parameters:
+    - id: block
+      type: LunyScript.Blocks.ConditionBlock
+    return:
+      type: LunyScript.Blocks.ConditionBlock
+    content.vb: Public Shared Operator Not(block As ConditionBlock) As ConditionBlock
+  overload: LunyScript.Blocks.ConditionBlock.op_LogicalNot*
+  nameWithType.vb: ConditionBlock.Not(ConditionBlock)
+  fullName.vb: LunyScript.Blocks.ConditionBlock.Not(LunyScript.Blocks.ConditionBlock)
+  name.vb: Not(ConditionBlock)
+- uid: LunyScript.Blocks.ConditionBlock.op_BitwiseAnd(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  commentId: M:LunyScript.Blocks.ConditionBlock.op_BitwiseAnd(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  id: op_BitwiseAnd(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  parent: LunyScript.Blocks.ConditionBlock
+  langs:
+  - csharp
+  - vb
+  name: operator &(ConditionBlock, ConditionBlock)
+  nameWithType: ConditionBlock.operator &(ConditionBlock, ConditionBlock)
+  fullName: LunyScript.Blocks.ConditionBlock.operator &(LunyScript.Blocks.ConditionBlock, LunyScript.Blocks.ConditionBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static ConditionBlock operator &(ConditionBlock left, ConditionBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.ConditionBlock
+    - id: right
+      type: LunyScript.Blocks.ConditionBlock
+    return:
+      type: LunyScript.Blocks.ConditionBlock
+    content.vb: Public Shared Operator And(left As ConditionBlock, right As ConditionBlock) As ConditionBlock
+  overload: LunyScript.Blocks.ConditionBlock.op_BitwiseAnd*
+  nameWithType.vb: ConditionBlock.And(ConditionBlock, ConditionBlock)
+  fullName.vb: LunyScript.Blocks.ConditionBlock.And(LunyScript.Blocks.ConditionBlock, LunyScript.Blocks.ConditionBlock)
+  name.vb: And(ConditionBlock, ConditionBlock)
+- uid: LunyScript.Blocks.ConditionBlock.op_BitwiseOr(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  commentId: M:LunyScript.Blocks.ConditionBlock.op_BitwiseOr(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  id: op_BitwiseOr(LunyScript.Blocks.ConditionBlock,LunyScript.Blocks.ConditionBlock)
+  parent: LunyScript.Blocks.ConditionBlock
+  langs:
+  - csharp
+  - vb
+  name: operator |(ConditionBlock, ConditionBlock)
+  nameWithType: ConditionBlock.operator |(ConditionBlock, ConditionBlock)
+  fullName: LunyScript.Blocks.ConditionBlock.operator |(LunyScript.Blocks.ConditionBlock, LunyScript.Blocks.ConditionBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static ConditionBlock operator |(ConditionBlock left, ConditionBlock right)
+    parameters:
+    - id: left
+      type: LunyScript.Blocks.ConditionBlock
+    - id: right
+      type: LunyScript.Blocks.ConditionBlock
+    return:
+      type: LunyScript.Blocks.ConditionBlock
+    content.vb: Public Shared Operator Or(left As ConditionBlock, right As ConditionBlock) As ConditionBlock
+  overload: LunyScript.Blocks.ConditionBlock.op_BitwiseOr*
+  nameWithType.vb: ConditionBlock.Or(ConditionBlock, ConditionBlock)
+  fullName.vb: LunyScript.Blocks.ConditionBlock.Or(LunyScript.Blocks.ConditionBlock, LunyScript.Blocks.ConditionBlock)
+  name.vb: Or(ConditionBlock, ConditionBlock)
+- uid: LunyScript.Blocks.ConditionBlock.op_True(LunyScript.Blocks.ConditionBlock)
+  commentId: M:LunyScript.Blocks.ConditionBlock.op_True(LunyScript.Blocks.ConditionBlock)
+  id: op_True(LunyScript.Blocks.ConditionBlock)
+  parent: LunyScript.Blocks.ConditionBlock
+  langs:
+  - csharp
+  - vb
+  name: operator true(ConditionBlock)
+  nameWithType: ConditionBlock.operator true(ConditionBlock)
+  fullName: LunyScript.Blocks.ConditionBlock.operator true(LunyScript.Blocks.ConditionBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static bool operator true(ConditionBlock _)
+    parameters:
+    - id: _
+      type: LunyScript.Blocks.ConditionBlock
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator IsTrue(_ As ConditionBlock) As Boolean
+  overload: LunyScript.Blocks.ConditionBlock.op_True*
+  nameWithType.vb: ConditionBlock.IsTrue(ConditionBlock)
+  fullName.vb: LunyScript.Blocks.ConditionBlock.IsTrue(LunyScript.Blocks.ConditionBlock)
+  name.vb: IsTrue(ConditionBlock)
+- uid: LunyScript.Blocks.ConditionBlock.op_False(LunyScript.Blocks.ConditionBlock)
+  commentId: M:LunyScript.Blocks.ConditionBlock.op_False(LunyScript.Blocks.ConditionBlock)
+  id: op_False(LunyScript.Blocks.ConditionBlock)
+  parent: LunyScript.Blocks.ConditionBlock
+  langs:
+  - csharp
+  - vb
+  name: operator false(ConditionBlock)
+  nameWithType: ConditionBlock.operator false(ConditionBlock)
+  fullName: LunyScript.Blocks.ConditionBlock.operator false(LunyScript.Blocks.ConditionBlock)
+  type: Operator
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static bool operator false(ConditionBlock _)
+    parameters:
+    - id: _
+      type: LunyScript.Blocks.ConditionBlock
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator IsFalse(_ As ConditionBlock) As Boolean
+  overload: LunyScript.Blocks.ConditionBlock.op_False*
+  nameWithType.vb: ConditionBlock.IsFalse(ConditionBlock)
+  fullName.vb: LunyScript.Blocks.ConditionBlock.IsFalse(LunyScript.Blocks.ConditionBlock)
+  name.vb: IsFalse(ConditionBlock)
+- uid: LunyScript.Blocks.ConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.ConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  id: Evaluate(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.ConditionBlock
+  langs:
+  - csharp
+  - vb
+  name: Evaluate(IScriptRuntimeContext)
+  nameWithType: ConditionBlock.Evaluate(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.ConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: protected abstract bool Evaluate(IScriptRuntimeContext runtimeContext)
+    parameters:
+    - id: runtimeContext
+      type: LunyScript.IScriptRuntimeContext
+    return:
+      type: System.Boolean
+    content.vb: Protected MustOverride Function Evaluate(runtimeContext As IScriptRuntimeContext) As Boolean
+  overload: LunyScript.Blocks.ConditionBlock.Evaluate*
+- uid: LunyScript.Blocks.ConditionBlock.#ctor
+  commentId: M:LunyScript.Blocks.ConditionBlock.#ctor
+  id: '#ctor'
+  parent: LunyScript.Blocks.ConditionBlock
+  langs:
+  - csharp
+  - vb
+  name: ConditionBlock()
+  nameWithType: ConditionBlock.ConditionBlock()
+  fullName: LunyScript.Blocks.ConditionBlock.ConditionBlock()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: protected ConditionBlock()
+    content.vb: Protected Sub New()
+  overload: LunyScript.Blocks.ConditionBlock.#ctor*
+  nameWithType.vb: ConditionBlock.New()
+  fullName.vb: LunyScript.Blocks.ConditionBlock.New()
+  name.vb: New()
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: LunyScript.Blocks.ScriptBlock
+  commentId: T:LunyScript.Blocks.ScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptBlock.html
+  name: ScriptBlock
+  nameWithType: ScriptBlock
+  fullName: LunyScript.Blocks.ScriptBlock
+- uid: LunyScript.Blocks.IScriptBlock
+  commentId: T:LunyScript.Blocks.IScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.IScriptBlock.html
+  name: IScriptBlock
+  nameWithType: IScriptBlock
+  fullName: LunyScript.Blocks.IScriptBlock
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks.ConditionBlock.op_LogicalNot*
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.op_LogicalNot
+  isExternal: true
+  href: LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_LogicalNot_LunyScript_Blocks_ConditionBlock_
+  name: operator !
+  nameWithType: ConditionBlock.operator !
+  fullName: LunyScript.Blocks.ConditionBlock.operator !
+  nameWithType.vb: ConditionBlock.Not
+  fullName.vb: LunyScript.Blocks.ConditionBlock.Not
+  name.vb: Not
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.ConditionBlock.op_LogicalNot*
+    name: '!'
+    isExternal: true
+    href: LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_LogicalNot_LunyScript_Blocks_ConditionBlock_
+- uid: LunyScript.Blocks.ConditionBlock
+  commentId: T:LunyScript.Blocks.ConditionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ConditionBlock.html
+  name: ConditionBlock
+  nameWithType: ConditionBlock
+  fullName: LunyScript.Blocks.ConditionBlock
+- uid: LunyScript.Blocks.ConditionBlock.op_BitwiseAnd*
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.op_BitwiseAnd
+  isExternal: true
+  href: LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_BitwiseAnd_LunyScript_Blocks_ConditionBlock_LunyScript_Blocks_ConditionBlock_
+  name: operator &
+  nameWithType: ConditionBlock.operator &
+  fullName: LunyScript.Blocks.ConditionBlock.operator &
+  nameWithType.vb: ConditionBlock.And
+  fullName.vb: LunyScript.Blocks.ConditionBlock.And
+  name.vb: And
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.ConditionBlock.op_BitwiseAnd*
+    name: '&'
+    isExternal: true
+    href: LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_BitwiseAnd_LunyScript_Blocks_ConditionBlock_LunyScript_Blocks_ConditionBlock_
+- uid: LunyScript.Blocks.ConditionBlock.op_BitwiseOr*
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.op_BitwiseOr
+  isExternal: true
+  href: LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_BitwiseOr_LunyScript_Blocks_ConditionBlock_LunyScript_Blocks_ConditionBlock_
+  name: operator |
+  nameWithType: ConditionBlock.operator |
+  fullName: LunyScript.Blocks.ConditionBlock.operator |
+  nameWithType.vb: ConditionBlock.Or
+  fullName.vb: LunyScript.Blocks.ConditionBlock.Or
+  name.vb: Or
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LunyScript.Blocks.ConditionBlock.op_BitwiseOr*
+    name: '|'
+    isExternal: true
+    href: LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_op_BitwiseOr_LunyScript_Blocks_ConditionBlock_LunyScript_Blocks_ConditionBlock_
+- uid: LunyScript.Blocks.ConditionBlock.op_True*
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.op_True
+  name: operator true
+  nameWithType: ConditionBlock.operator true
+  fullName: LunyScript.Blocks.ConditionBlock.operator true
+  nameWithType.vb: ConditionBlock.IsTrue
+  fullName.vb: LunyScript.Blocks.ConditionBlock.IsTrue
+  name.vb: IsTrue
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - name: "true"
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: LunyScript.Blocks.ConditionBlock.op_False*
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.op_False
+  name: operator false
+  nameWithType: ConditionBlock.operator false
+  fullName: LunyScript.Blocks.ConditionBlock.operator false
+  nameWithType.vb: ConditionBlock.IsFalse
+  fullName.vb: LunyScript.Blocks.ConditionBlock.IsFalse
+  name.vb: IsFalse
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - name: "false"
+- uid: LunyScript.Blocks.ConditionBlock.Evaluate*
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.Evaluate
+  isExternal: true
+  href: LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock_Evaluate_LunyScript_IScriptRuntimeContext_
+  name: Evaluate
+  nameWithType: ConditionBlock.Evaluate
+  fullName: LunyScript.Blocks.ConditionBlock.Evaluate
+- uid: LunyScript.IScriptRuntimeContext
+  commentId: T:LunyScript.IScriptRuntimeContext
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html
+  name: IScriptRuntimeContext
+  nameWithType: IScriptRuntimeContext
+  fullName: LunyScript.IScriptRuntimeContext
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.Blocks.ConditionBlock.#ctor*
+  commentId: Overload:LunyScript.Blocks.ConditionBlock.#ctor
+  isExternal: true
+  href: LunyScript.Blocks.ConditionBlock.html#LunyScript_Blocks_ConditionBlock__ctor
+  name: ConditionBlock
+  nameWithType: ConditionBlock.ConditionBlock
+  fullName: LunyScript.Blocks.ConditionBlock.ConditionBlock
+  nameWithType.vb: ConditionBlock.New
+  fullName.vb: LunyScript.Blocks.ConditionBlock.New
+  name.vb: New

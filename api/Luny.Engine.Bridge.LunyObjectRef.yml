@@ -305,6 +305,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -361,6 +362,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -421,6 +423,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Bridge.LunyRef{Luny.Engine.Bridge.LunyObject}.ResolveObject(System.String)
@@ -431,6 +434,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Bridge.LunyObjectRef.ResolveObject*
   commentId: Overload:Luny.Engine.Bridge.LunyObjectRef.ResolveObject
@@ -458,6 +462,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Bridge.LunyRef`1.ResolveObject(System.String)
@@ -468,6 +473,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Bridge.LunyRef{Luny.Engine.Bridge.LunyObject}.IsValid(Luny.Engine.Bridge.LunyObject)
   commentId: M:Luny.Engine.Bridge.LunyRef{Luny.Engine.Bridge.LunyObject}.IsValid(Luny.Engine.Bridge.LunyObject)
@@ -512,6 +518,7 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool

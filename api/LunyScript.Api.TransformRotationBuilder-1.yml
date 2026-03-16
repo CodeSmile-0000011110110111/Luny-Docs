@@ -5,7 +5,7 @@ items:
   id: TransformRotationBuilder`1
   parent: LunyScript.Api
   children:
-  - LunyScript.Api.TransformRotationBuilder`1.op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+  - LunyScript.Api.TransformRotationBuilder`1.op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ActionBlock
   langs:
   - csharp
   - vb
@@ -28,31 +28,35 @@ items:
     typeParameters:
     - id: T
     content.vb: Public Structure TransformRotationBuilder(Of T As {Structure, ITransformBuilderState})
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
   nameWithType.vb: TransformRotationBuilder(Of T)
   fullName.vb: LunyScript.Api.TransformRotationBuilder(Of T)
   name.vb: TransformRotationBuilder(Of T)
-- uid: LunyScript.Api.TransformRotationBuilder`1.op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
-  commentId: M:LunyScript.Api.TransformRotationBuilder`1.op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
-  id: op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Api.TransformRotationBuilder`1.op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ActionBlock
+  commentId: M:LunyScript.Api.TransformRotationBuilder`1.op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ActionBlock
+  id: op_Implicit(LunyScript.Api.TransformRotationBuilder{`0})~LunyScript.Blocks.ActionBlock
   parent: LunyScript.Api.TransformRotationBuilder`1
   langs:
   - csharp
   - vb
-  name: implicit operator ScriptActionBlock(TransformRotationBuilder<T>)
-  nameWithType: TransformRotationBuilder<T>.implicit operator ScriptActionBlock(TransformRotationBuilder<T>)
-  fullName: LunyScript.Api.TransformRotationBuilder<T>.implicit operator LunyScript.Blocks.ScriptActionBlock(LunyScript.Api.TransformRotationBuilder<T>)
+  name: implicit operator ActionBlock(TransformRotationBuilder<T>)
+  nameWithType: TransformRotationBuilder<T>.implicit operator ActionBlock(TransformRotationBuilder<T>)
+  fullName: LunyScript.Api.TransformRotationBuilder<T>.implicit operator LunyScript.Blocks.ActionBlock(LunyScript.Api.TransformRotationBuilder<T>)
   type: Operator
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public static implicit operator ScriptActionBlock(TransformRotationBuilder<T> b)
+    content: public static implicit operator ActionBlock(TransformRotationBuilder<T> b)
     parameters:
     - id: b
       type: LunyScript.Api.TransformRotationBuilder`1
     return:
-      type: LunyScript.Blocks.ScriptActionBlock
-    content.vb: Public Shared Widening Operator CType(b As TransformRotationBuilder(Of T)) As ScriptActionBlock
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Shared Widening Operator CType(b As TransformRotationBuilder(Of T)) As ActionBlock
   overload: LunyScript.Api.TransformRotationBuilder`1.op_Implicit*
   nameWithType.vb: TransformRotationBuilder(Of T).CType(TransformRotationBuilder(Of T))
   fullName.vb: LunyScript.Api.TransformRotationBuilder(Of T).CType(LunyScript.Api.TransformRotationBuilder(Of T))
@@ -85,6 +89,96 @@ references:
     name: Api
     isExternal: true
     href: LunyScript.Api.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: LunyScript.Api.TransformRotationBuilder`1.op_Implicit*
   commentId: Overload:LunyScript.Api.TransformRotationBuilder`1.op_Implicit
   name: implicit operator
@@ -126,14 +220,14 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: LunyScript.Blocks.ScriptActionBlock
-  commentId: T:LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ActionBlock
+  commentId: T:LunyScript.Blocks.ActionBlock
   parent: LunyScript.Blocks
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html
-  name: ScriptActionBlock
-  nameWithType: ScriptActionBlock
-  fullName: LunyScript.Blocks.ScriptActionBlock
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock
+  nameWithType: ActionBlock
+  fullName: LunyScript.Blocks.ActionBlock
 - uid: LunyScript.Blocks
   commentId: N:LunyScript.Blocks
   isExternal: true

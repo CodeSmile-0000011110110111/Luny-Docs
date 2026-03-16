@@ -293,6 +293,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -456,6 +457,7 @@ references:
   commentId: T:System.Int64
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
   name: long
   nameWithType: long
   fullName: long
@@ -488,6 +490,7 @@ references:
   commentId: T:System.Double
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
   name: double
   nameWithType: double
   fullName: double

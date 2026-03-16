@@ -5,7 +5,7 @@ items:
   id: WhileBlockBuilder
   parent: LunyScript.Api
   children:
-  - LunyScript.Api.WhileBlockBuilder.Do(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Api.WhileBlockBuilder.Do(LunyScript.Blocks.ActionBlock[])
   langs:
   - csharp
   - vb
@@ -21,32 +21,36 @@ items:
   syntax:
     content: public readonly struct WhileBlockBuilder
     content.vb: Public Structure WhileBlockBuilder
-- uid: LunyScript.Api.WhileBlockBuilder.Do(LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.WhileBlockBuilder.Do(LunyScript.Blocks.ScriptActionBlock[])
-  id: Do(LunyScript.Blocks.ScriptActionBlock[])
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+- uid: LunyScript.Api.WhileBlockBuilder.Do(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhileBlockBuilder.Do(LunyScript.Blocks.ActionBlock[])
+  id: Do(LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Api.WhileBlockBuilder
   langs:
   - csharp
   - vb
-  name: Do(params ScriptActionBlock[])
-  nameWithType: WhileBlockBuilder.Do(params ScriptActionBlock[])
-  fullName: LunyScript.Api.WhileBlockBuilder.Do(params LunyScript.Blocks.ScriptActionBlock[])
+  name: Do(params ActionBlock[])
+  nameWithType: WhileBlockBuilder.Do(params ActionBlock[])
+  fullName: LunyScript.Api.WhileBlockBuilder.Do(params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ScriptActionBlock Do(params ScriptActionBlock[] blocks)
+    content: public ActionBlock Do(params ActionBlock[] blocks)
     parameters:
     - id: blocks
-      type: LunyScript.Blocks.ScriptActionBlock[]
+      type: LunyScript.Blocks.ActionBlock[]
     return:
-      type: LunyScript.Blocks.ScriptActionBlock
-    content.vb: Public Function [Do](ParamArray blocks As ScriptActionBlock()) As ScriptActionBlock
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function [Do](ParamArray blocks As ActionBlock()) As ActionBlock
   overload: LunyScript.Api.WhileBlockBuilder.Do*
-  nameWithType.vb: WhileBlockBuilder.Do(ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.WhileBlockBuilder.Do(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Do(ParamArray ScriptActionBlock())
+  nameWithType.vb: WhileBlockBuilder.Do(ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhileBlockBuilder.Do(ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Do(ParamArray ActionBlock())
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -75,44 +79,134 @@ references:
     name: Api
     isExternal: true
     href: LunyScript.Api.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: LunyScript.Api.WhileBlockBuilder.Do*
   commentId: Overload:LunyScript.Api.WhileBlockBuilder.Do
   isExternal: true
-  href: LunyScript.Api.WhileBlockBuilder.html#LunyScript_Api_WhileBlockBuilder_Do_LunyScript_Blocks_ScriptActionBlock___
+  href: LunyScript.Api.WhileBlockBuilder.html#LunyScript_Api_WhileBlockBuilder_Do_LunyScript_Blocks_ActionBlock___
   name: Do
   nameWithType: WhileBlockBuilder.Do
   fullName: LunyScript.Api.WhileBlockBuilder.Do
-- uid: LunyScript.Blocks.ScriptActionBlock[]
+- uid: LunyScript.Blocks.ActionBlock[]
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html
-  name: ScriptActionBlock[]
-  nameWithType: ScriptActionBlock[]
-  fullName: LunyScript.Blocks.ScriptActionBlock[]
-  nameWithType.vb: ScriptActionBlock()
-  fullName.vb: LunyScript.Blocks.ScriptActionBlock()
-  name.vb: ScriptActionBlock()
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock[]
+  nameWithType: ActionBlock[]
+  fullName: LunyScript.Blocks.ActionBlock[]
+  nameWithType.vb: ActionBlock()
+  fullName.vb: LunyScript.Blocks.ActionBlock()
+  name.vb: ActionBlock()
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
-- uid: LunyScript.Blocks.ScriptActionBlock
-  commentId: T:LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ActionBlock
+  commentId: T:LunyScript.Blocks.ActionBlock
   parent: LunyScript.Blocks
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html
-  name: ScriptActionBlock
-  nameWithType: ScriptActionBlock
-  fullName: LunyScript.Blocks.ScriptActionBlock
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock
+  nameWithType: ActionBlock
+  fullName: LunyScript.Blocks.ActionBlock
 - uid: LunyScript.Blocks
   commentId: N:LunyScript.Blocks
   isExternal: true

@@ -25,7 +25,7 @@ items:
   inheritance:
   - System.Object
   - LunyScript.Blocks.ScriptBlock
-  - LunyScript.Blocks.ScriptConditionBlock
+  - LunyScript.Blocks.ConditionBlock
   - LunyScript.Blocks.VariableBlock
   implements:
   - LunyScript.Blocks.IScriptBlock
@@ -136,14 +136,14 @@ references:
   name: ScriptBlock
   nameWithType: ScriptBlock
   fullName: LunyScript.Blocks.ScriptBlock
-- uid: LunyScript.Blocks.ScriptConditionBlock
-  commentId: T:LunyScript.Blocks.ScriptConditionBlock
+- uid: LunyScript.Blocks.ConditionBlock
+  commentId: T:LunyScript.Blocks.ConditionBlock
   parent: LunyScript.Blocks
   isExternal: true
-  href: LunyScript.Blocks.ScriptConditionBlock.html
-  name: ScriptConditionBlock
-  nameWithType: ScriptConditionBlock
-  fullName: LunyScript.Blocks.ScriptConditionBlock
+  href: LunyScript.Blocks.ConditionBlock.html
+  name: ConditionBlock
+  nameWithType: ConditionBlock
+  fullName: LunyScript.Blocks.ConditionBlock
 - uid: LunyScript.Blocks.VariableBlock
   commentId: T:LunyScript.Blocks.VariableBlock
   parent: LunyScript.Blocks
@@ -572,6 +572,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -637,6 +638,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string

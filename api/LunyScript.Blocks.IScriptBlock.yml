@@ -21,12 +21,12 @@ items:
     content: public interface IScriptBlock
     content.vb: Public Interface IScriptBlock
   derivedClasses:
+  - LunyScript.Blocks.ActionBlock
   - LunyScript.Blocks.ComputedVariableBlock
+  - LunyScript.Blocks.ConditionBlock
   - LunyScript.Blocks.ConstantVariableBlock
   - LunyScript.Blocks.IfBlock
-  - LunyScript.Blocks.ScriptActionBlock
   - LunyScript.Blocks.ScriptBlock
-  - LunyScript.Blocks.ScriptConditionBlock
   - LunyScript.Blocks.SequenceBlock
   - LunyScript.Blocks.TableVariableBlock
   - LunyScript.Blocks.TransformInterpolateBlock

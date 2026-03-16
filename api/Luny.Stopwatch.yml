@@ -26,6 +26,9 @@ items:
   syntax:
     content: public readonly struct Stopwatch
     content.vb: Public Structure Stopwatch
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
 - uid: Luny.Stopwatch.Start(System.Double)
   commentId: M:Luny.Stopwatch.Start(System.Double)
   id: Start(System.Double)
@@ -196,6 +199,74 @@ references:
   name: Luny
   nameWithType: Luny
   fullName: Luny
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: Luny.Stopwatch.Start*
   commentId: Overload:Luny.Stopwatch.Start
   isExternal: true
@@ -207,6 +278,7 @@ references:
   commentId: T:System.Double
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
   name: double
   nameWithType: double
   fullName: double
@@ -221,12 +293,6 @@ references:
   name: Stopwatch
   nameWithType: Stopwatch
   fullName: Luny.Stopwatch
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Luny.Stopwatch.ElapsedMilliseconds*
   commentId: Overload:Luny.Stopwatch.ElapsedMilliseconds
   isExternal: true
@@ -259,6 +325,7 @@ references:
   commentId: M:System.ValueType.ToString
   parent: System.ValueType
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   name: ToString()
   nameWithType: ValueType.ToString()
   fullName: System.ValueType.ToString()
@@ -266,12 +333,14 @@ references:
   - uid: System.ValueType.ToString
     name: ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   - name: (
   - name: )
   spec.vb:
   - uid: System.ValueType.ToString
     name: ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   - name: (
   - name: )
 - uid: Luny.Stopwatch.ToString*
@@ -285,16 +354,10 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.ValueType
-  commentId: T:System.ValueType
-  parent: System
-  isExternal: true
-  name: ValueType
-  nameWithType: ValueType
-  fullName: System.ValueType

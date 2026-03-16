@@ -280,6 +280,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -324,6 +325,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyApplicationServiceBase.Quit(System.Int32)
   parent: Luny.Engine.Services.LunyApplicationServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: Quit(int)
   nameWithType: LunyApplicationServiceBase.Quit(int)
   fullName: Luny.Engine.Services.LunyApplicationServiceBase.Quit(int)
@@ -338,6 +340,7 @@ references:
   - uid: System.Int32
     name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyApplicationServiceBase.Quit(System.Int32)
@@ -347,6 +350,7 @@ references:
   - uid: System.Int32
     name: Integer
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: Luny.Unity.Services.UnityApplicationService.Quit*
   commentId: Overload:Luny.Unity.Services.UnityApplicationService.Quit
@@ -375,6 +379,7 @@ references:
   - uid: System.Int32
     name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.ILunyApplicationService.Quit(System.Int32)
@@ -385,11 +390,13 @@ references:
   - uid: System.Int32
     name: Integer
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: int
   nameWithType: int
   fullName: int
@@ -519,6 +526,7 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool

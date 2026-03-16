@@ -4,7 +4,7 @@
       "src": [
         {
           "files": [
-			"Library/XmlDocs/Luny*.dll"
+            "Library/XmlDocs/Luny*.dll"
           ],
           "exclude": [
           ],
@@ -23,6 +23,7 @@
     }
   ],
   "build": {
+    "incremental": false,
     "xref": [
       "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml"
     ],
@@ -88,5 +89,8 @@
         "Footnotes"
       ]
     }
+  },
+  "rules": {
+    "InvalidAssemblyReference": "warning"
   }
 }

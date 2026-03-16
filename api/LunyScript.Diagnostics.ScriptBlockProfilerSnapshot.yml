@@ -151,6 +151,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -158,7 +159,7 @@ references:
   commentId: T:System.Collections.Generic.IReadOnlyList{LunyScript.Diagnostics.ScriptBlockMetrics}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyList`1
-  href: LunyScript.Diagnostics.ScriptBlockMetrics.html
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   name: IReadOnlyList<ScriptBlockMetrics>
   nameWithType: IReadOnlyList<ScriptBlockMetrics>
   fullName: System.Collections.Generic.IReadOnlyList<LunyScript.Diagnostics.ScriptBlockMetrics>
@@ -169,6 +170,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: <
   - uid: LunyScript.Diagnostics.ScriptBlockMetrics
     name: ScriptBlockMetrics
@@ -179,6 +181,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: (
   - name: Of
   - name: " "
@@ -190,6 +193,7 @@ references:
 - uid: System.Collections.Generic.IReadOnlyList`1
   commentId: T:System.Collections.Generic.IReadOnlyList`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   name: IReadOnlyList<T>
   nameWithType: IReadOnlyList<T>
   fullName: System.Collections.Generic.IReadOnlyList<T>
@@ -200,6 +204,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: <
   - name: T
   - name: '>'
@@ -207,6 +212,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: (
   - name: Of
   - name: " "
@@ -215,6 +221,7 @@ references:
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
@@ -222,30 +229,37 @@ references:
   - uid: System
     name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
   spec.vb:
   - uid: System
     name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: System.DateTime
   commentId: T:System.DateTime
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
   name: DateTime
   nameWithType: DateTime
   fullName: System.DateTime
@@ -284,6 +298,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string

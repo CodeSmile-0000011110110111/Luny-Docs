@@ -19,16 +19,16 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: 'public sealed class TransformPositionMoveRelativeBlock : ScriptActionBlock, IScriptBlock'
-    content.vb: Public NotInheritable Class TransformPositionMoveRelativeBlock Inherits ScriptActionBlock Implements IScriptBlock
+    content: 'public sealed class TransformPositionMoveRelativeBlock : ActionBlock, IScriptBlock'
+    content.vb: Public NotInheritable Class TransformPositionMoveRelativeBlock Inherits ActionBlock Implements IScriptBlock
   inheritance:
   - System.Object
   - LunyScript.Blocks.ScriptBlock
-  - LunyScript.Blocks.ScriptActionBlock
+  - LunyScript.Blocks.ActionBlock
   implements:
   - LunyScript.Blocks.IScriptBlock
   inheritedMembers:
-  - LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
 - uid: LunyScript.Blocks.TransformPositionMoveRelativeBlock.Create(LunyScript.Blocks.VariableBlock,Luny.Engine.Bridge.LunyVector3,LunyScript.Blocks.VariableBlock,Luny.Engine.Bridge.LunyTransformSpace)
   commentId: M:LunyScript.Blocks.TransformPositionMoveRelativeBlock.Create(LunyScript.Blocks.VariableBlock,Luny.Engine.Bridge.LunyVector3,LunyScript.Blocks.VariableBlock,Luny.Engine.Bridge.LunyTransformSpace)
   id: Create(LunyScript.Blocks.VariableBlock,Luny.Engine.Bridge.LunyVector3,LunyScript.Blocks.VariableBlock,Luny.Engine.Bridge.LunyTransformSpace)
@@ -79,7 +79,7 @@ items:
     - id: runtimeContext
       type: LunyScript.IScriptRuntimeContext
     content.vb: Protected Overrides Sub Execute(runtimeContext As IScriptRuntimeContext)
-  overridden: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  overridden: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
   overload: LunyScript.Blocks.TransformPositionMoveRelativeBlock.Execute*
 - uid: LunyScript.Blocks.TransformPositionMoveRelativeBlock.ToString
   commentId: M:LunyScript.Blocks.TransformPositionMoveRelativeBlock.ToString
@@ -149,14 +149,14 @@ references:
   name: ScriptBlock
   nameWithType: ScriptBlock
   fullName: LunyScript.Blocks.ScriptBlock
-- uid: LunyScript.Blocks.ScriptActionBlock
-  commentId: T:LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ActionBlock
+  commentId: T:LunyScript.Blocks.ActionBlock
   parent: LunyScript.Blocks
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html
-  name: ScriptActionBlock
-  nameWithType: ScriptActionBlock
-  fullName: LunyScript.Blocks.ScriptActionBlock
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock
+  nameWithType: ActionBlock
+  fullName: LunyScript.Blocks.ActionBlock
 - uid: LunyScript.Blocks.IScriptBlock
   commentId: T:LunyScript.Blocks.IScriptBlock
   parent: LunyScript.Blocks
@@ -165,46 +165,47 @@ references:
   name: IScriptBlock
   nameWithType: IScriptBlock
   fullName: LunyScript.Blocks.IScriptBlock
-- uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
-  parent: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  parent: LunyScript.Blocks.ActionBlock
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
-  name: IsNullOrEmpty(ScriptActionBlock[])
-  nameWithType: ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock[])
-  fullName: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
-  nameWithType.vb: ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock())
-  fullName.vb: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock())
-  name.vb: IsNullOrEmpty(ScriptActionBlock())
+  href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___
+  name: IsNullOrEmpty(ActionBlock[])
+  nameWithType: ActionBlock.IsNullOrEmpty(ActionBlock[])
+  fullName: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: ActionBlock.IsNullOrEmpty(ActionBlock())
+  fullName.vb: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock())
+  name.vb: IsNullOrEmpty(ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
     name: IsNullOrEmpty
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___
   - name: (
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
     name: IsNullOrEmpty
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___
   - name: (
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
   - name: )
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -284,19 +285,19 @@ references:
     name: Bridge
     isExternal: true
     href: Luny.Engine.Bridge.html
-- uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
-  commentId: M:LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
-  parent: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.ActionBlock
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_Execute_LunyScript_IScriptRuntimeContext_
   name: Execute(IScriptRuntimeContext)
-  nameWithType: ScriptActionBlock.Execute(IScriptRuntimeContext)
-  fullName: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  nameWithType: ActionBlock.Execute(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  - uid: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
     name: Execute
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+    href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_Execute_LunyScript_IScriptRuntimeContext_
   - name: (
   - uid: LunyScript.IScriptRuntimeContext
     name: IScriptRuntimeContext
@@ -304,10 +305,10 @@ references:
     href: LunyScript.IScriptRuntimeContext.html
   - name: )
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  - uid: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
     name: Execute
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+    href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_Execute_LunyScript_IScriptRuntimeContext_
   - name: (
   - uid: LunyScript.IScriptRuntimeContext
     name: IScriptRuntimeContext
@@ -368,6 +369,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string

@@ -1542,6 +1542,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -1559,6 +1560,7 @@ references:
   commentId: T:System.Int64
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
   name: long
   nameWithType: long
   fullName: long
@@ -1569,6 +1571,7 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool
@@ -1820,6 +1823,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -2205,6 +2209,7 @@ references:
   commentId: T:System.Action
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
   name: Action
   nameWithType: Action
   fullName: System.Action
@@ -2244,7 +2249,7 @@ references:
   commentId: T:System.Action{Luny.Engine.Bridge.LunyCollision}
   parent: System
   definition: System.Action`1
-  href: Luny.Engine.Bridge.LunyCollision.html
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<LunyCollision>
   nameWithType: Action<LunyCollision>
   fullName: System.Action<Luny.Engine.Bridge.LunyCollision>
@@ -2255,6 +2260,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - uid: Luny.Engine.Bridge.LunyCollision
     name: LunyCollision
@@ -2265,6 +2271,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -2276,6 +2283,7 @@ references:
 - uid: System.Action`1
   commentId: T:System.Action`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<T>
   nameWithType: Action<T>
   fullName: System.Action<T>
@@ -2286,6 +2294,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - name: T
   - name: '>'
@@ -2293,6 +2302,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -2326,7 +2336,7 @@ references:
   commentId: T:System.Action{Luny.Engine.Bridge.LunyCollider}
   parent: System
   definition: System.Action`1
-  href: Luny.Engine.Bridge.LunyCollider.html
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<LunyCollider>
   nameWithType: Action<LunyCollider>
   fullName: System.Action<Luny.Engine.Bridge.LunyCollider>
@@ -2337,6 +2347,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - uid: Luny.Engine.Bridge.LunyCollider
     name: LunyCollider
@@ -2347,6 +2358,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -2383,7 +2395,7 @@ references:
   commentId: T:System.Action{Luny.Engine.Bridge.LunyCollision2D}
   parent: System
   definition: System.Action`1
-  href: Luny.Engine.Bridge.LunyCollision2D.html
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<LunyCollision2D>
   nameWithType: Action<LunyCollision2D>
   fullName: System.Action<Luny.Engine.Bridge.LunyCollision2D>
@@ -2394,6 +2406,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - uid: Luny.Engine.Bridge.LunyCollision2D
     name: LunyCollision2D
@@ -2404,6 +2417,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -2440,7 +2454,7 @@ references:
   commentId: T:System.Action{Luny.Engine.Bridge.LunyCollider2D}
   parent: System
   definition: System.Action`1
-  href: Luny.Engine.Bridge.LunyCollider2D.html
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<LunyCollider2D>
   nameWithType: Action<LunyCollider2D>
   fullName: System.Action<Luny.Engine.Bridge.LunyCollider2D>
@@ -2451,6 +2465,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - uid: Luny.Engine.Bridge.LunyCollider2D
     name: LunyCollider2D
@@ -2461,6 +2476,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "

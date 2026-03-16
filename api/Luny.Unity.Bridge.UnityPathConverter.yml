@@ -169,6 +169,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -220,6 +221,7 @@ references:
   commentId: M:Luny.Engine.Bridge.ILunyPathConverter.ToLuny(System.String,Luny.Engine.Bridge.LunyPathType)
   parent: Luny.Engine.Bridge.ILunyPathConverter
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: ToLuny(string, LunyPathType)
   nameWithType: ILunyPathConverter.ToLuny(string, LunyPathType)
   fullName: Luny.Engine.Bridge.ILunyPathConverter.ToLuny(string, Luny.Engine.Bridge.LunyPathType)
@@ -234,6 +236,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyPathType
@@ -248,6 +251,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyPathType
@@ -258,6 +262,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -283,6 +288,7 @@ references:
   commentId: M:Luny.Engine.Bridge.ILunyPathConverter.ToNative(System.String,Luny.Engine.Bridge.LunyPathType)
   parent: Luny.Engine.Bridge.ILunyPathConverter
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: ToNative(string, LunyPathType)
   nameWithType: ILunyPathConverter.ToNative(string, LunyPathType)
   fullName: Luny.Engine.Bridge.ILunyPathConverter.ToNative(string, Luny.Engine.Bridge.LunyPathType)
@@ -297,6 +303,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyPathType
@@ -311,6 +318,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyPathType

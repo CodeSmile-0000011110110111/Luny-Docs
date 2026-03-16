@@ -283,6 +283,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -327,6 +328,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyObjectServiceBase.CreatePrimitive(System.String,Luny.Engine.Bridge.LunyPrimitiveType,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   parent: Luny.Engine.Services.LunyObjectServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: CreatePrimitive(string, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   nameWithType: LunyObjectServiceBase.CreatePrimitive(string, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   fullName: Luny.Engine.Services.LunyObjectServiceBase.CreatePrimitive(string, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
@@ -341,6 +343,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyPrimitiveType
@@ -378,6 +381,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyPrimitiveType
@@ -434,6 +438,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyPrimitiveType
@@ -477,6 +482,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyPrimitiveType
@@ -515,6 +521,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -617,6 +624,7 @@ references:
 - uid: System.Nullable`1
   commentId: T:System.Nullable`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
   name: Nullable<T>
   nameWithType: Nullable<T>
   fullName: System.Nullable<T>
@@ -627,6 +635,7 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
   - name: <
   - name: T
   - name: '>'
@@ -634,6 +643,7 @@ references:
   - uid: System.Nullable`1
     name: Nullable
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
   - name: (
   - name: Of
   - name: " "
@@ -975,6 +985,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyObjectServiceBase.CreateEmpty(System.String,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   parent: Luny.Engine.Services.LunyObjectServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: CreateEmpty(string, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   nameWithType: LunyObjectServiceBase.CreateEmpty(string, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   fullName: Luny.Engine.Services.LunyObjectServiceBase.CreateEmpty(string, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
@@ -989,6 +1000,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.ILunyObject
@@ -1021,6 +1033,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.ILunyObject
@@ -1072,6 +1085,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.ILunyObject
@@ -1109,6 +1123,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.ILunyObject

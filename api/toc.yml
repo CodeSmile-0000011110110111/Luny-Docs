@@ -624,8 +624,14 @@ items:
   name: LunyScript.Blocks
   type: Namespace
   items:
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
+    type: Class
   - uid: LunyScript.Blocks.ComputedVariableBlock
     name: ComputedVariableBlock
+    type: Class
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     type: Class
   - uid: LunyScript.Blocks.ConstantVariableBlock
     name: ConstantVariableBlock
@@ -651,14 +657,8 @@ items:
   - uid: LunyScript.Blocks.IfBlock
     name: IfBlock
     type: Class
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
-    type: Class
   - uid: LunyScript.Blocks.ScriptBlock
     name: ScriptBlock
-    type: Class
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
     type: Class
   - uid: LunyScript.Blocks.SequenceBlock
     name: SequenceBlock

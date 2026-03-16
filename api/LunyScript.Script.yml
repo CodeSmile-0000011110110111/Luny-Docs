@@ -6,7 +6,7 @@ items:
   parent: LunyScript
   children:
   - LunyScript.Script.#ctor
-  - LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
   - LunyScript.Script.Build(LunyScript.ScriptContext)
   - LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   - LunyScript.Script.Check(System.Func{System.Boolean})
@@ -18,12 +18,12 @@ items:
   - LunyScript.Script.For(System.Int32)
   - LunyScript.Script.For(System.Int32,System.Int32)
   - LunyScript.Script.GVar
-  - LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
   - LunyScript.Script.Input
   - LunyScript.Script.IsEditor
-  - LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  - LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
   - LunyScript.Script.Name
-  - LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
   - LunyScript.Script.Object
   - LunyScript.Script.On
   - LunyScript.Script.Owner
@@ -36,7 +36,7 @@ items:
   - LunyScript.Script.Transform
   - LunyScript.Script.Var
   - LunyScript.Script.When
-  - LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
   langs:
   - csharp
   - vb
@@ -121,16 +121,16 @@ items:
   nameWithType.vb: Script.Coroutine(String)
   fullName.vb: LunyScript.Script.Coroutine(String)
   name.vb: Coroutine(String)
-- uid: LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
-  commentId: M:LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
-  id: If(LunyScript.Blocks.ScriptConditionBlock[])
+- uid: LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
+  commentId: M:LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
+  id: If(LunyScript.Blocks.ConditionBlock[])
   parent: LunyScript.Script
   langs:
   - csharp
   - vb
-  name: If(params ScriptConditionBlock[])
-  nameWithType: Script.If(params ScriptConditionBlock[])
-  fullName: LunyScript.Script.If(params LunyScript.Blocks.ScriptConditionBlock[])
+  name: If(params ConditionBlock[])
+  nameWithType: Script.If(params ConditionBlock[])
+  fullName: LunyScript.Script.If(params LunyScript.Blocks.ConditionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -141,27 +141,27 @@ items:
     Multiple conditions are implicitly AND combined.
   example: []
   syntax:
-    content: public IfBlock If(params ScriptConditionBlock[] conditions)
+    content: public IfBlock If(params ConditionBlock[] conditions)
     parameters:
     - id: conditions
-      type: LunyScript.Blocks.ScriptConditionBlock[]
+      type: LunyScript.Blocks.ConditionBlock[]
     return:
       type: LunyScript.Blocks.IfBlock
-    content.vb: Public Function [If](ParamArray conditions As ScriptConditionBlock()) As IfBlock
+    content.vb: Public Function [If](ParamArray conditions As ConditionBlock()) As IfBlock
   overload: LunyScript.Script.If*
-  nameWithType.vb: Script.If(ParamArray ScriptConditionBlock())
-  fullName.vb: LunyScript.Script.If(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  name.vb: If(ParamArray ScriptConditionBlock())
-- uid: LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
-  commentId: M:LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
-  id: While(LunyScript.Blocks.ScriptConditionBlock[])
+  nameWithType.vb: Script.If(ParamArray ConditionBlock())
+  fullName.vb: LunyScript.Script.If(ParamArray LunyScript.Blocks.ConditionBlock())
+  name.vb: If(ParamArray ConditionBlock())
+- uid: LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
+  commentId: M:LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
+  id: While(LunyScript.Blocks.ConditionBlock[])
   parent: LunyScript.Script
   langs:
   - csharp
   - vb
-  name: While(params ScriptConditionBlock[])
-  nameWithType: Script.While(params ScriptConditionBlock[])
-  fullName: LunyScript.Script.While(params LunyScript.Blocks.ScriptConditionBlock[])
+  name: While(params ConditionBlock[])
+  nameWithType: Script.While(params ConditionBlock[])
+  fullName: LunyScript.Script.While(params LunyScript.Blocks.ConditionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -172,17 +172,17 @@ items:
     Multiple conditions are implicitly AND combined.
   example: []
   syntax:
-    content: public WhileBlockBuilder While(params ScriptConditionBlock[] conditions)
+    content: public WhileBlockBuilder While(params ConditionBlock[] conditions)
     parameters:
     - id: conditions
-      type: LunyScript.Blocks.ScriptConditionBlock[]
+      type: LunyScript.Blocks.ConditionBlock[]
     return:
       type: LunyScript.Api.WhileBlockBuilder
-    content.vb: Public Function [While](ParamArray conditions As ScriptConditionBlock()) As WhileBlockBuilder
+    content.vb: Public Function [While](ParamArray conditions As ConditionBlock()) As WhileBlockBuilder
   overload: LunyScript.Script.While*
-  nameWithType.vb: Script.While(ParamArray ScriptConditionBlock())
-  fullName.vb: LunyScript.Script.While(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  name.vb: While(ParamArray ScriptConditionBlock())
+  nameWithType.vb: Script.While(ParamArray ConditionBlock())
+  fullName.vb: LunyScript.Script.While(ParamArray LunyScript.Blocks.ConditionBlock())
+  name.vb: While(ParamArray ConditionBlock())
 - uid: LunyScript.Script.For(System.Int32)
   commentId: M:LunyScript.Script.For(System.Int32)
   id: For(System.Int32)
@@ -249,42 +249,6 @@ items:
   nameWithType.vb: Script.For(Integer, Integer)
   fullName.vb: LunyScript.Script.For(Integer, Integer)
   name.vb: For(Integer, Integer)
-- uid: LunyScript.Script.Check(System.Func{System.Boolean})
-  commentId: M:LunyScript.Script.Check(System.Func{System.Boolean})
-  id: Check(System.Func{System.Boolean})
-  parent: LunyScript.Script
-  langs:
-  - csharp
-  - vb
-  name: Check(Func<bool>)
-  nameWithType: Script.Check(Func<bool>)
-  fullName: LunyScript.Script.Check(System.Func<bool>)
-  type: Method
-  assemblies:
-  - LunyScript
-  namespace: LunyScript
-  summary: Executes a System.Func&lt;bool&gt; (lambda) or parameterless method returning bool.
-  remarks: >-
-    - Intended for quick prototyping and testing.
-
-    - Prefer to convert "Check" code into a custom IBlock class after its initial development and testing,
-
-    - Prefer named methods over lambdas to ensure the block-based code continues to read like intent.
-  example: []
-  syntax:
-    content: public ScriptConditionBlock Check(Func<bool> func)
-    parameters:
-    - id: func
-      type: System.Func{System.Boolean}
-      description: ''
-    return:
-      type: LunyScript.Blocks.ScriptConditionBlock
-      description: ''
-    content.vb: Public Function Check(func As Func(Of Boolean)) As ScriptConditionBlock
-  overload: LunyScript.Script.Check*
-  nameWithType.vb: Script.Check(Func(Of Boolean))
-  fullName.vb: LunyScript.Script.Check(System.Func(Of Boolean))
-  name.vb: Check(Func(Of Boolean))
 - uid: LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   commentId: M:LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   id: Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
@@ -299,7 +263,7 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript
-  summary: Executes a System.Func&lt;IScriptRuntimeContext, bool&gt; (lambda) or method taking a IScriptRuntimeContext parameter and returns bool.
+  summary: Executes a `System.Func<IScriptRuntimeContext, bool>` (lambda) or method taking a IScriptRuntimeContext parameter and returns bool.
   remarks: >-
     - Intended for quick prototyping and testing.
 
@@ -308,19 +272,55 @@ items:
     - Prefer named methods over lambdas to ensure the block-based code continues to read like intent.
   example: []
   syntax:
-    content: public ScriptConditionBlock Check(Func<IScriptRuntimeContext, bool> func)
+    content: public ConditionBlock Check(Func<IScriptRuntimeContext, bool> func)
     parameters:
     - id: func
       type: System.Func{LunyScript.IScriptRuntimeContext,System.Boolean}
       description: ''
     return:
-      type: LunyScript.Blocks.ScriptConditionBlock
+      type: LunyScript.Blocks.ConditionBlock
       description: ''
-    content.vb: Public Function Check(func As Func(Of IScriptRuntimeContext, Boolean)) As ScriptConditionBlock
+    content.vb: Public Function Check(func As Func(Of IScriptRuntimeContext, Boolean)) As ConditionBlock
   overload: LunyScript.Script.Check*
   nameWithType.vb: Script.Check(Func(Of IScriptRuntimeContext, Boolean))
   fullName.vb: LunyScript.Script.Check(System.Func(Of LunyScript.IScriptRuntimeContext, Boolean))
   name.vb: Check(Func(Of IScriptRuntimeContext, Boolean))
+- uid: LunyScript.Script.Check(System.Func{System.Boolean})
+  commentId: M:LunyScript.Script.Check(System.Func{System.Boolean})
+  id: Check(System.Func{System.Boolean})
+  parent: LunyScript.Script
+  langs:
+  - csharp
+  - vb
+  name: Check(Func<bool>)
+  nameWithType: Script.Check(Func<bool>)
+  fullName: LunyScript.Script.Check(System.Func<bool>)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Executes a `System.Func<bool>` (lambda) or parameterless method returning bool.
+  remarks: >-
+    - Intended for quick prototyping and testing.
+
+    - Prefer to convert "Check" code into a custom IBlock class after its initial development and testing,
+
+    - Prefer named methods over lambdas to ensure the block-based code continues to read like intent.
+  example: []
+  syntax:
+    content: public ConditionBlock Check(Func<bool> func)
+    parameters:
+    - id: func
+      type: System.Func{System.Boolean}
+      description: ''
+    return:
+      type: LunyScript.Blocks.ConditionBlock
+      description: ''
+    content.vb: Public Function Check(func As Func(Of Boolean)) As ConditionBlock
+  overload: LunyScript.Script.Check*
+  nameWithType.vb: Script.Check(Func(Of Boolean))
+  fullName.vb: LunyScript.Script.Check(System.Func(Of Boolean))
+  name.vb: Check(Func(Of Boolean))
 - uid: LunyScript.Script.Run(System.Action)
   commentId: M:LunyScript.Script.Run(System.Action)
   id: Run(System.Action)
@@ -335,24 +335,50 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript
-  summary: Executes a System.Action (lambda) or parameterless method returning void.
+  summary: Executes a `System.Action` (lambda) or parameterless method returning void.
   remarks: >-
     - Intended for quick prototyping and testing.
 
     - Prefer to convert "Run" code into a custom IBlock class after its initial development and testing,
 
     - Prefer named methods over lambdas to ensure the block-based code continues to read like intent.
+
+
+    ```
+
+    // A lambda adds notable 'syntax noise':
+
+    On.Ready(Run(() => LunyLogger.LogInfo("custom log inline")));
+
+
+    // Multi-line lambdas are even worse:
+
+    On.Ready(Run(() => {
+        LunyLogger.LogInfo("custom log inline");
+    }));
+
+
+    // A named method is much cleaner, and re-usable:
+
+    On.Ready(Run(MyCustomLog));
+
+
+    internal static void MyCustomLog() {
+        LunyLogger.LogInfo("custom log");
+    }
+
+    ```
   example: []
   syntax:
-    content: public ScriptActionBlock Run(Action action)
+    content: public ActionBlock Run(Action action)
     parameters:
     - id: action
       type: System.Action
       description: ''
     return:
-      type: LunyScript.Blocks.ScriptActionBlock
+      type: LunyScript.Blocks.ActionBlock
       description: ''
-    content.vb: Public Function Run(action As Action) As ScriptActionBlock
+    content.vb: Public Function Run(action As Action) As ActionBlock
   overload: LunyScript.Script.Run*
 - uid: LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
   commentId: M:LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
@@ -368,7 +394,7 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript
-  summary: Executes a System.Action (lambda) or a method that takes a IScriptRuntimeContext parameter and returns void.
+  summary: Executes a `System.Action` (lambda) or a method that takes a IScriptRuntimeContext parameter and returns void.
   remarks: >-
     - Intended for quick prototyping and testing.
 
@@ -377,85 +403,85 @@ items:
     - Prefer named methods over lambdas to ensure the block-based code continues to read like intent.
   example: []
   syntax:
-    content: public ScriptActionBlock Run(Action<IScriptRuntimeContext> action)
+    content: public ActionBlock Run(Action<IScriptRuntimeContext> action)
     parameters:
     - id: action
       type: System.Action{LunyScript.IScriptRuntimeContext}
       description: ''
     return:
-      type: LunyScript.Blocks.ScriptActionBlock
+      type: LunyScript.Blocks.ActionBlock
       description: ''
-    content.vb: Public Function Run(action As Action(Of IScriptRuntimeContext)) As ScriptActionBlock
+    content.vb: Public Function Run(action As Action(Of IScriptRuntimeContext)) As ActionBlock
   overload: LunyScript.Script.Run*
   nameWithType.vb: Script.Run(Action(Of IScriptRuntimeContext))
   fullName.vb: LunyScript.Script.Run(System.Action(Of LunyScript.IScriptRuntimeContext))
   name.vb: Run(Action(Of IScriptRuntimeContext))
-- uid: LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
-  commentId: M:LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
-  id: AND(LunyScript.Blocks.ScriptConditionBlock[])
+- uid: LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
+  commentId: M:LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
+  id: AND(LunyScript.Blocks.ConditionBlock[])
   parent: LunyScript.Script
   langs:
   - csharp
   - vb
-  name: AND(params ScriptConditionBlock[])
-  nameWithType: Script.AND(params ScriptConditionBlock[])
-  fullName: LunyScript.Script.AND(params LunyScript.Blocks.ScriptConditionBlock[])
+  name: AND(params ConditionBlock[])
+  nameWithType: Script.AND(params ConditionBlock[])
+  fullName: LunyScript.Script.AND(params LunyScript.Blocks.ConditionBlock[])
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript
-  summary: 'Logical AND: Returns true if all conditions are true.'
+  summary: 'Logical AND: Returns true if all conditions are true. Requires at least two conditions.'
   example: []
   syntax:
-    content: public ScriptConditionBlock AND(params ScriptConditionBlock[] conditions)
+    content: public ConditionBlock AND(params ConditionBlock[] conditions)
     parameters:
     - id: conditions
-      type: LunyScript.Blocks.ScriptConditionBlock[]
+      type: LunyScript.Blocks.ConditionBlock[]
     return:
-      type: LunyScript.Blocks.ScriptConditionBlock
-    content.vb: Public Function [AND](ParamArray conditions As ScriptConditionBlock()) As ScriptConditionBlock
+      type: LunyScript.Blocks.ConditionBlock
+    content.vb: Public Function [AND](ParamArray conditions As ConditionBlock()) As ConditionBlock
   overload: LunyScript.Script.AND*
-  nameWithType.vb: Script.AND(ParamArray ScriptConditionBlock())
-  fullName.vb: LunyScript.Script.AND(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  name.vb: AND(ParamArray ScriptConditionBlock())
-- uid: LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
-  commentId: M:LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
-  id: OR(LunyScript.Blocks.ScriptConditionBlock[])
+  nameWithType.vb: Script.AND(ParamArray ConditionBlock())
+  fullName.vb: LunyScript.Script.AND(ParamArray LunyScript.Blocks.ConditionBlock())
+  name.vb: AND(ParamArray ConditionBlock())
+- uid: LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
+  commentId: M:LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
+  id: OR(LunyScript.Blocks.ConditionBlock[])
   parent: LunyScript.Script
   langs:
   - csharp
   - vb
-  name: OR(params ScriptConditionBlock[])
-  nameWithType: Script.OR(params ScriptConditionBlock[])
-  fullName: LunyScript.Script.OR(params LunyScript.Blocks.ScriptConditionBlock[])
+  name: OR(params ConditionBlock[])
+  nameWithType: Script.OR(params ConditionBlock[])
+  fullName: LunyScript.Script.OR(params LunyScript.Blocks.ConditionBlock[])
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript
-  summary: 'Logical OR: Returns true if at least one condition is true.'
+  summary: 'Logical OR: Returns true if at least one condition is true. Requires at least two conditions.'
   example: []
   syntax:
-    content: public ScriptConditionBlock OR(params ScriptConditionBlock[] conditions)
+    content: public ConditionBlock OR(params ConditionBlock[] conditions)
     parameters:
     - id: conditions
-      type: LunyScript.Blocks.ScriptConditionBlock[]
+      type: LunyScript.Blocks.ConditionBlock[]
     return:
-      type: LunyScript.Blocks.ScriptConditionBlock
-    content.vb: Public Function [OR](ParamArray conditions As ScriptConditionBlock()) As ScriptConditionBlock
+      type: LunyScript.Blocks.ConditionBlock
+    content.vb: Public Function [OR](ParamArray conditions As ConditionBlock()) As ConditionBlock
   overload: LunyScript.Script.OR*
-  nameWithType.vb: Script.OR(ParamArray ScriptConditionBlock())
-  fullName.vb: LunyScript.Script.OR(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  name.vb: OR(ParamArray ScriptConditionBlock())
-- uid: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
-  commentId: M:LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
-  id: NOT(LunyScript.Blocks.ScriptConditionBlock)
+  nameWithType.vb: Script.OR(ParamArray ConditionBlock())
+  fullName.vb: LunyScript.Script.OR(ParamArray LunyScript.Blocks.ConditionBlock())
+  name.vb: OR(ParamArray ConditionBlock())
+- uid: LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
+  commentId: M:LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
+  id: NOT(LunyScript.Blocks.ConditionBlock)
   parent: LunyScript.Script
   langs:
   - csharp
   - vb
-  name: NOT(ScriptConditionBlock)
-  nameWithType: Script.NOT(ScriptConditionBlock)
-  fullName: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  name: NOT(ConditionBlock)
+  nameWithType: Script.NOT(ConditionBlock)
+  fullName: LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
   type: Method
   assemblies:
   - LunyScript
@@ -463,13 +489,13 @@ items:
   summary: 'Logical NOT: Returns the inverse of the condition.'
   example: []
   syntax:
-    content: public ScriptConditionBlock NOT(ScriptConditionBlock condition)
+    content: public ConditionBlock NOT(ConditionBlock condition)
     parameters:
     - id: condition
-      type: LunyScript.Blocks.ScriptConditionBlock
+      type: LunyScript.Blocks.ConditionBlock
     return:
-      type: LunyScript.Blocks.ScriptConditionBlock
-    content.vb: Public Function [NOT](condition As ScriptConditionBlock) As ScriptConditionBlock
+      type: LunyScript.Blocks.ConditionBlock
+    content.vb: Public Function [NOT](condition As ConditionBlock) As ConditionBlock
   overload: LunyScript.Script.NOT*
 - uid: LunyScript.Script.Finalize
   commentId: M:LunyScript.Script.Finalize
@@ -929,6 +955,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -943,6 +970,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -987,31 +1015,31 @@ references:
 - uid: LunyScript.Script.If*
   commentId: Overload:LunyScript.Script.If
   isExternal: true
-  href: LunyScript.Script.html#LunyScript_Script_If_LunyScript_Blocks_ScriptConditionBlock___
+  href: LunyScript.Script.html#LunyScript_Script_If_LunyScript_Blocks_ConditionBlock___
   name: If
   nameWithType: Script.If
   fullName: LunyScript.Script.If
-- uid: LunyScript.Blocks.ScriptConditionBlock[]
+- uid: LunyScript.Blocks.ConditionBlock[]
   isExternal: true
-  href: LunyScript.Blocks.ScriptConditionBlock.html
-  name: ScriptConditionBlock[]
-  nameWithType: ScriptConditionBlock[]
-  fullName: LunyScript.Blocks.ScriptConditionBlock[]
-  nameWithType.vb: ScriptConditionBlock()
-  fullName.vb: LunyScript.Blocks.ScriptConditionBlock()
-  name.vb: ScriptConditionBlock()
+  href: LunyScript.Blocks.ConditionBlock.html
+  name: ConditionBlock[]
+  nameWithType: ConditionBlock[]
+  fullName: LunyScript.Blocks.ConditionBlock[]
+  nameWithType.vb: ConditionBlock()
+  fullName.vb: LunyScript.Blocks.ConditionBlock()
+  name.vb: ConditionBlock()
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptConditionBlock.html
+    href: LunyScript.Blocks.ConditionBlock.html
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptConditionBlock.html
+    href: LunyScript.Blocks.ConditionBlock.html
   - name: (
   - name: )
 - uid: LunyScript.Blocks.IfBlock
@@ -1052,7 +1080,7 @@ references:
 - uid: LunyScript.Script.While*
   commentId: Overload:LunyScript.Script.While
   isExternal: true
-  href: LunyScript.Script.html#LunyScript_Script_While_LunyScript_Blocks_ScriptConditionBlock___
+  href: LunyScript.Script.html#LunyScript_Script_While_LunyScript_Blocks_ConditionBlock___
   name: While
   nameWithType: Script.While
   fullName: LunyScript.Script.While
@@ -1075,6 +1103,7 @@ references:
   commentId: T:System.Int32
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: int
   nameWithType: int
   fullName: int
@@ -1092,78 +1121,15 @@ references:
 - uid: LunyScript.Script.Check*
   commentId: Overload:LunyScript.Script.Check
   isExternal: true
-  href: LunyScript.Script.html#LunyScript_Script_Check_System_Func_System_Boolean__
+  href: LunyScript.Script.html#LunyScript_Script_Check_System_Func_LunyScript_IScriptRuntimeContext_System_Boolean__
   name: Check
   nameWithType: Script.Check
   fullName: LunyScript.Script.Check
-- uid: System.Func{System.Boolean}
-  commentId: T:System.Func{System.Boolean}
-  parent: System
-  definition: System.Func`1
-  name: Func<bool>
-  nameWithType: Func<bool>
-  fullName: System.Func<bool>
-  nameWithType.vb: Func(Of Boolean)
-  fullName.vb: System.Func(Of Boolean)
-  name.vb: Func(Of Boolean)
-  spec.csharp:
-  - uid: System.Func`1
-    name: Func
-    isExternal: true
-  - name: <
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-  - name: '>'
-  spec.vb:
-  - uid: System.Func`1
-    name: Func
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-  - name: )
-- uid: LunyScript.Blocks.ScriptConditionBlock
-  commentId: T:LunyScript.Blocks.ScriptConditionBlock
-  parent: LunyScript.Blocks
-  isExternal: true
-  href: LunyScript.Blocks.ScriptConditionBlock.html
-  name: ScriptConditionBlock
-  nameWithType: ScriptConditionBlock
-  fullName: LunyScript.Blocks.ScriptConditionBlock
-- uid: System.Func`1
-  commentId: T:System.Func`1
-  isExternal: true
-  name: Func<TResult>
-  nameWithType: Func<TResult>
-  fullName: System.Func<TResult>
-  nameWithType.vb: Func(Of TResult)
-  fullName.vb: System.Func(Of TResult)
-  name.vb: Func(Of TResult)
-  spec.csharp:
-  - uid: System.Func`1
-    name: Func
-    isExternal: true
-  - name: <
-  - name: TResult
-  - name: '>'
-  spec.vb:
-  - uid: System.Func`1
-    name: Func
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TResult
-  - name: )
 - uid: System.Func{LunyScript.IScriptRuntimeContext,System.Boolean}
   commentId: T:System.Func{LunyScript.IScriptRuntimeContext,System.Boolean}
   parent: System
   definition: System.Func`2
-  href: LunyScript.IScriptRuntimeContext.html
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
   name: Func<IScriptRuntimeContext, bool>
   nameWithType: Func<IScriptRuntimeContext, bool>
   fullName: System.Func<LunyScript.IScriptRuntimeContext, bool>
@@ -1174,6 +1140,7 @@ references:
   - uid: System.Func`2
     name: Func
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: <
   - uid: LunyScript.IScriptRuntimeContext
     name: IScriptRuntimeContext
@@ -1184,11 +1151,13 @@ references:
   - uid: System.Boolean
     name: bool
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'
   spec.vb:
   - uid: System.Func`2
     name: Func
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: (
   - name: Of
   - name: " "
@@ -1201,10 +1170,20 @@ references:
   - uid: System.Boolean
     name: Boolean
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
+- uid: LunyScript.Blocks.ConditionBlock
+  commentId: T:LunyScript.Blocks.ConditionBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ConditionBlock.html
+  name: ConditionBlock
+  nameWithType: ConditionBlock
+  fullName: LunyScript.Blocks.ConditionBlock
 - uid: System.Func`2
   commentId: T:System.Func`2
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
   name: Func<T, TResult>
   nameWithType: Func<T, TResult>
   fullName: System.Func<T, TResult>
@@ -1215,6 +1194,7 @@ references:
   - uid: System.Func`2
     name: Func
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: <
   - name: T
   - name: ','
@@ -1225,11 +1205,75 @@ references:
   - uid: System.Func`2
     name: Func
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{System.Boolean}
+  commentId: T:System.Func{System.Boolean}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<bool>
+  nameWithType: Func<bool>
+  fullName: System.Func<bool>
+  nameWithType.vb: Func(Of Boolean)
+  fullName.vb: System.Func(Of Boolean)
+  name.vb: Func(Of Boolean)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
   - name: " "
   - name: TResult
   - name: )
@@ -1244,22 +1288,23 @@ references:
   commentId: T:System.Action
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
   name: Action
   nameWithType: Action
   fullName: System.Action
-- uid: LunyScript.Blocks.ScriptActionBlock
-  commentId: T:LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ActionBlock
+  commentId: T:LunyScript.Blocks.ActionBlock
   parent: LunyScript.Blocks
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html
-  name: ScriptActionBlock
-  nameWithType: ScriptActionBlock
-  fullName: LunyScript.Blocks.ScriptActionBlock
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock
+  nameWithType: ActionBlock
+  fullName: LunyScript.Blocks.ActionBlock
 - uid: System.Action{LunyScript.IScriptRuntimeContext}
   commentId: T:System.Action{LunyScript.IScriptRuntimeContext}
   parent: System
   definition: System.Action`1
-  href: LunyScript.IScriptRuntimeContext.html
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<IScriptRuntimeContext>
   nameWithType: Action<IScriptRuntimeContext>
   fullName: System.Action<LunyScript.IScriptRuntimeContext>
@@ -1270,6 +1315,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - uid: LunyScript.IScriptRuntimeContext
     name: IScriptRuntimeContext
@@ -1280,6 +1326,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -1291,6 +1338,7 @@ references:
 - uid: System.Action`1
   commentId: T:System.Action`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Action<T>
   nameWithType: Action<T>
   fullName: System.Action<T>
@@ -1301,6 +1349,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - name: T
   - name: '>'
@@ -1308,6 +1357,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -1316,21 +1366,21 @@ references:
 - uid: LunyScript.Script.AND*
   commentId: Overload:LunyScript.Script.AND
   isExternal: true
-  href: LunyScript.Script.html#LunyScript_Script_AND_LunyScript_Blocks_ScriptConditionBlock___
+  href: LunyScript.Script.html#LunyScript_Script_AND_LunyScript_Blocks_ConditionBlock___
   name: AND
   nameWithType: Script.AND
   fullName: LunyScript.Script.AND
 - uid: LunyScript.Script.OR*
   commentId: Overload:LunyScript.Script.OR
   isExternal: true
-  href: LunyScript.Script.html#LunyScript_Script_OR_LunyScript_Blocks_ScriptConditionBlock___
+  href: LunyScript.Script.html#LunyScript_Script_OR_LunyScript_Blocks_ConditionBlock___
   name: OR
   nameWithType: Script.OR
   fullName: LunyScript.Script.OR
 - uid: LunyScript.Script.NOT*
   commentId: Overload:LunyScript.Script.NOT
   isExternal: true
-  href: LunyScript.Script.html#LunyScript_Script_NOT_LunyScript_Blocks_ScriptConditionBlock_
+  href: LunyScript.Script.html#LunyScript_Script_NOT_LunyScript_Blocks_ConditionBlock_
   name: NOT
   nameWithType: Script.NOT
   fullName: LunyScript.Script.NOT
@@ -1470,6 +1520,7 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool

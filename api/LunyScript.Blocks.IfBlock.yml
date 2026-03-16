@@ -5,10 +5,10 @@ items:
   id: IfBlock
   parent: LunyScript.Blocks
   children:
-  - LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ScriptActionBlock[])
-  - LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ConditionBlock[])
   - LunyScript.Blocks.IfBlock.Execute(LunyScript.IScriptRuntimeContext)
-  - LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ActionBlock[])
   langs:
   - csharp
   - vb
@@ -22,94 +22,94 @@ items:
   summary: Builder for constructing 'If' blocks with 'ElseIf' and 'Else' branches.
   example: []
   syntax:
-    content: 'public sealed class IfBlock : ScriptActionBlock, IScriptBlock'
-    content.vb: Public NotInheritable Class IfBlock Inherits ScriptActionBlock Implements IScriptBlock
+    content: 'public sealed class IfBlock : ActionBlock, IScriptBlock'
+    content.vb: Public NotInheritable Class IfBlock Inherits ActionBlock Implements IScriptBlock
   inheritance:
   - System.Object
   - LunyScript.Blocks.ScriptBlock
-  - LunyScript.Blocks.ScriptActionBlock
+  - LunyScript.Blocks.ActionBlock
   implements:
   - LunyScript.Blocks.IScriptBlock
   inheritedMembers:
-  - LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
-- uid: LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ScriptActionBlock[])
-  id: Then(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+- uid: LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Blocks.IfBlock.Then(LunyScript.Blocks.ActionBlock[])
+  id: Then(LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Blocks.IfBlock
   langs:
   - csharp
   - vb
-  name: Then(params ScriptActionBlock[])
-  nameWithType: IfBlock.Then(params ScriptActionBlock[])
-  fullName: LunyScript.Blocks.IfBlock.Then(params LunyScript.Blocks.ScriptActionBlock[])
+  name: Then(params ActionBlock[])
+  nameWithType: IfBlock.Then(params ActionBlock[])
+  fullName: LunyScript.Blocks.IfBlock.Then(params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public IfBlock Then(params ScriptActionBlock[] actions)
+    content: public IfBlock Then(params ActionBlock[] actions)
     parameters:
     - id: actions
-      type: LunyScript.Blocks.ScriptActionBlock[]
+      type: LunyScript.Blocks.ActionBlock[]
     return:
       type: LunyScript.Blocks.IfBlock
-    content.vb: Public Function [Then](ParamArray actions As ScriptActionBlock()) As IfBlock
+    content.vb: Public Function [Then](ParamArray actions As ActionBlock()) As IfBlock
   overload: LunyScript.Blocks.IfBlock.Then*
-  nameWithType.vb: IfBlock.Then(ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Blocks.IfBlock.Then(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Then(ParamArray ScriptActionBlock())
-- uid: LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ScriptConditionBlock[])
-  commentId: M:LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ScriptConditionBlock[])
-  id: ElseIf(LunyScript.Blocks.ScriptConditionBlock[])
+  nameWithType.vb: IfBlock.Then(ParamArray ActionBlock())
+  fullName.vb: LunyScript.Blocks.IfBlock.Then(ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Then(ParamArray ActionBlock())
+- uid: LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ConditionBlock[])
+  commentId: M:LunyScript.Blocks.IfBlock.ElseIf(LunyScript.Blocks.ConditionBlock[])
+  id: ElseIf(LunyScript.Blocks.ConditionBlock[])
   parent: LunyScript.Blocks.IfBlock
   langs:
   - csharp
   - vb
-  name: ElseIf(params ScriptConditionBlock[])
-  nameWithType: IfBlock.ElseIf(params ScriptConditionBlock[])
-  fullName: LunyScript.Blocks.IfBlock.ElseIf(params LunyScript.Blocks.ScriptConditionBlock[])
+  name: ElseIf(params ConditionBlock[])
+  nameWithType: IfBlock.ElseIf(params ConditionBlock[])
+  fullName: LunyScript.Blocks.IfBlock.ElseIf(params LunyScript.Blocks.ConditionBlock[])
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public IfBlock ElseIf(params ScriptConditionBlock[] conditions)
+    content: public IfBlock ElseIf(params ConditionBlock[] conditions)
     parameters:
     - id: conditions
-      type: LunyScript.Blocks.ScriptConditionBlock[]
+      type: LunyScript.Blocks.ConditionBlock[]
     return:
       type: LunyScript.Blocks.IfBlock
-    content.vb: Public Function [ElseIf](ParamArray conditions As ScriptConditionBlock()) As IfBlock
+    content.vb: Public Function [ElseIf](ParamArray conditions As ConditionBlock()) As IfBlock
   overload: LunyScript.Blocks.IfBlock.ElseIf*
-  nameWithType.vb: IfBlock.ElseIf(ParamArray ScriptConditionBlock())
-  fullName.vb: LunyScript.Blocks.IfBlock.ElseIf(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  name.vb: ElseIf(ParamArray ScriptConditionBlock())
-- uid: LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ScriptActionBlock[])
-  id: Else(LunyScript.Blocks.ScriptActionBlock[])
+  nameWithType.vb: IfBlock.ElseIf(ParamArray ConditionBlock())
+  fullName.vb: LunyScript.Blocks.IfBlock.ElseIf(ParamArray LunyScript.Blocks.ConditionBlock())
+  name.vb: ElseIf(ParamArray ConditionBlock())
+- uid: LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Blocks.IfBlock.Else(LunyScript.Blocks.ActionBlock[])
+  id: Else(LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Blocks.IfBlock
   langs:
   - csharp
   - vb
-  name: Else(params ScriptActionBlock[])
-  nameWithType: IfBlock.Else(params ScriptActionBlock[])
-  fullName: LunyScript.Blocks.IfBlock.Else(params LunyScript.Blocks.ScriptActionBlock[])
+  name: Else(params ActionBlock[])
+  nameWithType: IfBlock.Else(params ActionBlock[])
+  fullName: LunyScript.Blocks.IfBlock.Else(params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public ScriptActionBlock Else(params ScriptActionBlock[] actions)
+    content: public ActionBlock Else(params ActionBlock[] actions)
     parameters:
     - id: actions
-      type: LunyScript.Blocks.ScriptActionBlock[]
+      type: LunyScript.Blocks.ActionBlock[]
     return:
-      type: LunyScript.Blocks.ScriptActionBlock
-    content.vb: Public Function [Else](ParamArray actions As ScriptActionBlock()) As ScriptActionBlock
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function [Else](ParamArray actions As ActionBlock()) As ActionBlock
   overload: LunyScript.Blocks.IfBlock.Else*
-  nameWithType.vb: IfBlock.Else(ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Blocks.IfBlock.Else(ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Else(ParamArray ScriptActionBlock())
+  nameWithType.vb: IfBlock.Else(ParamArray ActionBlock())
+  fullName.vb: LunyScript.Blocks.IfBlock.Else(ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Else(ParamArray ActionBlock())
 - uid: LunyScript.Blocks.IfBlock.Execute(LunyScript.IScriptRuntimeContext)
   commentId: M:LunyScript.Blocks.IfBlock.Execute(LunyScript.IScriptRuntimeContext)
   id: Execute(LunyScript.IScriptRuntimeContext)
@@ -131,7 +131,7 @@ items:
     - id: runtimeContext
       type: LunyScript.IScriptRuntimeContext
     content.vb: Protected Overrides Sub Execute(runtimeContext As IScriptRuntimeContext)
-  overridden: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  overridden: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
   overload: LunyScript.Blocks.IfBlock.Execute*
 references:
 - uid: LunyScript.Blocks
@@ -179,14 +179,14 @@ references:
   name: ScriptBlock
   nameWithType: ScriptBlock
   fullName: LunyScript.Blocks.ScriptBlock
-- uid: LunyScript.Blocks.ScriptActionBlock
-  commentId: T:LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ActionBlock
+  commentId: T:LunyScript.Blocks.ActionBlock
   parent: LunyScript.Blocks
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html
-  name: ScriptActionBlock
-  nameWithType: ScriptActionBlock
-  fullName: LunyScript.Blocks.ScriptActionBlock
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock
+  nameWithType: ActionBlock
+  fullName: LunyScript.Blocks.ActionBlock
 - uid: LunyScript.Blocks.IScriptBlock
   commentId: T:LunyScript.Blocks.IScriptBlock
   parent: LunyScript.Blocks
@@ -195,77 +195,78 @@ references:
   name: IScriptBlock
   nameWithType: IScriptBlock
   fullName: LunyScript.Blocks.IScriptBlock
-- uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
-  parent: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  parent: LunyScript.Blocks.ActionBlock
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
-  name: IsNullOrEmpty(ScriptActionBlock[])
-  nameWithType: ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock[])
-  fullName: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
-  nameWithType.vb: ScriptActionBlock.IsNullOrEmpty(ScriptActionBlock())
-  fullName.vb: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock())
-  name.vb: IsNullOrEmpty(ScriptActionBlock())
+  href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___
+  name: IsNullOrEmpty(ActionBlock[])
+  nameWithType: ActionBlock.IsNullOrEmpty(ActionBlock[])
+  fullName: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: ActionBlock.IsNullOrEmpty(ActionBlock())
+  fullName.vb: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock())
+  name.vb: IsNullOrEmpty(ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
     name: IsNullOrEmpty
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___
   - name: (
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptActionBlock.IsNullOrEmpty(LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
     name: IsNullOrEmpty
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_IsNullOrEmpty_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___
   - name: (
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
   - name: )
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
 - uid: LunyScript.Blocks.IfBlock.Then*
   commentId: Overload:LunyScript.Blocks.IfBlock.Then
   isExternal: true
-  href: LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_Then_LunyScript_Blocks_ScriptActionBlock___
+  href: LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_Then_LunyScript_Blocks_ActionBlock___
   name: Then
   nameWithType: IfBlock.Then
   fullName: LunyScript.Blocks.IfBlock.Then
-- uid: LunyScript.Blocks.ScriptActionBlock[]
+- uid: LunyScript.Blocks.ActionBlock[]
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html
-  name: ScriptActionBlock[]
-  nameWithType: ScriptActionBlock[]
-  fullName: LunyScript.Blocks.ScriptActionBlock[]
-  nameWithType.vb: ScriptActionBlock()
-  fullName.vb: LunyScript.Blocks.ScriptActionBlock()
-  name.vb: ScriptActionBlock()
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock[]
+  nameWithType: ActionBlock[]
+  fullName: LunyScript.Blocks.ActionBlock[]
+  nameWithType.vb: ActionBlock()
+  fullName.vb: LunyScript.Blocks.ActionBlock()
+  name.vb: ActionBlock()
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
 - uid: LunyScript.Blocks.IfBlock
@@ -279,53 +280,53 @@ references:
 - uid: LunyScript.Blocks.IfBlock.ElseIf*
   commentId: Overload:LunyScript.Blocks.IfBlock.ElseIf
   isExternal: true
-  href: LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_ElseIf_LunyScript_Blocks_ScriptConditionBlock___
+  href: LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_ElseIf_LunyScript_Blocks_ConditionBlock___
   name: ElseIf
   nameWithType: IfBlock.ElseIf
   fullName: LunyScript.Blocks.IfBlock.ElseIf
-- uid: LunyScript.Blocks.ScriptConditionBlock[]
+- uid: LunyScript.Blocks.ConditionBlock[]
   isExternal: true
-  href: LunyScript.Blocks.ScriptConditionBlock.html
-  name: ScriptConditionBlock[]
-  nameWithType: ScriptConditionBlock[]
-  fullName: LunyScript.Blocks.ScriptConditionBlock[]
-  nameWithType.vb: ScriptConditionBlock()
-  fullName.vb: LunyScript.Blocks.ScriptConditionBlock()
-  name.vb: ScriptConditionBlock()
+  href: LunyScript.Blocks.ConditionBlock.html
+  name: ConditionBlock[]
+  nameWithType: ConditionBlock[]
+  fullName: LunyScript.Blocks.ConditionBlock[]
+  nameWithType.vb: ConditionBlock()
+  fullName.vb: LunyScript.Blocks.ConditionBlock()
+  name.vb: ConditionBlock()
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptConditionBlock.html
+    href: LunyScript.Blocks.ConditionBlock.html
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptConditionBlock.html
+    href: LunyScript.Blocks.ConditionBlock.html
   - name: (
   - name: )
 - uid: LunyScript.Blocks.IfBlock.Else*
   commentId: Overload:LunyScript.Blocks.IfBlock.Else
   isExternal: true
-  href: LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_Else_LunyScript_Blocks_ScriptActionBlock___
+  href: LunyScript.Blocks.IfBlock.html#LunyScript_Blocks_IfBlock_Else_LunyScript_Blocks_ActionBlock___
   name: Else
   nameWithType: IfBlock.Else
   fullName: LunyScript.Blocks.IfBlock.Else
-- uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
-  commentId: M:LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
-  parent: LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.ActionBlock
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_Execute_LunyScript_IScriptRuntimeContext_
   name: Execute(IScriptRuntimeContext)
-  nameWithType: ScriptActionBlock.Execute(IScriptRuntimeContext)
-  fullName: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  nameWithType: ActionBlock.Execute(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  - uid: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
     name: Execute
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+    href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_Execute_LunyScript_IScriptRuntimeContext_
   - name: (
   - uid: LunyScript.IScriptRuntimeContext
     name: IScriptRuntimeContext
@@ -333,10 +334,10 @@ references:
     href: LunyScript.IScriptRuntimeContext.html
   - name: )
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  - uid: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
     name: Execute
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html#LunyScript_Blocks_ScriptActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+    href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_Execute_LunyScript_IScriptRuntimeContext_
   - name: (
   - uid: LunyScript.IScriptRuntimeContext
     name: IScriptRuntimeContext

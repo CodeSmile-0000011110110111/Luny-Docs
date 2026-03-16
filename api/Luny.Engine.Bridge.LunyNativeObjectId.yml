@@ -30,8 +30,11 @@ items:
   summary: Engine-native unique identifier value for engine objects.
   example: []
   syntax:
-    content: public readonly struct LunyNativeObjectId
-    content.vb: Public Structure LunyNativeObjectId
+    content: 'public readonly struct LunyNativeObjectId : IEquatable<LunyNativeObjectId>, IComparable<LunyNativeObjectId>'
+    content.vb: Public Structure LunyNativeObjectId Implements IEquatable(Of LunyNativeObjectId), IComparable(Of LunyNativeObjectId)
+  implements:
+  - System.IEquatable{Luny.Engine.Bridge.LunyNativeObjectId}
+  - System.IComparable{Luny.Engine.Bridge.LunyNativeObjectId}
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.Value
   commentId: F:Luny.Engine.Bridge.LunyNativeObjectId.Value
   id: Value
@@ -175,6 +178,8 @@ items:
       type: System.Boolean
     content.vb: Public Function Equals(other As LunyNativeObjectId) As Boolean
   overload: Luny.Engine.Bridge.LunyNativeObjectId.Equals*
+  implements:
+  - System.IEquatable{Luny.Engine.Bridge.LunyNativeObjectId}.Equals(Luny.Engine.Bridge.LunyNativeObjectId)
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.Equals(System.Object)
   commentId: M:Luny.Engine.Bridge.LunyNativeObjectId.Equals(System.Object)
   id: Equals(System.Object)
@@ -249,6 +254,8 @@ items:
       type: System.Int32
     content.vb: Public Function CompareTo(other As LunyNativeObjectId) As Integer
   overload: Luny.Engine.Bridge.LunyNativeObjectId.CompareTo*
+  implements:
+  - System.IComparable{Luny.Engine.Bridge.LunyNativeObjectId}.CompareTo(Luny.Engine.Bridge.LunyNativeObjectId)
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.ToString
   commentId: M:Luny.Engine.Bridge.LunyNativeObjectId.ToString
   id: ToString
@@ -365,22 +372,150 @@ references:
     name: Bridge
     isExternal: true
     href: Luny.Engine.Bridge.html
+- uid: System.IEquatable{Luny.Engine.Bridge.LunyNativeObjectId}
+  commentId: T:System.IEquatable{Luny.Engine.Bridge.LunyNativeObjectId}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<LunyNativeObjectId>
+  nameWithType: IEquatable<LunyNativeObjectId>
+  fullName: System.IEquatable<Luny.Engine.Bridge.LunyNativeObjectId>
+  nameWithType.vb: IEquatable(Of LunyNativeObjectId)
+  fullName.vb: System.IEquatable(Of Luny.Engine.Bridge.LunyNativeObjectId)
+  name.vb: IEquatable(Of LunyNativeObjectId)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Luny.Engine.Bridge.LunyNativeObjectId
+    name: LunyNativeObjectId
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyNativeObjectId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyNativeObjectId
+    name: LunyNativeObjectId
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyNativeObjectId.html
+  - name: )
+- uid: System.IComparable{Luny.Engine.Bridge.LunyNativeObjectId}
+  commentId: T:System.IComparable{Luny.Engine.Bridge.LunyNativeObjectId}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<LunyNativeObjectId>
+  nameWithType: IComparable<LunyNativeObjectId>
+  fullName: System.IComparable<Luny.Engine.Bridge.LunyNativeObjectId>
+  nameWithType.vb: IComparable(Of LunyNativeObjectId)
+  fullName.vb: System.IComparable(Of Luny.Engine.Bridge.LunyNativeObjectId)
+  name.vb: IComparable(Of LunyNativeObjectId)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: Luny.Engine.Bridge.LunyNativeObjectId
+    name: LunyNativeObjectId
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyNativeObjectId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Engine.Bridge.LunyNativeObjectId
+    name: LunyNativeObjectId
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyNativeObjectId.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
   name: long
   nameWithType: long
   fullName: long
   nameWithType.vb: Long
   fullName.vb: Long
   name.vb: Long
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.op_Implicit*
   commentId: Overload:Luny.Engine.Bridge.LunyNativeObjectId.op_Implicit
   name: implicit operator
@@ -405,6 +540,7 @@ references:
   commentId: T:System.UInt64
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
   name: ulong
   nameWithType: ulong
   fullName: ulong
@@ -428,20 +564,79 @@ references:
   name: Equals
   nameWithType: LunyNativeObjectId.Equals
   fullName: Luny.Engine.Bridge.LunyNativeObjectId.Equals
+- uid: System.IEquatable{Luny.Engine.Bridge.LunyNativeObjectId}.Equals(Luny.Engine.Bridge.LunyNativeObjectId)
+  commentId: M:System.IEquatable{Luny.Engine.Bridge.LunyNativeObjectId}.Equals(Luny.Engine.Bridge.LunyNativeObjectId)
+  parent: System.IEquatable{Luny.Engine.Bridge.LunyNativeObjectId}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(LunyNativeObjectId)
+  nameWithType: IEquatable<LunyNativeObjectId>.Equals(LunyNativeObjectId)
+  fullName: System.IEquatable<Luny.Engine.Bridge.LunyNativeObjectId>.Equals(Luny.Engine.Bridge.LunyNativeObjectId)
+  nameWithType.vb: IEquatable(Of LunyNativeObjectId).Equals(LunyNativeObjectId)
+  fullName.vb: System.IEquatable(Of Luny.Engine.Bridge.LunyNativeObjectId).Equals(Luny.Engine.Bridge.LunyNativeObjectId)
+  spec.csharp:
+  - uid: System.IEquatable{Luny.Engine.Bridge.LunyNativeObjectId}.Equals(Luny.Engine.Bridge.LunyNativeObjectId)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Luny.Engine.Bridge.LunyNativeObjectId
+    name: LunyNativeObjectId
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyNativeObjectId.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Luny.Engine.Bridge.LunyNativeObjectId}.Equals(Luny.Engine.Bridge.LunyNativeObjectId)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Luny.Engine.Bridge.LunyNativeObjectId
+    name: LunyNativeObjectId
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyNativeObjectId.html
+  - name: )
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
 - uid: System.ValueType.Equals(System.Object)
   commentId: M:System.ValueType.Equals(System.Object)
   parent: System.ValueType
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   name: Equals(object)
   nameWithType: ValueType.Equals(object)
   fullName: System.ValueType.Equals(object)
@@ -452,6 +647,7 @@ references:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
     name: object
@@ -461,6 +657,7 @@ references:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
     name: Object
@@ -480,6 +677,7 @@ references:
   commentId: T:System.ValueType
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
   name: ValueType
   nameWithType: ValueType
   fullName: System.ValueType
@@ -487,6 +685,7 @@ references:
   commentId: M:System.ValueType.GetHashCode
   parent: System.ValueType
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
   name: GetHashCode()
   nameWithType: ValueType.GetHashCode()
   fullName: System.ValueType.GetHashCode()
@@ -494,12 +693,14 @@ references:
   - uid: System.ValueType.GetHashCode
     name: GetHashCode
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
   - name: (
   - name: )
   spec.vb:
   - uid: System.ValueType.GetHashCode
     name: GetHashCode
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
   - name: (
   - name: )
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.GetHashCode*
@@ -513,6 +714,7 @@ references:
   commentId: T:System.Int32
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: int
   nameWithType: int
   fullName: int
@@ -526,10 +728,68 @@ references:
   name: CompareTo
   nameWithType: LunyNativeObjectId.CompareTo
   fullName: Luny.Engine.Bridge.LunyNativeObjectId.CompareTo
+- uid: System.IComparable{Luny.Engine.Bridge.LunyNativeObjectId}.CompareTo(Luny.Engine.Bridge.LunyNativeObjectId)
+  commentId: M:System.IComparable{Luny.Engine.Bridge.LunyNativeObjectId}.CompareTo(Luny.Engine.Bridge.LunyNativeObjectId)
+  parent: System.IComparable{Luny.Engine.Bridge.LunyNativeObjectId}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(LunyNativeObjectId)
+  nameWithType: IComparable<LunyNativeObjectId>.CompareTo(LunyNativeObjectId)
+  fullName: System.IComparable<Luny.Engine.Bridge.LunyNativeObjectId>.CompareTo(Luny.Engine.Bridge.LunyNativeObjectId)
+  nameWithType.vb: IComparable(Of LunyNativeObjectId).CompareTo(LunyNativeObjectId)
+  fullName.vb: System.IComparable(Of Luny.Engine.Bridge.LunyNativeObjectId).CompareTo(Luny.Engine.Bridge.LunyNativeObjectId)
+  spec.csharp:
+  - uid: System.IComparable{Luny.Engine.Bridge.LunyNativeObjectId}.CompareTo(Luny.Engine.Bridge.LunyNativeObjectId)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Luny.Engine.Bridge.LunyNativeObjectId
+    name: LunyNativeObjectId
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyNativeObjectId.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{Luny.Engine.Bridge.LunyNativeObjectId}.CompareTo(Luny.Engine.Bridge.LunyNativeObjectId)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Luny.Engine.Bridge.LunyNativeObjectId
+    name: LunyNativeObjectId
+    isExternal: true
+    href: Luny.Engine.Bridge.LunyNativeObjectId.html
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   name: ToString()
   nameWithType: ValueType.ToString()
   fullName: System.ValueType.ToString()
@@ -537,12 +797,14 @@ references:
   - uid: System.ValueType.ToString
     name: ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   - name: (
   - name: )
   spec.vb:
   - uid: System.ValueType.ToString
     name: ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   - name: (
   - name: )
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.ToString*
@@ -556,6 +818,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string

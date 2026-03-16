@@ -24,6 +24,10 @@ items:
   syntax:
     content: public readonly struct ObjectBuilder
     content.vb: Public Structure ObjectBuilder
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
 - uid: LunyScript.Api.ObjectBuilder.Enable(System.String)
   commentId: M:LunyScript.Api.ObjectBuilder.Enable(System.String)
   id: Enable(System.String)
@@ -39,13 +43,13 @@ items:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ScriptActionBlock Enable(string name = null)
+    content: public ActionBlock Enable(string name = null)
     parameters:
     - id: name
       type: System.String
     return:
-      type: LunyScript.Blocks.ScriptActionBlock
-    content.vb: Public Function Enable(name As String = Nothing) As ScriptActionBlock
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Enable(name As String = Nothing) As ActionBlock
   overload: LunyScript.Api.ObjectBuilder.Enable*
   nameWithType.vb: ObjectBuilder.Enable(String)
   fullName.vb: LunyScript.Api.ObjectBuilder.Enable(String)
@@ -65,13 +69,13 @@ items:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ScriptActionBlock Disable(string name = null)
+    content: public ActionBlock Disable(string name = null)
     parameters:
     - id: name
       type: System.String
     return:
-      type: LunyScript.Blocks.ScriptActionBlock
-    content.vb: Public Function Disable(name As String = Nothing) As ScriptActionBlock
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Disable(name As String = Nothing) As ActionBlock
   overload: LunyScript.Api.ObjectBuilder.Disable*
   nameWithType.vb: ObjectBuilder.Disable(String)
   fullName.vb: LunyScript.Api.ObjectBuilder.Disable(String)
@@ -117,13 +121,13 @@ items:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ScriptActionBlock Destroy(string name = null)
+    content: public ActionBlock Destroy(string name = null)
     parameters:
     - id: name
       type: System.String
     return:
-      type: LunyScript.Blocks.ScriptActionBlock
-    content.vb: Public Function Destroy(name As String = Nothing) As ScriptActionBlock
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Destroy(name As String = Nothing) As ActionBlock
   overload: LunyScript.Api.ObjectBuilder.Destroy*
   nameWithType.vb: ObjectBuilder.Destroy(String)
   fullName.vb: LunyScript.Api.ObjectBuilder.Destroy(String)
@@ -156,6 +160,96 @@ references:
     name: Api
     isExternal: true
     href: LunyScript.Api.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: LunyScript.Api.ObjectBuilder.Enable*
   commentId: Overload:LunyScript.Api.ObjectBuilder.Enable
   isExternal: true
@@ -167,26 +261,21 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: LunyScript.Blocks.ScriptActionBlock
-  commentId: T:LunyScript.Blocks.ScriptActionBlock
+- uid: LunyScript.Blocks.ActionBlock
+  commentId: T:LunyScript.Blocks.ActionBlock
   parent: LunyScript.Blocks
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html
-  name: ScriptActionBlock
-  nameWithType: ScriptActionBlock
-  fullName: LunyScript.Blocks.ScriptActionBlock
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock
+  nameWithType: ActionBlock
+  fullName: LunyScript.Blocks.ActionBlock
 - uid: LunyScript.Blocks
   commentId: N:LunyScript.Blocks
   isExternal: true

@@ -135,6 +135,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -176,6 +177,7 @@ references:
   - name: )
 - uid: System.String[]
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string[]
   nameWithType: string[]
   fullName: string[]
@@ -186,12 +188,14 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
   - name: ']'
   spec.vb:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
   - name: )
 - uid: LunyScript.Api.PhysicsEventBuilder{LunyScript.Api.CollisionBuilderMasked}
@@ -261,6 +265,7 @@ references:
   commentId: T:System.Int32
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: int
   nameWithType: int
   fullName: int

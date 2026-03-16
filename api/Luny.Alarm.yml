@@ -61,8 +61,13 @@ items:
     Used for high-performance polling in update loops.
   example: []
   syntax:
-    content: public readonly struct Alarm
-    content.vb: Public Structure Alarm
+    content: 'public readonly struct Alarm : IComparable<Alarm>, IComparable<double>, IEquatable<Alarm>, IEquatable<double>'
+    content.vb: Public Structure Alarm Implements IComparable(Of Alarm), IComparable(Of Double), IEquatable(Of Alarm), IEquatable(Of Double)
+  implements:
+  - System.IComparable{Luny.Alarm}
+  - System.IComparable{System.Double}
+  - System.IEquatable{Luny.Alarm}
+  - System.IEquatable{System.Double}
 - uid: Luny.Alarm.Target
   commentId: F:Luny.Alarm.Target
   id: Target
@@ -508,6 +513,8 @@ items:
       type: System.Int32
     content.vb: Public Function CompareTo(other As Alarm) As Integer
   overload: Luny.Alarm.CompareTo*
+  implements:
+  - System.IComparable{Luny.Alarm}.CompareTo(Luny.Alarm)
 - uid: Luny.Alarm.CompareTo(System.Double)
   commentId: M:Luny.Alarm.CompareTo(System.Double)
   id: CompareTo(System.Double)
@@ -532,6 +539,8 @@ items:
       type: System.Int32
     content.vb: Public Function CompareTo(other As Double) As Integer
   overload: Luny.Alarm.CompareTo*
+  implements:
+  - System.IComparable{System.Double}.CompareTo(System.Double)
   nameWithType.vb: Alarm.CompareTo(Double)
   fullName.vb: Luny.Alarm.CompareTo(Double)
   name.vb: CompareTo(Double)
@@ -559,6 +568,8 @@ items:
       type: System.Boolean
     content.vb: Public Function Equals(other As Alarm) As Boolean
   overload: Luny.Alarm.Equals*
+  implements:
+  - System.IEquatable{Luny.Alarm}.Equals(Luny.Alarm)
 - uid: Luny.Alarm.Equals(System.Double)
   commentId: M:Luny.Alarm.Equals(System.Double)
   id: Equals(System.Double)
@@ -583,6 +594,8 @@ items:
       type: System.Boolean
     content.vb: Public Function Equals(other As Double) As Boolean
   overload: Luny.Alarm.Equals*
+  implements:
+  - System.IEquatable{System.Double}.Equals(System.Double)
   nameWithType.vb: Alarm.Equals(Double)
   fullName.vb: Luny.Alarm.Equals(Double)
   name.vb: Equals(Double)
@@ -1170,22 +1183,220 @@ references:
   name: Luny
   nameWithType: Luny
   fullName: Luny
+- uid: System.IComparable{Luny.Alarm}
+  commentId: T:System.IComparable{Luny.Alarm}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<Alarm>
+  nameWithType: IComparable<Alarm>
+  fullName: System.IComparable<Luny.Alarm>
+  nameWithType.vb: IComparable(Of Alarm)
+  fullName.vb: System.IComparable(Of Luny.Alarm)
+  name.vb: IComparable(Of Alarm)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: Luny.Alarm
+    name: Alarm
+    isExternal: true
+    href: Luny.Alarm.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Alarm
+    name: Alarm
+    isExternal: true
+    href: Luny.Alarm.html
+  - name: )
+- uid: System.IComparable{System.Double}
+  commentId: T:System.IComparable{System.Double}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<double>
+  nameWithType: IComparable<double>
+  fullName: System.IComparable<double>
+  nameWithType.vb: IComparable(Of Double)
+  fullName.vb: System.IComparable(Of Double)
+  name.vb: IComparable(Of Double)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.IEquatable{Luny.Alarm}
+  commentId: T:System.IEquatable{Luny.Alarm}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Alarm>
+  nameWithType: IEquatable<Alarm>
+  fullName: System.IEquatable<Luny.Alarm>
+  nameWithType.vb: IEquatable(Of Alarm)
+  fullName.vb: System.IEquatable(Of Luny.Alarm)
+  name.vb: IEquatable(Of Alarm)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Luny.Alarm
+    name: Alarm
+    isExternal: true
+    href: Luny.Alarm.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Alarm
+    name: Alarm
+    isExternal: true
+    href: Luny.Alarm.html
+  - name: )
+- uid: System.IEquatable{System.Double}
+  commentId: T:System.IEquatable{System.Double}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<double>
+  nameWithType: IEquatable<double>
+  fullName: System.IEquatable<double>
+  nameWithType.vb: IEquatable(Of Double)
+  fullName.vb: System.IEquatable(Of Double)
+  name.vb: IEquatable(Of Double)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: System.Double
   commentId: T:System.Double
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
   name: double
   nameWithType: double
   fullName: double
   nameWithType.vb: Double
   fullName.vb: Double
   name.vb: Double
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Luny.Alarm.#ctor*
   commentId: Overload:Luny.Alarm.#ctor
   isExternal: true
@@ -1215,6 +1426,7 @@ references:
   commentId: T:System.Int64
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
   name: long
   nameWithType: long
   fullName: long
@@ -1267,6 +1479,7 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool
@@ -1301,16 +1514,107 @@ references:
   name: CompareTo
   nameWithType: Alarm.CompareTo
   fullName: Luny.Alarm.CompareTo
+- uid: System.IComparable{Luny.Alarm}.CompareTo(Luny.Alarm)
+  commentId: M:System.IComparable{Luny.Alarm}.CompareTo(Luny.Alarm)
+  parent: System.IComparable{Luny.Alarm}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(Alarm)
+  nameWithType: IComparable<Alarm>.CompareTo(Alarm)
+  fullName: System.IComparable<Luny.Alarm>.CompareTo(Luny.Alarm)
+  nameWithType.vb: IComparable(Of Alarm).CompareTo(Alarm)
+  fullName.vb: System.IComparable(Of Luny.Alarm).CompareTo(Luny.Alarm)
+  spec.csharp:
+  - uid: System.IComparable{Luny.Alarm}.CompareTo(Luny.Alarm)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Luny.Alarm
+    name: Alarm
+    isExternal: true
+    href: Luny.Alarm.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{Luny.Alarm}.CompareTo(Luny.Alarm)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Luny.Alarm
+    name: Alarm
+    isExternal: true
+    href: Luny.Alarm.html
+  - name: )
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: int
   nameWithType: int
   fullName: int
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IComparable{System.Double}.CompareTo(System.Double)
+  commentId: M:System.IComparable{System.Double}.CompareTo(System.Double)
+  parent: System.IComparable{System.Double}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(double)
+  nameWithType: IComparable<double>.CompareTo(double)
+  fullName: System.IComparable<double>.CompareTo(double)
+  nameWithType.vb: IComparable(Of Double).CompareTo(Double)
+  fullName.vb: System.IComparable(Of Double).CompareTo(Double)
+  name.vb: CompareTo(Double)
+  spec.csharp:
+  - uid: System.IComparable{System.Double}.CompareTo(System.Double)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{System.Double}.CompareTo(System.Double)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
 - uid: Luny.Alarm.Equals*
   commentId: Overload:Luny.Alarm.Equals
   isExternal: true
@@ -1318,10 +1622,101 @@ references:
   name: Equals
   nameWithType: Alarm.Equals
   fullName: Luny.Alarm.Equals
+- uid: System.IEquatable{Luny.Alarm}.Equals(Luny.Alarm)
+  commentId: M:System.IEquatable{Luny.Alarm}.Equals(Luny.Alarm)
+  parent: System.IEquatable{Luny.Alarm}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Alarm)
+  nameWithType: IEquatable<Alarm>.Equals(Alarm)
+  fullName: System.IEquatable<Luny.Alarm>.Equals(Luny.Alarm)
+  nameWithType.vb: IEquatable(Of Alarm).Equals(Alarm)
+  fullName.vb: System.IEquatable(Of Luny.Alarm).Equals(Luny.Alarm)
+  spec.csharp:
+  - uid: System.IEquatable{Luny.Alarm}.Equals(Luny.Alarm)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Luny.Alarm
+    name: Alarm
+    isExternal: true
+    href: Luny.Alarm.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Luny.Alarm}.Equals(Luny.Alarm)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Luny.Alarm
+    name: Alarm
+    isExternal: true
+    href: Luny.Alarm.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{System.Double}.Equals(System.Double)
+  commentId: M:System.IEquatable{System.Double}.Equals(System.Double)
+  parent: System.IEquatable{System.Double}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(double)
+  nameWithType: IEquatable<double>.Equals(double)
+  fullName: System.IEquatable<double>.Equals(double)
+  nameWithType.vb: IEquatable(Of Double).Equals(Double)
+  fullName.vb: System.IEquatable(Of Double).Equals(Double)
+  name.vb: Equals(Double)
+  spec.csharp:
+  - uid: System.IEquatable{System.Double}.Equals(System.Double)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Double}.Equals(System.Double)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
 - uid: System.ValueType.Equals(System.Object)
   commentId: M:System.ValueType.Equals(System.Object)
   parent: System.ValueType
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   name: Equals(object)
   nameWithType: ValueType.Equals(object)
   fullName: System.ValueType.Equals(object)
@@ -1332,6 +1727,7 @@ references:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
     name: object
@@ -1341,6 +1737,7 @@ references:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
     name: Object
@@ -1360,6 +1757,7 @@ references:
   commentId: T:System.ValueType
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
   name: ValueType
   nameWithType: ValueType
   fullName: System.ValueType
@@ -1367,6 +1765,7 @@ references:
   commentId: M:System.ValueType.GetHashCode
   parent: System.ValueType
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
   name: GetHashCode()
   nameWithType: ValueType.GetHashCode()
   fullName: System.ValueType.GetHashCode()
@@ -1374,12 +1773,14 @@ references:
   - uid: System.ValueType.GetHashCode
     name: GetHashCode
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
   - name: (
   - name: )
   spec.vb:
   - uid: System.ValueType.GetHashCode
     name: GetHashCode
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
   - name: (
   - name: )
 - uid: Luny.Alarm.GetHashCode*
@@ -1393,6 +1794,7 @@ references:
   commentId: M:System.ValueType.ToString
   parent: System.ValueType
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   name: ToString()
   nameWithType: ValueType.ToString()
   fullName: System.ValueType.ToString()
@@ -1400,12 +1802,14 @@ references:
   - uid: System.ValueType.ToString
     name: ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   - name: (
   - name: )
   spec.vb:
   - uid: System.ValueType.ToString
     name: ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   - name: (
   - name: )
 - uid: Luny.Alarm.ToString*
@@ -1419,6 +1823,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string

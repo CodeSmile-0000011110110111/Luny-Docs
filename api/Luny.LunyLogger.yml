@@ -359,6 +359,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -387,6 +388,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -404,6 +406,7 @@ references:
   commentId: T:System.Exception
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
   name: Exception
   nameWithType: Exception
   fullName: System.Exception
@@ -418,7 +421,7 @@ references:
   commentId: T:System.Collections.Generic.IReadOnlyList{Luny.LogEntry}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyList`1
-  href: Luny.LogEntry.html
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   name: IReadOnlyList<LogEntry>
   nameWithType: IReadOnlyList<LogEntry>
   fullName: System.Collections.Generic.IReadOnlyList<Luny.LogEntry>
@@ -429,6 +432,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: <
   - uid: Luny.LogEntry
     name: LogEntry
@@ -439,6 +443,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: (
   - name: Of
   - name: " "
@@ -450,6 +455,7 @@ references:
 - uid: System.Collections.Generic.IReadOnlyList`1
   commentId: T:System.Collections.Generic.IReadOnlyList`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   name: IReadOnlyList<T>
   nameWithType: IReadOnlyList<T>
   fullName: System.Collections.Generic.IReadOnlyList<T>
@@ -460,6 +466,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: <
   - name: T
   - name: '>'
@@ -467,6 +474,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: (
   - name: Of
   - name: " "
@@ -475,6 +483,7 @@ references:
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
@@ -482,26 +491,32 @@ references:
   - uid: System
     name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
   spec.vb:
   - uid: System
     name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Luny.LunyLogger.ClearInternalLog*
   commentId: Overload:Luny.LunyLogger.ClearInternalLog
   isExternal: true
@@ -542,6 +557,7 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool

@@ -5,11 +5,11 @@ items:
   id: TimerBuilderWhenExtensions
   parent: LunyScript.Api
   children:
-  - LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  - LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  - LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  - LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  - LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
   langs:
   - csharp
   - vb
@@ -25,17 +25,17 @@ items:
     content.vb: Public Module TimerBuilderWhenExtensions
   inheritance:
   - System.Object
-- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  id: WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  id: WhenStarted``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
   isExtensionMethod: true
   parent: LunyScript.Api.TimerBuilderWhenExtensions
   langs:
   - csharp
   - vb
-  name: WhenStarted<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType: TimerBuilderWhenExtensions.WhenStarted<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  name: WhenStarted<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType: TimerBuilderWhenExtensions.WhenStarted<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -43,32 +43,32 @@ items:
   summary: Blocks to run when the coroutine starts.
   example: []
   syntax:
-    content: 'public static CoroutineTimerBuilder<T> WhenStarted<T>(this CoroutineTimerBuilder<T> b, params ScriptActionBlock[] startedBlocks) where T : struct, ICoroutineTimerWhen'
+    content: 'public static CoroutineTimerBuilder<T> WhenStarted<T>(this CoroutineTimerBuilder<T> b, params ActionBlock[] startedBlocks) where T : struct, ICoroutineTimerWhen'
     parameters:
     - id: b
       type: LunyScript.Api.CoroutineTimerBuilder{{T}}
     - id: startedBlocks
-      type: LunyScript.Blocks.ScriptActionBlock[]
+      type: LunyScript.Blocks.ActionBlock[]
     typeParameters:
     - id: T
     return:
       type: LunyScript.Api.CoroutineTimerBuilder{{T}}
-    content.vb: Public Shared Function WhenStarted(Of T As {Structure, ICoroutineTimerWhen})(b As CoroutineTimerBuilder(Of T), ParamArray startedBlocks As ScriptActionBlock()) As CoroutineTimerBuilder(Of T)
+    content.vb: Public Shared Function WhenStarted(Of T As {Structure, ICoroutineTimerWhen})(b As CoroutineTimerBuilder(Of T), ParamArray startedBlocks As ActionBlock()) As CoroutineTimerBuilder(Of T)
   overload: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted*
-  nameWithType.vb: TimerBuilderWhenExtensions.WhenStarted(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: WhenStarted(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  id: WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  nameWithType.vb: TimerBuilderWhenExtensions.WhenStarted(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: WhenStarted(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  id: WhenStopped``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
   isExtensionMethod: true
   parent: LunyScript.Api.TimerBuilderWhenExtensions
   langs:
   - csharp
   - vb
-  name: WhenStopped<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType: TimerBuilderWhenExtensions.WhenStopped<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  name: WhenStopped<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType: TimerBuilderWhenExtensions.WhenStopped<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -76,32 +76,32 @@ items:
   summary: Blocks to run when the coroutine stops.
   example: []
   syntax:
-    content: 'public static CoroutineTimerBuilder<T> WhenStopped<T>(this CoroutineTimerBuilder<T> b, params ScriptActionBlock[] stoppedBlocks) where T : struct, ICoroutineTimerWhen'
+    content: 'public static CoroutineTimerBuilder<T> WhenStopped<T>(this CoroutineTimerBuilder<T> b, params ActionBlock[] stoppedBlocks) where T : struct, ICoroutineTimerWhen'
     parameters:
     - id: b
       type: LunyScript.Api.CoroutineTimerBuilder{{T}}
     - id: stoppedBlocks
-      type: LunyScript.Blocks.ScriptActionBlock[]
+      type: LunyScript.Blocks.ActionBlock[]
     typeParameters:
     - id: T
     return:
       type: LunyScript.Api.CoroutineTimerBuilder{{T}}
-    content.vb: Public Shared Function WhenStopped(Of T As {Structure, ICoroutineTimerWhen})(b As CoroutineTimerBuilder(Of T), ParamArray stoppedBlocks As ScriptActionBlock()) As CoroutineTimerBuilder(Of T)
+    content.vb: Public Shared Function WhenStopped(Of T As {Structure, ICoroutineTimerWhen})(b As CoroutineTimerBuilder(Of T), ParamArray stoppedBlocks As ActionBlock()) As CoroutineTimerBuilder(Of T)
   overload: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped*
-  nameWithType.vb: TimerBuilderWhenExtensions.WhenStopped(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: WhenStopped(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  id: WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  nameWithType.vb: TimerBuilderWhenExtensions.WhenStopped(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: WhenStopped(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  id: WhenPaused``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
   isExtensionMethod: true
   parent: LunyScript.Api.TimerBuilderWhenExtensions
   langs:
   - csharp
   - vb
-  name: WhenPaused<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType: TimerBuilderWhenExtensions.WhenPaused<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  name: WhenPaused<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType: TimerBuilderWhenExtensions.WhenPaused<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -109,32 +109,32 @@ items:
   summary: Blocks to run when the coroutine is paused.
   example: []
   syntax:
-    content: 'public static CoroutineTimerBuilder<T> WhenPaused<T>(this CoroutineTimerBuilder<T> b, params ScriptActionBlock[] pausedBlocks) where T : struct, ICoroutineTimerWhen'
+    content: 'public static CoroutineTimerBuilder<T> WhenPaused<T>(this CoroutineTimerBuilder<T> b, params ActionBlock[] pausedBlocks) where T : struct, ICoroutineTimerWhen'
     parameters:
     - id: b
       type: LunyScript.Api.CoroutineTimerBuilder{{T}}
     - id: pausedBlocks
-      type: LunyScript.Blocks.ScriptActionBlock[]
+      type: LunyScript.Blocks.ActionBlock[]
     typeParameters:
     - id: T
     return:
       type: LunyScript.Api.CoroutineTimerBuilder{{T}}
-    content.vb: Public Shared Function WhenPaused(Of T As {Structure, ICoroutineTimerWhen})(b As CoroutineTimerBuilder(Of T), ParamArray pausedBlocks As ScriptActionBlock()) As CoroutineTimerBuilder(Of T)
+    content.vb: Public Shared Function WhenPaused(Of T As {Structure, ICoroutineTimerWhen})(b As CoroutineTimerBuilder(Of T), ParamArray pausedBlocks As ActionBlock()) As CoroutineTimerBuilder(Of T)
   overload: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused*
-  nameWithType.vb: TimerBuilderWhenExtensions.WhenPaused(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: WhenPaused(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  id: WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  nameWithType.vb: TimerBuilderWhenExtensions.WhenPaused(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: WhenPaused(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  id: WhenResumed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
   isExtensionMethod: true
   parent: LunyScript.Api.TimerBuilderWhenExtensions
   langs:
   - csharp
   - vb
-  name: WhenResumed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType: TimerBuilderWhenExtensions.WhenResumed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  name: WhenResumed<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType: TimerBuilderWhenExtensions.WhenResumed<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -142,32 +142,32 @@ items:
   summary: Blocks to run when the coroutine is resumed.
   example: []
   syntax:
-    content: 'public static CoroutineTimerBuilder<T> WhenResumed<T>(this CoroutineTimerBuilder<T> b, params ScriptActionBlock[] resumedBlocks) where T : struct, ICoroutineTimerWhen'
+    content: 'public static CoroutineTimerBuilder<T> WhenResumed<T>(this CoroutineTimerBuilder<T> b, params ActionBlock[] resumedBlocks) where T : struct, ICoroutineTimerWhen'
     parameters:
     - id: b
       type: LunyScript.Api.CoroutineTimerBuilder{{T}}
     - id: resumedBlocks
-      type: LunyScript.Blocks.ScriptActionBlock[]
+      type: LunyScript.Blocks.ActionBlock[]
     typeParameters:
     - id: T
     return:
       type: LunyScript.Api.CoroutineTimerBuilder{{T}}
-    content.vb: Public Shared Function WhenResumed(Of T As {Structure, ICoroutineTimerWhen})(b As CoroutineTimerBuilder(Of T), ParamArray resumedBlocks As ScriptActionBlock()) As CoroutineTimerBuilder(Of T)
+    content.vb: Public Shared Function WhenResumed(Of T As {Structure, ICoroutineTimerWhen})(b As CoroutineTimerBuilder(Of T), ParamArray resumedBlocks As ActionBlock()) As CoroutineTimerBuilder(Of T)
   overload: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed*
-  nameWithType.vb: TimerBuilderWhenExtensions.WhenResumed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: WhenResumed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
-  id: WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ScriptActionBlock[])
+  nameWithType.vb: TimerBuilderWhenExtensions.WhenResumed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: WhenResumed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+- uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  id: WhenProcessed``1(LunyScript.Api.CoroutineTimerBuilder{``0},LunyScript.Blocks.ActionBlock[])
   isExtensionMethod: true
   parent: LunyScript.Api.TimerBuilderWhenExtensions
   langs:
   - csharp
   - vb
-  name: WhenProcessed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  nameWithType: TimerBuilderWhenExtensions.WhenProcessed<T>(CoroutineTimerBuilder<T>, params ScriptActionBlock[])
-  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ScriptActionBlock[])
+  name: WhenProcessed<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  nameWithType: TimerBuilderWhenExtensions.WhenProcessed<T>(CoroutineTimerBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed<T>(LunyScript.Api.CoroutineTimerBuilder<T>, params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -175,21 +175,21 @@ items:
   summary: Blocks to run when the coroutine is resumed.
   example: []
   syntax:
-    content: 'public static CoroutineTimerBuilder<T> WhenProcessed<T>(this CoroutineTimerBuilder<T> b, params ScriptActionBlock[] processBlocks) where T : struct, ICoroutineTimerWhen'
+    content: 'public static CoroutineTimerBuilder<T> WhenProcessed<T>(this CoroutineTimerBuilder<T> b, params ActionBlock[] processBlocks) where T : struct, ICoroutineTimerWhen'
     parameters:
     - id: b
       type: LunyScript.Api.CoroutineTimerBuilder{{T}}
     - id: processBlocks
-      type: LunyScript.Blocks.ScriptActionBlock[]
+      type: LunyScript.Blocks.ActionBlock[]
     typeParameters:
     - id: T
     return:
       type: LunyScript.Api.CoroutineTimerBuilder{{T}}
-    content.vb: Public Shared Function WhenProcessed(Of T As {Structure, ICoroutineTimerWhen})(b As CoroutineTimerBuilder(Of T), ParamArray processBlocks As ScriptActionBlock()) As CoroutineTimerBuilder(Of T)
+    content.vb: Public Shared Function WhenProcessed(Of T As {Structure, ICoroutineTimerWhen})(b As CoroutineTimerBuilder(Of T), ParamArray processBlocks As ActionBlock()) As CoroutineTimerBuilder(Of T)
   overload: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed*
-  nameWithType.vb: TimerBuilderWhenExtensions.WhenProcessed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: WhenProcessed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ScriptActionBlock())
+  nameWithType.vb: TimerBuilderWhenExtensions.WhenProcessed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed(Of T)(LunyScript.Api.CoroutineTimerBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: WhenProcessed(Of T)(CoroutineTimerBuilder(Of T), ParamArray ActionBlock())
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -231,13 +231,14 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
 - uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted*
   commentId: Overload:LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted
   isExternal: true
-  href: LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenStarted__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  href: LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenStarted__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
   name: WhenStarted
   nameWithType: TimerBuilderWhenExtensions.WhenStarted
   fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStarted
@@ -270,27 +271,27 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: LunyScript.Blocks.ScriptActionBlock[]
+- uid: LunyScript.Blocks.ActionBlock[]
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html
-  name: ScriptActionBlock[]
-  nameWithType: ScriptActionBlock[]
-  fullName: LunyScript.Blocks.ScriptActionBlock[]
-  nameWithType.vb: ScriptActionBlock()
-  fullName.vb: LunyScript.Blocks.ScriptActionBlock()
-  name.vb: ScriptActionBlock()
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock[]
+  nameWithType: ActionBlock[]
+  fullName: LunyScript.Blocks.ActionBlock[]
+  nameWithType.vb: ActionBlock()
+  fullName.vb: LunyScript.Blocks.ActionBlock()
+  name.vb: ActionBlock()
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
 - uid: LunyScript.Api.CoroutineTimerBuilder`1
@@ -324,28 +325,28 @@ references:
 - uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped*
   commentId: Overload:LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped
   isExternal: true
-  href: LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenStopped__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  href: LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenStopped__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
   name: WhenStopped
   nameWithType: TimerBuilderWhenExtensions.WhenStopped
   fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenStopped
 - uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused*
   commentId: Overload:LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused
   isExternal: true
-  href: LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenPaused__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  href: LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenPaused__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
   name: WhenPaused
   nameWithType: TimerBuilderWhenExtensions.WhenPaused
   fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenPaused
 - uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed*
   commentId: Overload:LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed
   isExternal: true
-  href: LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenResumed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  href: LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenResumed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
   name: WhenResumed
   nameWithType: TimerBuilderWhenExtensions.WhenResumed
   fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenResumed
 - uid: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed*
   commentId: Overload:LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed
   isExternal: true
-  href: LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenProcessed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ScriptActionBlock___
+  href: LunyScript.Api.TimerBuilderWhenExtensions.html#LunyScript_Api_TimerBuilderWhenExtensions_WhenProcessed__1_LunyScript_Api_CoroutineTimerBuilder___0__LunyScript_Blocks_ActionBlock___
   name: WhenProcessed
   nameWithType: TimerBuilderWhenExtensions.WhenProcessed
   fullName: LunyScript.Api.TimerBuilderWhenExtensions.WhenProcessed

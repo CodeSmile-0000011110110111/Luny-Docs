@@ -18,11 +18,15 @@ items:
   syntax:
     content: public readonly struct WhenInputActionBuilder
     content.vb: Public Structure WhenInputActionBuilder
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
   extensionMethods:
-  - LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Blocks.ScriptActionBlock[])
-  - LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Blocks.ScriptActionBlock[])
-  - LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Blocks.ScriptActionBlock[])
-  - LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Blocks.ActionBlock[])
   - LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.For(System.String)
 references:
 - uid: LunyScript.Api
@@ -52,22 +56,97 @@ references:
     name: Api
     isExternal: true
     href: LunyScript.Api.html
-- uid: LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  parent: LunyScript.Api.WhenInputActionBuilderExtensions
-  definition: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  name: Begins(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, params ScriptActionBlock[])
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Begins(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
   spec.csharp:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  parent: LunyScript.Api.WhenInputActionBuilderExtensions
+  definition: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  name: Begins(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, params ActionBlock[])
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Begins(WhenInputActionBuilder, ParamArray ActionBlock())
+  spec.csharp:
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Begins
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -77,18 +156,18 @@ references:
   - name: " "
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Begins
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -98,29 +177,29 @@ references:
   - name: " "
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+- uid: LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Api.WhenInputActionBuilderExtensions
-  definition: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  name: Changes(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, params ScriptActionBlock[])
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Changes(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+  definition: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  name: Changes(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, params ActionBlock[])
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Changes(WhenInputActionBuilder, ParamArray ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Changes
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -130,18 +209,18 @@ references:
   - name: " "
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Changes
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -151,29 +230,29 @@ references:
   - name: " "
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+- uid: LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Api.WhenInputActionBuilderExtensions
-  definition: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  name: Continues(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, params ScriptActionBlock[])
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Continues(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+  definition: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  name: Continues(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, params ActionBlock[])
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Continues(WhenInputActionBuilder, ParamArray ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Continues
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -183,18 +262,18 @@ references:
   - name: " "
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Continues
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -204,29 +283,29 @@ references:
   - name: " "
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+- uid: LunyScript.Api.WhenInputActionBuilder.LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Api.WhenInputActionBuilderExtensions
-  definition: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  name: Ends(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, params ScriptActionBlock[])
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Ends(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+  definition: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  name: Ends(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, params ActionBlock[])
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Ends(WhenInputActionBuilder, ParamArray ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Ends
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -236,18 +315,18 @@ references:
   - name: " "
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Ends
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -257,10 +336,10 @@ references:
   - name: " "
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
   - name: )
@@ -290,6 +369,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: LunyScript.Api.WhenInputActionBuilderExtensions.For(LunyScript.Api.WhenInputActionBuilder,System.String)
@@ -306,22 +386,31 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
   isExternal: true
-  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  name: Begins(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, params ScriptActionBlock[])
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Begins(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  isExternal: true
+  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  name: Begins(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, params ActionBlock[])
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Begins(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Begins(WhenInputActionBuilder, ParamArray ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Begins
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -331,18 +420,18 @@ references:
   - name: " "
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Begins(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Begins
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Begins_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -352,10 +441,10 @@ references:
   - name: " "
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
   - name: )
@@ -367,21 +456,21 @@ references:
   name: WhenInputActionBuilderExtensions
   nameWithType: WhenInputActionBuilderExtensions
   fullName: LunyScript.Api.WhenInputActionBuilderExtensions
-- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
   isExternal: true
-  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  name: Changes(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, params ScriptActionBlock[])
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Changes(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  name: Changes(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, params ActionBlock[])
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Changes(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Changes(WhenInputActionBuilder, ParamArray ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Changes
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -391,18 +480,18 @@ references:
   - name: " "
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Changes(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Changes
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Changes_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -412,28 +501,28 @@ references:
   - name: " "
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
   isExternal: true
-  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  name: Continues(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, params ScriptActionBlock[])
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Continues(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  name: Continues(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, params ActionBlock[])
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Continues(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Continues(WhenInputActionBuilder, ParamArray ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Continues
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -443,18 +532,18 @@ references:
   - name: " "
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Continues(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Continues
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Continues_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -464,28 +553,28 @@ references:
   - name: " "
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+- uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
   isExternal: true
-  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
-  name: Ends(WhenInputActionBuilder, params ScriptActionBlock[])
-  nameWithType: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, params ScriptActionBlock[])
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ScriptActionBlock[])
-  nameWithType.vb: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, ParamArray ScriptActionBlock())
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ScriptActionBlock())
-  name.vb: Ends(WhenInputActionBuilder, ParamArray ScriptActionBlock())
+  href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
+  name: Ends(WhenInputActionBuilder, params ActionBlock[])
+  nameWithType: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, params ActionBlock[])
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, params LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: WhenInputActionBuilderExtensions.Ends(WhenInputActionBuilder, ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder, ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Ends(WhenInputActionBuilder, ParamArray ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Ends
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -495,18 +584,18 @@ references:
   - name: " "
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ScriptActionBlock[])
+  - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Ends(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
     name: Ends
     isExternal: true
-    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ScriptActionBlock___
+    href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_Ends_LunyScript_Api_WhenInputActionBuilder_LunyScript_Blocks_ActionBlock___
   - name: (
   - uid: LunyScript.Api.WhenInputActionBuilder
     name: WhenInputActionBuilder
@@ -516,10 +605,10 @@ references:
   - name: " "
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )
   - name: )
@@ -548,6 +637,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: LunyScript.Api.WhenInputActionBuilderExtensions.For(LunyScript.Api.WhenInputActionBuilder,System.String)
@@ -564,4 +654,12 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

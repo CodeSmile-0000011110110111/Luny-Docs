@@ -1,6 +1,6 @@
 # LunyScript Manual
 
-LunyScript is a declarative, block-based scripting language to make game engine code more accessible, reliable, hot-reloadable, runtime-inspectable, and gamer-moddable.
+LunyScript is a declarative, block-based scripting language to make game engine code more accessible, reliable, hot-reloadable, runtime-inspectable, and gamer-moddable. It's made for **beginners**, **designers**, **artists**, and the **neurodiverse**. It's ideal for **rapid prototyping**, **reliable scripting** without boilerplate, and to quickly fill voids with **vivid details**.
 
 LunyEngine is the engine-agnostic developer SDK and portable foundation for LunyScript. The intention is to have LunyScript run in other engines, thereby providing a common interface and scripting language to all.
 
@@ -14,10 +14,13 @@ Development focus is on Unity initially.
 - Summer 2026: Alpha/Beta-Testing
 - Autumn 2026: Release v1.0
 
+Ports to Godot, Unreal, and other engines hinge on LunyScript's adoption by Unity developers.
+
 ## Getting Started
 
 - [Your First Luny Script](first-script-overview.md) 
-- Explore the [Scripting API](/api/) to discover the LunyEngine and LunyScript APIs.
+- [LunyScript API Overview](api-overview.md)
+- Explore the [Scripting API](/api/) reference of both LunyEngine and LunyScript.
 
 ## Links
 

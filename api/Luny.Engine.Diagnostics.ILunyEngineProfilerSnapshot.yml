@@ -138,7 +138,7 @@ references:
   commentId: T:System.Collections.Generic.IReadOnlyDictionary{Luny.LunyEngineLifecycleEvents,System.Collections.Generic.IReadOnlyList{Luny.Engine.Diagnostics.LunyObserverMetrics}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyDictionary`2
-  href: Luny.LunyEngineLifecycleEvents.html
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   name: IReadOnlyDictionary<LunyEngineLifecycleEvents, IReadOnlyList<LunyObserverMetrics>>
   nameWithType: IReadOnlyDictionary<LunyEngineLifecycleEvents, IReadOnlyList<LunyObserverMetrics>>
   fullName: System.Collections.Generic.IReadOnlyDictionary<Luny.LunyEngineLifecycleEvents, System.Collections.Generic.IReadOnlyList<Luny.Engine.Diagnostics.LunyObserverMetrics>>
@@ -149,6 +149,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   - name: <
   - uid: Luny.LunyEngineLifecycleEvents
     name: LunyEngineLifecycleEvents
@@ -159,6 +160,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: <
   - uid: Luny.Engine.Diagnostics.LunyObserverMetrics
     name: LunyObserverMetrics
@@ -170,6 +172,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   - name: (
   - name: Of
   - name: " "
@@ -182,6 +185,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyList`1
     name: IReadOnlyList
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: (
   - name: Of
   - name: " "
@@ -194,6 +198,7 @@ references:
 - uid: System.Collections.Generic.IReadOnlyDictionary`2
   commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   name: IReadOnlyDictionary<TKey, TValue>
   nameWithType: IReadOnlyDictionary<TKey, TValue>
   fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
@@ -204,6 +209,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   - name: <
   - name: TKey
   - name: ','
@@ -214,6 +220,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   - name: (
   - name: Of
   - name: " "
@@ -225,6 +232,7 @@ references:
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
@@ -232,26 +240,32 @@ references:
   - uid: System
     name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
   spec.vb:
   - uid: System
     name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp*
   commentId: Overload:Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp
   isExternal: true
@@ -263,6 +277,7 @@ references:
   commentId: T:System.DateTime
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
   name: DateTime
   nameWithType: DateTime
   fullName: System.DateTime
@@ -272,6 +287,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -286,6 +302,7 @@ references:
   commentId: T:System.Int64
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
   name: long
   nameWithType: long
   fullName: long

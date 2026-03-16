@@ -25,17 +25,17 @@ items:
   - LunyScript.Script
   inheritedMembers:
   - LunyScript.Script.Coroutine(System.String)
-  - LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
-  - LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+  - LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
+  - LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
   - LunyScript.Script.For(System.Int32)
   - LunyScript.Script.For(System.Int32,System.Int32)
-  - LunyScript.Script.Check(System.Func{System.Boolean})
   - LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
+  - LunyScript.Script.Check(System.Func{System.Boolean})
   - LunyScript.Script.Run(System.Action)
   - LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
-  - LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
-  - LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
-  - LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  - LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
+  - LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
+  - LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
   - LunyScript.Script.ToString
   - LunyScript.Script.Owner
   - LunyScript.Script.Name
@@ -154,6 +154,7 @@ references:
   commentId: M:LunyScript.Script.Coroutine(System.String)
   parent: LunyScript.Script
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: Coroutine(string)
   nameWithType: Script.Coroutine(string)
   fullName: LunyScript.Script.Coroutine(string)
@@ -168,6 +169,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: LunyScript.Script.Coroutine(System.String)
@@ -177,75 +179,76 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
-  commentId: M:LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+- uid: LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
+  commentId: M:LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
   parent: LunyScript.Script
   isExternal: true
-  name: If(params ScriptConditionBlock[])
-  nameWithType: Script.If(params ScriptConditionBlock[])
-  fullName: LunyScript.Script.If(params LunyScript.Blocks.ScriptConditionBlock[])
-  nameWithType.vb: Script.If(ParamArray ScriptConditionBlock())
-  fullName.vb: LunyScript.Script.If(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  name.vb: If(ParamArray ScriptConditionBlock())
+  name: If(params ConditionBlock[])
+  nameWithType: Script.If(params ConditionBlock[])
+  fullName: LunyScript.Script.If(params LunyScript.Blocks.ConditionBlock[])
+  nameWithType.vb: Script.If(ParamArray ConditionBlock())
+  fullName.vb: LunyScript.Script.If(ParamArray LunyScript.Blocks.ConditionBlock())
+  name.vb: If(ParamArray ConditionBlock())
   spec.csharp:
-  - uid: LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+  - uid: LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
     name: If
     isExternal: true
   - name: (
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Script.If(LunyScript.Blocks.ScriptConditionBlock[])
+  - uid: LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
     name: If
     isExternal: true
   - name: (
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
-  commentId: M:LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+- uid: LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
+  commentId: M:LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
   parent: LunyScript.Script
   isExternal: true
-  name: While(params ScriptConditionBlock[])
-  nameWithType: Script.While(params ScriptConditionBlock[])
-  fullName: LunyScript.Script.While(params LunyScript.Blocks.ScriptConditionBlock[])
-  nameWithType.vb: Script.While(ParamArray ScriptConditionBlock())
-  fullName.vb: LunyScript.Script.While(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  name.vb: While(ParamArray ScriptConditionBlock())
+  name: While(params ConditionBlock[])
+  nameWithType: Script.While(params ConditionBlock[])
+  fullName: LunyScript.Script.While(params LunyScript.Blocks.ConditionBlock[])
+  nameWithType.vb: Script.While(ParamArray ConditionBlock())
+  fullName.vb: LunyScript.Script.While(ParamArray LunyScript.Blocks.ConditionBlock())
+  name.vb: While(ParamArray ConditionBlock())
   spec.csharp:
-  - uid: LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+  - uid: LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
     name: While
     isExternal: true
   - name: (
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Script.While(LunyScript.Blocks.ScriptConditionBlock[])
+  - uid: LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
     name: While
     isExternal: true
   - name: (
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
   - name: (
   - name: )
@@ -254,6 +257,7 @@ references:
   commentId: M:LunyScript.Script.For(System.Int32)
   parent: LunyScript.Script
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: For(int)
   nameWithType: Script.For(int)
   fullName: LunyScript.Script.For(int)
@@ -268,6 +272,7 @@ references:
   - uid: System.Int32
     name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
   - uid: LunyScript.Script.For(System.Int32)
@@ -277,11 +282,13 @@ references:
   - uid: System.Int32
     name: Integer
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: LunyScript.Script.For(System.Int32,System.Int32)
   commentId: M:LunyScript.Script.For(System.Int32,System.Int32)
   parent: LunyScript.Script
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: For(int, int)
   nameWithType: Script.For(int, int)
   fullName: LunyScript.Script.For(int, int)
@@ -296,11 +303,13 @@ references:
   - uid: System.Int32
     name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
   - uid: System.Int32
     name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
   - uid: LunyScript.Script.For(System.Int32,System.Int32)
@@ -310,56 +319,19 @@ references:
   - uid: System.Int32
     name: Integer
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
   - uid: System.Int32
     name: Integer
     isExternal: true
-  - name: )
-- uid: LunyScript.Script.Check(System.Func{System.Boolean})
-  commentId: M:LunyScript.Script.Check(System.Func{System.Boolean})
-  parent: LunyScript.Script
-  isExternal: true
-  name: Check(Func<bool>)
-  nameWithType: Script.Check(Func<bool>)
-  fullName: LunyScript.Script.Check(System.Func<bool>)
-  nameWithType.vb: Script.Check(Func(Of Boolean))
-  fullName.vb: LunyScript.Script.Check(System.Func(Of Boolean))
-  name.vb: Check(Func(Of Boolean))
-  spec.csharp:
-  - uid: LunyScript.Script.Check(System.Func{System.Boolean})
-    name: Check
-    isExternal: true
-  - name: (
-  - uid: System.Func`1
-    name: Func
-    isExternal: true
-  - name: <
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-  - name: '>'
-  - name: )
-  spec.vb:
-  - uid: LunyScript.Script.Check(System.Func{System.Boolean})
-    name: Check
-    isExternal: true
-  - name: (
-  - uid: System.Func`1
-    name: Func
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-  - name: )
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   commentId: M:LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   parent: LunyScript.Script
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
   name: Check(Func<IScriptRuntimeContext, bool>)
   nameWithType: Script.Check(Func<IScriptRuntimeContext, bool>)
   fullName: LunyScript.Script.Check(System.Func<LunyScript.IScriptRuntimeContext, bool>)
@@ -374,6 +346,7 @@ references:
   - uid: System.Func`2
     name: Func
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: <
   - uid: LunyScript.IScriptRuntimeContext
     name: IScriptRuntimeContext
@@ -383,6 +356,7 @@ references:
   - uid: System.Boolean
     name: bool
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'
   - name: )
   spec.vb:
@@ -393,6 +367,7 @@ references:
   - uid: System.Func`2
     name: Func
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
   - name: (
   - name: Of
   - name: " "
@@ -404,12 +379,59 @@ references:
   - uid: System.Boolean
     name: Boolean
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: LunyScript.Script.Check(System.Func{System.Boolean})
+  commentId: M:LunyScript.Script.Check(System.Func{System.Boolean})
+  parent: LunyScript.Script
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Check(Func<bool>)
+  nameWithType: Script.Check(Func<bool>)
+  fullName: LunyScript.Script.Check(System.Func<bool>)
+  nameWithType.vb: Script.Check(Func(Of Boolean))
+  fullName.vb: LunyScript.Script.Check(System.Func(Of Boolean))
+  name.vb: Check(Func(Of Boolean))
+  spec.csharp:
+  - uid: LunyScript.Script.Check(System.Func{System.Boolean})
+    name: Check
+    isExternal: true
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: LunyScript.Script.Check(System.Func{System.Boolean})
+    name: Check
+    isExternal: true
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
   - name: )
 - uid: LunyScript.Script.Run(System.Action)
   commentId: M:LunyScript.Script.Run(System.Action)
   parent: LunyScript.Script
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
   name: Run(Action)
   nameWithType: Script.Run(Action)
   fullName: LunyScript.Script.Run(System.Action)
@@ -421,6 +443,7 @@ references:
   - uid: System.Action
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
   - name: )
   spec.vb:
   - uid: LunyScript.Script.Run(System.Action)
@@ -430,11 +453,13 @@ references:
   - uid: System.Action
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
   - name: )
 - uid: LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
   commentId: M:LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
   parent: LunyScript.Script
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
   name: Run(Action<IScriptRuntimeContext>)
   nameWithType: Script.Run(Action<IScriptRuntimeContext>)
   fullName: LunyScript.Script.Run(System.Action<LunyScript.IScriptRuntimeContext>)
@@ -449,6 +474,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: <
   - uid: LunyScript.IScriptRuntimeContext
     name: IScriptRuntimeContext
@@ -463,6 +489,7 @@ references:
   - uid: System.Action`1
     name: Action
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
   - name: (
   - name: Of
   - name: " "
@@ -471,101 +498,101 @@ references:
     isExternal: true
   - name: )
   - name: )
-- uid: LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
-  commentId: M:LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+- uid: LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
+  commentId: M:LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
   parent: LunyScript.Script
   isExternal: true
-  name: AND(params ScriptConditionBlock[])
-  nameWithType: Script.AND(params ScriptConditionBlock[])
-  fullName: LunyScript.Script.AND(params LunyScript.Blocks.ScriptConditionBlock[])
-  nameWithType.vb: Script.AND(ParamArray ScriptConditionBlock())
-  fullName.vb: LunyScript.Script.AND(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  name.vb: AND(ParamArray ScriptConditionBlock())
+  name: AND(params ConditionBlock[])
+  nameWithType: Script.AND(params ConditionBlock[])
+  fullName: LunyScript.Script.AND(params LunyScript.Blocks.ConditionBlock[])
+  nameWithType.vb: Script.AND(ParamArray ConditionBlock())
+  fullName.vb: LunyScript.Script.AND(ParamArray LunyScript.Blocks.ConditionBlock())
+  name.vb: AND(ParamArray ConditionBlock())
   spec.csharp:
-  - uid: LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+  - uid: LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
     name: AND
     isExternal: true
   - name: (
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Script.AND(LunyScript.Blocks.ScriptConditionBlock[])
+  - uid: LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
     name: AND
     isExternal: true
   - name: (
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
-  commentId: M:LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+- uid: LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
+  commentId: M:LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
   parent: LunyScript.Script
   isExternal: true
-  name: OR(params ScriptConditionBlock[])
-  nameWithType: Script.OR(params ScriptConditionBlock[])
-  fullName: LunyScript.Script.OR(params LunyScript.Blocks.ScriptConditionBlock[])
-  nameWithType.vb: Script.OR(ParamArray ScriptConditionBlock())
-  fullName.vb: LunyScript.Script.OR(ParamArray LunyScript.Blocks.ScriptConditionBlock())
-  name.vb: OR(ParamArray ScriptConditionBlock())
+  name: OR(params ConditionBlock[])
+  nameWithType: Script.OR(params ConditionBlock[])
+  fullName: LunyScript.Script.OR(params LunyScript.Blocks.ConditionBlock[])
+  nameWithType.vb: Script.OR(ParamArray ConditionBlock())
+  fullName.vb: LunyScript.Script.OR(ParamArray LunyScript.Blocks.ConditionBlock())
+  name.vb: OR(ParamArray ConditionBlock())
   spec.csharp:
-  - uid: LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+  - uid: LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
     name: OR
     isExternal: true
   - name: (
   - name: params
   - name: " "
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
   - name: '['
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Script.OR(LunyScript.Blocks.ScriptConditionBlock[])
+  - uid: LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
     name: OR
     isExternal: true
   - name: (
   - name: ParamArray
   - name: " "
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
-  commentId: M:LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+- uid: LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
+  commentId: M:LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
   parent: LunyScript.Script
   isExternal: true
-  name: NOT(ScriptConditionBlock)
-  nameWithType: Script.NOT(ScriptConditionBlock)
-  fullName: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  name: NOT(ConditionBlock)
+  nameWithType: Script.NOT(ConditionBlock)
+  fullName: LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
   spec.csharp:
-  - uid: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  - uid: LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
     name: NOT
     isExternal: true
   - name: (
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
   - name: )
   spec.vb:
-  - uid: LunyScript.Script.NOT(LunyScript.Blocks.ScriptConditionBlock)
+  - uid: LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
     name: NOT
     isExternal: true
   - name: (
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
   - name: )
 - uid: LunyScript.Script.ToString
@@ -702,6 +729,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System

@@ -24,8 +24,8 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
-  - LunyScript.Blocks.ScriptActionBlock
-  - LunyScript.Blocks.ScriptConditionBlock
+  - LunyScript.Blocks.ActionBlock
+  - LunyScript.Blocks.ConditionBlock
   implements:
   - LunyScript.Blocks.IScriptBlock
 - uid: LunyScript.Blocks.ScriptBlock.#ctor
@@ -98,6 +98,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System

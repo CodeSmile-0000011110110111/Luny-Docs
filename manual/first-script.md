@@ -1,6 +1,6 @@
 ﻿# Your first Luny Script in Unity
 
-**Goal**: You want to create a controllable capsule as your first "Player" in a blank scene.
+**Goal**: You want to create a controllable capsule as your first "Player" in a blank scene, using LunyScript.
 
 ## LunyScript Implementation
 
@@ -27,7 +27,7 @@ public partial class Player : Script
 }
 ```
 
-**That's just 13 lines! 😎** It's 4 times less than MonoBehaviour, and 2.77 times less than GDScript.
+**At 13 lines, it's 4 times less than [MonoBehaviour](first-script-unity.md) and 2.77 times less than [GDScript](first-script-godot.md)!** 😎
 
 Enter playmode and try it.
 
@@ -38,7 +38,7 @@ Inspector assignment of Luny scripts is optional.
 By default, a Luny script will run for any object in the active scene that matches the script's class name.
 A LunyScript class named "Player" will run for the object named "Player".
 
-In future there will be options to:
+There will be options to:
 
 - Relax the class name vs object name match:
   - disable strict upper-/lowercase matching (eg runs on "player")

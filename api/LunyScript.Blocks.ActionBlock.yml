@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Blocks.ActionBlock
+  commentId: T:LunyScript.Blocks.ActionBlock
+  id: ActionBlock
+  parent: LunyScript.Blocks
+  children:
+  - LunyScript.Blocks.ActionBlock.#ctor
+  - LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  - LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  langs:
+  - csharp
+  - vb
+  name: ActionBlock
+  nameWithType: ActionBlock
+  fullName: LunyScript.Blocks.ActionBlock
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Abstract base for action blocks that perform an action that may alter game state.
+  example: []
+  syntax:
+    content: 'public abstract class ActionBlock : ScriptBlock, IScriptBlock'
+    content.vb: Public MustInherit Class ActionBlock Inherits ScriptBlock Implements IScriptBlock
+  inheritance:
+  - System.Object
+  - LunyScript.Blocks.ScriptBlock
+  derivedClasses:
+  - LunyScript.Blocks.IfBlock
+  - LunyScript.Blocks.SequenceBlock
+  - LunyScript.Blocks.TransformInterpolateBlock
+  - LunyScript.Blocks.TransformPositionMoveByBlock
+  - LunyScript.Blocks.TransformPositionMoveRelativeBlock
+  - LunyScript.Blocks.TransformPositionSetLocalBlock
+  - LunyScript.Blocks.TransformPositionSetWorldBlock
+  - LunyScript.Blocks.TransformRotationLookAtBlock
+  - LunyScript.Blocks.TransformRotationSetLocalBlock
+  - LunyScript.Blocks.TransformRotationSetWorldBlock
+  - LunyScript.Blocks.TransformScaleSetLocalBlock
+  implements:
+  - LunyScript.Blocks.IScriptBlock
+- uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  id: IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  parent: LunyScript.Blocks.ActionBlock
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrEmpty(ActionBlock[])
+  nameWithType: ActionBlock.IsNullOrEmpty(ActionBlock[])
+  fullName: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public static bool IsNullOrEmpty(ActionBlock[] blocks)
+    parameters:
+    - id: blocks
+      type: LunyScript.Blocks.ActionBlock[]
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsNullOrEmpty(blocks As ActionBlock()) As Boolean
+  overload: LunyScript.Blocks.ActionBlock.IsNullOrEmpty*
+  nameWithType.vb: ActionBlock.IsNullOrEmpty(ActionBlock())
+  fullName.vb: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock())
+  name.vb: IsNullOrEmpty(ActionBlock())
+- uid: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  commentId: M:LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  id: Execute(LunyScript.IScriptRuntimeContext)
+  parent: LunyScript.Blocks.ActionBlock
+  langs:
+  - csharp
+  - vb
+  name: Execute(IScriptRuntimeContext)
+  nameWithType: ActionBlock.Execute(IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.ActionBlock.Execute(LunyScript.IScriptRuntimeContext)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: protected abstract void Execute(IScriptRuntimeContext runtimeContext)
+    parameters:
+    - id: runtimeContext
+      type: LunyScript.IScriptRuntimeContext
+    content.vb: Protected MustOverride Sub Execute(runtimeContext As IScriptRuntimeContext)
+  overload: LunyScript.Blocks.ActionBlock.Execute*
+- uid: LunyScript.Blocks.ActionBlock.#ctor
+  commentId: M:LunyScript.Blocks.ActionBlock.#ctor
+  id: '#ctor'
+  parent: LunyScript.Blocks.ActionBlock
+  langs:
+  - csharp
+  - vb
+  name: ActionBlock()
+  nameWithType: ActionBlock.ActionBlock()
+  fullName: LunyScript.Blocks.ActionBlock.ActionBlock()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: protected ActionBlock()
+    content.vb: Protected Sub New()
+  overload: LunyScript.Blocks.ActionBlock.#ctor*
+  nameWithType.vb: ActionBlock.New()
+  fullName.vb: LunyScript.Blocks.ActionBlock.New()
+  name.vb: New()
+references:
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: LunyScript.Blocks.ScriptBlock
+  commentId: T:LunyScript.Blocks.ScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptBlock.html
+  name: ScriptBlock
+  nameWithType: ScriptBlock
+  fullName: LunyScript.Blocks.ScriptBlock
+- uid: LunyScript.Blocks.IScriptBlock
+  commentId: T:LunyScript.Blocks.IScriptBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.IScriptBlock.html
+  name: IScriptBlock
+  nameWithType: IScriptBlock
+  fullName: LunyScript.Blocks.IScriptBlock
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty*
+  commentId: Overload:LunyScript.Blocks.ActionBlock.IsNullOrEmpty
+  isExternal: true
+  href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___
+  name: IsNullOrEmpty
+  nameWithType: ActionBlock.IsNullOrEmpty
+  fullName: LunyScript.Blocks.ActionBlock.IsNullOrEmpty
+- uid: LunyScript.Blocks.ActionBlock[]
+  isExternal: true
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock[]
+  nameWithType: ActionBlock[]
+  fullName: LunyScript.Blocks.ActionBlock[]
+  nameWithType.vb: ActionBlock()
+  fullName.vb: LunyScript.Blocks.ActionBlock()
+  name.vb: ActionBlock()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ActionBlock.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ActionBlock.html
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: LunyScript.Blocks.ActionBlock.Execute*
+  commentId: Overload:LunyScript.Blocks.ActionBlock.Execute
+  isExternal: true
+  href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_Execute_LunyScript_IScriptRuntimeContext_
+  name: Execute
+  nameWithType: ActionBlock.Execute
+  fullName: LunyScript.Blocks.ActionBlock.Execute
+- uid: LunyScript.IScriptRuntimeContext
+  commentId: T:LunyScript.IScriptRuntimeContext
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.IScriptRuntimeContext.html
+  name: IScriptRuntimeContext
+  nameWithType: IScriptRuntimeContext
+  fullName: LunyScript.IScriptRuntimeContext
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: LunyScript.Blocks.ActionBlock.#ctor*
+  commentId: Overload:LunyScript.Blocks.ActionBlock.#ctor
+  isExternal: true
+  href: LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock__ctor
+  name: ActionBlock
+  nameWithType: ActionBlock.ActionBlock
+  fullName: LunyScript.Blocks.ActionBlock.ActionBlock
+  nameWithType.vb: ActionBlock.New
+  fullName.vb: LunyScript.Blocks.ActionBlock.New
+  name.vb: New

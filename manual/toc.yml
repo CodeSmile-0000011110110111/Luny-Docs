@@ -9,7 +9,7 @@
     href: first-script-unity.md
   - name: Compared with GDScript (Godot 4.x)
     href: first-script-godot.md
-- name: API Overview
+- name: LunyScript API Overview
   href: api-overview.md
   items:
     - name: Events
@@ -22,10 +22,16 @@
     - name: Variables
       href: api-variables.md
       items:
-      - name: Number
-        href: api-numbers.md
-      - name: Table
-        href: api-table.md
+      - name: Variable Arithmetics
+        href: api-variables-arithmetics.md
+      - name: Variable Comparisons
+        href: api-variables-comparisons.md
+      - name: Number - Numeric Value Union
+        href: api-variables-number.md
+      - name: Table - One Collection Fits All
+        href: api-variables-table.md
+      - name: LunyVector, LunyQuaternion, etc.
+        href: api-variables-lunytypes.md
     - name: Assets
       href: api-assets.md
     - name: Object API
@@ -50,7 +56,7 @@
       href: api-input.md
       items:
       - name: Local Multiplayer
-        href: api-input-local-multiplayer.md
+        href: api-input-multiplayer.md
     - name: Debug API
       href: api-debug.md
     - name: Scene API

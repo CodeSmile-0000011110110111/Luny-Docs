@@ -457,6 +457,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -641,6 +642,7 @@ references:
   commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.Type,System.String[]}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   name: IReadOnlyDictionary<Type, string[]>
   nameWithType: IReadOnlyDictionary<Type, string[]>
   fullName: System.Collections.Generic.IReadOnlyDictionary<System.Type, string[]>
@@ -651,15 +653,18 @@ references:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   - name: <
   - uid: System.Type
     name: Type
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
   - name: ','
   - name: " "
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
   - name: ']'
   - name: '>'
@@ -667,23 +672,27 @@ references:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   - name: (
   - name: Of
   - name: " "
   - uid: System.Type
     name: Type
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
   - name: ','
   - name: " "
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
   - name: )
   - name: )
 - uid: System.Collections.Generic.IReadOnlyDictionary`2
   commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   name: IReadOnlyDictionary<TKey, TValue>
   nameWithType: IReadOnlyDictionary<TKey, TValue>
   fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
@@ -694,6 +703,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   - name: <
   - name: TKey
   - name: ','
@@ -704,6 +714,7 @@ references:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
     name: IReadOnlyDictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
   - name: (
   - name: Of
   - name: " "
@@ -715,6 +726,7 @@ references:
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
@@ -722,26 +734,32 @@ references:
   - uid: System
     name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
   spec.vb:
   - uid: System
     name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
   - uid: System.Collections
     name: Collections
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
   - name: .
   - uid: System.Collections.Generic
     name: Generic
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Luny.Engine.Services.LunyAssetServiceBase.GetPlaceholder*
   commentId: Overload:Luny.Engine.Services.LunyAssetServiceBase.GetPlaceholder
   isExternal: true

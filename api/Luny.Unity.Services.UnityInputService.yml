@@ -381,6 +381,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: GetDirection(string)
   nameWithType: LunyInputServiceBase.GetDirection(string)
   fullName: Luny.Engine.Services.LunyInputServiceBase.GetDirection(string)
@@ -395,6 +396,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)
@@ -404,11 +406,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: GetRotation(string)
   nameWithType: LunyInputServiceBase.GetRotation(string)
   fullName: Luny.Engine.Services.LunyInputServiceBase.GetRotation(string)
@@ -423,6 +427,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
@@ -432,11 +437,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: GetRotation(string, LunyVector3)
   nameWithType: LunyInputServiceBase.GetRotation(string, LunyVector3)
   fullName: Luny.Engine.Services.LunyInputServiceBase.GetRotation(string, Luny.Engine.Bridge.LunyVector3)
@@ -451,6 +458,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
@@ -465,6 +473,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
@@ -475,6 +484,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: GetAxis(string)
   nameWithType: LunyInputServiceBase.GetAxis(string)
   fullName: Luny.Engine.Services.LunyInputServiceBase.GetAxis(string)
@@ -489,6 +499,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)
@@ -498,11 +509,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: GetButtonStrength(string)
   nameWithType: LunyInputServiceBase.GetButtonStrength(string)
   fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(string)
@@ -517,6 +530,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
@@ -526,11 +540,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: GetButtonPressed(string)
   nameWithType: LunyInputServiceBase.GetButtonPressed(string)
   fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(string)
@@ -545,6 +561,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
@@ -554,11 +571,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: GetButtonJustPressed(string)
   nameWithType: LunyInputServiceBase.GetButtonJustPressed(string)
   fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(string)
@@ -573,6 +592,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
@@ -582,6 +602,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.OnInputAction
   commentId: E:Luny.Engine.Services.LunyInputServiceBase.OnInputAction
@@ -593,6 +614,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -637,6 +659,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: UnassignUser(string)
   nameWithType: LunyInputServiceBase.UnassignUser(string)
   fullName: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(string)
@@ -651,6 +674,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)
@@ -660,6 +684,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Unity.Services.UnityInputService.UnassignUser*
   commentId: Overload:Luny.Unity.Services.UnityInputService.UnassignUser
@@ -672,6 +697,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -682,6 +708,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: IsUserPairedWithDevice(string, int)
   nameWithType: LunyInputServiceBase.IsUserPairedWithDevice(string, int)
   fullName: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(string, int)
@@ -696,11 +723,13 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
     name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)
@@ -710,11 +739,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
     name: Integer
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: Luny.Unity.Services.UnityInputService.IsUserPairedWithDevice*
   commentId: Overload:Luny.Unity.Services.UnityInputService.IsUserPairedWithDevice
@@ -727,6 +758,7 @@ references:
   commentId: T:System.Int32
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: int
   nameWithType: int
   fullName: int
@@ -737,6 +769,7 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool
@@ -747,6 +780,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: EnableInputAction(string, bool)
   nameWithType: LunyInputServiceBase.EnableInputAction(string, bool)
   fullName: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(string, bool)
@@ -761,11 +795,13 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Boolean
     name: bool
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
   spec.vb:
   - uid: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)
@@ -775,11 +811,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Boolean
     name: Boolean
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
 - uid: Luny.Unity.Services.UnityInputService.EnableInputAction*
   commentId: Overload:Luny.Unity.Services.UnityInputService.EnableInputAction
@@ -792,6 +830,7 @@ references:
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: AssignUserToLastDevice(string, int, ILunyObject)
   nameWithType: LunyInputServiceBase.AssignUserToLastDevice(string, int, ILunyObject)
   fullName: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(string, int, Luny.Engine.Bridge.ILunyObject)
@@ -806,11 +845,13 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
     name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.ILunyObject
@@ -825,11 +866,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
     name: Integer
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
   - uid: Luny.Engine.Bridge.ILunyObject
@@ -905,6 +948,7 @@ references:
   fullName: Luny.Engine.Bridge.LunyInputUserProfile
 - uid: System.String[]
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string[]
   nameWithType: string[]
   fullName: string[]
@@ -915,18 +959,21 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
   - name: ']'
   spec.vb:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
   - name: )
 - uid: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])
   parent: Luny.Engine.Services.LunyInputServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: SetControlSchemes(params string[])
   nameWithType: LunyInputServiceBase.SetControlSchemes(params string[])
   fullName: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(params string[])
@@ -943,6 +990,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
   - name: ']'
   - name: )
@@ -956,6 +1004,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
   - name: )
   - name: )

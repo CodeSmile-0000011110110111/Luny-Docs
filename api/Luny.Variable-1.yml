@@ -32,10 +32,12 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public readonly struct Variable<T>
+    content: 'public readonly struct Variable<T> : IEquatable<Variable<T>>'
     typeParameters:
     - id: T
-    content.vb: Public Structure Variable(Of T)
+    content.vb: Public Structure Variable(Of T) Implements IEquatable(Of Variable(Of T))
+  implements:
+  - System.IEquatable{Luny.Variable`1}
   nameWithType.vb: Variable(Of T)
   fullName.vb: Luny.Variable(Of T)
   name.vb: Variable(Of T)
@@ -197,6 +199,8 @@ items:
       type: System.Boolean
     content.vb: Public Function Equals(other As Variable(Of T)) As Boolean
   overload: Luny.Variable`1.Equals*
+  implements:
+  - System.IEquatable{Luny.Variable`1}.Equals(Luny.Variable{{T}})
   nameWithType.vb: Variable(Of T).Equals(Variable(Of T))
   fullName.vb: Luny.Variable(Of T).Equals(Luny.Variable(Of T))
   name.vb: Equals(Variable(Of T))
@@ -438,6 +442,84 @@ references:
   name: Luny
   nameWithType: Luny
   fullName: Luny
+- uid: System.IEquatable{Luny.Variable`1}
+  commentId: T:System.IEquatable{Luny.Variable`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Variable<T>>
+  nameWithType: IEquatable<Variable<T>>
+  fullName: System.IEquatable<Luny.Variable<T>>
+  nameWithType.vb: IEquatable(Of Variable(Of T))
+  fullName.vb: System.IEquatable(Of Luny.Variable(Of T))
+  name.vb: IEquatable(Of Variable(Of T))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Luny.Variable`1
+    name: Variable
+    isExternal: true
+    href: Luny.Variable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Luny.Variable`1
+    name: Variable
+    isExternal: true
+    href: Luny.Variable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: Luny.Variable`1.#ctor*
   commentId: Overload:Luny.Variable`1.#ctor
   isExternal: true
@@ -471,18 +553,13 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Luny.Variable`1.AsDouble*
   commentId: Overload:Luny.Variable`1.AsDouble
   isExternal: true
@@ -496,6 +573,7 @@ references:
   commentId: T:System.Double
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
   name: double
   nameWithType: double
   fullName: double
@@ -515,6 +593,7 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -601,6 +680,47 @@ references:
   fullName: Luny.Variable<T>.Equals
   nameWithType.vb: Variable(Of T).Equals
   fullName.vb: Luny.Variable(Of T).Equals
+- uid: System.IEquatable{Luny.Variable`1}.Equals(Luny.Variable{{T}})
+  commentId: M:System.IEquatable{Luny.Variable`1}.Equals(Luny.Variable{`0})
+  parent: System.IEquatable{Luny.Variable`1}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Variable<T>)
+  nameWithType: IEquatable<Variable<T>>.Equals(Variable<T>)
+  fullName: System.IEquatable<Luny.Variable<T>>.Equals(Luny.Variable<T>)
+  nameWithType.vb: IEquatable(Of Variable(Of T)).Equals(Variable(Of T))
+  fullName.vb: System.IEquatable(Of Luny.Variable(Of T)).Equals(Luny.Variable(Of T))
+  name.vb: Equals(Variable(Of T))
+  spec.csharp:
+  - uid: System.IEquatable{Luny.Variable`1}.Equals(Luny.Variable{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Luny.Variable`1
+    name: Variable
+    isExternal: true
+    href: Luny.Variable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Luny.Variable`1}.Equals(Luny.Variable{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Luny.Variable`1
+    name: Variable
+    isExternal: true
+    href: Luny.Variable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
 - uid: Luny.Variable`1
   commentId: T:Luny.Variable`1
   parent: Luny
@@ -630,10 +750,36 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
 - uid: System.ValueType.Equals(System.Object)
   commentId: M:System.ValueType.Equals(System.Object)
   parent: System.ValueType
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   name: Equals(object)
   nameWithType: ValueType.Equals(object)
   fullName: System.ValueType.Equals(object)
@@ -644,6 +790,7 @@ references:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
     name: object
@@ -653,6 +800,7 @@ references:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
     name: Object
@@ -672,6 +820,7 @@ references:
   commentId: T:System.ValueType
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
   name: ValueType
   nameWithType: ValueType
   fullName: System.ValueType
@@ -679,6 +828,7 @@ references:
   commentId: M:System.ValueType.GetHashCode
   parent: System.ValueType
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
   name: GetHashCode()
   nameWithType: ValueType.GetHashCode()
   fullName: System.ValueType.GetHashCode()
@@ -686,12 +836,14 @@ references:
   - uid: System.ValueType.GetHashCode
     name: GetHashCode
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
   - name: (
   - name: )
   spec.vb:
   - uid: System.ValueType.GetHashCode
     name: GetHashCode
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
   - name: (
   - name: )
 - uid: Luny.Variable`1.GetHashCode*
@@ -707,6 +859,7 @@ references:
   commentId: T:System.Int32
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
   name: int
   nameWithType: int
   fullName: int
@@ -763,6 +916,7 @@ references:
   commentId: M:System.ValueType.ToString
   parent: System.ValueType
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   name: ToString()
   nameWithType: ValueType.ToString()
   fullName: System.ValueType.ToString()
@@ -770,12 +924,14 @@ references:
   - uid: System.ValueType.ToString
     name: ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   - name: (
   - name: )
   spec.vb:
   - uid: System.ValueType.ToString
     name: ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
   - name: (
   - name: )
 - uid: Luny.Variable`1.ToString*

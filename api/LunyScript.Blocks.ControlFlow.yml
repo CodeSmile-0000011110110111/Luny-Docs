@@ -5,8 +5,8 @@ items:
   id: ControlFlow
   parent: LunyScript.Blocks
   children:
-  - LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptConditionBlock[])
-  - LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptActionBlock[])
+  - LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ConditionBlock[])
+  - LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ActionBlock[])
   langs:
   - csharp
   - vb
@@ -22,60 +22,60 @@ items:
     content.vb: Public Module ControlFlow
   inheritance:
   - System.Object
-- uid: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptConditionBlock[])
-  commentId: M:LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptConditionBlock[])
-  id: EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptConditionBlock[])
+- uid: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ConditionBlock[])
+  commentId: M:LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ConditionBlock[])
+  id: EvaluateAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ConditionBlock[])
   parent: LunyScript.Blocks.ControlFlow
   langs:
   - csharp
   - vb
-  name: EvaluateAll(IScriptRuntimeContext, ScriptConditionBlock[])
-  nameWithType: ControlFlow.EvaluateAll(IScriptRuntimeContext, ScriptConditionBlock[])
-  fullName: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ScriptConditionBlock[])
+  name: EvaluateAll(IScriptRuntimeContext, ConditionBlock[])
+  nameWithType: ControlFlow.EvaluateAll(IScriptRuntimeContext, ConditionBlock[])
+  fullName: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ConditionBlock[])
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static bool EvaluateAll(IScriptRuntimeContext runtimeContext, ScriptConditionBlock[] conditions)
+    content: public static bool EvaluateAll(IScriptRuntimeContext runtimeContext, ConditionBlock[] conditions)
     parameters:
     - id: runtimeContext
       type: LunyScript.IScriptRuntimeContext
     - id: conditions
-      type: LunyScript.Blocks.ScriptConditionBlock[]
+      type: LunyScript.Blocks.ConditionBlock[]
     return:
       type: System.Boolean
-    content.vb: Public Shared Function EvaluateAll(runtimeContext As IScriptRuntimeContext, conditions As ScriptConditionBlock()) As Boolean
+    content.vb: Public Shared Function EvaluateAll(runtimeContext As IScriptRuntimeContext, conditions As ConditionBlock()) As Boolean
   overload: LunyScript.Blocks.ControlFlow.EvaluateAll*
-  nameWithType.vb: ControlFlow.EvaluateAll(IScriptRuntimeContext, ScriptConditionBlock())
-  fullName.vb: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ScriptConditionBlock())
-  name.vb: EvaluateAll(IScriptRuntimeContext, ScriptConditionBlock())
-- uid: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptActionBlock[])
-  commentId: M:LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptActionBlock[])
-  id: ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ScriptActionBlock[])
+  nameWithType.vb: ControlFlow.EvaluateAll(IScriptRuntimeContext, ConditionBlock())
+  fullName.vb: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ConditionBlock())
+  name.vb: EvaluateAll(IScriptRuntimeContext, ConditionBlock())
+- uid: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ActionBlock[])
+  id: ExecuteAll(LunyScript.IScriptRuntimeContext,LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Blocks.ControlFlow
   langs:
   - csharp
   - vb
-  name: ExecuteAll(IScriptRuntimeContext, ScriptActionBlock[])
-  nameWithType: ControlFlow.ExecuteAll(IScriptRuntimeContext, ScriptActionBlock[])
-  fullName: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ScriptActionBlock[])
+  name: ExecuteAll(IScriptRuntimeContext, ActionBlock[])
+  nameWithType: ControlFlow.ExecuteAll(IScriptRuntimeContext, ActionBlock[])
+  fullName: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static void ExecuteAll(IScriptRuntimeContext runtimeContext, ScriptActionBlock[] actions)
+    content: public static void ExecuteAll(IScriptRuntimeContext runtimeContext, ActionBlock[] actions)
     parameters:
     - id: runtimeContext
       type: LunyScript.IScriptRuntimeContext
     - id: actions
-      type: LunyScript.Blocks.ScriptActionBlock[]
-    content.vb: Public Shared Sub ExecuteAll(runtimeContext As IScriptRuntimeContext, actions As ScriptActionBlock())
+      type: LunyScript.Blocks.ActionBlock[]
+    content.vb: Public Shared Sub ExecuteAll(runtimeContext As IScriptRuntimeContext, actions As ActionBlock())
   overload: LunyScript.Blocks.ControlFlow.ExecuteAll*
-  nameWithType.vb: ControlFlow.ExecuteAll(IScriptRuntimeContext, ScriptActionBlock())
-  fullName.vb: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ScriptActionBlock())
-  name.vb: ExecuteAll(IScriptRuntimeContext, ScriptActionBlock())
+  nameWithType.vb: ControlFlow.ExecuteAll(IScriptRuntimeContext, ActionBlock())
+  fullName.vb: LunyScript.Blocks.ControlFlow.ExecuteAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ActionBlock())
+  name.vb: ExecuteAll(IScriptRuntimeContext, ActionBlock())
 references:
 - uid: LunyScript.Blocks
   commentId: N:LunyScript.Blocks
@@ -117,13 +117,14 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
 - uid: LunyScript.Blocks.ControlFlow.EvaluateAll*
   commentId: Overload:LunyScript.Blocks.ControlFlow.EvaluateAll
   isExternal: true
-  href: LunyScript.Blocks.ControlFlow.html#LunyScript_Blocks_ControlFlow_EvaluateAll_LunyScript_IScriptRuntimeContext_LunyScript_Blocks_ScriptConditionBlock___
+  href: LunyScript.Blocks.ControlFlow.html#LunyScript_Blocks_ControlFlow_EvaluateAll_LunyScript_IScriptRuntimeContext_LunyScript_Blocks_ConditionBlock___
   name: EvaluateAll
   nameWithType: ControlFlow.EvaluateAll
   fullName: LunyScript.Blocks.ControlFlow.EvaluateAll
@@ -135,33 +136,34 @@ references:
   name: IScriptRuntimeContext
   nameWithType: IScriptRuntimeContext
   fullName: LunyScript.IScriptRuntimeContext
-- uid: LunyScript.Blocks.ScriptConditionBlock[]
+- uid: LunyScript.Blocks.ConditionBlock[]
   isExternal: true
-  href: LunyScript.Blocks.ScriptConditionBlock.html
-  name: ScriptConditionBlock[]
-  nameWithType: ScriptConditionBlock[]
-  fullName: LunyScript.Blocks.ScriptConditionBlock[]
-  nameWithType.vb: ScriptConditionBlock()
-  fullName.vb: LunyScript.Blocks.ScriptConditionBlock()
-  name.vb: ScriptConditionBlock()
+  href: LunyScript.Blocks.ConditionBlock.html
+  name: ConditionBlock[]
+  nameWithType: ConditionBlock[]
+  fullName: LunyScript.Blocks.ConditionBlock[]
+  nameWithType.vb: ConditionBlock()
+  fullName.vb: LunyScript.Blocks.ConditionBlock()
+  name.vb: ConditionBlock()
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptConditionBlock.html
+    href: LunyScript.Blocks.ConditionBlock.html
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptConditionBlock
-    name: ScriptConditionBlock
+  - uid: LunyScript.Blocks.ConditionBlock
+    name: ConditionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptConditionBlock.html
+    href: LunyScript.Blocks.ConditionBlock.html
   - name: (
   - name: )
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool
@@ -178,30 +180,30 @@ references:
 - uid: LunyScript.Blocks.ControlFlow.ExecuteAll*
   commentId: Overload:LunyScript.Blocks.ControlFlow.ExecuteAll
   isExternal: true
-  href: LunyScript.Blocks.ControlFlow.html#LunyScript_Blocks_ControlFlow_ExecuteAll_LunyScript_IScriptRuntimeContext_LunyScript_Blocks_ScriptActionBlock___
+  href: LunyScript.Blocks.ControlFlow.html#LunyScript_Blocks_ControlFlow_ExecuteAll_LunyScript_IScriptRuntimeContext_LunyScript_Blocks_ActionBlock___
   name: ExecuteAll
   nameWithType: ControlFlow.ExecuteAll
   fullName: LunyScript.Blocks.ControlFlow.ExecuteAll
-- uid: LunyScript.Blocks.ScriptActionBlock[]
+- uid: LunyScript.Blocks.ActionBlock[]
   isExternal: true
-  href: LunyScript.Blocks.ScriptActionBlock.html
-  name: ScriptActionBlock[]
-  nameWithType: ScriptActionBlock[]
-  fullName: LunyScript.Blocks.ScriptActionBlock[]
-  nameWithType.vb: ScriptActionBlock()
-  fullName.vb: LunyScript.Blocks.ScriptActionBlock()
-  name.vb: ScriptActionBlock()
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock[]
+  nameWithType: ActionBlock[]
+  fullName: LunyScript.Blocks.ActionBlock[]
+  nameWithType.vb: ActionBlock()
+  fullName.vb: LunyScript.Blocks.ActionBlock()
+  name.vb: ActionBlock()
   spec.csharp:
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: LunyScript.Blocks.ScriptActionBlock
-    name: ScriptActionBlock
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
     isExternal: true
-    href: LunyScript.Blocks.ScriptActionBlock.html
+    href: LunyScript.Blocks.ActionBlock.html
   - name: (
   - name: )

@@ -18,8 +18,6 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
-  summary: Abstract base for action blocks that perform an action that may alter game state.
-  example: []
   syntax:
     content: 'public abstract class ScriptActionBlock : ScriptBlock, IScriptBlock'
     content.vb: Public MustInherit Class ScriptActionBlock Inherits ScriptBlock Implements IScriptBlock
@@ -165,6 +163,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -202,6 +201,7 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
   name: bool
   nameWithType: bool
   fullName: bool

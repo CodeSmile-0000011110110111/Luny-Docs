@@ -298,6 +298,7 @@ references:
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
@@ -417,6 +418,7 @@ references:
   commentId: M:Luny.ILunyLogger.LogInfo(System.String)
   parent: Luny.ILunyLogger
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: LogInfo(string)
   nameWithType: ILunyLogger.LogInfo(string)
   fullName: Luny.ILunyLogger.LogInfo(string)
@@ -431,6 +433,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogInfo(System.String)
@@ -440,11 +443,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: string
   nameWithType: string
   fullName: string
@@ -455,6 +460,7 @@ references:
   commentId: M:Luny.ILunyLogger.LogWarning(System.String)
   parent: Luny.ILunyLogger
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: LogWarning(string)
   nameWithType: ILunyLogger.LogWarning(string)
   fullName: Luny.ILunyLogger.LogWarning(string)
@@ -469,6 +475,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogWarning(System.String)
@@ -478,11 +485,13 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.ILunyLogger.LogError(System.String)
   commentId: M:Luny.ILunyLogger.LogError(System.String)
   parent: Luny.ILunyLogger
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: LogError(string)
   nameWithType: ILunyLogger.LogError(string)
   fullName: Luny.ILunyLogger.LogError(string)
@@ -497,6 +506,7 @@ references:
   - uid: System.String
     name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogError(System.String)
@@ -506,6 +516,7 @@ references:
   - uid: System.String
     name: String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: Luny.Unity.Bridge.UnityLogger.LogException*
   commentId: Overload:Luny.Unity.Bridge.UnityLogger.LogException
@@ -518,6 +529,7 @@ references:
   commentId: M:Luny.ILunyLogger.LogException(System.Exception)
   parent: Luny.ILunyLogger
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
   name: LogException(Exception)
   nameWithType: ILunyLogger.LogException(Exception)
   fullName: Luny.ILunyLogger.LogException(System.Exception)
@@ -529,6 +541,7 @@ references:
   - uid: System.Exception
     name: Exception
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
   - name: )
   spec.vb:
   - uid: Luny.ILunyLogger.LogException(System.Exception)
@@ -538,11 +551,13 @@ references:
   - uid: System.Exception
     name: Exception
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
   - name: )
 - uid: System.Exception
   commentId: T:System.Exception
   parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
   name: Exception
   nameWithType: Exception
   fullName: System.Exception

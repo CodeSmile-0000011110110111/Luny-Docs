@@ -1,16 +1,17 @@
 ﻿# Your first Luny Script in Unity
 
-**Goal**: You want to create a controllable capsule as your first "Player" in a blank scene.
+**Goal**: You want to create a controllable capsule as your first "Player" in a blank scene, using a regular [MonoBehaviour](xref:UnityEngine.MonoBehaviour) script.
 
 ## Status Quo: Unity
 
-First, let's see what you would currently have to do in Unity:
+What you have to do in Unity to set up player and scene:
 
 - **Project**: `Right-click: Create -> Scene -> Scene`. Name it whatever you like.
 - **Project**: `Right-click: Create -> MonoBehaviour Script`. Name it "Player".
 - **Hierarchy**: `Right-click: 3D Object -> Capsule`. Name it "Player".
 - **Inspector**: Select "Player". `Inspector: Add Component -> Player`.
-- You check the Internet for a "simple" Unity 'Player' script and found this:
+
+Then you check the Internet for a "simple" Unity 'Player' script and found this:
 
 ```csharp
 using UnityEngine;
@@ -67,11 +68,11 @@ public class Player : MonoBehaviour
 }
 ```
 
-**It's _only_ 52 lines for something so trivial. 🤯**
+**It's already 52 lines for something so trivial. 🤯**
 
 ## With LunyScript
 
-Let's compare it with the same LunyScript:
+Let's compare this with the same LunyScript:
 
 ```csharp
 using LunyScript;
@@ -89,6 +90,4 @@ public partial class Player : Script
 }
 ```
 
-**That's 13 lines! Four times less! 😎**
-
-It only gets better from here on. The complexit doesn't scale proportionally, the gap widens the more you script!
+**That's 13 lines, four times less! 😎**
