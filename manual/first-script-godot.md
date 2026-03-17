@@ -94,19 +94,10 @@ With all those editor setup steps out of the way, at least now you need to write
 ```gdscript
 extends Node3D
 
-var moveAction
-var jumpAction
-var crouchAction
-
-func _ready():
-    moveAction = "Move"
-    jumpAction = "Jump"
-    crouchAction = "Crouch"
-
 func _process(delta: float):
     var move_input = Input.get_vector("MoveLeft", "MoveRight", "MoveDown", "MoveUp")
-    var jump_input_value = Input.get_action_strength(jumpAction)
-    var crouch_input_value = Input.get_action_strength(crouchAction)
+    var jump_input_value = Input.get_action_strength("Jump")
+    var crouch_input_value = Input.get_action_strength("Crouch")
 
     var moveX = move_input.x
     var moveZ = move_input.y
@@ -129,16 +120,15 @@ func _process(delta: float):
     translate(finalMovement)
 ```
 
-Yes, that's not one, not two, but three whole lines you're saving compared to the [Unity MonoBehaviour implementation](first-script-unity.md)! 
+That's ten lines you're saving compared to the [Unity MonoBehaviour implementation](first-script-unity.md). 
 
-GDScript provides minor syntactical improvements but the overall code complexity remains exactly (!) the same.
+However, the savings derive solely from not declaring the Input map strings as variables. The overall code complexity remains exactly the same.
 
 > [!NOTE]
-> > 🤔 Hey, wait! This GDScript is 35 lines but Unity's code snippet was 52 lines!
+> > 🤔 Hey, wait! This GDScript is 26 lines but Unity's code snippet was 52 lines!
 > 
-> Correct, but in all fairness we should stop counting C# lines with only `{` or `}` when comparing it to GDScript. 
-> IDEs will thankfully place those curly braces for us anyway. 
-> That makes Unity's solution 38 _actual lines of code_.
+> Correct, but in all fairness we should stop counting empty lines, and those with only `{` or `}` when directly comparing it to GDScript. 
+> That makes Unity's solution 30 and the GDScript version 20 _actual lines of code_.
 
 ## With LunyScript
 
