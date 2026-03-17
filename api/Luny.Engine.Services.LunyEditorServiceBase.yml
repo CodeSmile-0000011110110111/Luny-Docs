@@ -32,10 +32,11 @@ items:
   - Luny.Engine.Services.LunyEngineServiceBase.OnServiceInitialize
   - Luny.Engine.Services.LunyEngineServiceBase.OnServiceStartup
   - Luny.Engine.Services.LunyEngineServiceBase.OnServiceShutdown
-  - Luny.Engine.Services.LunyEngineServiceBase.OnServicePreUpdate
+  - Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
   - Luny.Engine.Services.LunyEngineServiceBase.OnServiceHeartbeat
   - Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
-  - Luny.Engine.Services.LunyEngineServiceBase.OnServicePostUpdate
+  - Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameLateUpdate
+  - Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameEnds
 - uid: Luny.Engine.Services.LunyEditorServiceBase.PausePlayer
   commentId: M:Luny.Engine.Services.LunyEditorServiceBase.PausePlayer
   id: PausePlayer
@@ -220,26 +221,26 @@ references:
     href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceShutdown
   - name: (
   - name: )
-- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServicePreUpdate
-  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServicePreUpdate
+- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
+  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
   parent: Luny.Engine.Services.LunyEngineServiceBase
   isExternal: true
-  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServicePreUpdate
-  name: OnServicePreUpdate()
-  nameWithType: LunyEngineServiceBase.OnServicePreUpdate()
-  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServicePreUpdate()
+  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins
+  name: OnServiceFrameBegins()
+  nameWithType: LunyEngineServiceBase.OnServiceFrameBegins()
+  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins()
   spec.csharp:
-  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServicePreUpdate
-    name: OnServicePreUpdate
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
+    name: OnServiceFrameBegins
     isExternal: true
-    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServicePreUpdate
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins
   - name: (
   - name: )
   spec.vb:
-  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServicePreUpdate
-    name: OnServicePreUpdate
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
+    name: OnServiceFrameBegins
     isExternal: true
-    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServicePreUpdate
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins
   - name: (
   - name: )
 - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceHeartbeat
@@ -286,26 +287,48 @@ references:
     href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameUpdate
   - name: (
   - name: )
-- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServicePostUpdate
-  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServicePostUpdate
+- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameLateUpdate
+  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameLateUpdate
   parent: Luny.Engine.Services.LunyEngineServiceBase
   isExternal: true
-  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServicePostUpdate
-  name: OnServicePostUpdate()
-  nameWithType: LunyEngineServiceBase.OnServicePostUpdate()
-  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServicePostUpdate()
+  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameLateUpdate
+  name: OnServiceFrameLateUpdate()
+  nameWithType: LunyEngineServiceBase.OnServiceFrameLateUpdate()
+  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameLateUpdate()
   spec.csharp:
-  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServicePostUpdate
-    name: OnServicePostUpdate
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameLateUpdate
+    name: OnServiceFrameLateUpdate
     isExternal: true
-    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServicePostUpdate
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameLateUpdate
   - name: (
   - name: )
   spec.vb:
-  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServicePostUpdate
-    name: OnServicePostUpdate
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameLateUpdate
+    name: OnServiceFrameLateUpdate
     isExternal: true
-    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServicePostUpdate
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameLateUpdate
+  - name: (
+  - name: )
+- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameEnds
+  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameEnds
+  parent: Luny.Engine.Services.LunyEngineServiceBase
+  isExternal: true
+  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameEnds
+  name: OnServiceFrameEnds()
+  nameWithType: LunyEngineServiceBase.OnServiceFrameEnds()
+  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameEnds()
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameEnds
+    name: OnServiceFrameEnds
+    isExternal: true
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameEnds
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameEnds
+    name: OnServiceFrameEnds
+    isExternal: true
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameEnds
   - name: (
   - name: )
 - uid: System

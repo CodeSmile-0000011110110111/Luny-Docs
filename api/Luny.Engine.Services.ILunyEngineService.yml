@@ -28,6 +28,7 @@ items:
   - Luny.Engine.Services.LunyAssetServiceBase
   - Luny.Engine.Services.LunyDebugServiceBase
   - Luny.Engine.Services.LunyEditorServiceBase
+  - Luny.Engine.Services.LunyEngineServiceBase
   - Luny.Engine.Services.LunyInputServiceBase
   - Luny.Engine.Services.LunyObjectServiceBase
   - Luny.Engine.Services.LunySceneServiceBase

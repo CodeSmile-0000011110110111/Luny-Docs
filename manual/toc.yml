@@ -14,7 +14,11 @@
     href: concepts.md
     items:
       - name: Anatomy of a Luny Script
-        href: concepts-anatomy.md
+        href: concepts-anatomy-script.md
+      - name: Advanced Block Usage
+        href: concepts-blocks-advanced.md
+      - name: Luny Semantics
+        href: concepts-semantics.md
 - name: LunyScript API Overview
   href: api-overview.md
   items:
