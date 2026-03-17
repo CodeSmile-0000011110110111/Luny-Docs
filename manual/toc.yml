@@ -1,67 +1,73 @@
 - name: Introduction
   href: index.md
-- name: Your First Luny Script
-  href: first-script-overview.md
+- name: Getting Started
+  href: getting-started.md
   items:
   - name: First Luny Script
     href: first-script.md
-  - name: Compared with MonoBehaviour (Unity 6.x)
-    href: first-script-unity.md
-  - name: Compared with GDScript (Godot 4.x)
-    href: first-script-godot.md
+    items:
+    - name: LunyScript vs MonoBehaviour (Unity 6.x)
+      href: first-script-unity.md
+    - name: LunyScript vs GDScript (Godot 4.x)
+      href: first-script-godot.md
+  - name: LunyScript Concepts
+    href: concepts.md
+    items:
+      - name: Anatomy of a Luny Script
+        href: concepts-anatomy.md
 - name: LunyScript API Overview
   href: api-overview.md
   items:
-    - name: Events
-      href: api-events.md
-      items:
-      - name: Object Lifecycle Events (On.*)
-        href: api-events-lifecycle.md
-      - name: Global Events (When.*)
-        href: api-events-global.md
-    - name: Variables
-      href: api-variables.md
-      items:
-      - name: Variable Arithmetics
-        href: api-variables-arithmetics.md
-      - name: Variable Comparisons
-        href: api-variables-comparisons.md
-      - name: Number - Numeric Value Union
-        href: api-variables-number.md
-      - name: Table - One Collection Fits All
-        href: api-variables-table.md
-      - name: LunyVector, LunyQuaternion, etc.
-        href: api-variables-lunytypes.md
-    - name: Assets
-      href: api-assets.md
-    - name: Object API
-      href: api-object.md
-      items:
-      - name: Prefabs
-        href: api-object-prefab.md
-      - name: Primitives
-        href: api-object-primitive.md
-    - name: Transform API
-      href: api-transform.md
-      items:
-      - name: Axis-aligned
-        href: api-transform-shift.md
-      - name: Object-aligned
-        href: api-transform-move.md
-    - name: Component API
-      href: api-component.md
-    - name: Physics API
-      href: api-physics.md
-    - name: Input API
-      href: api-input.md
-      items:
-      - name: Local Multiplayer
-        href: api-input-multiplayer.md
-    - name: Debug API
-      href: api-debug.md
-    - name: Scene API
-      href: api-scene.md
-    - name: Time API
-      href: api-time.md
-    - name: Application API
-      href: api-application.md
+  - name: Events
+    href: api-events.md
+    items:
+    - name: Object Lifecycle Events (On.*)
+      href: api-events-lifecycle.md
+    - name: Global Events (When.*)
+      href: api-events-global.md
+  - name: Variables
+    href: api-variables.md
+    items:
+    - name: Variable Arithmetics
+      href: api-variables-arithmetics.md
+    - name: Variable Comparisons
+      href: api-variables-comparisons.md
+    - name: Number - Numeric Value Union
+      href: api-variables-number.md
+    - name: Table - One Collection Fits All
+      href: api-variables-table.md
+    - name: LunyVector, LunyQuaternion, etc.
+      href: api-variables-lunytypes.md
+  - name: Assets
+    href: api-assets.md
+  - name: Object API
+    href: api-object.md
+    items:
+    - name: Prefabs
+      href: api-object-prefab.md
+    - name: Primitives
+      href: api-object-primitive.md
+  - name: Transform API
+    href: api-transform.md
+    items:
+    - name: Axis-aligned
+      href: api-transform-shift.md
+    - name: Object-aligned
+      href: api-transform-move.md
+  - name: Component API
+    href: api-component.md
+  - name: Physics API
+    href: api-physics.md
+  - name: Input API
+    href: api-input.md
+    items:
+    - name: Local Multiplayer
+      href: api-input-multiplayer.md
+  - name: Debug API
+    href: api-debug.md
+  - name: Scene API
+    href: api-scene.md
+  - name: Time API
+    href: api-time.md
+  - name: Application API
+    href: api-application.md

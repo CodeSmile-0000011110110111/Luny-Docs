@@ -77,7 +77,8 @@
       "_lang": "en",
       "_appLogoUrl": "/",
       "_extraCss": [
-        "styles/main.css"
+        "styles/main.css",
+        "styles/alert.css"
       ]
     },
     "fileMetadata": {},
@@ -87,7 +88,10 @@
         "customcontainers",
         "Abbreviations",
         "Footnotes"
-      ]
+      ],
+      "alerts": {
+        "TIP": "alert alert-tip"
+      }
     }
   },
   "rules": {

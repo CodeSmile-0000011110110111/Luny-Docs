@@ -397,8 +397,11 @@ items:
   - uid: LunyScript.ScriptBlockId
     name: ScriptBlockId
     type: Struct
-  - uid: LunyScript.ScriptContext
-    name: ScriptContext
+  - uid: LunyScript.ScriptBuildContext
+    name: ScriptBuildContext
+    type: Class
+  - uid: LunyScript.ScriptBuildData
+    name: ScriptBuildData
     type: Class
   - uid: LunyScript.ScriptEngine
     name: ScriptEngine
@@ -406,12 +409,9 @@ items:
   - uid: LunyScript.ScriptId
     name: ScriptId
     type: Struct
-  - uid: LunyScript.ScriptOptions
-    name: ScriptOptions
+  - uid: LunyScript.ScriptRuntimeOptions
+    name: ScriptRuntimeOptions
     type: Struct
-  - uid: LunyScript.ScriptSettings
-    name: ScriptSettings
-    type: Class
 - uid: LunyScript.Api
   name: LunyScript.Api
   type: Namespace

@@ -12,11 +12,11 @@ items:
   - LunyScript.LunyScriptVariableException
   - LunyScript.Script
   - LunyScript.ScriptBlockId
-  - LunyScript.ScriptContext
+  - LunyScript.ScriptBuildContext
+  - LunyScript.ScriptBuildData
   - LunyScript.ScriptEngine
   - LunyScript.ScriptId
-  - LunyScript.ScriptOptions
-  - LunyScript.ScriptSettings
+  - LunyScript.ScriptRuntimeOptions
   langs:
   - csharp
   - vb
@@ -35,30 +35,30 @@ references:
   name: ScriptBlockId
   nameWithType: ScriptBlockId
   fullName: LunyScript.ScriptBlockId
-- uid: LunyScript.ScriptOptions
-  commentId: T:LunyScript.ScriptOptions
+- uid: LunyScript.ScriptRuntimeOptions
+  commentId: T:LunyScript.ScriptRuntimeOptions
   parent: LunyScript
   isExternal: true
-  href: LunyScript.ScriptOptions.html
-  name: ScriptOptions
-  nameWithType: ScriptOptions
-  fullName: LunyScript.ScriptOptions
-- uid: LunyScript.ScriptSettings
-  commentId: T:LunyScript.ScriptSettings
+  href: LunyScript.ScriptRuntimeOptions.html
+  name: ScriptRuntimeOptions
+  nameWithType: ScriptRuntimeOptions
+  fullName: LunyScript.ScriptRuntimeOptions
+- uid: LunyScript.ScriptBuildData
+  commentId: T:LunyScript.ScriptBuildData
   parent: LunyScript
   isExternal: true
-  href: LunyScript.ScriptSettings.html
-  name: ScriptSettings
-  nameWithType: ScriptSettings
-  fullName: LunyScript.ScriptSettings
-- uid: LunyScript.ScriptContext
-  commentId: T:LunyScript.ScriptContext
+  href: LunyScript.ScriptBuildData.html
+  name: ScriptBuildData
+  nameWithType: ScriptBuildData
+  fullName: LunyScript.ScriptBuildData
+- uid: LunyScript.ScriptBuildContext
+  commentId: T:LunyScript.ScriptBuildContext
   parent: LunyScript
   isExternal: true
-  href: LunyScript.ScriptContext.html
-  name: ScriptContext
-  nameWithType: ScriptContext
-  fullName: LunyScript.ScriptContext
+  href: LunyScript.ScriptBuildContext.html
+  name: ScriptBuildContext
+  nameWithType: ScriptBuildContext
+  fullName: LunyScript.ScriptBuildContext
 - uid: LunyScript.IScriptDefinition
   commentId: T:LunyScript.IScriptDefinition
   isExternal: true

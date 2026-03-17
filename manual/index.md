@@ -1,10 +1,12 @@
 # LunyScript Manual
 
-LunyScript is a declarative, block-based scripting language to make game engine code more accessible, reliable, hot-reloadable, runtime-inspectable, and gamer-moddable. It's made for **beginners**, **designers**, **artists**, and the **neurodiverse**. It's ideal for **rapid prototyping**, **reliable scripting** without boilerplate, and to quickly fill voids with **vivid details**.
+**LunyScript** is a declarative, block-based scripting language implemented as a fluent C# API. It makes game engine code more accessible, reliable, hot-reloadable, runtime-inspectable, and gamer-moddable. 
 
-LunyEngine is the engine-agnostic developer SDK and portable foundation for LunyScript. The intention is to have LunyScript run in other engines, thereby providing a common interface and scripting language to all.
+LunyScript is ideal for **rapid prototyping**, **reliable scripting**, and **vivid details**. It is made for **beginners**, **designers**, **artists**, and the **neurodiverse**.
 
-The ultimate goal: 100% portable, standardized game logic. Code shall no longer be the only "asset type" we cannot transfer between engines.
+**LunyEngine** is the developer SDK and engine-agnostic foundation for LunyScript. The intention is to have LunyScript run in multiple engines, thereby providing a common interface and scripting language to all.
+
+The ultimate goal: 100% portable, standardized game logic programming. Code shall no longer be the only "asset type" we cannot transfer. Learn and write once, runs in any engine.
 
 ## Roadmap
 
@@ -18,12 +20,24 @@ Ports to Godot, Unreal, and other engines hinge on LunyScript's adoption by Unit
 
 ## Getting Started
 
-- [Your First Luny Script](first-script-overview.md) 
+- [Getting Started with LunyScript](getting-started.md)
 - [LunyScript API Overview](api-overview.md)
 - Explore the [Scripting API](/api/) reference of both LunyEngine and LunyScript.
 
+## Social & Media
+
+- [YouTube](https://www.youtube.com/@codesmile)
+- [Discord](https://discord.gg/EkwNb4rB7W)
+- [X-Twitter](https://x.com/sitterheim)
+
+For updates and to support the project please consider [becoming a Patreon (FREE)](https://www.patreon.com/c/codesmile) or [GitHub sponsor](https://github.com/sponsors/CodeSmile-0000011110110111).
+
+> [!NOTE]
+> I follow a strict {BING!!} {POPUP!!!} {ALERT!!!} no-notifications policy for all social media. The fastest way to reach me is to post on [Unity Discussions](https://discussions.unity.com/) with `@CodeSmile` in the message, or via a Patreon message as these places notify me by email.
+
 ## Links
 
-- [Homepage](https://lunyscript.com)
+- [LunyScript Homepage](https://lunyscript.com)
+- [CodeSmile Homepage](https://codesmile.de)
 - [LunyScript Unity npm package repository](https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage) (pre-alpha)
 - [LunyScript Unity Examples Project repository](https://github.com/CodeSmile-0000011110110111/LunyScript_Examples_Unity) (pre-alpha)

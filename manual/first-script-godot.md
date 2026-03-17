@@ -149,7 +149,7 @@ using LunyScript;
 
 public partial class Player : Script
 {
-    public override void Build(ScriptContext context)
+    public override void Build(ScriptBuildContext context)
     {
         On.FrameUpdate(
             Transform.MoveBy(Input.Direction("Move"), 4),
@@ -170,8 +170,6 @@ public partial class Player : Script
 
 Compared to Unity, there's an egregious amount of extra steps to be done in the Godot editor before you even get to scripting. 
 
-This is by design. Godot deliberately provides _clean slates_ for everything: no _meaningful templates_ and not even _sensible defaults_.
-Its user experience also centers on deeply hierarchical user interfaces and abundant modal dialogs.
+Godot deliberately provides _clean slates_ for everything: no _meaningful templates_ and often not even _sensible defaults_. Its user experience also centers on deeply hierarchical user interfaces and abundant modal dialogs. This comes at the cost of more UI interactions.
 
-While this provides a comparatively consistent UI that's easy to pick up by beginners and non-technical users, 
-it comes at the cost of notably heavier UI interactions.
+On the other hand, Godot's design provides a comparatively consistent UI that's easier to pick up by beginners and non-technical users. It's in stark contrast to Unreal editor's highly complex UI, while Unity is somewhere in between.

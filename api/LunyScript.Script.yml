@@ -7,7 +7,7 @@ items:
   children:
   - LunyScript.Script.#ctor
   - LunyScript.Script.AND(LunyScript.Blocks.ConditionBlock[])
-  - LunyScript.Script.Build(LunyScript.ScriptContext)
+  - LunyScript.Script.Build(LunyScript.ScriptBuildContext)
   - LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   - LunyScript.Script.Check(System.Func{System.Boolean})
   - LunyScript.Script.Component
@@ -518,16 +518,16 @@ items:
   nameWithType.vb: ''
   fullName.vb: ''
   name.vb: ''
-- uid: LunyScript.Script.Build(LunyScript.ScriptContext)
-  commentId: M:LunyScript.Script.Build(LunyScript.ScriptContext)
-  id: Build(LunyScript.ScriptContext)
+- uid: LunyScript.Script.Build(LunyScript.ScriptBuildContext)
+  commentId: M:LunyScript.Script.Build(LunyScript.ScriptBuildContext)
+  id: Build(LunyScript.ScriptBuildContext)
   parent: LunyScript.Script
   langs:
   - csharp
   - vb
-  name: Build(ScriptContext)
-  nameWithType: Script.Build(ScriptContext)
-  fullName: LunyScript.Script.Build(LunyScript.ScriptContext)
+  name: Build(ScriptBuildContext)
+  nameWithType: Script.Build(ScriptBuildContext)
+  fullName: LunyScript.Script.Build(LunyScript.ScriptBuildContext)
   type: Method
   assemblies:
   - LunyScript
@@ -540,12 +540,12 @@ items:
     Users can use regular C# syntax (ie call methods, use loops) to construct complex and/or reusable blocks.
   example: []
   syntax:
-    content: public abstract void Build(ScriptContext context)
+    content: public abstract void Build(ScriptBuildContext context)
     parameters:
     - id: context
-      type: LunyScript.ScriptContext
+      type: LunyScript.ScriptBuildContext
       description: ''
-    content.vb: Public MustOverride Sub Build(context As ScriptContext)
+    content.vb: Public MustOverride Sub Build(context As ScriptBuildContext)
   overload: LunyScript.Script.Build*
 - uid: LunyScript.Script.ToString
   commentId: M:LunyScript.Script.ToString
@@ -1400,18 +1400,18 @@ references:
 - uid: LunyScript.Script.Build*
   commentId: Overload:LunyScript.Script.Build
   isExternal: true
-  href: LunyScript.Script.html#LunyScript_Script_Build_LunyScript_ScriptContext_
+  href: LunyScript.Script.html#LunyScript_Script_Build_LunyScript_ScriptBuildContext_
   name: Build
   nameWithType: Script.Build
   fullName: LunyScript.Script.Build
-- uid: LunyScript.ScriptContext
-  commentId: T:LunyScript.ScriptContext
+- uid: LunyScript.ScriptBuildContext
+  commentId: T:LunyScript.ScriptBuildContext
   parent: LunyScript
   isExternal: true
-  href: LunyScript.ScriptContext.html
-  name: ScriptContext
-  nameWithType: ScriptContext
-  fullName: LunyScript.ScriptContext
+  href: LunyScript.ScriptBuildContext.html
+  name: ScriptBuildContext
+  nameWithType: ScriptBuildContext
+  fullName: LunyScript.ScriptBuildContext
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object

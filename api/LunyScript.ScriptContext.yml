@@ -6,8 +6,8 @@ items:
   parent: LunyScript
   children:
   - LunyScript.ScriptContext.#ctor
+  - LunyScript.ScriptContext.Data
   - LunyScript.ScriptContext.Options
-  - LunyScript.ScriptContext.Settings
   langs:
   - csharp
   - vb
@@ -18,6 +18,8 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript
+  summary: Contains design-time [Data](xref:LunyScript.ScriptContext.Data) and runtime behaviour [Options](xref:LunyScript.ScriptContext.Options).
+  example: []
   syntax:
     content: public sealed class ScriptContext
     content.vb: Public NotInheritable Class ScriptContext
@@ -37,6 +39,8 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript
+  summary: Runtime behaviour options.
+  example: []
   syntax:
     content: public ScriptOptions Options
     return:
@@ -63,27 +67,29 @@ items:
   nameWithType.vb: ScriptContext.New()
   fullName.vb: LunyScript.ScriptContext.New()
   name.vb: New()
-- uid: LunyScript.ScriptContext.Settings
-  commentId: P:LunyScript.ScriptContext.Settings
-  id: Settings
+- uid: LunyScript.ScriptContext.Data
+  commentId: P:LunyScript.ScriptContext.Data
+  id: Data
   parent: LunyScript.ScriptContext
   langs:
   - csharp
   - vb
-  name: Settings
-  nameWithType: ScriptContext.Settings
-  fullName: LunyScript.ScriptContext.Settings
+  name: Data
+  nameWithType: ScriptContext.Data
+  fullName: LunyScript.ScriptContext.Data
   type: Property
   assemblies:
   - LunyScript
   namespace: LunyScript
+  summary: 'Input values and references, for instance: layers, groups, names, design-time values, asset references.'
+  example: []
   syntax:
-    content: public ScriptSettings Settings { get; }
+    content: public ScriptData Data { get; }
     parameters: []
     return:
-      type: LunyScript.ScriptSettings
-    content.vb: Public ReadOnly Property Settings As ScriptSettings
-  overload: LunyScript.ScriptContext.Settings*
+      type: LunyScript.ScriptData
+    content.vb: Public ReadOnly Property Data As ScriptData
+  overload: LunyScript.ScriptContext.Data*
 references:
 - uid: LunyScript
   commentId: N:LunyScript
@@ -127,18 +133,18 @@ references:
   nameWithType.vb: ScriptContext.New
   fullName.vb: LunyScript.ScriptContext.New
   name.vb: New
-- uid: LunyScript.ScriptContext.Settings*
-  commentId: Overload:LunyScript.ScriptContext.Settings
+- uid: LunyScript.ScriptContext.Data*
+  commentId: Overload:LunyScript.ScriptContext.Data
   isExternal: true
-  href: LunyScript.ScriptContext.html#LunyScript_ScriptContext_Settings
-  name: Settings
-  nameWithType: ScriptContext.Settings
-  fullName: LunyScript.ScriptContext.Settings
-- uid: LunyScript.ScriptSettings
-  commentId: T:LunyScript.ScriptSettings
+  href: LunyScript.ScriptContext.html#LunyScript_ScriptContext_Data
+  name: Data
+  nameWithType: ScriptContext.Data
+  fullName: LunyScript.ScriptContext.Data
+- uid: LunyScript.ScriptData
+  commentId: T:LunyScript.ScriptData
   parent: LunyScript
   isExternal: true
-  href: LunyScript.ScriptSettings.html
-  name: ScriptSettings
-  nameWithType: ScriptSettings
-  fullName: LunyScript.ScriptSettings
+  href: LunyScript.ScriptData.html
+  name: ScriptData
+  nameWithType: ScriptData
+  fullName: LunyScript.ScriptData

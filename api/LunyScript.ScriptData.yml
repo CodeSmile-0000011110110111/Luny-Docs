@@ -1,0 +1,81 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptData
+  commentId: T:LunyScript.ScriptData
+  id: ScriptData
+  parent: LunyScript
+  children:
+  - LunyScript.ScriptData.#ctor
+  langs:
+  - csharp
+  - vb
+  name: ScriptData
+  nameWithType: ScriptData
+  fullName: LunyScript.ScriptData
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Contains design-time data for a script, mainly Inspector-assigned values and references.
+  example: []
+  syntax:
+    content: public sealed class ScriptData
+    content.vb: Public NotInheritable Class ScriptData
+  inheritance:
+  - System.Object
+- uid: LunyScript.ScriptData.#ctor
+  commentId: M:LunyScript.ScriptData.#ctor
+  id: '#ctor'
+  parent: LunyScript.ScriptData
+  langs:
+  - csharp
+  - vb
+  name: ScriptData()
+  nameWithType: ScriptData.ScriptData()
+  fullName: LunyScript.ScriptData.ScriptData()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptData()
+    content.vb: Public Sub New()
+  overload: LunyScript.ScriptData.#ctor*
+  nameWithType.vb: ScriptData.New()
+  fullName.vb: LunyScript.ScriptData.New()
+  name.vb: New()
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptData.#ctor*
+  commentId: Overload:LunyScript.ScriptData.#ctor
+  isExternal: true
+  href: LunyScript.ScriptData.html#LunyScript_ScriptData__ctor
+  name: ScriptData
+  nameWithType: ScriptData.ScriptData
+  fullName: LunyScript.ScriptData.ScriptData
+  nameWithType.vb: ScriptData.New
+  fullName.vb: LunyScript.ScriptData.New
+  name.vb: New

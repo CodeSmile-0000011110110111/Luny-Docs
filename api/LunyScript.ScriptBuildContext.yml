@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptBuildContext
+  commentId: T:LunyScript.ScriptBuildContext
+  id: ScriptBuildContext
+  parent: LunyScript
+  children:
+  - LunyScript.ScriptBuildContext.#ctor
+  - LunyScript.ScriptBuildContext.Data
+  - LunyScript.ScriptBuildContext.Options
+  langs:
+  - csharp
+  - vb
+  name: ScriptBuildContext
+  nameWithType: ScriptBuildContext
+  fullName: LunyScript.ScriptBuildContext
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Contains design-time [Data](xref:LunyScript.ScriptContext.Data) and runtime behaviour [Options](xref:LunyScript.ScriptContext.Options).
+  example: []
+  syntax:
+    content: public sealed class ScriptBuildContext
+    content.vb: Public NotInheritable Class ScriptBuildContext
+  inheritance:
+  - System.Object
+- uid: LunyScript.ScriptBuildContext.Options
+  commentId: F:LunyScript.ScriptBuildContext.Options
+  id: Options
+  parent: LunyScript.ScriptBuildContext
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: ScriptBuildContext.Options
+  fullName: LunyScript.ScriptBuildContext.Options
+  type: Field
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Runtime behaviour options.
+  example: []
+  syntax:
+    content: public ScriptRuntimeOptions Options
+    return:
+      type: LunyScript.ScriptRuntimeOptions
+    content.vb: Public Options As ScriptRuntimeOptions
+- uid: LunyScript.ScriptBuildContext.#ctor
+  commentId: M:LunyScript.ScriptBuildContext.#ctor
+  id: '#ctor'
+  parent: LunyScript.ScriptBuildContext
+  langs:
+  - csharp
+  - vb
+  name: ScriptBuildContext()
+  nameWithType: ScriptBuildContext.ScriptBuildContext()
+  fullName: LunyScript.ScriptBuildContext.ScriptBuildContext()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptBuildContext()
+    content.vb: Public Sub New()
+  overload: LunyScript.ScriptBuildContext.#ctor*
+  nameWithType.vb: ScriptBuildContext.New()
+  fullName.vb: LunyScript.ScriptBuildContext.New()
+  name.vb: New()
+- uid: LunyScript.ScriptBuildContext.Data
+  commentId: P:LunyScript.ScriptBuildContext.Data
+  id: Data
+  parent: LunyScript.ScriptBuildContext
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: ScriptBuildContext.Data
+  fullName: LunyScript.ScriptBuildContext.Data
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: 'Input values and references, for instance: layers, groups, names, design-time values, asset references.'
+  example: []
+  syntax:
+    content: public ScriptBuildData Data { get; }
+    parameters: []
+    return:
+      type: LunyScript.ScriptBuildData
+    content.vb: Public ReadOnly Property Data As ScriptBuildData
+  overload: LunyScript.ScriptBuildContext.Data*
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptRuntimeOptions
+  commentId: T:LunyScript.ScriptRuntimeOptions
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ScriptRuntimeOptions.html
+  name: ScriptRuntimeOptions
+  nameWithType: ScriptRuntimeOptions
+  fullName: LunyScript.ScriptRuntimeOptions
+- uid: LunyScript.ScriptBuildContext.#ctor*
+  commentId: Overload:LunyScript.ScriptBuildContext.#ctor
+  isExternal: true
+  href: LunyScript.ScriptBuildContext.html#LunyScript_ScriptBuildContext__ctor
+  name: ScriptBuildContext
+  nameWithType: ScriptBuildContext.ScriptBuildContext
+  fullName: LunyScript.ScriptBuildContext.ScriptBuildContext
+  nameWithType.vb: ScriptBuildContext.New
+  fullName.vb: LunyScript.ScriptBuildContext.New
+  name.vb: New
+- uid: LunyScript.ScriptBuildContext.Data*
+  commentId: Overload:LunyScript.ScriptBuildContext.Data
+  isExternal: true
+  href: LunyScript.ScriptBuildContext.html#LunyScript_ScriptBuildContext_Data
+  name: Data
+  nameWithType: ScriptBuildContext.Data
+  fullName: LunyScript.ScriptBuildContext.Data
+- uid: LunyScript.ScriptBuildData
+  commentId: T:LunyScript.ScriptBuildData
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ScriptBuildData.html
+  name: ScriptBuildData
+  nameWithType: ScriptBuildData
+  fullName: LunyScript.ScriptBuildData

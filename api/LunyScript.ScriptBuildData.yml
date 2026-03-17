@@ -1,0 +1,81 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptBuildData
+  commentId: T:LunyScript.ScriptBuildData
+  id: ScriptBuildData
+  parent: LunyScript
+  children:
+  - LunyScript.ScriptBuildData.#ctor
+  langs:
+  - csharp
+  - vb
+  name: ScriptBuildData
+  nameWithType: ScriptBuildData
+  fullName: LunyScript.ScriptBuildData
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Contains design-time data for a script, mainly Inspector-assigned values and references.
+  example: []
+  syntax:
+    content: public sealed class ScriptBuildData
+    content.vb: Public NotInheritable Class ScriptBuildData
+  inheritance:
+  - System.Object
+- uid: LunyScript.ScriptBuildData.#ctor
+  commentId: M:LunyScript.ScriptBuildData.#ctor
+  id: '#ctor'
+  parent: LunyScript.ScriptBuildData
+  langs:
+  - csharp
+  - vb
+  name: ScriptBuildData()
+  nameWithType: ScriptBuildData.ScriptBuildData()
+  fullName: LunyScript.ScriptBuildData.ScriptBuildData()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptBuildData()
+    content.vb: Public Sub New()
+  overload: LunyScript.ScriptBuildData.#ctor*
+  nameWithType.vb: ScriptBuildData.New()
+  fullName.vb: LunyScript.ScriptBuildData.New()
+  name.vb: New()
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptBuildData.#ctor*
+  commentId: Overload:LunyScript.ScriptBuildData.#ctor
+  isExternal: true
+  href: LunyScript.ScriptBuildData.html#LunyScript_ScriptBuildData__ctor
+  name: ScriptBuildData
+  nameWithType: ScriptBuildData.ScriptBuildData
+  fullName: LunyScript.ScriptBuildData.ScriptBuildData
+  nameWithType.vb: ScriptBuildData.New
+  fullName.vb: LunyScript.ScriptBuildData.New
+  name.vb: New

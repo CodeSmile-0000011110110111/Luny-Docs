@@ -1,16 +1,16 @@
 ### YamlMime:ManagedReference
 items:
-- uid: LunyScript.ScriptOptions
-  commentId: T:LunyScript.ScriptOptions
-  id: ScriptOptions
+- uid: LunyScript.ScriptRuntimeOptions
+  commentId: T:LunyScript.ScriptRuntimeOptions
+  id: ScriptRuntimeOptions
   parent: LunyScript
   children: []
   langs:
   - csharp
   - vb
-  name: ScriptOptions
-  nameWithType: ScriptOptions
-  fullName: LunyScript.ScriptOptions
+  name: ScriptRuntimeOptions
+  nameWithType: ScriptRuntimeOptions
+  fullName: LunyScript.ScriptRuntimeOptions
   type: Struct
   assemblies:
   - LunyScript
@@ -18,8 +18,8 @@ items:
   summary: Options that change runtime behaviour of the script.
   example: []
   syntax:
-    content: public struct ScriptOptions
-    content.vb: Public Structure ScriptOptions
+    content: public struct ScriptRuntimeOptions
+    content.vb: Public Structure ScriptRuntimeOptions
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode

@@ -6,7 +6,7 @@ items:
   parent: LunyScript.SmokeTests
   children:
   - LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.#ctor
-  - LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptContext)
+  - LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptBuildContext)
   langs:
   - csharp
   - vb
@@ -53,16 +53,16 @@ items:
   - LunyScript.Script.Time
   - LunyScript.Script.Transform
   - LunyScript.Script.When
-- uid: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptContext)
-  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptContext)
-  id: Build(LunyScript.ScriptContext)
+- uid: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptBuildContext)
+  commentId: M:LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptBuildContext)
+  id: Build(LunyScript.ScriptBuildContext)
   parent: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat
   langs:
   - csharp
   - vb
-  name: Build(ScriptContext)
-  nameWithType: Assert_Runs_OnHeartbeat.Build(ScriptContext)
-  fullName: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptContext)
+  name: Build(ScriptBuildContext)
+  nameWithType: Assert_Runs_OnHeartbeat.Build(ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build(LunyScript.ScriptBuildContext)
   type: Method
   assemblies:
   - LunyScript.SmokeTests
@@ -75,13 +75,13 @@ items:
     Users can use regular C# syntax (ie call methods, use loops) to construct complex and/or reusable blocks.
   example: []
   syntax:
-    content: public override void Build(ScriptContext context)
+    content: public override void Build(ScriptBuildContext context)
     parameters:
     - id: context
-      type: LunyScript.ScriptContext
+      type: LunyScript.ScriptBuildContext
       description: ''
-    content.vb: Public Overrides Sub Build(context As ScriptContext)
-  overridden: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptContext)
+    content.vb: Public Overrides Sub Build(context As ScriptBuildContext)
+  overridden: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptBuildContext)
   overload: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build*
 - uid: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.#ctor
   commentId: M:LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.#ctor
@@ -741,49 +741,49 @@ references:
   name: LunyScript
   nameWithType: LunyScript
   fullName: LunyScript
-- uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptContext)
-  commentId: M:LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptContext)
+- uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptBuildContext)
+  commentId: M:LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptBuildContext)
   parent: LunyScript.SmokeTests.LunyScriptSmokeTestBase
   isExternal: true
-  href: LunyScript.SmokeTests.LunyScriptSmokeTestBase.html#LunyScript_SmokeTests_LunyScriptSmokeTestBase_Build_LunyScript_ScriptContext_
-  name: Build(ScriptContext)
-  nameWithType: LunyScriptSmokeTestBase.Build(ScriptContext)
-  fullName: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptContext)
+  href: LunyScript.SmokeTests.LunyScriptSmokeTestBase.html#LunyScript_SmokeTests_LunyScriptSmokeTestBase_Build_LunyScript_ScriptBuildContext_
+  name: Build(ScriptBuildContext)
+  nameWithType: LunyScriptSmokeTestBase.Build(ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptBuildContext)
   spec.csharp:
-  - uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptContext)
+  - uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptBuildContext)
     name: Build
     isExternal: true
-    href: LunyScript.SmokeTests.LunyScriptSmokeTestBase.html#LunyScript_SmokeTests_LunyScriptSmokeTestBase_Build_LunyScript_ScriptContext_
+    href: LunyScript.SmokeTests.LunyScriptSmokeTestBase.html#LunyScript_SmokeTests_LunyScriptSmokeTestBase_Build_LunyScript_ScriptBuildContext_
   - name: (
-  - uid: LunyScript.ScriptContext
-    name: ScriptContext
+  - uid: LunyScript.ScriptBuildContext
+    name: ScriptBuildContext
     isExternal: true
   - name: )
   spec.vb:
-  - uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptContext)
+  - uid: LunyScript.SmokeTests.LunyScriptSmokeTestBase.Build(LunyScript.ScriptBuildContext)
     name: Build
     isExternal: true
-    href: LunyScript.SmokeTests.LunyScriptSmokeTestBase.html#LunyScript_SmokeTests_LunyScriptSmokeTestBase_Build_LunyScript_ScriptContext_
+    href: LunyScript.SmokeTests.LunyScriptSmokeTestBase.html#LunyScript_SmokeTests_LunyScriptSmokeTestBase_Build_LunyScript_ScriptBuildContext_
   - name: (
-  - uid: LunyScript.ScriptContext
-    name: ScriptContext
+  - uid: LunyScript.ScriptBuildContext
+    name: ScriptBuildContext
     isExternal: true
   - name: )
 - uid: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build*
   commentId: Overload:LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build
   isExternal: true
-  href: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.html#LunyScript_SmokeTests_Assert_Runs_OnHeartbeat_Build_LunyScript_ScriptContext_
+  href: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.html#LunyScript_SmokeTests_Assert_Runs_OnHeartbeat_Build_LunyScript_ScriptBuildContext_
   name: Build
   nameWithType: Assert_Runs_OnHeartbeat.Build
   fullName: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.Build
-- uid: LunyScript.ScriptContext
-  commentId: T:LunyScript.ScriptContext
+- uid: LunyScript.ScriptBuildContext
+  commentId: T:LunyScript.ScriptBuildContext
   parent: LunyScript
   isExternal: true
-  href: LunyScript.ScriptContext.html
-  name: ScriptContext
-  nameWithType: ScriptContext
-  fullName: LunyScript.ScriptContext
+  href: LunyScript.ScriptBuildContext.html
+  name: ScriptBuildContext
+  nameWithType: ScriptBuildContext
+  fullName: LunyScript.ScriptBuildContext
 - uid: LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.#ctor*
   commentId: Overload:LunyScript.SmokeTests.Assert_Runs_OnHeartbeat.#ctor
   isExternal: true
