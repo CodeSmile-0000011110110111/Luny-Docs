@@ -8,13 +8,13 @@ These events are used by implementations of [`ILunyEngineObserver`](xref:Luny.IL
 
 | **Event**               | **Description**                                       |
 |:------------------------|:------------------------------------------------------|
-| OnEngineStartup         | Application launched, after LunyEngine initialization |
-| OnEngineFrameBegins     | Every frame, before Heartbeat/FrameUpdate             |
-| OnEngineHeartbeat       | Fixed timestep, 0-n times per frame                   |
-| OnEngineFrameUpdate     | Frame update                                          |
-| OnEngineFrameLateUpdate | Runs after frame update                               |
-| OnEngineFrameEnds       | Every frame, after all frame events                   |
-| OnEngineShutdown        | Application quitting                                  |
+| `OnEngineStartup`         | Application launched, after LunyEngine initialization |
+| `OnEngineFrameBegins`     | Every frame, before Heartbeat/FrameUpdate             |
+| `OnEngineHeartbeat`       | Fixed timestep, 0-n times per frame                   |
+| `OnEngineFrameUpdate`     | Frame update                                          |
+| `OnEngineFrameLateUpdate` | Runs after frame update                               |
+| `OnEngineFrameEnds`       | Every frame, after all frame events                   |
+| `OnEngineShutdown`        | Application quitting                                  |
 
 ## Service Events
 
@@ -22,14 +22,14 @@ Very similar events are used by implementations of [`LunyEngineServiceBase`](xre
 
 | **Event**                | **Description**                                        |
 |:-------------------------|:-------------------------------------------------------|
-| OnServiceInitialize      | Application launched, during LunyEngine initialization |
-| OnServiceStartup         | After LunyEngine and all services' initialization      |
-| OnServiceFrameBegins     | Before frame update                                    |
-| OnServiceHeartbeat       | Before object's heartbeat                              |
-| OnServiceFrameUpdate     | Before object's frame update                           |
-| OnServiceFrameLateUpdate | Before object's frame late update                      |
-| OnServiceFrameEnds       | After frame update completed                           |
-| OnServiceShutdown        | Application quitting                                   |
+| `OnServiceInitialize`      | Application launched, during LunyEngine initialization |
+| `OnServiceStartup`         | After LunyEngine and all services' initialization      |
+| `OnServiceFrameBegins`     | Before frame update                                    |
+| `OnServiceHeartbeat`       | Before object's heartbeat                              |
+| `OnServiceFrameUpdate`     | Before object's frame update                           |
+| `OnServiceFrameLateUpdate` | Before object's frame late update                      |
+| `OnServiceFrameEnds`       | After frame update completed                           |
+| `OnServiceShutdown`        | Application quitting                                   |
 
 Services have an additional `OnServiceInitialize` event for internal setup which is required to complete before `OnServiceStartup`.
 During `OnServiceInitialize` the LunyEngine's services may not all be available or fully initialized.
