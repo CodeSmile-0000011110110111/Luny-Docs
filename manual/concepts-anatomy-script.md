@@ -132,4 +132,4 @@ For the object events, like OnEnable/OnDestroy, all engine objects are wrapped i
 The benefit: LunyScript (and LunyEngine) work exactly the same in any engine. Even event execution order will be deterministic across engines.
 
 In summary: LunyEngine is an engine on engines:
-![LunyEngine_Engine_On_Engines.jpg](/images/LunyEngine_Engine_On_Engines.jpg)
+![LunyEngine_Engine_On_Engines.jpg](../images/LunyEngine_Engine_On_Engines.jpg)
