@@ -27,7 +27,7 @@ public partial class Player : Script
 }
 ```
 
-**At 13 lines, it's 4 times less than its [MonoBehaviour](first-script-unity.md) implementation!** 😎
+**At 13 lines, it is 4 times less than its [MonoBehaviour](first-script-unity.md) implementation!** 😎
 
 Enter playmode and try it.
 
@@ -38,9 +38,4 @@ Inspector assignment of Luny scripts is optional.
 By default, a Luny script will run for any object in the active scene that matches the script's class name.
 A LunyScript class named "Player" will run for the object named "Player".
 
-There will be options to:
-
-- Relax the class name vs object name match:
-  - disable strict upper-/lowercase matching (eg runs on "player")
-  - match start/end of name (eg runs on "Player 1" and "Player 2")  
-- Directly assign one or more Luny scripts to an object
+There will be options to directly assign scripts and relax the name matching.

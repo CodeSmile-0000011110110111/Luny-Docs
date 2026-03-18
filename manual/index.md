@@ -12,11 +12,11 @@ The ultimate goal: 100% portable, standardized game logic programming. Code shal
 
 Development focus is on Unity initially.
 
-- Q1+Q2 2026: Feature development, enough to build a Megabonk-like game
+- Spring 2026: Feature development
 - Summer 2026: Alpha/Beta-Testing
 - Autumn 2026: Release v1.0
 
-Ports to Godot, Unreal, and other engines hinge on LunyScript's adoption by Unity developers.
+Ports to Godot, Unreal, and/or other engines will not start before 2027.
 
 ## Getting Started
 
@@ -33,7 +33,7 @@ Ports to Godot, Unreal, and other engines hinge on LunyScript's adoption by Unit
 For updates and to support the project please consider [becoming a Patreon (FREE)](https://www.patreon.com/c/codesmile) or [GitHub sponsor](https://github.com/sponsors/CodeSmile-0000011110110111).
 
 > [!NOTE]
-> I follow a strict {BING!!} {POPUP!!!} {ALERT!!!} no-notifications policy for all social media. The fastest way to reach me is to post on [Unity Discussions](https://discussions.unity.com/) with `@CodeSmile` in the message, or via a Patreon message as these places notify me by email.
+> I follow a strict no-notifications policy for all social media, and I don't check all those places consistently. The fastest way to reach me is to post on [Unity Discussions](https://discussions.unity.com/) with `@CodeSmile` in the message, or via a Patreon message - both send email notifications which I read daily.
 
 ## Links
 
