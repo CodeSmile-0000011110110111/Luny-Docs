@@ -1,24 +1,21 @@
 - name: Introduction
   href: index.md
-- name: Getting Started
-  href: getting-started.md
+- name: First Luny Script
+  href: first-script.md
   items:
-  - name: First Luny Script
-    href: first-script.md
-    items:
     - name: LunyScript vs MonoBehaviour (Unity 6.x)
       href: first-script-unity.md
     - name: LunyScript vs GDScript (Godot 4.x)
       href: first-script-godot.md
-  - name: LunyScript Concepts
-    href: concepts.md
-    items:
-      - name: Anatomy of a Luny Script
-        href: concepts-anatomy-script.md
-      - name: Advanced Block Usage
-        href: concepts-blocks-advanced.md
-      - name: Luny Semantics
-        href: concepts-semantics.md
+- name: Getting Started
+  href: getting-started.md
+  items:
+    - name: Anatomy of a Luny Script
+      href: concepts-anatomy-script.md
+    - name: Advanced Block Usage
+      href: concepts-blocks-advanced.md
+    - name: Luny Semantics
+      href: concepts-semantics.md
 - name: LunyScript API Overview
   href: api-overview.md
   items:

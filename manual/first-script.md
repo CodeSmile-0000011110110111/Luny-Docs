@@ -27,7 +27,7 @@ public partial class Player : Script
 }
 ```
 
-**At 13 lines, it's 4 times less than [MonoBehaviour](first-script-unity.md) and 2.77 times less than [GDScript](first-script-godot.md)!** 😎
+**At 13 lines, it's 4 times less than its [MonoBehaviour](first-script-unity.md) implementation!** 😎
 
 Enter playmode and try it.
 

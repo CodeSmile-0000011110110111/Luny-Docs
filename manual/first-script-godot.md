@@ -87,6 +87,14 @@ Now you can use these input mappings in your code.
 
 You could skip the gamepad and joystick setup for now if you prefer, but keep in mind: **players do expect common input devices to be supported!**
 
+### Why So Many Extra Steps?
+
+Compared to Unity, there's an egregious amount of extra steps to be done in the Godot editor before you even get to scripting with this example.
+
+Godot deliberately provides _clean slates_ for everything: no _meaningful templates_ and often not even _sensible defaults_. Its user experience also centers on deeply hierarchical (procedural) user interfaces and an abundance of modal dialogs. This results in a higher number of UI interactions. 
+
+On the other hand, Godot's design provides a comparatively consistent UI that's easier to pick up by beginners and non-technical users. It's in stark contrast to Unreal editor's highly complex UI with many uniquely designed windows. Unity takes the middle ground, approachable but with some complex feature windows.
+
 ### The GDScript
 
 With all those editor setup steps out of the way, at least now you need to write **much less code** in GDScript:
@@ -120,14 +128,13 @@ func _process(delta: float):
     translate(finalMovement)
 ```
 
-That's ten lines you're saving compared to the [Unity MonoBehaviour implementation](first-script-unity.md). 
+That's ten lines you're saving compared to the [Unity MonoBehaviour implementation](first-script-unity.md) though the code looks strikingly familiar. 
 
-However, the savings derive solely from not declaring the Input map strings as variables. The overall code complexity remains exactly the same.
+The savings here derive solely from being able to inline the Input map strings, avoiding the use of fields (class instance variables). The overall code complexity remains exactly the same, with a minor reduction in syntax "noise".
 
 > [!NOTE]
 > > 🤔 Hey, wait! This GDScript is 26 lines but Unity's code snippet was 52 lines!
-> 
-> Correct, but in all fairness we should stop counting empty lines, and those with only `{` or `}` when directly comparing it to GDScript. 
+> Correct, but in all fairness we should stop counting empty lines, and _structural lines_ with only a `{` or `}` character in C#. 
 > That makes Unity's solution 30 and the GDScript version 20 _actual lines of code_.
 
 ## With LunyScript
@@ -150,16 +157,8 @@ public partial class Player : Script
 }
 ```
 
-**At 13 lines, that's still 2.77 times fewer lines than GDScript! 😎**
+**At 13 lines, that's still 1.5 times fewer lines than GDScript! 😎**
 
 > [!NOTE]
 > LunyScript - once ported to Godot - will remain firmly based in C#. 
 > GDScript is not a portable language and does not handle fluent APIs well.
-
-### Why So Many Extra Steps?
-
-Compared to Unity, there's an egregious amount of extra steps to be done in the Godot editor before you even get to scripting. 
-
-Godot deliberately provides _clean slates_ for everything: no _meaningful templates_ and often not even _sensible defaults_. Its user experience also centers on deeply hierarchical user interfaces and abundant modal dialogs. This comes at the cost of more UI interactions.
-
-On the other hand, Godot's design provides a comparatively consistent UI that's easier to pick up by beginners and non-technical users. It's in stark contrast to Unreal editor's highly complex UI, while Unity is somewhere in between.
