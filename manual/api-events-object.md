@@ -6,20 +6,20 @@ The table shows how they map to object lifecycle events in the most popular game
 
 | **LunyScript**             | **Unity**            | **Godot**          | **Unreal**              |
 |:---------------------------|:---------------------|:-------------------|:------------------------|
-| On.Created                 | Awake                | _init              | InitializeComponent     |
-| On.Ready                   | Start                | _ready             | BeginPlay               |
-| On.Enabled                 | OnEnable             | _enter_tree        | OnComponentActivated    |
-| On.Disabled                | OnDisable            | _exit_tree         | OnComponentDeactivated  |
-| On.Heartbeat               | FixedUpdate          | _physics_process   | TickComponent           |
-| On.FrameUpdate             | Update               | _process           | TickComponent           |
-| On.FrameLateUpdate         | LateUpdate           | N/A                | TickComponent           |
-| On.Destroyed               | OnDestroy            | N/A (manual)       | UninitializeComponent   |
-| On.Collision(2D).Started   | OnCollisionEnter(2D) | body_entered       | OnComponentHit          |
-| On.Collision(2D).Touching  | OnCollisionStay(2D)      | N/A (manual)       | N/A (manual)            |
-| On.Collision(2D).Ended     | OnCollisionExit(2D)      | body_exited        | N/A (manual)            |
-| On.Trigger(2D).Entered     | OnTriggerEnter(2D)       | area_entered       | OnComponentBeginOverlap |
-| On.Trigger(2D).Overlapping | OnTriggerStay(2D)        | N/A (manual) | N/A (manual)            |
-| On.Trigger(2D).Exited      | OnTriggerExit(2D)        | area_exited        | OnComponentEndOverlap   |
+| `On.Created`                 | `Awake`                | `_init`              | `InitializeComponent`     |
+| `On.Ready`                   | `Start`                | `_ready`             | `BeginPlay`               |
+| `On.Enabled`                 | `OnEnable`             | `_enter_tree`        | `OnComponentActivated`    |
+| `On.Disabled`                | `OnDisable`            | `_exit_tree`         | `OnComponentDeactivated`  |
+| `On.Heartbeat`               | `FixedUpdate`          | `_physics_process`   | `TickComponent`           |
+| `On.FrameUpdate`             | `Update`               | `_process`           | `TickComponent`           |
+| `On.FrameLateUpdate`         | `LateUpdate`           | N/A                | `TickComponent`           |
+| `On.Destroyed`               | `OnDestroy`            | N/A       | `UninitializeComponent`   |
+| `On.Collision(2D).Started`   | `OnCollisionEnter(2D)` | `body_entered`       | `OnComponentHit`          |
+| `On.Collision(2D).Touching`  | `OnCollisionStay(2D)`      | N/A       | N/A            |
+| `On.Collision(2D).Ended`     | `OnCollisionExit(2D)`      | `body_exited`        | N/A            |
+| `On.Trigger(2D).Entered`     | `OnTriggerEnter(2D)`       | `area_entered`       | `OnComponentBeginOverlap` |
+| `On.Trigger(2D).Overlapping` | `OnTriggerStay(2D)`        | N/A | N/A            |
+| `On.Trigger(2D).Exited`      | `OnTriggerExit(2D)`        | `area_exited`        | `OnComponentEndOverlap`   |
 
 Notable exceptions using nouns/adjectives instead of following the past tense `-ed` and participle `-ing` rules: 
 - Frame events: `On.Heartbeat`, `On.FrameUpdate`
