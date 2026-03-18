@@ -291,10 +291,10 @@ items:
     (Begins, Updates, Ends) and finalize with Do().
   example: []
   syntax:
-    content: public PhysicsEventBuilder<CollisionBuilderStart> Collision()
+    content: public CollisionEventBuilder<CollisionStart> Collision()
     return:
-      type: LunyScript.Api.PhysicsEventBuilder{LunyScript.Api.CollisionBuilderStart}
-    content.vb: Public Function Collision() As PhysicsEventBuilder(Of CollisionBuilderStart)
+      type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionStart}
+    content.vb: Public Function Collision() As CollisionEventBuilder(Of CollisionStart)
   overload: LunyScript.Api.OnObjectEventBuilder.Collision*
 - uid: LunyScript.Api.OnObjectEventBuilder.Trigger
   commentId: M:LunyScript.Api.OnObjectEventBuilder.Trigger
@@ -318,10 +318,10 @@ items:
     (Begins, Updates, Ends) and finalize with Do().
   example: []
   syntax:
-    content: public PhysicsEventBuilder<CollisionBuilderStart> Trigger()
+    content: public TriggerEventBuilder<TriggerStart> Trigger()
     return:
-      type: LunyScript.Api.PhysicsEventBuilder{LunyScript.Api.CollisionBuilderStart}
-    content.vb: Public Function Trigger() As PhysicsEventBuilder(Of CollisionBuilderStart)
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerStart}
+    content.vb: Public Function Trigger() As TriggerEventBuilder(Of TriggerStart)
   overload: LunyScript.Api.OnObjectEventBuilder.Trigger*
 references:
 - uid: LunyScript.Api
@@ -562,64 +562,64 @@ references:
   name: Collision
   nameWithType: OnObjectEventBuilder.Collision
   fullName: LunyScript.Api.OnObjectEventBuilder.Collision
-- uid: LunyScript.Api.PhysicsEventBuilder{LunyScript.Api.CollisionBuilderStart}
-  commentId: T:LunyScript.Api.PhysicsEventBuilder{LunyScript.Api.CollisionBuilderStart}
+- uid: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionStart}
+  commentId: T:LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionStart}
   parent: LunyScript.Api
-  definition: LunyScript.Api.PhysicsEventBuilder`1
-  href: LunyScript.Api.PhysicsEventBuilder-1.html
-  name: PhysicsEventBuilder<CollisionBuilderStart>
-  nameWithType: PhysicsEventBuilder<CollisionBuilderStart>
-  fullName: LunyScript.Api.PhysicsEventBuilder<LunyScript.Api.CollisionBuilderStart>
-  nameWithType.vb: PhysicsEventBuilder(Of CollisionBuilderStart)
-  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of LunyScript.Api.CollisionBuilderStart)
-  name.vb: PhysicsEventBuilder(Of CollisionBuilderStart)
+  definition: LunyScript.Api.CollisionEventBuilder`1
+  href: LunyScript.Api.CollisionEventBuilder-1.html
+  name: CollisionEventBuilder<CollisionStart>
+  nameWithType: CollisionEventBuilder<CollisionStart>
+  fullName: LunyScript.Api.CollisionEventBuilder<LunyScript.Api.CollisionStart>
+  nameWithType.vb: CollisionEventBuilder(Of CollisionStart)
+  fullName.vb: LunyScript.Api.CollisionEventBuilder(Of LunyScript.Api.CollisionStart)
+  name.vb: CollisionEventBuilder(Of CollisionStart)
   spec.csharp:
-  - uid: LunyScript.Api.PhysicsEventBuilder`1
-    name: PhysicsEventBuilder
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
     isExternal: true
-    href: LunyScript.Api.PhysicsEventBuilder-1.html
+    href: LunyScript.Api.CollisionEventBuilder-1.html
   - name: <
-  - uid: LunyScript.Api.CollisionBuilderStart
-    name: CollisionBuilderStart
+  - uid: LunyScript.Api.CollisionStart
+    name: CollisionStart
     isExternal: true
-    href: LunyScript.Api.CollisionBuilderStart.html
+    href: LunyScript.Api.CollisionStart.html
   - name: '>'
   spec.vb:
-  - uid: LunyScript.Api.PhysicsEventBuilder`1
-    name: PhysicsEventBuilder
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
     isExternal: true
-    href: LunyScript.Api.PhysicsEventBuilder-1.html
+    href: LunyScript.Api.CollisionEventBuilder-1.html
   - name: (
   - name: Of
   - name: " "
-  - uid: LunyScript.Api.CollisionBuilderStart
-    name: CollisionBuilderStart
+  - uid: LunyScript.Api.CollisionStart
+    name: CollisionStart
     isExternal: true
-    href: LunyScript.Api.CollisionBuilderStart.html
+    href: LunyScript.Api.CollisionStart.html
   - name: )
-- uid: LunyScript.Api.PhysicsEventBuilder`1
-  commentId: T:LunyScript.Api.PhysicsEventBuilder`1
+- uid: LunyScript.Api.CollisionEventBuilder`1
+  commentId: T:LunyScript.Api.CollisionEventBuilder`1
   isExternal: true
-  href: LunyScript.Api.PhysicsEventBuilder-1.html
-  name: PhysicsEventBuilder<T>
-  nameWithType: PhysicsEventBuilder<T>
-  fullName: LunyScript.Api.PhysicsEventBuilder<T>
-  nameWithType.vb: PhysicsEventBuilder(Of T)
-  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T)
-  name.vb: PhysicsEventBuilder(Of T)
+  href: LunyScript.Api.CollisionEventBuilder-1.html
+  name: CollisionEventBuilder<T>
+  nameWithType: CollisionEventBuilder<T>
+  fullName: LunyScript.Api.CollisionEventBuilder<T>
+  nameWithType.vb: CollisionEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.CollisionEventBuilder(Of T)
+  name.vb: CollisionEventBuilder(Of T)
   spec.csharp:
-  - uid: LunyScript.Api.PhysicsEventBuilder`1
-    name: PhysicsEventBuilder
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
     isExternal: true
-    href: LunyScript.Api.PhysicsEventBuilder-1.html
+    href: LunyScript.Api.CollisionEventBuilder-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: LunyScript.Api.PhysicsEventBuilder`1
-    name: PhysicsEventBuilder
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
     isExternal: true
-    href: LunyScript.Api.PhysicsEventBuilder-1.html
+    href: LunyScript.Api.CollisionEventBuilder-1.html
   - name: (
   - name: Of
   - name: " "
@@ -632,3 +632,66 @@ references:
   name: Trigger
   nameWithType: OnObjectEventBuilder.Trigger
   fullName: LunyScript.Api.OnObjectEventBuilder.Trigger
+- uid: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerStart}
+  commentId: T:LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerStart}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TriggerEventBuilder`1
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<TriggerStart>
+  nameWithType: TriggerEventBuilder<TriggerStart>
+  fullName: LunyScript.Api.TriggerEventBuilder<LunyScript.Api.TriggerStart>
+  nameWithType.vb: TriggerEventBuilder(Of TriggerStart)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of LunyScript.Api.TriggerStart)
+  name.vb: TriggerEventBuilder(Of TriggerStart)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.TriggerStart
+    name: TriggerStart
+    isExternal: true
+    href: LunyScript.Api.TriggerStart.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.TriggerStart
+    name: TriggerStart
+    isExternal: true
+    href: LunyScript.Api.TriggerStart.html
+  - name: )
+- uid: LunyScript.Api.TriggerEventBuilder`1
+  commentId: T:LunyScript.Api.TriggerEventBuilder`1
+  isExternal: true
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<T>
+  nameWithType: TriggerEventBuilder<T>
+  fullName: LunyScript.Api.TriggerEventBuilder<T>
+  nameWithType.vb: TriggerEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of T)
+  name.vb: TriggerEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

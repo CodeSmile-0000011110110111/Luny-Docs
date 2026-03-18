@@ -63,10 +63,13 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
+  summary: Enables an input action or action map.
+  example: []
   syntax:
     content: public ActionBlock Enable()
     return:
       type: LunyScript.Blocks.ActionBlock
+      description: ''
     content.vb: Public Function Enable() As ActionBlock
   overload: LunyScript.Api.InputActionBuilder.Enable*
 - uid: LunyScript.Api.InputActionBuilder.Disable
@@ -83,10 +86,13 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
+  summary: Disables an input action or action map.
+  example: []
   syntax:
     content: public ActionBlock Disable()
     return:
       type: LunyScript.Blocks.ActionBlock
+      description: ''
     content.vb: Public Function Disable() As ActionBlock
   overload: LunyScript.Api.InputActionBuilder.Disable*
 references:

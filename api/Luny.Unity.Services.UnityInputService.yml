@@ -121,13 +121,13 @@ items:
   namespace: Luny.Unity.Services
   example: []
   syntax:
-    content: public override void EnableInputAction(string actionName, bool enabled)
+    content: public override void EnableInputAction(string actionName, bool enable)
     parameters:
     - id: actionName
       type: System.String
-    - id: enabled
+    - id: enable
       type: System.Boolean
-    content.vb: Public Overrides Sub EnableInputAction(actionName As String, enabled As Boolean)
+    content.vb: Public Overrides Sub EnableInputAction(actionName As String, enable As Boolean)
   overridden: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)
   overload: Luny.Unity.Services.UnityInputService.EnableInputAction*
   nameWithType.vb: UnityInputService.EnableInputAction(String, Boolean)

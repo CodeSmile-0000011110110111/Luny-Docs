@@ -5,10 +5,10 @@ items:
   id: WhenSceneEventBuilder
   parent: LunyScript.Api
   children:
-  - LunyScript.Api.WhenSceneEventBuilder.Loads(LunyScript.Blocks.ActionBlock[])
-  - LunyScript.Api.WhenSceneEventBuilder.Loads(System.String,LunyScript.Blocks.ActionBlock[])
-  - LunyScript.Api.WhenSceneEventBuilder.Unloads(LunyScript.Blocks.ActionBlock[])
-  - LunyScript.Api.WhenSceneEventBuilder.Unloads(System.String,LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.WhenSceneEventBuilder.Loaded(LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.WhenSceneEventBuilder.Loaded(System.String,LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.WhenSceneEventBuilder.Unloaded(LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.WhenSceneEventBuilder.Unloaded(System.String,LunyScript.Blocks.ActionBlock[])
   langs:
   - csharp
   - vb
@@ -28,16 +28,16 @@ items:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
   - System.ValueType.ToString
-- uid: LunyScript.Api.WhenSceneEventBuilder.Loads(LunyScript.Blocks.ActionBlock[])
-  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Loads(LunyScript.Blocks.ActionBlock[])
-  id: Loads(LunyScript.Blocks.ActionBlock[])
+- uid: LunyScript.Api.WhenSceneEventBuilder.Loaded(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Loaded(LunyScript.Blocks.ActionBlock[])
+  id: Loaded(LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Api.WhenSceneEventBuilder
   langs:
   - csharp
   - vb
-  name: Loads(params ActionBlock[])
-  nameWithType: WhenSceneEventBuilder.Loads(params ActionBlock[])
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Loads(params LunyScript.Blocks.ActionBlock[])
+  name: Loaded(params ActionBlock[])
+  nameWithType: WhenSceneEventBuilder.Loaded(params ActionBlock[])
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Loaded(params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -45,7 +45,7 @@ items:
   summary: Runs when a scene has loaded.
   example: []
   syntax:
-    content: public ISequenceBlock Loads(params ActionBlock[] blocks)
+    content: public ISequenceBlock Loaded(params ActionBlock[] blocks)
     parameters:
     - id: blocks
       type: LunyScript.Blocks.ActionBlock[]
@@ -53,21 +53,21 @@ items:
     return:
       type: LunyScript.Blocks.ISequenceBlock
       description: ''
-    content.vb: Public Function Loads(ParamArray blocks As ActionBlock()) As ISequenceBlock
-  overload: LunyScript.Api.WhenSceneEventBuilder.Loads*
-  nameWithType.vb: WhenSceneEventBuilder.Loads(ParamArray ActionBlock())
-  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Loads(ParamArray LunyScript.Blocks.ActionBlock())
-  name.vb: Loads(ParamArray ActionBlock())
-- uid: LunyScript.Api.WhenSceneEventBuilder.Loads(System.String,LunyScript.Blocks.ActionBlock[])
-  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Loads(System.String,LunyScript.Blocks.ActionBlock[])
-  id: Loads(System.String,LunyScript.Blocks.ActionBlock[])
+    content.vb: Public Function Loaded(ParamArray blocks As ActionBlock()) As ISequenceBlock
+  overload: LunyScript.Api.WhenSceneEventBuilder.Loaded*
+  nameWithType.vb: WhenSceneEventBuilder.Loaded(ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Loaded(ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Loaded(ParamArray ActionBlock())
+- uid: LunyScript.Api.WhenSceneEventBuilder.Loaded(System.String,LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Loaded(System.String,LunyScript.Blocks.ActionBlock[])
+  id: Loaded(System.String,LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Api.WhenSceneEventBuilder
   langs:
   - csharp
   - vb
-  name: Loads(string, params ActionBlock[])
-  nameWithType: WhenSceneEventBuilder.Loads(string, params ActionBlock[])
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Loads(string, params LunyScript.Blocks.ActionBlock[])
+  name: Loaded(string, params ActionBlock[])
+  nameWithType: WhenSceneEventBuilder.Loaded(string, params ActionBlock[])
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Loaded(string, params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -75,7 +75,7 @@ items:
   summary: Runs when a scene has loaded.
   example: []
   syntax:
-    content: public ISequenceBlock Loads(string sceneName, params ActionBlock[] blocks)
+    content: public ISequenceBlock Loaded(string sceneName, params ActionBlock[] blocks)
     parameters:
     - id: sceneName
       type: System.String
@@ -86,25 +86,25 @@ items:
     return:
       type: LunyScript.Blocks.ISequenceBlock
       description: ''
-    content.vb: Public Function Loads(sceneName As String, ParamArray blocks As ActionBlock()) As ISequenceBlock
-  overload: LunyScript.Api.WhenSceneEventBuilder.Loads*
+    content.vb: Public Function Loaded(sceneName As String, ParamArray blocks As ActionBlock()) As ISequenceBlock
+  overload: LunyScript.Api.WhenSceneEventBuilder.Loaded*
   exceptions:
   - type: System.NotImplementedException
     commentId: T:System.NotImplementedException
     description: ''
-  nameWithType.vb: WhenSceneEventBuilder.Loads(String, ParamArray ActionBlock())
-  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Loads(String, ParamArray LunyScript.Blocks.ActionBlock())
-  name.vb: Loads(String, ParamArray ActionBlock())
-- uid: LunyScript.Api.WhenSceneEventBuilder.Unloads(LunyScript.Blocks.ActionBlock[])
-  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Unloads(LunyScript.Blocks.ActionBlock[])
-  id: Unloads(LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: WhenSceneEventBuilder.Loaded(String, ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Loaded(String, ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Loaded(String, ParamArray ActionBlock())
+- uid: LunyScript.Api.WhenSceneEventBuilder.Unloaded(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Unloaded(LunyScript.Blocks.ActionBlock[])
+  id: Unloaded(LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Api.WhenSceneEventBuilder
   langs:
   - csharp
   - vb
-  name: Unloads(params ActionBlock[])
-  nameWithType: WhenSceneEventBuilder.Unloads(params ActionBlock[])
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloads(params LunyScript.Blocks.ActionBlock[])
+  name: Unloaded(params ActionBlock[])
+  nameWithType: WhenSceneEventBuilder.Unloaded(params ActionBlock[])
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloaded(params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -112,7 +112,7 @@ items:
   summary: Runs when a scene has unloaded.
   example: []
   syntax:
-    content: public ISequenceBlock Unloads(params ActionBlock[] blocks)
+    content: public ISequenceBlock Unloaded(params ActionBlock[] blocks)
     parameters:
     - id: blocks
       type: LunyScript.Blocks.ActionBlock[]
@@ -120,21 +120,21 @@ items:
     return:
       type: LunyScript.Blocks.ISequenceBlock
       description: ''
-    content.vb: Public Function Unloads(ParamArray blocks As ActionBlock()) As ISequenceBlock
-  overload: LunyScript.Api.WhenSceneEventBuilder.Unloads*
-  nameWithType.vb: WhenSceneEventBuilder.Unloads(ParamArray ActionBlock())
-  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Unloads(ParamArray LunyScript.Blocks.ActionBlock())
-  name.vb: Unloads(ParamArray ActionBlock())
-- uid: LunyScript.Api.WhenSceneEventBuilder.Unloads(System.String,LunyScript.Blocks.ActionBlock[])
-  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Unloads(System.String,LunyScript.Blocks.ActionBlock[])
-  id: Unloads(System.String,LunyScript.Blocks.ActionBlock[])
+    content.vb: Public Function Unloaded(ParamArray blocks As ActionBlock()) As ISequenceBlock
+  overload: LunyScript.Api.WhenSceneEventBuilder.Unloaded*
+  nameWithType.vb: WhenSceneEventBuilder.Unloaded(ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Unloaded(ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Unloaded(ParamArray ActionBlock())
+- uid: LunyScript.Api.WhenSceneEventBuilder.Unloaded(System.String,LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.WhenSceneEventBuilder.Unloaded(System.String,LunyScript.Blocks.ActionBlock[])
+  id: Unloaded(System.String,LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Api.WhenSceneEventBuilder
   langs:
   - csharp
   - vb
-  name: Unloads(string, params ActionBlock[])
-  nameWithType: WhenSceneEventBuilder.Unloads(string, params ActionBlock[])
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloads(string, params LunyScript.Blocks.ActionBlock[])
+  name: Unloaded(string, params ActionBlock[])
+  nameWithType: WhenSceneEventBuilder.Unloaded(string, params ActionBlock[])
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloaded(string, params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -142,7 +142,7 @@ items:
   summary: Runs when a scene has unloaded.
   example: []
   syntax:
-    content: public ISequenceBlock Unloads(string sceneName, params ActionBlock[] blocks)
+    content: public ISequenceBlock Unloaded(string sceneName, params ActionBlock[] blocks)
     parameters:
     - id: sceneName
       type: System.String
@@ -153,15 +153,15 @@ items:
     return:
       type: LunyScript.Blocks.ISequenceBlock
       description: ''
-    content.vb: Public Function Unloads(sceneName As String, ParamArray blocks As ActionBlock()) As ISequenceBlock
-  overload: LunyScript.Api.WhenSceneEventBuilder.Unloads*
+    content.vb: Public Function Unloaded(sceneName As String, ParamArray blocks As ActionBlock()) As ISequenceBlock
+  overload: LunyScript.Api.WhenSceneEventBuilder.Unloaded*
   exceptions:
   - type: System.NotImplementedException
     commentId: T:System.NotImplementedException
     description: ''
-  nameWithType.vb: WhenSceneEventBuilder.Unloads(String, ParamArray ActionBlock())
-  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Unloads(String, ParamArray LunyScript.Blocks.ActionBlock())
-  name.vb: Unloads(String, ParamArray ActionBlock())
+  nameWithType.vb: WhenSceneEventBuilder.Unloaded(String, ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Unloaded(String, ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Unloaded(String, ParamArray ActionBlock())
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -280,13 +280,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: LunyScript.Api.WhenSceneEventBuilder.Loads*
-  commentId: Overload:LunyScript.Api.WhenSceneEventBuilder.Loads
+- uid: LunyScript.Api.WhenSceneEventBuilder.Loaded*
+  commentId: Overload:LunyScript.Api.WhenSceneEventBuilder.Loaded
   isExternal: true
-  href: LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Loads_LunyScript_Blocks_ActionBlock___
-  name: Loads
-  nameWithType: WhenSceneEventBuilder.Loads
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Loads
+  href: LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Loaded_LunyScript_Blocks_ActionBlock___
+  name: Loaded
+  nameWithType: WhenSceneEventBuilder.Loaded
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Loaded
 - uid: LunyScript.Blocks.ActionBlock[]
   isExternal: true
   href: LunyScript.Blocks.ActionBlock.html
@@ -363,10 +363,10 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: LunyScript.Api.WhenSceneEventBuilder.Unloads*
-  commentId: Overload:LunyScript.Api.WhenSceneEventBuilder.Unloads
+- uid: LunyScript.Api.WhenSceneEventBuilder.Unloaded*
+  commentId: Overload:LunyScript.Api.WhenSceneEventBuilder.Unloaded
   isExternal: true
-  href: LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Unloads_LunyScript_Blocks_ActionBlock___
-  name: Unloads
-  nameWithType: WhenSceneEventBuilder.Unloads
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloads
+  href: LunyScript.Api.WhenSceneEventBuilder.html#LunyScript_Api_WhenSceneEventBuilder_Unloaded_LunyScript_Blocks_ActionBlock___
+  name: Unloaded
+  nameWithType: WhenSceneEventBuilder.Unloaded
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloaded

@@ -4,10 +4,15 @@ items:
   commentId: N:LunyScript.Api
   id: LunyScript.Api
   children:
-  - LunyScript.Api.CollisionBuilderLayered
-  - LunyScript.Api.CollisionBuilderMasked
-  - LunyScript.Api.CollisionBuilderReady
-  - LunyScript.Api.CollisionBuilderStart
+  - LunyScript.Api.CollisionEventBuilderHelper
+  - LunyScript.Api.CollisionEventBuilder`1
+  - LunyScript.Api.CollisionEventFilterExtensions
+  - LunyScript.Api.CollisionEventHandlerExtensions
+  - LunyScript.Api.CollisionEventSet
+  - LunyScript.Api.CollisionLayered
+  - LunyScript.Api.CollisionMasked
+  - LunyScript.Api.CollisionReady
+  - LunyScript.Api.CollisionStart
   - LunyScript.Api.ComponentApi
   - LunyScript.Api.CoroutineBuilder
   - LunyScript.Api.CoroutineCounterBuilderUnitSet
@@ -20,11 +25,8 @@ items:
   - LunyScript.Api.DebugApi
   - LunyScript.Api.EditorApi
   - LunyScript.Api.ForBlockBuilder
-  - LunyScript.Api.ICollisionBuilderLayered
-  - LunyScript.Api.ICollisionBuilderMasked
-  - LunyScript.Api.ICollisionBuilderReady
-  - LunyScript.Api.ICollisionBuilderStart
   - LunyScript.Api.ICollisionBuilderState
+  - LunyScript.Api.ICollisionFilterable
   - LunyScript.Api.ICoroutineCounterBuilderState
   - LunyScript.Api.ICoroutineCounterBuilderUnitSet
   - LunyScript.Api.ICoroutineCounterWhen
@@ -37,6 +39,8 @@ items:
   - LunyScript.Api.IObjectBuilderState
   - LunyScript.Api.ITransformBuilderReady
   - LunyScript.Api.ITransformBuilderState
+  - LunyScript.Api.ITriggerBuilderState
+  - LunyScript.Api.ITriggerFilterable
   - LunyScript.Api.InputActionBuilder
   - LunyScript.Api.InputAxisBuilder
   - LunyScript.Api.InputBuilder
@@ -45,10 +49,7 @@ items:
   - LunyScript.Api.ObjectBuilderExtensions
   - LunyScript.Api.ObjectBuilderNameSet
   - LunyScript.Api.ObjectCreateBuilder`1
-  - LunyScript.Api.OnInputEventBuilder
   - LunyScript.Api.OnObjectEventBuilder
-  - LunyScript.Api.PhysicsEventBuilder`1
-  - LunyScript.Api.PhysicsEventLayerExtensions
   - LunyScript.Api.PrefabBuilder
   - LunyScript.Api.SceneApi
   - LunyScript.Api.TimeApi
@@ -66,6 +67,14 @@ items:
   - LunyScript.Api.TransformRotationBuilder`1
   - LunyScript.Api.TransformScaleBuilderExtensions
   - LunyScript.Api.TransformScaleBuilder`1
+  - LunyScript.Api.TriggerEventBuilder`1
+  - LunyScript.Api.TriggerEventFilterExtensions
+  - LunyScript.Api.TriggerEventHandlerExtensions
+  - LunyScript.Api.TriggerEventSet
+  - LunyScript.Api.TriggerLayered
+  - LunyScript.Api.TriggerMasked
+  - LunyScript.Api.TriggerReady
+  - LunyScript.Api.TriggerStart
   - LunyScript.Api.WhenGlobalEventBuilder
   - LunyScript.Api.WhenInputActionBuilder
   - LunyScript.Api.WhenInputActionBuilderExtensions
@@ -321,13 +330,6 @@ references:
   name: TimerBuilderFinalExtensions
   nameWithType: TimerBuilderFinalExtensions
   fullName: LunyScript.Api.TimerBuilderFinalExtensions
-- uid: LunyScript.Api.OnInputEventBuilder
-  commentId: T:LunyScript.Api.OnInputEventBuilder
-  isExternal: true
-  href: LunyScript.Api.OnInputEventBuilder.html
-  name: OnInputEventBuilder
-  nameWithType: OnInputEventBuilder
-  fullName: LunyScript.Api.OnInputEventBuilder
 - uid: LunyScript.Api.OnObjectEventBuilder
   commentId: T:LunyScript.Api.OnObjectEventBuilder
   parent: LunyScript.Api
@@ -336,109 +338,6 @@ references:
   name: OnObjectEventBuilder
   nameWithType: OnObjectEventBuilder
   fullName: LunyScript.Api.OnObjectEventBuilder
-- uid: LunyScript.Api.ICollisionBuilderState
-  commentId: T:LunyScript.Api.ICollisionBuilderState
-  parent: LunyScript.Api
-  isExternal: true
-  href: LunyScript.Api.ICollisionBuilderState.html
-  name: ICollisionBuilderState
-  nameWithType: ICollisionBuilderState
-  fullName: LunyScript.Api.ICollisionBuilderState
-- uid: LunyScript.Api.ICollisionBuilderStart
-  commentId: T:LunyScript.Api.ICollisionBuilderStart
-  parent: LunyScript.Api
-  isExternal: true
-  href: LunyScript.Api.ICollisionBuilderStart.html
-  name: ICollisionBuilderStart
-  nameWithType: ICollisionBuilderStart
-  fullName: LunyScript.Api.ICollisionBuilderStart
-- uid: LunyScript.Api.CollisionBuilderStart
-  commentId: T:LunyScript.Api.CollisionBuilderStart
-  isExternal: true
-  href: LunyScript.Api.CollisionBuilderStart.html
-  name: CollisionBuilderStart
-  nameWithType: CollisionBuilderStart
-  fullName: LunyScript.Api.CollisionBuilderStart
-- uid: LunyScript.Api.ICollisionBuilderReady
-  commentId: T:LunyScript.Api.ICollisionBuilderReady
-  parent: LunyScript.Api
-  isExternal: true
-  href: LunyScript.Api.ICollisionBuilderReady.html
-  name: ICollisionBuilderReady
-  nameWithType: ICollisionBuilderReady
-  fullName: LunyScript.Api.ICollisionBuilderReady
-- uid: LunyScript.Api.CollisionBuilderReady
-  commentId: T:LunyScript.Api.CollisionBuilderReady
-  isExternal: true
-  href: LunyScript.Api.CollisionBuilderReady.html
-  name: CollisionBuilderReady
-  nameWithType: CollisionBuilderReady
-  fullName: LunyScript.Api.CollisionBuilderReady
-- uid: LunyScript.Api.ICollisionBuilderLayered
-  commentId: T:LunyScript.Api.ICollisionBuilderLayered
-  parent: LunyScript.Api
-  isExternal: true
-  href: LunyScript.Api.ICollisionBuilderLayered.html
-  name: ICollisionBuilderLayered
-  nameWithType: ICollisionBuilderLayered
-  fullName: LunyScript.Api.ICollisionBuilderLayered
-- uid: LunyScript.Api.CollisionBuilderLayered
-  commentId: T:LunyScript.Api.CollisionBuilderLayered
-  isExternal: true
-  href: LunyScript.Api.CollisionBuilderLayered.html
-  name: CollisionBuilderLayered
-  nameWithType: CollisionBuilderLayered
-  fullName: LunyScript.Api.CollisionBuilderLayered
-- uid: LunyScript.Api.ICollisionBuilderMasked
-  commentId: T:LunyScript.Api.ICollisionBuilderMasked
-  parent: LunyScript.Api
-  isExternal: true
-  href: LunyScript.Api.ICollisionBuilderMasked.html
-  name: ICollisionBuilderMasked
-  nameWithType: ICollisionBuilderMasked
-  fullName: LunyScript.Api.ICollisionBuilderMasked
-- uid: LunyScript.Api.CollisionBuilderMasked
-  commentId: T:LunyScript.Api.CollisionBuilderMasked
-  isExternal: true
-  href: LunyScript.Api.CollisionBuilderMasked.html
-  name: CollisionBuilderMasked
-  nameWithType: CollisionBuilderMasked
-  fullName: LunyScript.Api.CollisionBuilderMasked
-- uid: LunyScript.Api.PhysicsEventBuilder`1
-  commentId: T:LunyScript.Api.PhysicsEventBuilder`1
-  isExternal: true
-  href: LunyScript.Api.PhysicsEventBuilder-1.html
-  name: PhysicsEventBuilder<T>
-  nameWithType: PhysicsEventBuilder<T>
-  fullName: LunyScript.Api.PhysicsEventBuilder<T>
-  nameWithType.vb: PhysicsEventBuilder(Of T)
-  fullName.vb: LunyScript.Api.PhysicsEventBuilder(Of T)
-  name.vb: PhysicsEventBuilder(Of T)
-  spec.csharp:
-  - uid: LunyScript.Api.PhysicsEventBuilder`1
-    name: PhysicsEventBuilder
-    isExternal: true
-    href: LunyScript.Api.PhysicsEventBuilder-1.html
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: LunyScript.Api.PhysicsEventBuilder`1
-    name: PhysicsEventBuilder
-    isExternal: true
-    href: LunyScript.Api.PhysicsEventBuilder-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: LunyScript.Api.PhysicsEventLayerExtensions
-  commentId: T:LunyScript.Api.PhysicsEventLayerExtensions
-  isExternal: true
-  href: LunyScript.Api.PhysicsEventLayerExtensions.html
-  name: PhysicsEventLayerExtensions
-  nameWithType: PhysicsEventLayerExtensions
-  fullName: LunyScript.Api.PhysicsEventLayerExtensions
 - uid: LunyScript.Api.WhenGlobalEventBuilder
   commentId: T:LunyScript.Api.WhenGlobalEventBuilder
   parent: LunyScript.Api
@@ -447,22 +346,6 @@ references:
   name: WhenGlobalEventBuilder
   nameWithType: WhenGlobalEventBuilder
   fullName: LunyScript.Api.WhenGlobalEventBuilder
-- uid: LunyScript.Api.WhenInputEventBuilder
-  commentId: T:LunyScript.Api.WhenInputEventBuilder
-  parent: LunyScript.Api
-  isExternal: true
-  href: LunyScript.Api.WhenInputEventBuilder.html
-  name: WhenInputEventBuilder
-  nameWithType: WhenInputEventBuilder
-  fullName: LunyScript.Api.WhenInputEventBuilder
-- uid: LunyScript.Api.WhenSceneEventBuilder
-  commentId: T:LunyScript.Api.WhenSceneEventBuilder
-  parent: LunyScript.Api
-  isExternal: true
-  href: LunyScript.Api.WhenSceneEventBuilder.html
-  name: WhenSceneEventBuilder
-  nameWithType: WhenSceneEventBuilder
-  fullName: LunyScript.Api.WhenSceneEventBuilder
 - uid: LunyScript.Api.InputBuilder
   commentId: T:LunyScript.Api.InputBuilder
   parent: LunyScript.Api
@@ -511,6 +394,14 @@ references:
   name: WhenInputActionBuilderExtensions
   nameWithType: WhenInputActionBuilderExtensions
   fullName: LunyScript.Api.WhenInputActionBuilderExtensions
+- uid: LunyScript.Api.WhenInputEventBuilder
+  commentId: T:LunyScript.Api.WhenInputEventBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.WhenInputEventBuilder.html
+  name: WhenInputEventBuilder
+  nameWithType: WhenInputEventBuilder
+  fullName: LunyScript.Api.WhenInputEventBuilder
 - uid: LunyScript.Api.IObjectBuilderState
   commentId: T:LunyScript.Api.IObjectBuilderState
   parent: LunyScript.Api
@@ -594,6 +485,209 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: LunyScript.Api.ICollisionBuilderState
+  commentId: T:LunyScript.Api.ICollisionBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionBuilderState.html
+  name: ICollisionBuilderState
+  nameWithType: ICollisionBuilderState
+  fullName: LunyScript.Api.ICollisionBuilderState
+- uid: LunyScript.Api.ICollisionFilterable
+  commentId: T:LunyScript.Api.ICollisionFilterable
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionFilterable.html
+  name: ICollisionFilterable
+  nameWithType: ICollisionFilterable
+  fullName: LunyScript.Api.ICollisionFilterable
+- uid: LunyScript.Api.CollisionStart
+  commentId: T:LunyScript.Api.CollisionStart
+  isExternal: true
+  href: LunyScript.Api.CollisionStart.html
+  name: CollisionStart
+  nameWithType: CollisionStart
+  fullName: LunyScript.Api.CollisionStart
+- uid: LunyScript.Api.CollisionReady
+  commentId: T:LunyScript.Api.CollisionReady
+  isExternal: true
+  href: LunyScript.Api.CollisionReady.html
+  name: CollisionReady
+  nameWithType: CollisionReady
+  fullName: LunyScript.Api.CollisionReady
+- uid: LunyScript.Api.CollisionLayered
+  commentId: T:LunyScript.Api.CollisionLayered
+  isExternal: true
+  href: LunyScript.Api.CollisionLayered.html
+  name: CollisionLayered
+  nameWithType: CollisionLayered
+  fullName: LunyScript.Api.CollisionLayered
+- uid: LunyScript.Api.CollisionMasked
+  commentId: T:LunyScript.Api.CollisionMasked
+  isExternal: true
+  href: LunyScript.Api.CollisionMasked.html
+  name: CollisionMasked
+  nameWithType: CollisionMasked
+  fullName: LunyScript.Api.CollisionMasked
+- uid: LunyScript.Api.CollisionEventSet
+  commentId: T:LunyScript.Api.CollisionEventSet
+  isExternal: true
+  href: LunyScript.Api.CollisionEventSet.html
+  name: CollisionEventSet
+  nameWithType: CollisionEventSet
+  fullName: LunyScript.Api.CollisionEventSet
+- uid: LunyScript.Api.CollisionEventBuilder`1
+  commentId: T:LunyScript.Api.CollisionEventBuilder`1
+  isExternal: true
+  href: LunyScript.Api.CollisionEventBuilder-1.html
+  name: CollisionEventBuilder<T>
+  nameWithType: CollisionEventBuilder<T>
+  fullName: LunyScript.Api.CollisionEventBuilder<T>
+  nameWithType.vb: CollisionEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.CollisionEventBuilder(Of T)
+  name.vb: CollisionEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.CollisionEventFilterExtensions
+  commentId: T:LunyScript.Api.CollisionEventFilterExtensions
+  isExternal: true
+  href: LunyScript.Api.CollisionEventFilterExtensions.html
+  name: CollisionEventFilterExtensions
+  nameWithType: CollisionEventFilterExtensions
+  fullName: LunyScript.Api.CollisionEventFilterExtensions
+- uid: LunyScript.Api.CollisionEventHandlerExtensions
+  commentId: T:LunyScript.Api.CollisionEventHandlerExtensions
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.CollisionEventHandlerExtensions.html
+  name: CollisionEventHandlerExtensions
+  nameWithType: CollisionEventHandlerExtensions
+  fullName: LunyScript.Api.CollisionEventHandlerExtensions
+- uid: LunyScript.Api.CollisionEventBuilderHelper
+  commentId: T:LunyScript.Api.CollisionEventBuilderHelper
+  isExternal: true
+  href: LunyScript.Api.CollisionEventBuilderHelper.html
+  name: CollisionEventBuilderHelper
+  nameWithType: CollisionEventBuilderHelper
+  fullName: LunyScript.Api.CollisionEventBuilderHelper
+- uid: LunyScript.Api.ITriggerBuilderState
+  commentId: T:LunyScript.Api.ITriggerBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ITriggerBuilderState.html
+  name: ITriggerBuilderState
+  nameWithType: ITriggerBuilderState
+  fullName: LunyScript.Api.ITriggerBuilderState
+- uid: LunyScript.Api.ITriggerFilterable
+  commentId: T:LunyScript.Api.ITriggerFilterable
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ITriggerFilterable.html
+  name: ITriggerFilterable
+  nameWithType: ITriggerFilterable
+  fullName: LunyScript.Api.ITriggerFilterable
+- uid: LunyScript.Api.TriggerStart
+  commentId: T:LunyScript.Api.TriggerStart
+  isExternal: true
+  href: LunyScript.Api.TriggerStart.html
+  name: TriggerStart
+  nameWithType: TriggerStart
+  fullName: LunyScript.Api.TriggerStart
+- uid: LunyScript.Api.TriggerReady
+  commentId: T:LunyScript.Api.TriggerReady
+  isExternal: true
+  href: LunyScript.Api.TriggerReady.html
+  name: TriggerReady
+  nameWithType: TriggerReady
+  fullName: LunyScript.Api.TriggerReady
+- uid: LunyScript.Api.TriggerLayered
+  commentId: T:LunyScript.Api.TriggerLayered
+  isExternal: true
+  href: LunyScript.Api.TriggerLayered.html
+  name: TriggerLayered
+  nameWithType: TriggerLayered
+  fullName: LunyScript.Api.TriggerLayered
+- uid: LunyScript.Api.TriggerMasked
+  commentId: T:LunyScript.Api.TriggerMasked
+  isExternal: true
+  href: LunyScript.Api.TriggerMasked.html
+  name: TriggerMasked
+  nameWithType: TriggerMasked
+  fullName: LunyScript.Api.TriggerMasked
+- uid: LunyScript.Api.TriggerEventSet
+  commentId: T:LunyScript.Api.TriggerEventSet
+  isExternal: true
+  href: LunyScript.Api.TriggerEventSet.html
+  name: TriggerEventSet
+  nameWithType: TriggerEventSet
+  fullName: LunyScript.Api.TriggerEventSet
+- uid: LunyScript.Api.TriggerEventBuilder`1
+  commentId: T:LunyScript.Api.TriggerEventBuilder`1
+  isExternal: true
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<T>
+  nameWithType: TriggerEventBuilder<T>
+  fullName: LunyScript.Api.TriggerEventBuilder<T>
+  nameWithType.vb: TriggerEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of T)
+  name.vb: TriggerEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.TriggerEventFilterExtensions
+  commentId: T:LunyScript.Api.TriggerEventFilterExtensions
+  isExternal: true
+  href: LunyScript.Api.TriggerEventFilterExtensions.html
+  name: TriggerEventFilterExtensions
+  nameWithType: TriggerEventFilterExtensions
+  fullName: LunyScript.Api.TriggerEventFilterExtensions
+- uid: LunyScript.Api.TriggerEventHandlerExtensions
+  commentId: T:LunyScript.Api.TriggerEventHandlerExtensions
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.TriggerEventHandlerExtensions.html
+  name: TriggerEventHandlerExtensions
+  nameWithType: TriggerEventHandlerExtensions
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions
+- uid: LunyScript.Api.WhenSceneEventBuilder
+  commentId: T:LunyScript.Api.WhenSceneEventBuilder
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.WhenSceneEventBuilder.html
+  name: WhenSceneEventBuilder
+  nameWithType: WhenSceneEventBuilder
+  fullName: LunyScript.Api.WhenSceneEventBuilder
 - uid: LunyScript.Api.ITransformBuilderState
   commentId: T:LunyScript.Api.ITransformBuilderState
   parent: LunyScript.Api

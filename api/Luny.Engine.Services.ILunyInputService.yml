@@ -356,13 +356,13 @@ items:
   - Luny
   namespace: Luny.Engine.Services
   syntax:
-    content: void EnableInputAction(string actionName, bool enabled)
+    content: void EnableInputAction(string actionName, bool enable)
     parameters:
     - id: actionName
       type: System.String
-    - id: enabled
+    - id: enable
       type: System.Boolean
-    content.vb: Sub EnableInputAction(actionName As String, enabled As Boolean)
+    content.vb: Sub EnableInputAction(actionName As String, enable As Boolean)
   overload: Luny.Engine.Services.ILunyInputService.EnableInputAction*
   nameWithType.vb: ILunyInputService.EnableInputAction(String, Boolean)
   fullName.vb: Luny.Engine.Services.ILunyInputService.EnableInputAction(String, Boolean)

@@ -15,8 +15,8 @@ items:
   - LunyScript.Script.Debug
   - LunyScript.Script.Editor
   - LunyScript.Script.Finalize
-  - LunyScript.Script.For(System.Int32)
-  - LunyScript.Script.For(System.Int32,System.Int32)
+  - LunyScript.Script.For(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Script.For(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
   - LunyScript.Script.GVar
   - LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
   - LunyScript.Script.Input
@@ -183,16 +183,16 @@ items:
   nameWithType.vb: Script.While(ParamArray ConditionBlock())
   fullName.vb: LunyScript.Script.While(ParamArray LunyScript.Blocks.ConditionBlock())
   name.vb: While(ParamArray ConditionBlock())
-- uid: LunyScript.Script.For(System.Int32)
-  commentId: M:LunyScript.Script.For(System.Int32)
-  id: For(System.Int32)
+- uid: LunyScript.Script.For(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Script.For(LunyScript.Blocks.VariableBlock)
+  id: For(LunyScript.Blocks.VariableBlock)
   parent: LunyScript.Script
   langs:
   - csharp
   - vb
-  name: For(int)
-  nameWithType: Script.For(int)
-  fullName: LunyScript.Script.For(int)
+  name: For(VariableBlock)
+  nameWithType: Script.For(VariableBlock)
+  fullName: LunyScript.Script.For(LunyScript.Blocks.VariableBlock)
   type: Method
   assemblies:
   - LunyScript
@@ -203,27 +203,24 @@ items:
     Starts at 1 and increments by 1 until limit is reached (inclusive).
   example: []
   syntax:
-    content: public ForBlockBuilder For(int numberOfTimes)
+    content: public ForBlockBuilder For(VariableBlock numberOfTimes)
     parameters:
     - id: numberOfTimes
-      type: System.Int32
+      type: LunyScript.Blocks.VariableBlock
     return:
       type: LunyScript.Api.ForBlockBuilder
-    content.vb: Public Function [For](numberOfTimes As Integer) As ForBlockBuilder
+    content.vb: Public Function [For](numberOfTimes As VariableBlock) As ForBlockBuilder
   overload: LunyScript.Script.For*
-  nameWithType.vb: Script.For(Integer)
-  fullName.vb: LunyScript.Script.For(Integer)
-  name.vb: For(Integer)
-- uid: LunyScript.Script.For(System.Int32,System.Int32)
-  commentId: M:LunyScript.Script.For(System.Int32,System.Int32)
-  id: For(System.Int32,System.Int32)
+- uid: LunyScript.Script.For(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Script.For(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  id: For(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
   parent: LunyScript.Script
   langs:
   - csharp
   - vb
-  name: For(int, int)
-  nameWithType: Script.For(int, int)
-  fullName: LunyScript.Script.For(int, int)
+  name: For(VariableBlock, VariableBlock)
+  nameWithType: Script.For(VariableBlock, VariableBlock)
+  fullName: LunyScript.Script.For(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
   type: Method
   assemblies:
   - LunyScript
@@ -236,19 +233,16 @@ items:
     If step is negative: starts at limit and decrements by step until 1 is reached.
   example: []
   syntax:
-    content: public ForBlockBuilder For(int numberOfTimes, int step)
+    content: public ForBlockBuilder For(VariableBlock numberOfTimes, VariableBlock step)
     parameters:
     - id: numberOfTimes
-      type: System.Int32
+      type: LunyScript.Blocks.VariableBlock
     - id: step
-      type: System.Int32
+      type: LunyScript.Blocks.VariableBlock
     return:
       type: LunyScript.Api.ForBlockBuilder
-    content.vb: Public Function [For](numberOfTimes As Integer, [step] As Integer) As ForBlockBuilder
+    content.vb: Public Function [For](numberOfTimes As VariableBlock, [step] As VariableBlock) As ForBlockBuilder
   overload: LunyScript.Script.For*
-  nameWithType.vb: Script.For(Integer, Integer)
-  fullName.vb: LunyScript.Script.For(Integer, Integer)
-  name.vb: For(Integer, Integer)
 - uid: LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   commentId: M:LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   id: Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
@@ -1095,21 +1089,18 @@ references:
 - uid: LunyScript.Script.For*
   commentId: Overload:LunyScript.Script.For
   isExternal: true
-  href: LunyScript.Script.html#LunyScript_Script_For_System_Int32_
+  href: LunyScript.Script.html#LunyScript_Script_For_LunyScript_Blocks_VariableBlock_
   name: For
   nameWithType: Script.For
   fullName: LunyScript.Script.For
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
+- uid: LunyScript.Blocks.VariableBlock
+  commentId: T:LunyScript.Blocks.VariableBlock
+  parent: LunyScript.Blocks
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  href: LunyScript.Blocks.VariableBlock.html
+  name: VariableBlock
+  nameWithType: VariableBlock
+  fullName: LunyScript.Blocks.VariableBlock
 - uid: LunyScript.Api.ForBlockBuilder
   commentId: T:LunyScript.Api.ForBlockBuilder
   parent: LunyScript.Api

@@ -20,8 +20,8 @@ items:
   - Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)
   - Luny.Engine.Services.LunyInputServiceBase.LastInputEvent
   - Luny.Engine.Services.LunyInputServiceBase.OnInputAction
+  - Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameBegins
   - Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameEnds
-  - Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate
   - Luny.Engine.Services.LunyInputServiceBase.SetAxisInput(System.String,System.Single)
   - Luny.Engine.Services.LunyInputServiceBase.SetButtonInput(System.String,System.Boolean,System.Single)
   - Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])
@@ -52,8 +52,8 @@ items:
   - Luny.Engine.Services.LunyEngineServiceBase.OnServiceInitialize
   - Luny.Engine.Services.LunyEngineServiceBase.OnServiceStartup
   - Luny.Engine.Services.LunyEngineServiceBase.OnServiceShutdown
-  - Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
   - Luny.Engine.Services.LunyEngineServiceBase.OnServiceHeartbeat
+  - Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
   - Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameLateUpdate
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)
@@ -400,13 +400,13 @@ items:
   namespace: Luny.Engine.Services
   example: []
   syntax:
-    content: public abstract void EnableInputAction(string actionName, bool enabled)
+    content: public abstract void EnableInputAction(string actionName, bool enable)
     parameters:
     - id: actionName
       type: System.String
-    - id: enabled
+    - id: enable
       type: System.Boolean
-    content.vb: Public MustOverride Sub EnableInputAction(actionName As String, enabled As Boolean)
+    content.vb: Public MustOverride Sub EnableInputAction(actionName As String, enable As Boolean)
   overload: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction*
   implements:
   - Luny.Engine.Services.ILunyInputService.EnableInputAction(System.String,System.Boolean)
@@ -540,26 +540,26 @@ items:
       type: Luny.Engine.Bridge.LunyInputActionEvent
     content.vb: Protected Sub HandleInputActionEvent(inputEvent As LunyInputActionEvent)
   overload: Luny.Engine.Services.LunyInputServiceBase.HandleInputActionEvent*
-- uid: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate
-  commentId: M:Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate
-  id: OnServiceFrameUpdate
+- uid: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameBegins
+  commentId: M:Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameBegins
+  id: OnServiceFrameBegins
   parent: Luny.Engine.Services.LunyInputServiceBase
   langs:
   - csharp
   - vb
-  name: OnServiceFrameUpdate()
-  nameWithType: LunyInputServiceBase.OnServiceFrameUpdate()
-  fullName: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate()
+  name: OnServiceFrameBegins()
+  nameWithType: LunyInputServiceBase.OnServiceFrameBegins()
+  fullName: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameBegins()
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   example: []
   syntax:
-    content: protected override void OnServiceFrameUpdate()
-    content.vb: Protected Overrides Sub OnServiceFrameUpdate()
-  overridden: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
-  overload: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate*
+    content: protected override void OnServiceFrameBegins()
+    content.vb: Protected Overrides Sub OnServiceFrameBegins()
+  overridden: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
+  overload: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameBegins*
 - uid: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameEnds
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameEnds
   id: OnServiceFrameEnds
@@ -784,28 +784,6 @@ references:
     href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceShutdown
   - name: (
   - name: )
-- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
-  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
-  parent: Luny.Engine.Services.LunyEngineServiceBase
-  isExternal: true
-  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins
-  name: OnServiceFrameBegins()
-  nameWithType: LunyEngineServiceBase.OnServiceFrameBegins()
-  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins()
-  spec.csharp:
-  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
-    name: OnServiceFrameBegins
-    isExternal: true
-    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
-    name: OnServiceFrameBegins
-    isExternal: true
-    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins
-  - name: (
-  - name: )
 - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceHeartbeat
   commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceHeartbeat
   parent: Luny.Engine.Services.LunyEngineServiceBase
@@ -826,6 +804,28 @@ references:
     name: OnServiceHeartbeat
     isExternal: true
     href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceHeartbeat
+  - name: (
+  - name: )
+- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
+  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
+  parent: Luny.Engine.Services.LunyEngineServiceBase
+  isExternal: true
+  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameUpdate
+  name: OnServiceFrameUpdate()
+  nameWithType: LunyEngineServiceBase.OnServiceFrameUpdate()
+  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate()
+  spec.csharp:
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
+    name: OnServiceFrameUpdate
+    isExternal: true
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
+    name: OnServiceFrameUpdate
+    isExternal: true
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameUpdate
   - name: (
   - name: )
 - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameLateUpdate
@@ -1577,35 +1577,35 @@ references:
   name: HandleInputActionEvent
   nameWithType: LunyInputServiceBase.HandleInputActionEvent
   fullName: Luny.Engine.Services.LunyInputServiceBase.HandleInputActionEvent
-- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
-  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
+- uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
+  commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
   parent: Luny.Engine.Services.LunyEngineServiceBase
   isExternal: true
-  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameUpdate
-  name: OnServiceFrameUpdate()
-  nameWithType: LunyEngineServiceBase.OnServiceFrameUpdate()
-  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate()
+  href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins
+  name: OnServiceFrameBegins()
+  nameWithType: LunyEngineServiceBase.OnServiceFrameBegins()
+  fullName: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins()
   spec.csharp:
-  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
-    name: OnServiceFrameUpdate
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
+    name: OnServiceFrameBegins
     isExternal: true
-    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameUpdate
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins
   - name: (
   - name: )
   spec.vb:
-  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameUpdate
-    name: OnServiceFrameUpdate
+  - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameBegins
+    name: OnServiceFrameBegins
     isExternal: true
-    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameUpdate
+    href: Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins
   - name: (
   - name: )
-- uid: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate*
-  commentId: Overload:Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate
+- uid: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameBegins*
+  commentId: Overload:Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameBegins
   isExternal: true
-  href: Luny.Engine.Services.LunyInputServiceBase.html#Luny_Engine_Services_LunyInputServiceBase_OnServiceFrameUpdate
-  name: OnServiceFrameUpdate
-  nameWithType: LunyInputServiceBase.OnServiceFrameUpdate
-  fullName: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameUpdate
+  href: Luny.Engine.Services.LunyInputServiceBase.html#Luny_Engine_Services_LunyInputServiceBase_OnServiceFrameBegins
+  name: OnServiceFrameBegins
+  nameWithType: LunyInputServiceBase.OnServiceFrameBegins
+  fullName: Luny.Engine.Services.LunyInputServiceBase.OnServiceFrameBegins
 - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameEnds
   commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceFrameEnds
   parent: Luny.Engine.Services.LunyEngineServiceBase

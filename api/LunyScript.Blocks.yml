@@ -5,9 +5,7 @@ items:
   id: LunyScript.Blocks
   children:
   - LunyScript.Blocks.ActionBlock
-  - LunyScript.Blocks.ComputedVariableBlock
   - LunyScript.Blocks.ConditionBlock
-  - LunyScript.Blocks.ConstantVariableBlock
   - LunyScript.Blocks.ControlFlow
   - LunyScript.Blocks.ICoroutineBlock
   - LunyScript.Blocks.ICounterCoroutineBlock
@@ -270,21 +268,6 @@ references:
   name: TransformScaleSetLocalBlock
   nameWithType: TransformScaleSetLocalBlock
   fullName: LunyScript.Blocks.TransformScaleSetLocalBlock
-- uid: LunyScript.Blocks.ComputedVariableBlock
-  commentId: T:LunyScript.Blocks.ComputedVariableBlock
-  isExternal: true
-  href: LunyScript.Blocks.ComputedVariableBlock.html
-  name: ComputedVariableBlock
-  nameWithType: ComputedVariableBlock
-  fullName: LunyScript.Blocks.ComputedVariableBlock
-- uid: LunyScript.Blocks.ConstantVariableBlock
-  commentId: T:LunyScript.Blocks.ConstantVariableBlock
-  parent: LunyScript.Blocks
-  isExternal: true
-  href: LunyScript.Blocks.ConstantVariableBlock.html
-  name: ConstantVariableBlock
-  nameWithType: ConstantVariableBlock
-  fullName: LunyScript.Blocks.ConstantVariableBlock
 - uid: LunyScript.Blocks.TableVariableBlock
   commentId: T:LunyScript.Blocks.TableVariableBlock
   parent: LunyScript.Blocks

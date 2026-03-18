@@ -28,8 +28,8 @@ items:
   - LunyScript.Script.Coroutine(System.String)
   - LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
   - LunyScript.Script.While(LunyScript.Blocks.ConditionBlock[])
-  - LunyScript.Script.For(System.Int32)
-  - LunyScript.Script.For(System.Int32,System.Int32)
+  - LunyScript.Script.For(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Script.For(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
   - LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   - LunyScript.Script.Check(System.Func{System.Boolean})
   - LunyScript.Script.Run(System.Action)
@@ -261,79 +261,65 @@ references:
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Script.For(System.Int32)
-  commentId: M:LunyScript.Script.For(System.Int32)
+- uid: LunyScript.Script.For(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Script.For(LunyScript.Blocks.VariableBlock)
   parent: LunyScript.Script
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: For(int)
-  nameWithType: Script.For(int)
-  fullName: LunyScript.Script.For(int)
-  nameWithType.vb: Script.For(Integer)
-  fullName.vb: LunyScript.Script.For(Integer)
-  name.vb: For(Integer)
+  name: For(VariableBlock)
+  nameWithType: Script.For(VariableBlock)
+  fullName: LunyScript.Script.For(LunyScript.Blocks.VariableBlock)
   spec.csharp:
-  - uid: LunyScript.Script.For(System.Int32)
+  - uid: LunyScript.Script.For(LunyScript.Blocks.VariableBlock)
     name: For
     isExternal: true
   - name: (
-  - uid: System.Int32
-    name: int
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
-  - uid: LunyScript.Script.For(System.Int32)
+  - uid: LunyScript.Script.For(LunyScript.Blocks.VariableBlock)
     name: For
     isExternal: true
   - name: (
-  - uid: System.Int32
-    name: Integer
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-- uid: LunyScript.Script.For(System.Int32,System.Int32)
-  commentId: M:LunyScript.Script.For(System.Int32,System.Int32)
+- uid: LunyScript.Script.For(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Script.For(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
   parent: LunyScript.Script
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: For(int, int)
-  nameWithType: Script.For(int, int)
-  fullName: LunyScript.Script.For(int, int)
-  nameWithType.vb: Script.For(Integer, Integer)
-  fullName.vb: LunyScript.Script.For(Integer, Integer)
-  name.vb: For(Integer, Integer)
+  name: For(VariableBlock, VariableBlock)
+  nameWithType: Script.For(VariableBlock, VariableBlock)
+  fullName: LunyScript.Script.For(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
   spec.csharp:
-  - uid: LunyScript.Script.For(System.Int32,System.Int32)
+  - uid: LunyScript.Script.For(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
     name: For
     isExternal: true
   - name: (
-  - uid: System.Int32
-    name: int
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
-  - uid: System.Int32
-    name: int
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
-  - uid: LunyScript.Script.For(System.Int32,System.Int32)
+  - uid: LunyScript.Script.For(LunyScript.Blocks.VariableBlock,LunyScript.Blocks.VariableBlock)
     name: For
     isExternal: true
   - name: (
-  - uid: System.Int32
-    name: Integer
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
-  - uid: System.Int32
-    name: Integer
+  - uid: LunyScript.Blocks.VariableBlock
+    name: VariableBlock
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
   commentId: M:LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})

@@ -37,13 +37,17 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
+  summary: Input Action Map events.
+  example: []
   syntax:
     content: public WhenInputActionBuilder Action(string actionName)
     parameters:
     - id: actionName
       type: System.String
+      description: ''
     return:
       type: LunyScript.Api.WhenInputActionBuilder
+      description: ''
     content.vb: Public Function Action(actionName As String) As WhenInputActionBuilder
   overload: LunyScript.Api.WhenInputEventBuilder.Action*
   nameWithType.vb: WhenInputEventBuilder.Action(String)

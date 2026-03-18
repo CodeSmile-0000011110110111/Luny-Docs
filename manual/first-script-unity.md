@@ -2,7 +2,7 @@
 
 **Goal**: You want to create a controllable capsule as your first "Player" in a blank scene, using a regular [MonoBehaviour](xref:UnityEngine.MonoBehaviour) script.
 
-## Status Quo: Unity
+## Status Quo: Unity 6.3 LTS
 
 What you have to do in Unity to set up player and scene:
 

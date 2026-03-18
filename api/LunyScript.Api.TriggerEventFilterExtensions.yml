@@ -1,0 +1,592 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.TriggerEventFilterExtensions
+  commentId: T:LunyScript.Api.TriggerEventFilterExtensions
+  id: TriggerEventFilterExtensions
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.TriggerEventFilterExtensions.Cooldown``1(LunyScript.Api.TriggerEventBuilder{``0},System.Double)
+  - LunyScript.Api.TriggerEventFilterExtensions.Layered``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  - LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.Int32)
+  - LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  - LunyScript.Api.TriggerEventFilterExtensions.Tagged``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  - LunyScript.Api.TriggerEventFilterExtensions.Typed``1(LunyScript.Api.TriggerEventBuilder{``0},System.Type[])
+  - LunyScript.Api.TriggerEventFilterExtensions.With``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  langs:
+  - csharp
+  - vb
+  name: TriggerEventFilterExtensions
+  nameWithType: TriggerEventFilterExtensions
+  fullName: LunyScript.Api.TriggerEventFilterExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static class TriggerEventFilterExtensions
+    content.vb: Public Module TriggerEventFilterExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Tagged``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  commentId: M:LunyScript.Api.TriggerEventFilterExtensions.Tagged``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  id: Tagged``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.TriggerEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Tagged<T>(TriggerEventBuilder<T>, params string[])
+  nameWithType: TriggerEventFilterExtensions.Tagged<T>(TriggerEventBuilder<T>, params string[])
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Tagged<T>(LunyScript.Api.TriggerEventBuilder<T>, params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Only react when the other object has one of the given tags (OR logic).
+
+    Combine with other filter kinds for AND logic across kinds.
+  example: []
+  syntax:
+    content: 'public static TriggerEventBuilder<TriggerReady> Tagged<T>(this TriggerEventBuilder<T> b, params string[] tags) where T : struct, ITriggerFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TriggerEventBuilder{{T}}
+    - id: tags
+      type: System.String[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerReady}
+    content.vb: Public Shared Function Tagged(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray tags As String()) As TriggerEventBuilder(Of TriggerReady)
+  overload: LunyScript.Api.TriggerEventFilterExtensions.Tagged*
+  nameWithType.vb: TriggerEventFilterExtensions.Tagged(Of T)(TriggerEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Tagged(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray String())
+  name.vb: Tagged(Of T)(TriggerEventBuilder(Of T), ParamArray String())
+- uid: LunyScript.Api.TriggerEventFilterExtensions.With``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  commentId: M:LunyScript.Api.TriggerEventFilterExtensions.With``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  id: With``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.TriggerEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: With<T>(TriggerEventBuilder<T>, params string[])
+  nameWithType: TriggerEventFilterExtensions.With<T>(TriggerEventBuilder<T>, params string[])
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.With<T>(LunyScript.Api.TriggerEventBuilder<T>, params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Only react when the other object's name matches one of the given names (OR logic).
+  example: []
+  syntax:
+    content: 'public static TriggerEventBuilder<TriggerReady> With<T>(this TriggerEventBuilder<T> b, params string[] names) where T : struct, ITriggerFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TriggerEventBuilder{{T}}
+    - id: names
+      type: System.String[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerReady}
+    content.vb: Public Shared Function [With](Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray names As String()) As TriggerEventBuilder(Of TriggerReady)
+  overload: LunyScript.Api.TriggerEventFilterExtensions.With*
+  nameWithType.vb: TriggerEventFilterExtensions.With(Of T)(TriggerEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.With(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray String())
+  name.vb: With(Of T)(TriggerEventBuilder(Of T), ParamArray String())
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Layered``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  commentId: M:LunyScript.Api.TriggerEventFilterExtensions.Layered``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  id: Layered``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.TriggerEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Layered<T>(TriggerEventBuilder<T>, params string[])
+  nameWithType: TriggerEventFilterExtensions.Layered<T>(TriggerEventBuilder<T>, params string[])
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Layered<T>(LunyScript.Api.TriggerEventBuilder<T>, params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Only react when the other object is on one of the given layers (OR logic).
+
+    Mutually exclusive with Masked() — Masked() becomes unavailable after calling this.
+  example: []
+  syntax:
+    content: 'public static TriggerEventBuilder<TriggerLayered> Layered<T>(this TriggerEventBuilder<T> b, params string[] layerNames) where T : struct, ITriggerFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TriggerEventBuilder{{T}}
+    - id: layerNames
+      type: System.String[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerLayered}
+    content.vb: Public Shared Function Layered(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray layerNames As String()) As TriggerEventBuilder(Of TriggerLayered)
+  overload: LunyScript.Api.TriggerEventFilterExtensions.Layered*
+  nameWithType.vb: TriggerEventFilterExtensions.Layered(Of T)(TriggerEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Layered(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray String())
+  name.vb: Layered(Of T)(TriggerEventBuilder(Of T), ParamArray String())
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Typed``1(LunyScript.Api.TriggerEventBuilder{``0},System.Type[])
+  commentId: M:LunyScript.Api.TriggerEventFilterExtensions.Typed``1(LunyScript.Api.TriggerEventBuilder{``0},System.Type[])
+  id: Typed``1(LunyScript.Api.TriggerEventBuilder{``0},System.Type[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.TriggerEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Typed<T>(TriggerEventBuilder<T>, params Type[])
+  nameWithType: TriggerEventFilterExtensions.Typed<T>(TriggerEventBuilder<T>, params Type[])
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Typed<T>(LunyScript.Api.TriggerEventBuilder<T>, params System.Type[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Only react when the other object's component list contains at least one of the given types (OR logic).
+  example: []
+  syntax:
+    content: 'public static TriggerEventBuilder<TriggerReady> Typed<T>(this TriggerEventBuilder<T> b, params Type[] componentTypes) where T : struct, ITriggerFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TriggerEventBuilder{{T}}
+    - id: componentTypes
+      type: System.Type[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerReady}
+    content.vb: Public Shared Function Typed(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray componentTypes As Type()) As TriggerEventBuilder(Of TriggerReady)
+  overload: LunyScript.Api.TriggerEventFilterExtensions.Typed*
+  nameWithType.vb: TriggerEventFilterExtensions.Typed(Of T)(TriggerEventBuilder(Of T), ParamArray Type())
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Typed(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray System.Type())
+  name.vb: Typed(Of T)(TriggerEventBuilder(Of T), ParamArray Type())
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Cooldown``1(LunyScript.Api.TriggerEventBuilder{``0},System.Double)
+  commentId: M:LunyScript.Api.TriggerEventFilterExtensions.Cooldown``1(LunyScript.Api.TriggerEventBuilder{``0},System.Double)
+  id: Cooldown``1(LunyScript.Api.TriggerEventBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.Api.TriggerEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Cooldown<T>(TriggerEventBuilder<T>, double)
+  nameWithType: TriggerEventFilterExtensions.Cooldown<T>(TriggerEventBuilder<T>, double)
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Cooldown<T>(LunyScript.Api.TriggerEventBuilder<T>, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Minimum seconds between successive reactions. Zero (default) means no cooldown.
+
+    The cooldown is checked before trigger predicates; evaluated per event sequence.
+  example: []
+  syntax:
+    content: 'public static TriggerEventBuilder<TriggerReady> Cooldown<T>(this TriggerEventBuilder<T> b, double seconds) where T : struct, ITriggerFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TriggerEventBuilder{{T}}
+    - id: seconds
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerReady}
+    content.vb: Public Shared Function Cooldown(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), seconds As Double) As TriggerEventBuilder(Of TriggerReady)
+  overload: LunyScript.Api.TriggerEventFilterExtensions.Cooldown*
+  nameWithType.vb: TriggerEventFilterExtensions.Cooldown(Of T)(TriggerEventBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Cooldown(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), Double)
+  name.vb: Cooldown(Of T)(TriggerEventBuilder(Of T), Double)
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  commentId: M:LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  id: Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.TriggerEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Masked<T>(TriggerEventBuilder<T>, params string[])
+  nameWithType: TriggerEventFilterExtensions.Masked<T>(TriggerEventBuilder<T>, params string[])
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Masked<T>(LunyScript.Api.TriggerEventBuilder<T>, params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Only react when the other object's layer name matches one of the given names (OR logic).
+
+    Mutually exclusive with Layered() — unavailable after Layered() is called.
+  example: []
+  syntax:
+    content: 'public static TriggerEventBuilder<TriggerMasked> Masked<T>(this TriggerEventBuilder<T> b, params string[] layerNames) where T : struct, ITriggerFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TriggerEventBuilder{{T}}
+    - id: layerNames
+      type: System.String[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerMasked}
+    content.vb: Public Shared Function Masked(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray layerNames As String()) As TriggerEventBuilder(Of TriggerMasked)
+  overload: LunyScript.Api.TriggerEventFilterExtensions.Masked*
+  nameWithType.vb: TriggerEventFilterExtensions.Masked(Of T)(TriggerEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Masked(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray String())
+  name.vb: Masked(Of T)(TriggerEventBuilder(Of T), ParamArray String())
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.Int32)
+  commentId: M:LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.Int32)
+  id: Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.Int32)
+  isExtensionMethod: true
+  parent: LunyScript.Api.TriggerEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Masked<T>(TriggerEventBuilder<T>, int)
+  nameWithType: TriggerEventFilterExtensions.Masked<T>(TriggerEventBuilder<T>, int)
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Masked<T>(LunyScript.Api.TriggerEventBuilder<T>, int)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Only react when the other object's layer is included in the given bitmask.
+
+    Mutually exclusive with Layered() — unavailable after Layered() is called.
+  example: []
+  syntax:
+    content: 'public static TriggerEventBuilder<TriggerMasked> Masked<T>(this TriggerEventBuilder<T> b, int layerMask) where T : struct, ITriggerFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TriggerEventBuilder{{T}}
+    - id: layerMask
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerMasked}
+    content.vb: Public Shared Function Masked(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), layerMask As Integer) As TriggerEventBuilder(Of TriggerMasked)
+  overload: LunyScript.Api.TriggerEventFilterExtensions.Masked*
+  nameWithType.vb: TriggerEventFilterExtensions.Masked(Of T)(TriggerEventBuilder(Of T), Integer)
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Masked(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), Integer)
+  name.vb: Masked(Of T)(TriggerEventBuilder(Of T), Integer)
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Tagged*
+  commentId: Overload:LunyScript.Api.TriggerEventFilterExtensions.Tagged
+  isExternal: true
+  href: LunyScript.Api.TriggerEventFilterExtensions.html#LunyScript_Api_TriggerEventFilterExtensions_Tagged__1_LunyScript_Api_TriggerEventBuilder___0__System_String___
+  name: Tagged
+  nameWithType: TriggerEventFilterExtensions.Tagged
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Tagged
+- uid: LunyScript.Api.TriggerEventBuilder{{T}}
+  commentId: T:LunyScript.Api.TriggerEventBuilder{``0}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TriggerEventBuilder`1
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<T>
+  nameWithType: TriggerEventBuilder<T>
+  fullName: LunyScript.Api.TriggerEventBuilder<T>
+  nameWithType.vb: TriggerEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of T)
+  name.vb: TriggerEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerReady}
+  commentId: T:LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerReady}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TriggerEventBuilder`1
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<TriggerReady>
+  nameWithType: TriggerEventBuilder<TriggerReady>
+  fullName: LunyScript.Api.TriggerEventBuilder<LunyScript.Api.TriggerReady>
+  nameWithType.vb: TriggerEventBuilder(Of TriggerReady)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of LunyScript.Api.TriggerReady)
+  name.vb: TriggerEventBuilder(Of TriggerReady)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.TriggerReady
+    name: TriggerReady
+    isExternal: true
+    href: LunyScript.Api.TriggerReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.TriggerReady
+    name: TriggerReady
+    isExternal: true
+    href: LunyScript.Api.TriggerReady.html
+  - name: )
+- uid: LunyScript.Api.TriggerEventBuilder`1
+  commentId: T:LunyScript.Api.TriggerEventBuilder`1
+  isExternal: true
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<T>
+  nameWithType: TriggerEventBuilder<T>
+  fullName: LunyScript.Api.TriggerEventBuilder<T>
+  nameWithType.vb: TriggerEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of T)
+  name.vb: TriggerEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.TriggerEventFilterExtensions.With*
+  commentId: Overload:LunyScript.Api.TriggerEventFilterExtensions.With
+  isExternal: true
+  href: LunyScript.Api.TriggerEventFilterExtensions.html#LunyScript_Api_TriggerEventFilterExtensions_With__1_LunyScript_Api_TriggerEventBuilder___0__System_String___
+  name: With
+  nameWithType: TriggerEventFilterExtensions.With
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.With
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Layered*
+  commentId: Overload:LunyScript.Api.TriggerEventFilterExtensions.Layered
+  isExternal: true
+  href: LunyScript.Api.TriggerEventFilterExtensions.html#LunyScript_Api_TriggerEventFilterExtensions_Layered__1_LunyScript_Api_TriggerEventBuilder___0__System_String___
+  name: Layered
+  nameWithType: TriggerEventFilterExtensions.Layered
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Layered
+- uid: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerLayered}
+  commentId: T:LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerLayered}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TriggerEventBuilder`1
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<TriggerLayered>
+  nameWithType: TriggerEventBuilder<TriggerLayered>
+  fullName: LunyScript.Api.TriggerEventBuilder<LunyScript.Api.TriggerLayered>
+  nameWithType.vb: TriggerEventBuilder(Of TriggerLayered)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of LunyScript.Api.TriggerLayered)
+  name.vb: TriggerEventBuilder(Of TriggerLayered)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.TriggerLayered
+    name: TriggerLayered
+    isExternal: true
+    href: LunyScript.Api.TriggerLayered.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.TriggerLayered
+    name: TriggerLayered
+    isExternal: true
+    href: LunyScript.Api.TriggerLayered.html
+  - name: )
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Typed*
+  commentId: Overload:LunyScript.Api.TriggerEventFilterExtensions.Typed
+  isExternal: true
+  href: LunyScript.Api.TriggerEventFilterExtensions.html#LunyScript_Api_TriggerEventFilterExtensions_Typed__1_LunyScript_Api_TriggerEventBuilder___0__System_Type___
+  name: Typed
+  nameWithType: TriggerEventFilterExtensions.Typed
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Typed
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Cooldown*
+  commentId: Overload:LunyScript.Api.TriggerEventFilterExtensions.Cooldown
+  isExternal: true
+  href: LunyScript.Api.TriggerEventFilterExtensions.html#LunyScript_Api_TriggerEventFilterExtensions_Cooldown__1_LunyScript_Api_TriggerEventBuilder___0__System_Double_
+  name: Cooldown
+  nameWithType: TriggerEventFilterExtensions.Cooldown
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Cooldown
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: LunyScript.Api.TriggerEventFilterExtensions.Masked*
+  commentId: Overload:LunyScript.Api.TriggerEventFilterExtensions.Masked
+  isExternal: true
+  href: LunyScript.Api.TriggerEventFilterExtensions.html#LunyScript_Api_TriggerEventFilterExtensions_Masked__1_LunyScript_Api_TriggerEventBuilder___0__System_String___
+  name: Masked
+  nameWithType: TriggerEventFilterExtensions.Masked
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Masked
+- uid: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerMasked}
+  commentId: T:LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerMasked}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TriggerEventBuilder`1
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<TriggerMasked>
+  nameWithType: TriggerEventBuilder<TriggerMasked>
+  fullName: LunyScript.Api.TriggerEventBuilder<LunyScript.Api.TriggerMasked>
+  nameWithType.vb: TriggerEventBuilder(Of TriggerMasked)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of LunyScript.Api.TriggerMasked)
+  name.vb: TriggerEventBuilder(Of TriggerMasked)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.TriggerMasked
+    name: TriggerMasked
+    isExternal: true
+    href: LunyScript.Api.TriggerMasked.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.TriggerMasked
+    name: TriggerMasked
+    isExternal: true
+    href: LunyScript.Api.TriggerMasked.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

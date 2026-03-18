@@ -1,31 +1,31 @@
 - name: Introduction
   href: index.md
-- name: First Luny Script
-  href: first-script.md
-  items:
-    - name: LunyScript vs MonoBehaviour (Unity 6.x)
-      href: first-script-unity.md
-    - name: LunyScript vs GDScript (Godot 4.x)
-      href: first-script-godot.md
 - name: Getting Started
   href: getting-started.md
   items:
+    - name: First Luny Script
+      href: first-script.md
+      items:
+        - name: LunyScript vs MonoBehaviour
+          href: first-script-unity.md
+        - name: LunyScript vs GDScript
+          href: first-script-godot.md
     - name: Anatomy of a Luny Script
       href: concepts-anatomy-script.md
     - name: Advanced Block Usage
       href: concepts-blocks-advanced.md
-    - name: Luny Semantics
-      href: concepts-semantics.md
 - name: LunyScript API Overview
   href: api-overview.md
   items:
   - name: Events
     href: api-events.md
     items:
-    - name: Object Lifecycle Events (On.*)
-      href: api-events-lifecycle.md
+    - name: Object Events (On.*)
+      href: api-events-object.md
     - name: Global Events (When.*)
       href: api-events-global.md
+    - name: Engine & Service Events
+      href: api-events-engine.md
   - name: Variables
     href: api-variables.md
     items:

@@ -22,9 +22,7 @@ items:
     content.vb: Public Interface IScriptBlock
   derivedClasses:
   - LunyScript.Blocks.ActionBlock
-  - LunyScript.Blocks.ComputedVariableBlock
   - LunyScript.Blocks.ConditionBlock
-  - LunyScript.Blocks.ConstantVariableBlock
   - LunyScript.Blocks.IfBlock
   - LunyScript.Blocks.ScriptBlock
   - LunyScript.Blocks.SequenceBlock

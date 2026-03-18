@@ -19,10 +19,11 @@ items:
     content: public interface ICollisionBuilderState
     content.vb: Public Interface ICollisionBuilderState
   derivedClasses:
-  - LunyScript.Api.CollisionBuilderLayered
-  - LunyScript.Api.CollisionBuilderMasked
-  - LunyScript.Api.CollisionBuilderReady
-  - LunyScript.Api.CollisionBuilderStart
+  - LunyScript.Api.CollisionEventSet
+  - LunyScript.Api.CollisionLayered
+  - LunyScript.Api.CollisionMasked
+  - LunyScript.Api.CollisionReady
+  - LunyScript.Api.CollisionStart
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api

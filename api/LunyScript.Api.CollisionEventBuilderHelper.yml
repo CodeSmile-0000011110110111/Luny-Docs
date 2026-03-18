@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.CollisionEventBuilderHelper
+  commentId: T:LunyScript.Api.CollisionEventBuilderHelper
+  id: CollisionEventBuilderHelper
+  parent: LunyScript.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CollisionEventBuilderHelper
+  nameWithType: CollisionEventBuilderHelper
+  fullName: LunyScript.Api.CollisionEventBuilderHelper
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static class CollisionEventBuilderHelper
+    content.vb: Public Module CollisionEventBuilderHelper
+  inheritance:
+  - System.Object
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

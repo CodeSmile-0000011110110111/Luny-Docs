@@ -102,13 +102,17 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
+  summary: Pairs a named input user with the most recently used input device. Only pairs with unused devices. Should be used within an Input.Action event.
+  example: []
   syntax:
     content: public ActionBlock Pair(string userName)
     parameters:
     - id: userName
       type: System.String
+      description: ''
     return:
       type: LunyScript.Blocks.ActionBlock
+      description: ''
     content.vb: Public Function Pair(userName As String) As ActionBlock
   overload: LunyScript.Api.InputBuilder.Pair*
   nameWithType.vb: InputBuilder.Pair(String)
@@ -128,13 +132,17 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
+  summary: Unpairs a named input user from input devices.
+  example: []
   syntax:
     content: public ActionBlock Unpair(string userName)
     parameters:
     - id: userName
       type: System.String
+      description: ''
     return:
       type: LunyScript.Blocks.ActionBlock
+      description: ''
     content.vb: Public Function Unpair(userName As String) As ActionBlock
   overload: LunyScript.Api.InputBuilder.Unpair*
   nameWithType.vb: InputBuilder.Unpair(String)
@@ -154,13 +162,17 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
+  summary: Checks if the named input user has an input device assigned.
+  example: []
   syntax:
     content: public ConditionBlock IsPaired(string userName)
     parameters:
     - id: userName
       type: System.String
+      description: ''
     return:
       type: LunyScript.Blocks.ConditionBlock
+      description: ''
     content.vb: Public Function IsPaired(userName As String) As ConditionBlock
   overload: LunyScript.Api.InputBuilder.IsPaired*
   nameWithType.vb: InputBuilder.IsPaired(String)
@@ -236,13 +248,17 @@ items:
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
+  summary: Used with Input Action maps.
+  example: []
   syntax:
     content: public InputActionBuilder Action(string actionName)
     parameters:
     - id: actionName
       type: System.String
+      description: ''
     return:
       type: LunyScript.Api.InputActionBuilder
+      description: ''
     content.vb: Public Function Action(actionName As String) As InputActionBuilder
   overload: LunyScript.Api.InputBuilder.Action*
   nameWithType.vb: InputBuilder.Action(String)

@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.CollisionLayered
+  commentId: T:LunyScript.Api.CollisionLayered
+  id: CollisionLayered
+  parent: LunyScript.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CollisionLayered
+  nameWithType: CollisionLayered
+  fullName: LunyScript.Api.CollisionLayered
+  type: Struct
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: 'public struct CollisionLayered : ICollisionFilterable, ICollisionBuilderState'
+    content.vb: Public Structure CollisionLayered Implements ICollisionFilterable, ICollisionBuilderState
+  implements:
+  - LunyScript.Api.ICollisionFilterable
+  - LunyScript.Api.ICollisionBuilderState
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: LunyScript.Api.ICollisionFilterable
+  commentId: T:LunyScript.Api.ICollisionFilterable
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionFilterable.html
+  name: ICollisionFilterable
+  nameWithType: ICollisionFilterable
+  fullName: LunyScript.Api.ICollisionFilterable
+- uid: LunyScript.Api.ICollisionBuilderState
+  commentId: T:LunyScript.Api.ICollisionBuilderState
+  parent: LunyScript.Api
+  isExternal: true
+  href: LunyScript.Api.ICollisionBuilderState.html
+  name: ICollisionBuilderState
+  nameWithType: ICollisionBuilderState
+  fullName: LunyScript.Api.ICollisionBuilderState
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

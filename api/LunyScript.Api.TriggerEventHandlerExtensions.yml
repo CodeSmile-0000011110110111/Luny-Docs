@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.TriggerEventHandlerExtensions
+  commentId: T:LunyScript.Api.TriggerEventHandlerExtensions
+  id: TriggerEventHandlerExtensions
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.TriggerEventHandlerExtensions.Entered``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.TriggerEventHandlerExtensions.Exited``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  langs:
+  - csharp
+  - vb
+  name: TriggerEventHandlerExtensions
+  nameWithType: TriggerEventHandlerExtensions
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static class TriggerEventHandlerExtensions
+    content.vb: Public Module TriggerEventHandlerExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.Api.TriggerEventHandlerExtensions.Entered``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.TriggerEventHandlerExtensions.Entered``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  id: Entered``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.TriggerEventHandlerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Entered<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  nameWithType: TriggerEventHandlerExtensions.Entered<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Entered<T>(LunyScript.Api.TriggerEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Blocks to run when the object entered a trigger collider.
+  example: []
+  syntax:
+    content: 'public static TriggerEventBuilder<TriggerEventSet> Entered<T>(this TriggerEventBuilder<T> b, params ActionBlock[] blocks) where T : struct, ITriggerBuilderState'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TriggerEventBuilder{{T}}
+    - id: blocks
+      type: LunyScript.Blocks.ActionBlock[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerEventSet}
+    content.vb: Public Shared Function Entered(Of T As {Structure, ITriggerBuilderState})(b As TriggerEventBuilder(Of T), ParamArray blocks As ActionBlock()) As TriggerEventBuilder(Of TriggerEventSet)
+  overload: LunyScript.Api.TriggerEventHandlerExtensions.Entered*
+  nameWithType.vb: TriggerEventHandlerExtensions.Entered(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.TriggerEventHandlerExtensions.Entered(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Entered(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+- uid: LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  id: Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.TriggerEventHandlerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Staying<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  nameWithType: TriggerEventHandlerExtensions.Staying<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Staying<T>(LunyScript.Api.TriggerEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Blocks to run each physics step while overlapping a trigger collider.
+  example: []
+  syntax:
+    content: 'public static TriggerEventBuilder<TriggerEventSet> Staying<T>(this TriggerEventBuilder<T> b, params ActionBlock[] blocks) where T : struct, ITriggerBuilderState'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TriggerEventBuilder{{T}}
+    - id: blocks
+      type: LunyScript.Blocks.ActionBlock[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerEventSet}
+    content.vb: Public Shared Function Staying(Of T As {Structure, ITriggerBuilderState})(b As TriggerEventBuilder(Of T), ParamArray blocks As ActionBlock()) As TriggerEventBuilder(Of TriggerEventSet)
+  overload: LunyScript.Api.TriggerEventHandlerExtensions.Staying*
+  nameWithType.vb: TriggerEventHandlerExtensions.Staying(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.TriggerEventHandlerExtensions.Staying(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Staying(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+- uid: LunyScript.Api.TriggerEventHandlerExtensions.Exited``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.TriggerEventHandlerExtensions.Exited``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  id: Exited``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.TriggerEventHandlerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Exited<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  nameWithType: TriggerEventHandlerExtensions.Exited<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Exited<T>(LunyScript.Api.TriggerEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Blocks to run when the object exited a trigger collider.
+  example: []
+  syntax:
+    content: 'public static TriggerEventBuilder<TriggerEventSet> Exited<T>(this TriggerEventBuilder<T> b, params ActionBlock[] blocks) where T : struct, ITriggerBuilderState'
+    parameters:
+    - id: b
+      type: LunyScript.Api.TriggerEventBuilder{{T}}
+    - id: blocks
+      type: LunyScript.Blocks.ActionBlock[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerEventSet}
+    content.vb: Public Shared Function Exited(Of T As {Structure, ITriggerBuilderState})(b As TriggerEventBuilder(Of T), ParamArray blocks As ActionBlock()) As TriggerEventBuilder(Of TriggerEventSet)
+  overload: LunyScript.Api.TriggerEventHandlerExtensions.Exited*
+  nameWithType.vb: TriggerEventHandlerExtensions.Exited(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.TriggerEventHandlerExtensions.Exited(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Exited(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Api.TriggerEventHandlerExtensions.Entered*
+  commentId: Overload:LunyScript.Api.TriggerEventHandlerExtensions.Entered
+  isExternal: true
+  href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Entered__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
+  name: Entered
+  nameWithType: TriggerEventHandlerExtensions.Entered
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Entered
+- uid: LunyScript.Api.TriggerEventBuilder{{T}}
+  commentId: T:LunyScript.Api.TriggerEventBuilder{``0}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TriggerEventBuilder`1
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<T>
+  nameWithType: TriggerEventBuilder<T>
+  fullName: LunyScript.Api.TriggerEventBuilder<T>
+  nameWithType.vb: TriggerEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of T)
+  name.vb: TriggerEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Blocks.ActionBlock[]
+  isExternal: true
+  href: LunyScript.Blocks.ActionBlock.html
+  name: ActionBlock[]
+  nameWithType: ActionBlock[]
+  fullName: LunyScript.Blocks.ActionBlock[]
+  nameWithType.vb: ActionBlock()
+  fullName.vb: LunyScript.Blocks.ActionBlock()
+  name.vb: ActionBlock()
+  spec.csharp:
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ActionBlock.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: LunyScript.Blocks.ActionBlock
+    name: ActionBlock
+    isExternal: true
+    href: LunyScript.Blocks.ActionBlock.html
+  - name: (
+  - name: )
+- uid: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerEventSet}
+  commentId: T:LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerEventSet}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.TriggerEventBuilder`1
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<TriggerEventSet>
+  nameWithType: TriggerEventBuilder<TriggerEventSet>
+  fullName: LunyScript.Api.TriggerEventBuilder<LunyScript.Api.TriggerEventSet>
+  nameWithType.vb: TriggerEventBuilder(Of TriggerEventSet)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of LunyScript.Api.TriggerEventSet)
+  name.vb: TriggerEventBuilder(Of TriggerEventSet)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.TriggerEventSet
+    name: TriggerEventSet
+    isExternal: true
+    href: LunyScript.Api.TriggerEventSet.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.TriggerEventSet
+    name: TriggerEventSet
+    isExternal: true
+    href: LunyScript.Api.TriggerEventSet.html
+  - name: )
+- uid: LunyScript.Api.TriggerEventBuilder`1
+  commentId: T:LunyScript.Api.TriggerEventBuilder`1
+  isExternal: true
+  href: LunyScript.Api.TriggerEventBuilder-1.html
+  name: TriggerEventBuilder<T>
+  nameWithType: TriggerEventBuilder<T>
+  fullName: LunyScript.Api.TriggerEventBuilder<T>
+  nameWithType.vb: TriggerEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.TriggerEventBuilder(Of T)
+  name.vb: TriggerEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder
+    isExternal: true
+    href: LunyScript.Api.TriggerEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.TriggerEventHandlerExtensions.Staying*
+  commentId: Overload:LunyScript.Api.TriggerEventHandlerExtensions.Staying
+  isExternal: true
+  href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Staying__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
+  name: Staying
+  nameWithType: TriggerEventHandlerExtensions.Staying
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Staying
+- uid: LunyScript.Api.TriggerEventHandlerExtensions.Exited*
+  commentId: Overload:LunyScript.Api.TriggerEventHandlerExtensions.Exited
+  isExternal: true
+  href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Exited__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
+  name: Exited
+  nameWithType: TriggerEventHandlerExtensions.Exited
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Exited

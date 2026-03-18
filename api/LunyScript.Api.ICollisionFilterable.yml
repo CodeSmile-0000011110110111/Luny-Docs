@@ -1,0 +1,55 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.ICollisionFilterable
+  commentId: T:LunyScript.Api.ICollisionFilterable
+  id: ICollisionFilterable
+  parent: LunyScript.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICollisionFilterable
+  nameWithType: ICollisionFilterable
+  fullName: LunyScript.Api.ICollisionFilterable
+  type: Interface
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: 'Marker: filter methods (Tagged, With, Layered, Masked, Typed, Cooldown) are still available.'
+  example: []
+  syntax:
+    content: 'public interface ICollisionFilterable : ICollisionBuilderState'
+    content.vb: Public Interface ICollisionFilterable Inherits ICollisionBuilderState
+  derivedClasses:
+  - LunyScript.Api.CollisionLayered
+  - LunyScript.Api.CollisionMasked
+  - LunyScript.Api.CollisionReady
+  - LunyScript.Api.CollisionStart
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html

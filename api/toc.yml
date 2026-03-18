@@ -416,17 +416,32 @@ items:
   name: LunyScript.Api
   type: Namespace
   items:
-  - uid: LunyScript.Api.CollisionBuilderLayered
-    name: CollisionBuilderLayered
+  - uid: LunyScript.Api.CollisionEventBuilderHelper
+    name: CollisionEventBuilderHelper
+    type: Class
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder<T>
     type: Struct
-  - uid: LunyScript.Api.CollisionBuilderMasked
-    name: CollisionBuilderMasked
+  - uid: LunyScript.Api.CollisionEventFilterExtensions
+    name: CollisionEventFilterExtensions
+    type: Class
+  - uid: LunyScript.Api.CollisionEventHandlerExtensions
+    name: CollisionEventHandlerExtensions
+    type: Class
+  - uid: LunyScript.Api.CollisionEventSet
+    name: CollisionEventSet
     type: Struct
-  - uid: LunyScript.Api.CollisionBuilderReady
-    name: CollisionBuilderReady
+  - uid: LunyScript.Api.CollisionLayered
+    name: CollisionLayered
     type: Struct
-  - uid: LunyScript.Api.CollisionBuilderStart
-    name: CollisionBuilderStart
+  - uid: LunyScript.Api.CollisionMasked
+    name: CollisionMasked
+    type: Struct
+  - uid: LunyScript.Api.CollisionReady
+    name: CollisionReady
+    type: Struct
+  - uid: LunyScript.Api.CollisionStart
+    name: CollisionStart
     type: Struct
   - uid: LunyScript.Api.ComponentApi
     name: ComponentApi
@@ -464,20 +479,11 @@ items:
   - uid: LunyScript.Api.ForBlockBuilder
     name: ForBlockBuilder
     type: Struct
-  - uid: LunyScript.Api.ICollisionBuilderLayered
-    name: ICollisionBuilderLayered
-    type: Interface
-  - uid: LunyScript.Api.ICollisionBuilderMasked
-    name: ICollisionBuilderMasked
-    type: Interface
-  - uid: LunyScript.Api.ICollisionBuilderReady
-    name: ICollisionBuilderReady
-    type: Interface
-  - uid: LunyScript.Api.ICollisionBuilderStart
-    name: ICollisionBuilderStart
-    type: Interface
   - uid: LunyScript.Api.ICollisionBuilderState
     name: ICollisionBuilderState
+    type: Interface
+  - uid: LunyScript.Api.ICollisionFilterable
+    name: ICollisionFilterable
     type: Interface
   - uid: LunyScript.Api.ICoroutineCounterBuilderState
     name: ICoroutineCounterBuilderState
@@ -515,6 +521,12 @@ items:
   - uid: LunyScript.Api.ITransformBuilderState
     name: ITransformBuilderState
     type: Interface
+  - uid: LunyScript.Api.ITriggerBuilderState
+    name: ITriggerBuilderState
+    type: Interface
+  - uid: LunyScript.Api.ITriggerFilterable
+    name: ITriggerFilterable
+    type: Interface
   - uid: LunyScript.Api.InputActionBuilder
     name: InputActionBuilder
     type: Struct
@@ -539,18 +551,9 @@ items:
   - uid: LunyScript.Api.ObjectCreateBuilder`1
     name: ObjectCreateBuilder<T>
     type: Struct
-  - uid: LunyScript.Api.OnInputEventBuilder
-    name: OnInputEventBuilder
-    type: Struct
   - uid: LunyScript.Api.OnObjectEventBuilder
     name: OnObjectEventBuilder
     type: Struct
-  - uid: LunyScript.Api.PhysicsEventBuilder`1
-    name: PhysicsEventBuilder<T>
-    type: Struct
-  - uid: LunyScript.Api.PhysicsEventLayerExtensions
-    name: PhysicsEventLayerExtensions
-    type: Class
   - uid: LunyScript.Api.PrefabBuilder
     name: PrefabBuilder
     type: Struct
@@ -602,6 +605,30 @@ items:
   - uid: LunyScript.Api.TransformScaleBuilder`1
     name: TransformScaleBuilder<T>
     type: Struct
+  - uid: LunyScript.Api.TriggerEventBuilder`1
+    name: TriggerEventBuilder<T>
+    type: Struct
+  - uid: LunyScript.Api.TriggerEventFilterExtensions
+    name: TriggerEventFilterExtensions
+    type: Class
+  - uid: LunyScript.Api.TriggerEventHandlerExtensions
+    name: TriggerEventHandlerExtensions
+    type: Class
+  - uid: LunyScript.Api.TriggerEventSet
+    name: TriggerEventSet
+    type: Struct
+  - uid: LunyScript.Api.TriggerLayered
+    name: TriggerLayered
+    type: Struct
+  - uid: LunyScript.Api.TriggerMasked
+    name: TriggerMasked
+    type: Struct
+  - uid: LunyScript.Api.TriggerReady
+    name: TriggerReady
+    type: Struct
+  - uid: LunyScript.Api.TriggerStart
+    name: TriggerStart
+    type: Struct
   - uid: LunyScript.Api.WhenGlobalEventBuilder
     name: WhenGlobalEventBuilder
     type: Struct
@@ -627,14 +654,8 @@ items:
   - uid: LunyScript.Blocks.ActionBlock
     name: ActionBlock
     type: Class
-  - uid: LunyScript.Blocks.ComputedVariableBlock
-    name: ComputedVariableBlock
-    type: Class
   - uid: LunyScript.Blocks.ConditionBlock
     name: ConditionBlock
-    type: Class
-  - uid: LunyScript.Blocks.ConstantVariableBlock
-    name: ConstantVariableBlock
     type: Class
   - uid: LunyScript.Blocks.ControlFlow
     name: ControlFlow

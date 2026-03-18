@@ -1,0 +1,592 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.CollisionEventFilterExtensions
+  commentId: T:LunyScript.Api.CollisionEventFilterExtensions
+  id: CollisionEventFilterExtensions
+  parent: LunyScript.Api
+  children:
+  - LunyScript.Api.CollisionEventFilterExtensions.Cooldown``1(LunyScript.Api.CollisionEventBuilder{``0},System.Double)
+  - LunyScript.Api.CollisionEventFilterExtensions.Layered``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  - LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.Int32)
+  - LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  - LunyScript.Api.CollisionEventFilterExtensions.Tagged``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  - LunyScript.Api.CollisionEventFilterExtensions.Typed``1(LunyScript.Api.CollisionEventBuilder{``0},System.Type[])
+  - LunyScript.Api.CollisionEventFilterExtensions.With``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  langs:
+  - csharp
+  - vb
+  name: CollisionEventFilterExtensions
+  nameWithType: CollisionEventFilterExtensions
+  fullName: LunyScript.Api.CollisionEventFilterExtensions
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public static class CollisionEventFilterExtensions
+    content.vb: Public Module CollisionEventFilterExtensions
+  inheritance:
+  - System.Object
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Tagged``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  commentId: M:LunyScript.Api.CollisionEventFilterExtensions.Tagged``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  id: Tagged``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.CollisionEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Tagged<T>(CollisionEventBuilder<T>, params string[])
+  nameWithType: CollisionEventFilterExtensions.Tagged<T>(CollisionEventBuilder<T>, params string[])
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Tagged<T>(LunyScript.Api.CollisionEventBuilder<T>, params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Only react when the other object has one of the given tags (OR logic).
+
+    Combine with other filter kinds for AND logic across kinds.
+  example: []
+  syntax:
+    content: 'public static CollisionEventBuilder<CollisionReady> Tagged<T>(this CollisionEventBuilder<T> b, params string[] tags) where T : struct, ICollisionFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CollisionEventBuilder{{T}}
+    - id: tags
+      type: System.String[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionReady}
+    content.vb: Public Shared Function Tagged(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray tags As String()) As CollisionEventBuilder(Of CollisionReady)
+  overload: LunyScript.Api.CollisionEventFilterExtensions.Tagged*
+  nameWithType.vb: CollisionEventFilterExtensions.Tagged(Of T)(CollisionEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Tagged(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray String())
+  name.vb: Tagged(Of T)(CollisionEventBuilder(Of T), ParamArray String())
+- uid: LunyScript.Api.CollisionEventFilterExtensions.With``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  commentId: M:LunyScript.Api.CollisionEventFilterExtensions.With``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  id: With``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.CollisionEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: With<T>(CollisionEventBuilder<T>, params string[])
+  nameWithType: CollisionEventFilterExtensions.With<T>(CollisionEventBuilder<T>, params string[])
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.With<T>(LunyScript.Api.CollisionEventBuilder<T>, params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Only react when the other object's name matches one of the given names (OR logic).
+  example: []
+  syntax:
+    content: 'public static CollisionEventBuilder<CollisionReady> With<T>(this CollisionEventBuilder<T> b, params string[] names) where T : struct, ICollisionFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CollisionEventBuilder{{T}}
+    - id: names
+      type: System.String[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionReady}
+    content.vb: Public Shared Function [With](Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray names As String()) As CollisionEventBuilder(Of CollisionReady)
+  overload: LunyScript.Api.CollisionEventFilterExtensions.With*
+  nameWithType.vb: CollisionEventFilterExtensions.With(Of T)(CollisionEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.With(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray String())
+  name.vb: With(Of T)(CollisionEventBuilder(Of T), ParamArray String())
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Layered``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  commentId: M:LunyScript.Api.CollisionEventFilterExtensions.Layered``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  id: Layered``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.CollisionEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Layered<T>(CollisionEventBuilder<T>, params string[])
+  nameWithType: CollisionEventFilterExtensions.Layered<T>(CollisionEventBuilder<T>, params string[])
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Layered<T>(LunyScript.Api.CollisionEventBuilder<T>, params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Only react when the other object is on one of the given layers (OR logic).
+
+    Mutually exclusive with Masked() — Masked() becomes unavailable after calling this.
+  example: []
+  syntax:
+    content: 'public static CollisionEventBuilder<CollisionLayered> Layered<T>(this CollisionEventBuilder<T> b, params string[] layerNames) where T : struct, ICollisionFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CollisionEventBuilder{{T}}
+    - id: layerNames
+      type: System.String[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionLayered}
+    content.vb: Public Shared Function Layered(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray layerNames As String()) As CollisionEventBuilder(Of CollisionLayered)
+  overload: LunyScript.Api.CollisionEventFilterExtensions.Layered*
+  nameWithType.vb: CollisionEventFilterExtensions.Layered(Of T)(CollisionEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Layered(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray String())
+  name.vb: Layered(Of T)(CollisionEventBuilder(Of T), ParamArray String())
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Typed``1(LunyScript.Api.CollisionEventBuilder{``0},System.Type[])
+  commentId: M:LunyScript.Api.CollisionEventFilterExtensions.Typed``1(LunyScript.Api.CollisionEventBuilder{``0},System.Type[])
+  id: Typed``1(LunyScript.Api.CollisionEventBuilder{``0},System.Type[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.CollisionEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Typed<T>(CollisionEventBuilder<T>, params Type[])
+  nameWithType: CollisionEventFilterExtensions.Typed<T>(CollisionEventBuilder<T>, params Type[])
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Typed<T>(LunyScript.Api.CollisionEventBuilder<T>, params System.Type[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: Only react when the other object's component list contains at least one of the given types (OR logic).
+  example: []
+  syntax:
+    content: 'public static CollisionEventBuilder<CollisionReady> Typed<T>(this CollisionEventBuilder<T> b, params Type[] componentTypes) where T : struct, ICollisionFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CollisionEventBuilder{{T}}
+    - id: componentTypes
+      type: System.Type[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionReady}
+    content.vb: Public Shared Function Typed(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray componentTypes As Type()) As CollisionEventBuilder(Of CollisionReady)
+  overload: LunyScript.Api.CollisionEventFilterExtensions.Typed*
+  nameWithType.vb: CollisionEventFilterExtensions.Typed(Of T)(CollisionEventBuilder(Of T), ParamArray Type())
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Typed(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray System.Type())
+  name.vb: Typed(Of T)(CollisionEventBuilder(Of T), ParamArray Type())
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Cooldown``1(LunyScript.Api.CollisionEventBuilder{``0},System.Double)
+  commentId: M:LunyScript.Api.CollisionEventFilterExtensions.Cooldown``1(LunyScript.Api.CollisionEventBuilder{``0},System.Double)
+  id: Cooldown``1(LunyScript.Api.CollisionEventBuilder{``0},System.Double)
+  isExtensionMethod: true
+  parent: LunyScript.Api.CollisionEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Cooldown<T>(CollisionEventBuilder<T>, double)
+  nameWithType: CollisionEventFilterExtensions.Cooldown<T>(CollisionEventBuilder<T>, double)
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Cooldown<T>(LunyScript.Api.CollisionEventBuilder<T>, double)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Minimum seconds between successive reactions. Zero (default) means no cooldown.
+
+    The cooldown is checked before collision predicates; evaluated per event sequence.
+  example: []
+  syntax:
+    content: 'public static CollisionEventBuilder<CollisionReady> Cooldown<T>(this CollisionEventBuilder<T> b, double seconds) where T : struct, ICollisionFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CollisionEventBuilder{{T}}
+    - id: seconds
+      type: System.Double
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionReady}
+    content.vb: Public Shared Function Cooldown(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), seconds As Double) As CollisionEventBuilder(Of CollisionReady)
+  overload: LunyScript.Api.CollisionEventFilterExtensions.Cooldown*
+  nameWithType.vb: CollisionEventFilterExtensions.Cooldown(Of T)(CollisionEventBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Cooldown(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), Double)
+  name.vb: Cooldown(Of T)(CollisionEventBuilder(Of T), Double)
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  commentId: M:LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  id: Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
+  isExtensionMethod: true
+  parent: LunyScript.Api.CollisionEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Masked<T>(CollisionEventBuilder<T>, params string[])
+  nameWithType: CollisionEventFilterExtensions.Masked<T>(CollisionEventBuilder<T>, params string[])
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Masked<T>(LunyScript.Api.CollisionEventBuilder<T>, params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Only react when the other object's layer name matches one of the given names (OR logic).
+
+    Mutually exclusive with Layered() — unavailable after Layered() is called.
+  example: []
+  syntax:
+    content: 'public static CollisionEventBuilder<CollisionMasked> Masked<T>(this CollisionEventBuilder<T> b, params string[] layerNames) where T : struct, ICollisionFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CollisionEventBuilder{{T}}
+    - id: layerNames
+      type: System.String[]
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionMasked}
+    content.vb: Public Shared Function Masked(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray layerNames As String()) As CollisionEventBuilder(Of CollisionMasked)
+  overload: LunyScript.Api.CollisionEventFilterExtensions.Masked*
+  nameWithType.vb: CollisionEventFilterExtensions.Masked(Of T)(CollisionEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Masked(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray String())
+  name.vb: Masked(Of T)(CollisionEventBuilder(Of T), ParamArray String())
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.Int32)
+  commentId: M:LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.Int32)
+  id: Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.Int32)
+  isExtensionMethod: true
+  parent: LunyScript.Api.CollisionEventFilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Masked<T>(CollisionEventBuilder<T>, int)
+  nameWithType: CollisionEventFilterExtensions.Masked<T>(CollisionEventBuilder<T>, int)
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Masked<T>(LunyScript.Api.CollisionEventBuilder<T>, int)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: >-
+    Only react when the other object's layer is included in the given bitmask.
+
+    Mutually exclusive with Layered() — unavailable after Layered() is called.
+  example: []
+  syntax:
+    content: 'public static CollisionEventBuilder<CollisionMasked> Masked<T>(this CollisionEventBuilder<T> b, int layerMask) where T : struct, ICollisionFilterable'
+    parameters:
+    - id: b
+      type: LunyScript.Api.CollisionEventBuilder{{T}}
+    - id: layerMask
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionMasked}
+    content.vb: Public Shared Function Masked(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), layerMask As Integer) As CollisionEventBuilder(Of CollisionMasked)
+  overload: LunyScript.Api.CollisionEventFilterExtensions.Masked*
+  nameWithType.vb: CollisionEventFilterExtensions.Masked(Of T)(CollisionEventBuilder(Of T), Integer)
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Masked(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), Integer)
+  name.vb: Masked(Of T)(CollisionEventBuilder(Of T), Integer)
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Tagged*
+  commentId: Overload:LunyScript.Api.CollisionEventFilterExtensions.Tagged
+  isExternal: true
+  href: LunyScript.Api.CollisionEventFilterExtensions.html#LunyScript_Api_CollisionEventFilterExtensions_Tagged__1_LunyScript_Api_CollisionEventBuilder___0__System_String___
+  name: Tagged
+  nameWithType: CollisionEventFilterExtensions.Tagged
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Tagged
+- uid: LunyScript.Api.CollisionEventBuilder{{T}}
+  commentId: T:LunyScript.Api.CollisionEventBuilder{``0}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.CollisionEventBuilder`1
+  href: LunyScript.Api.CollisionEventBuilder-1.html
+  name: CollisionEventBuilder<T>
+  nameWithType: CollisionEventBuilder<T>
+  fullName: LunyScript.Api.CollisionEventBuilder<T>
+  nameWithType.vb: CollisionEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.CollisionEventBuilder(Of T)
+  name.vb: CollisionEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionReady}
+  commentId: T:LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionReady}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.CollisionEventBuilder`1
+  href: LunyScript.Api.CollisionEventBuilder-1.html
+  name: CollisionEventBuilder<CollisionReady>
+  nameWithType: CollisionEventBuilder<CollisionReady>
+  fullName: LunyScript.Api.CollisionEventBuilder<LunyScript.Api.CollisionReady>
+  nameWithType.vb: CollisionEventBuilder(Of CollisionReady)
+  fullName.vb: LunyScript.Api.CollisionEventBuilder(Of LunyScript.Api.CollisionReady)
+  name.vb: CollisionEventBuilder(Of CollisionReady)
+  spec.csharp:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.CollisionReady
+    name: CollisionReady
+    isExternal: true
+    href: LunyScript.Api.CollisionReady.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.CollisionReady
+    name: CollisionReady
+    isExternal: true
+    href: LunyScript.Api.CollisionReady.html
+  - name: )
+- uid: LunyScript.Api.CollisionEventBuilder`1
+  commentId: T:LunyScript.Api.CollisionEventBuilder`1
+  isExternal: true
+  href: LunyScript.Api.CollisionEventBuilder-1.html
+  name: CollisionEventBuilder<T>
+  nameWithType: CollisionEventBuilder<T>
+  fullName: LunyScript.Api.CollisionEventBuilder<T>
+  nameWithType.vb: CollisionEventBuilder(Of T)
+  fullName.vb: LunyScript.Api.CollisionEventBuilder(Of T)
+  name.vb: CollisionEventBuilder(Of T)
+  spec.csharp:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LunyScript.Api.CollisionEventFilterExtensions.With*
+  commentId: Overload:LunyScript.Api.CollisionEventFilterExtensions.With
+  isExternal: true
+  href: LunyScript.Api.CollisionEventFilterExtensions.html#LunyScript_Api_CollisionEventFilterExtensions_With__1_LunyScript_Api_CollisionEventBuilder___0__System_String___
+  name: With
+  nameWithType: CollisionEventFilterExtensions.With
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.With
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Layered*
+  commentId: Overload:LunyScript.Api.CollisionEventFilterExtensions.Layered
+  isExternal: true
+  href: LunyScript.Api.CollisionEventFilterExtensions.html#LunyScript_Api_CollisionEventFilterExtensions_Layered__1_LunyScript_Api_CollisionEventBuilder___0__System_String___
+  name: Layered
+  nameWithType: CollisionEventFilterExtensions.Layered
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Layered
+- uid: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionLayered}
+  commentId: T:LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionLayered}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.CollisionEventBuilder`1
+  href: LunyScript.Api.CollisionEventBuilder-1.html
+  name: CollisionEventBuilder<CollisionLayered>
+  nameWithType: CollisionEventBuilder<CollisionLayered>
+  fullName: LunyScript.Api.CollisionEventBuilder<LunyScript.Api.CollisionLayered>
+  nameWithType.vb: CollisionEventBuilder(Of CollisionLayered)
+  fullName.vb: LunyScript.Api.CollisionEventBuilder(Of LunyScript.Api.CollisionLayered)
+  name.vb: CollisionEventBuilder(Of CollisionLayered)
+  spec.csharp:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.CollisionLayered
+    name: CollisionLayered
+    isExternal: true
+    href: LunyScript.Api.CollisionLayered.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.CollisionLayered
+    name: CollisionLayered
+    isExternal: true
+    href: LunyScript.Api.CollisionLayered.html
+  - name: )
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Typed*
+  commentId: Overload:LunyScript.Api.CollisionEventFilterExtensions.Typed
+  isExternal: true
+  href: LunyScript.Api.CollisionEventFilterExtensions.html#LunyScript_Api_CollisionEventFilterExtensions_Typed__1_LunyScript_Api_CollisionEventBuilder___0__System_Type___
+  name: Typed
+  nameWithType: CollisionEventFilterExtensions.Typed
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Typed
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Cooldown*
+  commentId: Overload:LunyScript.Api.CollisionEventFilterExtensions.Cooldown
+  isExternal: true
+  href: LunyScript.Api.CollisionEventFilterExtensions.html#LunyScript_Api_CollisionEventFilterExtensions_Cooldown__1_LunyScript_Api_CollisionEventBuilder___0__System_Double_
+  name: Cooldown
+  nameWithType: CollisionEventFilterExtensions.Cooldown
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Cooldown
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: LunyScript.Api.CollisionEventFilterExtensions.Masked*
+  commentId: Overload:LunyScript.Api.CollisionEventFilterExtensions.Masked
+  isExternal: true
+  href: LunyScript.Api.CollisionEventFilterExtensions.html#LunyScript_Api_CollisionEventFilterExtensions_Masked__1_LunyScript_Api_CollisionEventBuilder___0__System_String___
+  name: Masked
+  nameWithType: CollisionEventFilterExtensions.Masked
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Masked
+- uid: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionMasked}
+  commentId: T:LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionMasked}
+  parent: LunyScript.Api
+  definition: LunyScript.Api.CollisionEventBuilder`1
+  href: LunyScript.Api.CollisionEventBuilder-1.html
+  name: CollisionEventBuilder<CollisionMasked>
+  nameWithType: CollisionEventBuilder<CollisionMasked>
+  fullName: LunyScript.Api.CollisionEventBuilder<LunyScript.Api.CollisionMasked>
+  nameWithType.vb: CollisionEventBuilder(Of CollisionMasked)
+  fullName.vb: LunyScript.Api.CollisionEventBuilder(Of LunyScript.Api.CollisionMasked)
+  name.vb: CollisionEventBuilder(Of CollisionMasked)
+  spec.csharp:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: <
+  - uid: LunyScript.Api.CollisionMasked
+    name: CollisionMasked
+    isExternal: true
+    href: LunyScript.Api.CollisionMasked.html
+  - name: '>'
+  spec.vb:
+  - uid: LunyScript.Api.CollisionEventBuilder`1
+    name: CollisionEventBuilder
+    isExternal: true
+    href: LunyScript.Api.CollisionEventBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Api.CollisionMasked
+    name: CollisionMasked
+    isExternal: true
+    href: LunyScript.Api.CollisionMasked.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

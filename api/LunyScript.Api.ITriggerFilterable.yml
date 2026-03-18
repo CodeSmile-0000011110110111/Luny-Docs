@@ -1,0 +1,55 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Api.ITriggerFilterable
+  commentId: T:LunyScript.Api.ITriggerFilterable
+  id: ITriggerFilterable
+  parent: LunyScript.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ITriggerFilterable
+  nameWithType: ITriggerFilterable
+  fullName: LunyScript.Api.ITriggerFilterable
+  type: Interface
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  summary: 'Marker: filter methods (Tagged, With, Layered, Masked, Typed, Cooldown) are still available.'
+  example: []
+  syntax:
+    content: 'public interface ITriggerFilterable : ITriggerBuilderState'
+    content.vb: Public Interface ITriggerFilterable Inherits ITriggerBuilderState
+  derivedClasses:
+  - LunyScript.Api.TriggerLayered
+  - LunyScript.Api.TriggerMasked
+  - LunyScript.Api.TriggerReady
+  - LunyScript.Api.TriggerStart
+references:
+- uid: LunyScript.Api
+  commentId: N:LunyScript.Api
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Api
+  nameWithType: LunyScript.Api
+  fullName: LunyScript.Api
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Api
+    name: Api
+    isExternal: true
+    href: LunyScript.Api.html

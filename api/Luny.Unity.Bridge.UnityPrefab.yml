@@ -5,7 +5,7 @@ items:
   id: UnityPrefab
   parent: Luny.Unity.Bridge
   children:
-  - Luny.Unity.Bridge.UnityPrefab.#ctor(UnityEngine.GameObject,Luny.Engine.Bridge.LunyAssetPath)
+  - Luny.Unity.Bridge.UnityPrefab.#ctor(UnityEngine.GameObject,Luny.Engine.Bridge.LunyAssetPath,System.Boolean)
   - Luny.Unity.Bridge.UnityPrefab.Instantiate
   - Luny.Unity.Bridge.UnityPrefab.Instantiate(Luny.Engine.Bridge.ILunyObject)
   - Luny.Unity.Bridge.UnityPrefab.Instantiate(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
@@ -37,32 +37,34 @@ items:
   - Luny.Engine.Bridge.LunyAsset.AssetID
   - Luny.Engine.Bridge.LunyAsset.AssetPath
   - Luny.Engine.Bridge.LunyAsset.NativeAsset
-- uid: Luny.Unity.Bridge.UnityPrefab.#ctor(UnityEngine.GameObject,Luny.Engine.Bridge.LunyAssetPath)
-  commentId: M:Luny.Unity.Bridge.UnityPrefab.#ctor(UnityEngine.GameObject,Luny.Engine.Bridge.LunyAssetPath)
-  id: '#ctor(UnityEngine.GameObject,Luny.Engine.Bridge.LunyAssetPath)'
+- uid: Luny.Unity.Bridge.UnityPrefab.#ctor(UnityEngine.GameObject,Luny.Engine.Bridge.LunyAssetPath,System.Boolean)
+  commentId: M:Luny.Unity.Bridge.UnityPrefab.#ctor(UnityEngine.GameObject,Luny.Engine.Bridge.LunyAssetPath,System.Boolean)
+  id: '#ctor(UnityEngine.GameObject,Luny.Engine.Bridge.LunyAssetPath,System.Boolean)'
   parent: Luny.Unity.Bridge.UnityPrefab
   langs:
   - csharp
   - vb
-  name: UnityPrefab(GameObject, LunyAssetPath)
-  nameWithType: UnityPrefab.UnityPrefab(GameObject, LunyAssetPath)
-  fullName: Luny.Unity.Bridge.UnityPrefab.UnityPrefab(UnityEngine.GameObject, Luny.Engine.Bridge.LunyAssetPath)
+  name: UnityPrefab(GameObject, LunyAssetPath, bool)
+  nameWithType: UnityPrefab.UnityPrefab(GameObject, LunyAssetPath, bool)
+  fullName: Luny.Unity.Bridge.UnityPrefab.UnityPrefab(UnityEngine.GameObject, Luny.Engine.Bridge.LunyAssetPath, bool)
   type: Constructor
   assemblies:
   - Luny.Unity
   namespace: Luny.Unity.Bridge
   syntax:
-    content: public UnityPrefab(GameObject prefab, LunyAssetPath assetPath)
+    content: public UnityPrefab(GameObject prefab, LunyAssetPath assetPath, bool isPlaceholder = false)
     parameters:
     - id: prefab
       type: UnityEngine.GameObject
     - id: assetPath
       type: Luny.Engine.Bridge.LunyAssetPath
-    content.vb: Public Sub New(prefab As GameObject, assetPath As LunyAssetPath)
+    - id: isPlaceholder
+      type: System.Boolean
+    content.vb: Public Sub New(prefab As GameObject, assetPath As LunyAssetPath, isPlaceholder As Boolean = False)
   overload: Luny.Unity.Bridge.UnityPrefab.#ctor*
-  nameWithType.vb: UnityPrefab.New(GameObject, LunyAssetPath)
-  fullName.vb: Luny.Unity.Bridge.UnityPrefab.New(UnityEngine.GameObject, Luny.Engine.Bridge.LunyAssetPath)
-  name.vb: New(GameObject, LunyAssetPath)
+  nameWithType.vb: UnityPrefab.New(GameObject, LunyAssetPath, Boolean)
+  fullName.vb: Luny.Unity.Bridge.UnityPrefab.New(UnityEngine.GameObject, Luny.Engine.Bridge.LunyAssetPath, Boolean)
+  name.vb: New(GameObject, LunyAssetPath, Boolean)
 - uid: Luny.Unity.Bridge.UnityPrefab.Instantiate``1(Luny.Engine.Bridge.ILunyObject)
   commentId: M:Luny.Unity.Bridge.UnityPrefab.Instantiate``1(Luny.Engine.Bridge.ILunyObject)
   id: Instantiate``1(Luny.Engine.Bridge.ILunyObject)
@@ -377,7 +379,7 @@ references:
 - uid: Luny.Unity.Bridge.UnityPrefab.#ctor*
   commentId: Overload:Luny.Unity.Bridge.UnityPrefab.#ctor
   isExternal: true
-  href: Luny.Unity.Bridge.UnityPrefab.html#Luny_Unity_Bridge_UnityPrefab__ctor_UnityEngine_GameObject_Luny_Engine_Bridge_LunyAssetPath_
+  href: Luny.Unity.Bridge.UnityPrefab.html#Luny_Unity_Bridge_UnityPrefab__ctor_UnityEngine_GameObject_Luny_Engine_Bridge_LunyAssetPath_System_Boolean_
   name: UnityPrefab
   nameWithType: UnityPrefab.UnityPrefab
   fullName: Luny.Unity.Bridge.UnityPrefab.UnityPrefab
@@ -397,6 +399,17 @@ references:
   name: LunyAssetPath
   nameWithType: LunyAssetPath
   fullName: Luny.Engine.Bridge.LunyAssetPath
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: Luny.Engine.Bridge.LunyPrefab.Instantiate``1(Luny.Engine.Bridge.ILunyObject)
   commentId: M:Luny.Engine.Bridge.LunyPrefab.Instantiate``1(Luny.Engine.Bridge.ILunyObject)
   parent: Luny.Engine.Bridge.LunyPrefab

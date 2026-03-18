@@ -81,8 +81,6 @@ items:
   - LunyScript.Blocks.ScriptBlock
   - LunyScript.Blocks.ConditionBlock
   derivedClasses:
-  - LunyScript.Blocks.ComputedVariableBlock
-  - LunyScript.Blocks.ConstantVariableBlock
   - LunyScript.Blocks.TableVariableBlock
   implements:
   - LunyScript.Blocks.IScriptBlock
