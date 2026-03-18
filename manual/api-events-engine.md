@@ -2,7 +2,7 @@
 
 These are LunyEngine events. Used internally and by framework developers, you will nevertheless run into them in callstacks (logs, exceptions).  
 
-## LunyEngine Observer Events
+## Engine Observer Events
 
 These events are used by implementations of [`ILunyEngineObserver`](xref:Luny.ILunyEngineObserver).
 
@@ -16,7 +16,7 @@ These events are used by implementations of [`ILunyEngineObserver`](xref:Luny.IL
 | OnEngineFrameEnds       | Every frame, after all frame events                   |
 | OnEngineShutdown        | Application quitting                                  |
 
-## LunyEngine Service Events
+## Service Events
 
 Very similar events are used by implementations of [`LunyEngineServiceBase`](xref:Luny.Engine.Services.LunyEngineServiceBase) providing engine "services" - feature-level APIs.
 
