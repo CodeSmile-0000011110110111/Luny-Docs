@@ -74,7 +74,7 @@ public override void Build(ScriptBuildContext context)
 }
 ```
 
-A variable can also hold multiple blocks, for instance the `ActionBlock[]` arrays returned from the methods above can be assigned to a variable and used multiple time, instead of calling the method multiple times.
+A variable can also hold multiple blocks, for instance the `ActionBlock[]` arrays returned from the methods above can be assigned to a variable and used multiple times.
 
 ## Re-Using vs Re-Creating Blocks
 
@@ -86,7 +86,7 @@ If you need individual block behaviour (eg different names) you will have to cre
 
 **Question**: What if I wanted to create ten enemies, each with a unique name?
 
-**Dumb Answer**: You'll copy-paste the line ten times. <-- This is not maintainable!
+**Dumb Answer**: You'll copy-paste the line ten times. <-- _This is not maintainable!_
 
 **Clever Answer**: You'll use a loop!
 
@@ -115,24 +115,26 @@ This is why LunyScript provides logic flow constructs as blocks themselves, so t
 ```csharp
 public override void Build(ScriptBuildContext context)
 {
-    // Create ten enemies
+    // Create ten enemies every time we get enabled
     var createEnemy = Object.Create("Enemy").With(prefabPath);
     On.Enabled(For(10).Do(createEnemy));
 }
 ```
 
-This creates 10 enemies every time the object gets enabled. But it doesn't change the number of enemies yet. 
+This creates 10 enemies every time the object gets enabled. You could write that with a C# for loop just as well. We don't change the number of enemies yet.
 
 To do that, we use a LunyScript runtime variable holding the current number of enemies to spawn:
 
 ```csharp
 public override void Build(ScriptBuildContext context)
 {
-    // Create an increasing number of enemies
+    // define the runtime variable, 3 is the initial value
     var enemyCount = Var.Define("num enemies to spawn", 3);
+
+    // Create an increasing number of enemies by adding 2 to enemyCount
     var createEnemy = Object.Create("Enemy").With(prefabPath);
     On.Enabled(For(enemyCount).Do(createEnemy), enemyCount.Add(2));
 }
 ```
 
-Now we initially create 3 enemies, and on ever subsequent enable we'll create two more: 5, 7, 9 and so on.
+Now we initially create 3 enemies, and on every subsequent enable we'll create two more: 5, 7, 9 and so forth.
