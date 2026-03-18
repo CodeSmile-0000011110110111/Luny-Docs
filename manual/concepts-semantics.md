@@ -1,8 +1,8 @@
 ﻿# Luny Semantics Shmemantics 
 
-LunyScript and LunyEngine strive to provide consistent, relatable semantics while avoiding terms that are too technical or too vague. But it also borrows semantics from engines where it makes the most sense. The idea is _not another opinionated API_ but to fix game engines' inconsistencies.
+LunyScript and LunyEngine strive to provide consistent, relatable semantics while avoiding terms that are too technical or too vague. But it also borrows semantics from engines where it makes the most sense. 
 
-It also follows C# / .NET naming guidelines. Events that already happened use past tense (-ed). Ongoing events use present tense (-ing). Exceptions: Consistently scheduled events use nouns (Heartbeat, FrameUpdate).
+The idea is _not another opinionated API_ but to fix game engines' inconsistencies, and to more strictly follows C# / .NET naming guidelines. Events that already happened use past tense (-ed). Ongoing events use present tense (-ing). Some exceptions: Consistently scheduled events use nouns (Heartbeat, FrameUpdate), and once-only events may use adjectives (Ready).
 
 ## Object Lifecycle Events
 
@@ -36,12 +36,15 @@ I thoroughly considered each and every semantic carefully. Most terms are borrow
 
 This list isn't complete but still provides a broad overview of global/external events that can run blocks:
 
-| **LunyScript**           | **Unity**                  | **Godot**                                    | **Unreal**               |
-|:-------------------------|:---------------------------|:---------------------------------------------|:-------------------------|
-| When.Input.Action        | InputAction callbacks      | N/A                                          |                    |
-| When.Scene.Loaded        | SceneManager.sceneLoaded   | N/A                                          |                    |
-| When.Scene.Unloaded      | SceneManager.sceneUnloaded | N/A                                          |                    |
-| When.Quitting            | OnApplicationQuit          | _notification(NOTIFICATION_WM_CLOSE_REQUEST) | EndPlay                   |
+| **LunyScript**               | **Unity**                  | **Godot**                                    | **Unreal**               |
+|:-----------------------------|:---------------------------|:---------------------------------------------|:-------------------------|
+| When.Input.Action.Started    |       | N/A                                          |                    |
+| When.Input.Action.Performed  |       | N/A                                          |                    |
+| When.Input.Action.Continuing |       | N/A                                          |                    |
+| When.Input.Action.Ended      |       | N/A                                          |                    |
+| When.Scene.Loaded            | SceneManager.sceneLoaded   | N/A                                          |                    |
+| When.Scene.Unloaded          | SceneManager.sceneUnloaded | N/A                                          |                    |
+| When.Quitting                | OnApplicationQuit          | _notification(NOTIFICATION_WM_CLOSE_REQUEST) | EndPlay                   |
 
 The distinction between `On.*` and `When.*` is one of 'local' vs 'global': The `On.*` events relate to the object itself, the `When.*` events are external events, not targeting a specific object.  
 
