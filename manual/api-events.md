@@ -1,6 +1,6 @@
 ﻿# Object and Global Events
 
-LunyScript and LunyEngine strive to provide consistent, relatable event semantics. The idea is to fix game engines' inconsistencies by strictly following C# / .NET naming guidelines for consistency and in light of defining a possible standard (long term).
+LunyScript and LunyEngine strive to provide consistent, relatable event semantics. The idea is to fix game engines' inconsistencies by strictly following C# / .NET naming guidelines for consistency, and to try and define a possible common standard (long term).
 
 The event semantics follow these rules:
 - Events that already happened use past tense: `-ed`.
