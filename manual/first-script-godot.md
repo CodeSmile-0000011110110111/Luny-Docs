@@ -4,7 +4,8 @@
 
 ## Status Quo: Godot 4.6
 
-If you're already familiar with the Godot editor workflows, [skip to the GDScript](#the-gdscript). Everyone else: brace yourselves.
+If you're already familiar with the Godot editor workflows, [skip to the GDScript](#the-gdscript). <br/>
+Everyone else: brace yourselves.
 
 ### Create the 3D Scene
 
@@ -157,7 +158,7 @@ public partial class Player : Script
 }
 ```
 
-**At 7 actual lines of code this Luny script is 35% less code! 😎**
+**At 7 actual lines of code this Luny script is 65% less code! 😎**
 
 > [!NOTE]
 > LunyScript, when ported to Godot, will remain in C#. 
