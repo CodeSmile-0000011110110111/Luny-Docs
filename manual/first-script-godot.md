@@ -93,7 +93,7 @@ Compared to Unity, there's an egregious amount of extra steps to be done in the 
 
 Godot deliberately provides _clean slates_ for everything, providing no _meaningful templates_ and lacking _sensible defaults_. Its user experience centers on _deeply hierarchical_ (procedural) user interfaces and an abundance of _modal dialogs_. Both together result in higher-than-usual UI interactions. 
 
-While Unreal editor's highly complex UI with many uniquely designed windows shocks beginners, Godot's design provides a consistent UI experience that's easier to pick up. Thanks to the higher number of _successful interactions_ it subjectively feels more rewarding and productive.
+While Unreal editor's highly complex UI with many uniquely designed windows will shock beginners and even experienced developers, Godot's design provides a consistent UI experience that's easy to pick up. Thanks to the higher number of _successful interactions_ it is rewarding and it feels productive.
 
 ### The GDScript
 
@@ -157,8 +157,8 @@ public partial class Player : Script
 }
 ```
 
-**At 7 actual lines of code, the GDScript is almost three times longer! 😎**
+**At 7 actual lines of code this Luny script is 35% less code! 😎**
 
 > [!NOTE]
-> LunyScript when ported to Godot will remain in C#. 
+> LunyScript, when ported to Godot, will remain in C#. 
 > GDScript is not a portable language and it does not handle fluent APIs well.
