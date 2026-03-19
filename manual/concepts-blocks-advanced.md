@@ -52,9 +52,9 @@ If you need individual block behaviour (eg different names) you will have to cre
 public override void Build(ScriptBuildContext context)
 {
     var prefabPath = "Assets/Prefabs/Enemy";
-    for (var i = 0; i < 10; i++)
+    for (var i = 1; i <= 10; i++)
     {
-        var name = $"Enemy_{i+1}";
+        var name = "Enemy_" + i;
         var createEnemy = Object.Create(name).With(prefabPath);
         
         On.Ready(createEnemy);
