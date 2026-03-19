@@ -2,48 +2,6 @@
 
 LunyScript's block-based nature provides scripting opportunities which may not be immediately obvious. We can leverage basic C# functionality to take block-based scripting to the next level. 
 
-## Methods Returning Blocks
-
-You can extract the creation of blocks into reusable methods. This also keeps the `Build()` method clean and readable:
-
-```csharp
-public override void Build(ScriptBuildContext context)
-{
-    On.Enabled(EnableMessages());
-    
-    On.Disabled(DisableMessages());
-}
-
-private ActionBlock[] EnableMessages() => new[]
-{
-    Debug.Log("I'm back!"),
-    Debug.Log("I told you so!"),
-};
-private ActionBlock[] DisableMessages() => new[]
-{
-    Debug.Log("I'll be back!"), 
-    Debug.Log("Nooooo.... (sinks into lava)"),
-};
-```
-
-This adds several syntax elements to the script we wouldn't usually write. Thus this strategy is for advanced users, not something you would teach to absolute beginners right away.
-
-## Caution: Blocks Outside Runnable Events Won't Run
-
-Creating a block outside of a block runner will silently discard that block:
-
-```csharp
-public override void Build(ScriptBuildContext context)
-{
-    // Nothing will run this block ... it gets discarded
-    Object.Create("Enemy").With("Assets/Prefabs/Enemy");
-}
-```
-
-Block instances won't run by themselves. If a block isn't assigned to a "block runner" such a stray block won't run. Block runners are containers that hold on to blocks and execute them at runtime. Most commonly the `On.*` and `When.*` event handlers.
-
-> [!TIP]
-> I found a way to detect such 'unused' blocks. This may log a warning or error in the future. 
 
 ## Assigning Blocks To Variables
 
@@ -138,3 +96,46 @@ public override void Build(ScriptBuildContext context)
 ```
 
 Now we initially create 3 enemies, and on every subsequent enable we'll create two more: 5, 7, 9 and so forth.
+
+## Methods Returning Blocks
+
+You can extract the creation of blocks into reusable methods. This also keeps the `Build()` method clean and readable:
+
+```csharp
+public override void Build(ScriptBuildContext context)
+{
+    On.Enabled(EnableMessages());
+    
+    On.Disabled(DisableMessages());
+}
+
+private ActionBlock[] EnableMessages() => new[]
+{
+    Debug.Log("I'm back!"),
+    Debug.Log("I told you so!"),
+};
+private ActionBlock[] DisableMessages() => new[]
+{
+    Debug.Log("I'll be back!"), 
+    Debug.Log("Nooooo.... (sinks into lava)"),
+};
+```
+
+This adds several syntax elements to the script we wouldn't usually write. Thus this strategy is for advanced users, not something you would teach to absolute beginners right away.
+
+## Caution: Blocks Outside Runnable Events Won't Run
+
+Creating a block outside of a block runner will silently discard that block:
+
+```csharp
+public override void Build(ScriptBuildContext context)
+{
+    // Nothing will run this block ... it gets discarded
+    Object.Create("Enemy").With("Assets/Prefabs/Enemy");
+}
+```
+
+Block instances won't run by themselves. If a block isn't assigned to a "block runner" such a stray block won't run. Block runners are containers that hold on to blocks and execute them at runtime. Most commonly the `On.*` and `When.*` event handlers.
+
+> [!TIP]
+> I found a way to detect such 'unused' blocks. This may log a warning or error in the future. 
