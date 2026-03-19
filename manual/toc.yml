@@ -29,6 +29,10 @@
   - name: Variables
     href: api-variables.md
     items:
+    - name: Defining Variables
+      href: api-variables-definition.md
+    - name: Using Variables
+      href: api-variables-uses.md
     - name: Variable Arithmetics
       href: api-variables-arithmetics.md
     - name: Variable Comparisons

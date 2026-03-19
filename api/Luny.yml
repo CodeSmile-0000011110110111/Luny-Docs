@@ -30,8 +30,8 @@ items:
   - Luny.SystemStringExtensions
   - Luny.SystemTypeExtensions
   - Luny.Table
-  - Luny.Table.ScalarVarHandle
   - Luny.Table.VarHandle
+  - Luny.Table.VarHandleBase
   - Luny.Table.VarHandle`1
   - Luny.Timer
   - Luny.Variable
@@ -257,6 +257,34 @@ references:
   name: Table
   nameWithType: Table
   fullName: Luny.Table
+- uid: Luny.Table.VarHandleBase
+  commentId: T:Luny.Table.VarHandleBase
+  parent: Luny
+  isExternal: true
+  href: Luny.Table.html
+  name: Table.VarHandleBase
+  nameWithType: Table.VarHandleBase
+  fullName: Luny.Table.VarHandleBase
+  spec.csharp:
+  - uid: Luny.Table
+    name: Table
+    isExternal: true
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.VarHandleBase
+    name: VarHandleBase
+    isExternal: true
+    href: Luny.Table.VarHandleBase.html
+  spec.vb:
+  - uid: Luny.Table
+    name: Table
+    isExternal: true
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.VarHandleBase
+    name: VarHandleBase
+    isExternal: true
+    href: Luny.Table.VarHandleBase.html
 - uid: Luny.Table.VarHandle
   commentId: T:Luny.Table.VarHandle
   parent: Luny
@@ -285,34 +313,6 @@ references:
     name: VarHandle
     isExternal: true
     href: Luny.Table.VarHandle.html
-- uid: Luny.Table.ScalarVarHandle
-  commentId: T:Luny.Table.ScalarVarHandle
-  parent: Luny
-  isExternal: true
-  href: Luny.Table.html
-  name: Table.ScalarVarHandle
-  nameWithType: Table.ScalarVarHandle
-  fullName: Luny.Table.ScalarVarHandle
-  spec.csharp:
-  - uid: Luny.Table
-    name: Table
-    isExternal: true
-    href: Luny.Table.html
-  - name: .
-  - uid: Luny.Table.ScalarVarHandle
-    name: ScalarVarHandle
-    isExternal: true
-    href: Luny.Table.ScalarVarHandle.html
-  spec.vb:
-  - uid: Luny.Table
-    name: Table
-    isExternal: true
-    href: Luny.Table.html
-  - name: .
-  - uid: Luny.Table.ScalarVarHandle
-    name: ScalarVarHandle
-    isExternal: true
-    href: Luny.Table.ScalarVarHandle.html
 - uid: Luny.Table.VarHandle`1
   commentId: T:Luny.Table.VarHandle`1
   isExternal: true

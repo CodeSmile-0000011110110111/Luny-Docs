@@ -7,7 +7,7 @@ items:
   children:
   - Luny.Table.VarHandle`1.Reset
   - Luny.Table.VarHandle`1.ToString
-  - Luny.Table.VarHandle`1.Value
+  - Luny.Table.VarHandle`1.Variable
   langs:
   - csharp
   - vb
@@ -19,18 +19,18 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: 'public sealed class Table.VarHandle<T> : Table.VarHandle'
+    content: 'public sealed class Table.VarHandle<T> : Table.VarHandleBase'
     typeParameters:
     - id: T
-    content.vb: Public NotInheritable Class Table.VarHandle(Of T) Inherits Table.VarHandle
+    content.vb: Public NotInheritable Class Table.VarHandle(Of T) Inherits Table.VarHandleBase
   inheritance:
   - System.Object
-  - Luny.Table.VarHandle
+  - Luny.Table.VarHandleBase
   inheritedMembers:
-  - Luny.Table.VarHandle.As``1
-  - Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{{T}}@)
-  - Luny.Table.VarHandle.Name
-  - Luny.Table.VarHandle.IsConstant
+  - Luny.Table.VarHandleBase.Cast``1
+  - Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{{T}}@)
+  - Luny.Table.VarHandleBase.Name
+  - Luny.Table.VarHandleBase.IsConstant
   nameWithType.vb: Table.VarHandle(Of T)
   fullName.vb: Luny.Table.VarHandle(Of T)
   name.vb: Table.VarHandle(Of T)
@@ -52,7 +52,7 @@ items:
   syntax:
     content: public override void Reset()
     content.vb: Public Overrides Sub Reset()
-  overridden: Luny.Table.VarHandle.Reset
+  overridden: Luny.Table.VarHandleBase.Reset
   overload: Luny.Table.VarHandle`1.Reset*
   nameWithType.vb: Table.VarHandle(Of T).Reset()
   fullName.vb: Luny.Table.VarHandle(Of T).Reset()
@@ -80,29 +80,29 @@ items:
   overload: Luny.Table.VarHandle`1.ToString*
   nameWithType.vb: Table.VarHandle(Of T).ToString()
   fullName.vb: Luny.Table.VarHandle(Of T).ToString()
-- uid: Luny.Table.VarHandle`1.Value
-  commentId: P:Luny.Table.VarHandle`1.Value
-  id: Value
+- uid: Luny.Table.VarHandle`1.Variable
+  commentId: P:Luny.Table.VarHandle`1.Variable
+  id: Variable
   parent: Luny.Table.VarHandle`1
   langs:
   - csharp
   - vb
-  name: Value
-  nameWithType: Table.VarHandle<T>.Value
-  fullName: Luny.Table.VarHandle<T>.Value
+  name: Variable
+  nameWithType: Table.VarHandle<T>.Variable
+  fullName: Luny.Table.VarHandle<T>.Variable
   type: Property
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public T Value { get; set; }
+    content: public T Variable { get; set; }
     parameters: []
     return:
       type: '{T}'
-    content.vb: Public Property Value As T
-  overload: Luny.Table.VarHandle`1.Value*
-  nameWithType.vb: Table.VarHandle(Of T).Value
-  fullName.vb: Luny.Table.VarHandle(Of T).Value
+    content.vb: Public Property Variable As T
+  overload: Luny.Table.VarHandle`1.Variable*
+  nameWithType.vb: Table.VarHandle(Of T).Variable
+  fullName.vb: Luny.Table.VarHandle(Of T).Variable
 references:
 - uid: Luny
   commentId: N:Luny
@@ -121,60 +121,60 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Luny.Table.VarHandle
-  commentId: T:Luny.Table.VarHandle
+- uid: Luny.Table.VarHandleBase
+  commentId: T:Luny.Table.VarHandleBase
   parent: Luny
   isExternal: true
   href: Luny.Table.html
-  name: Table.VarHandle
-  nameWithType: Table.VarHandle
-  fullName: Luny.Table.VarHandle
+  name: Table.VarHandleBase
+  nameWithType: Table.VarHandleBase
+  fullName: Luny.Table.VarHandleBase
   spec.csharp:
   - uid: Luny.Table
     name: Table
     isExternal: true
     href: Luny.Table.html
   - name: .
-  - uid: Luny.Table.VarHandle
-    name: VarHandle
+  - uid: Luny.Table.VarHandleBase
+    name: VarHandleBase
     isExternal: true
-    href: Luny.Table.VarHandle.html
+    href: Luny.Table.VarHandleBase.html
   spec.vb:
   - uid: Luny.Table
     name: Table
     isExternal: true
     href: Luny.Table.html
   - name: .
-  - uid: Luny.Table.VarHandle
-    name: VarHandle
+  - uid: Luny.Table.VarHandleBase
+    name: VarHandleBase
     isExternal: true
-    href: Luny.Table.VarHandle.html
-- uid: Luny.Table.VarHandle.As``1
-  commentId: M:Luny.Table.VarHandle.As``1
-  parent: Luny.Table.VarHandle
+    href: Luny.Table.VarHandleBase.html
+- uid: Luny.Table.VarHandleBase.Cast``1
+  commentId: M:Luny.Table.VarHandleBase.Cast``1
+  parent: Luny.Table.VarHandleBase
   isExternal: true
-  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_As__1
-  name: As<T>()
-  nameWithType: Table.VarHandle.As<T>()
-  fullName: Luny.Table.VarHandle.As<T>()
-  nameWithType.vb: Table.VarHandle.As(Of T)()
-  fullName.vb: Luny.Table.VarHandle.As(Of T)()
-  name.vb: As(Of T)()
+  href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Cast__1
+  name: Cast<T>()
+  nameWithType: Table.VarHandleBase.Cast<T>()
+  fullName: Luny.Table.VarHandleBase.Cast<T>()
+  nameWithType.vb: Table.VarHandleBase.Cast(Of T)()
+  fullName.vb: Luny.Table.VarHandleBase.Cast(Of T)()
+  name.vb: Cast(Of T)()
   spec.csharp:
-  - uid: Luny.Table.VarHandle.As``1
-    name: As
+  - uid: Luny.Table.VarHandleBase.Cast``1
+    name: Cast
     isExternal: true
-    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_As__1
+    href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Cast__1
   - name: <
   - name: T
   - name: '>'
   - name: (
   - name: )
   spec.vb:
-  - uid: Luny.Table.VarHandle.As``1
-    name: As
+  - uid: Luny.Table.VarHandleBase.Cast``1
+    name: Cast
     isExternal: true
-    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_As__1
+    href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Cast__1
   - name: (
   - name: Of
   - name: " "
@@ -182,22 +182,22 @@ references:
   - name: )
   - name: (
   - name: )
-- uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{{T}}@)
-  commentId: M:Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
-  parent: Luny.Table.VarHandle
-  definition: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
-  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
-  name: TryAs<T>(out VarHandle<T>)
-  nameWithType: Table.VarHandle.TryAs<T>(out Table.VarHandle<T>)
-  fullName: Luny.Table.VarHandle.TryAs<T>(out Luny.Table.VarHandle<T>)
-  nameWithType.vb: Table.VarHandle.TryAs(Of T)(Table.VarHandle(Of T))
-  fullName.vb: Luny.Table.VarHandle.TryAs(Of T)(Luny.Table.VarHandle(Of T))
-  name.vb: TryAs(Of T)(VarHandle(Of T))
+- uid: Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{{T}}@)
+  commentId: M:Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{``0}@)
+  parent: Luny.Table.VarHandleBase
+  definition: Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{``0}@)
+  href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_As__1_Luny_Table_VarHandle___0___
+  name: As<T>(out VarHandle<T>)
+  nameWithType: Table.VarHandleBase.As<T>(out Table.VarHandle<T>)
+  fullName: Luny.Table.VarHandleBase.As<T>(out Luny.Table.VarHandle<T>)
+  nameWithType.vb: Table.VarHandleBase.As(Of T)(Table.VarHandle(Of T))
+  fullName.vb: Luny.Table.VarHandleBase.As(Of T)(Luny.Table.VarHandle(Of T))
+  name.vb: As(Of T)(VarHandle(Of T))
   spec.csharp:
-  - uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
-    name: TryAs
+  - uid: Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{``0}@)
+    name: As
     isExternal: true
-    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
+    href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_As__1_Luny_Table_VarHandle___0___
   - name: <
   - name: T
   - name: '>'
@@ -213,10 +213,10 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
-    name: TryAs
+  - uid: Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{``0}@)
+    name: As
     isExternal: true
-    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
+    href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_As__1_Luny_Table_VarHandle___0___
   - name: (
   - name: Of
   - name: " "
@@ -233,22 +233,22 @@ references:
   - name: T
   - name: )
   - name: )
-- uid: Luny.Table.VarHandle.Name
-  commentId: P:Luny.Table.VarHandle.Name
-  parent: Luny.Table.VarHandle
+- uid: Luny.Table.VarHandleBase.Name
+  commentId: P:Luny.Table.VarHandleBase.Name
+  parent: Luny.Table.VarHandleBase
   isExternal: true
-  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_Name
+  href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Name
   name: Name
-  nameWithType: Table.VarHandle.Name
-  fullName: Luny.Table.VarHandle.Name
-- uid: Luny.Table.VarHandle.IsConstant
-  commentId: P:Luny.Table.VarHandle.IsConstant
-  parent: Luny.Table.VarHandle
+  nameWithType: Table.VarHandleBase.Name
+  fullName: Luny.Table.VarHandleBase.Name
+- uid: Luny.Table.VarHandleBase.IsConstant
+  commentId: P:Luny.Table.VarHandleBase.IsConstant
+  parent: Luny.Table.VarHandleBase
   isExternal: true
-  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_IsConstant
+  href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_IsConstant
   name: IsConstant
-  nameWithType: Table.VarHandle.IsConstant
-  fullName: Luny.Table.VarHandle.IsConstant
+  nameWithType: Table.VarHandleBase.IsConstant
+  fullName: Luny.Table.VarHandleBase.IsConstant
 - uid: System
   commentId: N:System
   isExternal: true
@@ -256,21 +256,21 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
-  commentId: M:Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
+- uid: Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{``0}@)
+  commentId: M:Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{``0}@)
   isExternal: true
-  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
-  name: TryAs<T>(out VarHandle<T>)
-  nameWithType: Table.VarHandle.TryAs<T>(out Table.VarHandle<T>)
-  fullName: Luny.Table.VarHandle.TryAs<T>(out Luny.Table.VarHandle<T>)
-  nameWithType.vb: Table.VarHandle.TryAs(Of T)(Table.VarHandle(Of T))
-  fullName.vb: Luny.Table.VarHandle.TryAs(Of T)(Luny.Table.VarHandle(Of T))
-  name.vb: TryAs(Of T)(VarHandle(Of T))
+  href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_As__1_Luny_Table_VarHandle___0___
+  name: As<T>(out VarHandle<T>)
+  nameWithType: Table.VarHandleBase.As<T>(out Table.VarHandle<T>)
+  fullName: Luny.Table.VarHandleBase.As<T>(out Luny.Table.VarHandle<T>)
+  nameWithType.vb: Table.VarHandleBase.As(Of T)(Table.VarHandle(Of T))
+  fullName.vb: Luny.Table.VarHandleBase.As(Of T)(Luny.Table.VarHandle(Of T))
+  name.vb: As(Of T)(VarHandle(Of T))
   spec.csharp:
-  - uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
-    name: TryAs
+  - uid: Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{``0}@)
+    name: As
     isExternal: true
-    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
+    href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_As__1_Luny_Table_VarHandle___0___
   - name: <
   - name: T
   - name: '>'
@@ -286,10 +286,10 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
-    name: TryAs
+  - uid: Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{``0}@)
+    name: As
     isExternal: true
-    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
+    href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_As__1_Luny_Table_VarHandle___0___
   - name: (
   - name: Of
   - name: " "
@@ -306,26 +306,26 @@ references:
   - name: T
   - name: )
   - name: )
-- uid: Luny.Table.VarHandle.Reset
-  commentId: M:Luny.Table.VarHandle.Reset
-  parent: Luny.Table.VarHandle
+- uid: Luny.Table.VarHandleBase.Reset
+  commentId: M:Luny.Table.VarHandleBase.Reset
+  parent: Luny.Table.VarHandleBase
   isExternal: true
-  href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_Reset
+  href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Reset
   name: Reset()
-  nameWithType: Table.VarHandle.Reset()
-  fullName: Luny.Table.VarHandle.Reset()
+  nameWithType: Table.VarHandleBase.Reset()
+  fullName: Luny.Table.VarHandleBase.Reset()
   spec.csharp:
-  - uid: Luny.Table.VarHandle.Reset
+  - uid: Luny.Table.VarHandleBase.Reset
     name: Reset
     isExternal: true
-    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_Reset
+    href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Reset
   - name: (
   - name: )
   spec.vb:
-  - uid: Luny.Table.VarHandle.Reset
+  - uid: Luny.Table.VarHandleBase.Reset
     name: Reset
     isExternal: true
-    href: Luny.Table.VarHandle.html#Luny_Table_VarHandle_Reset
+    href: Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Reset
   - name: (
   - name: )
 - uid: Luny.Table.VarHandle`1.Reset*
@@ -378,15 +378,15 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Luny.Table.VarHandle`1.Value*
-  commentId: Overload:Luny.Table.VarHandle`1.Value
+- uid: Luny.Table.VarHandle`1.Variable*
+  commentId: Overload:Luny.Table.VarHandle`1.Variable
   isExternal: true
-  href: Luny.Table.VarHandle-1.html#Luny_Table_VarHandle_1_Value
-  name: Value
-  nameWithType: Table.VarHandle<T>.Value
-  fullName: Luny.Table.VarHandle<T>.Value
-  nameWithType.vb: Table.VarHandle(Of T).Value
-  fullName.vb: Luny.Table.VarHandle(Of T).Value
+  href: Luny.Table.VarHandle-1.html#Luny_Table_VarHandle_1_Variable
+  name: Variable
+  nameWithType: Table.VarHandle<T>.Variable
+  fullName: Luny.Table.VarHandle<T>.Variable
+  nameWithType.vb: Table.VarHandle(Of T).Variable
+  fullName.vb: Luny.Table.VarHandle(Of T).Variable
 - uid: '{T}'
   commentId: '!:T'
   definition: T

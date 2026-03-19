@@ -228,13 +228,13 @@ items:
   summary: Instantly set the Local scale.
   example: []
   syntax:
-    content: public TransformScaleSetLocalBlock SetLocalScale(double scale)
+    content: public TransformScaleSetLocalBlock SetLocalScale(double uniformScale)
     parameters:
-    - id: scale
+    - id: uniformScale
       type: System.Double
     return:
       type: LunyScript.Blocks.TransformScaleSetLocalBlock
-    content.vb: Public Function SetLocalScale(scale As Double) As TransformScaleSetLocalBlock
+    content.vb: Public Function SetLocalScale(uniformScale As Double) As TransformScaleSetLocalBlock
   overload: LunyScript.Api.TransformBuilder.SetLocalScale*
   nameWithType.vb: TransformBuilder.SetLocalScale(Double)
   fullName.vb: LunyScript.Api.TransformBuilder.SetLocalScale(Double)
@@ -254,13 +254,13 @@ items:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public TransformScaleSetLocalBlock SetLocalScale(VariableBlock scale)
+    content: public TransformScaleSetLocalUniformBlock SetLocalScale(VariableBlock uniformScale)
     parameters:
-    - id: scale
+    - id: uniformScale
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.TransformScaleSetLocalBlock
-    content.vb: Public Function SetLocalScale(scale As VariableBlock) As TransformScaleSetLocalBlock
+      type: LunyScript.Blocks.TransformScaleSetLocalUniformBlock
+    content.vb: Public Function SetLocalScale(uniformScale As VariableBlock) As TransformScaleSetLocalUniformBlock
   overload: LunyScript.Api.TransformBuilder.SetLocalScale*
 - uid: LunyScript.Api.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
   commentId: M:LunyScript.Api.TransformBuilder.SetLocalScale(LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3})
@@ -1174,6 +1174,14 @@ references:
   name: VariableBlock
   nameWithType: VariableBlock
   fullName: LunyScript.Blocks.VariableBlock
+- uid: LunyScript.Blocks.TransformScaleSetLocalUniformBlock
+  commentId: T:LunyScript.Blocks.TransformScaleSetLocalUniformBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.html
+  name: TransformScaleSetLocalUniformBlock
+  nameWithType: TransformScaleSetLocalUniformBlock
+  fullName: LunyScript.Blocks.TransformScaleSetLocalUniformBlock
 - uid: LunyScript.Api.TransformBuilder.LookAt*
   commentId: Overload:LunyScript.Api.TransformBuilder.LookAt
   isExternal: true

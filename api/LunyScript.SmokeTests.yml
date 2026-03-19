@@ -29,6 +29,7 @@ items:
   - LunyScript.SmokeTests.Player3
   - LunyScript.SmokeTests.Player4
   - LunyScript.SmokeTests.TriggerEvents
+  - LunyScript.SmokeTests.VariablesTest
   langs:
   - csharp
   - vb
@@ -201,6 +202,13 @@ references:
   name: TriggerEvents
   nameWithType: TriggerEvents
   fullName: LunyScript.SmokeTests.TriggerEvents
+- uid: LunyScript.SmokeTests.VariablesTest
+  commentId: T:LunyScript.SmokeTests.VariablesTest
+  isExternal: true
+  href: LunyScript.SmokeTests.VariablesTest.html
+  name: VariablesTest
+  nameWithType: VariablesTest
+  fullName: LunyScript.SmokeTests.VariablesTest
 - uid: LunyScript.SmokeTests.InputTransformMove_MonoBehaviour
   commentId: T:LunyScript.SmokeTests.InputTransformMove_MonoBehaviour
   isExternal: true

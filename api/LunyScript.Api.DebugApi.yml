@@ -8,6 +8,7 @@ items:
   - LunyScript.Api.DebugApi.Break(System.String)
   - LunyScript.Api.DebugApi.Log(LunyScript.Blocks.VariableBlock)
   - LunyScript.Api.DebugApi.Log(System.String)
+  - LunyScript.Api.DebugApi.Log(System.String[])
   - LunyScript.Api.DebugApi.LogError(System.String)
   - LunyScript.Api.DebugApi.LogInfo(LunyScript.Blocks.VariableBlock)
   - LunyScript.Api.DebugApi.LogInfo(System.String)
@@ -91,6 +92,32 @@ items:
   nameWithType.vb: DebugApi.Log(String)
   fullName.vb: LunyScript.Api.DebugApi.Log(String)
   name.vb: Log(String)
+- uid: LunyScript.Api.DebugApi.Log(System.String[])
+  commentId: M:LunyScript.Api.DebugApi.Log(System.String[])
+  id: Log(System.String[])
+  parent: LunyScript.Api.DebugApi
+  langs:
+  - csharp
+  - vb
+  name: Log(params string[])
+  nameWithType: DebugApi.Log(params string[])
+  fullName: LunyScript.Api.DebugApi.Log(params string[])
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Api
+  syntax:
+    content: public ActionBlock Log(params string[] messages)
+    parameters:
+    - id: messages
+      type: System.String[]
+    return:
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Log(ParamArray messages As String()) As ActionBlock
+  overload: LunyScript.Api.DebugApi.Log*
+  nameWithType.vb: DebugApi.Log(ParamArray String())
+  fullName.vb: LunyScript.Api.DebugApi.Log(ParamArray String())
+  name.vb: Log(ParamArray String())
 - uid: LunyScript.Api.DebugApi.LogInfo(LunyScript.Blocks.VariableBlock)
   commentId: M:LunyScript.Api.DebugApi.LogInfo(LunyScript.Blocks.VariableBlock)
   id: LogInfo(LunyScript.Blocks.VariableBlock)
@@ -423,6 +450,29 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
 - uid: LunyScript.Api.DebugApi.LogInfo*
   commentId: Overload:LunyScript.Api.DebugApi.LogInfo
   isExternal: true

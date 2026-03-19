@@ -38,6 +38,7 @@ items:
   - LunyScript.Blocks.TransformRotationSetLocalBlock
   - LunyScript.Blocks.TransformRotationSetWorldBlock
   - LunyScript.Blocks.TransformScaleSetLocalBlock
+  - LunyScript.Blocks.TransformScaleSetLocalUniformBlock
   implements:
   - LunyScript.Blocks.IScriptBlock
 - uid: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock[])

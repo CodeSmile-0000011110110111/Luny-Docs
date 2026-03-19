@@ -82,11 +82,11 @@ items:
   - uid: Luny.Table
     name: Table
     type: Class
-  - uid: Luny.Table.ScalarVarHandle
-    name: Table.ScalarVarHandle
-    type: Class
   - uid: Luny.Table.VarHandle
     name: Table.VarHandle
+    type: Class
+  - uid: Luny.Table.VarHandleBase
+    name: Table.VarHandleBase
     type: Class
   - uid: Luny.Table.VarHandle`1
     name: Table.VarHandle<T>
@@ -732,6 +732,9 @@ items:
   - uid: LunyScript.Blocks.TransformScaleSetLocalBlock
     name: TransformScaleSetLocalBlock
     type: Class
+  - uid: LunyScript.Blocks.TransformScaleSetLocalUniformBlock
+    name: TransformScaleSetLocalUniformBlock
+    type: Class
   - uid: LunyScript.Blocks.TransformScaleTowardsBlock
     name: TransformScaleTowardsBlock
     type: Class
@@ -844,6 +847,9 @@ items:
     type: Class
   - uid: LunyScript.SmokeTests.TriggerEvents
     name: TriggerEvents
+    type: Class
+  - uid: LunyScript.SmokeTests.VariablesTest
+    name: VariablesTest
     type: Class
 - uid: LunyScript.Unity.Blocks
   name: LunyScript.Unity.Blocks

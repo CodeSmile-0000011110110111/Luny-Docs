@@ -21,6 +21,7 @@ items:
   - LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
   - LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
   - LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.ToString
   - LunyScript.Blocks.VariableBlock.Toggle
   - LunyScript.Blocks.VariableBlock.op_Addition(Luny.Variable,LunyScript.Blocks.VariableBlock)
   - LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,Luny.Variable)
@@ -1381,6 +1382,28 @@ items:
       type: LunyScript.Blocks.ActionBlock
     content.vb: Public Function Toggle() As ActionBlock
   overload: LunyScript.Blocks.VariableBlock.Toggle*
+- uid: LunyScript.Blocks.VariableBlock.ToString
+  commentId: M:LunyScript.Blocks.VariableBlock.ToString
+  id: ToString
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: VariableBlock.ToString()
+  fullName: LunyScript.Blocks.VariableBlock.ToString()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: LunyScript.Blocks.VariableBlock.ToString*
 - uid: LunyScript.Blocks.VariableBlock.#ctor
   commentId: M:LunyScript.Blocks.VariableBlock.#ctor
   id: '#ctor'
@@ -1972,6 +1995,34 @@ references:
   name: Toggle
   nameWithType: VariableBlock.Toggle
   fullName: LunyScript.Blocks.VariableBlock.Toggle
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: LunyScript.Blocks.VariableBlock.ToString*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.ToString
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_ToString
+  name: ToString
+  nameWithType: VariableBlock.ToString
+  fullName: LunyScript.Blocks.VariableBlock.ToString
 - uid: LunyScript.Blocks.VariableBlock.#ctor*
   commentId: Overload:LunyScript.Blocks.VariableBlock.#ctor
   isExternal: true

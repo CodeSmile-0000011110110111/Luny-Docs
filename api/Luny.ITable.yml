@@ -78,13 +78,13 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: Table.ScalarVarHandle GetHandle(string key)
+    content: Table.VarHandle GetHandle(string key)
     parameters:
     - id: key
       type: System.String
     return:
-      type: Luny.Table.ScalarVarHandle
-    content.vb: Function GetHandle(key As String) As Table.ScalarVarHandle
+      type: Luny.Table.VarHandle
+    content.vb: Function GetHandle(key As String) As Table.VarHandle
   overload: Luny.ITable.GetHandle*
   nameWithType.vb: ITable.GetHandle(String)
   fullName.vb: Luny.ITable.GetHandle(String)
@@ -104,15 +104,15 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: Table.ScalarVarHandle DefineVariable(string key, Variable value)
+    content: Table.VarHandle DefineVariable(string key, Variable variable)
     parameters:
     - id: key
       type: System.String
-    - id: value
+    - id: variable
       type: Luny.Variable
     return:
-      type: Luny.Table.ScalarVarHandle
-    content.vb: Function DefineVariable(key As String, value As Variable) As Table.ScalarVarHandle
+      type: Luny.Table.VarHandle
+    content.vb: Function DefineVariable(key As String, variable As Variable) As Table.VarHandle
   overload: Luny.ITable.DefineVariable*
   nameWithType.vb: ITable.DefineVariable(String, Variable)
   fullName.vb: Luny.ITable.DefineVariable(String, Luny.Variable)
@@ -132,15 +132,15 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: Table.ScalarVarHandle DefineConstant(string key, Variable value)
+    content: Table.VarHandle DefineConstant(string key, Variable variable)
     parameters:
     - id: key
       type: System.String
-    - id: value
+    - id: variable
       type: Luny.Variable
     return:
-      type: Luny.Table.ScalarVarHandle
-    content.vb: Function DefineConstant(key As String, value As Variable) As Table.ScalarVarHandle
+      type: Luny.Table.VarHandle
+    content.vb: Function DefineConstant(key As String, variable As Variable) As Table.VarHandle
   overload: Luny.ITable.DefineConstant*
   nameWithType.vb: ITable.DefineConstant(String, Variable)
   fullName.vb: Luny.ITable.DefineConstant(String, Luny.Variable)
@@ -575,34 +575,34 @@ references:
   name: GetHandle
   nameWithType: ITable.GetHandle
   fullName: Luny.ITable.GetHandle
-- uid: Luny.Table.ScalarVarHandle
-  commentId: T:Luny.Table.ScalarVarHandle
+- uid: Luny.Table.VarHandle
+  commentId: T:Luny.Table.VarHandle
   parent: Luny
   isExternal: true
   href: Luny.Table.html
-  name: Table.ScalarVarHandle
-  nameWithType: Table.ScalarVarHandle
-  fullName: Luny.Table.ScalarVarHandle
+  name: Table.VarHandle
+  nameWithType: Table.VarHandle
+  fullName: Luny.Table.VarHandle
   spec.csharp:
   - uid: Luny.Table
     name: Table
     isExternal: true
     href: Luny.Table.html
   - name: .
-  - uid: Luny.Table.ScalarVarHandle
-    name: ScalarVarHandle
+  - uid: Luny.Table.VarHandle
+    name: VarHandle
     isExternal: true
-    href: Luny.Table.ScalarVarHandle.html
+    href: Luny.Table.VarHandle.html
   spec.vb:
   - uid: Luny.Table
     name: Table
     isExternal: true
     href: Luny.Table.html
   - name: .
-  - uid: Luny.Table.ScalarVarHandle
-    name: ScalarVarHandle
+  - uid: Luny.Table.VarHandle
+    name: VarHandle
     isExternal: true
-    href: Luny.Table.ScalarVarHandle.html
+    href: Luny.Table.VarHandle.html
 - uid: Luny.ITable.DefineVariable*
   commentId: Overload:Luny.ITable.DefineVariable
   isExternal: true

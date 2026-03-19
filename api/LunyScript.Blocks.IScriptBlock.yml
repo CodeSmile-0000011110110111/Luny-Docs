@@ -42,6 +42,7 @@ items:
   - LunyScript.Blocks.TransformRotationSetLocalBlock
   - LunyScript.Blocks.TransformRotationSetWorldBlock
   - LunyScript.Blocks.TransformScaleSetLocalBlock
+  - LunyScript.Blocks.TransformScaleSetLocalUniformBlock
   - LunyScript.Blocks.TransformScaleTowardsBlock
   - LunyScript.Blocks.TransformScaleTowardsLerpBlock
   - LunyScript.Blocks.VariableBlock

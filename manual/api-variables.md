@@ -2,9 +2,8 @@
 
 LunyScript provides its own set of variables to:
 
-- enable duck-typing
-- enable automatic type conversion (no complaints)
-- enable block-based arithmetic and comparison
+- enable duck-typing (automatic type conversion)
+- enable block-based arithmetics and comparisons
 - enable value change notifications
-- to display/inspect/modify variables at runtime
-- to bind variables to individual objects
+- to inspect/modify variables at runtime without a debugger
+- to create object/instance variables

@@ -196,15 +196,15 @@ items:
   summary: Gets a handle to a variable.
   example: []
   syntax:
-    content: public Table.ScalarVarHandle GetHandle(string key)
+    content: public Table.VarHandle GetHandle(string key)
     parameters:
     - id: key
       type: System.String
       description: ''
     return:
-      type: Luny.Table.ScalarVarHandle
+      type: Luny.Table.VarHandle
       description: ''
-    content.vb: Public Function GetHandle(key As String) As Table.ScalarVarHandle
+    content.vb: Public Function GetHandle(key As String) As Table.VarHandle
   overload: Luny.Table.GetHandle*
   implements:
   - Luny.ITable.GetHandle(System.String)
@@ -260,18 +260,18 @@ items:
   summary: Defines a variable with initial value.
   example: []
   syntax:
-    content: public Table.ScalarVarHandle DefineVariable(string key, Variable value)
+    content: public Table.VarHandle DefineVariable(string key, Variable variable)
     parameters:
     - id: key
       type: System.String
       description: ''
-    - id: value
+    - id: variable
       type: Luny.Variable
       description: ''
     return:
-      type: Luny.Table.ScalarVarHandle
+      type: Luny.Table.VarHandle
       description: ''
-    content.vb: Public Function DefineVariable(key As String, value As Variable) As Table.ScalarVarHandle
+    content.vb: Public Function DefineVariable(key As String, variable As Variable) As Table.VarHandle
   overload: Luny.Table.DefineVariable*
   exceptions:
   - type: System.InvalidOperationException
@@ -299,18 +299,18 @@ items:
   summary: Defines a constant variable that cannot be modified after creation.
   example: []
   syntax:
-    content: public Table.ScalarVarHandle DefineConstant(string key, Variable value)
+    content: public Table.VarHandle DefineConstant(string key, Variable variable)
     parameters:
     - id: key
       type: System.String
       description: The constant name.
-    - id: value
+    - id: variable
       type: Luny.Variable
       description: The constant value.
     return:
-      type: Luny.Table.ScalarVarHandle
+      type: Luny.Table.VarHandle
       description: The handle to the constant.
-    content.vb: Public Function DefineConstant(key As String, value As Variable) As Table.ScalarVarHandle
+    content.vb: Public Function DefineConstant(key As String, variable As Variable) As Table.VarHandle
   overload: Luny.Table.DefineConstant*
   implements:
   - Luny.ITable.DefineConstant(System.String,Luny.Variable)
@@ -1059,34 +1059,34 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: Luny.Table.ScalarVarHandle
-  commentId: T:Luny.Table.ScalarVarHandle
+- uid: Luny.Table.VarHandle
+  commentId: T:Luny.Table.VarHandle
   parent: Luny
   isExternal: true
   href: Luny.Table.html
-  name: Table.ScalarVarHandle
-  nameWithType: Table.ScalarVarHandle
-  fullName: Luny.Table.ScalarVarHandle
+  name: Table.VarHandle
+  nameWithType: Table.VarHandle
+  fullName: Luny.Table.VarHandle
   spec.csharp:
   - uid: Luny.Table
     name: Table
     isExternal: true
     href: Luny.Table.html
   - name: .
-  - uid: Luny.Table.ScalarVarHandle
-    name: ScalarVarHandle
+  - uid: Luny.Table.VarHandle
+    name: VarHandle
     isExternal: true
-    href: Luny.Table.ScalarVarHandle.html
+    href: Luny.Table.VarHandle.html
   spec.vb:
   - uid: Luny.Table
     name: Table
     isExternal: true
     href: Luny.Table.html
   - name: .
-  - uid: Luny.Table.ScalarVarHandle
-    name: ScalarVarHandle
+  - uid: Luny.Table.VarHandle
+    name: VarHandle
     isExternal: true
-    href: Luny.Table.ScalarVarHandle.html
+    href: Luny.Table.VarHandle.html
 - uid: Luny.ITable.GetHandle``1(System.String)
   commentId: M:Luny.ITable.GetHandle``1(System.String)
   parent: Luny.ITable

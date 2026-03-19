@@ -90,6 +90,7 @@ items:
   - LunyScript.SmokeTests.Player3
   - LunyScript.SmokeTests.Player4
   - LunyScript.SmokeTests.TriggerEvents
+  - LunyScript.SmokeTests.VariablesTest
 - uid: LunyScript.Script.Coroutine(System.String)
   commentId: M:LunyScript.Script.Coroutine(System.String)
   id: Coroutine(System.String)

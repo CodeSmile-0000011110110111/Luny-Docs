@@ -31,6 +31,7 @@ items:
   - LunyScript.Blocks.TransformRotationSetLocalBlock
   - LunyScript.Blocks.TransformRotationSetWorldBlock
   - LunyScript.Blocks.TransformScaleSetLocalBlock
+  - LunyScript.Blocks.TransformScaleSetLocalUniformBlock
   - LunyScript.Blocks.TransformScaleTowardsBlock
   - LunyScript.Blocks.TransformScaleTowardsLerpBlock
   - LunyScript.Blocks.VarAccessor
@@ -268,6 +269,14 @@ references:
   name: TransformScaleSetLocalBlock
   nameWithType: TransformScaleSetLocalBlock
   fullName: LunyScript.Blocks.TransformScaleSetLocalBlock
+- uid: LunyScript.Blocks.TransformScaleSetLocalUniformBlock
+  commentId: T:LunyScript.Blocks.TransformScaleSetLocalUniformBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.html
+  name: TransformScaleSetLocalUniformBlock
+  nameWithType: TransformScaleSetLocalUniformBlock
+  fullName: LunyScript.Blocks.TransformScaleSetLocalUniformBlock
 - uid: LunyScript.Blocks.TableVariableBlock
   commentId: T:LunyScript.Blocks.TableVariableBlock
   parent: LunyScript.Blocks

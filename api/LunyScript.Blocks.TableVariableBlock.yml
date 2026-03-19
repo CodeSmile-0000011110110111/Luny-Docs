@@ -6,6 +6,7 @@ items:
   parent: LunyScript.Blocks
   children:
   - LunyScript.Blocks.TableVariableBlock.Name
+  - LunyScript.Blocks.TableVariableBlock.SetImmediate(Luny.Variable)
   - LunyScript.Blocks.TableVariableBlock.ToString
   - LunyScript.Blocks.TableVariableBlock.Value
   langs:
@@ -46,6 +47,30 @@ items:
   - LunyScript.Blocks.VariableBlock.Inc
   - LunyScript.Blocks.VariableBlock.Dec
   - LunyScript.Blocks.VariableBlock.Toggle
+- uid: LunyScript.Blocks.TableVariableBlock.SetImmediate(Luny.Variable)
+  commentId: M:LunyScript.Blocks.TableVariableBlock.SetImmediate(Luny.Variable)
+  id: SetImmediate(Luny.Variable)
+  parent: LunyScript.Blocks.TableVariableBlock
+  langs:
+  - csharp
+  - vb
+  name: SetImmediate(Variable)
+  nameWithType: TableVariableBlock.SetImmediate(Variable)
+  fullName: LunyScript.Blocks.TableVariableBlock.SetImmediate(Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  summary: Used to set a variable's value during Build() time.
+  example: []
+  syntax:
+    content: public void SetImmediate(Variable value)
+    parameters:
+    - id: value
+      type: Luny.Variable
+      description: ''
+    content.vb: Public Sub SetImmediate(value As Variable)
+  overload: LunyScript.Blocks.TableVariableBlock.SetImmediate*
 - uid: LunyScript.Blocks.TableVariableBlock.ToString
   commentId: M:LunyScript.Blocks.TableVariableBlock.ToString
   id: ToString
@@ -66,7 +91,7 @@ items:
     return:
       type: System.String
     content.vb: Public Overrides Function ToString() As String
-  overridden: System.Object.ToString
+  overridden: LunyScript.Blocks.VariableBlock.ToString
   overload: LunyScript.Blocks.TableVariableBlock.ToString*
 - uid: LunyScript.Blocks.TableVariableBlock.Name
   commentId: P:LunyScript.Blocks.TableVariableBlock.Name
@@ -596,25 +621,48 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
+- uid: LunyScript.Blocks.TableVariableBlock.SetImmediate*
+  commentId: Overload:LunyScript.Blocks.TableVariableBlock.SetImmediate
   isExternal: true
+  href: LunyScript.Blocks.TableVariableBlock.html#LunyScript_Blocks_TableVariableBlock_SetImmediate_Luny_Variable_
+  name: SetImmediate
+  nameWithType: TableVariableBlock.SetImmediate
+  fullName: LunyScript.Blocks.TableVariableBlock.SetImmediate
+- uid: Luny.Variable
+  commentId: T:Luny.Variable
+  parent: Luny
+  isExternal: true
+  href: Luny.Variable.html
+  name: Variable
+  nameWithType: Variable
+  fullName: Luny.Variable
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: LunyScript.Blocks.VariableBlock.ToString
+  commentId: M:LunyScript.Blocks.VariableBlock.ToString
+  parent: LunyScript.Blocks.VariableBlock
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_ToString
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: VariableBlock.ToString()
+  fullName: LunyScript.Blocks.VariableBlock.ToString()
   spec.csharp:
-  - uid: System.Object.ToString
+  - uid: LunyScript.Blocks.VariableBlock.ToString
     name: ToString
     isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_ToString
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.ToString
+  - uid: LunyScript.Blocks.VariableBlock.ToString
     name: ToString
     isExternal: true
+    href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_ToString
   - name: (
   - name: )
 - uid: LunyScript.Blocks.TableVariableBlock.ToString*
@@ -649,18 +697,3 @@ references:
   name: Value
   nameWithType: TableVariableBlock.Value
   fullName: LunyScript.Blocks.TableVariableBlock.Value
-- uid: Luny.Variable
-  commentId: T:Luny.Variable
-  parent: Luny
-  isExternal: true
-  href: Luny.Variable.html
-  name: Variable
-  nameWithType: Variable
-  fullName: Luny.Variable
-- uid: Luny
-  commentId: N:Luny
-  isExternal: true
-  href: Luny.html
-  name: Luny
-  nameWithType: Luny
-  fullName: Luny
