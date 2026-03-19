@@ -5,9 +5,9 @@ items:
   id: CollisionEventHandlerExtensions
   parent: LunyScript.Api
   children:
-  - LunyScript.Api.CollisionEventHandlerExtensions.Continuing``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
   - LunyScript.Api.CollisionEventHandlerExtensions.Ended``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
   - LunyScript.Api.CollisionEventHandlerExtensions.Started``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.CollisionEventHandlerExtensions.Touching``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
   langs:
   - csharp
   - vb
@@ -56,17 +56,17 @@ items:
   nameWithType.vb: CollisionEventHandlerExtensions.Started(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
   fullName.vb: LunyScript.Api.CollisionEventHandlerExtensions.Started(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
   name.vb: Started(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
-- uid: LunyScript.Api.CollisionEventHandlerExtensions.Continuing``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
-  commentId: M:LunyScript.Api.CollisionEventHandlerExtensions.Continuing``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
-  id: Continuing``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+- uid: LunyScript.Api.CollisionEventHandlerExtensions.Touching``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.CollisionEventHandlerExtensions.Touching``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  id: Touching``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
   isExtensionMethod: true
   parent: LunyScript.Api.CollisionEventHandlerExtensions
   langs:
   - csharp
   - vb
-  name: Continuing<T>(CollisionEventBuilder<T>, params ActionBlock[])
-  nameWithType: CollisionEventHandlerExtensions.Continuing<T>(CollisionEventBuilder<T>, params ActionBlock[])
-  fullName: LunyScript.Api.CollisionEventHandlerExtensions.Continuing<T>(LunyScript.Api.CollisionEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  name: Touching<T>(CollisionEventBuilder<T>, params ActionBlock[])
+  nameWithType: CollisionEventHandlerExtensions.Touching<T>(CollisionEventBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.CollisionEventHandlerExtensions.Touching<T>(LunyScript.Api.CollisionEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -74,7 +74,7 @@ items:
   summary: Blocks to run each physics step while the collision persists.
   example: []
   syntax:
-    content: 'public static CollisionEventBuilder<CollisionEventSet> Continuing<T>(this CollisionEventBuilder<T> b, params ActionBlock[] blocks) where T : struct, ICollisionBuilderState'
+    content: 'public static CollisionEventBuilder<CollisionEventSet> Touching<T>(this CollisionEventBuilder<T> b, params ActionBlock[] blocks) where T : struct, ICollisionBuilderState'
     parameters:
     - id: b
       type: LunyScript.Api.CollisionEventBuilder{{T}}
@@ -84,11 +84,11 @@ items:
     - id: T
     return:
       type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionEventSet}
-    content.vb: Public Shared Function Continuing(Of T As {Structure, ICollisionBuilderState})(b As CollisionEventBuilder(Of T), ParamArray blocks As ActionBlock()) As CollisionEventBuilder(Of CollisionEventSet)
-  overload: LunyScript.Api.CollisionEventHandlerExtensions.Continuing*
-  nameWithType.vb: CollisionEventHandlerExtensions.Continuing(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
-  fullName.vb: LunyScript.Api.CollisionEventHandlerExtensions.Continuing(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
-  name.vb: Continuing(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
+    content.vb: Public Shared Function Touching(Of T As {Structure, ICollisionBuilderState})(b As CollisionEventBuilder(Of T), ParamArray blocks As ActionBlock()) As CollisionEventBuilder(Of CollisionEventSet)
+  overload: LunyScript.Api.CollisionEventHandlerExtensions.Touching*
+  nameWithType.vb: CollisionEventHandlerExtensions.Touching(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.CollisionEventHandlerExtensions.Touching(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Touching(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.CollisionEventHandlerExtensions.Ended``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
   commentId: M:LunyScript.Api.CollisionEventHandlerExtensions.Ended``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
   id: Ended``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
@@ -289,13 +289,13 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: LunyScript.Api.CollisionEventHandlerExtensions.Continuing*
-  commentId: Overload:LunyScript.Api.CollisionEventHandlerExtensions.Continuing
+- uid: LunyScript.Api.CollisionEventHandlerExtensions.Touching*
+  commentId: Overload:LunyScript.Api.CollisionEventHandlerExtensions.Touching
   isExternal: true
-  href: LunyScript.Api.CollisionEventHandlerExtensions.html#LunyScript_Api_CollisionEventHandlerExtensions_Continuing__1_LunyScript_Api_CollisionEventBuilder___0__LunyScript_Blocks_ActionBlock___
-  name: Continuing
-  nameWithType: CollisionEventHandlerExtensions.Continuing
-  fullName: LunyScript.Api.CollisionEventHandlerExtensions.Continuing
+  href: LunyScript.Api.CollisionEventHandlerExtensions.html#LunyScript_Api_CollisionEventHandlerExtensions_Touching__1_LunyScript_Api_CollisionEventBuilder___0__LunyScript_Blocks_ActionBlock___
+  name: Touching
+  nameWithType: CollisionEventHandlerExtensions.Touching
+  fullName: LunyScript.Api.CollisionEventHandlerExtensions.Touching
 - uid: LunyScript.Api.CollisionEventHandlerExtensions.Ended*
   commentId: Overload:LunyScript.Api.CollisionEventHandlerExtensions.Ended
   isExternal: true

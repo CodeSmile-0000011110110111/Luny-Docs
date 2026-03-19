@@ -1,3 +1,6 @@
 ﻿# API Overview
 
-LunyScript APIs sorted by feature, with the most relevant at the top.
+LunyScript APIs categorized by feature, sorted by relevance.
+
+- [Events](api-events.md)
+- [Variables](api-variables.md)

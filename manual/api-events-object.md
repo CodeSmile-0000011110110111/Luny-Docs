@@ -29,6 +29,6 @@ This is because `On.Heartbeating`, `On.FrameUpdating` and `On.Readied` seemed ra
 
 
 > [!NOTE]
-> Why "heartbeat"? I find that's where every engine has issues: `FixedUpdate` .. uh, what is 'fixed' here? Is `Update()` _broken_?? And `_physics_process` is too narrow and misleading: it's not (just) about physics.
+> Why "heartbeat"? I find that's where every engine has issues: `FixedUpdate` .. uh, what is 'fixed' here? Is `Update()` _broken_?? And `_physics_process` is too narrow: it's not (just) about physics.
 >
 > The concept of a heartbeat is simple and relatable: It happens at a steady rate, most of the time. But it can also "skip a beat" (may not run every frame), or have an "extra beat" or even "race" (run multiple times per frame to _catch up_).

@@ -6,8 +6,7 @@
 </h1>
 
 <div class="facts text-secondary">
-  <dl><dt>{{__global.namespace}}</dt><dd>{{{namespace.specName.0.value}}}</dd></dl>
-  {{#assemblies.0}}<dl><dt>{{__global.assembly}}</dt><dd>{{assemblies.0}}.dll</dd></dl>{{/assemblies.0}}
+  <dl><dt>{{__global.namespace}}</dt><dd>{{{namespace.specName.0.value}}}</dd> / {{#assemblies.0}}<dt>{{__global.assembly}}</dt><dd>{{assemblies.0}}.dll</dd></dl>{{/assemblies.0}}
 </div>
 
 <div class="markdown summary">{{{summary}}}</div>
@@ -50,6 +49,9 @@
 {{#syntax.typeParameters.0}}
 </dl>
 {{/syntax.typeParameters.0}}
+
+<details>
+<summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
 {{#inClass}}
 {{#inheritance.0}}
@@ -99,20 +101,24 @@
 <dl class="typelist inheritedMembers">
   <dt>{{__global.inheritedMembers}}</dt>
   <dd>
+  <ul>
 {{/inheritedMembers.0}}
 {{#inheritedMembers}}
-  <div>
+  <li>
   {{#definition}}
     <xref uid="{{definition}}" text="{{nameWithType.0.value}}" alt="{{fullName.0.value}}"/>
   {{/definition}}
   {{^definition}}
     <xref uid="{{uid}}" text="{{nameWithType.0.value}}" alt="{{fullName.0.value}}"/>
   {{/definition}}
-  </div>
+  </li>
 {{/inheritedMembers}}
 {{#inheritedMembers.0}}
+  </ul>
 </dl>
 {{/inheritedMembers.0}}
+
+</details>
 
 {{#extensionMethods.0}}
 <dl class="typelist extensionMethods">

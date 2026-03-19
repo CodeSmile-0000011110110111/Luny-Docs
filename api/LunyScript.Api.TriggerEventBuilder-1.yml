@@ -36,7 +36,7 @@ items:
   extensionMethods:
   - LunyScript.Api.TriggerEventBuilder`1.LunyScript.Api.TriggerEventHandlerExtensions.Entered``1(LunyScript.Blocks.ActionBlock[])
   - LunyScript.Api.TriggerEventBuilder`1.LunyScript.Api.TriggerEventHandlerExtensions.Exited``1(LunyScript.Blocks.ActionBlock[])
-  - LunyScript.Api.TriggerEventBuilder`1.LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Blocks.ActionBlock[])
+  - LunyScript.Api.TriggerEventBuilder`1.LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Blocks.ActionBlock[])
   nameWithType.vb: TriggerEventBuilder(Of T)
   fullName.vb: LunyScript.Api.TriggerEventBuilder(Of T)
   name.vb: TriggerEventBuilder(Of T)
@@ -281,22 +281,22 @@ references:
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Api.TriggerEventBuilder`1.LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Blocks.ActionBlock[])
-  commentId: M:LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+- uid: LunyScript.Api.TriggerEventBuilder`1.LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
   parent: LunyScript.Api.TriggerEventHandlerExtensions
-  definition: LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
-  href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Staying__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
-  name: Staying<T>(TriggerEventBuilder<T>, params ActionBlock[])
-  nameWithType: TriggerEventHandlerExtensions.Staying<T>(TriggerEventBuilder<T>, params ActionBlock[])
-  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Staying<T>(LunyScript.Api.TriggerEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
-  nameWithType.vb: TriggerEventHandlerExtensions.Staying(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
-  fullName.vb: LunyScript.Api.TriggerEventHandlerExtensions.Staying(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
-  name.vb: Staying(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+  definition: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Overlapping__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
+  name: Overlapping<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  nameWithType: TriggerEventHandlerExtensions.Overlapping<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping<T>(LunyScript.Api.TriggerEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: TriggerEventHandlerExtensions.Overlapping(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Overlapping(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{`0},LunyScript.Blocks.ActionBlock[])
-    name: Staying
+  - uid: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{`0},LunyScript.Blocks.ActionBlock[])
+    name: Overlapping
     isExternal: true
-    href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Staying__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
+    href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Overlapping__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
   - name: <
   - name: T
   - name: '>'
@@ -320,10 +320,10 @@ references:
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{`0},LunyScript.Blocks.ActionBlock[])
-    name: Staying
+  - uid: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{`0},LunyScript.Blocks.ActionBlock[])
+    name: Overlapping
     isExternal: true
-    href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Staying__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
+    href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Overlapping__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
   - name: (
   - name: Of
   - name: " "
@@ -502,21 +502,21 @@ references:
   - name: (
   - name: )
   - name: )
-- uid: LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
-  commentId: M:LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+- uid: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  commentId: M:LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
   isExternal: true
-  href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Staying__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
-  name: Staying<T>(TriggerEventBuilder<T>, params ActionBlock[])
-  nameWithType: TriggerEventHandlerExtensions.Staying<T>(TriggerEventBuilder<T>, params ActionBlock[])
-  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Staying<T>(LunyScript.Api.TriggerEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
-  nameWithType.vb: TriggerEventHandlerExtensions.Staying(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
-  fullName.vb: LunyScript.Api.TriggerEventHandlerExtensions.Staying(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
-  name.vb: Staying(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+  href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Overlapping__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
+  name: Overlapping<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  nameWithType: TriggerEventHandlerExtensions.Overlapping<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping<T>(LunyScript.Api.TriggerEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  nameWithType.vb: TriggerEventHandlerExtensions.Overlapping(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+  fullName.vb: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  name.vb: Overlapping(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
   spec.csharp:
-  - uid: LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
-    name: Staying
+  - uid: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+    name: Overlapping
     isExternal: true
-    href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Staying__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
+    href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Overlapping__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
   - name: <
   - name: T
   - name: '>'
@@ -540,10 +540,10 @@ references:
   - name: ']'
   - name: )
   spec.vb:
-  - uid: LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
-    name: Staying
+  - uid: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+    name: Overlapping
     isExternal: true
-    href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Staying__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
+    href: LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Overlapping__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
   - name: (
   - name: Of
   - name: " "

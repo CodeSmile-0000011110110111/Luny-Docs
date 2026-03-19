@@ -24,19 +24,29 @@
 
 {{#syntax}}
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">{{syntax.content.0.value}}</code></pre>
+  <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">{{syntax.content.0.value}}</code></pre>
 </div>
 
 {{#syntax.parameters.0}}
 <h4 class="section">{{__global.parameters}}</h4>
+<table>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
 <dl class="parameters">
 {{/syntax.parameters.0}}
 {{#syntax.parameters}}
-  <dt><code>{{{id}}}</code> {{{type.specName.0.value}}}</dt>
-  <dd>{{{description}}}</dd>
+<tr>
+  <td style="width: fit-content;white-space: nowrap"><dt>{{{type.specName.0.value}}}</dt></td>
+  <td style="width: fit-content;white-space: nowrap"><dt><code>{{{id}}}</code></dt></td>
+  <td style="width: 99%"><dd>{{{description}}}</dd></td>
+</tr>
 {{/syntax.parameters}}
 {{#syntax.parameters.0}}
 </dl>
+</table>
 {{/syntax.parameters.0}}
 
 {{#syntax.return}}

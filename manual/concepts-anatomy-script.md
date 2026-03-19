@@ -6,15 +6,17 @@ LunyScript is designed to minimize C# syntax exposure while enabling you to leve
 
 When you write regular C# code, it gets compiled into 'CPU instructions' (oversimplified). C# has the full breadth and depth of any high-level programming language: full freedom but enormous complexity.
 
-LunyScript puts guardrails on that infinite freedom to accomplish:
+LunyScript puts guardrails on that infinite freedom to make game programming more accessible than visual scripting:
 
-- Encouraging experimentation, enabling code sharing - learn AND create, the fun way.
-- Self-contained, user extensible code blocks - write once, re-use for years to come.
-- Runtime failures won't crash, get logged, use placeholders where possible. That pink cube? A 'missspeled' asset name.  
-- Runs more efficiently than typical beginner-level code: Asset/Object queries are efficient and get cached/pooled.
-- Observable execution without a technical code debugger: Visualize script execution, not scripting visually.
-- Problematic operations are detected/prevented, depriving users the fun in dealing with widespread runtime quirks.
-- Best practices applied internally: Not the cargo cult popularized by tutors decades ago.
+- 🔬Encourages experimentation
+- 📤Simplifies sharing code libraries
+- 🧱Teaches modular design 'by accident'
+- 🌱Scales with the user, remains relevant
+- 🤦Makes 'mitsakes' visible via placeholders
+- 🛝Introduces C# syntax and concepts gradually
+- 🏃Improves runtime performance by caching queries
+- 🔎️Makes execution observable without technical tools
+- 🤓Deprives users the fun in dealing with runtime quirks
 
 ## How to create a Luny Script
 
@@ -131,5 +133,5 @@ For the object events, like OnEnable/OnDestroy, all engine objects are wrapped i
 
 The benefit: LunyScript (and LunyEngine) work exactly the same in any engine. Even event execution order will be deterministic across engines.
 
-In summary:
+In summary:<br/>
 ![LunyEngine_Engine_On_Engines.jpg](../images/LunyEngine_Engine_On_Engines.jpg)

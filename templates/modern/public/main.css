@@ -27,6 +27,7 @@
 /* Light mode - "In This Article" sub-headlines */
 [data-bs-theme="light"] .affix ul li a.link-body-emphasis {
     color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
 }
 /* Light mode - "In This Article" member links */
 [data-bs-theme="light"] .affix ul li a:not(.link-body-emphasis) {
@@ -45,10 +46,24 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 17px;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     word-wrap: break-word
+}
+
+table {
+    border-collapse: collapse;
+}
+th {
+    font-size: 15px;
+    color: var(--bs-heading-color) !important;
+}
+
+dt {
+    line-height: 1.0;
+    font-weight: normal;
+    font-size: 16px;
 }
 
 #wrapper {
@@ -66,14 +81,14 @@ h1 {
 
 h2 {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.8;
+    font-size: 26px;
+    line-height: 2.0;
 }
 
 h3 {
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.8;
+    padding-bottom: 2px !important;
 }
 h4 {
     font-size: 18px;
