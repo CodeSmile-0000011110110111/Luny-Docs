@@ -14,7 +14,7 @@
       href: concepts-anatomy-script.md
     - name: Advanced Block Usage
       href: concepts-blocks-advanced.md
-- name: LunyScript API Overview
+- name: LunyScript Concepts
   href: api-overview.md
   items:
   - name: Events

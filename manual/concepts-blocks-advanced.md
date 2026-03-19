@@ -66,7 +66,7 @@ This will instantiate `Enemy_1` to `Enemy_10` using the `Enemy.prefab` asset.
 
 ## Using Runtime Loops
 
-What if the number of enemies needs to change over time? A wave spawning system.
+What if the number of enemies needs to change over time? A wave spawning system perhaps.
 
 This is why LunyScript provides logic flow constructs as blocks themselves, so that we can run the loop at runtime instead of during `Build()`:
 
