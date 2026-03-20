@@ -41,9 +41,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoInitializing(object)
-  nameWithType: LunyTraceLogger.LogInfoInitializing(object)
-  fullName: Luny.LunyTraceLogger.LogInfoInitializing(object)
+  name: LogInfoInitializing(Object)
+  nameWithType: LunyTraceLogger.LogInfoInitializing(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoInitializing(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -54,7 +54,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoInitializing(object source)
+      public static void LogInfoInitializing(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -63,7 +63,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoInitializing(source As Object)
+      Public Shared Sub LogInfoInitializing(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoInitializing*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -76,9 +76,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoInitializing(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoInitializing(Object)
-  name.vb: LogInfoInitializing(Object)
 - uid: Luny.LunyTraceLogger.LogInfoInitialized(System.Object)
   commentId: M:Luny.LunyTraceLogger.LogInfoInitialized(System.Object)
   id: LogInfoInitialized(System.Object)
@@ -86,9 +83,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoInitialized(object)
-  nameWithType: LunyTraceLogger.LogInfoInitialized(object)
-  fullName: Luny.LunyTraceLogger.LogInfoInitialized(object)
+  name: LogInfoInitialized(Object)
+  nameWithType: LunyTraceLogger.LogInfoInitialized(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoInitialized(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -99,7 +96,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoInitialized(object source)
+      public static void LogInfoInitialized(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -108,7 +105,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoInitialized(source As Object)
+      Public Shared Sub LogInfoInitialized(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoInitialized*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -121,9 +118,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoInitialized(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoInitialized(Object)
-  name.vb: LogInfoInitialized(Object)
 - uid: Luny.LunyTraceLogger.LogInfoStartingUp(System.Object)
   commentId: M:Luny.LunyTraceLogger.LogInfoStartingUp(System.Object)
   id: LogInfoStartingUp(System.Object)
@@ -131,9 +125,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoStartingUp(object)
-  nameWithType: LunyTraceLogger.LogInfoStartingUp(object)
-  fullName: Luny.LunyTraceLogger.LogInfoStartingUp(object)
+  name: LogInfoStartingUp(Object)
+  nameWithType: LunyTraceLogger.LogInfoStartingUp(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoStartingUp(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -144,7 +138,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoStartingUp(object source)
+      public static void LogInfoStartingUp(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -153,7 +147,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoStartingUp(source As Object)
+      Public Shared Sub LogInfoStartingUp(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoStartingUp*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -166,9 +160,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoStartingUp(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoStartingUp(Object)
-  name.vb: LogInfoStartingUp(Object)
 - uid: Luny.LunyTraceLogger.LogInfoStartupComplete(System.Object)
   commentId: M:Luny.LunyTraceLogger.LogInfoStartupComplete(System.Object)
   id: LogInfoStartupComplete(System.Object)
@@ -176,9 +167,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoStartupComplete(object)
-  nameWithType: LunyTraceLogger.LogInfoStartupComplete(object)
-  fullName: Luny.LunyTraceLogger.LogInfoStartupComplete(object)
+  name: LogInfoStartupComplete(Object)
+  nameWithType: LunyTraceLogger.LogInfoStartupComplete(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoStartupComplete(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -189,7 +180,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoStartupComplete(object source)
+      public static void LogInfoStartupComplete(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -198,7 +189,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoStartupComplete(source As Object)
+      Public Shared Sub LogInfoStartupComplete(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoStartupComplete*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -211,9 +202,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoStartupComplete(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoStartupComplete(Object)
-  name.vb: LogInfoStartupComplete(Object)
 - uid: Luny.LunyTraceLogger.LogInfoShuttingDown(System.Object)
   commentId: M:Luny.LunyTraceLogger.LogInfoShuttingDown(System.Object)
   id: LogInfoShuttingDown(System.Object)
@@ -221,9 +209,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoShuttingDown(object)
-  nameWithType: LunyTraceLogger.LogInfoShuttingDown(object)
-  fullName: Luny.LunyTraceLogger.LogInfoShuttingDown(object)
+  name: LogInfoShuttingDown(Object)
+  nameWithType: LunyTraceLogger.LogInfoShuttingDown(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoShuttingDown(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -234,7 +222,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoShuttingDown(object source)
+      public static void LogInfoShuttingDown(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -243,7 +231,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoShuttingDown(source As Object)
+      Public Shared Sub LogInfoShuttingDown(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoShuttingDown*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -256,9 +244,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoShuttingDown(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoShuttingDown(Object)
-  name.vb: LogInfoShuttingDown(Object)
 - uid: Luny.LunyTraceLogger.LogInfoShutdownComplete(System.Object)
   commentId: M:Luny.LunyTraceLogger.LogInfoShutdownComplete(System.Object)
   id: LogInfoShutdownComplete(System.Object)
@@ -266,9 +251,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoShutdownComplete(object)
-  nameWithType: LunyTraceLogger.LogInfoShutdownComplete(object)
-  fullName: Luny.LunyTraceLogger.LogInfoShutdownComplete(object)
+  name: LogInfoShutdownComplete(Object)
+  nameWithType: LunyTraceLogger.LogInfoShutdownComplete(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoShutdownComplete(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -279,7 +264,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoShutdownComplete(object source)
+      public static void LogInfoShutdownComplete(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -288,7 +273,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoShutdownComplete(source As Object)
+      Public Shared Sub LogInfoShutdownComplete(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoShutdownComplete*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -301,9 +286,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoShutdownComplete(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoShutdownComplete(Object)
-  name.vb: LogInfoShutdownComplete(Object)
 - uid: Luny.LunyTraceLogger.LogInfoDisposing(System.Object)
   commentId: M:Luny.LunyTraceLogger.LogInfoDisposing(System.Object)
   id: LogInfoDisposing(System.Object)
@@ -311,9 +293,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoDisposing(object)
-  nameWithType: LunyTraceLogger.LogInfoDisposing(object)
-  fullName: Luny.LunyTraceLogger.LogInfoDisposing(object)
+  name: LogInfoDisposing(Object)
+  nameWithType: LunyTraceLogger.LogInfoDisposing(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoDisposing(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -324,7 +306,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoDisposing(object source)
+      public static void LogInfoDisposing(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -333,7 +315,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoDisposing(source As Object)
+      Public Shared Sub LogInfoDisposing(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoDisposing*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -346,9 +328,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoDisposing(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoDisposing(Object)
-  name.vb: LogInfoDisposing(Object)
 - uid: Luny.LunyTraceLogger.LogInfoDisposed(System.Object)
   commentId: M:Luny.LunyTraceLogger.LogInfoDisposed(System.Object)
   id: LogInfoDisposed(System.Object)
@@ -356,9 +335,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoDisposed(object)
-  nameWithType: LunyTraceLogger.LogInfoDisposed(object)
-  fullName: Luny.LunyTraceLogger.LogInfoDisposed(object)
+  name: LogInfoDisposed(Object)
+  nameWithType: LunyTraceLogger.LogInfoDisposed(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoDisposed(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -369,7 +348,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoDisposed(object source)
+      public static void LogInfoDisposed(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -378,7 +357,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoDisposed(source As Object)
+      Public Shared Sub LogInfoDisposed(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoDisposed*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -391,9 +370,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoDisposed(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoDisposed(Object)
-  name.vb: LogInfoDisposed(Object)
 - uid: Luny.LunyTraceLogger.LogInfoDestroying(System.Object)
   commentId: M:Luny.LunyTraceLogger.LogInfoDestroying(System.Object)
   id: LogInfoDestroying(System.Object)
@@ -401,9 +377,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoDestroying(object)
-  nameWithType: LunyTraceLogger.LogInfoDestroying(object)
-  fullName: Luny.LunyTraceLogger.LogInfoDestroying(object)
+  name: LogInfoDestroying(Object)
+  nameWithType: LunyTraceLogger.LogInfoDestroying(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoDestroying(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -414,7 +390,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoDestroying(object source)
+      public static void LogInfoDestroying(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -423,7 +399,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoDestroying(source As Object)
+      Public Shared Sub LogInfoDestroying(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoDestroying*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -436,9 +412,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoDestroying(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoDestroying(Object)
-  name.vb: LogInfoDestroying(Object)
 - uid: Luny.LunyTraceLogger.LogInfoDestroyed(System.Object)
   commentId: M:Luny.LunyTraceLogger.LogInfoDestroyed(System.Object)
   id: LogInfoDestroyed(System.Object)
@@ -446,9 +419,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoDestroyed(object)
-  nameWithType: LunyTraceLogger.LogInfoDestroyed(object)
-  fullName: Luny.LunyTraceLogger.LogInfoDestroyed(object)
+  name: LogInfoDestroyed(Object)
+  nameWithType: LunyTraceLogger.LogInfoDestroyed(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoDestroyed(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -459,7 +432,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoDestroyed(object source)
+      public static void LogInfoDestroyed(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -468,7 +441,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoDestroyed(source As Object)
+      Public Shared Sub LogInfoDestroyed(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoDestroyed*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -481,9 +454,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoDestroyed(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoDestroyed(Object)
-  name.vb: LogInfoDestroyed(Object)
 - uid: Luny.LunyTraceLogger.LogInfoFinalized(System.Object)
   commentId: M:Luny.LunyTraceLogger.LogInfoFinalized(System.Object)
   id: LogInfoFinalized(System.Object)
@@ -491,9 +461,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoFinalized(object)
-  nameWithType: LunyTraceLogger.LogInfoFinalized(object)
-  fullName: Luny.LunyTraceLogger.LogInfoFinalized(object)
+  name: LogInfoFinalized(Object)
+  nameWithType: LunyTraceLogger.LogInfoFinalized(Object)
+  fullName: Luny.LunyTraceLogger.LogInfoFinalized(System.Object)
   type: Method
   assemblies:
   - Luny
@@ -504,7 +474,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoFinalized(object source)
+      public static void LogInfoFinalized(Object source)
     parameters:
     - id: source
       type: System.Object
@@ -513,7 +483,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoFinalized(source As Object)
+      Public Shared Sub LogInfoFinalized(source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoFinalized*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -526,9 +496,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoFinalized(Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoFinalized(Object)
-  name.vb: LogInfoFinalized(Object)
 - uid: Luny.LunyTraceLogger.LogInfoCreateSingletonInstance(System.Type)
   commentId: M:Luny.LunyTraceLogger.LogInfoCreateSingletonInstance(System.Type)
   id: LogInfoCreateSingletonInstance(System.Type)
@@ -578,9 +545,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfoEventCallback(string, string, object)
-  nameWithType: LunyTraceLogger.LogInfoEventCallback(string, string, object)
-  fullName: Luny.LunyTraceLogger.LogInfoEventCallback(string, string, object)
+  name: LogInfoEventCallback(String, String, Object)
+  nameWithType: LunyTraceLogger.LogInfoEventCallback(String, String, Object)
+  fullName: Luny.LunyTraceLogger.LogInfoEventCallback(System.String, System.String, System.Object)
   type: Method
   assemblies:
   - Luny
@@ -591,7 +558,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogInfoEventCallback(string eventName, string message, object source)
+      public static void LogInfoEventCallback(String eventName, String message, Object source)
     parameters:
     - id: eventName
       type: System.String
@@ -604,7 +571,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogInfoEventCallback(eventName As String, message As String, source As Object)
+      Public Shared Sub LogInfoEventCallback(eventName As [String], message As [String], source As [Object])
   overload: Luny.LunyTraceLogger.LogInfoEventCallback*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -617,9 +584,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogInfoEventCallback(String, String, Object)
-  fullName.vb: Luny.LunyTraceLogger.LogInfoEventCallback(String, String, Object)
-  name.vb: LogInfoEventCallback(String, String, Object)
 - uid: Luny.LunyTraceLogger.LogTrace(System.String,System.Object)
   commentId: M:Luny.LunyTraceLogger.LogTrace(System.String,System.Object)
   id: LogTrace(System.String,System.Object)
@@ -627,9 +591,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogTrace(string, object)
-  nameWithType: LunyTraceLogger.LogTrace(string, object)
-  fullName: Luny.LunyTraceLogger.LogTrace(string, object)
+  name: LogTrace(String, Object)
+  nameWithType: LunyTraceLogger.LogTrace(String, Object)
+  fullName: Luny.LunyTraceLogger.LogTrace(System.String, System.Object)
   type: Method
   assemblies:
   - Luny
@@ -640,7 +604,7 @@ items:
 
       [Conditional("LUNY_DEBUG")]
 
-      public static void LogTrace(string message, object source)
+      public static void LogTrace(String message, Object source)
     parameters:
     - id: message
       type: System.String
@@ -651,7 +615,7 @@ items:
 
       <Conditional("LUNY_DEBUG")>
 
-      Public Shared Sub LogTrace(message As String, source As Object)
+      Public Shared Sub LogTrace(message As [String], source As [Object])
   overload: Luny.LunyTraceLogger.LogTrace*
   attributes:
   - type: System.Diagnostics.ConditionalAttribute
@@ -664,9 +628,6 @@ items:
     arguments:
     - type: System.String
       value: LUNY_DEBUG
-  nameWithType.vb: LunyTraceLogger.LogTrace(String, Object)
-  fullName.vb: Luny.LunyTraceLogger.LogTrace(String, Object)
-  name.vb: LogTrace(String, Object)
 references:
 - uid: Luny
   commentId: N:Luny
@@ -679,12 +640,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -796,12 +754,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.LunyTraceLogger.LogTrace*
   commentId: Overload:Luny.LunyTraceLogger.LogTrace
   isExternal: true

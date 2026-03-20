@@ -38,9 +38,9 @@ items:
   langs:
   - csharp
   - vb
-  name: In(double)
-  nameWithType: CoroutineBuilder.In(double)
-  fullName: LunyScript.Api.CoroutineBuilder.In(double)
+  name: In(Double)
+  nameWithType: CoroutineBuilder.In(Double)
+  fullName: LunyScript.Api.CoroutineBuilder.In(System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -48,17 +48,14 @@ items:
   summary: A finite timer coroutine which fires after the specified duration. The Do(blocks) execute when elapsed.
   example: []
   syntax:
-    content: public CoroutineTimerBuilder<CoroutineTimerAmountSet> In(double duration)
+    content: public CoroutineTimerBuilder<CoroutineTimerAmountSet> In(Double duration)
     parameters:
     - id: duration
       type: System.Double
     return:
       type: LunyScript.Api.CoroutineTimerBuilder{LunyScript.Api.CoroutineTimerAmountSet}
-    content.vb: Public Function [In](duration As Double) As CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
+    content.vb: Public Function [In](duration As [Double]) As CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
   overload: LunyScript.Api.CoroutineBuilder.In*
-  nameWithType.vb: CoroutineBuilder.In(Double)
-  fullName.vb: LunyScript.Api.CoroutineBuilder.In(Double)
-  name.vb: In(Double)
 - uid: LunyScript.Api.CoroutineBuilder.Every(System.Double)
   commentId: M:LunyScript.Api.CoroutineBuilder.Every(System.Double)
   id: Every(System.Double)
@@ -66,9 +63,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Every(double)
-  nameWithType: CoroutineBuilder.Every(double)
-  fullName: LunyScript.Api.CoroutineBuilder.Every(double)
+  name: Every(Double)
+  nameWithType: CoroutineBuilder.Every(Double)
+  fullName: LunyScript.Api.CoroutineBuilder.Every(System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -76,17 +73,14 @@ items:
   summary: A repeating timer coroutine which fires at the specified interval. The Do(blocks) execute on every interval elapse.
   example: []
   syntax:
-    content: public CoroutineTimerBuilder<CoroutineTimerAmountSet> Every(double interval)
+    content: public CoroutineTimerBuilder<CoroutineTimerAmountSet> Every(Double interval)
     parameters:
     - id: interval
       type: System.Double
     return:
       type: LunyScript.Api.CoroutineTimerBuilder{LunyScript.Api.CoroutineTimerAmountSet}
-    content.vb: Public Function Every(interval As Double) As CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
+    content.vb: Public Function Every(interval As [Double]) As CoroutineTimerBuilder(Of CoroutineTimerAmountSet)
   overload: LunyScript.Api.CoroutineBuilder.Every*
-  nameWithType.vb: CoroutineBuilder.Every(Double)
-  fullName.vb: LunyScript.Api.CoroutineBuilder.Every(Double)
-  name.vb: Every(Double)
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -120,12 +114,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -133,7 +124,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -217,12 +208,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: LunyScript.Api.CoroutineTimerBuilder{LunyScript.Api.CoroutineTimerAmountSet}
   commentId: T:LunyScript.Api.CoroutineTimerBuilder{LunyScript.Api.CoroutineTimerAmountSet}
   parent: LunyScript.Api

@@ -72,25 +72,22 @@ items:
   langs:
   - csharp
   - vb
-  name: GetChild(int)
-  nameWithType: LunyTransform.GetChild(int)
-  fullName: Luny.Engine.Bridge.LunyTransform.GetChild(int)
+  name: GetChild(Int32)
+  nameWithType: LunyTransform.GetChild(Int32)
+  fullName: Luny.Engine.Bridge.LunyTransform.GetChild(System.Int32)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract LunyTransform GetChild(int index)
+    content: public abstract LunyTransform GetChild(Int32 index)
     parameters:
     - id: index
       type: System.Int32
     return:
       type: Luny.Engine.Bridge.LunyTransform
-    content.vb: Public MustOverride Function GetChild(index As Integer) As LunyTransform
+    content.vb: Public MustOverride Function GetChild(index As Int32) As LunyTransform
   overload: Luny.Engine.Bridge.LunyTransform.GetChild*
-  nameWithType.vb: LunyTransform.GetChild(Integer)
-  fullName.vb: Luny.Engine.Bridge.LunyTransform.GetChild(Integer)
-  name.vb: GetChild(Integer)
 - uid: Luny.Engine.Bridge.LunyTransform.SetParent(Luny.Engine.Bridge.LunyTransform,System.Boolean)
   commentId: M:Luny.Engine.Bridge.LunyTransform.SetParent(Luny.Engine.Bridge.LunyTransform,System.Boolean)
   id: SetParent(Luny.Engine.Bridge.LunyTransform,System.Boolean)
@@ -98,25 +95,22 @@ items:
   langs:
   - csharp
   - vb
-  name: SetParent(LunyTransform, bool)
-  nameWithType: LunyTransform.SetParent(LunyTransform, bool)
-  fullName: Luny.Engine.Bridge.LunyTransform.SetParent(Luny.Engine.Bridge.LunyTransform, bool)
+  name: SetParent(LunyTransform, Boolean)
+  nameWithType: LunyTransform.SetParent(LunyTransform, Boolean)
+  fullName: Luny.Engine.Bridge.LunyTransform.SetParent(Luny.Engine.Bridge.LunyTransform, System.Boolean)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract void SetParent(LunyTransform parent, bool worldPositionStays = true)
+    content: public abstract void SetParent(LunyTransform parent, Boolean worldPositionStays = true)
     parameters:
     - id: parent
       type: Luny.Engine.Bridge.LunyTransform
     - id: worldPositionStays
       type: System.Boolean
-    content.vb: Public MustOverride Sub SetParent(parent As LunyTransform, worldPositionStays As Boolean = True)
+    content.vb: Public MustOverride Sub SetParent(parent As LunyTransform, worldPositionStays As [Boolean] = True)
   overload: Luny.Engine.Bridge.LunyTransform.SetParent*
-  nameWithType.vb: LunyTransform.SetParent(LunyTransform, Boolean)
-  fullName.vb: Luny.Engine.Bridge.LunyTransform.SetParent(Luny.Engine.Bridge.LunyTransform, Boolean)
-  name.vb: SetParent(LunyTransform, Boolean)
 - uid: Luny.Engine.Bridge.LunyTransform.IsChildOf(Luny.Engine.Bridge.LunyTransform)
   commentId: M:Luny.Engine.Bridge.LunyTransform.IsChildOf(Luny.Engine.Bridge.LunyTransform)
   id: IsChildOf(Luny.Engine.Bridge.LunyTransform)
@@ -132,13 +126,13 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract bool IsChildOf(LunyTransform parent)
+    content: public abstract Boolean IsChildOf(LunyTransform parent)
     parameters:
     - id: parent
       type: Luny.Engine.Bridge.LunyTransform
     return:
       type: System.Boolean
-    content.vb: Public MustOverride Function IsChildOf(parent As LunyTransform) As Boolean
+    content.vb: Public MustOverride Function IsChildOf(parent As LunyTransform) As [Boolean]
   overload: Luny.Engine.Bridge.LunyTransform.IsChildOf*
 - uid: Luny.Engine.Bridge.LunyTransform.GetSiblingIndex
   commentId: M:Luny.Engine.Bridge.LunyTransform.GetSiblingIndex
@@ -155,10 +149,10 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract int GetSiblingIndex()
+    content: public abstract Int32 GetSiblingIndex()
     return:
       type: System.Int32
-    content.vb: Public MustOverride Function GetSiblingIndex() As Integer
+    content.vb: Public MustOverride Function GetSiblingIndex() As Int32
   overload: Luny.Engine.Bridge.LunyTransform.GetSiblingIndex*
 - uid: Luny.Engine.Bridge.LunyTransform.SetSiblingIndex(System.Int32)
   commentId: M:Luny.Engine.Bridge.LunyTransform.SetSiblingIndex(System.Int32)
@@ -167,23 +161,20 @@ items:
   langs:
   - csharp
   - vb
-  name: SetSiblingIndex(int)
-  nameWithType: LunyTransform.SetSiblingIndex(int)
-  fullName: Luny.Engine.Bridge.LunyTransform.SetSiblingIndex(int)
+  name: SetSiblingIndex(Int32)
+  nameWithType: LunyTransform.SetSiblingIndex(Int32)
+  fullName: Luny.Engine.Bridge.LunyTransform.SetSiblingIndex(System.Int32)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract void SetSiblingIndex(int index)
+    content: public abstract void SetSiblingIndex(Int32 index)
     parameters:
     - id: index
       type: System.Int32
-    content.vb: Public MustOverride Sub SetSiblingIndex(index As Integer)
+    content.vb: Public MustOverride Sub SetSiblingIndex(index As Int32)
   overload: Luny.Engine.Bridge.LunyTransform.SetSiblingIndex*
-  nameWithType.vb: LunyTransform.SetSiblingIndex(Integer)
-  fullName.vb: Luny.Engine.Bridge.LunyTransform.SetSiblingIndex(Integer)
-  name.vb: SetSiblingIndex(Integer)
 - uid: Luny.Engine.Bridge.LunyTransform.SetAsFirstSibling
   commentId: M:Luny.Engine.Bridge.LunyTransform.SetAsFirstSibling
   id: SetAsFirstSibling
@@ -494,15 +485,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Rotate(LunyVector3, float, LunyTransformSpace)
-  nameWithType: LunyTransform.Rotate(LunyVector3, float, LunyTransformSpace)
-  fullName: Luny.Engine.Bridge.LunyTransform.Rotate(Luny.Engine.Bridge.LunyVector3, float, Luny.Engine.Bridge.LunyTransformSpace)
+  name: Rotate(LunyVector3, Single, LunyTransformSpace)
+  nameWithType: LunyTransform.Rotate(LunyVector3, Single, LunyTransformSpace)
+  fullName: Luny.Engine.Bridge.LunyTransform.Rotate(Luny.Engine.Bridge.LunyVector3, System.Single, Luny.Engine.Bridge.LunyTransformSpace)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract void Rotate(LunyVector3 axis, float angle, LunyTransformSpace space = LunyTransformSpace.Self)
+    content: public abstract void Rotate(LunyVector3 axis, Single angle, LunyTransformSpace space = LunyTransformSpace.Self)
     parameters:
     - id: axis
       type: Luny.Engine.Bridge.LunyVector3
@@ -510,11 +501,8 @@ items:
       type: System.Single
     - id: space
       type: Luny.Engine.Bridge.LunyTransformSpace
-    content.vb: Public MustOverride Sub Rotate(axis As LunyVector3, angle As Single, space As LunyTransformSpace = LunyTransformSpace.Self)
+    content.vb: Public MustOverride Sub Rotate(axis As LunyVector3, angle As [Single], space As LunyTransformSpace = LunyTransformSpace.Self)
   overload: Luny.Engine.Bridge.LunyTransform.Rotate*
-  nameWithType.vb: LunyTransform.Rotate(LunyVector3, Single, LunyTransformSpace)
-  fullName.vb: Luny.Engine.Bridge.LunyTransform.Rotate(Luny.Engine.Bridge.LunyVector3, Single, Luny.Engine.Bridge.LunyTransformSpace)
-  name.vb: Rotate(LunyVector3, Single, LunyTransformSpace)
 - uid: Luny.Engine.Bridge.LunyTransform.OrbitAround(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
   commentId: M:Luny.Engine.Bridge.LunyTransform.OrbitAround(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
   id: OrbitAround(Luny.Engine.Bridge.LunyVector3,Luny.Engine.Bridge.LunyVector3,System.Single)
@@ -522,15 +510,15 @@ items:
   langs:
   - csharp
   - vb
-  name: OrbitAround(LunyVector3, LunyVector3, float)
-  nameWithType: LunyTransform.OrbitAround(LunyVector3, LunyVector3, float)
-  fullName: Luny.Engine.Bridge.LunyTransform.OrbitAround(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, float)
+  name: OrbitAround(LunyVector3, LunyVector3, Single)
+  nameWithType: LunyTransform.OrbitAround(LunyVector3, LunyVector3, Single)
+  fullName: Luny.Engine.Bridge.LunyTransform.OrbitAround(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, System.Single)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract void OrbitAround(LunyVector3 worldPoint, LunyVector3 axis, float angle)
+    content: public abstract void OrbitAround(LunyVector3 worldPoint, LunyVector3 axis, Single angle)
     parameters:
     - id: worldPoint
       type: Luny.Engine.Bridge.LunyVector3
@@ -538,11 +526,8 @@ items:
       type: Luny.Engine.Bridge.LunyVector3
     - id: angle
       type: System.Single
-    content.vb: Public MustOverride Sub OrbitAround(worldPoint As LunyVector3, axis As LunyVector3, angle As Single)
+    content.vb: Public MustOverride Sub OrbitAround(worldPoint As LunyVector3, axis As LunyVector3, angle As [Single])
   overload: Luny.Engine.Bridge.LunyTransform.OrbitAround*
-  nameWithType.vb: LunyTransform.OrbitAround(LunyVector3, LunyVector3, Single)
-  fullName.vb: Luny.Engine.Bridge.LunyTransform.OrbitAround(Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3, Single)
-  name.vb: OrbitAround(LunyVector3, LunyVector3, Single)
 - uid: Luny.Engine.Bridge.LunyTransform.Translate(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyTransformSpace)
   commentId: M:Luny.Engine.Bridge.LunyTransform.Translate(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyTransformSpace)
   id: Translate(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyTransformSpace)
@@ -650,11 +635,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract object NativeTransform { get; }
+    content: public abstract Object NativeTransform { get; }
     parameters: []
     return:
       type: System.Object
-    content.vb: Public MustOverride ReadOnly Property NativeTransform As Object
+    content.vb: Public MustOverride ReadOnly Property NativeTransform As [Object]
   overload: Luny.Engine.Bridge.LunyTransform.NativeTransform*
 - uid: Luny.Engine.Bridge.LunyTransform.Position
   commentId: P:Luny.Engine.Bridge.LunyTransform.Position
@@ -986,11 +971,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract int ChildCount { get; }
+    content: public abstract Int32 ChildCount { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public MustOverride ReadOnly Property ChildCount As Integer
+    content.vb: Public MustOverride ReadOnly Property ChildCount As Int32
   overload: Luny.Engine.Bridge.LunyTransform.ChildCount*
 - uid: Luny.Engine.Bridge.LunyTransform.Children
   commentId: P:Luny.Engine.Bridge.LunyTransform.Children
@@ -1055,12 +1040,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -1080,12 +1062,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Luny.Engine.Bridge.LunyTransform
   commentId: T:Luny.Engine.Bridge.LunyTransform
   parent: Luny.Engine.Bridge
@@ -1106,12 +1085,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Bridge.LunyTransform.IsChildOf*
   commentId: Overload:Luny.Engine.Bridge.LunyTransform.IsChildOf
   isExternal: true
@@ -1239,12 +1215,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: Luny.Engine.Bridge.LunyTransform.OrbitAround*
   commentId: Overload:Luny.Engine.Bridge.LunyTransform.OrbitAround
   isExternal: true

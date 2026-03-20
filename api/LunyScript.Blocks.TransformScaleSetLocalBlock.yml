@@ -94,10 +94,10 @@ items:
   namespace: LunyScript.Blocks
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: LunyScript.Blocks.TransformScaleSetLocalBlock.ToString*
 references:
@@ -132,12 +132,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.Blocks.ScriptBlock
   commentId: T:LunyScript.Blocks.ScriptBlock
   parent: LunyScript.Blocks
@@ -340,10 +337,8 @@ references:
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
@@ -368,9 +363,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -42,27 +42,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfo(string)
-  nameWithType: UnityDebugService.LogInfo(string)
-  fullName: Luny.Unity.Services.UnityDebugService.LogInfo(string)
+  name: LogInfo(String)
+  nameWithType: UnityDebugService.LogInfo(String)
+  fullName: Luny.Unity.Services.UnityDebugService.LogInfo(System.String)
   type: Method
   assemblies:
   - Luny.Unity
   namespace: Luny.Unity.Services
   example: []
   syntax:
-    content: public override void LogInfo(string message)
+    content: public override void LogInfo(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Public Overrides Sub LogInfo(message As String)
+    content.vb: Public Overrides Sub LogInfo(message As [String])
   overridden: Luny.Engine.Services.LunyDebugServiceBase.LogInfo(System.String)
   overload: Luny.Unity.Services.UnityDebugService.LogInfo*
   implements:
   - Luny.Engine.Services.ILunyDebugService.LogInfo(System.String)
-  nameWithType.vb: UnityDebugService.LogInfo(String)
-  fullName.vb: Luny.Unity.Services.UnityDebugService.LogInfo(String)
-  name.vb: LogInfo(String)
 - uid: Luny.Unity.Services.UnityDebugService.LogWarning(System.String)
   commentId: M:Luny.Unity.Services.UnityDebugService.LogWarning(System.String)
   id: LogWarning(System.String)
@@ -70,27 +67,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LogWarning(string)
-  nameWithType: UnityDebugService.LogWarning(string)
-  fullName: Luny.Unity.Services.UnityDebugService.LogWarning(string)
+  name: LogWarning(String)
+  nameWithType: UnityDebugService.LogWarning(String)
+  fullName: Luny.Unity.Services.UnityDebugService.LogWarning(System.String)
   type: Method
   assemblies:
   - Luny.Unity
   namespace: Luny.Unity.Services
   example: []
   syntax:
-    content: public override void LogWarning(string message)
+    content: public override void LogWarning(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Public Overrides Sub LogWarning(message As String)
+    content.vb: Public Overrides Sub LogWarning(message As [String])
   overridden: Luny.Engine.Services.LunyDebugServiceBase.LogWarning(System.String)
   overload: Luny.Unity.Services.UnityDebugService.LogWarning*
   implements:
   - Luny.Engine.Services.ILunyDebugService.LogWarning(System.String)
-  nameWithType.vb: UnityDebugService.LogWarning(String)
-  fullName.vb: Luny.Unity.Services.UnityDebugService.LogWarning(String)
-  name.vb: LogWarning(String)
 - uid: Luny.Unity.Services.UnityDebugService.LogError(System.String)
   commentId: M:Luny.Unity.Services.UnityDebugService.LogError(System.String)
   id: LogError(System.String)
@@ -98,27 +92,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LogError(string)
-  nameWithType: UnityDebugService.LogError(string)
-  fullName: Luny.Unity.Services.UnityDebugService.LogError(string)
+  name: LogError(String)
+  nameWithType: UnityDebugService.LogError(String)
+  fullName: Luny.Unity.Services.UnityDebugService.LogError(System.String)
   type: Method
   assemblies:
   - Luny.Unity
   namespace: Luny.Unity.Services
   example: []
   syntax:
-    content: public override void LogError(string message)
+    content: public override void LogError(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Public Overrides Sub LogError(message As String)
+    content.vb: Public Overrides Sub LogError(message As [String])
   overridden: Luny.Engine.Services.LunyDebugServiceBase.LogError(System.String)
   overload: Luny.Unity.Services.UnityDebugService.LogError*
   implements:
   - Luny.Engine.Services.ILunyDebugService.LogError(System.String)
-  nameWithType.vb: UnityDebugService.LogError(String)
-  fullName.vb: Luny.Unity.Services.UnityDebugService.LogError(String)
-  name.vb: LogError(String)
 - uid: Luny.Unity.Services.UnityDebugService.LogException(System.Exception)
   commentId: M:Luny.Unity.Services.UnityDebugService.LogException(System.Exception)
   id: LogException(System.Exception)
@@ -267,12 +258,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Services.LunyEngineServiceBase
   commentId: T:Luny.Engine.Services.LunyEngineServiceBase
   parent: Luny.Engine.Services
@@ -354,19 +342,16 @@ references:
   parent: Luny.Engine.Services.LunyDebugServiceBase
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: LogInfo(string)
-  nameWithType: LunyDebugServiceBase.LogInfo(string)
-  fullName: Luny.Engine.Services.LunyDebugServiceBase.LogInfo(string)
-  nameWithType.vb: LunyDebugServiceBase.LogInfo(String)
-  fullName.vb: Luny.Engine.Services.LunyDebugServiceBase.LogInfo(String)
-  name.vb: LogInfo(String)
+  name: LogInfo(String)
+  nameWithType: LunyDebugServiceBase.LogInfo(String)
+  fullName: Luny.Engine.Services.LunyDebugServiceBase.LogInfo(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.LunyDebugServiceBase.LogInfo(System.String)
     name: LogInfo
     isExternal: true
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -392,12 +377,9 @@ references:
   parent: Luny.Engine.Services.ILunyDebugService
   isExternal: true
   href: Luny.Engine.Services.ILunyDebugService.html#Luny_Engine_Services_ILunyDebugService_LogInfo_System_String_
-  name: LogInfo(string)
-  nameWithType: ILunyDebugService.LogInfo(string)
-  fullName: Luny.Engine.Services.ILunyDebugService.LogInfo(string)
-  nameWithType.vb: ILunyDebugService.LogInfo(String)
-  fullName.vb: Luny.Engine.Services.ILunyDebugService.LogInfo(String)
-  name.vb: LogInfo(String)
+  name: LogInfo(String)
+  nameWithType: ILunyDebugService.LogInfo(String)
+  fullName: Luny.Engine.Services.ILunyDebugService.LogInfo(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyDebugService.LogInfo(System.String)
     name: LogInfo
@@ -405,7 +387,7 @@ references:
     href: Luny.Engine.Services.ILunyDebugService.html#Luny_Engine_Services_ILunyDebugService_LogInfo_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -425,30 +407,24 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Services.LunyDebugServiceBase.LogWarning(System.String)
   commentId: M:Luny.Engine.Services.LunyDebugServiceBase.LogWarning(System.String)
   parent: Luny.Engine.Services.LunyDebugServiceBase
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: LogWarning(string)
-  nameWithType: LunyDebugServiceBase.LogWarning(string)
-  fullName: Luny.Engine.Services.LunyDebugServiceBase.LogWarning(string)
-  nameWithType.vb: LunyDebugServiceBase.LogWarning(String)
-  fullName.vb: Luny.Engine.Services.LunyDebugServiceBase.LogWarning(String)
-  name.vb: LogWarning(String)
+  name: LogWarning(String)
+  nameWithType: LunyDebugServiceBase.LogWarning(String)
+  fullName: Luny.Engine.Services.LunyDebugServiceBase.LogWarning(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.LunyDebugServiceBase.LogWarning(System.String)
     name: LogWarning
     isExternal: true
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -474,12 +450,9 @@ references:
   parent: Luny.Engine.Services.ILunyDebugService
   isExternal: true
   href: Luny.Engine.Services.ILunyDebugService.html#Luny_Engine_Services_ILunyDebugService_LogWarning_System_String_
-  name: LogWarning(string)
-  nameWithType: ILunyDebugService.LogWarning(string)
-  fullName: Luny.Engine.Services.ILunyDebugService.LogWarning(string)
-  nameWithType.vb: ILunyDebugService.LogWarning(String)
-  fullName.vb: Luny.Engine.Services.ILunyDebugService.LogWarning(String)
-  name.vb: LogWarning(String)
+  name: LogWarning(String)
+  nameWithType: ILunyDebugService.LogWarning(String)
+  fullName: Luny.Engine.Services.ILunyDebugService.LogWarning(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyDebugService.LogWarning(System.String)
     name: LogWarning
@@ -487,7 +460,7 @@ references:
     href: Luny.Engine.Services.ILunyDebugService.html#Luny_Engine_Services_ILunyDebugService_LogWarning_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -507,19 +480,16 @@ references:
   parent: Luny.Engine.Services.LunyDebugServiceBase
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: LogError(string)
-  nameWithType: LunyDebugServiceBase.LogError(string)
-  fullName: Luny.Engine.Services.LunyDebugServiceBase.LogError(string)
-  nameWithType.vb: LunyDebugServiceBase.LogError(String)
-  fullName.vb: Luny.Engine.Services.LunyDebugServiceBase.LogError(String)
-  name.vb: LogError(String)
+  name: LogError(String)
+  nameWithType: LunyDebugServiceBase.LogError(String)
+  fullName: Luny.Engine.Services.LunyDebugServiceBase.LogError(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.LunyDebugServiceBase.LogError(System.String)
     name: LogError
     isExternal: true
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -545,12 +515,9 @@ references:
   parent: Luny.Engine.Services.ILunyDebugService
   isExternal: true
   href: Luny.Engine.Services.ILunyDebugService.html#Luny_Engine_Services_ILunyDebugService_LogError_System_String_
-  name: LogError(string)
-  nameWithType: ILunyDebugService.LogError(string)
-  fullName: Luny.Engine.Services.ILunyDebugService.LogError(string)
-  nameWithType.vb: ILunyDebugService.LogError(String)
-  fullName.vb: Luny.Engine.Services.ILunyDebugService.LogError(String)
-  name.vb: LogError(String)
+  name: LogError(String)
+  nameWithType: ILunyDebugService.LogError(String)
+  fullName: Luny.Engine.Services.ILunyDebugService.LogError(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyDebugService.LogError(System.String)
     name: LogError
@@ -558,7 +525,7 @@ references:
     href: Luny.Engine.Services.ILunyDebugService.html#Luny_Engine_Services_ILunyDebugService_LogError_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )

@@ -38,15 +38,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Create(VariableBlock<LunyVector3>, double, double, LunyVector3, double)
-  nameWithType: TransformScaleTowardsBlock.Create(VariableBlock<LunyVector3>, double, double, LunyVector3, double)
-  fullName: LunyScript.Blocks.TransformScaleTowardsBlock.Create(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector3>, double, double, Luny.Engine.Bridge.LunyVector3, double)
+  name: Create(VariableBlock<LunyVector3>, Double, Double, LunyVector3, Double)
+  nameWithType: TransformScaleTowardsBlock.Create(VariableBlock<LunyVector3>, Double, Double, LunyVector3, Double)
+  fullName: LunyScript.Blocks.TransformScaleTowardsBlock.Create(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector3>, System.Double, System.Double, Luny.Engine.Bridge.LunyVector3, System.Double)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static TransformScaleTowardsBlock Create(VariableBlock<LunyVector3> targetScale, double speed, double deadZone = 0.1, LunyVector3 axisLock = default, double responsiveness = 1)
+    content: public static TransformScaleTowardsBlock Create(VariableBlock<LunyVector3> targetScale, Double speed, Double deadZone = 0.1, LunyVector3 axisLock = default, Double responsiveness = 1)
     parameters:
     - id: targetScale
       type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3}
@@ -60,10 +60,10 @@ items:
       type: System.Double
     return:
       type: LunyScript.Blocks.TransformScaleTowardsBlock
-    content.vb: Public Shared Function Create(targetScale As VariableBlock(Of LunyVector3), speed As Double, deadZone As Double = 0.1, axisLock As LunyVector3 = Nothing, responsiveness As Double = 1) As TransformScaleTowardsBlock
+    content.vb: Public Shared Function Create(targetScale As VariableBlock(Of LunyVector3), speed As [Double], deadZone As [Double] = 0.1, axisLock As LunyVector3 = Nothing, responsiveness As [Double] = 1) As TransformScaleTowardsBlock
   overload: LunyScript.Blocks.TransformScaleTowardsBlock.Create*
   nameWithType.vb: TransformScaleTowardsBlock.Create(VariableBlock(Of LunyVector3), Double, Double, LunyVector3, Double)
-  fullName.vb: LunyScript.Blocks.TransformScaleTowardsBlock.Create(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector3), Double, Double, Luny.Engine.Bridge.LunyVector3, Double)
+  fullName.vb: LunyScript.Blocks.TransformScaleTowardsBlock.Create(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector3), System.Double, System.Double, Luny.Engine.Bridge.LunyVector3, System.Double)
   name.vb: Create(VariableBlock(Of LunyVector3), Double, Double, LunyVector3, Double)
 - uid: LunyScript.Blocks.TransformScaleTowardsBlock.Execute(LunyScript.IScriptRuntimeContext)
   commentId: M:LunyScript.Blocks.TransformScaleTowardsBlock.Execute(LunyScript.IScriptRuntimeContext)
@@ -104,10 +104,10 @@ items:
   namespace: LunyScript.Blocks
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: LunyScript.Blocks.TransformScaleTowardsBlock.ToString*
 references:
@@ -142,12 +142,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.Blocks.ScriptBlock
   commentId: T:LunyScript.Blocks.ScriptBlock
   parent: LunyScript.Blocks
@@ -277,12 +274,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Engine.Bridge.LunyVector3
   commentId: T:Luny.Engine.Bridge.LunyVector3
   parent: Luny.Engine.Bridge
@@ -422,10 +416,8 @@ references:
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
@@ -450,9 +442,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

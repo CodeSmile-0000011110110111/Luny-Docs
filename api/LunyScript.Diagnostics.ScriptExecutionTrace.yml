@@ -48,10 +48,10 @@ items:
   - LunyScript
   namespace: LunyScript.Diagnostics
   syntax:
-    content: public long FrameCount
+    content: public Int64 FrameCount
     return:
       type: System.Int64
-    content.vb: Public FrameCount As Long
+    content.vb: Public FrameCount As Int64
 - uid: LunyScript.Diagnostics.ScriptExecutionTrace.ElapsedSeconds
   commentId: F:LunyScript.Diagnostics.ScriptExecutionTrace.ElapsedSeconds
   id: ElapsedSeconds
@@ -67,10 +67,10 @@ items:
   - LunyScript
   namespace: LunyScript.Diagnostics
   syntax:
-    content: public double ElapsedSeconds
+    content: public Double ElapsedSeconds
     return:
       type: System.Double
-    content.vb: Public ElapsedSeconds As Double
+    content.vb: Public ElapsedSeconds As [Double]
 - uid: LunyScript.Diagnostics.ScriptExecutionTrace.ScriptSequenceId
   commentId: F:LunyScript.Diagnostics.ScriptExecutionTrace.ScriptSequenceId
   id: ScriptSequenceId
@@ -124,10 +124,10 @@ items:
   - LunyScript
   namespace: LunyScript.Diagnostics
   syntax:
-    content: public string BlockDescription
+    content: public String BlockDescription
     return:
       type: System.String
-    content.vb: Public BlockDescription As String
+    content.vb: Public BlockDescription As [String]
 - uid: LunyScript.Diagnostics.ScriptExecutionTrace.Error
   commentId: F:LunyScript.Diagnostics.ScriptExecutionTrace.Error
   id: Error
@@ -163,10 +163,10 @@ items:
   namespace: LunyScript.Diagnostics
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.ValueType.ToString
   overload: LunyScript.Diagnostics.ScriptExecutionTrace.ToString*
 references:
@@ -202,12 +202,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -215,7 +212,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -270,23 +267,17 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System.Double
   commentId: T:System.Double
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: LunyScript.ScriptBlockId
   commentId: T:LunyScript.ScriptBlockId
   parent: LunyScript
@@ -315,12 +306,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: System.Exception
   commentId: T:System.Exception
   parent: System

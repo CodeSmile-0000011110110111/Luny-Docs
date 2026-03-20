@@ -38,23 +38,20 @@ items:
   langs:
   - csharp
   - vb
-  name: SetNativeCollider(object)
-  nameWithType: LunyCollider.SetNativeCollider(object)
-  fullName: Luny.Engine.Bridge.LunyCollider.SetNativeCollider(object)
+  name: SetNativeCollider(Object)
+  nameWithType: LunyCollider.SetNativeCollider(Object)
+  fullName: Luny.Engine.Bridge.LunyCollider.SetNativeCollider(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public void SetNativeCollider(object nativeCollider)
+    content: public void SetNativeCollider(Object nativeCollider)
     parameters:
     - id: nativeCollider
       type: System.Object
-    content.vb: Public Sub SetNativeCollider(nativeCollider As Object)
+    content.vb: Public Sub SetNativeCollider(nativeCollider As [Object])
   overload: Luny.Engine.Bridge.LunyCollider.SetNativeCollider*
-  nameWithType.vb: LunyCollider.SetNativeCollider(Object)
-  fullName.vb: Luny.Engine.Bridge.LunyCollider.SetNativeCollider(Object)
-  name.vb: SetNativeCollider(Object)
 - uid: Luny.Engine.Bridge.LunyCollider.HasComponent(System.Type)
   commentId: M:Luny.Engine.Bridge.LunyCollider.HasComponent(System.Type)
   id: HasComponent(System.Type)
@@ -70,13 +67,13 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract bool HasComponent(Type type)
+    content: public abstract Boolean HasComponent(Type type)
     parameters:
     - id: type
       type: System.Type
     return:
       type: System.Boolean
-    content.vb: Public MustOverride Function HasComponent(type As Type) As Boolean
+    content.vb: Public MustOverride Function HasComponent(type As Type) As [Boolean]
   overload: Luny.Engine.Bridge.LunyCollider.HasComponent*
 - uid: Luny.Engine.Bridge.LunyCollider.#ctor
   commentId: M:Luny.Engine.Bridge.LunyCollider.#ctor
@@ -114,11 +111,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public object NativeCollider { get; }
+    content: public Object NativeCollider { get; }
     parameters: []
     return:
       type: System.Object
-    content.vb: Public ReadOnly Property NativeCollider As Object
+    content.vb: Public ReadOnly Property NativeCollider As [Object]
   overload: Luny.Engine.Bridge.LunyCollider.NativeCollider*
 - uid: Luny.Engine.Bridge.LunyCollider.IsValid
   commentId: P:Luny.Engine.Bridge.LunyCollider.IsValid
@@ -135,11 +132,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public bool IsValid { get; }
+    content: public Boolean IsValid { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsValid As Boolean
+    content.vb: Public ReadOnly Property IsValid As [Boolean]
   overload: Luny.Engine.Bridge.LunyCollider.IsValid*
 - uid: Luny.Engine.Bridge.LunyCollider.Tag
   commentId: P:Luny.Engine.Bridge.LunyCollider.Tag
@@ -156,11 +153,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract string Tag { get; }
+    content: public abstract String Tag { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public MustOverride ReadOnly Property Tag As String
+    content.vb: Public MustOverride ReadOnly Property Tag As [String]
   overload: Luny.Engine.Bridge.LunyCollider.Tag*
 - uid: Luny.Engine.Bridge.LunyCollider.Name
   commentId: P:Luny.Engine.Bridge.LunyCollider.Name
@@ -177,11 +174,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract string Name { get; }
+    content: public abstract String Name { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public MustOverride ReadOnly Property Name As String
+    content.vb: Public MustOverride ReadOnly Property Name As [String]
   overload: Luny.Engine.Bridge.LunyCollider.Name*
 - uid: Luny.Engine.Bridge.LunyCollider.LayerName
   commentId: P:Luny.Engine.Bridge.LunyCollider.LayerName
@@ -198,11 +195,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract string LayerName { get; }
+    content: public abstract String LayerName { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public MustOverride ReadOnly Property LayerName As String
+    content.vb: Public MustOverride ReadOnly Property LayerName As [String]
   overload: Luny.Engine.Bridge.LunyCollider.LayerName*
 - uid: Luny.Engine.Bridge.LunyCollider.Layer
   commentId: P:Luny.Engine.Bridge.LunyCollider.Layer
@@ -219,11 +216,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public abstract int Layer { get; }
+    content: public abstract Int32 Layer { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public MustOverride ReadOnly Property Layer As Integer
+    content.vb: Public MustOverride ReadOnly Property Layer As Int32
   overload: Luny.Engine.Bridge.LunyCollider.Layer*
 references:
 - uid: Luny.Engine.Bridge
@@ -267,12 +264,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -307,12 +301,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Bridge.LunyCollider.#ctor*
   commentId: Overload:Luny.Engine.Bridge.LunyCollider.#ctor
   isExternal: true
@@ -349,12 +340,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyCollider.Name*
   commentId: Overload:Luny.Engine.Bridge.LunyCollider.Name
   isExternal: true
@@ -381,9 +369,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

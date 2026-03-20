@@ -88,10 +88,10 @@ items:
   - LunyScript
   namespace: LunyScript.Diagnostics
   syntax:
-    content: public int CallCount
+    content: public Int32 CallCount
     return:
       type: System.Int32
-    content.vb: Public CallCount As Integer
+    content.vb: Public CallCount As Int32
 - uid: LunyScript.Diagnostics.ScriptBlockMetrics.TotalMs
   commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.TotalMs
   id: TotalMs
@@ -107,10 +107,10 @@ items:
   - LunyScript
   namespace: LunyScript.Diagnostics
   syntax:
-    content: public double TotalMs
+    content: public Double TotalMs
     return:
       type: System.Double
-    content.vb: Public TotalMs As Double
+    content.vb: Public TotalMs As [Double]
 - uid: LunyScript.Diagnostics.ScriptBlockMetrics.AverageMs
   commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.AverageMs
   id: AverageMs
@@ -126,10 +126,10 @@ items:
   - LunyScript
   namespace: LunyScript.Diagnostics
   syntax:
-    content: public double AverageMs
+    content: public Double AverageMs
     return:
       type: System.Double
-    content.vb: Public AverageMs As Double
+    content.vb: Public AverageMs As [Double]
 - uid: LunyScript.Diagnostics.ScriptBlockMetrics.MinMs
   commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.MinMs
   id: MinMs
@@ -145,10 +145,10 @@ items:
   - LunyScript
   namespace: LunyScript.Diagnostics
   syntax:
-    content: public double MinMs
+    content: public Double MinMs
     return:
       type: System.Double
-    content.vb: Public MinMs As Double
+    content.vb: Public MinMs As [Double]
 - uid: LunyScript.Diagnostics.ScriptBlockMetrics.MaxMs
   commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.MaxMs
   id: MaxMs
@@ -164,10 +164,10 @@ items:
   - LunyScript
   namespace: LunyScript.Diagnostics
   syntax:
-    content: public double MaxMs
+    content: public Double MaxMs
     return:
       type: System.Double
-    content.vb: Public MaxMs As Double
+    content.vb: Public MaxMs As [Double]
 - uid: LunyScript.Diagnostics.ScriptBlockMetrics.ErrorCount
   commentId: F:LunyScript.Diagnostics.ScriptBlockMetrics.ErrorCount
   id: ErrorCount
@@ -183,10 +183,10 @@ items:
   - LunyScript
   namespace: LunyScript.Diagnostics
   syntax:
-    content: public int ErrorCount
+    content: public Int32 ErrorCount
     return:
       type: System.Int32
-    content.vb: Public ErrorCount As Integer
+    content.vb: Public ErrorCount As Int32
 - uid: LunyScript.Diagnostics.ScriptBlockMetrics.ToString
   commentId: M:LunyScript.Diagnostics.ScriptBlockMetrics.ToString
   id: ToString
@@ -203,10 +203,10 @@ items:
   namespace: LunyScript.Diagnostics
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: LunyScript.Diagnostics.ScriptBlockMetrics.ToString*
 - uid: LunyScript.Diagnostics.ScriptBlockMetrics.#ctor
@@ -262,12 +262,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -303,32 +300,24 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: System.Double
   commentId: T:System.Double
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
@@ -353,12 +342,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Diagnostics.ScriptBlockMetrics.#ctor*
   commentId: Overload:LunyScript.Diagnostics.ScriptBlockMetrics.#ctor
   isExternal: true

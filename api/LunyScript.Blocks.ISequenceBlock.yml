@@ -80,11 +80,11 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: bool IsEmpty { get; }
+    content: Boolean IsEmpty { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: ReadOnly Property IsEmpty As Boolean
+    content.vb: ReadOnly Property IsEmpty As [Boolean]
   overload: LunyScript.Blocks.ISequenceBlock.IsEmpty*
 references:
 - uid: LunyScript.Blocks
@@ -255,12 +255,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: System
   commentId: N:System
   isExternal: true

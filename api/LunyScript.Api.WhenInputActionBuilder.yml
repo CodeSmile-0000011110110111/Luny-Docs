@@ -61,12 +61,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -74,7 +71,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -242,12 +239,9 @@ references:
   parent: LunyScript.Api.WhenInputActionBuilderExtensions
   definition: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder,System.String)
   href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_ForUser_LunyScript_Api_WhenInputActionBuilder_System_String_
-  name: ForUser(WhenInputActionBuilder, string)
-  nameWithType: WhenInputActionBuilderExtensions.ForUser(WhenInputActionBuilder, string)
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder, string)
-  nameWithType.vb: WhenInputActionBuilderExtensions.ForUser(WhenInputActionBuilder, String)
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder, String)
-  name.vb: ForUser(WhenInputActionBuilder, String)
+  name: ForUser(WhenInputActionBuilder, String)
+  nameWithType: WhenInputActionBuilderExtensions.ForUser(WhenInputActionBuilder, String)
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder, System.String)
   spec.csharp:
   - uid: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder,System.String)
     name: ForUser
@@ -261,7 +255,7 @@ references:
   - name: ','
   - name: " "
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -512,12 +506,9 @@ references:
   commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder,System.String)
   isExternal: true
   href: LunyScript.Api.WhenInputActionBuilderExtensions.html#LunyScript_Api_WhenInputActionBuilderExtensions_ForUser_LunyScript_Api_WhenInputActionBuilder_System_String_
-  name: ForUser(WhenInputActionBuilder, string)
-  nameWithType: WhenInputActionBuilderExtensions.ForUser(WhenInputActionBuilder, string)
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder, string)
-  nameWithType.vb: WhenInputActionBuilderExtensions.ForUser(WhenInputActionBuilder, String)
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder, String)
-  name.vb: ForUser(WhenInputActionBuilder, String)
+  name: ForUser(WhenInputActionBuilder, String)
+  nameWithType: WhenInputActionBuilderExtensions.ForUser(WhenInputActionBuilder, String)
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder, System.String)
   spec.csharp:
   - uid: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder,System.String)
     name: ForUser
@@ -531,7 +522,7 @@ references:
   - name: ','
   - name: " "
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )

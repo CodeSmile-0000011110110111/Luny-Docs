@@ -210,15 +210,15 @@ items:
   langs:
   - csharp
   - vb
-  name: With<T>(ObjectCreateBuilder<T>, string)
-  nameWithType: ObjectBuilderExtensions.With<T>(ObjectCreateBuilder<T>, string)
-  fullName: LunyScript.Api.ObjectBuilderExtensions.With<T>(LunyScript.Api.ObjectCreateBuilder<T>, string)
+  name: With<T>(ObjectCreateBuilder<T>, String)
+  nameWithType: ObjectBuilderExtensions.With<T>(ObjectCreateBuilder<T>, String)
+  fullName: LunyScript.Api.ObjectBuilderExtensions.With<T>(LunyScript.Api.ObjectCreateBuilder<T>, System.String)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: 'public static ObjectCreateBuilder<ObjectBuilderNameSet> With<T>(this ObjectCreateBuilder<T> b, string prefabName) where T : struct, IObjectBuilderNameSet'
+    content: 'public static ObjectCreateBuilder<ObjectBuilderNameSet> With<T>(this ObjectCreateBuilder<T> b, String prefabName) where T : struct, IObjectBuilderNameSet'
     parameters:
     - id: b
       type: LunyScript.Api.ObjectCreateBuilder{{T}}
@@ -228,10 +228,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.ObjectCreateBuilder{LunyScript.Api.ObjectBuilderNameSet}
-    content.vb: Public Shared Function [With](Of T As {Structure, IObjectBuilderNameSet})(b As ObjectCreateBuilder(Of T), prefabName As String) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
+    content.vb: Public Shared Function [With](Of T As {Structure, IObjectBuilderNameSet})(b As ObjectCreateBuilder(Of T), prefabName As [String]) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
   overload: LunyScript.Api.ObjectBuilderExtensions.With*
   nameWithType.vb: ObjectBuilderExtensions.With(Of T)(ObjectCreateBuilder(Of T), String)
-  fullName.vb: LunyScript.Api.ObjectBuilderExtensions.With(Of T)(LunyScript.Api.ObjectCreateBuilder(Of T), String)
+  fullName.vb: LunyScript.Api.ObjectBuilderExtensions.With(Of T)(LunyScript.Api.ObjectCreateBuilder(Of T), System.String)
   name.vb: With(Of T)(ObjectCreateBuilder(Of T), String)
 - uid: LunyScript.Api.ObjectBuilderExtensions.Clone``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
   commentId: M:LunyScript.Api.ObjectBuilderExtensions.Clone``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
@@ -241,15 +241,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Clone<T>(ObjectCreateBuilder<T>, string)
-  nameWithType: ObjectBuilderExtensions.Clone<T>(ObjectCreateBuilder<T>, string)
-  fullName: LunyScript.Api.ObjectBuilderExtensions.Clone<T>(LunyScript.Api.ObjectCreateBuilder<T>, string)
+  name: Clone<T>(ObjectCreateBuilder<T>, String)
+  nameWithType: ObjectBuilderExtensions.Clone<T>(ObjectCreateBuilder<T>, String)
+  fullName: LunyScript.Api.ObjectBuilderExtensions.Clone<T>(LunyScript.Api.ObjectCreateBuilder<T>, System.String)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: 'public static ObjectCreateBuilder<ObjectBuilderNameSet> Clone<T>(this ObjectCreateBuilder<T> b, string existingName) where T : struct, IObjectBuilderNameSet'
+    content: 'public static ObjectCreateBuilder<ObjectBuilderNameSet> Clone<T>(this ObjectCreateBuilder<T> b, String existingName) where T : struct, IObjectBuilderNameSet'
     parameters:
     - id: b
       type: LunyScript.Api.ObjectCreateBuilder{{T}}
@@ -259,10 +259,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.ObjectCreateBuilder{LunyScript.Api.ObjectBuilderNameSet}
-    content.vb: Public Shared Function Clone(Of T As {Structure, IObjectBuilderNameSet})(b As ObjectCreateBuilder(Of T), existingName As String) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
+    content.vb: Public Shared Function Clone(Of T As {Structure, IObjectBuilderNameSet})(b As ObjectCreateBuilder(Of T), existingName As [String]) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
   overload: LunyScript.Api.ObjectBuilderExtensions.Clone*
   nameWithType.vb: ObjectBuilderExtensions.Clone(Of T)(ObjectCreateBuilder(Of T), String)
-  fullName.vb: LunyScript.Api.ObjectBuilderExtensions.Clone(Of T)(LunyScript.Api.ObjectCreateBuilder(Of T), String)
+  fullName.vb: LunyScript.Api.ObjectBuilderExtensions.Clone(Of T)(LunyScript.Api.ObjectCreateBuilder(Of T), System.String)
   name.vb: Clone(Of T)(ObjectCreateBuilder(Of T), String)
 references:
 - uid: LunyScript.Api
@@ -296,12 +296,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -456,12 +453,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Api.ObjectBuilderExtensions.Clone*
   commentId: Overload:LunyScript.Api.ObjectBuilderExtensions.Clone
   isExternal: true

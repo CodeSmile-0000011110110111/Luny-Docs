@@ -58,11 +58,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public object NativeObject { get; set; }
+    content: public Object NativeObject { get; set; }
     parameters: []
     return:
       type: System.Object
-    content.vb: Public Property NativeObject As Object
+    content.vb: Public Property NativeObject As [Object]
   overload: Luny.Engine.Bridge.LunyCollider2D.NativeObject*
 references:
 - uid: Luny.Engine.Bridge
@@ -106,12 +106,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true

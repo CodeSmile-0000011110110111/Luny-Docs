@@ -37,16 +37,16 @@ items:
   langs:
   - csharp
   - vb
-  name: CreatePrimitive(string, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  nameWithType: UnityObjectService.CreatePrimitive(string, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName: Luny.Unity.Services.UnityObjectService.CreatePrimitive(string, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
+  name: CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  nameWithType: UnityObjectService.CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  fullName: Luny.Unity.Services.UnityObjectService.CreatePrimitive(System.String, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
   type: Method
   assemblies:
   - Luny.Unity
   namespace: Luny.Unity.Services
   example: []
   syntax:
-    content: public override ILunyObject CreatePrimitive(string name, LunyPrimitiveType type, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)
+    content: public override ILunyObject CreatePrimitive(String name, LunyPrimitiveType type, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)
     parameters:
     - id: name
       type: System.String
@@ -62,14 +62,14 @@ items:
       type: System.Nullable{Luny.Engine.Bridge.LunyVector3}
     return:
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Public Overrides Function CreatePrimitive(name As String, type As LunyPrimitiveType, parent As ILunyObject, position As LunyVector3?, rotation As LunyQuaternion?, scale As LunyVector3?) As ILunyObject
+    content.vb: Public Overrides Function CreatePrimitive(name As [String], type As LunyPrimitiveType, parent As ILunyObject, position As Nullable(Of LunyVector3), rotation As Nullable(Of LunyQuaternion), scale As Nullable(Of LunyVector3)) As ILunyObject
   overridden: Luny.Engine.Services.LunyObjectServiceBase.CreatePrimitive(System.String,Luny.Engine.Bridge.LunyPrimitiveType,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   overload: Luny.Unity.Services.UnityObjectService.CreatePrimitive*
   implements:
   - Luny.Engine.Services.ILunyObjectService.CreatePrimitive(System.String,Luny.Engine.Bridge.LunyPrimitiveType,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
-  nameWithType.vb: UnityObjectService.CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName.vb: Luny.Unity.Services.UnityObjectService.CreatePrimitive(String, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
-  name.vb: CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  nameWithType.vb: UnityObjectService.CreatePrimitive(String, LunyPrimitiveType, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Unity.Services.UnityObjectService.CreatePrimitive(System.String, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: CreatePrimitive(String, LunyPrimitiveType, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
 - uid: Luny.Unity.Services.UnityObjectService.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   commentId: M:Luny.Unity.Services.UnityObjectService.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   id: CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
@@ -101,11 +101,14 @@ items:
       type: System.Nullable{Luny.Engine.Bridge.LunyVector3}
     return:
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Public Overrides Function CreateFromPrefab(prefab As ILunyPrefab, parent As ILunyObject, position As LunyVector3?, rotation As LunyQuaternion?, scale As LunyVector3?) As ILunyObject
+    content.vb: Public Overrides Function CreateFromPrefab(prefab As ILunyPrefab, parent As ILunyObject, position As Nullable(Of LunyVector3), rotation As Nullable(Of LunyQuaternion), scale As Nullable(Of LunyVector3)) As ILunyObject
   overridden: Luny.Engine.Services.LunyObjectServiceBase.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   overload: Luny.Unity.Services.UnityObjectService.CreateFromPrefab*
   implements:
   - Luny.Engine.Services.ILunyObjectService.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
+  nameWithType.vb: UnityObjectService.CreateFromPrefab(ILunyPrefab, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Unity.Services.UnityObjectService.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: CreateFromPrefab(ILunyPrefab, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
 - uid: Luny.Unity.Services.UnityObjectService.Clone(Luny.Engine.Bridge.ILunyObject,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   commentId: M:Luny.Unity.Services.UnityObjectService.Clone(Luny.Engine.Bridge.ILunyObject,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   id: Clone(Luny.Engine.Bridge.ILunyObject,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
@@ -136,11 +139,14 @@ items:
       type: System.Nullable{Luny.Engine.Bridge.LunyVector3}
     return:
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Public Overrides Function Clone(original As ILunyObject, parent As ILunyObject, position As LunyVector3?, rotation As LunyQuaternion?, scale As LunyVector3?) As ILunyObject
+    content.vb: Public Overrides Function Clone(original As ILunyObject, parent As ILunyObject, position As Nullable(Of LunyVector3), rotation As Nullable(Of LunyQuaternion), scale As Nullable(Of LunyVector3)) As ILunyObject
   overridden: Luny.Engine.Services.LunyObjectServiceBase.Clone(Luny.Engine.Bridge.ILunyObject,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   overload: Luny.Unity.Services.UnityObjectService.Clone*
   implements:
   - Luny.Engine.Services.ILunyObjectService.Clone(Luny.Engine.Bridge.ILunyObject,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
+  nameWithType.vb: UnityObjectService.Clone(ILunyObject, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Unity.Services.UnityObjectService.Clone(Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: Clone(ILunyObject, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
 - uid: Luny.Unity.Services.UnityObjectService.CreateEmpty(System.String,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   commentId: M:Luny.Unity.Services.UnityObjectService.CreateEmpty(System.String,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   id: CreateEmpty(System.String,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
@@ -148,16 +154,16 @@ items:
   langs:
   - csharp
   - vb
-  name: CreateEmpty(string, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  nameWithType: UnityObjectService.CreateEmpty(string, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName: Luny.Unity.Services.UnityObjectService.CreateEmpty(string, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
+  name: CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  nameWithType: UnityObjectService.CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  fullName: Luny.Unity.Services.UnityObjectService.CreateEmpty(System.String, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
   type: Method
   assemblies:
   - Luny.Unity
   namespace: Luny.Unity.Services
   example: []
   syntax:
-    content: public override ILunyObject CreateEmpty(string name, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)
+    content: public override ILunyObject CreateEmpty(String name, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)
     parameters:
     - id: name
       type: System.String
@@ -171,14 +177,14 @@ items:
       type: System.Nullable{Luny.Engine.Bridge.LunyVector3}
     return:
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Public Overrides Function CreateEmpty(name As String, parent As ILunyObject, position As LunyVector3?, rotation As LunyQuaternion?, scale As LunyVector3?) As ILunyObject
+    content.vb: Public Overrides Function CreateEmpty(name As [String], parent As ILunyObject, position As Nullable(Of LunyVector3), rotation As Nullable(Of LunyQuaternion), scale As Nullable(Of LunyVector3)) As ILunyObject
   overridden: Luny.Engine.Services.LunyObjectServiceBase.CreateEmpty(System.String,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   overload: Luny.Unity.Services.UnityObjectService.CreateEmpty*
   implements:
   - Luny.Engine.Services.ILunyObjectService.CreateEmpty(System.String,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
-  nameWithType.vb: UnityObjectService.CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName.vb: Luny.Unity.Services.UnityObjectService.CreateEmpty(String, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
-  name.vb: CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  nameWithType.vb: UnityObjectService.CreateEmpty(String, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Unity.Services.UnityObjectService.CreateEmpty(System.String, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: CreateEmpty(String, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
 - uid: Luny.Unity.Services.UnityObjectService.#ctor
   commentId: M:Luny.Unity.Services.UnityObjectService.#ctor
   id: '#ctor'
@@ -242,12 +248,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Services.LunyEngineServiceBase
   commentId: T:Luny.Engine.Services.LunyEngineServiceBase
   parent: Luny.Engine.Services
@@ -329,19 +332,19 @@ references:
   parent: Luny.Engine.Services.LunyObjectServiceBase
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: CreatePrimitive(string, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  nameWithType: LunyObjectServiceBase.CreatePrimitive(string, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName: Luny.Engine.Services.LunyObjectServiceBase.CreatePrimitive(string, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
-  nameWithType.vb: LunyObjectServiceBase.CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName.vb: Luny.Engine.Services.LunyObjectServiceBase.CreatePrimitive(String, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
-  name.vb: CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  name: CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  nameWithType: LunyObjectServiceBase.CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  fullName: Luny.Engine.Services.LunyObjectServiceBase.CreatePrimitive(System.String, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
+  nameWithType.vb: LunyObjectServiceBase.CreatePrimitive(String, LunyPrimitiveType, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Engine.Services.LunyObjectServiceBase.CreatePrimitive(System.String, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: CreatePrimitive(String, LunyPrimitiveType, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
   spec.csharp:
   - uid: Luny.Engine.Services.LunyObjectServiceBase.CreatePrimitive(System.String,Luny.Engine.Bridge.LunyPrimitiveType,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
     name: CreatePrimitive
     isExternal: true
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
@@ -394,22 +397,43 @@ references:
     isExternal: true
   - name: ','
   - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyQuaternion
     name: LunyQuaternion
     isExternal: true
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
-  - name: '?'
+  - name: )
   - name: )
 - uid: Luny.Unity.Services.UnityObjectService.CreatePrimitive*
   commentId: Overload:Luny.Unity.Services.UnityObjectService.CreatePrimitive
@@ -423,12 +447,12 @@ references:
   parent: Luny.Engine.Services.ILunyObjectService
   isExternal: true
   href: Luny.Engine.Services.ILunyObjectService.html#Luny_Engine_Services_ILunyObjectService_CreatePrimitive_System_String_Luny_Engine_Bridge_LunyPrimitiveType_Luny_Engine_Bridge_ILunyObject_System_Nullable_Luny_Engine_Bridge_LunyVector3__System_Nullable_Luny_Engine_Bridge_LunyQuaternion__System_Nullable_Luny_Engine_Bridge_LunyVector3__
-  name: CreatePrimitive(string, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  nameWithType: ILunyObjectService.CreatePrimitive(string, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName: Luny.Engine.Services.ILunyObjectService.CreatePrimitive(string, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
-  nameWithType.vb: ILunyObjectService.CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName.vb: Luny.Engine.Services.ILunyObjectService.CreatePrimitive(String, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
-  name.vb: CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  name: CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  nameWithType: ILunyObjectService.CreatePrimitive(String, LunyPrimitiveType, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  fullName: Luny.Engine.Services.ILunyObjectService.CreatePrimitive(System.String, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
+  nameWithType.vb: ILunyObjectService.CreatePrimitive(String, LunyPrimitiveType, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Engine.Services.ILunyObjectService.CreatePrimitive(System.String, Luny.Engine.Bridge.LunyPrimitiveType, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: CreatePrimitive(String, LunyPrimitiveType, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyObjectService.CreatePrimitive(System.String,Luny.Engine.Bridge.LunyPrimitiveType,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
     name: CreatePrimitive
@@ -436,7 +460,7 @@ references:
     href: Luny.Engine.Services.ILunyObjectService.html#Luny_Engine_Services_ILunyObjectService_CreatePrimitive_System_String_Luny_Engine_Bridge_LunyPrimitiveType_Luny_Engine_Bridge_ILunyObject_System_Nullable_Luny_Engine_Bridge_LunyVector3__System_Nullable_Luny_Engine_Bridge_LunyQuaternion__System_Nullable_Luny_Engine_Bridge_LunyVector3__
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
@@ -497,37 +521,55 @@ references:
     href: Luny.Engine.Bridge.ILunyObject.html
   - name: ','
   - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
     href: Luny.Engine.Bridge.LunyVector3.html
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyQuaternion
     name: LunyQuaternion
     isExternal: true
     href: Luny.Engine.Bridge.LunyQuaternion.html
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
     href: Luny.Engine.Bridge.LunyVector3.html
-  - name: '?'
+  - name: )
   - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyPrimitiveType
   commentId: T:Luny.Engine.Bridge.LunyPrimitiveType
   parent: Luny.Engine.Bridge
@@ -552,6 +594,9 @@ references:
   name: LunyVector3?
   nameWithType: LunyVector3?
   fullName: Luny.Engine.Bridge.LunyVector3?
+  nameWithType.vb: Nullable(Of LunyVector3)
+  fullName.vb: System.Nullable(Of Luny.Engine.Bridge.LunyVector3)
+  name.vb: Nullable(Of LunyVector3)
   spec.csharp:
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
@@ -559,11 +604,18 @@ references:
     href: Luny.Engine.Bridge.LunyVector3.html
   - name: '?'
   spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
     href: Luny.Engine.Bridge.LunyVector3.html
-  - name: '?'
+  - name: )
 - uid: System.Nullable{Luny.Engine.Bridge.LunyQuaternion}
   commentId: T:System.Nullable{Luny.Engine.Bridge.LunyQuaternion}
   parent: System
@@ -572,6 +624,9 @@ references:
   name: LunyQuaternion?
   nameWithType: LunyQuaternion?
   fullName: Luny.Engine.Bridge.LunyQuaternion?
+  nameWithType.vb: Nullable(Of LunyQuaternion)
+  fullName.vb: System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion)
+  name.vb: Nullable(Of LunyQuaternion)
   spec.csharp:
   - uid: Luny.Engine.Bridge.LunyQuaternion
     name: LunyQuaternion
@@ -579,11 +634,18 @@ references:
     href: Luny.Engine.Bridge.LunyQuaternion.html
   - name: '?'
   spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Luny.Engine.Bridge.LunyQuaternion
     name: LunyQuaternion
     isExternal: true
     href: Luny.Engine.Bridge.LunyQuaternion.html
-  - name: '?'
+  - name: )
 - uid: Luny.Engine.Bridge
   commentId: N:Luny.Engine.Bridge
   isExternal: true
@@ -653,9 +715,13 @@ references:
   commentId: M:Luny.Engine.Services.LunyObjectServiceBase.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   parent: Luny.Engine.Services.LunyObjectServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
   name: CreateFromPrefab(ILunyPrefab, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   nameWithType: LunyObjectServiceBase.CreateFromPrefab(ILunyPrefab, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   fullName: Luny.Engine.Services.LunyObjectServiceBase.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
+  nameWithType.vb: LunyObjectServiceBase.CreateFromPrefab(ILunyPrefab, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Engine.Services.LunyObjectServiceBase.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: CreateFromPrefab(ILunyPrefab, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
   spec.csharp:
   - uid: Luny.Engine.Services.LunyObjectServiceBase.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
     name: CreateFromPrefab
@@ -703,22 +769,43 @@ references:
     isExternal: true
   - name: ','
   - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyQuaternion
     name: LunyQuaternion
     isExternal: true
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
-  - name: '?'
+  - name: )
   - name: )
 - uid: Luny.Unity.Services.UnityObjectService.CreateFromPrefab*
   commentId: Overload:Luny.Unity.Services.UnityObjectService.CreateFromPrefab
@@ -735,6 +822,9 @@ references:
   name: CreateFromPrefab(ILunyPrefab, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   nameWithType: ILunyObjectService.CreateFromPrefab(ILunyPrefab, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   fullName: Luny.Engine.Services.ILunyObjectService.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
+  nameWithType.vb: ILunyObjectService.CreateFromPrefab(ILunyPrefab, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Engine.Services.ILunyObjectService.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: CreateFromPrefab(ILunyPrefab, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyObjectService.CreateFromPrefab(Luny.Engine.Bridge.ILunyPrefab,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
     name: CreateFromPrefab
@@ -791,25 +881,46 @@ references:
     href: Luny.Engine.Bridge.ILunyObject.html
   - name: ','
   - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
     href: Luny.Engine.Bridge.LunyVector3.html
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyQuaternion
     name: LunyQuaternion
     isExternal: true
     href: Luny.Engine.Bridge.LunyQuaternion.html
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
     href: Luny.Engine.Bridge.LunyVector3.html
-  - name: '?'
+  - name: )
   - name: )
 - uid: Luny.Engine.Bridge.ILunyPrefab
   commentId: T:Luny.Engine.Bridge.ILunyPrefab
@@ -823,9 +934,13 @@ references:
   commentId: M:Luny.Engine.Services.LunyObjectServiceBase.Clone(Luny.Engine.Bridge.ILunyObject,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   parent: Luny.Engine.Services.LunyObjectServiceBase
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
   name: Clone(ILunyObject, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   nameWithType: LunyObjectServiceBase.Clone(ILunyObject, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   fullName: Luny.Engine.Services.LunyObjectServiceBase.Clone(Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
+  nameWithType.vb: LunyObjectServiceBase.Clone(ILunyObject, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Engine.Services.LunyObjectServiceBase.Clone(Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: Clone(ILunyObject, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
   spec.csharp:
   - uid: Luny.Engine.Services.LunyObjectServiceBase.Clone(Luny.Engine.Bridge.ILunyObject,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
     name: Clone
@@ -873,22 +988,43 @@ references:
     isExternal: true
   - name: ','
   - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyQuaternion
     name: LunyQuaternion
     isExternal: true
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
-  - name: '?'
+  - name: )
   - name: )
 - uid: Luny.Unity.Services.UnityObjectService.Clone*
   commentId: Overload:Luny.Unity.Services.UnityObjectService.Clone
@@ -905,6 +1041,9 @@ references:
   name: Clone(ILunyObject, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   nameWithType: ILunyObjectService.Clone(ILunyObject, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
   fullName: Luny.Engine.Services.ILunyObjectService.Clone(Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
+  nameWithType.vb: ILunyObjectService.Clone(ILunyObject, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Engine.Services.ILunyObjectService.Clone(Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: Clone(ILunyObject, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyObjectService.Clone(Luny.Engine.Bridge.ILunyObject,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
     name: Clone
@@ -961,44 +1100,65 @@ references:
     href: Luny.Engine.Bridge.ILunyObject.html
   - name: ','
   - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
     href: Luny.Engine.Bridge.LunyVector3.html
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyQuaternion
     name: LunyQuaternion
     isExternal: true
     href: Luny.Engine.Bridge.LunyQuaternion.html
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
     href: Luny.Engine.Bridge.LunyVector3.html
-  - name: '?'
+  - name: )
   - name: )
 - uid: Luny.Engine.Services.LunyObjectServiceBase.CreateEmpty(System.String,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   commentId: M:Luny.Engine.Services.LunyObjectServiceBase.CreateEmpty(System.String,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
   parent: Luny.Engine.Services.LunyObjectServiceBase
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: CreateEmpty(string, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  nameWithType: LunyObjectServiceBase.CreateEmpty(string, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName: Luny.Engine.Services.LunyObjectServiceBase.CreateEmpty(string, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
-  nameWithType.vb: LunyObjectServiceBase.CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName.vb: Luny.Engine.Services.LunyObjectServiceBase.CreateEmpty(String, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
-  name.vb: CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  name: CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  nameWithType: LunyObjectServiceBase.CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  fullName: Luny.Engine.Services.LunyObjectServiceBase.CreateEmpty(System.String, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
+  nameWithType.vb: LunyObjectServiceBase.CreateEmpty(String, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Engine.Services.LunyObjectServiceBase.CreateEmpty(System.String, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: CreateEmpty(String, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
   spec.csharp:
   - uid: Luny.Engine.Services.LunyObjectServiceBase.CreateEmpty(System.String,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
     name: CreateEmpty
     isExternal: true
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
@@ -1041,22 +1201,43 @@ references:
     isExternal: true
   - name: ','
   - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyQuaternion
     name: LunyQuaternion
     isExternal: true
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
-  - name: '?'
+  - name: )
   - name: )
 - uid: Luny.Unity.Services.UnityObjectService.CreateEmpty*
   commentId: Overload:Luny.Unity.Services.UnityObjectService.CreateEmpty
@@ -1070,12 +1251,12 @@ references:
   parent: Luny.Engine.Services.ILunyObjectService
   isExternal: true
   href: Luny.Engine.Services.ILunyObjectService.html#Luny_Engine_Services_ILunyObjectService_CreateEmpty_System_String_Luny_Engine_Bridge_ILunyObject_System_Nullable_Luny_Engine_Bridge_LunyVector3__System_Nullable_Luny_Engine_Bridge_LunyQuaternion__System_Nullable_Luny_Engine_Bridge_LunyVector3__
-  name: CreateEmpty(string, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  nameWithType: ILunyObjectService.CreateEmpty(string, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName: Luny.Engine.Services.ILunyObjectService.CreateEmpty(string, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
-  nameWithType.vb: ILunyObjectService.CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
-  fullName.vb: Luny.Engine.Services.ILunyObjectService.CreateEmpty(String, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
-  name.vb: CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  name: CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  nameWithType: ILunyObjectService.CreateEmpty(String, ILunyObject, LunyVector3?, LunyQuaternion?, LunyVector3?)
+  fullName: Luny.Engine.Services.ILunyObjectService.CreateEmpty(System.String, Luny.Engine.Bridge.ILunyObject, Luny.Engine.Bridge.LunyVector3?, Luny.Engine.Bridge.LunyQuaternion?, Luny.Engine.Bridge.LunyVector3?)
+  nameWithType.vb: ILunyObjectService.CreateEmpty(String, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
+  fullName.vb: Luny.Engine.Services.ILunyObjectService.CreateEmpty(System.String, Luny.Engine.Bridge.ILunyObject, System.Nullable(Of Luny.Engine.Bridge.LunyVector3), System.Nullable(Of Luny.Engine.Bridge.LunyQuaternion), System.Nullable(Of Luny.Engine.Bridge.LunyVector3))
+  name.vb: CreateEmpty(String, ILunyObject, Nullable(Of LunyVector3), Nullable(Of LunyQuaternion), Nullable(Of LunyVector3))
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyObjectService.CreateEmpty(System.String,Luny.Engine.Bridge.ILunyObject,System.Nullable{Luny.Engine.Bridge.LunyVector3},System.Nullable{Luny.Engine.Bridge.LunyQuaternion},System.Nullable{Luny.Engine.Bridge.LunyVector3})
     name: CreateEmpty
@@ -1083,7 +1264,7 @@ references:
     href: Luny.Engine.Services.ILunyObjectService.html#Luny_Engine_Services_ILunyObjectService_CreateEmpty_System_String_Luny_Engine_Bridge_ILunyObject_System_Nullable_Luny_Engine_Bridge_LunyVector3__System_Nullable_Luny_Engine_Bridge_LunyQuaternion__System_Nullable_Luny_Engine_Bridge_LunyVector3__
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
@@ -1132,25 +1313,46 @@ references:
     href: Luny.Engine.Bridge.ILunyObject.html
   - name: ','
   - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
     href: Luny.Engine.Bridge.LunyVector3.html
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyQuaternion
     name: LunyQuaternion
     isExternal: true
     href: Luny.Engine.Bridge.LunyQuaternion.html
-  - name: '?'
+  - name: )
   - name: ','
+  - name: " "
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
   - name: " "
   - uid: Luny.Engine.Bridge.LunyVector3
     name: LunyVector3
     isExternal: true
     href: Luny.Engine.Bridge.LunyVector3.html
-  - name: '?'
+  - name: )
   - name: )
 - uid: Luny.Unity.Services.UnityObjectService.#ctor*
   commentId: Overload:Luny.Unity.Services.UnityObjectService.#ctor

@@ -62,9 +62,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetDirection(string)
-  nameWithType: LunyInputServiceBase.GetDirection(string)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.GetDirection(string)
+  name: GetDirection(String)
+  nameWithType: LunyInputServiceBase.GetDirection(String)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetDirection(System.String)
   type: Method
   assemblies:
   - Luny
@@ -72,19 +72,16 @@ items:
   summary: Gets last known axis vector for the named action.
   example: []
   syntax:
-    content: public LunyVector2 GetDirection(string actionName)
+    content: public LunyVector2 GetDirection(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Function GetDirection(actionName As String) As LunyVector2
+    content.vb: Public Function GetDirection(actionName As [String]) As LunyVector2
   overload: Luny.Engine.Services.LunyInputServiceBase.GetDirection*
   implements:
   - Luny.Engine.Services.ILunyInputService.GetDirection(System.String)
-  nameWithType.vb: LunyInputServiceBase.GetDirection(String)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetDirection(String)
-  name.vb: GetDirection(String)
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
   id: GetRotation(System.String)
@@ -92,9 +89,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetRotation(string)
-  nameWithType: LunyInputServiceBase.GetRotation(string)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.GetRotation(string)
+  name: GetRotation(String)
+  nameWithType: LunyInputServiceBase.GetRotation(String)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String)
   type: Method
   assemblies:
   - Luny
@@ -102,19 +99,16 @@ items:
   summary: Gets last known axis vector as rotation (quaternion). Assumes positive Y is up vector.
   example: []
   syntax:
-    content: public LunyQuaternion GetRotation(string actionName)
+    content: public LunyQuaternion GetRotation(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: Luny.Engine.Bridge.LunyQuaternion
-    content.vb: Public Function GetRotation(actionName As String) As LunyQuaternion
+    content.vb: Public Function GetRotation(actionName As [String]) As LunyQuaternion
   overload: Luny.Engine.Services.LunyInputServiceBase.GetRotation*
   implements:
   - Luny.Engine.Services.ILunyInputService.GetRotation(System.String)
-  nameWithType.vb: LunyInputServiceBase.GetRotation(String)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetRotation(String)
-  name.vb: GetRotation(String)
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
   id: GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
@@ -122,9 +116,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetRotation(string, LunyVector3)
-  nameWithType: LunyInputServiceBase.GetRotation(string, LunyVector3)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.GetRotation(string, Luny.Engine.Bridge.LunyVector3)
+  name: GetRotation(String, LunyVector3)
+  nameWithType: LunyInputServiceBase.GetRotation(String, LunyVector3)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetRotation(System.String, Luny.Engine.Bridge.LunyVector3)
   type: Method
   assemblies:
   - Luny
@@ -132,7 +126,7 @@ items:
   summary: Gets last known axis vector as rotation (quaternion) with custom up vector.
   example: []
   syntax:
-    content: public LunyQuaternion GetRotation(string actionName, LunyVector3 worldUp)
+    content: public LunyQuaternion GetRotation(String actionName, LunyVector3 worldUp)
     parameters:
     - id: actionName
       type: System.String
@@ -140,13 +134,10 @@ items:
       type: Luny.Engine.Bridge.LunyVector3
     return:
       type: Luny.Engine.Bridge.LunyQuaternion
-    content.vb: Public Function GetRotation(actionName As String, worldUp As LunyVector3) As LunyQuaternion
+    content.vb: Public Function GetRotation(actionName As [String], worldUp As LunyVector3) As LunyQuaternion
   overload: Luny.Engine.Services.LunyInputServiceBase.GetRotation*
   implements:
   - Luny.Engine.Services.ILunyInputService.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
-  nameWithType.vb: LunyInputServiceBase.GetRotation(String, LunyVector3)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetRotation(String, Luny.Engine.Bridge.LunyVector3)
-  name.vb: GetRotation(String, LunyVector3)
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)
   id: GetAxis(System.String)
@@ -154,9 +145,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetAxis(string)
-  nameWithType: LunyInputServiceBase.GetAxis(string)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.GetAxis(string)
+  name: GetAxis(String)
+  nameWithType: LunyInputServiceBase.GetAxis(String)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetAxis(System.String)
   type: Method
   assemblies:
   - Luny
@@ -164,19 +155,16 @@ items:
   summary: Gets the analog trigger value (0.0–1.0) for the named button action.
   example: []
   syntax:
-    content: public float GetAxis(string actionName)
+    content: public Single GetAxis(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: System.Single
-    content.vb: Public Function GetAxis(actionName As String) As Single
+    content.vb: Public Function GetAxis(actionName As [String]) As [Single]
   overload: Luny.Engine.Services.LunyInputServiceBase.GetAxis*
   implements:
   - Luny.Engine.Services.ILunyInputService.GetAxis(System.String)
-  nameWithType.vb: LunyInputServiceBase.GetAxis(String)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetAxis(String)
-  name.vb: GetAxis(String)
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
   id: GetButtonStrength(System.String)
@@ -184,9 +172,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetButtonStrength(string)
-  nameWithType: LunyInputServiceBase.GetButtonStrength(string)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(string)
+  name: GetButtonStrength(String)
+  nameWithType: LunyInputServiceBase.GetButtonStrength(String)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(System.String)
   type: Method
   assemblies:
   - Luny
@@ -194,19 +182,16 @@ items:
   summary: Returns a button's pressed strength. Used by triggers configured to act like buttons.
   example: []
   syntax:
-    content: public float GetButtonStrength(string actionName)
+    content: public Single GetButtonStrength(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: System.Single
-    content.vb: Public Function GetButtonStrength(actionName As String) As Single
+    content.vb: Public Function GetButtonStrength(actionName As [String]) As [Single]
   overload: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength*
   implements:
   - Luny.Engine.Services.ILunyInputService.GetButtonStrength(System.String)
-  nameWithType.vb: LunyInputServiceBase.GetButtonStrength(String)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength(String)
-  name.vb: GetButtonStrength(String)
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
   id: GetButtonPressed(System.String)
@@ -214,9 +199,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetButtonPressed(string)
-  nameWithType: LunyInputServiceBase.GetButtonPressed(string)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(string)
+  name: GetButtonPressed(String)
+  nameWithType: LunyInputServiceBase.GetButtonPressed(String)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(System.String)
   type: Method
   assemblies:
   - Luny
@@ -224,19 +209,16 @@ items:
   summary: True while button is held.
   example: []
   syntax:
-    content: public bool GetButtonPressed(string actionName)
+    content: public Boolean GetButtonPressed(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: System.Boolean
-    content.vb: Public Function GetButtonPressed(actionName As String) As Boolean
+    content.vb: Public Function GetButtonPressed(actionName As [String]) As [Boolean]
   overload: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed*
   implements:
   - Luny.Engine.Services.ILunyInputService.GetButtonPressed(System.String)
-  nameWithType.vb: LunyInputServiceBase.GetButtonPressed(String)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetButtonPressed(String)
-  name.vb: GetButtonPressed(String)
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
   id: GetButtonJustPressed(System.String)
@@ -244,9 +226,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetButtonJustPressed(string)
-  nameWithType: LunyInputServiceBase.GetButtonJustPressed(string)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(string)
+  name: GetButtonJustPressed(String)
+  nameWithType: LunyInputServiceBase.GetButtonJustPressed(String)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(System.String)
   type: Method
   assemblies:
   - Luny
@@ -254,19 +236,16 @@ items:
   summary: True only on the frame the button transitioned to pressed.
   example: []
   syntax:
-    content: public bool GetButtonJustPressed(string actionName)
+    content: public Boolean GetButtonJustPressed(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: System.Boolean
-    content.vb: Public Function GetButtonJustPressed(actionName As String) As Boolean
+    content.vb: Public Function GetButtonJustPressed(actionName As [String]) As [Boolean]
   overload: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed*
   implements:
   - Luny.Engine.Services.ILunyInputService.GetButtonJustPressed(System.String)
-  nameWithType.vb: LunyInputServiceBase.GetButtonJustPressed(String)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed(String)
-  name.vb: GetButtonJustPressed(String)
 - uid: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(System.String[])
   id: SetControlSchemes(System.String[])
@@ -274,9 +253,9 @@ items:
   langs:
   - csharp
   - vb
-  name: SetControlSchemes(params string[])
-  nameWithType: LunyInputServiceBase.SetControlSchemes(params string[])
-  fullName: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(params string[])
+  name: SetControlSchemes(params String[])
+  nameWithType: LunyInputServiceBase.SetControlSchemes(params String[])
+  fullName: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(params System.String[])
   type: Method
   assemblies:
   - Luny
@@ -284,16 +263,16 @@ items:
   summary: Activate a given control scheme eg `Gamepad` or `Keyboard&Mouse` to prevent other device input from coming through.
   example: []
   syntax:
-    content: public abstract void SetControlSchemes(params string[] schemeNames)
+    content: public abstract void SetControlSchemes(params String[] schemeNames)
     parameters:
     - id: schemeNames
       type: System.String[]
-    content.vb: Public MustOverride Sub SetControlSchemes(ParamArray schemeNames As String())
+    content.vb: Public MustOverride Sub SetControlSchemes(ParamArray schemeNames As [String]())
   overload: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes*
   implements:
   - Luny.Engine.Services.ILunyInputService.SetControlSchemes(System.String[])
   nameWithType.vb: LunyInputServiceBase.SetControlSchemes(ParamArray String())
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(ParamArray String())
+  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.SetControlSchemes(ParamArray System.String())
   name.vb: SetControlSchemes(ParamArray String())
 - uid: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
@@ -302,16 +281,16 @@ items:
   langs:
   - csharp
   - vb
-  name: AssignUserToLastDevice(string, int, ILunyObject)
-  nameWithType: LunyInputServiceBase.AssignUserToLastDevice(string, int, ILunyObject)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(string, int, Luny.Engine.Bridge.ILunyObject)
+  name: AssignUserToLastDevice(String, Int32, ILunyObject)
+  nameWithType: LunyInputServiceBase.AssignUserToLastDevice(String, Int32, ILunyObject)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(System.String, System.Int32, Luny.Engine.Bridge.ILunyObject)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   example: []
   syntax:
-    content: public abstract void AssignUserToLastDevice(string userName, int deviceId, ILunyObject lunyObject)
+    content: public abstract void AssignUserToLastDevice(String userName, Int32 deviceId, ILunyObject lunyObject)
     parameters:
     - id: userName
       type: System.String
@@ -319,13 +298,10 @@ items:
       type: System.Int32
     - id: lunyObject
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Public MustOverride Sub AssignUserToLastDevice(userName As String, deviceId As Integer, lunyObject As ILunyObject)
+    content.vb: Public MustOverride Sub AssignUserToLastDevice(userName As [String], deviceId As Int32, lunyObject As ILunyObject)
   overload: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice*
   implements:
   - Luny.Engine.Services.ILunyInputService.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
-  nameWithType.vb: LunyInputServiceBase.AssignUserToLastDevice(String, Integer, ILunyObject)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.AssignUserToLastDevice(String, Integer, Luny.Engine.Bridge.ILunyObject)
-  name.vb: AssignUserToLastDevice(String, Integer, ILunyObject)
 - uid: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)
   id: UnassignUser(System.String)
@@ -333,26 +309,23 @@ items:
   langs:
   - csharp
   - vb
-  name: UnassignUser(string)
-  nameWithType: LunyInputServiceBase.UnassignUser(string)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(string)
+  name: UnassignUser(String)
+  nameWithType: LunyInputServiceBase.UnassignUser(String)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   example: []
   syntax:
-    content: public abstract void UnassignUser(string userName)
+    content: public abstract void UnassignUser(String userName)
     parameters:
     - id: userName
       type: System.String
-    content.vb: Public MustOverride Sub UnassignUser(userName As String)
+    content.vb: Public MustOverride Sub UnassignUser(userName As [String])
   overload: Luny.Engine.Services.LunyInputServiceBase.UnassignUser*
   implements:
   - Luny.Engine.Services.ILunyInputService.UnassignUser(System.String)
-  nameWithType.vb: LunyInputServiceBase.UnassignUser(String)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.UnassignUser(String)
-  name.vb: UnassignUser(String)
 - uid: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String,System.Int32)
   id: IsUserPairedWithDevice(System.String,System.Int32)
@@ -360,16 +333,16 @@ items:
   langs:
   - csharp
   - vb
-  name: IsUserPairedWithDevice(string, int)
-  nameWithType: LunyInputServiceBase.IsUserPairedWithDevice(string, int)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(string, int)
+  name: IsUserPairedWithDevice(String, Int32)
+  nameWithType: LunyInputServiceBase.IsUserPairedWithDevice(String, Int32)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(System.String, System.Int32)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   example: []
   syntax:
-    content: public abstract bool IsUserPairedWithDevice(string userName, int deviceId)
+    content: public abstract Boolean IsUserPairedWithDevice(String userName, Int32 deviceId)
     parameters:
     - id: userName
       type: System.String
@@ -377,13 +350,10 @@ items:
       type: System.Int32
     return:
       type: System.Boolean
-    content.vb: Public MustOverride Function IsUserPairedWithDevice(userName As String, deviceId As Integer) As Boolean
+    content.vb: Public MustOverride Function IsUserPairedWithDevice(userName As [String], deviceId As Int32) As [Boolean]
   overload: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice*
   implements:
   - Luny.Engine.Services.ILunyInputService.IsUserPairedWithDevice(System.String,System.Int32)
-  nameWithType.vb: LunyInputServiceBase.IsUserPairedWithDevice(String, Integer)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.IsUserPairedWithDevice(String, Integer)
-  name.vb: IsUserPairedWithDevice(String, Integer)
 - uid: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String,System.Boolean)
   id: EnableInputAction(System.String,System.Boolean)
@@ -391,28 +361,25 @@ items:
   langs:
   - csharp
   - vb
-  name: EnableInputAction(string, bool)
-  nameWithType: LunyInputServiceBase.EnableInputAction(string, bool)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(string, bool)
+  name: EnableInputAction(String, Boolean)
+  nameWithType: LunyInputServiceBase.EnableInputAction(String, Boolean)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(System.String, System.Boolean)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   example: []
   syntax:
-    content: public abstract void EnableInputAction(string actionName, bool enable)
+    content: public abstract void EnableInputAction(String actionName, Boolean enable)
     parameters:
     - id: actionName
       type: System.String
     - id: enable
       type: System.Boolean
-    content.vb: Public MustOverride Sub EnableInputAction(actionName As String, enable As Boolean)
+    content.vb: Public MustOverride Sub EnableInputAction(actionName As [String], enable As [Boolean])
   overload: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction*
   implements:
   - Luny.Engine.Services.ILunyInputService.EnableInputAction(System.String,System.Boolean)
-  nameWithType.vb: LunyInputServiceBase.EnableInputAction(String, Boolean)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.EnableInputAction(String, Boolean)
-  name.vb: EnableInputAction(String, Boolean)
 - uid: Luny.Engine.Services.LunyInputServiceBase.SetDirectionalInput(System.String,Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.SetDirectionalInput(System.String,Luny.Engine.Bridge.LunyVector2)
   id: SetDirectionalInput(System.String,Luny.Engine.Bridge.LunyVector2)
@@ -420,25 +387,22 @@ items:
   langs:
   - csharp
   - vb
-  name: SetDirectionalInput(string, LunyVector2)
-  nameWithType: LunyInputServiceBase.SetDirectionalInput(string, LunyVector2)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.SetDirectionalInput(string, Luny.Engine.Bridge.LunyVector2)
+  name: SetDirectionalInput(String, LunyVector2)
+  nameWithType: LunyInputServiceBase.SetDirectionalInput(String, LunyVector2)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.SetDirectionalInput(System.String, Luny.Engine.Bridge.LunyVector2)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   syntax:
-    content: protected void SetDirectionalInput(string actionName, LunyVector2 value)
+    content: protected void SetDirectionalInput(String actionName, LunyVector2 value)
     parameters:
     - id: actionName
       type: System.String
     - id: value
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Protected Sub SetDirectionalInput(actionName As String, value As LunyVector2)
+    content.vb: Protected Sub SetDirectionalInput(actionName As [String], value As LunyVector2)
   overload: Luny.Engine.Services.LunyInputServiceBase.SetDirectionalInput*
-  nameWithType.vb: LunyInputServiceBase.SetDirectionalInput(String, LunyVector2)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.SetDirectionalInput(String, Luny.Engine.Bridge.LunyVector2)
-  name.vb: SetDirectionalInput(String, LunyVector2)
 - uid: Luny.Engine.Services.LunyInputServiceBase.SetAxisInput(System.String,System.Single)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.SetAxisInput(System.String,System.Single)
   id: SetAxisInput(System.String,System.Single)
@@ -446,25 +410,22 @@ items:
   langs:
   - csharp
   - vb
-  name: SetAxisInput(string, float)
-  nameWithType: LunyInputServiceBase.SetAxisInput(string, float)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.SetAxisInput(string, float)
+  name: SetAxisInput(String, Single)
+  nameWithType: LunyInputServiceBase.SetAxisInput(String, Single)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.SetAxisInput(System.String, System.Single)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   syntax:
-    content: protected void SetAxisInput(string actionName, float value)
+    content: protected void SetAxisInput(String actionName, Single value)
     parameters:
     - id: actionName
       type: System.String
     - id: value
       type: System.Single
-    content.vb: Protected Sub SetAxisInput(actionName As String, value As Single)
+    content.vb: Protected Sub SetAxisInput(actionName As [String], value As [Single])
   overload: Luny.Engine.Services.LunyInputServiceBase.SetAxisInput*
-  nameWithType.vb: LunyInputServiceBase.SetAxisInput(String, Single)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.SetAxisInput(String, Single)
-  name.vb: SetAxisInput(String, Single)
 - uid: Luny.Engine.Services.LunyInputServiceBase.SetButtonInput(System.String,System.Boolean,System.Single)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.SetButtonInput(System.String,System.Boolean,System.Single)
   id: SetButtonInput(System.String,System.Boolean,System.Single)
@@ -472,15 +433,15 @@ items:
   langs:
   - csharp
   - vb
-  name: SetButtonInput(string, bool, float)
-  nameWithType: LunyInputServiceBase.SetButtonInput(string, bool, float)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.SetButtonInput(string, bool, float)
+  name: SetButtonInput(String, Boolean, Single)
+  nameWithType: LunyInputServiceBase.SetButtonInput(String, Boolean, Single)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.SetButtonInput(System.String, System.Boolean, System.Single)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   syntax:
-    content: protected void SetButtonInput(string actionName, bool pressed, float strength = 1)
+    content: protected void SetButtonInput(String actionName, Boolean pressed, Single strength = 1)
     parameters:
     - id: actionName
       type: System.String
@@ -488,11 +449,8 @@ items:
       type: System.Boolean
     - id: strength
       type: System.Single
-    content.vb: Protected Sub SetButtonInput(actionName As String, pressed As Boolean, strength As Single = 1)
+    content.vb: Protected Sub SetButtonInput(actionName As [String], pressed As [Boolean], strength As [Single] = 1)
   overload: Luny.Engine.Services.LunyInputServiceBase.SetButtonInput*
-  nameWithType.vb: LunyInputServiceBase.SetButtonInput(String, Boolean, Single)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.SetButtonInput(String, Boolean, Single)
-  name.vb: SetButtonInput(String, Boolean, Single)
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetOrCreateInputActionEvent(System.String)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.GetOrCreateInputActionEvent(System.String)
   id: GetOrCreateInputActionEvent(System.String)
@@ -500,25 +458,22 @@ items:
   langs:
   - csharp
   - vb
-  name: GetOrCreateInputActionEvent(string)
-  nameWithType: LunyInputServiceBase.GetOrCreateInputActionEvent(string)
-  fullName: Luny.Engine.Services.LunyInputServiceBase.GetOrCreateInputActionEvent(string)
+  name: GetOrCreateInputActionEvent(String)
+  nameWithType: LunyInputServiceBase.GetOrCreateInputActionEvent(String)
+  fullName: Luny.Engine.Services.LunyInputServiceBase.GetOrCreateInputActionEvent(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   syntax:
-    content: protected LunyInputActionEvent GetOrCreateInputActionEvent(string actionName)
+    content: protected LunyInputActionEvent GetOrCreateInputActionEvent(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: Luny.Engine.Bridge.LunyInputActionEvent
-    content.vb: Protected Function GetOrCreateInputActionEvent(actionName As String) As LunyInputActionEvent
+    content.vb: Protected Function GetOrCreateInputActionEvent(actionName As [String]) As LunyInputActionEvent
   overload: Luny.Engine.Services.LunyInputServiceBase.GetOrCreateInputActionEvent*
-  nameWithType.vb: LunyInputServiceBase.GetOrCreateInputActionEvent(String)
-  fullName.vb: Luny.Engine.Services.LunyInputServiceBase.GetOrCreateInputActionEvent(String)
-  name.vb: GetOrCreateInputActionEvent(String)
 - uid: Luny.Engine.Services.LunyInputServiceBase.HandleInputActionEvent(Luny.Engine.Bridge.LunyInputActionEvent)
   commentId: M:Luny.Engine.Services.LunyInputServiceBase.HandleInputActionEvent(Luny.Engine.Bridge.LunyInputActionEvent)
   id: HandleInputActionEvent(Luny.Engine.Bridge.LunyInputActionEvent)
@@ -688,12 +643,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Services.LunyEngineServiceBase
   commentId: T:Luny.Engine.Services.LunyEngineServiceBase
   parent: Luny.Engine.Services
@@ -869,12 +821,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetDirection_System_String_
-  name: GetDirection(string)
-  nameWithType: ILunyInputService.GetDirection(string)
-  fullName: Luny.Engine.Services.ILunyInputService.GetDirection(string)
-  nameWithType.vb: ILunyInputService.GetDirection(String)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.GetDirection(String)
-  name.vb: GetDirection(String)
+  name: GetDirection(String)
+  nameWithType: ILunyInputService.GetDirection(String)
+  fullName: Luny.Engine.Services.ILunyInputService.GetDirection(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.GetDirection(System.String)
     name: GetDirection
@@ -882,7 +831,7 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetDirection_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -902,12 +851,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyVector2
   commentId: T:Luny.Engine.Bridge.LunyVector2
   parent: Luny.Engine.Bridge
@@ -965,12 +911,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetRotation_System_String_
-  name: GetRotation(string)
-  nameWithType: ILunyInputService.GetRotation(string)
-  fullName: Luny.Engine.Services.ILunyInputService.GetRotation(string)
-  nameWithType.vb: ILunyInputService.GetRotation(String)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.GetRotation(String)
-  name.vb: GetRotation(String)
+  name: GetRotation(String)
+  nameWithType: ILunyInputService.GetRotation(String)
+  fullName: Luny.Engine.Services.ILunyInputService.GetRotation(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.GetRotation(System.String)
     name: GetRotation
@@ -978,7 +921,7 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetRotation_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -1006,12 +949,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetRotation_System_String_Luny_Engine_Bridge_LunyVector3_
-  name: GetRotation(string, LunyVector3)
-  nameWithType: ILunyInputService.GetRotation(string, LunyVector3)
-  fullName: Luny.Engine.Services.ILunyInputService.GetRotation(string, Luny.Engine.Bridge.LunyVector3)
-  nameWithType.vb: ILunyInputService.GetRotation(String, LunyVector3)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.GetRotation(String, Luny.Engine.Bridge.LunyVector3)
-  name.vb: GetRotation(String, LunyVector3)
+  name: GetRotation(String, LunyVector3)
+  nameWithType: ILunyInputService.GetRotation(String, LunyVector3)
+  fullName: Luny.Engine.Services.ILunyInputService.GetRotation(System.String, Luny.Engine.Bridge.LunyVector3)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.GetRotation(System.String,Luny.Engine.Bridge.LunyVector3)
     name: GetRotation
@@ -1019,7 +959,7 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetRotation_System_String_Luny_Engine_Bridge_LunyVector3_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
@@ -1066,12 +1006,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetAxis_System_String_
-  name: GetAxis(string)
-  nameWithType: ILunyInputService.GetAxis(string)
-  fullName: Luny.Engine.Services.ILunyInputService.GetAxis(string)
-  nameWithType.vb: ILunyInputService.GetAxis(String)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.GetAxis(String)
-  name.vb: GetAxis(String)
+  name: GetAxis(String)
+  nameWithType: ILunyInputService.GetAxis(String)
+  fullName: Luny.Engine.Services.ILunyInputService.GetAxis(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.GetAxis(System.String)
     name: GetAxis
@@ -1079,7 +1016,7 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetAxis_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -1099,12 +1036,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength*
   commentId: Overload:Luny.Engine.Services.LunyInputServiceBase.GetButtonStrength
   isExternal: true
@@ -1117,12 +1051,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetButtonStrength_System_String_
-  name: GetButtonStrength(string)
-  nameWithType: ILunyInputService.GetButtonStrength(string)
-  fullName: Luny.Engine.Services.ILunyInputService.GetButtonStrength(string)
-  nameWithType.vb: ILunyInputService.GetButtonStrength(String)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.GetButtonStrength(String)
-  name.vb: GetButtonStrength(String)
+  name: GetButtonStrength(String)
+  nameWithType: ILunyInputService.GetButtonStrength(String)
+  fullName: Luny.Engine.Services.ILunyInputService.GetButtonStrength(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.GetButtonStrength(System.String)
     name: GetButtonStrength
@@ -1130,7 +1061,7 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetButtonStrength_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -1157,12 +1088,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetButtonPressed_System_String_
-  name: GetButtonPressed(string)
-  nameWithType: ILunyInputService.GetButtonPressed(string)
-  fullName: Luny.Engine.Services.ILunyInputService.GetButtonPressed(string)
-  nameWithType.vb: ILunyInputService.GetButtonPressed(String)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.GetButtonPressed(String)
-  name.vb: GetButtonPressed(String)
+  name: GetButtonPressed(String)
+  nameWithType: ILunyInputService.GetButtonPressed(String)
+  fullName: Luny.Engine.Services.ILunyInputService.GetButtonPressed(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.GetButtonPressed(System.String)
     name: GetButtonPressed
@@ -1170,7 +1098,7 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetButtonPressed_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -1190,12 +1118,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed*
   commentId: Overload:Luny.Engine.Services.LunyInputServiceBase.GetButtonJustPressed
   isExternal: true
@@ -1208,12 +1133,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetButtonJustPressed_System_String_
-  name: GetButtonJustPressed(string)
-  nameWithType: ILunyInputService.GetButtonJustPressed(string)
-  fullName: Luny.Engine.Services.ILunyInputService.GetButtonJustPressed(string)
-  nameWithType.vb: ILunyInputService.GetButtonJustPressed(String)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.GetButtonJustPressed(String)
-  name.vb: GetButtonJustPressed(String)
+  name: GetButtonJustPressed(String)
+  nameWithType: ILunyInputService.GetButtonJustPressed(String)
+  fullName: Luny.Engine.Services.ILunyInputService.GetButtonJustPressed(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.GetButtonJustPressed(System.String)
     name: GetButtonJustPressed
@@ -1221,7 +1143,7 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_GetButtonJustPressed_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -1248,11 +1170,11 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_SetControlSchemes_System_String___
-  name: SetControlSchemes(params string[])
-  nameWithType: ILunyInputService.SetControlSchemes(params string[])
-  fullName: Luny.Engine.Services.ILunyInputService.SetControlSchemes(params string[])
+  name: SetControlSchemes(params String[])
+  nameWithType: ILunyInputService.SetControlSchemes(params String[])
+  fullName: Luny.Engine.Services.ILunyInputService.SetControlSchemes(params System.String[])
   nameWithType.vb: ILunyInputService.SetControlSchemes(ParamArray String())
-  fullName.vb: Luny.Engine.Services.ILunyInputService.SetControlSchemes(ParamArray String())
+  fullName.vb: Luny.Engine.Services.ILunyInputService.SetControlSchemes(ParamArray System.String())
   name.vb: SetControlSchemes(ParamArray String())
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.SetControlSchemes(System.String[])
@@ -1263,7 +1185,7 @@ references:
   - name: params
   - name: " "
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
@@ -1287,15 +1209,15 @@ references:
 - uid: System.String[]
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string[]
-  nameWithType: string[]
-  fullName: string[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
   nameWithType.vb: String()
-  fullName.vb: String()
+  fullName.vb: System.String()
   name.vb: String()
   spec.csharp:
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
@@ -1319,12 +1241,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_AssignUserToLastDevice_System_String_System_Int32_Luny_Engine_Bridge_ILunyObject_
-  name: AssignUserToLastDevice(string, int, ILunyObject)
-  nameWithType: ILunyInputService.AssignUserToLastDevice(string, int, ILunyObject)
-  fullName: Luny.Engine.Services.ILunyInputService.AssignUserToLastDevice(string, int, Luny.Engine.Bridge.ILunyObject)
-  nameWithType.vb: ILunyInputService.AssignUserToLastDevice(String, Integer, ILunyObject)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.AssignUserToLastDevice(String, Integer, Luny.Engine.Bridge.ILunyObject)
-  name.vb: AssignUserToLastDevice(String, Integer, ILunyObject)
+  name: AssignUserToLastDevice(String, Int32, ILunyObject)
+  nameWithType: ILunyInputService.AssignUserToLastDevice(String, Int32, ILunyObject)
+  fullName: Luny.Engine.Services.ILunyInputService.AssignUserToLastDevice(System.String, System.Int32, Luny.Engine.Bridge.ILunyObject)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.AssignUserToLastDevice(System.String,System.Int32,Luny.Engine.Bridge.ILunyObject)
     name: AssignUserToLastDevice
@@ -1332,13 +1251,13 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_AssignUserToLastDevice_System_String_System_Int32_Luny_Engine_Bridge_ILunyObject_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
-    name: int
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
@@ -1361,7 +1280,7 @@ references:
   - name: ','
   - name: " "
   - uid: System.Int32
-    name: Integer
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
@@ -1376,12 +1295,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Luny.Engine.Bridge.ILunyObject
   commentId: T:Luny.Engine.Bridge.ILunyObject
   parent: Luny.Engine.Bridge
@@ -1402,12 +1318,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_UnassignUser_System_String_
-  name: UnassignUser(string)
-  nameWithType: ILunyInputService.UnassignUser(string)
-  fullName: Luny.Engine.Services.ILunyInputService.UnassignUser(string)
-  nameWithType.vb: ILunyInputService.UnassignUser(String)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.UnassignUser(String)
-  name.vb: UnassignUser(String)
+  name: UnassignUser(String)
+  nameWithType: ILunyInputService.UnassignUser(String)
+  fullName: Luny.Engine.Services.ILunyInputService.UnassignUser(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.UnassignUser(System.String)
     name: UnassignUser
@@ -1415,7 +1328,7 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_UnassignUser_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -1442,12 +1355,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_IsUserPairedWithDevice_System_String_System_Int32_
-  name: IsUserPairedWithDevice(string, int)
-  nameWithType: ILunyInputService.IsUserPairedWithDevice(string, int)
-  fullName: Luny.Engine.Services.ILunyInputService.IsUserPairedWithDevice(string, int)
-  nameWithType.vb: ILunyInputService.IsUserPairedWithDevice(String, Integer)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.IsUserPairedWithDevice(String, Integer)
-  name.vb: IsUserPairedWithDevice(String, Integer)
+  name: IsUserPairedWithDevice(String, Int32)
+  nameWithType: ILunyInputService.IsUserPairedWithDevice(String, Int32)
+  fullName: Luny.Engine.Services.ILunyInputService.IsUserPairedWithDevice(System.String, System.Int32)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.IsUserPairedWithDevice(System.String,System.Int32)
     name: IsUserPairedWithDevice
@@ -1455,13 +1365,13 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_IsUserPairedWithDevice_System_String_System_Int32_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
-    name: int
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
@@ -1478,7 +1388,7 @@ references:
   - name: ','
   - name: " "
   - uid: System.Int32
-    name: Integer
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
@@ -1494,12 +1404,9 @@ references:
   parent: Luny.Engine.Services.ILunyInputService
   isExternal: true
   href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_EnableInputAction_System_String_System_Boolean_
-  name: EnableInputAction(string, bool)
-  nameWithType: ILunyInputService.EnableInputAction(string, bool)
-  fullName: Luny.Engine.Services.ILunyInputService.EnableInputAction(string, bool)
-  nameWithType.vb: ILunyInputService.EnableInputAction(String, Boolean)
-  fullName.vb: Luny.Engine.Services.ILunyInputService.EnableInputAction(String, Boolean)
-  name.vb: EnableInputAction(String, Boolean)
+  name: EnableInputAction(String, Boolean)
+  nameWithType: ILunyInputService.EnableInputAction(String, Boolean)
+  fullName: Luny.Engine.Services.ILunyInputService.EnableInputAction(System.String, System.Boolean)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyInputService.EnableInputAction(System.String,System.Boolean)
     name: EnableInputAction
@@ -1507,13 +1414,13 @@ references:
     href: Luny.Engine.Services.ILunyInputService.html#Luny_Engine_Services_ILunyInputService_EnableInputAction_System_String_System_Boolean_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Boolean
-    name: bool
+    name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )

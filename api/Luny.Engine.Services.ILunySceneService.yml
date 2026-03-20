@@ -53,9 +53,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetObjects(IReadOnlyCollection<string>)
-  nameWithType: ILunySceneService.GetObjects(IReadOnlyCollection<string>)
-  fullName: Luny.Engine.Services.ILunySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection<string>)
+  name: GetObjects(IReadOnlyCollection<String>)
+  nameWithType: ILunySceneService.GetObjects(IReadOnlyCollection<String>)
+  fullName: Luny.Engine.Services.ILunySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection<System.String>)
   type: Method
   assemblies:
   - Luny
@@ -63,16 +63,16 @@ items:
   summary: Gets objects with matching names in the current scene. Creates LunyObject instances.
   example: []
   syntax:
-    content: IReadOnlyList<ILunyObject> GetObjects(IReadOnlyCollection<string> objectNames)
+    content: IReadOnlyList<ILunyObject> GetObjects(IReadOnlyCollection<String> objectNames)
     parameters:
     - id: objectNames
       type: System.Collections.Generic.IReadOnlyCollection{System.String}
     return:
       type: System.Collections.Generic.IReadOnlyList{Luny.Engine.Bridge.ILunyObject}
-    content.vb: Function GetObjects(objectNames As IReadOnlyCollection(Of String)) As IReadOnlyList(Of ILunyObject)
+    content.vb: Function GetObjects(objectNames As IReadOnlyCollection(Of [String])) As IReadOnlyList(Of ILunyObject)
   overload: Luny.Engine.Services.ILunySceneService.GetObjects*
   nameWithType.vb: ILunySceneService.GetObjects(IReadOnlyCollection(Of String))
-  fullName.vb: Luny.Engine.Services.ILunySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection(Of String))
+  fullName.vb: Luny.Engine.Services.ILunySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection(Of System.String))
   name.vb: GetObjects(IReadOnlyCollection(Of String))
 - uid: Luny.Engine.Services.ILunySceneService.FindObjectByName(System.String)
   commentId: M:Luny.Engine.Services.ILunySceneService.FindObjectByName(System.String)
@@ -81,9 +81,9 @@ items:
   langs:
   - csharp
   - vb
-  name: FindObjectByName(string)
-  nameWithType: ILunySceneService.FindObjectByName(string)
-  fullName: Luny.Engine.Services.ILunySceneService.FindObjectByName(string)
+  name: FindObjectByName(String)
+  nameWithType: ILunySceneService.FindObjectByName(String)
+  fullName: Luny.Engine.Services.ILunySceneService.FindObjectByName(System.String)
   type: Method
   assemblies:
   - Luny
@@ -91,17 +91,14 @@ items:
   summary: Finds a LunyObject by name in the current scene.
   example: []
   syntax:
-    content: ILunyObject FindObjectByName(string name)
+    content: ILunyObject FindObjectByName(String name)
     parameters:
     - id: name
       type: System.String
     return:
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Function FindObjectByName(name As String) As ILunyObject
+    content.vb: Function FindObjectByName(name As [String]) As ILunyObject
   overload: Luny.Engine.Services.ILunySceneService.FindObjectByName*
-  nameWithType.vb: ILunySceneService.FindObjectByName(String)
-  fullName.vb: Luny.Engine.Services.ILunySceneService.FindObjectByName(String)
-  name.vb: FindObjectByName(String)
 - uid: Luny.Engine.Services.ILunySceneService.CurrentScene
   commentId: P:Luny.Engine.Services.ILunySceneService.CurrentScene
   id: CurrentScene
@@ -180,11 +177,11 @@ references:
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyCollection`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
-  name: IReadOnlyCollection<string>
-  nameWithType: IReadOnlyCollection<string>
-  fullName: System.Collections.Generic.IReadOnlyCollection<string>
+  name: IReadOnlyCollection<String>
+  nameWithType: IReadOnlyCollection<String>
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.String>
   nameWithType.vb: IReadOnlyCollection(Of String)
-  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of System.String)
   name.vb: IReadOnlyCollection(Of String)
   spec.csharp:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
@@ -193,7 +190,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   - name: <
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
@@ -350,12 +347,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.ILunyObject
   commentId: T:Luny.Engine.Bridge.ILunyObject
   parent: Luny.Engine.Bridge

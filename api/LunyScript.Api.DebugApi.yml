@@ -69,9 +69,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Log(string)
-  nameWithType: DebugApi.Log(string)
-  fullName: LunyScript.Api.DebugApi.Log(string)
+  name: Log(String)
+  nameWithType: DebugApi.Log(String)
+  fullName: LunyScript.Api.DebugApi.Log(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -79,7 +79,7 @@ items:
   summary: Logs a message. Alias for LogInfo().
   example: []
   syntax:
-    content: public ActionBlock Log(string message)
+    content: public ActionBlock Log(String message)
     parameters:
     - id: message
       type: System.String
@@ -87,11 +87,8 @@ items:
     return:
       type: LunyScript.Blocks.ActionBlock
       description: ''
-    content.vb: Public Function Log(message As String) As ActionBlock
+    content.vb: Public Function Log(message As [String]) As ActionBlock
   overload: LunyScript.Api.DebugApi.Log*
-  nameWithType.vb: DebugApi.Log(String)
-  fullName.vb: LunyScript.Api.DebugApi.Log(String)
-  name.vb: Log(String)
 - uid: LunyScript.Api.DebugApi.Log(System.String[])
   commentId: M:LunyScript.Api.DebugApi.Log(System.String[])
   id: Log(System.String[])
@@ -99,24 +96,24 @@ items:
   langs:
   - csharp
   - vb
-  name: Log(params string[])
-  nameWithType: DebugApi.Log(params string[])
-  fullName: LunyScript.Api.DebugApi.Log(params string[])
+  name: Log(params String[])
+  nameWithType: DebugApi.Log(params String[])
+  fullName: LunyScript.Api.DebugApi.Log(params System.String[])
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ActionBlock Log(params string[] messages)
+    content: public ActionBlock Log(params String[] messages)
     parameters:
     - id: messages
       type: System.String[]
     return:
       type: LunyScript.Blocks.ActionBlock
-    content.vb: Public Function Log(ParamArray messages As String()) As ActionBlock
+    content.vb: Public Function Log(ParamArray messages As [String]()) As ActionBlock
   overload: LunyScript.Api.DebugApi.Log*
   nameWithType.vb: DebugApi.Log(ParamArray String())
-  fullName.vb: LunyScript.Api.DebugApi.Log(ParamArray String())
+  fullName.vb: LunyScript.Api.DebugApi.Log(ParamArray System.String())
   name.vb: Log(ParamArray String())
 - uid: LunyScript.Api.DebugApi.LogInfo(LunyScript.Blocks.VariableBlock)
   commentId: M:LunyScript.Api.DebugApi.LogInfo(LunyScript.Blocks.VariableBlock)
@@ -152,9 +149,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfo(string)
-  nameWithType: DebugApi.LogInfo(string)
-  fullName: LunyScript.Api.DebugApi.LogInfo(string)
+  name: LogInfo(String)
+  nameWithType: DebugApi.LogInfo(String)
+  fullName: LunyScript.Api.DebugApi.LogInfo(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -165,17 +162,14 @@ items:
     Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined.
   example: []
   syntax:
-    content: public ActionBlock LogInfo(string message)
+    content: public ActionBlock LogInfo(String message)
     parameters:
     - id: message
       type: System.String
     return:
       type: LunyScript.Blocks.ActionBlock
-    content.vb: Public Function LogInfo(message As String) As ActionBlock
+    content.vb: Public Function LogInfo(message As [String]) As ActionBlock
   overload: LunyScript.Api.DebugApi.LogInfo*
-  nameWithType.vb: DebugApi.LogInfo(String)
-  fullName.vb: LunyScript.Api.DebugApi.LogInfo(String)
-  name.vb: LogInfo(String)
 - uid: LunyScript.Api.DebugApi.LogWarning(System.String)
   commentId: M:LunyScript.Api.DebugApi.LogWarning(System.String)
   id: LogWarning(System.String)
@@ -183,9 +177,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogWarning(string)
-  nameWithType: DebugApi.LogWarning(string)
-  fullName: LunyScript.Api.DebugApi.LogWarning(string)
+  name: LogWarning(String)
+  nameWithType: DebugApi.LogWarning(String)
+  fullName: LunyScript.Api.DebugApi.LogWarning(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -196,17 +190,14 @@ items:
     Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
   example: []
   syntax:
-    content: public ActionBlock LogWarning(string message)
+    content: public ActionBlock LogWarning(String message)
     parameters:
     - id: message
       type: System.String
     return:
       type: LunyScript.Blocks.ActionBlock
-    content.vb: Public Function LogWarning(message As String) As ActionBlock
+    content.vb: Public Function LogWarning(message As [String]) As ActionBlock
   overload: LunyScript.Api.DebugApi.LogWarning*
-  nameWithType.vb: DebugApi.LogWarning(String)
-  fullName.vb: LunyScript.Api.DebugApi.LogWarning(String)
-  name.vb: LogWarning(String)
 - uid: LunyScript.Api.DebugApi.LogError(System.String)
   commentId: M:LunyScript.Api.DebugApi.LogError(System.String)
   id: LogError(System.String)
@@ -214,9 +205,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LogError(string)
-  nameWithType: DebugApi.LogError(string)
-  fullName: LunyScript.Api.DebugApi.LogError(string)
+  name: LogError(String)
+  nameWithType: DebugApi.LogError(String)
+  fullName: LunyScript.Api.DebugApi.LogError(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -227,17 +218,14 @@ items:
     Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
   example: []
   syntax:
-    content: public ActionBlock LogError(string message)
+    content: public ActionBlock LogError(String message)
     parameters:
     - id: message
       type: System.String
     return:
       type: LunyScript.Blocks.ActionBlock
-    content.vb: Public Function LogError(message As String) As ActionBlock
+    content.vb: Public Function LogError(message As [String]) As ActionBlock
   overload: LunyScript.Api.DebugApi.LogError*
-  nameWithType.vb: DebugApi.LogError(String)
-  fullName.vb: LunyScript.Api.DebugApi.LogError(String)
-  name.vb: LogError(String)
 - uid: LunyScript.Api.DebugApi.Break(System.String)
   commentId: M:LunyScript.Api.DebugApi.Break(System.String)
   id: Break(System.String)
@@ -245,9 +233,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Break(string)
-  nameWithType: DebugApi.Break(string)
-  fullName: LunyScript.Api.DebugApi.Break(string)
+  name: Break(String)
+  nameWithType: DebugApi.Break(String)
+  fullName: LunyScript.Api.DebugApi.Break(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -260,17 +248,14 @@ items:
     Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.
   example: []
   syntax:
-    content: public ActionBlock Break(string message = null)
+    content: public ActionBlock Break(String message = null)
     parameters:
     - id: message
       type: System.String
     return:
       type: LunyScript.Blocks.ActionBlock
-    content.vb: Public Function Break(message As String = Nothing) As ActionBlock
+    content.vb: Public Function Break(message As [String] = Nothing) As ActionBlock
   overload: LunyScript.Api.DebugApi.Break*
-  nameWithType.vb: DebugApi.Break(String)
-  fullName.vb: LunyScript.Api.DebugApi.Break(String)
-  name.vb: Break(String)
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -304,12 +289,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -317,7 +299,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -444,24 +426,21 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: System.String[]
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string[]
-  nameWithType: string[]
-  fullName: string[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
   nameWithType.vb: String()
-  fullName.vb: String()
+  fullName.vb: System.String()
   name.vb: String()
   spec.csharp:
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['

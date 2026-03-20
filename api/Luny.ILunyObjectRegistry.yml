@@ -39,7 +39,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: bool TryGetByLunyID(LunyObjectId lunyObjectID, out ILunyObject lunyObject)
+    content: Boolean TryGetByLunyID(LunyObjectId lunyObjectID, out ILunyObject lunyObject)
     parameters:
     - id: lunyObjectID
       type: Luny.Engine.Bridge.LunyObjectId
@@ -47,7 +47,7 @@ items:
       type: Luny.Engine.Bridge.ILunyObject
     return:
       type: System.Boolean
-    content.vb: Function TryGetByLunyID(lunyObjectID As LunyObjectId, lunyObject As ILunyObject) As Boolean
+    content.vb: Function TryGetByLunyID(lunyObjectID As LunyObjectId, lunyObject As ILunyObject) As [Boolean]
   overload: Luny.ILunyObjectRegistry.TryGetByLunyID*
   nameWithType.vb: ILunyObjectRegistry.TryGetByLunyID(LunyObjectId, ILunyObject)
   fullName.vb: Luny.ILunyObjectRegistry.TryGetByLunyID(Luny.Engine.Bridge.LunyObjectId, Luny.Engine.Bridge.ILunyObject)
@@ -67,7 +67,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: bool TryGetByNativeId(LunyNativeObjectId lunyNativeObjectID, out ILunyObject lunyObject)
+    content: Boolean TryGetByNativeId(LunyNativeObjectId lunyNativeObjectID, out ILunyObject lunyObject)
     parameters:
     - id: lunyNativeObjectID
       type: Luny.Engine.Bridge.LunyNativeObjectId
@@ -75,7 +75,7 @@ items:
       type: Luny.Engine.Bridge.ILunyObject
     return:
       type: System.Boolean
-    content.vb: Function TryGetByNativeId(lunyNativeObjectID As LunyNativeObjectId, lunyObject As ILunyObject) As Boolean
+    content.vb: Function TryGetByNativeId(lunyNativeObjectID As LunyNativeObjectId, lunyObject As ILunyObject) As [Boolean]
   overload: Luny.ILunyObjectRegistry.TryGetByNativeId*
   nameWithType.vb: ILunyObjectRegistry.TryGetByNativeId(LunyNativeObjectId, ILunyObject)
   fullName.vb: Luny.ILunyObjectRegistry.TryGetByNativeId(Luny.Engine.Bridge.LunyNativeObjectId, Luny.Engine.Bridge.ILunyObject)
@@ -87,25 +87,22 @@ items:
   langs:
   - csharp
   - vb
-  name: GetCached(string)
-  nameWithType: ILunyObjectRegistry.GetCached(string)
-  fullName: Luny.ILunyObjectRegistry.GetCached(string)
+  name: GetCached(String)
+  nameWithType: ILunyObjectRegistry.GetCached(String)
+  fullName: Luny.ILunyObjectRegistry.GetCached(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: ILunyObject GetCached(string objectName)
+    content: ILunyObject GetCached(String objectName)
     parameters:
     - id: objectName
       type: System.String
     return:
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Function GetCached(objectName As String) As ILunyObject
+    content.vb: Function GetCached(objectName As [String]) As ILunyObject
   overload: Luny.ILunyObjectRegistry.GetCached*
-  nameWithType.vb: ILunyObjectRegistry.GetCached(String)
-  fullName.vb: Luny.ILunyObjectRegistry.GetCached(String)
-  name.vb: GetCached(String)
 - uid: Luny.ILunyObjectRegistry.Find(System.String)
   commentId: M:Luny.ILunyObjectRegistry.Find(System.String)
   id: Find(System.String)
@@ -113,25 +110,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Find(string)
-  nameWithType: ILunyObjectRegistry.Find(string)
-  fullName: Luny.ILunyObjectRegistry.Find(string)
+  name: Find(String)
+  nameWithType: ILunyObjectRegistry.Find(String)
+  fullName: Luny.ILunyObjectRegistry.Find(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: ILunyObject Find(string objectName)
+    content: ILunyObject Find(String objectName)
     parameters:
     - id: objectName
       type: System.String
     return:
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Function Find(objectName As String) As ILunyObject
+    content.vb: Function Find(objectName As [String]) As ILunyObject
   overload: Luny.ILunyObjectRegistry.Find*
-  nameWithType.vb: ILunyObjectRegistry.Find(String)
-  fullName.vb: Luny.ILunyObjectRegistry.Find(String)
-  name.vb: Find(String)
 - uid: Luny.ILunyObjectRegistry.Count
   commentId: P:Luny.ILunyObjectRegistry.Count
   id: Count
@@ -147,11 +141,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: int Count { get; }
+    content: Int32 Count { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: ReadOnly Property Count As Integer
+    content.vb: ReadOnly Property Count As Int32
   overload: Luny.ILunyObjectRegistry.Count*
 - uid: Luny.ILunyObjectRegistry.AllObjects
   commentId: P:Luny.ILunyObjectRegistry.AllObjects
@@ -210,12 +204,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Bridge
   commentId: N:Luny.Engine.Bridge
   isExternal: true
@@ -287,12 +278,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.ILunyObjectRegistry.Find*
   commentId: Overload:Luny.ILunyObjectRegistry.Find
   isExternal: true
@@ -312,12 +300,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Luny.ILunyObjectRegistry.AllObjects*
   commentId: Overload:Luny.ILunyObjectRegistry.AllObjects
   isExternal: true

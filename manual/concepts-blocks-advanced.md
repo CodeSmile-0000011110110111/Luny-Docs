@@ -62,7 +62,7 @@ public override void Build(ScriptBuildContext context)
 }
 ```
 
-This will instantiate `Enemy_1` to `Enemy_10` using the `Enemy.prefab` asset.
+This will instantiate `Enemy_1` to `Enemy_10` with the `Assets/Prefabs/Enemy.prefab` asset.
 
 ## Using Runtime Loops
 

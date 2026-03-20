@@ -250,11 +250,11 @@ items:
     Use the <xref href="Luny.Engine.Bridge.ILunyObject.Cast%60%601" data-throw-if-not-resolved="false"></xref> or <xref href="Luny.Engine.Bridge.ILunyObject.As%60%601" data-throw-if-not-resolved="false"></xref> methods to avoid manually casting the reference.
   example: []
   syntax:
-    content: object NativeObject { get; }
+    content: Object NativeObject { get; }
     parameters: []
     return:
       type: System.Object
-    content.vb: ReadOnly Property NativeObject As Object
+    content.vb: ReadOnly Property NativeObject As [Object]
   overload: Luny.Engine.Bridge.ILunyObject.NativeObject*
 - uid: Luny.Engine.Bridge.ILunyObject.Transform
   commentId: P:Luny.Engine.Bridge.ILunyObject.Transform
@@ -297,11 +297,11 @@ items:
   remarks: To aid debugging, this property remains valid even after the object has been destroyed.
   example: []
   syntax:
-    content: string Name { get; set; }
+    content: String Name { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Property Name As String
+    content.vb: Property Name As [String]
   overload: Luny.Engine.Bridge.ILunyObject.Name*
 - uid: Luny.Engine.Bridge.ILunyObject.IsValid
   commentId: P:Luny.Engine.Bridge.ILunyObject.IsValid
@@ -320,11 +320,11 @@ items:
   summary: Whether the object and its native representation are valid (not null, not destroyed).
   example: []
   syntax:
-    content: bool IsValid { get; }
+    content: Boolean IsValid { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: ReadOnly Property IsValid As Boolean
+    content.vb: ReadOnly Property IsValid As [Boolean]
   overload: Luny.Engine.Bridge.ILunyObject.IsValid*
 - uid: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
   commentId: P:Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
@@ -343,11 +343,11 @@ items:
   summary: Is true when Destroy() was called on the NativeObject and it was set to null.
   example: []
   syntax:
-    content: bool IsNativeObjectValid { get; }
+    content: Boolean IsNativeObjectValid { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: ReadOnly Property IsNativeObjectValid As Boolean
+    content.vb: ReadOnly Property IsNativeObjectValid As [Boolean]
   overload: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid*
 - uid: Luny.Engine.Bridge.ILunyObject.IsEnabled
   commentId: P:Luny.Engine.Bridge.ILunyObject.IsEnabled
@@ -372,11 +372,11 @@ items:
     the object's IsVisible state will also change to true.
   example: []
   syntax:
-    content: bool IsEnabled { get; set; }
+    content: Boolean IsEnabled { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Property IsEnabled As Boolean
+    content.vb: Property IsEnabled As [Boolean]
   overload: Luny.Engine.Bridge.ILunyObject.IsEnabled*
 - uid: Luny.Engine.Bridge.ILunyObject.IsEnabledInHierarchy
   commentId: P:Luny.Engine.Bridge.ILunyObject.IsEnabledInHierarchy
@@ -395,11 +395,11 @@ items:
   summary: Returns true only if BOTH the object itself AND all of its parents are enabled. Otherwise returns false.
   example: []
   syntax:
-    content: bool IsEnabledInHierarchy { get; }
+    content: Boolean IsEnabledInHierarchy { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: ReadOnly Property IsEnabledInHierarchy As Boolean
+    content.vb: ReadOnly Property IsEnabledInHierarchy As [Boolean]
   overload: Luny.Engine.Bridge.ILunyObject.IsEnabledInHierarchy*
 - uid: Luny.Engine.Bridge.ILunyObject.IsVisible
   commentId: P:Luny.Engine.Bridge.ILunyObject.IsVisible
@@ -422,11 +422,11 @@ items:
     be outside the camera's frame, obstructed by other objects, fully transparent, scaled infinitely small, etc.
   example: []
   syntax:
-    content: bool IsVisible { get; set; }
+    content: Boolean IsVisible { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Property IsVisible As Boolean
+    content.vb: Property IsVisible As [Boolean]
   overload: Luny.Engine.Bridge.ILunyObject.IsVisible*
 - uid: Luny.Engine.Bridge.ILunyObject.OnCreated
   commentId: E:Luny.Engine.Bridge.ILunyObject.OnCreated
@@ -1000,12 +1000,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -1032,12 +1029,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.ILunyObject.IsValid*
   commentId: Overload:Luny.Engine.Bridge.ILunyObject.IsValid
   isExternal: true
@@ -1050,12 +1044,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid*
   commentId: Overload:Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
   isExternal: true

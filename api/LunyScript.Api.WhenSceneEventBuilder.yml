@@ -65,9 +65,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Loaded(string, params ActionBlock[])
-  nameWithType: WhenSceneEventBuilder.Loaded(string, params ActionBlock[])
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Loaded(string, params LunyScript.Blocks.ActionBlock[])
+  name: Loaded(String, params ActionBlock[])
+  nameWithType: WhenSceneEventBuilder.Loaded(String, params ActionBlock[])
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Loaded(System.String, params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -75,7 +75,7 @@ items:
   summary: Runs when a scene has loaded.
   example: []
   syntax:
-    content: public ISequenceBlock Loaded(string sceneName, params ActionBlock[] blocks)
+    content: public ISequenceBlock Loaded(String sceneName, params ActionBlock[] blocks)
     parameters:
     - id: sceneName
       type: System.String
@@ -86,14 +86,14 @@ items:
     return:
       type: LunyScript.Blocks.ISequenceBlock
       description: ''
-    content.vb: Public Function Loaded(sceneName As String, ParamArray blocks As ActionBlock()) As ISequenceBlock
+    content.vb: Public Function Loaded(sceneName As [String], ParamArray blocks As ActionBlock()) As ISequenceBlock
   overload: LunyScript.Api.WhenSceneEventBuilder.Loaded*
   exceptions:
   - type: System.NotImplementedException
     commentId: T:System.NotImplementedException
     description: ''
   nameWithType.vb: WhenSceneEventBuilder.Loaded(String, ParamArray ActionBlock())
-  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Loaded(String, ParamArray LunyScript.Blocks.ActionBlock())
+  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Loaded(System.String, ParamArray LunyScript.Blocks.ActionBlock())
   name.vb: Loaded(String, ParamArray ActionBlock())
 - uid: LunyScript.Api.WhenSceneEventBuilder.Unloaded(LunyScript.Blocks.ActionBlock[])
   commentId: M:LunyScript.Api.WhenSceneEventBuilder.Unloaded(LunyScript.Blocks.ActionBlock[])
@@ -132,9 +132,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Unloaded(string, params ActionBlock[])
-  nameWithType: WhenSceneEventBuilder.Unloaded(string, params ActionBlock[])
-  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloaded(string, params LunyScript.Blocks.ActionBlock[])
+  name: Unloaded(String, params ActionBlock[])
+  nameWithType: WhenSceneEventBuilder.Unloaded(String, params ActionBlock[])
+  fullName: LunyScript.Api.WhenSceneEventBuilder.Unloaded(System.String, params LunyScript.Blocks.ActionBlock[])
   type: Method
   assemblies:
   - LunyScript
@@ -142,7 +142,7 @@ items:
   summary: Runs when a scene has unloaded.
   example: []
   syntax:
-    content: public ISequenceBlock Unloaded(string sceneName, params ActionBlock[] blocks)
+    content: public ISequenceBlock Unloaded(String sceneName, params ActionBlock[] blocks)
     parameters:
     - id: sceneName
       type: System.String
@@ -153,14 +153,14 @@ items:
     return:
       type: LunyScript.Blocks.ISequenceBlock
       description: ''
-    content.vb: Public Function Unloaded(sceneName As String, ParamArray blocks As ActionBlock()) As ISequenceBlock
+    content.vb: Public Function Unloaded(sceneName As [String], ParamArray blocks As ActionBlock()) As ISequenceBlock
   overload: LunyScript.Api.WhenSceneEventBuilder.Unloaded*
   exceptions:
   - type: System.NotImplementedException
     commentId: T:System.NotImplementedException
     description: ''
   nameWithType.vb: WhenSceneEventBuilder.Unloaded(String, ParamArray ActionBlock())
-  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Unloaded(String, ParamArray LunyScript.Blocks.ActionBlock())
+  fullName.vb: LunyScript.Api.WhenSceneEventBuilder.Unloaded(System.String, ParamArray LunyScript.Blocks.ActionBlock())
   name.vb: Unloaded(String, ParamArray ActionBlock())
 references:
 - uid: LunyScript.Api
@@ -195,12 +195,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -208,7 +205,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -357,12 +354,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Api.WhenSceneEventBuilder.Unloaded*
   commentId: Overload:LunyScript.Api.WhenSceneEventBuilder.Unloaded
   isExternal: true

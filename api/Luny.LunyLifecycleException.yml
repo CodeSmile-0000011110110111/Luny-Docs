@@ -50,22 +50,22 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyLifecycleException(string)
-  nameWithType: LunyLifecycleException.LunyLifecycleException(string)
-  fullName: Luny.LunyLifecycleException.LunyLifecycleException(string)
+  name: LunyLifecycleException(String)
+  nameWithType: LunyLifecycleException.LunyLifecycleException(String)
+  fullName: Luny.LunyLifecycleException.LunyLifecycleException(System.String)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public LunyLifecycleException(string message)
+    content: public LunyLifecycleException(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Public Sub New(message As String)
+    content.vb: Public Sub New(message As [String])
   overload: Luny.LunyLifecycleException.#ctor*
   nameWithType.vb: LunyLifecycleException.New(String)
-  fullName.vb: Luny.LunyLifecycleException.New(String)
+  fullName.vb: Luny.LunyLifecycleException.New(System.String)
   name.vb: New(String)
 references:
 - uid: Luny
@@ -79,12 +79,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.Exception
   commentId: T:System.Exception
   parent: System
@@ -340,9 +337,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

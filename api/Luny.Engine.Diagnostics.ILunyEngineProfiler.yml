@@ -62,11 +62,11 @@ items:
   - Luny
   namespace: Luny.Engine.Diagnostics
   syntax:
-    content: int RollingAverageWindow { get; set; }
+    content: Int32 RollingAverageWindow { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Property RollingAverageWindow As Integer
+    content.vb: Property RollingAverageWindow As Int32
   overload: Luny.Engine.Diagnostics.ILunyEngineProfiler.RollingAverageWindow*
 references:
 - uid: Luny.Engine.Diagnostics
@@ -133,12 +133,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: System
   commentId: N:System
   isExternal: true

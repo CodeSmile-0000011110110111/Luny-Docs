@@ -36,9 +36,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Speed<T>(TransformPositionBuilder<T>, double)
-  nameWithType: TransformMoveBuilderExtensions.Speed<T>(TransformPositionBuilder<T>, double)
-  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Speed<T>(LunyScript.Api.TransformPositionBuilder<T>, double)
+  name: Speed<T>(TransformPositionBuilder<T>, Double)
+  nameWithType: TransformMoveBuilderExtensions.Speed<T>(TransformPositionBuilder<T>, Double)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Speed<T>(LunyScript.Api.TransformPositionBuilder<T>, System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -46,7 +46,7 @@ items:
   summary: Movement speed in units per second (for linear) or lerp factor (for <code>Lerp()</code>/<code>Slerp()</code>).
   example: []
   syntax:
-    content: 'public static TransformPositionBuilder<TransformBuilderReady> Speed<T>(this TransformPositionBuilder<T> b, double speed) where T : struct, ITransformBuilderReady'
+    content: 'public static TransformPositionBuilder<TransformBuilderReady> Speed<T>(this TransformPositionBuilder<T> b, Double speed) where T : struct, ITransformBuilderReady'
     parameters:
     - id: b
       type: LunyScript.Api.TransformPositionBuilder{{T}}
@@ -56,10 +56,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
-    content.vb: Public Shared Function Speed(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T), speed As Double) As TransformPositionBuilder(Of TransformBuilderReady)
+    content.vb: Public Shared Function Speed(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T), speed As [Double]) As TransformPositionBuilder(Of TransformBuilderReady)
   overload: LunyScript.Api.TransformMoveBuilderExtensions.Speed*
   nameWithType.vb: TransformMoveBuilderExtensions.Speed(Of T)(TransformPositionBuilder(Of T), Double)
-  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.Speed(Of T)(LunyScript.Api.TransformPositionBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.Speed(Of T)(LunyScript.Api.TransformPositionBuilder(Of T), System.Double)
   name.vb: Speed(Of T)(TransformPositionBuilder(Of T), Double)
 - uid: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
   commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.DeadZone``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
@@ -69,9 +69,9 @@ items:
   langs:
   - csharp
   - vb
-  name: DeadZone<T>(TransformPositionBuilder<T>, double)
-  nameWithType: TransformMoveBuilderExtensions.DeadZone<T>(TransformPositionBuilder<T>, double)
-  fullName: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone<T>(LunyScript.Api.TransformPositionBuilder<T>, double)
+  name: DeadZone<T>(TransformPositionBuilder<T>, Double)
+  nameWithType: TransformMoveBuilderExtensions.DeadZone<T>(TransformPositionBuilder<T>, Double)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone<T>(LunyScript.Api.TransformPositionBuilder<T>, System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -79,7 +79,7 @@ items:
   summary: Minimum distance threshold before movement begins (prevents micro-jitter).
   example: []
   syntax:
-    content: 'public static TransformPositionBuilder<TransformBuilderReady> DeadZone<T>(this TransformPositionBuilder<T> b, double deadZone) where T : struct, ITransformBuilderReady'
+    content: 'public static TransformPositionBuilder<TransformBuilderReady> DeadZone<T>(this TransformPositionBuilder<T> b, Double deadZone) where T : struct, ITransformBuilderReady'
     parameters:
     - id: b
       type: LunyScript.Api.TransformPositionBuilder{{T}}
@@ -89,10 +89,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
-    content.vb: Public Shared Function DeadZone(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T), deadZone As Double) As TransformPositionBuilder(Of TransformBuilderReady)
+    content.vb: Public Shared Function DeadZone(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T), deadZone As [Double]) As TransformPositionBuilder(Of TransformBuilderReady)
   overload: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone*
   nameWithType.vb: TransformMoveBuilderExtensions.DeadZone(Of T)(TransformPositionBuilder(Of T), Double)
-  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone(Of T)(LunyScript.Api.TransformPositionBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.DeadZone(Of T)(LunyScript.Api.TransformPositionBuilder(Of T), System.Double)
   name.vb: DeadZone(Of T)(TransformPositionBuilder(Of T), Double)
 - uid: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
   commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness``1(LunyScript.Api.TransformPositionBuilder{``0},System.Double)
@@ -102,9 +102,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Responsiveness<T>(TransformPositionBuilder<T>, double)
-  nameWithType: TransformMoveBuilderExtensions.Responsiveness<T>(TransformPositionBuilder<T>, double)
-  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness<T>(LunyScript.Api.TransformPositionBuilder<T>, double)
+  name: Responsiveness<T>(TransformPositionBuilder<T>, Double)
+  nameWithType: TransformMoveBuilderExtensions.Responsiveness<T>(TransformPositionBuilder<T>, Double)
+  fullName: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness<T>(LunyScript.Api.TransformPositionBuilder<T>, System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -112,7 +112,7 @@ items:
   summary: Multiplies delta time; larger values produce faster approach.
   example: []
   syntax:
-    content: 'public static TransformPositionBuilder<TransformBuilderReady> Responsiveness<T>(this TransformPositionBuilder<T> b, double responsiveness) where T : struct, ITransformBuilderReady'
+    content: 'public static TransformPositionBuilder<TransformBuilderReady> Responsiveness<T>(this TransformPositionBuilder<T> b, Double responsiveness) where T : struct, ITransformBuilderReady'
     parameters:
     - id: b
       type: LunyScript.Api.TransformPositionBuilder{{T}}
@@ -122,10 +122,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
-    content.vb: Public Shared Function Responsiveness(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T), responsiveness As Double) As TransformPositionBuilder(Of TransformBuilderReady)
+    content.vb: Public Shared Function Responsiveness(Of T As {Structure, ITransformBuilderReady})(b As TransformPositionBuilder(Of T), responsiveness As [Double]) As TransformPositionBuilder(Of TransformBuilderReady)
   overload: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness*
   nameWithType.vb: TransformMoveBuilderExtensions.Responsiveness(Of T)(TransformPositionBuilder(Of T), Double)
-  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness(Of T)(LunyScript.Api.TransformPositionBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TransformMoveBuilderExtensions.Responsiveness(Of T)(LunyScript.Api.TransformPositionBuilder(Of T), System.Double)
   name.vb: Responsiveness(Of T)(TransformPositionBuilder(Of T), Double)
 - uid: LunyScript.Api.TransformMoveBuilderExtensions.LockX``1(LunyScript.Api.TransformPositionBuilder{``0})
   commentId: M:LunyScript.Api.TransformMoveBuilderExtensions.LockX``1(LunyScript.Api.TransformPositionBuilder{``0})
@@ -314,12 +314,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -368,12 +365,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
   commentId: T:LunyScript.Api.TransformPositionBuilder{LunyScript.Api.TransformBuilderReady}
   parent: LunyScript.Api

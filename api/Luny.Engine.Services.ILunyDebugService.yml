@@ -36,25 +36,22 @@ items:
   langs:
   - csharp
   - vb
-  name: GetMethodName(string)
-  nameWithType: ILunyDebugService.GetMethodName(string)
-  fullName: Luny.Engine.Services.ILunyDebugService.GetMethodName(string)
+  name: GetMethodName(String)
+  nameWithType: ILunyDebugService.GetMethodName(String)
+  fullName: Luny.Engine.Services.ILunyDebugService.GetMethodName(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   syntax:
-    content: public static string GetMethodName(string name = "")
+    content: public static String GetMethodName(String name = "")
     parameters:
     - id: name
       type: System.String
     return:
       type: System.String
-    content.vb: Public Shared Function GetMethodName(name As String = "") As String
+    content.vb: Public Shared Function GetMethodName(name As [String] = "") As [String]
   overload: Luny.Engine.Services.ILunyDebugService.GetMethodName*
-  nameWithType.vb: ILunyDebugService.GetMethodName(String)
-  fullName.vb: Luny.Engine.Services.ILunyDebugService.GetMethodName(String)
-  name.vb: GetMethodName(String)
 - uid: Luny.Engine.Services.ILunyDebugService.LogInfo(System.String)
   commentId: M:Luny.Engine.Services.ILunyDebugService.LogInfo(System.String)
   id: LogInfo(System.String)
@@ -62,23 +59,20 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfo(string)
-  nameWithType: ILunyDebugService.LogInfo(string)
-  fullName: Luny.Engine.Services.ILunyDebugService.LogInfo(string)
+  name: LogInfo(String)
+  nameWithType: ILunyDebugService.LogInfo(String)
+  fullName: Luny.Engine.Services.ILunyDebugService.LogInfo(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   syntax:
-    content: void LogInfo(string message)
+    content: void LogInfo(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Sub LogInfo(message As String)
+    content.vb: Sub LogInfo(message As [String])
   overload: Luny.Engine.Services.ILunyDebugService.LogInfo*
-  nameWithType.vb: ILunyDebugService.LogInfo(String)
-  fullName.vb: Luny.Engine.Services.ILunyDebugService.LogInfo(String)
-  name.vb: LogInfo(String)
 - uid: Luny.Engine.Services.ILunyDebugService.LogWarning(System.String)
   commentId: M:Luny.Engine.Services.ILunyDebugService.LogWarning(System.String)
   id: LogWarning(System.String)
@@ -86,23 +80,20 @@ items:
   langs:
   - csharp
   - vb
-  name: LogWarning(string)
-  nameWithType: ILunyDebugService.LogWarning(string)
-  fullName: Luny.Engine.Services.ILunyDebugService.LogWarning(string)
+  name: LogWarning(String)
+  nameWithType: ILunyDebugService.LogWarning(String)
+  fullName: Luny.Engine.Services.ILunyDebugService.LogWarning(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   syntax:
-    content: void LogWarning(string message)
+    content: void LogWarning(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Sub LogWarning(message As String)
+    content.vb: Sub LogWarning(message As [String])
   overload: Luny.Engine.Services.ILunyDebugService.LogWarning*
-  nameWithType.vb: ILunyDebugService.LogWarning(String)
-  fullName.vb: Luny.Engine.Services.ILunyDebugService.LogWarning(String)
-  name.vb: LogWarning(String)
 - uid: Luny.Engine.Services.ILunyDebugService.LogError(System.String)
   commentId: M:Luny.Engine.Services.ILunyDebugService.LogError(System.String)
   id: LogError(System.String)
@@ -110,23 +101,20 @@ items:
   langs:
   - csharp
   - vb
-  name: LogError(string)
-  nameWithType: ILunyDebugService.LogError(string)
-  fullName: Luny.Engine.Services.ILunyDebugService.LogError(string)
+  name: LogError(String)
+  nameWithType: ILunyDebugService.LogError(String)
+  fullName: Luny.Engine.Services.ILunyDebugService.LogError(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Services
   syntax:
-    content: void LogError(string message)
+    content: void LogError(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Sub LogError(message As String)
+    content.vb: Sub LogError(message As [String])
   overload: Luny.Engine.Services.ILunyDebugService.LogError*
-  nameWithType.vb: ILunyDebugService.LogError(String)
-  fullName.vb: Luny.Engine.Services.ILunyDebugService.LogError(String)
-  name.vb: LogError(String)
 - uid: Luny.Engine.Services.ILunyDebugService.LogException(System.Exception)
   commentId: M:Luny.Engine.Services.ILunyDebugService.LogException(System.Exception)
   id: LogException(System.Exception)
@@ -198,12 +186,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: System
   commentId: N:System
   isExternal: true

@@ -286,11 +286,11 @@ items:
   - LunyScript
   namespace: LunyScript.Diagnostics
   syntax:
-    content: public int RollingAverageWindow { get; set; }
+    content: public Int32 RollingAverageWindow { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public Property RollingAverageWindow As Integer
+    content.vb: Public Property RollingAverageWindow As Int32
   overload: LunyScript.Diagnostics.ScriptBlockProfiler.RollingAverageWindow*
 references:
 - uid: LunyScript.Diagnostics
@@ -324,12 +324,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -433,9 +430,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

@@ -18,27 +18,48 @@ This is comparable to the `protected` / `private` access modifiers in C#.
 > Prefer to use `Var`. Use `GVar` only when you need to read/write same variable in multiple scripts/objects.
 > This reduces the risk of accidentally defining identically named global variables for different uses.
 
-## Define A Variable Value
+## Define A Script Variable 
 
 Before use, a variable should be defined. Optionally, an initial value can be set. Otherwise variables default to the value 0.
 
-```
+```csharp
 var zero = Var.Define("variable with default value 0");
-var number = Var.Define("integer variable", 123);
+var integer = Var.Define("integer variable", 123);
 ```
 
-## Get Or Create A Variable
+The type of a variable is defined by its initial value:
+
+```csharp
+var number = Var.Define("integer variable", 123.456);
+var boolean = Var.Define("integer variable", true);
+var text = Var.Define("integer variable", "Hello, Goodbye");
+```
+
+> [!TIP]
+> Script variables support duck typing: A variable's type changes based on what you assign to it.
+
+The [`Luny.Variable`](xref:Luny.Variable) type supports these types:
+
+- `System.String`
+- [`Luny.Number`](xref:Luny.Number)
+ 
+The [`Luny.Number`](xref:Luny.Number) type uses a `System.Double` as its internal representation, modeled after Lua's established `number` type. It implicitly converts to/from all integer and floating point types. This avoids compiler warnings/errors (eg "loss of data") which are largely irrelevant in game scripting.
+
+> [!NOTE]
+> A generic [`Luny.Variable<T>`](xref:Luny.Variable`1) type also exists to support any type (eg [`Luny.LunyVector3`](xref:Luny.Engine.Bridge.LunyVector3)). It is planned to be integrated in LunyScript.
+
+## Access A Script Variable
 
 Index `Var` or `GVar` with a variable name to access the variable:
 
-```
+```csharp
 var theNumber = Var["integer variable"];
 LunyLogger.LogInfo(theNumber.Value == Var["integer variable"].Value); // logs "true"
 ```
 
 This will also work if the variable has not been defined. In this case the returned variable will have a default value of 0:
 
-```
+```csharp
 // will return a new variable with the value 0 
 var newVar = Var["not defined"];
 ```
@@ -50,7 +71,7 @@ var newVar = Var["not defined"];
 
 Constants disallow changes at runtime, the value can only be set once via the `Constant()` method:
 
-```
+```csharp
 var lightspeed = Var.Constant("speed of light in vacuum (m/s)", 299792458);
 ```
 
@@ -63,7 +84,7 @@ Other than being read-only, constants and variables function identically.
 
 To set a variable during build time, use `SetImmediate()`: 
 
-```
+```csharp
 var newVar = Var["does not exist yet"];
 newVar.SetImmediate(959.697);
 newVar.Set(137.248); // returns a runnable block, won't change value until block runs!

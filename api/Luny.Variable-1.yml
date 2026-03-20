@@ -80,10 +80,10 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool AsBoolean()
+    content: public Boolean AsBoolean()
     return:
       type: System.Boolean
-    content.vb: Public Function AsBoolean() As Boolean
+    content.vb: Public Function AsBoolean() As [Boolean]
   overload: Luny.Variable`1.AsBoolean*
   nameWithType.vb: Variable(Of T).AsBoolean()
   fullName.vb: Luny.Variable(Of T).AsBoolean()
@@ -102,10 +102,10 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public double AsDouble()
+    content: public Double AsDouble()
     return:
       type: System.Double
-    content.vb: Public Function AsDouble() As Double
+    content.vb: Public Function AsDouble() As [Double]
   overload: Luny.Variable`1.AsDouble*
   nameWithType.vb: Variable(Of T).AsDouble()
   fullName.vb: Luny.Variable(Of T).AsDouble()
@@ -124,10 +124,10 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public string AsString()
+    content: public String AsString()
     return:
       type: System.String
-    content.vb: Public Function AsString() As String
+    content.vb: Public Function AsString() As [String]
   overload: Luny.Variable`1.AsString*
   nameWithType.vb: Variable(Of T).AsString()
   fullName.vb: Luny.Variable(Of T).AsString()
@@ -191,13 +191,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(Variable<T> other)
+    content: public Boolean Equals(Variable<T> other)
     parameters:
     - id: other
       type: Luny.Variable`1
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As Variable(Of T)) As Boolean
+    content.vb: Public Function Equals(other As Variable(Of T)) As [Boolean]
   overload: Luny.Variable`1.Equals*
   implements:
   - System.IEquatable{Luny.Variable`1}.Equals(Luny.Variable{{T}})
@@ -211,27 +211,26 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(object)
-  nameWithType: Variable<T>.Equals(object)
-  fullName: Luny.Variable<T>.Equals(object)
+  name: Equals(Object)
+  nameWithType: Variable<T>.Equals(Object)
+  fullName: Luny.Variable<T>.Equals(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public override bool Equals(object obj)
+    content: public override Boolean Equals(Object obj)
     parameters:
     - id: obj
       type: System.Object
     return:
       type: System.Boolean
-    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    content.vb: Public Overrides Function Equals(obj As [Object]) As [Boolean]
   overridden: System.ValueType.Equals(System.Object)
   overload: Luny.Variable`1.Equals*
   nameWithType.vb: Variable(Of T).Equals(Object)
-  fullName.vb: Luny.Variable(Of T).Equals(Object)
-  name.vb: Equals(Object)
+  fullName.vb: Luny.Variable(Of T).Equals(System.Object)
 - uid: Luny.Variable`1.GetHashCode
   commentId: M:Luny.Variable`1.GetHashCode
   id: GetHashCode
@@ -248,10 +247,10 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public override int GetHashCode()
+    content: public override Int32 GetHashCode()
     return:
       type: System.Int32
-    content.vb: Public Overrides Function GetHashCode() As Integer
+    content.vb: Public Overrides Function GetHashCode() As Int32
   overridden: System.ValueType.GetHashCode
   overload: Luny.Variable`1.GetHashCode*
   nameWithType.vb: Variable(Of T).GetHashCode()
@@ -271,7 +270,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator ==(Variable<T> left, Variable<T> right)
+    content: public static Boolean operator ==(Variable<T> left, Variable<T> right)
     parameters:
     - id: left
       type: Luny.Variable`1
@@ -279,7 +278,7 @@ items:
       type: Luny.Variable`1
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator =(left As Variable(Of T), right As Variable(Of T)) As Boolean
+    content.vb: Public Shared Operator =(left As Variable(Of T), right As Variable(Of T)) As [Boolean]
   overload: Luny.Variable`1.op_Equality*
   nameWithType.vb: Variable(Of T).=(Variable(Of T), Variable(Of T))
   fullName.vb: Luny.Variable(Of T).=(Luny.Variable(Of T), Luny.Variable(Of T))
@@ -299,7 +298,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator !=(Variable<T> left, Variable<T> right)
+    content: public static Boolean operator !=(Variable<T> left, Variable<T> right)
     parameters:
     - id: left
       type: Luny.Variable`1
@@ -307,7 +306,7 @@ items:
       type: Luny.Variable`1
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <>(left As Variable(Of T), right As Variable(Of T)) As Boolean
+    content.vb: Public Shared Operator <>(left As Variable(Of T), right As Variable(Of T)) As [Boolean]
   overload: Luny.Variable`1.op_Inequality*
   nameWithType.vb: Variable(Of T).<>(Variable(Of T), Variable(Of T))
   fullName.vb: Luny.Variable(Of T).<>(Luny.Variable(Of T), Luny.Variable(Of T))
@@ -380,10 +379,10 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.ValueType.ToString
   overload: Luny.Variable`1.ToString*
   nameWithType.vb: Variable(Of T).ToString()
@@ -554,12 +553,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Variable`1.AsDouble*
   commentId: Overload:Luny.Variable`1.AsDouble
   isExternal: true
@@ -574,12 +570,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Variable`1.AsString*
   commentId: Overload:Luny.Variable`1.AsString
   isExternal: true
@@ -594,12 +587,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Variable`1.AsVector2*
   commentId: Overload:Luny.Variable`1.AsVector2
   isExternal: true
@@ -780,12 +770,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -793,7 +780,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -810,12 +797,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.ValueType
   commentId: T:System.ValueType
   parent: System
@@ -860,12 +844,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Luny.Variable`1.op_Equality*
   commentId: Overload:Luny.Variable`1.op_Equality
   isExternal: true

@@ -36,9 +36,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Speed<T>(TransformScaleBuilder<T>, double)
-  nameWithType: TransformScaleBuilderExtensions.Speed<T>(TransformScaleBuilder<T>, double)
-  fullName: LunyScript.Api.TransformScaleBuilderExtensions.Speed<T>(LunyScript.Api.TransformScaleBuilder<T>, double)
+  name: Speed<T>(TransformScaleBuilder<T>, Double)
+  nameWithType: TransformScaleBuilderExtensions.Speed<T>(TransformScaleBuilder<T>, Double)
+  fullName: LunyScript.Api.TransformScaleBuilderExtensions.Speed<T>(LunyScript.Api.TransformScaleBuilder<T>, System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -46,7 +46,7 @@ items:
   summary: Scale speed in units per second (for linear) or lerp factor (for <code>Lerp()</code>/<code>Slerp()</code>).
   example: []
   syntax:
-    content: 'public static TransformScaleBuilder<TransformBuilderReady> Speed<T>(this TransformScaleBuilder<T> b, double speed) where T : struct, ITransformBuilderReady'
+    content: 'public static TransformScaleBuilder<TransformBuilderReady> Speed<T>(this TransformScaleBuilder<T> b, Double speed) where T : struct, ITransformBuilderReady'
     parameters:
     - id: b
       type: LunyScript.Api.TransformScaleBuilder{{T}}
@@ -56,10 +56,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TransformScaleBuilder{LunyScript.Api.TransformBuilderReady}
-    content.vb: Public Shared Function Speed(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T), speed As Double) As TransformScaleBuilder(Of TransformBuilderReady)
+    content.vb: Public Shared Function Speed(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T), speed As [Double]) As TransformScaleBuilder(Of TransformBuilderReady)
   overload: LunyScript.Api.TransformScaleBuilderExtensions.Speed*
   nameWithType.vb: TransformScaleBuilderExtensions.Speed(Of T)(TransformScaleBuilder(Of T), Double)
-  fullName.vb: LunyScript.Api.TransformScaleBuilderExtensions.Speed(Of T)(LunyScript.Api.TransformScaleBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TransformScaleBuilderExtensions.Speed(Of T)(LunyScript.Api.TransformScaleBuilder(Of T), System.Double)
   name.vb: Speed(Of T)(TransformScaleBuilder(Of T), Double)
 - uid: LunyScript.Api.TransformScaleBuilderExtensions.DeadZone``1(LunyScript.Api.TransformScaleBuilder{``0},System.Double)
   commentId: M:LunyScript.Api.TransformScaleBuilderExtensions.DeadZone``1(LunyScript.Api.TransformScaleBuilder{``0},System.Double)
@@ -69,9 +69,9 @@ items:
   langs:
   - csharp
   - vb
-  name: DeadZone<T>(TransformScaleBuilder<T>, double)
-  nameWithType: TransformScaleBuilderExtensions.DeadZone<T>(TransformScaleBuilder<T>, double)
-  fullName: LunyScript.Api.TransformScaleBuilderExtensions.DeadZone<T>(LunyScript.Api.TransformScaleBuilder<T>, double)
+  name: DeadZone<T>(TransformScaleBuilder<T>, Double)
+  nameWithType: TransformScaleBuilderExtensions.DeadZone<T>(TransformScaleBuilder<T>, Double)
+  fullName: LunyScript.Api.TransformScaleBuilderExtensions.DeadZone<T>(LunyScript.Api.TransformScaleBuilder<T>, System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -79,7 +79,7 @@ items:
   summary: Minimum scale-distance threshold before scaling begins (prevents micro-jitter).
   example: []
   syntax:
-    content: 'public static TransformScaleBuilder<TransformBuilderReady> DeadZone<T>(this TransformScaleBuilder<T> b, double deadZone) where T : struct, ITransformBuilderReady'
+    content: 'public static TransformScaleBuilder<TransformBuilderReady> DeadZone<T>(this TransformScaleBuilder<T> b, Double deadZone) where T : struct, ITransformBuilderReady'
     parameters:
     - id: b
       type: LunyScript.Api.TransformScaleBuilder{{T}}
@@ -89,10 +89,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TransformScaleBuilder{LunyScript.Api.TransformBuilderReady}
-    content.vb: Public Shared Function DeadZone(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T), deadZone As Double) As TransformScaleBuilder(Of TransformBuilderReady)
+    content.vb: Public Shared Function DeadZone(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T), deadZone As [Double]) As TransformScaleBuilder(Of TransformBuilderReady)
   overload: LunyScript.Api.TransformScaleBuilderExtensions.DeadZone*
   nameWithType.vb: TransformScaleBuilderExtensions.DeadZone(Of T)(TransformScaleBuilder(Of T), Double)
-  fullName.vb: LunyScript.Api.TransformScaleBuilderExtensions.DeadZone(Of T)(LunyScript.Api.TransformScaleBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TransformScaleBuilderExtensions.DeadZone(Of T)(LunyScript.Api.TransformScaleBuilder(Of T), System.Double)
   name.vb: DeadZone(Of T)(TransformScaleBuilder(Of T), Double)
 - uid: LunyScript.Api.TransformScaleBuilderExtensions.Responsiveness``1(LunyScript.Api.TransformScaleBuilder{``0},System.Double)
   commentId: M:LunyScript.Api.TransformScaleBuilderExtensions.Responsiveness``1(LunyScript.Api.TransformScaleBuilder{``0},System.Double)
@@ -102,9 +102,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Responsiveness<T>(TransformScaleBuilder<T>, double)
-  nameWithType: TransformScaleBuilderExtensions.Responsiveness<T>(TransformScaleBuilder<T>, double)
-  fullName: LunyScript.Api.TransformScaleBuilderExtensions.Responsiveness<T>(LunyScript.Api.TransformScaleBuilder<T>, double)
+  name: Responsiveness<T>(TransformScaleBuilder<T>, Double)
+  nameWithType: TransformScaleBuilderExtensions.Responsiveness<T>(TransformScaleBuilder<T>, Double)
+  fullName: LunyScript.Api.TransformScaleBuilderExtensions.Responsiveness<T>(LunyScript.Api.TransformScaleBuilder<T>, System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -112,7 +112,7 @@ items:
   summary: Multiplies delta time; larger values produce faster approach.
   example: []
   syntax:
-    content: 'public static TransformScaleBuilder<TransformBuilderReady> Responsiveness<T>(this TransformScaleBuilder<T> b, double responsiveness) where T : struct, ITransformBuilderReady'
+    content: 'public static TransformScaleBuilder<TransformBuilderReady> Responsiveness<T>(this TransformScaleBuilder<T> b, Double responsiveness) where T : struct, ITransformBuilderReady'
     parameters:
     - id: b
       type: LunyScript.Api.TransformScaleBuilder{{T}}
@@ -122,10 +122,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TransformScaleBuilder{LunyScript.Api.TransformBuilderReady}
-    content.vb: Public Shared Function Responsiveness(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T), responsiveness As Double) As TransformScaleBuilder(Of TransformBuilderReady)
+    content.vb: Public Shared Function Responsiveness(Of T As {Structure, ITransformBuilderReady})(b As TransformScaleBuilder(Of T), responsiveness As [Double]) As TransformScaleBuilder(Of TransformBuilderReady)
   overload: LunyScript.Api.TransformScaleBuilderExtensions.Responsiveness*
   nameWithType.vb: TransformScaleBuilderExtensions.Responsiveness(Of T)(TransformScaleBuilder(Of T), Double)
-  fullName.vb: LunyScript.Api.TransformScaleBuilderExtensions.Responsiveness(Of T)(LunyScript.Api.TransformScaleBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TransformScaleBuilderExtensions.Responsiveness(Of T)(LunyScript.Api.TransformScaleBuilder(Of T), System.Double)
   name.vb: Responsiveness(Of T)(TransformScaleBuilder(Of T), Double)
 - uid: LunyScript.Api.TransformScaleBuilderExtensions.LockX``1(LunyScript.Api.TransformScaleBuilder{``0})
   commentId: M:LunyScript.Api.TransformScaleBuilderExtensions.LockX``1(LunyScript.Api.TransformScaleBuilder{``0})
@@ -314,12 +314,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -368,12 +365,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: LunyScript.Api.TransformScaleBuilder{LunyScript.Api.TransformBuilderReady}
   commentId: T:LunyScript.Api.TransformScaleBuilder{LunyScript.Api.TransformBuilderReady}
   parent: LunyScript.Api

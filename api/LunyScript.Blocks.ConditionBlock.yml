@@ -131,13 +131,13 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static bool operator true(ConditionBlock _)
+    content: public static Boolean operator true(ConditionBlock _)
     parameters:
     - id: _
       type: LunyScript.Blocks.ConditionBlock
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator IsTrue(_ As ConditionBlock) As Boolean
+    content.vb: Public Shared Operator IsTrue(_ As ConditionBlock) As [Boolean]
   overload: LunyScript.Blocks.ConditionBlock.op_True*
   nameWithType.vb: ConditionBlock.IsTrue(ConditionBlock)
   fullName.vb: LunyScript.Blocks.ConditionBlock.IsTrue(LunyScript.Blocks.ConditionBlock)
@@ -157,13 +157,13 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static bool operator false(ConditionBlock _)
+    content: public static Boolean operator false(ConditionBlock _)
     parameters:
     - id: _
       type: LunyScript.Blocks.ConditionBlock
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator IsFalse(_ As ConditionBlock) As Boolean
+    content.vb: Public Shared Operator IsFalse(_ As ConditionBlock) As [Boolean]
   overload: LunyScript.Blocks.ConditionBlock.op_False*
   nameWithType.vb: ConditionBlock.IsFalse(ConditionBlock)
   fullName.vb: LunyScript.Blocks.ConditionBlock.IsFalse(LunyScript.Blocks.ConditionBlock)
@@ -183,13 +183,13 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: protected abstract bool Evaluate(IScriptRuntimeContext runtimeContext)
+    content: protected abstract Boolean Evaluate(IScriptRuntimeContext runtimeContext)
     parameters:
     - id: runtimeContext
       type: LunyScript.IScriptRuntimeContext
     return:
       type: System.Boolean
-    content.vb: Protected MustOverride Function Evaluate(runtimeContext As IScriptRuntimeContext) As Boolean
+    content.vb: Protected MustOverride Function Evaluate(runtimeContext As IScriptRuntimeContext) As [Boolean]
   overload: LunyScript.Blocks.ConditionBlock.Evaluate*
 - uid: LunyScript.Blocks.ConditionBlock.#ctor
   commentId: M:LunyScript.Blocks.ConditionBlock.#ctor
@@ -244,12 +244,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.Blocks.ScriptBlock
   commentId: T:LunyScript.Blocks.ScriptBlock
   parent: LunyScript.Blocks
@@ -349,12 +346,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: LunyScript.Blocks.ConditionBlock.op_False*
   commentId: Overload:LunyScript.Blocks.ConditionBlock.op_False
   name: operator false

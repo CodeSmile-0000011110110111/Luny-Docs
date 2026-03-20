@@ -60,14 +60,14 @@ items:
   summary: Queries if a service type is registered.
   example: []
   syntax:
-    content: 'public bool HasService<TService>() where TService : LunyEngineServiceBase'
+    content: 'public Boolean HasService<TService>() where TService : LunyEngineServiceBase'
     typeParameters:
     - id: TService
       description: ''
     return:
       type: System.Boolean
       description: ''
-    content.vb: Public Function HasService(Of TService As LunyEngineServiceBase)() As Boolean
+    content.vb: Public Function HasService(Of TService As LunyEngineServiceBase)() As [Boolean]
   overload: Luny.LunyEngine.HasService*
   implements:
   - Luny.ILunyEngine.HasService``1
@@ -122,7 +122,7 @@ items:
   summary: Gets a service by type, may return false/null.
   example: []
   syntax:
-    content: 'public bool TryGetService<TService>(out TService service) where TService : LunyEngineServiceBase'
+    content: 'public Boolean TryGetService<TService>(out TService service) where TService : LunyEngineServiceBase'
     parameters:
     - id: service
       type: '{TService}'
@@ -133,7 +133,7 @@ items:
     return:
       type: System.Boolean
       description: ''
-    content.vb: Public Function TryGetService(Of TService As LunyEngineServiceBase)(service As TService) As Boolean
+    content.vb: Public Function TryGetService(Of TService As LunyEngineServiceBase)(service As TService) As [Boolean]
   overload: Luny.LunyEngine.TryGetService*
   implements:
   - Luny.ILunyEngine.TryGetService``1({TService}@)
@@ -208,12 +208,12 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: 'public bool IsObserverEnabled<T>() where T : ILunyEngineObserver'
+    content: 'public Boolean IsObserverEnabled<T>() where T : ILunyEngineObserver'
     typeParameters:
     - id: T
     return:
       type: System.Boolean
-    content.vb: Public Function IsObserverEnabled(Of T As ILunyEngineObserver)() As Boolean
+    content.vb: Public Function IsObserverEnabled(Of T As ILunyEngineObserver)() As [Boolean]
   overload: Luny.LunyEngine.IsObserverEnabled*
   implements:
   - Luny.ILunyEngine.IsObserverEnabled``1
@@ -255,9 +255,9 @@ items:
   langs:
   - csharp
   - vb
-  name: TryGetObject(string, string, int)
-  nameWithType: LunyEngine.TryGetObject(string, string, int)
-  fullName: Luny.LunyEngine.TryGetObject(string, string, int)
+  name: TryGetObject(String, String, Int32)
+  nameWithType: LunyEngine.TryGetObject(String, String, Int32)
+  fullName: Luny.LunyEngine.TryGetObject(System.String, System.String, System.Int32)
   type: Method
   assemblies:
   - Luny
@@ -265,7 +265,7 @@ items:
   summary: Will try to find an object by name in the scene. Queries already-cached objects first. Wraps found objects in a `LunyObject` instance.
   example: []
   syntax:
-    content: public ILunyObject TryGetObject(string name, string callerFilePath = "", int callerLineNumber = 0)
+    content: public ILunyObject TryGetObject(String name, String callerFilePath = "", Int32 callerLineNumber = 0)
     parameters:
     - id: name
       type: System.String
@@ -275,13 +275,10 @@ items:
       type: System.Int32
     return:
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Public Function TryGetObject(name As String, callerFilePath As String = "", callerLineNumber As Integer = 0) As ILunyObject
+    content.vb: Public Function TryGetObject(name As [String], callerFilePath As [String] = "", callerLineNumber As Int32 = 0) As ILunyObject
   overload: Luny.LunyEngine.TryGetObject*
   implements:
   - Luny.ILunyEngine.TryGetObject(System.String,System.String,System.Int32)
-  nameWithType.vb: LunyEngine.TryGetObject(String, String, Integer)
-  fullName.vb: Luny.LunyEngine.TryGetObject(String, String, Integer)
-  name.vb: TryGetObject(String, String, Integer)
 - uid: Luny.LunyEngine.Finalize
   commentId: M:Luny.LunyEngine.Finalize
   id: Finalize
@@ -569,12 +566,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.ILunyEngine
   commentId: T:Luny.ILunyEngine
   parent: Luny
@@ -635,12 +629,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.LunyEngine.GetService*
   commentId: Overload:Luny.LunyEngine.GetService
   isExternal: true
@@ -953,12 +944,9 @@ references:
   parent: Luny.ILunyEngine
   isExternal: true
   href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetObject_System_String_System_String_System_Int32_
-  name: TryGetObject(string, string, int)
-  nameWithType: ILunyEngine.TryGetObject(string, string, int)
-  fullName: Luny.ILunyEngine.TryGetObject(string, string, int)
-  nameWithType.vb: ILunyEngine.TryGetObject(String, String, Integer)
-  fullName.vb: Luny.ILunyEngine.TryGetObject(String, String, Integer)
-  name.vb: TryGetObject(String, String, Integer)
+  name: TryGetObject(String, String, Int32)
+  nameWithType: ILunyEngine.TryGetObject(String, String, Int32)
+  fullName: Luny.ILunyEngine.TryGetObject(System.String, System.String, System.Int32)
   spec.csharp:
   - uid: Luny.ILunyEngine.TryGetObject(System.String,System.String,System.Int32)
     name: TryGetObject
@@ -966,19 +954,19 @@ references:
     href: Luny.ILunyEngine.html#Luny_ILunyEngine_TryGetObject_System_String_System_String_System_Int32_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
   - uid: System.Int32
-    name: int
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
@@ -1001,7 +989,7 @@ references:
   - name: ','
   - name: " "
   - uid: System.Int32
-    name: Integer
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
@@ -1010,23 +998,17 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Luny.Engine.Bridge.ILunyObject
   commentId: T:Luny.Engine.Bridge.ILunyObject
   parent: Luny.Engine.Bridge

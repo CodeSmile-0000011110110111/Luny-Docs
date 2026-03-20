@@ -35,9 +35,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Tagged<T>(TriggerEventBuilder<T>, params string[])
-  nameWithType: TriggerEventFilterExtensions.Tagged<T>(TriggerEventBuilder<T>, params string[])
-  fullName: LunyScript.Api.TriggerEventFilterExtensions.Tagged<T>(LunyScript.Api.TriggerEventBuilder<T>, params string[])
+  name: Tagged<T>(TriggerEventBuilder<T>, params String[])
+  nameWithType: TriggerEventFilterExtensions.Tagged<T>(TriggerEventBuilder<T>, params String[])
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Tagged<T>(LunyScript.Api.TriggerEventBuilder<T>, params System.String[])
   type: Method
   assemblies:
   - LunyScript
@@ -48,7 +48,7 @@ items:
     Combine with other filter kinds for AND logic across kinds.
   example: []
   syntax:
-    content: 'public static TriggerEventBuilder<TriggerReady> Tagged<T>(this TriggerEventBuilder<T> b, params string[] tags) where T : struct, ITriggerFilterable'
+    content: 'public static TriggerEventBuilder<TriggerReady> Tagged<T>(this TriggerEventBuilder<T> b, params String[] tags) where T : struct, ITriggerFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.TriggerEventBuilder{{T}}
@@ -58,10 +58,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerReady}
-    content.vb: Public Shared Function Tagged(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray tags As String()) As TriggerEventBuilder(Of TriggerReady)
+    content.vb: Public Shared Function Tagged(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray tags As [String]()) As TriggerEventBuilder(Of TriggerReady)
   overload: LunyScript.Api.TriggerEventFilterExtensions.Tagged*
   nameWithType.vb: TriggerEventFilterExtensions.Tagged(Of T)(TriggerEventBuilder(Of T), ParamArray String())
-  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Tagged(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Tagged(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray System.String())
   name.vb: Tagged(Of T)(TriggerEventBuilder(Of T), ParamArray String())
 - uid: LunyScript.Api.TriggerEventFilterExtensions.With``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
   commentId: M:LunyScript.Api.TriggerEventFilterExtensions.With``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
@@ -71,9 +71,9 @@ items:
   langs:
   - csharp
   - vb
-  name: With<T>(TriggerEventBuilder<T>, params string[])
-  nameWithType: TriggerEventFilterExtensions.With<T>(TriggerEventBuilder<T>, params string[])
-  fullName: LunyScript.Api.TriggerEventFilterExtensions.With<T>(LunyScript.Api.TriggerEventBuilder<T>, params string[])
+  name: With<T>(TriggerEventBuilder<T>, params String[])
+  nameWithType: TriggerEventFilterExtensions.With<T>(TriggerEventBuilder<T>, params String[])
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.With<T>(LunyScript.Api.TriggerEventBuilder<T>, params System.String[])
   type: Method
   assemblies:
   - LunyScript
@@ -81,7 +81,7 @@ items:
   summary: Only react when the other object's name matches one of the given names (OR logic).
   example: []
   syntax:
-    content: 'public static TriggerEventBuilder<TriggerReady> With<T>(this TriggerEventBuilder<T> b, params string[] names) where T : struct, ITriggerFilterable'
+    content: 'public static TriggerEventBuilder<TriggerReady> With<T>(this TriggerEventBuilder<T> b, params String[] names) where T : struct, ITriggerFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.TriggerEventBuilder{{T}}
@@ -91,10 +91,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerReady}
-    content.vb: Public Shared Function [With](Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray names As String()) As TriggerEventBuilder(Of TriggerReady)
+    content.vb: Public Shared Function [With](Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray names As [String]()) As TriggerEventBuilder(Of TriggerReady)
   overload: LunyScript.Api.TriggerEventFilterExtensions.With*
   nameWithType.vb: TriggerEventFilterExtensions.With(Of T)(TriggerEventBuilder(Of T), ParamArray String())
-  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.With(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.With(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray System.String())
   name.vb: With(Of T)(TriggerEventBuilder(Of T), ParamArray String())
 - uid: LunyScript.Api.TriggerEventFilterExtensions.Layered``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
   commentId: M:LunyScript.Api.TriggerEventFilterExtensions.Layered``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
@@ -104,9 +104,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Layered<T>(TriggerEventBuilder<T>, params string[])
-  nameWithType: TriggerEventFilterExtensions.Layered<T>(TriggerEventBuilder<T>, params string[])
-  fullName: LunyScript.Api.TriggerEventFilterExtensions.Layered<T>(LunyScript.Api.TriggerEventBuilder<T>, params string[])
+  name: Layered<T>(TriggerEventBuilder<T>, params String[])
+  nameWithType: TriggerEventFilterExtensions.Layered<T>(TriggerEventBuilder<T>, params String[])
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Layered<T>(LunyScript.Api.TriggerEventBuilder<T>, params System.String[])
   type: Method
   assemblies:
   - LunyScript
@@ -117,7 +117,7 @@ items:
     Mutually exclusive with Masked() — Masked() becomes unavailable after calling this.
   example: []
   syntax:
-    content: 'public static TriggerEventBuilder<TriggerLayered> Layered<T>(this TriggerEventBuilder<T> b, params string[] layerNames) where T : struct, ITriggerFilterable'
+    content: 'public static TriggerEventBuilder<TriggerLayered> Layered<T>(this TriggerEventBuilder<T> b, params String[] layerNames) where T : struct, ITriggerFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.TriggerEventBuilder{{T}}
@@ -127,10 +127,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerLayered}
-    content.vb: Public Shared Function Layered(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray layerNames As String()) As TriggerEventBuilder(Of TriggerLayered)
+    content.vb: Public Shared Function Layered(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray layerNames As [String]()) As TriggerEventBuilder(Of TriggerLayered)
   overload: LunyScript.Api.TriggerEventFilterExtensions.Layered*
   nameWithType.vb: TriggerEventFilterExtensions.Layered(Of T)(TriggerEventBuilder(Of T), ParamArray String())
-  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Layered(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Layered(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray System.String())
   name.vb: Layered(Of T)(TriggerEventBuilder(Of T), ParamArray String())
 - uid: LunyScript.Api.TriggerEventFilterExtensions.Typed``1(LunyScript.Api.TriggerEventBuilder{``0},System.Type[])
   commentId: M:LunyScript.Api.TriggerEventFilterExtensions.Typed``1(LunyScript.Api.TriggerEventBuilder{``0},System.Type[])
@@ -173,9 +173,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Cooldown<T>(TriggerEventBuilder<T>, double)
-  nameWithType: TriggerEventFilterExtensions.Cooldown<T>(TriggerEventBuilder<T>, double)
-  fullName: LunyScript.Api.TriggerEventFilterExtensions.Cooldown<T>(LunyScript.Api.TriggerEventBuilder<T>, double)
+  name: Cooldown<T>(TriggerEventBuilder<T>, Double)
+  nameWithType: TriggerEventFilterExtensions.Cooldown<T>(TriggerEventBuilder<T>, Double)
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Cooldown<T>(LunyScript.Api.TriggerEventBuilder<T>, System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -186,7 +186,7 @@ items:
     The cooldown is checked before trigger predicates; evaluated per event sequence.
   example: []
   syntax:
-    content: 'public static TriggerEventBuilder<TriggerReady> Cooldown<T>(this TriggerEventBuilder<T> b, double seconds) where T : struct, ITriggerFilterable'
+    content: 'public static TriggerEventBuilder<TriggerReady> Cooldown<T>(this TriggerEventBuilder<T> b, Double seconds) where T : struct, ITriggerFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.TriggerEventBuilder{{T}}
@@ -196,10 +196,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerReady}
-    content.vb: Public Shared Function Cooldown(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), seconds As Double) As TriggerEventBuilder(Of TriggerReady)
+    content.vb: Public Shared Function Cooldown(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), seconds As [Double]) As TriggerEventBuilder(Of TriggerReady)
   overload: LunyScript.Api.TriggerEventFilterExtensions.Cooldown*
   nameWithType.vb: TriggerEventFilterExtensions.Cooldown(Of T)(TriggerEventBuilder(Of T), Double)
-  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Cooldown(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Cooldown(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), System.Double)
   name.vb: Cooldown(Of T)(TriggerEventBuilder(Of T), Double)
 - uid: LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
   commentId: M:LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.String[])
@@ -209,9 +209,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Masked<T>(TriggerEventBuilder<T>, params string[])
-  nameWithType: TriggerEventFilterExtensions.Masked<T>(TriggerEventBuilder<T>, params string[])
-  fullName: LunyScript.Api.TriggerEventFilterExtensions.Masked<T>(LunyScript.Api.TriggerEventBuilder<T>, params string[])
+  name: Masked<T>(TriggerEventBuilder<T>, params String[])
+  nameWithType: TriggerEventFilterExtensions.Masked<T>(TriggerEventBuilder<T>, params String[])
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Masked<T>(LunyScript.Api.TriggerEventBuilder<T>, params System.String[])
   type: Method
   assemblies:
   - LunyScript
@@ -222,7 +222,7 @@ items:
     Mutually exclusive with Layered() — unavailable after Layered() is called.
   example: []
   syntax:
-    content: 'public static TriggerEventBuilder<TriggerMasked> Masked<T>(this TriggerEventBuilder<T> b, params string[] layerNames) where T : struct, ITriggerFilterable'
+    content: 'public static TriggerEventBuilder<TriggerMasked> Masked<T>(this TriggerEventBuilder<T> b, params String[] layerNames) where T : struct, ITriggerFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.TriggerEventBuilder{{T}}
@@ -232,10 +232,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerMasked}
-    content.vb: Public Shared Function Masked(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray layerNames As String()) As TriggerEventBuilder(Of TriggerMasked)
+    content.vb: Public Shared Function Masked(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), ParamArray layerNames As [String]()) As TriggerEventBuilder(Of TriggerMasked)
   overload: LunyScript.Api.TriggerEventFilterExtensions.Masked*
   nameWithType.vb: TriggerEventFilterExtensions.Masked(Of T)(TriggerEventBuilder(Of T), ParamArray String())
-  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Masked(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Masked(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray System.String())
   name.vb: Masked(Of T)(TriggerEventBuilder(Of T), ParamArray String())
 - uid: LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.Int32)
   commentId: M:LunyScript.Api.TriggerEventFilterExtensions.Masked``1(LunyScript.Api.TriggerEventBuilder{``0},System.Int32)
@@ -245,9 +245,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Masked<T>(TriggerEventBuilder<T>, int)
-  nameWithType: TriggerEventFilterExtensions.Masked<T>(TriggerEventBuilder<T>, int)
-  fullName: LunyScript.Api.TriggerEventFilterExtensions.Masked<T>(LunyScript.Api.TriggerEventBuilder<T>, int)
+  name: Masked<T>(TriggerEventBuilder<T>, Int32)
+  nameWithType: TriggerEventFilterExtensions.Masked<T>(TriggerEventBuilder<T>, Int32)
+  fullName: LunyScript.Api.TriggerEventFilterExtensions.Masked<T>(LunyScript.Api.TriggerEventBuilder<T>, System.Int32)
   type: Method
   assemblies:
   - LunyScript
@@ -258,7 +258,7 @@ items:
     Mutually exclusive with Layered() — unavailable after Layered() is called.
   example: []
   syntax:
-    content: 'public static TriggerEventBuilder<TriggerMasked> Masked<T>(this TriggerEventBuilder<T> b, int layerMask) where T : struct, ITriggerFilterable'
+    content: 'public static TriggerEventBuilder<TriggerMasked> Masked<T>(this TriggerEventBuilder<T> b, Int32 layerMask) where T : struct, ITriggerFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.TriggerEventBuilder{{T}}
@@ -268,11 +268,11 @@ items:
     - id: T
     return:
       type: LunyScript.Api.TriggerEventBuilder{LunyScript.Api.TriggerMasked}
-    content.vb: Public Shared Function Masked(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), layerMask As Integer) As TriggerEventBuilder(Of TriggerMasked)
+    content.vb: Public Shared Function Masked(Of T As {Structure, ITriggerFilterable})(b As TriggerEventBuilder(Of T), layerMask As Int32) As TriggerEventBuilder(Of TriggerMasked)
   overload: LunyScript.Api.TriggerEventFilterExtensions.Masked*
-  nameWithType.vb: TriggerEventFilterExtensions.Masked(Of T)(TriggerEventBuilder(Of T), Integer)
-  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Masked(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), Integer)
-  name.vb: Masked(Of T)(TriggerEventBuilder(Of T), Integer)
+  nameWithType.vb: TriggerEventFilterExtensions.Masked(Of T)(TriggerEventBuilder(Of T), Int32)
+  fullName.vb: LunyScript.Api.TriggerEventFilterExtensions.Masked(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), System.Int32)
+  name.vb: Masked(Of T)(TriggerEventBuilder(Of T), Int32)
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -305,12 +305,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -357,15 +354,15 @@ references:
 - uid: System.String[]
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string[]
-  nameWithType: string[]
-  fullName: string[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
   nameWithType.vb: String()
-  fullName.vb: String()
+  fullName.vb: System.String()
   name.vb: String()
   spec.csharp:
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
@@ -531,12 +528,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: LunyScript.Api.TriggerEventFilterExtensions.Masked*
   commentId: Overload:LunyScript.Api.TriggerEventFilterExtensions.Masked
   isExternal: true
@@ -584,9 +578,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

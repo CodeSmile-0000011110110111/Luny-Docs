@@ -94,9 +94,9 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyObject(object, long, bool, bool)
-  nameWithType: LunyObject.LunyObject(object, long, bool, bool)
-  fullName: Luny.Engine.Bridge.LunyObject.LunyObject(object, long, bool, bool)
+  name: LunyObject(Object, Int64, Boolean, Boolean)
+  nameWithType: LunyObject.LunyObject(Object, Int64, Boolean, Boolean)
+  fullName: Luny.Engine.Bridge.LunyObject.LunyObject(System.Object, System.Int64, System.Boolean, System.Boolean)
   type: Constructor
   assemblies:
   - Luny
@@ -104,7 +104,7 @@ items:
   summary: Instantiates a LunyObject instance.
   example: []
   syntax:
-    content: protected LunyObject(object nativeObject, long nativeObjectId, bool isNativeObjectEnabled, bool isNativeObjectVisible)
+    content: protected LunyObject(Object nativeObject, Int64 nativeObjectId, Boolean isNativeObjectEnabled, Boolean isNativeObjectVisible)
     parameters:
     - id: nativeObject
       type: System.Object
@@ -114,11 +114,11 @@ items:
       type: System.Boolean
     - id: isNativeObjectVisible
       type: System.Boolean
-    content.vb: Protected Sub New(nativeObject As Object, nativeObjectId As Long, isNativeObjectEnabled As Boolean, isNativeObjectVisible As Boolean)
+    content.vb: Protected Sub New(nativeObject As [Object], nativeObjectId As Int64, isNativeObjectEnabled As [Boolean], isNativeObjectVisible As [Boolean])
   overload: Luny.Engine.Bridge.LunyObject.#ctor*
-  nameWithType.vb: LunyObject.New(Object, Long, Boolean, Boolean)
-  fullName.vb: Luny.Engine.Bridge.LunyObject.New(Object, Long, Boolean, Boolean)
-  name.vb: New(Object, Long, Boolean, Boolean)
+  nameWithType.vb: LunyObject.New(Object, Int64, Boolean, Boolean)
+  fullName.vb: Luny.Engine.Bridge.LunyObject.New(System.Object, System.Int64, System.Boolean, System.Boolean)
+  name.vb: New(Object, Int64, Boolean, Boolean)
 - uid: Luny.Engine.Bridge.LunyObject.TryGetCached(System.Int64,Luny.Engine.Bridge.ILunyObject@)
   commentId: M:Luny.Engine.Bridge.LunyObject.TryGetCached(System.Int64,Luny.Engine.Bridge.ILunyObject@)
   id: TryGetCached(System.Int64,Luny.Engine.Bridge.ILunyObject@)
@@ -126,15 +126,15 @@ items:
   langs:
   - csharp
   - vb
-  name: TryGetCached(long, out ILunyObject)
-  nameWithType: LunyObject.TryGetCached(long, out ILunyObject)
-  fullName: Luny.Engine.Bridge.LunyObject.TryGetCached(long, out Luny.Engine.Bridge.ILunyObject)
+  name: TryGetCached(Int64, out ILunyObject)
+  nameWithType: LunyObject.TryGetCached(Int64, out ILunyObject)
+  fullName: Luny.Engine.Bridge.LunyObject.TryGetCached(System.Int64, out Luny.Engine.Bridge.ILunyObject)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected static bool TryGetCached(long nativeId, out ILunyObject lunyObject)
+    content: protected static Boolean TryGetCached(Int64 nativeId, out ILunyObject lunyObject)
     parameters:
     - id: nativeId
       type: System.Int64
@@ -142,11 +142,11 @@ items:
       type: Luny.Engine.Bridge.ILunyObject
     return:
       type: System.Boolean
-    content.vb: Protected Shared Function TryGetCached(nativeId As Long, lunyObject As ILunyObject) As Boolean
+    content.vb: Protected Shared Function TryGetCached(nativeId As Int64, lunyObject As ILunyObject) As [Boolean]
   overload: Luny.Engine.Bridge.LunyObject.TryGetCached*
-  nameWithType.vb: LunyObject.TryGetCached(Long, ILunyObject)
-  fullName.vb: Luny.Engine.Bridge.LunyObject.TryGetCached(Long, Luny.Engine.Bridge.ILunyObject)
-  name.vb: TryGetCached(Long, ILunyObject)
+  nameWithType.vb: LunyObject.TryGetCached(Int64, ILunyObject)
+  fullName.vb: Luny.Engine.Bridge.LunyObject.TryGetCached(System.Int64, Luny.Engine.Bridge.ILunyObject)
+  name.vb: TryGetCached(Int64, ILunyObject)
 - uid: Luny.Engine.Bridge.LunyObject.As``1
   commentId: M:Luny.Engine.Bridge.LunyObject.As``1
   id: As``1
@@ -378,10 +378,10 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected abstract bool IsNativeObjectReferenceValid()
+    content: protected abstract Boolean IsNativeObjectReferenceValid()
     return:
       type: System.Boolean
-    content.vb: Protected MustOverride Function IsNativeObjectReferenceValid() As Boolean
+    content.vb: Protected MustOverride Function IsNativeObjectReferenceValid() As [Boolean]
   overload: Luny.Engine.Bridge.LunyObject.IsNativeObjectReferenceValid*
 - uid: Luny.Engine.Bridge.LunyObject.GetNativeObjectName
   commentId: M:Luny.Engine.Bridge.LunyObject.GetNativeObjectName
@@ -398,10 +398,10 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected abstract string GetNativeObjectName()
+    content: protected abstract String GetNativeObjectName()
     return:
       type: System.String
-    content.vb: Protected MustOverride Function GetNativeObjectName() As String
+    content.vb: Protected MustOverride Function GetNativeObjectName() As [String]
   overload: Luny.Engine.Bridge.LunyObject.GetNativeObjectName*
 - uid: Luny.Engine.Bridge.LunyObject.SetNativeObjectName(System.String)
   commentId: M:Luny.Engine.Bridge.LunyObject.SetNativeObjectName(System.String)
@@ -410,23 +410,20 @@ items:
   langs:
   - csharp
   - vb
-  name: SetNativeObjectName(string)
-  nameWithType: LunyObject.SetNativeObjectName(string)
-  fullName: Luny.Engine.Bridge.LunyObject.SetNativeObjectName(string)
+  name: SetNativeObjectName(String)
+  nameWithType: LunyObject.SetNativeObjectName(String)
+  fullName: Luny.Engine.Bridge.LunyObject.SetNativeObjectName(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected abstract void SetNativeObjectName(string name)
+    content: protected abstract void SetNativeObjectName(String name)
     parameters:
     - id: name
       type: System.String
-    content.vb: Protected MustOverride Sub SetNativeObjectName(name As String)
+    content.vb: Protected MustOverride Sub SetNativeObjectName(name As [String])
   overload: Luny.Engine.Bridge.LunyObject.SetNativeObjectName*
-  nameWithType.vb: LunyObject.SetNativeObjectName(String)
-  fullName.vb: Luny.Engine.Bridge.LunyObject.SetNativeObjectName(String)
-  name.vb: SetNativeObjectName(String)
 - uid: Luny.Engine.Bridge.LunyObject.GetNativeObjectEnabledInHierarchy
   commentId: M:Luny.Engine.Bridge.LunyObject.GetNativeObjectEnabledInHierarchy
   id: GetNativeObjectEnabledInHierarchy
@@ -442,10 +439,10 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected abstract bool GetNativeObjectEnabledInHierarchy()
+    content: protected abstract Boolean GetNativeObjectEnabledInHierarchy()
     return:
       type: System.Boolean
-    content.vb: Protected MustOverride Function GetNativeObjectEnabledInHierarchy() As Boolean
+    content.vb: Protected MustOverride Function GetNativeObjectEnabledInHierarchy() As [Boolean]
   overload: Luny.Engine.Bridge.LunyObject.GetNativeObjectEnabledInHierarchy*
 - uid: Luny.Engine.Bridge.LunyObject.GetNativeObjectEnabled
   commentId: M:Luny.Engine.Bridge.LunyObject.GetNativeObjectEnabled
@@ -462,10 +459,10 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected abstract bool GetNativeObjectEnabled()
+    content: protected abstract Boolean GetNativeObjectEnabled()
     return:
       type: System.Boolean
-    content.vb: Protected MustOverride Function GetNativeObjectEnabled() As Boolean
+    content.vb: Protected MustOverride Function GetNativeObjectEnabled() As [Boolean]
   overload: Luny.Engine.Bridge.LunyObject.GetNativeObjectEnabled*
 - uid: Luny.Engine.Bridge.LunyObject.SetNativeObjectEnabled
   commentId: M:Luny.Engine.Bridge.LunyObject.SetNativeObjectEnabled
@@ -555,10 +552,10 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: Luny.Engine.Bridge.LunyObject.ToString*
 - uid: Luny.Engine.Bridge.LunyObject.InvokeOnCollisionEntered(Luny.Engine.Bridge.LunyCollision)
@@ -884,11 +881,11 @@ items:
     Use the <xref href="Luny.Engine.Bridge.ILunyObject.Cast%60%601" data-throw-if-not-resolved="false"></xref> or <xref href="Luny.Engine.Bridge.ILunyObject.As%60%601" data-throw-if-not-resolved="false"></xref> methods to avoid manually casting the reference.
   example: []
   syntax:
-    content: public object NativeObject { get; }
+    content: public Object NativeObject { get; }
     parameters: []
     return:
       type: System.Object
-    content.vb: Public ReadOnly Property NativeObject As Object
+    content.vb: Public ReadOnly Property NativeObject As [Object]
   overload: Luny.Engine.Bridge.LunyObject.NativeObject*
   implements:
   - Luny.Engine.Bridge.ILunyObject.NativeObject
@@ -935,11 +932,11 @@ items:
   remarks: To aid debugging, this property remains valid even after the object has been destroyed.
   example: []
   syntax:
-    content: public string Name { get; set; }
+    content: public String Name { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property Name As String
+    content.vb: Public Property Name As [String]
   overload: Luny.Engine.Bridge.LunyObject.Name*
   implements:
   - Luny.Engine.Bridge.ILunyObject.Name
@@ -960,11 +957,11 @@ items:
   summary: Whether the object and its native representation are valid (not null, not destroyed).
   example: []
   syntax:
-    content: public bool IsValid { get; }
+    content: public Boolean IsValid { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsValid As Boolean
+    content.vb: Public ReadOnly Property IsValid As [Boolean]
   overload: Luny.Engine.Bridge.LunyObject.IsValid*
   implements:
   - Luny.Engine.Bridge.ILunyObject.IsValid
@@ -985,11 +982,11 @@ items:
   summary: Is true when Destroy() was called on the NativeObject and it was set to null.
   example: []
   syntax:
-    content: public bool IsNativeObjectValid { get; }
+    content: public Boolean IsNativeObjectValid { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsNativeObjectValid As Boolean
+    content.vb: Public ReadOnly Property IsNativeObjectValid As [Boolean]
   overload: Luny.Engine.Bridge.LunyObject.IsNativeObjectValid*
   implements:
   - Luny.Engine.Bridge.ILunyObject.IsNativeObjectValid
@@ -1016,11 +1013,11 @@ items:
     the object's IsVisible state will also change to true.
   example: []
   syntax:
-    content: public bool IsEnabled { get; set; }
+    content: public Boolean IsEnabled { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property IsEnabled As Boolean
+    content.vb: Public Property IsEnabled As [Boolean]
   overload: Luny.Engine.Bridge.LunyObject.IsEnabled*
   implements:
   - Luny.Engine.Bridge.ILunyObject.IsEnabled
@@ -1041,11 +1038,11 @@ items:
   summary: Returns true only if BOTH the object itself AND all of its parents are enabled. Otherwise returns false.
   example: []
   syntax:
-    content: public bool IsEnabledInHierarchy { get; }
+    content: public Boolean IsEnabledInHierarchy { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsEnabledInHierarchy As Boolean
+    content.vb: Public ReadOnly Property IsEnabledInHierarchy As [Boolean]
   overload: Luny.Engine.Bridge.LunyObject.IsEnabledInHierarchy*
   implements:
   - Luny.Engine.Bridge.ILunyObject.IsEnabledInHierarchy
@@ -1070,11 +1067,11 @@ items:
     be outside the camera's frame, obstructed by other objects, fully transparent, scaled infinitely small, etc.
   example: []
   syntax:
-    content: public bool IsVisible { get; set; }
+    content: public Boolean IsVisible { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property IsVisible As Boolean
+    content.vb: Public Property IsVisible As [Boolean]
   overload: Luny.Engine.Bridge.LunyObject.IsVisible*
   implements:
   - Luny.Engine.Bridge.ILunyObject.IsVisible
@@ -1525,12 +1522,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Bridge.ILunyObject
   commentId: T:Luny.Engine.Bridge.ILunyObject
   parent: Luny.Engine.Bridge
@@ -1561,23 +1555,17 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Bridge.LunyObject.TryGetCached*
   commentId: Overload:Luny.Engine.Bridge.LunyObject.TryGetCached
   isExternal: true
@@ -1824,12 +1812,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyObject.SetNativeObjectName*
   commentId: Overload:Luny.Engine.Bridge.LunyObject.SetNativeObjectName
   isExternal: true
@@ -1884,10 +1869,8 @@ references:
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString

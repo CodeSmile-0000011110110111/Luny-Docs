@@ -68,9 +68,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetObjects(IReadOnlyCollection<string>)
-  nameWithType: UnitySceneService.GetObjects(IReadOnlyCollection<string>)
-  fullName: Luny.Unity.Services.UnitySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection<string>)
+  name: GetObjects(IReadOnlyCollection<String>)
+  nameWithType: UnitySceneService.GetObjects(IReadOnlyCollection<String>)
+  fullName: Luny.Unity.Services.UnitySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection<System.String>)
   type: Method
   assemblies:
   - Luny.Unity
@@ -78,19 +78,19 @@ items:
   summary: Gets objects with matching names in the current scene. Creates LunyObject instances.
   example: []
   syntax:
-    content: public override IReadOnlyList<ILunyObject> GetObjects(IReadOnlyCollection<string> objectNames)
+    content: public override IReadOnlyList<ILunyObject> GetObjects(IReadOnlyCollection<String> objectNames)
     parameters:
     - id: objectNames
       type: System.Collections.Generic.IReadOnlyCollection{System.String}
     return:
       type: System.Collections.Generic.IReadOnlyList{Luny.Engine.Bridge.ILunyObject}
-    content.vb: Public Overrides Function GetObjects(objectNames As IReadOnlyCollection(Of String)) As IReadOnlyList(Of ILunyObject)
+    content.vb: Public Overrides Function GetObjects(objectNames As IReadOnlyCollection(Of [String])) As IReadOnlyList(Of ILunyObject)
   overridden: Luny.Engine.Services.LunySceneServiceBase.GetObjects(System.Collections.Generic.IReadOnlyCollection{System.String})
   overload: Luny.Unity.Services.UnitySceneService.GetObjects*
   implements:
   - Luny.Engine.Services.ILunySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection{System.String})
   nameWithType.vb: UnitySceneService.GetObjects(IReadOnlyCollection(Of String))
-  fullName.vb: Luny.Unity.Services.UnitySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection(Of String))
+  fullName.vb: Luny.Unity.Services.UnitySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection(Of System.String))
   name.vb: GetObjects(IReadOnlyCollection(Of String))
 - uid: Luny.Unity.Services.UnitySceneService.FindObjectByName(System.String)
   commentId: M:Luny.Unity.Services.UnitySceneService.FindObjectByName(System.String)
@@ -99,9 +99,9 @@ items:
   langs:
   - csharp
   - vb
-  name: FindObjectByName(string)
-  nameWithType: UnitySceneService.FindObjectByName(string)
-  fullName: Luny.Unity.Services.UnitySceneService.FindObjectByName(string)
+  name: FindObjectByName(String)
+  nameWithType: UnitySceneService.FindObjectByName(String)
+  fullName: Luny.Unity.Services.UnitySceneService.FindObjectByName(System.String)
   type: Method
   assemblies:
   - Luny.Unity
@@ -109,20 +109,17 @@ items:
   summary: Finds a LunyObject by name in the current scene.
   example: []
   syntax:
-    content: public override ILunyObject FindObjectByName(string name)
+    content: public override ILunyObject FindObjectByName(String name)
     parameters:
     - id: name
       type: System.String
     return:
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Public Overrides Function FindObjectByName(name As String) As ILunyObject
+    content.vb: Public Overrides Function FindObjectByName(name As [String]) As ILunyObject
   overridden: Luny.Engine.Services.LunySceneServiceBase.FindObjectByName(System.String)
   overload: Luny.Unity.Services.UnitySceneService.FindObjectByName*
   implements:
   - Luny.Engine.Services.ILunySceneService.FindObjectByName(System.String)
-  nameWithType.vb: UnitySceneService.FindObjectByName(String)
-  fullName.vb: Luny.Unity.Services.UnitySceneService.FindObjectByName(String)
-  name.vb: FindObjectByName(String)
 - uid: Luny.Unity.Services.UnitySceneService.OnServiceInitialize
   commentId: M:Luny.Unity.Services.UnitySceneService.OnServiceInitialize
   id: OnServiceInitialize
@@ -246,12 +243,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Services.LunyEngineServiceBase
   commentId: T:Luny.Engine.Services.LunyEngineServiceBase
   parent: Luny.Engine.Services
@@ -421,11 +415,11 @@ references:
   parent: Luny.Engine.Services.LunySceneServiceBase
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
-  name: GetObjects(IReadOnlyCollection<string>)
-  nameWithType: LunySceneServiceBase.GetObjects(IReadOnlyCollection<string>)
-  fullName: Luny.Engine.Services.LunySceneServiceBase.GetObjects(System.Collections.Generic.IReadOnlyCollection<string>)
+  name: GetObjects(IReadOnlyCollection<String>)
+  nameWithType: LunySceneServiceBase.GetObjects(IReadOnlyCollection<String>)
+  fullName: Luny.Engine.Services.LunySceneServiceBase.GetObjects(System.Collections.Generic.IReadOnlyCollection<System.String>)
   nameWithType.vb: LunySceneServiceBase.GetObjects(IReadOnlyCollection(Of String))
-  fullName.vb: Luny.Engine.Services.LunySceneServiceBase.GetObjects(System.Collections.Generic.IReadOnlyCollection(Of String))
+  fullName.vb: Luny.Engine.Services.LunySceneServiceBase.GetObjects(System.Collections.Generic.IReadOnlyCollection(Of System.String))
   name.vb: GetObjects(IReadOnlyCollection(Of String))
   spec.csharp:
   - uid: Luny.Engine.Services.LunySceneServiceBase.GetObjects(System.Collections.Generic.IReadOnlyCollection{System.String})
@@ -438,7 +432,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   - name: <
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
@@ -473,11 +467,11 @@ references:
   parent: Luny.Engine.Services.ILunySceneService
   isExternal: true
   href: Luny.Engine.Services.ILunySceneService.html#Luny_Engine_Services_ILunySceneService_GetObjects_System_Collections_Generic_IReadOnlyCollection_System_String__
-  name: GetObjects(IReadOnlyCollection<string>)
-  nameWithType: ILunySceneService.GetObjects(IReadOnlyCollection<string>)
-  fullName: Luny.Engine.Services.ILunySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection<string>)
+  name: GetObjects(IReadOnlyCollection<String>)
+  nameWithType: ILunySceneService.GetObjects(IReadOnlyCollection<String>)
+  fullName: Luny.Engine.Services.ILunySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection<System.String>)
   nameWithType.vb: ILunySceneService.GetObjects(IReadOnlyCollection(Of String))
-  fullName.vb: Luny.Engine.Services.ILunySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection(Of String))
+  fullName.vb: Luny.Engine.Services.ILunySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection(Of System.String))
   name.vb: GetObjects(IReadOnlyCollection(Of String))
   spec.csharp:
   - uid: Luny.Engine.Services.ILunySceneService.GetObjects(System.Collections.Generic.IReadOnlyCollection{System.String})
@@ -491,7 +485,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   - name: <
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
@@ -520,11 +514,11 @@ references:
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyCollection`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
-  name: IReadOnlyCollection<string>
-  nameWithType: IReadOnlyCollection<string>
-  fullName: System.Collections.Generic.IReadOnlyCollection<string>
+  name: IReadOnlyCollection<String>
+  nameWithType: IReadOnlyCollection<String>
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.String>
   nameWithType.vb: IReadOnlyCollection(Of String)
-  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of System.String)
   name.vb: IReadOnlyCollection(Of String)
   spec.csharp:
   - uid: System.Collections.Generic.IReadOnlyCollection`1
@@ -533,7 +527,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
   - name: <
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
@@ -683,19 +677,16 @@ references:
   parent: Luny.Engine.Services.LunySceneServiceBase
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: FindObjectByName(string)
-  nameWithType: LunySceneServiceBase.FindObjectByName(string)
-  fullName: Luny.Engine.Services.LunySceneServiceBase.FindObjectByName(string)
-  nameWithType.vb: LunySceneServiceBase.FindObjectByName(String)
-  fullName.vb: Luny.Engine.Services.LunySceneServiceBase.FindObjectByName(String)
-  name.vb: FindObjectByName(String)
+  name: FindObjectByName(String)
+  nameWithType: LunySceneServiceBase.FindObjectByName(String)
+  fullName: Luny.Engine.Services.LunySceneServiceBase.FindObjectByName(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.LunySceneServiceBase.FindObjectByName(System.String)
     name: FindObjectByName
     isExternal: true
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -721,12 +712,9 @@ references:
   parent: Luny.Engine.Services.ILunySceneService
   isExternal: true
   href: Luny.Engine.Services.ILunySceneService.html#Luny_Engine_Services_ILunySceneService_FindObjectByName_System_String_
-  name: FindObjectByName(string)
-  nameWithType: ILunySceneService.FindObjectByName(string)
-  fullName: Luny.Engine.Services.ILunySceneService.FindObjectByName(string)
-  nameWithType.vb: ILunySceneService.FindObjectByName(String)
-  fullName.vb: Luny.Engine.Services.ILunySceneService.FindObjectByName(String)
-  name.vb: FindObjectByName(String)
+  name: FindObjectByName(String)
+  nameWithType: ILunySceneService.FindObjectByName(String)
+  fullName: Luny.Engine.Services.ILunySceneService.FindObjectByName(System.String)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunySceneService.FindObjectByName(System.String)
     name: FindObjectByName
@@ -734,7 +722,7 @@ references:
     href: Luny.Engine.Services.ILunySceneService.html#Luny_Engine_Services_ILunySceneService_FindObjectByName_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -754,12 +742,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.ILunyObject
   commentId: T:Luny.Engine.Bridge.ILunyObject
   parent: Luny.Engine.Bridge

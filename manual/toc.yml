@@ -10,13 +10,13 @@
           href: first-script-unity.md
         - name: LunyScript vs GDScript
           href: first-script-godot.md
-    - name: Anatomy of a Luny Script
-      href: concepts-anatomy-script.md
-    - name: Advanced Block Usage
-      href: concepts-blocks-advanced.md
 - name: LunyScript Concepts
   href: api-overview.md
   items:
+  - name: Anatomy of a Luny Script
+    href: concepts-anatomy-script.md
+  - name: Advanced Block Usage
+    href: concepts-blocks-advanced.md
   - name: Events
     href: api-events.md
     items:
@@ -37,12 +37,13 @@
       href: api-variables-arithmetics.md
     - name: Variable Comparisons
       href: api-variables-comparisons.md
-    - name: Number - Numeric Value Union
-      href: api-variables-number.md
-    - name: Table - One Collection Fits All
-      href: api-variables-table.md
-    - name: LunyVector, LunyQuaternion, etc.
-      href: api-variables-lunytypes.md
+    - name: String Variables
+      href: api-variables-strings.md
+  - name: Control Flow
+    href: concepts-control-flow.md
+- name: (Placeholders)
+  href: api-assets.md
+  items:
   - name: Assets
     href: api-assets.md
   - name: Object API
@@ -76,3 +77,9 @@
     href: api-time.md
   - name: Application API
     href: api-application.md
+  - name: Number - Numeric Value Union
+    href: api-variables-number.md
+  - name: Table - One Collection Fits All
+    href: api-variables-table.md
+  - name: LunyVector, LunyQuaternion, etc.
+    href: api-variables-lunytypes.md

@@ -39,9 +39,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Direction(string)
-  nameWithType: InputBuilder.Direction(string)
-  fullName: LunyScript.Api.InputBuilder.Direction(string)
+  name: Direction(String)
+  nameWithType: InputBuilder.Direction(String)
+  fullName: LunyScript.Api.InputBuilder.Direction(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -49,17 +49,14 @@ items:
   summary: Returns a VariableBlock reading the last known axis value (Vector2) for the named action.
   example: []
   syntax:
-    content: public VariableBlock<LunyVector2> Direction(string actionName)
+    content: public VariableBlock<LunyVector2> Direction(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2}
-    content.vb: Public Function Direction(actionName As String) As VariableBlock(Of LunyVector2)
+    content.vb: Public Function Direction(actionName As [String]) As VariableBlock(Of LunyVector2)
   overload: LunyScript.Api.InputBuilder.Direction*
-  nameWithType.vb: InputBuilder.Direction(String)
-  fullName.vb: LunyScript.Api.InputBuilder.Direction(String)
-  name.vb: Direction(String)
 - uid: LunyScript.Api.InputBuilder.Rotation(System.String)
   commentId: M:LunyScript.Api.InputBuilder.Rotation(System.String)
   id: Rotation(System.String)
@@ -67,9 +64,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Rotation(string)
-  nameWithType: InputBuilder.Rotation(string)
-  fullName: LunyScript.Api.InputBuilder.Rotation(string)
+  name: Rotation(String)
+  nameWithType: InputBuilder.Rotation(String)
+  fullName: LunyScript.Api.InputBuilder.Rotation(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -77,17 +74,14 @@ items:
   summary: Returns a VariableBlock reading the last known axis value (Vector2) for the named action.
   example: []
   syntax:
-    content: public VariableBlock<LunyQuaternion> Rotation(string actionName)
+    content: public VariableBlock<LunyQuaternion> Rotation(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyQuaternion}
-    content.vb: Public Function Rotation(actionName As String) As VariableBlock(Of LunyQuaternion)
+    content.vb: Public Function Rotation(actionName As [String]) As VariableBlock(Of LunyQuaternion)
   overload: LunyScript.Api.InputBuilder.Rotation*
-  nameWithType.vb: InputBuilder.Rotation(String)
-  fullName.vb: LunyScript.Api.InputBuilder.Rotation(String)
-  name.vb: Rotation(String)
 - uid: LunyScript.Api.InputBuilder.Pair(System.String)
   commentId: M:LunyScript.Api.InputBuilder.Pair(System.String)
   id: Pair(System.String)
@@ -95,9 +89,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Pair(string)
-  nameWithType: InputBuilder.Pair(string)
-  fullName: LunyScript.Api.InputBuilder.Pair(string)
+  name: Pair(String)
+  nameWithType: InputBuilder.Pair(String)
+  fullName: LunyScript.Api.InputBuilder.Pair(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -105,7 +99,7 @@ items:
   summary: Pairs a named input user with the most recently used input device. Only pairs with unused devices. Should be used within an Input.Action event.
   example: []
   syntax:
-    content: public ActionBlock Pair(string userName)
+    content: public ActionBlock Pair(String userName)
     parameters:
     - id: userName
       type: System.String
@@ -113,11 +107,8 @@ items:
     return:
       type: LunyScript.Blocks.ActionBlock
       description: ''
-    content.vb: Public Function Pair(userName As String) As ActionBlock
+    content.vb: Public Function Pair(userName As [String]) As ActionBlock
   overload: LunyScript.Api.InputBuilder.Pair*
-  nameWithType.vb: InputBuilder.Pair(String)
-  fullName.vb: LunyScript.Api.InputBuilder.Pair(String)
-  name.vb: Pair(String)
 - uid: LunyScript.Api.InputBuilder.Unpair(System.String)
   commentId: M:LunyScript.Api.InputBuilder.Unpair(System.String)
   id: Unpair(System.String)
@@ -125,9 +116,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Unpair(string)
-  nameWithType: InputBuilder.Unpair(string)
-  fullName: LunyScript.Api.InputBuilder.Unpair(string)
+  name: Unpair(String)
+  nameWithType: InputBuilder.Unpair(String)
+  fullName: LunyScript.Api.InputBuilder.Unpair(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -135,7 +126,7 @@ items:
   summary: Unpairs a named input user from input devices.
   example: []
   syntax:
-    content: public ActionBlock Unpair(string userName)
+    content: public ActionBlock Unpair(String userName)
     parameters:
     - id: userName
       type: System.String
@@ -143,11 +134,8 @@ items:
     return:
       type: LunyScript.Blocks.ActionBlock
       description: ''
-    content.vb: Public Function Unpair(userName As String) As ActionBlock
+    content.vb: Public Function Unpair(userName As [String]) As ActionBlock
   overload: LunyScript.Api.InputBuilder.Unpair*
-  nameWithType.vb: InputBuilder.Unpair(String)
-  fullName.vb: LunyScript.Api.InputBuilder.Unpair(String)
-  name.vb: Unpair(String)
 - uid: LunyScript.Api.InputBuilder.IsPaired(System.String)
   commentId: M:LunyScript.Api.InputBuilder.IsPaired(System.String)
   id: IsPaired(System.String)
@@ -155,9 +143,9 @@ items:
   langs:
   - csharp
   - vb
-  name: IsPaired(string)
-  nameWithType: InputBuilder.IsPaired(string)
-  fullName: LunyScript.Api.InputBuilder.IsPaired(string)
+  name: IsPaired(String)
+  nameWithType: InputBuilder.IsPaired(String)
+  fullName: LunyScript.Api.InputBuilder.IsPaired(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -165,7 +153,7 @@ items:
   summary: Checks if the named input user has an input device assigned.
   example: []
   syntax:
-    content: public ConditionBlock IsPaired(string userName)
+    content: public ConditionBlock IsPaired(String userName)
     parameters:
     - id: userName
       type: System.String
@@ -173,11 +161,8 @@ items:
     return:
       type: LunyScript.Blocks.ConditionBlock
       description: ''
-    content.vb: Public Function IsPaired(userName As String) As ConditionBlock
+    content.vb: Public Function IsPaired(userName As [String]) As ConditionBlock
   overload: LunyScript.Api.InputBuilder.IsPaired*
-  nameWithType.vb: InputBuilder.IsPaired(String)
-  fullName.vb: LunyScript.Api.InputBuilder.IsPaired(String)
-  name.vb: IsPaired(String)
 - uid: LunyScript.Api.InputBuilder.Button(System.String)
   commentId: M:LunyScript.Api.InputBuilder.Button(System.String)
   id: Button(System.String)
@@ -185,9 +170,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Button(string)
-  nameWithType: InputBuilder.Button(string)
-  fullName: LunyScript.Api.InputBuilder.Button(string)
+  name: Button(String)
+  nameWithType: InputBuilder.Button(String)
+  fullName: LunyScript.Api.InputBuilder.Button(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -195,17 +180,14 @@ items:
   summary: Returns a button handle with condition and value accessors for the named action.
   example: []
   syntax:
-    content: public InputButtonBuilder Button(string actionName)
+    content: public InputButtonBuilder Button(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: LunyScript.Api.InputButtonBuilder
-    content.vb: Public Function Button(actionName As String) As InputButtonBuilder
+    content.vb: Public Function Button(actionName As [String]) As InputButtonBuilder
   overload: LunyScript.Api.InputBuilder.Button*
-  nameWithType.vb: InputBuilder.Button(String)
-  fullName.vb: LunyScript.Api.InputBuilder.Button(String)
-  name.vb: Button(String)
 - uid: LunyScript.Api.InputBuilder.Axis(System.String)
   commentId: M:LunyScript.Api.InputBuilder.Axis(System.String)
   id: Axis(System.String)
@@ -213,9 +195,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Axis(string)
-  nameWithType: InputBuilder.Axis(string)
-  fullName: LunyScript.Api.InputBuilder.Axis(string)
+  name: Axis(String)
+  nameWithType: InputBuilder.Axis(String)
+  fullName: LunyScript.Api.InputBuilder.Axis(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -223,17 +205,14 @@ items:
   summary: Returns a axis handle with condition and value accessors for the named action.
   example: []
   syntax:
-    content: public InputAxisBuilder Axis(string actionName)
+    content: public InputAxisBuilder Axis(String actionName)
     parameters:
     - id: actionName
       type: System.String
     return:
       type: LunyScript.Api.InputAxisBuilder
-    content.vb: Public Function Axis(actionName As String) As InputAxisBuilder
+    content.vb: Public Function Axis(actionName As [String]) As InputAxisBuilder
   overload: LunyScript.Api.InputBuilder.Axis*
-  nameWithType.vb: InputBuilder.Axis(String)
-  fullName.vb: LunyScript.Api.InputBuilder.Axis(String)
-  name.vb: Axis(String)
 - uid: LunyScript.Api.InputBuilder.Action(System.String)
   commentId: M:LunyScript.Api.InputBuilder.Action(System.String)
   id: Action(System.String)
@@ -241,9 +220,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Action(string)
-  nameWithType: InputBuilder.Action(string)
-  fullName: LunyScript.Api.InputBuilder.Action(string)
+  name: Action(String)
+  nameWithType: InputBuilder.Action(String)
+  fullName: LunyScript.Api.InputBuilder.Action(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -251,7 +230,7 @@ items:
   summary: Used with Input Action maps.
   example: []
   syntax:
-    content: public InputActionBuilder Action(string actionName)
+    content: public InputActionBuilder Action(String actionName)
     parameters:
     - id: actionName
       type: System.String
@@ -259,11 +238,8 @@ items:
     return:
       type: LunyScript.Api.InputActionBuilder
       description: ''
-    content.vb: Public Function Action(actionName As String) As InputActionBuilder
+    content.vb: Public Function Action(actionName As [String]) As InputActionBuilder
   overload: LunyScript.Api.InputBuilder.Action*
-  nameWithType.vb: InputBuilder.Action(String)
-  fullName.vb: LunyScript.Api.InputBuilder.Action(String)
-  name.vb: Action(String)
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -297,12 +273,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -310,7 +283,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -394,12 +367,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2}
   commentId: T:LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector2}
   parent: LunyScript.Blocks

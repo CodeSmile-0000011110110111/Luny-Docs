@@ -29,25 +29,22 @@ items:
   langs:
   - csharp
   - vb
-  name: IsInteger(double)
-  nameWithType: SystemDoubleExtensions.IsInteger(double)
-  fullName: Luny.SystemDoubleExtensions.IsInteger(double)
+  name: IsInteger(Double)
+  nameWithType: SystemDoubleExtensions.IsInteger(Double)
+  fullName: Luny.SystemDoubleExtensions.IsInteger(System.Double)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool IsInteger(this double value)
+    content: public static Boolean IsInteger(this Double value)
     parameters:
     - id: value
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Shared Function IsInteger(value As Double) As Boolean
+    content.vb: Public Shared Function IsInteger(value As [Double]) As [Boolean]
   overload: Luny.SystemDoubleExtensions.IsInteger*
-  nameWithType.vb: SystemDoubleExtensions.IsInteger(Double)
-  fullName.vb: Luny.SystemDoubleExtensions.IsInteger(Double)
-  name.vb: IsInteger(Double)
 references:
 - uid: Luny
   commentId: N:Luny
@@ -60,12 +57,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -85,20 +79,14 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

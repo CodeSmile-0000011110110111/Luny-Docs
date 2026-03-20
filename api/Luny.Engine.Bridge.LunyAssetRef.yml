@@ -36,24 +36,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator LunyAssetRef(string)
-  nameWithType: LunyAssetRef.implicit operator LunyAssetRef(string)
-  fullName: Luny.Engine.Bridge.LunyAssetRef.implicit operator Luny.Engine.Bridge.LunyAssetRef(string)
+  name: implicit operator LunyAssetRef(String)
+  nameWithType: LunyAssetRef.implicit operator LunyAssetRef(String)
+  fullName: Luny.Engine.Bridge.LunyAssetRef.implicit operator Luny.Engine.Bridge.LunyAssetRef(System.String)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static implicit operator LunyAssetRef(string name)
+    content: public static implicit operator LunyAssetRef(String name)
     parameters:
     - id: name
       type: System.String
     return:
       type: Luny.Engine.Bridge.LunyAssetRef
-    content.vb: Public Shared Widening Operator CType(name As String) As LunyAssetRef
+    content.vb: Public Shared Widening Operator CType(name As [String]) As LunyAssetRef
   overload: Luny.Engine.Bridge.LunyAssetRef.op_Implicit*
   nameWithType.vb: LunyAssetRef.CType(String)
-  fullName.vb: Luny.Engine.Bridge.LunyAssetRef.CType(String)
+  fullName.vb: Luny.Engine.Bridge.LunyAssetRef.CType(System.String)
   name.vb: CType(String)
 - uid: Luny.Engine.Bridge.LunyAssetRef.op_Implicit(Luny.Engine.Bridge.LunyAsset)~Luny.Engine.Bridge.LunyAssetRef
   commentId: M:Luny.Engine.Bridge.LunyAssetRef.op_Implicit(Luny.Engine.Bridge.LunyAsset)~Luny.Engine.Bridge.LunyAssetRef
@@ -88,22 +88,22 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyAssetRef(string)
-  nameWithType: LunyAssetRef.LunyAssetRef(string)
-  fullName: Luny.Engine.Bridge.LunyAssetRef.LunyAssetRef(string)
+  name: LunyAssetRef(String)
+  nameWithType: LunyAssetRef.LunyAssetRef(String)
+  fullName: Luny.Engine.Bridge.LunyAssetRef.LunyAssetRef(System.String)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public LunyAssetRef(string query)
+    content: public LunyAssetRef(String query)
     parameters:
     - id: query
       type: System.String
-    content.vb: Public Sub New(query As String)
+    content.vb: Public Sub New(query As [String])
   overload: Luny.Engine.Bridge.LunyAssetRef.#ctor*
   nameWithType.vb: LunyAssetRef.New(String)
-  fullName.vb: Luny.Engine.Bridge.LunyAssetRef.New(String)
+  fullName.vb: Luny.Engine.Bridge.LunyAssetRef.New(System.String)
   name.vb: New(String)
 - uid: Luny.Engine.Bridge.LunyAssetRef.#ctor(Luny.Engine.Bridge.ILunyAsset)
   commentId: M:Luny.Engine.Bridge.LunyAssetRef.#ctor(Luny.Engine.Bridge.ILunyAsset)
@@ -136,27 +136,24 @@ items:
   langs:
   - csharp
   - vb
-  name: ResolveObject(string)
-  nameWithType: LunyAssetRef.ResolveObject(string)
-  fullName: Luny.Engine.Bridge.LunyAssetRef.ResolveObject(string)
+  name: ResolveObject(String)
+  nameWithType: LunyAssetRef.ResolveObject(String)
+  fullName: Luny.Engine.Bridge.LunyAssetRef.ResolveObject(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: protected override LunyAsset ResolveObject(string query)
+    content: protected override LunyAsset ResolveObject(String query)
     parameters:
     - id: query
       type: System.String
     return:
       type: Luny.Engine.Bridge.LunyAsset
-    content.vb: Protected Overrides Function ResolveObject(query As String) As LunyAsset
+    content.vb: Protected Overrides Function ResolveObject(query As [String]) As LunyAsset
   overridden: Luny.Engine.Bridge.LunyRef{Luny.Engine.Bridge.LunyAsset}.ResolveObject(System.String)
   overload: Luny.Engine.Bridge.LunyAssetRef.ResolveObject*
-  nameWithType.vb: LunyAssetRef.ResolveObject(String)
-  fullName.vb: Luny.Engine.Bridge.LunyAssetRef.ResolveObject(String)
-  name.vb: ResolveObject(String)
 - uid: Luny.Engine.Bridge.LunyAssetRef.IsValid(Luny.Engine.Bridge.LunyAsset)
   commentId: M:Luny.Engine.Bridge.LunyAssetRef.IsValid(Luny.Engine.Bridge.LunyAsset)
   id: IsValid(Luny.Engine.Bridge.LunyAsset)
@@ -173,13 +170,13 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: protected override bool IsValid(LunyAsset value)
+    content: protected override Boolean IsValid(LunyAsset value)
     parameters:
     - id: value
       type: Luny.Engine.Bridge.LunyAsset
     return:
       type: System.Boolean
-    content.vb: Protected Overrides Function IsValid(value As LunyAsset) As Boolean
+    content.vb: Protected Overrides Function IsValid(value As LunyAsset) As [Boolean]
   overridden: Luny.Engine.Bridge.LunyRef{Luny.Engine.Bridge.LunyAsset}.IsValid(Luny.Engine.Bridge.LunyAsset)
   overload: Luny.Engine.Bridge.LunyAssetRef.IsValid*
 references:
@@ -224,12 +221,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Bridge.LunyRef{Luny.Engine.Bridge.LunyAsset}
   commentId: T:Luny.Engine.Bridge.LunyRef{Luny.Engine.Bridge.LunyAsset}
   parent: Luny.Engine.Bridge
@@ -336,12 +330,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyAssetRef
   commentId: T:Luny.Engine.Bridge.LunyAssetRef
   parent: Luny.Engine.Bridge
@@ -381,12 +372,11 @@ references:
   parent: Luny.Engine.Bridge.LunyRef{Luny.Engine.Bridge.LunyAsset}
   definition: Luny.Engine.Bridge.LunyRef`1.ResolveObject(System.String)
   href: Luny.Engine.Bridge.LunyRef-1.html#Luny_Engine_Bridge_LunyRef_1_ResolveObject_System_String_
-  name: ResolveObject(string)
-  nameWithType: LunyRef<LunyAsset>.ResolveObject(string)
-  fullName: Luny.Engine.Bridge.LunyRef<Luny.Engine.Bridge.LunyAsset>.ResolveObject(string)
+  name: ResolveObject(String)
+  nameWithType: LunyRef<LunyAsset>.ResolveObject(String)
+  fullName: Luny.Engine.Bridge.LunyRef<Luny.Engine.Bridge.LunyAsset>.ResolveObject(System.String)
   nameWithType.vb: LunyRef(Of LunyAsset).ResolveObject(String)
-  fullName.vb: Luny.Engine.Bridge.LunyRef(Of Luny.Engine.Bridge.LunyAsset).ResolveObject(String)
-  name.vb: ResolveObject(String)
+  fullName.vb: Luny.Engine.Bridge.LunyRef(Of Luny.Engine.Bridge.LunyAsset).ResolveObject(System.String)
   spec.csharp:
   - uid: Luny.Engine.Bridge.LunyRef{Luny.Engine.Bridge.LunyAsset}.ResolveObject(System.String)
     name: ResolveObject
@@ -394,7 +384,7 @@ references:
     href: Luny.Engine.Bridge.LunyRef-1.html#Luny_Engine_Bridge_LunyRef_1_ResolveObject_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -420,12 +410,11 @@ references:
   commentId: M:Luny.Engine.Bridge.LunyRef`1.ResolveObject(System.String)
   isExternal: true
   href: Luny.Engine.Bridge.LunyRef-1.html#Luny_Engine_Bridge_LunyRef_1_ResolveObject_System_String_
-  name: ResolveObject(string)
-  nameWithType: LunyRef<T>.ResolveObject(string)
-  fullName: Luny.Engine.Bridge.LunyRef<T>.ResolveObject(string)
+  name: ResolveObject(String)
+  nameWithType: LunyRef<T>.ResolveObject(String)
+  fullName: Luny.Engine.Bridge.LunyRef<T>.ResolveObject(System.String)
   nameWithType.vb: LunyRef(Of T).ResolveObject(String)
-  fullName.vb: Luny.Engine.Bridge.LunyRef(Of T).ResolveObject(String)
-  name.vb: ResolveObject(String)
+  fullName.vb: Luny.Engine.Bridge.LunyRef(Of T).ResolveObject(System.String)
   spec.csharp:
   - uid: Luny.Engine.Bridge.LunyRef`1.ResolveObject(System.String)
     name: ResolveObject
@@ -433,7 +422,7 @@ references:
     href: Luny.Engine.Bridge.LunyRef-1.html#Luny_Engine_Bridge_LunyRef_1_ResolveObject_System_String_
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -492,12 +481,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Bridge.LunyRef`1.IsValid(`0)
   commentId: M:Luny.Engine.Bridge.LunyRef`1.IsValid(`0)
   isExternal: true

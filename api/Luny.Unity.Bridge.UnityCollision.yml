@@ -40,25 +40,22 @@ items:
   langs:
   - csharp
   - vb
-  name: SetNativeCollision(object)
-  nameWithType: UnityCollision.SetNativeCollision(object)
-  fullName: Luny.Unity.Bridge.UnityCollision.SetNativeCollision(object)
+  name: SetNativeCollision(Object)
+  nameWithType: UnityCollision.SetNativeCollision(Object)
+  fullName: Luny.Unity.Bridge.UnityCollision.SetNativeCollision(System.Object)
   type: Method
   assemblies:
   - Luny.Unity
   namespace: Luny.Unity.Bridge
   example: []
   syntax:
-    content: public override void SetNativeCollision(object nativeCollision)
+    content: public override void SetNativeCollision(Object nativeCollision)
     parameters:
     - id: nativeCollision
       type: System.Object
-    content.vb: Public Overrides Sub SetNativeCollision(nativeCollision As Object)
+    content.vb: Public Overrides Sub SetNativeCollision(nativeCollision As [Object])
   overridden: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(System.Object)
   overload: Luny.Unity.Bridge.UnityCollision.SetNativeCollision*
-  nameWithType.vb: UnityCollision.SetNativeCollision(Object)
-  fullName.vb: Luny.Unity.Bridge.UnityCollision.SetNativeCollision(Object)
-  name.vb: SetNativeCollision(Object)
 - uid: Luny.Unity.Bridge.UnityCollision.HasComponent(System.Type)
   commentId: M:Luny.Unity.Bridge.UnityCollision.HasComponent(System.Type)
   id: HasComponent(System.Type)
@@ -75,13 +72,13 @@ items:
   namespace: Luny.Unity.Bridge
   example: []
   syntax:
-    content: public override bool HasComponent(Type type)
+    content: public override Boolean HasComponent(Type type)
     parameters:
     - id: type
       type: System.Type
     return:
       type: System.Boolean
-    content.vb: Public Overrides Function HasComponent(type As Type) As Boolean
+    content.vb: Public Overrides Function HasComponent(type As Type) As [Boolean]
   overridden: Luny.Engine.Bridge.LunyCollision.HasComponent(System.Type)
   overload: Luny.Unity.Bridge.UnityCollision.HasComponent*
 - uid: Luny.Unity.Bridge.UnityCollision.#ctor
@@ -165,11 +162,11 @@ items:
   namespace: Luny.Unity.Bridge
   example: []
   syntax:
-    content: public override string Tag { get; }
+    content: public override String Tag { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Overrides ReadOnly Property Tag As String
+    content.vb: Public Overrides ReadOnly Property Tag As [String]
   overridden: Luny.Engine.Bridge.LunyCollision.Tag
   overload: Luny.Unity.Bridge.UnityCollision.Tag*
 - uid: Luny.Unity.Bridge.UnityCollision.Name
@@ -188,11 +185,11 @@ items:
   namespace: Luny.Unity.Bridge
   example: []
   syntax:
-    content: public override string Name { get; }
+    content: public override String Name { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Overrides ReadOnly Property Name As String
+    content.vb: Public Overrides ReadOnly Property Name As [String]
   overridden: Luny.Engine.Bridge.LunyCollision.Name
   overload: Luny.Unity.Bridge.UnityCollision.Name*
 - uid: Luny.Unity.Bridge.UnityCollision.LayerName
@@ -211,11 +208,11 @@ items:
   namespace: Luny.Unity.Bridge
   example: []
   syntax:
-    content: public override string LayerName { get; }
+    content: public override String LayerName { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Overrides ReadOnly Property LayerName As String
+    content.vb: Public Overrides ReadOnly Property LayerName As [String]
   overridden: Luny.Engine.Bridge.LunyCollision.LayerName
   overload: Luny.Unity.Bridge.UnityCollision.LayerName*
 - uid: Luny.Unity.Bridge.UnityCollision.Layer
@@ -234,11 +231,11 @@ items:
   namespace: Luny.Unity.Bridge
   example: []
   syntax:
-    content: public override int Layer { get; }
+    content: public override Int32 Layer { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public Overrides ReadOnly Property Layer As Integer
+    content.vb: Public Overrides ReadOnly Property Layer As Int32
   overridden: Luny.Engine.Bridge.LunyCollision.Layer
   overload: Luny.Unity.Bridge.UnityCollision.Layer*
 references:
@@ -283,12 +280,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Bridge.LunyCollision
   commentId: T:Luny.Engine.Bridge.LunyCollision
   parent: Luny.Engine.Bridge
@@ -359,19 +353,16 @@ references:
   commentId: M:Luny.Engine.Bridge.LunyCollision.SetNativeCollision(System.Object)
   parent: Luny.Engine.Bridge.LunyCollision
   isExternal: true
-  name: SetNativeCollision(object)
-  nameWithType: LunyCollision.SetNativeCollision(object)
-  fullName: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(object)
-  nameWithType.vb: LunyCollision.SetNativeCollision(Object)
-  fullName.vb: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(Object)
-  name.vb: SetNativeCollision(Object)
+  name: SetNativeCollision(Object)
+  nameWithType: LunyCollision.SetNativeCollision(Object)
+  fullName: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(System.Object)
   spec.csharp:
   - uid: Luny.Engine.Bridge.LunyCollision.SetNativeCollision(System.Object)
     name: SetNativeCollision
     isExternal: true
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -438,12 +429,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Unity.Bridge.UnityCollision.#ctor*
   commentId: Overload:Luny.Unity.Bridge.UnityCollision.#ctor
   isExternal: true
@@ -508,12 +496,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyCollision.Name
   commentId: P:Luny.Engine.Bridge.LunyCollision.Name
   parent: Luny.Engine.Bridge.LunyCollision
@@ -561,9 +546,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

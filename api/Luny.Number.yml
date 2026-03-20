@@ -115,8 +115,8 @@ items:
   summary: A primitive type that wraps a double and provides implicit conversions from and to various types.
   example: []
   syntax:
-    content: 'public readonly struct Number : IConvertible, IFormattable, IComparable, IComparable<Number>, IEquatable<Number>, IComparable<double>, IEquatable<double>, IComparable<long>, IEquatable<long>, IComparable<ulong>, IEquatable<ulong>'
-    content.vb: Public Structure Number Implements IConvertible, IFormattable, IComparable, IComparable(Of Number), IEquatable(Of Number), IComparable(Of Double), IEquatable(Of Double), IComparable(Of Long), IEquatable(Of Long), IComparable(Of ULong), IEquatable(Of ULong)
+    content: 'public readonly struct Number : IConvertible, IFormattable, IComparable, IComparable<Number>, IEquatable<Number>, IComparable<Double>, IEquatable<Double>, IComparable<Int64>, IEquatable<Int64>, IComparable<UInt64>, IEquatable<UInt64>'
+    content.vb: Public Structure Number Implements IConvertible, IFormattable, IComparable, IComparable(Of Number), IEquatable(Of Number), IComparable(Of Double), IEquatable(Of Double), IComparable(Of Int64), IEquatable(Of Int64), IComparable(Of UInt64), IEquatable(Of UInt64)
   implements:
   - System.IConvertible
   - System.IFormattable
@@ -136,24 +136,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(double)
-  nameWithType: Number.implicit operator Number(double)
-  fullName: Luny.Number.implicit operator Luny.Number(double)
+  name: implicit operator Number(Double)
+  nameWithType: Number.implicit operator Number(Double)
+  fullName: Luny.Number.implicit operator Luny.Number(System.Double)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(double value)
+    content: public static implicit operator Number(Double value)
     parameters:
     - id: value
       type: System.Double
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As Double) As Number
+    content.vb: Public Shared Widening Operator CType(value As [Double]) As Number
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Double)
-  fullName.vb: Luny.Number.CType(Double)
+  fullName.vb: Luny.Number.CType(System.Double)
   name.vb: CType(Double)
 - uid: Luny.Number.op_Implicit(System.Single)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.Single)~Luny.Number
@@ -162,24 +162,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(float)
-  nameWithType: Number.implicit operator Number(float)
-  fullName: Luny.Number.implicit operator Luny.Number(float)
+  name: implicit operator Number(Single)
+  nameWithType: Number.implicit operator Number(Single)
+  fullName: Luny.Number.implicit operator Luny.Number(System.Single)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(float value)
+    content: public static implicit operator Number(Single value)
     parameters:
     - id: value
       type: System.Single
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As Single) As Number
+    content.vb: Public Shared Widening Operator CType(value As [Single]) As Number
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Single)
-  fullName.vb: Luny.Number.CType(Single)
+  fullName.vb: Luny.Number.CType(System.Single)
   name.vb: CType(Single)
 - uid: Luny.Number.op_Implicit(System.Int32)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.Int32)~Luny.Number
@@ -188,25 +188,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(int)
-  nameWithType: Number.implicit operator Number(int)
-  fullName: Luny.Number.implicit operator Luny.Number(int)
+  name: implicit operator Number(Int32)
+  nameWithType: Number.implicit operator Number(Int32)
+  fullName: Luny.Number.implicit operator Luny.Number(System.Int32)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(int value)
+    content: public static implicit operator Number(Int32 value)
     parameters:
     - id: value
       type: System.Int32
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As Integer) As Number
+    content.vb: Public Shared Widening Operator CType(value As Int32) As Number
   overload: Luny.Number.op_Implicit*
-  nameWithType.vb: Number.CType(Integer)
-  fullName.vb: Luny.Number.CType(Integer)
-  name.vb: CType(Integer)
+  nameWithType.vb: Number.CType(Int32)
+  fullName.vb: Luny.Number.CType(System.Int32)
+  name.vb: CType(Int32)
 - uid: Luny.Number.op_Implicit(System.Int64)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.Int64)~Luny.Number
   id: op_Implicit(System.Int64)~Luny.Number
@@ -214,25 +214,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(long)
-  nameWithType: Number.implicit operator Number(long)
-  fullName: Luny.Number.implicit operator Luny.Number(long)
+  name: implicit operator Number(Int64)
+  nameWithType: Number.implicit operator Number(Int64)
+  fullName: Luny.Number.implicit operator Luny.Number(System.Int64)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(long value)
+    content: public static implicit operator Number(Int64 value)
     parameters:
     - id: value
       type: System.Int64
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As Long) As Number
+    content.vb: Public Shared Widening Operator CType(value As Int64) As Number
   overload: Luny.Number.op_Implicit*
-  nameWithType.vb: Number.CType(Long)
-  fullName.vb: Luny.Number.CType(Long)
-  name.vb: CType(Long)
+  nameWithType.vb: Number.CType(Int64)
+  fullName.vb: Luny.Number.CType(System.Int64)
+  name.vb: CType(Int64)
 - uid: Luny.Number.op_Implicit(System.Int16)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.Int16)~Luny.Number
   id: op_Implicit(System.Int16)~Luny.Number
@@ -240,25 +240,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(short)
-  nameWithType: Number.implicit operator Number(short)
-  fullName: Luny.Number.implicit operator Luny.Number(short)
+  name: implicit operator Number(Int16)
+  nameWithType: Number.implicit operator Number(Int16)
+  fullName: Luny.Number.implicit operator Luny.Number(System.Int16)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(short value)
+    content: public static implicit operator Number(Int16 value)
     parameters:
     - id: value
       type: System.Int16
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As Short) As Number
+    content.vb: Public Shared Widening Operator CType(value As Int16) As Number
   overload: Luny.Number.op_Implicit*
-  nameWithType.vb: Number.CType(Short)
-  fullName.vb: Luny.Number.CType(Short)
-  name.vb: CType(Short)
+  nameWithType.vb: Number.CType(Int16)
+  fullName.vb: Luny.Number.CType(System.Int16)
+  name.vb: CType(Int16)
 - uid: Luny.Number.op_Implicit(System.Byte)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.Byte)~Luny.Number
   id: op_Implicit(System.Byte)~Luny.Number
@@ -266,24 +266,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(byte)
-  nameWithType: Number.implicit operator Number(byte)
-  fullName: Luny.Number.implicit operator Luny.Number(byte)
+  name: implicit operator Number(Byte)
+  nameWithType: Number.implicit operator Number(Byte)
+  fullName: Luny.Number.implicit operator Luny.Number(System.Byte)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(byte value)
+    content: public static implicit operator Number(Byte value)
     parameters:
     - id: value
       type: System.Byte
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As Byte) As Number
+    content.vb: Public Shared Widening Operator CType(value As [Byte]) As Number
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Byte)
-  fullName.vb: Luny.Number.CType(Byte)
+  fullName.vb: Luny.Number.CType(System.Byte)
   name.vb: CType(Byte)
 - uid: Luny.Number.op_Implicit(System.UInt32)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.UInt32)~Luny.Number
@@ -292,25 +292,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(uint)
-  nameWithType: Number.implicit operator Number(uint)
-  fullName: Luny.Number.implicit operator Luny.Number(uint)
+  name: implicit operator Number(UInt32)
+  nameWithType: Number.implicit operator Number(UInt32)
+  fullName: Luny.Number.implicit operator Luny.Number(System.UInt32)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(uint value)
+    content: public static implicit operator Number(UInt32 value)
     parameters:
     - id: value
       type: System.UInt32
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As UInteger) As Number
+    content.vb: Public Shared Widening Operator CType(value As UInt32) As Number
   overload: Luny.Number.op_Implicit*
-  nameWithType.vb: Number.CType(UInteger)
-  fullName.vb: Luny.Number.CType(UInteger)
-  name.vb: CType(UInteger)
+  nameWithType.vb: Number.CType(UInt32)
+  fullName.vb: Luny.Number.CType(System.UInt32)
+  name.vb: CType(UInt32)
 - uid: Luny.Number.op_Implicit(System.UInt64)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.UInt64)~Luny.Number
   id: op_Implicit(System.UInt64)~Luny.Number
@@ -318,25 +318,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(ulong)
-  nameWithType: Number.implicit operator Number(ulong)
-  fullName: Luny.Number.implicit operator Luny.Number(ulong)
+  name: implicit operator Number(UInt64)
+  nameWithType: Number.implicit operator Number(UInt64)
+  fullName: Luny.Number.implicit operator Luny.Number(System.UInt64)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(ulong value)
+    content: public static implicit operator Number(UInt64 value)
     parameters:
     - id: value
       type: System.UInt64
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As ULong) As Number
+    content.vb: Public Shared Widening Operator CType(value As UInt64) As Number
   overload: Luny.Number.op_Implicit*
-  nameWithType.vb: Number.CType(ULong)
-  fullName.vb: Luny.Number.CType(ULong)
-  name.vb: CType(ULong)
+  nameWithType.vb: Number.CType(UInt64)
+  fullName.vb: Luny.Number.CType(System.UInt64)
+  name.vb: CType(UInt64)
 - uid: Luny.Number.op_Implicit(System.UInt16)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.UInt16)~Luny.Number
   id: op_Implicit(System.UInt16)~Luny.Number
@@ -344,25 +344,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(ushort)
-  nameWithType: Number.implicit operator Number(ushort)
-  fullName: Luny.Number.implicit operator Luny.Number(ushort)
+  name: implicit operator Number(UInt16)
+  nameWithType: Number.implicit operator Number(UInt16)
+  fullName: Luny.Number.implicit operator Luny.Number(System.UInt16)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(ushort value)
+    content: public static implicit operator Number(UInt16 value)
     parameters:
     - id: value
       type: System.UInt16
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As UShort) As Number
+    content.vb: Public Shared Widening Operator CType(value As UInt16) As Number
   overload: Luny.Number.op_Implicit*
-  nameWithType.vb: Number.CType(UShort)
-  fullName.vb: Luny.Number.CType(UShort)
-  name.vb: CType(UShort)
+  nameWithType.vb: Number.CType(UInt16)
+  fullName.vb: Luny.Number.CType(System.UInt16)
+  name.vb: CType(UInt16)
 - uid: Luny.Number.op_Implicit(System.SByte)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.SByte)~Luny.Number
   id: op_Implicit(System.SByte)~Luny.Number
@@ -370,24 +370,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(sbyte)
-  nameWithType: Number.implicit operator Number(sbyte)
-  fullName: Luny.Number.implicit operator Luny.Number(sbyte)
+  name: implicit operator Number(SByte)
+  nameWithType: Number.implicit operator Number(SByte)
+  fullName: Luny.Number.implicit operator Luny.Number(System.SByte)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(sbyte value)
+    content: public static implicit operator Number(SByte value)
     parameters:
     - id: value
       type: System.SByte
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As SByte) As Number
+    content.vb: Public Shared Widening Operator CType(value As [SByte]) As Number
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(SByte)
-  fullName.vb: Luny.Number.CType(SByte)
+  fullName.vb: Luny.Number.CType(System.SByte)
   name.vb: CType(SByte)
 - uid: Luny.Number.op_Implicit(System.Decimal)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.Decimal)~Luny.Number
@@ -396,24 +396,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(decimal)
-  nameWithType: Number.implicit operator Number(decimal)
-  fullName: Luny.Number.implicit operator Luny.Number(decimal)
+  name: implicit operator Number(Decimal)
+  nameWithType: Number.implicit operator Number(Decimal)
+  fullName: Luny.Number.implicit operator Luny.Number(System.Decimal)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(decimal value)
+    content: public static implicit operator Number(Decimal value)
     parameters:
     - id: value
       type: System.Decimal
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As Decimal) As Number
+    content.vb: Public Shared Widening Operator CType(value As [Decimal]) As Number
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Decimal)
-  fullName.vb: Luny.Number.CType(Decimal)
+  fullName.vb: Luny.Number.CType(System.Decimal)
   name.vb: CType(Decimal)
 - uid: Luny.Number.op_Implicit(System.Boolean)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.Boolean)~Luny.Number
@@ -422,24 +422,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(bool)
-  nameWithType: Number.implicit operator Number(bool)
-  fullName: Luny.Number.implicit operator Luny.Number(bool)
+  name: implicit operator Number(Boolean)
+  nameWithType: Number.implicit operator Number(Boolean)
+  fullName: Luny.Number.implicit operator Luny.Number(System.Boolean)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(bool value)
+    content: public static implicit operator Number(Boolean value)
     parameters:
     - id: value
       type: System.Boolean
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As Boolean) As Number
+    content.vb: Public Shared Widening Operator CType(value As [Boolean]) As Number
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Boolean)
-  fullName.vb: Luny.Number.CType(Boolean)
+  fullName.vb: Luny.Number.CType(System.Boolean)
   name.vb: CType(Boolean)
 - uid: Luny.Number.op_Implicit(System.TimeSpan)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.TimeSpan)~Luny.Number
@@ -488,11 +488,11 @@ items:
       type: System.DateTime
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As Date) As Number
+    content.vb: Public Shared Widening Operator CType(value As DateTime) As Number
   overload: Luny.Number.op_Implicit*
-  nameWithType.vb: Number.CType(Date)
-  fullName.vb: Luny.Number.CType(Date)
-  name.vb: CType(Date)
+  nameWithType.vb: Number.CType(DateTime)
+  fullName.vb: Luny.Number.CType(System.DateTime)
+  name.vb: CType(DateTime)
 - uid: Luny.Number.op_Implicit(System.String)~Luny.Number
   commentId: M:Luny.Number.op_Implicit(System.String)~Luny.Number
   id: op_Implicit(System.String)~Luny.Number
@@ -500,24 +500,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Number(string)
-  nameWithType: Number.implicit operator Number(string)
-  fullName: Luny.Number.implicit operator Luny.Number(string)
+  name: implicit operator Number(String)
+  nameWithType: Number.implicit operator Number(String)
+  fullName: Luny.Number.implicit operator Luny.Number(System.String)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Number(string value)
+    content: public static implicit operator Number(String value)
     parameters:
     - id: value
       type: System.String
     return:
       type: Luny.Number
-    content.vb: Public Shared Widening Operator CType(value As String) As Number
+    content.vb: Public Shared Widening Operator CType(value As [String]) As Number
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(String)
-  fullName.vb: Luny.Number.CType(String)
+  fullName.vb: Luny.Number.CType(System.String)
   name.vb: CType(String)
 - uid: Luny.Number.op_Implicit(Luny.Number)~System.Double
   commentId: M:Luny.Number.op_Implicit(Luny.Number)~System.Double
@@ -526,21 +526,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator double(Number)
-  nameWithType: Number.implicit operator double(Number)
-  fullName: Luny.Number.implicit operator double(Luny.Number)
+  name: implicit operator Double(Number)
+  nameWithType: Number.implicit operator Double(Number)
+  fullName: Luny.Number.implicit operator System.Double(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator double(Number number)
+    content: public static implicit operator Double(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.Double
-    content.vb: Public Shared Widening Operator CType(number As Number) As Double
+    content.vb: Public Shared Widening Operator CType(number As Number) As [Double]
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -552,21 +552,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator float(Number)
-  nameWithType: Number.implicit operator float(Number)
-  fullName: Luny.Number.implicit operator float(Luny.Number)
+  name: implicit operator Single(Number)
+  nameWithType: Number.implicit operator Single(Number)
+  fullName: Luny.Number.implicit operator System.Single(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator float(Number number)
+    content: public static implicit operator Single(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.Single
-    content.vb: Public Shared Widening Operator CType(number As Number) As Single
+    content.vb: Public Shared Widening Operator CType(number As Number) As [Single]
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -578,21 +578,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator int(Number)
-  nameWithType: Number.implicit operator int(Number)
-  fullName: Luny.Number.implicit operator int(Luny.Number)
+  name: implicit operator Int32(Number)
+  nameWithType: Number.implicit operator Int32(Number)
+  fullName: Luny.Number.implicit operator System.Int32(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator int(Number number)
+    content: public static implicit operator Int32(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.Int32
-    content.vb: Public Shared Widening Operator CType(number As Number) As Integer
+    content.vb: Public Shared Widening Operator CType(number As Number) As Int32
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -604,21 +604,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator long(Number)
-  nameWithType: Number.implicit operator long(Number)
-  fullName: Luny.Number.implicit operator long(Luny.Number)
+  name: implicit operator Int64(Number)
+  nameWithType: Number.implicit operator Int64(Number)
+  fullName: Luny.Number.implicit operator System.Int64(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator long(Number number)
+    content: public static implicit operator Int64(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.Int64
-    content.vb: Public Shared Widening Operator CType(number As Number) As Long
+    content.vb: Public Shared Widening Operator CType(number As Number) As Int64
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -630,21 +630,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator short(Number)
-  nameWithType: Number.implicit operator short(Number)
-  fullName: Luny.Number.implicit operator short(Luny.Number)
+  name: implicit operator Int16(Number)
+  nameWithType: Number.implicit operator Int16(Number)
+  fullName: Luny.Number.implicit operator System.Int16(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator short(Number number)
+    content: public static implicit operator Int16(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.Int16
-    content.vb: Public Shared Widening Operator CType(number As Number) As Short
+    content.vb: Public Shared Widening Operator CType(number As Number) As Int16
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -656,21 +656,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator byte(Number)
-  nameWithType: Number.implicit operator byte(Number)
-  fullName: Luny.Number.implicit operator byte(Luny.Number)
+  name: implicit operator Byte(Number)
+  nameWithType: Number.implicit operator Byte(Number)
+  fullName: Luny.Number.implicit operator System.Byte(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator byte(Number number)
+    content: public static implicit operator Byte(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.Byte
-    content.vb: Public Shared Widening Operator CType(number As Number) As Byte
+    content.vb: Public Shared Widening Operator CType(number As Number) As [Byte]
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -682,21 +682,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator uint(Number)
-  nameWithType: Number.implicit operator uint(Number)
-  fullName: Luny.Number.implicit operator uint(Luny.Number)
+  name: implicit operator UInt32(Number)
+  nameWithType: Number.implicit operator UInt32(Number)
+  fullName: Luny.Number.implicit operator System.UInt32(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator uint(Number number)
+    content: public static implicit operator UInt32(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.UInt32
-    content.vb: Public Shared Widening Operator CType(number As Number) As UInteger
+    content.vb: Public Shared Widening Operator CType(number As Number) As UInt32
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -708,21 +708,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator ulong(Number)
-  nameWithType: Number.implicit operator ulong(Number)
-  fullName: Luny.Number.implicit operator ulong(Luny.Number)
+  name: implicit operator UInt64(Number)
+  nameWithType: Number.implicit operator UInt64(Number)
+  fullName: Luny.Number.implicit operator System.UInt64(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator ulong(Number number)
+    content: public static implicit operator UInt64(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.UInt64
-    content.vb: Public Shared Widening Operator CType(number As Number) As ULong
+    content.vb: Public Shared Widening Operator CType(number As Number) As UInt64
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -734,21 +734,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator ushort(Number)
-  nameWithType: Number.implicit operator ushort(Number)
-  fullName: Luny.Number.implicit operator ushort(Luny.Number)
+  name: implicit operator UInt16(Number)
+  nameWithType: Number.implicit operator UInt16(Number)
+  fullName: Luny.Number.implicit operator System.UInt16(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator ushort(Number number)
+    content: public static implicit operator UInt16(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.UInt16
-    content.vb: Public Shared Widening Operator CType(number As Number) As UShort
+    content.vb: Public Shared Widening Operator CType(number As Number) As UInt16
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -760,21 +760,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator sbyte(Number)
-  nameWithType: Number.implicit operator sbyte(Number)
-  fullName: Luny.Number.implicit operator sbyte(Luny.Number)
+  name: implicit operator SByte(Number)
+  nameWithType: Number.implicit operator SByte(Number)
+  fullName: Luny.Number.implicit operator System.SByte(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator sbyte(Number number)
+    content: public static implicit operator SByte(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.SByte
-    content.vb: Public Shared Widening Operator CType(number As Number) As SByte
+    content.vb: Public Shared Widening Operator CType(number As Number) As [SByte]
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -786,21 +786,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator decimal(Number)
-  nameWithType: Number.implicit operator decimal(Number)
-  fullName: Luny.Number.implicit operator decimal(Luny.Number)
+  name: implicit operator Decimal(Number)
+  nameWithType: Number.implicit operator Decimal(Number)
+  fullName: Luny.Number.implicit operator System.Decimal(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator decimal(Number number)
+    content: public static implicit operator Decimal(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.Decimal
-    content.vb: Public Shared Widening Operator CType(number As Number) As Decimal
+    content.vb: Public Shared Widening Operator CType(number As Number) As [Decimal]
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -852,7 +852,7 @@ items:
       type: Luny.Number
     return:
       type: System.DateTime
-    content.vb: Public Shared Widening Operator CType(number As Number) As Date
+    content.vb: Public Shared Widening Operator CType(number As Number) As DateTime
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -864,21 +864,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator bool(Number)
-  nameWithType: Number.implicit operator bool(Number)
-  fullName: Luny.Number.implicit operator bool(Luny.Number)
+  name: implicit operator Boolean(Number)
+  nameWithType: Number.implicit operator Boolean(Number)
+  fullName: Luny.Number.implicit operator System.Boolean(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator bool(Number number)
+    content: public static implicit operator Boolean(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.Boolean
-    content.vb: Public Shared Widening Operator CType(number As Number) As Boolean
+    content.vb: Public Shared Widening Operator CType(number As Number) As [Boolean]
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -890,21 +890,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator string(Number)
-  nameWithType: Number.implicit operator string(Number)
-  fullName: Luny.Number.implicit operator string(Luny.Number)
+  name: implicit operator String(Number)
+  nameWithType: Number.implicit operator String(Number)
+  fullName: Luny.Number.implicit operator System.String(Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator string(Number number)
+    content: public static implicit operator String(Number number)
     parameters:
     - id: number
       type: Luny.Number
     return:
       type: System.String
-    content.vb: Public Shared Widening Operator CType(number As Number) As String
+    content.vb: Public Shared Widening Operator CType(number As Number) As [String]
   overload: Luny.Number.op_Implicit*
   nameWithType.vb: Number.CType(Number)
   fullName.vb: Luny.Number.CType(Luny.Number)
@@ -1056,15 +1056,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator +(Number, bool)
-  nameWithType: Number.operator +(Number, bool)
-  fullName: Luny.Number.operator +(Luny.Number, bool)
+  name: operator +(Number, Boolean)
+  nameWithType: Number.operator +(Number, Boolean)
+  fullName: Luny.Number.operator +(Luny.Number, System.Boolean)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator +(Number a, bool b)
+    content: public static Number operator +(Number a, Boolean b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1072,10 +1072,10 @@ items:
       type: System.Boolean
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator +(a As Number, b As Boolean) As Number
+    content.vb: Public Shared Operator +(a As Number, b As [Boolean]) As Number
   overload: Luny.Number.op_Addition*
   nameWithType.vb: Number.+(Number, Boolean)
-  fullName.vb: Luny.Number.+(Luny.Number, Boolean)
+  fullName.vb: Luny.Number.+(Luny.Number, System.Boolean)
   name.vb: +(Number, Boolean)
 - uid: Luny.Number.op_Addition(System.Boolean,Luny.Number)
   commentId: M:Luny.Number.op_Addition(System.Boolean,Luny.Number)
@@ -1084,15 +1084,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator +(bool, Number)
-  nameWithType: Number.operator +(bool, Number)
-  fullName: Luny.Number.operator +(bool, Luny.Number)
+  name: operator +(Boolean, Number)
+  nameWithType: Number.operator +(Boolean, Number)
+  fullName: Luny.Number.operator +(System.Boolean, Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator +(bool a, Number b)
+    content: public static Number operator +(Boolean a, Number b)
     parameters:
     - id: a
       type: System.Boolean
@@ -1100,10 +1100,10 @@ items:
       type: Luny.Number
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator +(a As Boolean, b As Number) As Number
+    content.vb: Public Shared Operator +(a As [Boolean], b As Number) As Number
   overload: Luny.Number.op_Addition*
   nameWithType.vb: Number.+(Boolean, Number)
-  fullName.vb: Luny.Number.+(Boolean, Luny.Number)
+  fullName.vb: Luny.Number.+(System.Boolean, Luny.Number)
   name.vb: +(Boolean, Number)
 - uid: Luny.Number.op_Subtraction(Luny.Number,System.Boolean)
   commentId: M:Luny.Number.op_Subtraction(Luny.Number,System.Boolean)
@@ -1112,15 +1112,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator -(Number, bool)
-  nameWithType: Number.operator -(Number, bool)
-  fullName: Luny.Number.operator -(Luny.Number, bool)
+  name: operator -(Number, Boolean)
+  nameWithType: Number.operator -(Number, Boolean)
+  fullName: Luny.Number.operator -(Luny.Number, System.Boolean)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator -(Number a, bool b)
+    content: public static Number operator -(Number a, Boolean b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1128,10 +1128,10 @@ items:
       type: System.Boolean
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator -(a As Number, b As Boolean) As Number
+    content.vb: Public Shared Operator -(a As Number, b As [Boolean]) As Number
   overload: Luny.Number.op_Subtraction*
   nameWithType.vb: Number.-(Number, Boolean)
-  fullName.vb: Luny.Number.-(Luny.Number, Boolean)
+  fullName.vb: Luny.Number.-(Luny.Number, System.Boolean)
   name.vb: -(Number, Boolean)
 - uid: Luny.Number.op_Subtraction(System.Boolean,Luny.Number)
   commentId: M:Luny.Number.op_Subtraction(System.Boolean,Luny.Number)
@@ -1140,15 +1140,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator -(bool, Number)
-  nameWithType: Number.operator -(bool, Number)
-  fullName: Luny.Number.operator -(bool, Luny.Number)
+  name: operator -(Boolean, Number)
+  nameWithType: Number.operator -(Boolean, Number)
+  fullName: Luny.Number.operator -(System.Boolean, Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator -(bool a, Number b)
+    content: public static Number operator -(Boolean a, Number b)
     parameters:
     - id: a
       type: System.Boolean
@@ -1156,10 +1156,10 @@ items:
       type: Luny.Number
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator -(a As Boolean, b As Number) As Number
+    content.vb: Public Shared Operator -(a As [Boolean], b As Number) As Number
   overload: Luny.Number.op_Subtraction*
   nameWithType.vb: Number.-(Boolean, Number)
-  fullName.vb: Luny.Number.-(Boolean, Luny.Number)
+  fullName.vb: Luny.Number.-(System.Boolean, Luny.Number)
   name.vb: -(Boolean, Number)
 - uid: Luny.Number.op_Multiply(Luny.Number,System.Boolean)
   commentId: M:Luny.Number.op_Multiply(Luny.Number,System.Boolean)
@@ -1168,15 +1168,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator *(Number, bool)
-  nameWithType: Number.operator *(Number, bool)
-  fullName: Luny.Number.operator *(Luny.Number, bool)
+  name: operator *(Number, Boolean)
+  nameWithType: Number.operator *(Number, Boolean)
+  fullName: Luny.Number.operator *(Luny.Number, System.Boolean)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator *(Number a, bool b)
+    content: public static Number operator *(Number a, Boolean b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1184,10 +1184,10 @@ items:
       type: System.Boolean
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator *(a As Number, b As Boolean) As Number
+    content.vb: Public Shared Operator *(a As Number, b As [Boolean]) As Number
   overload: Luny.Number.op_Multiply*
   nameWithType.vb: Number.*(Number, Boolean)
-  fullName.vb: Luny.Number.*(Luny.Number, Boolean)
+  fullName.vb: Luny.Number.*(Luny.Number, System.Boolean)
   name.vb: '*(Number, Boolean)'
 - uid: Luny.Number.op_Multiply(System.Boolean,Luny.Number)
   commentId: M:Luny.Number.op_Multiply(System.Boolean,Luny.Number)
@@ -1196,15 +1196,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator *(bool, Number)
-  nameWithType: Number.operator *(bool, Number)
-  fullName: Luny.Number.operator *(bool, Luny.Number)
+  name: operator *(Boolean, Number)
+  nameWithType: Number.operator *(Boolean, Number)
+  fullName: Luny.Number.operator *(System.Boolean, Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator *(bool a, Number b)
+    content: public static Number operator *(Boolean a, Number b)
     parameters:
     - id: a
       type: System.Boolean
@@ -1212,10 +1212,10 @@ items:
       type: Luny.Number
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator *(a As Boolean, b As Number) As Number
+    content.vb: Public Shared Operator *(a As [Boolean], b As Number) As Number
   overload: Luny.Number.op_Multiply*
   nameWithType.vb: Number.*(Boolean, Number)
-  fullName.vb: Luny.Number.*(Boolean, Luny.Number)
+  fullName.vb: Luny.Number.*(System.Boolean, Luny.Number)
   name.vb: '*(Boolean, Number)'
 - uid: Luny.Number.op_Division(Luny.Number,System.Boolean)
   commentId: M:Luny.Number.op_Division(Luny.Number,System.Boolean)
@@ -1224,15 +1224,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator /(Number, bool)
-  nameWithType: Number.operator /(Number, bool)
-  fullName: Luny.Number.operator /(Luny.Number, bool)
+  name: operator /(Number, Boolean)
+  nameWithType: Number.operator /(Number, Boolean)
+  fullName: Luny.Number.operator /(Luny.Number, System.Boolean)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator /(Number a, bool b)
+    content: public static Number operator /(Number a, Boolean b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1240,10 +1240,10 @@ items:
       type: System.Boolean
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator /(a As Number, b As Boolean) As Number
+    content.vb: Public Shared Operator /(a As Number, b As [Boolean]) As Number
   overload: Luny.Number.op_Division*
   nameWithType.vb: Number./(Number, Boolean)
-  fullName.vb: Luny.Number./(Luny.Number, Boolean)
+  fullName.vb: Luny.Number./(Luny.Number, System.Boolean)
   name.vb: /(Number, Boolean)
 - uid: Luny.Number.op_Division(System.Boolean,Luny.Number)
   commentId: M:Luny.Number.op_Division(System.Boolean,Luny.Number)
@@ -1252,15 +1252,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator /(bool, Number)
-  nameWithType: Number.operator /(bool, Number)
-  fullName: Luny.Number.operator /(bool, Luny.Number)
+  name: operator /(Boolean, Number)
+  nameWithType: Number.operator /(Boolean, Number)
+  fullName: Luny.Number.operator /(System.Boolean, Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator /(bool a, Number b)
+    content: public static Number operator /(Boolean a, Number b)
     parameters:
     - id: a
       type: System.Boolean
@@ -1268,10 +1268,10 @@ items:
       type: Luny.Number
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator /(a As Boolean, b As Number) As Number
+    content.vb: Public Shared Operator /(a As [Boolean], b As Number) As Number
   overload: Luny.Number.op_Division*
   nameWithType.vb: Number./(Boolean, Number)
-  fullName.vb: Luny.Number./(Boolean, Luny.Number)
+  fullName.vb: Luny.Number./(System.Boolean, Luny.Number)
   name.vb: /(Boolean, Number)
 - uid: Luny.Number.op_Modulus(Luny.Number,System.Boolean)
   commentId: M:Luny.Number.op_Modulus(Luny.Number,System.Boolean)
@@ -1280,15 +1280,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator %(Number, bool)
-  nameWithType: Number.operator %(Number, bool)
-  fullName: Luny.Number.operator %(Luny.Number, bool)
+  name: operator %(Number, Boolean)
+  nameWithType: Number.operator %(Number, Boolean)
+  fullName: Luny.Number.operator %(Luny.Number, System.Boolean)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator %(Number a, bool b)
+    content: public static Number operator %(Number a, Boolean b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1296,10 +1296,10 @@ items:
       type: System.Boolean
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator Mod(a As Number, b As Boolean) As Number
+    content.vb: Public Shared Operator Mod(a As Number, b As [Boolean]) As Number
   overload: Luny.Number.op_Modulus*
   nameWithType.vb: Number.Mod(Number, Boolean)
-  fullName.vb: Luny.Number.Mod(Luny.Number, Boolean)
+  fullName.vb: Luny.Number.Mod(Luny.Number, System.Boolean)
   name.vb: Mod(Number, Boolean)
 - uid: Luny.Number.op_Modulus(System.Boolean,Luny.Number)
   commentId: M:Luny.Number.op_Modulus(System.Boolean,Luny.Number)
@@ -1308,15 +1308,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator %(bool, Number)
-  nameWithType: Number.operator %(bool, Number)
-  fullName: Luny.Number.operator %(bool, Luny.Number)
+  name: operator %(Boolean, Number)
+  nameWithType: Number.operator %(Boolean, Number)
+  fullName: Luny.Number.operator %(System.Boolean, Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator %(bool a, Number b)
+    content: public static Number operator %(Boolean a, Number b)
     parameters:
     - id: a
       type: System.Boolean
@@ -1324,10 +1324,10 @@ items:
       type: Luny.Number
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator Mod(a As Boolean, b As Number) As Number
+    content.vb: Public Shared Operator Mod(a As [Boolean], b As Number) As Number
   overload: Luny.Number.op_Modulus*
   nameWithType.vb: Number.Mod(Boolean, Number)
-  fullName.vb: Luny.Number.Mod(Boolean, Luny.Number)
+  fullName.vb: Luny.Number.Mod(System.Boolean, Luny.Number)
   name.vb: Mod(Boolean, Number)
 - uid: Luny.Number.op_Addition(Luny.Number,System.String)
   commentId: M:Luny.Number.op_Addition(Luny.Number,System.String)
@@ -1336,15 +1336,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator +(Number, string)
-  nameWithType: Number.operator +(Number, string)
-  fullName: Luny.Number.operator +(Luny.Number, string)
+  name: operator +(Number, String)
+  nameWithType: Number.operator +(Number, String)
+  fullName: Luny.Number.operator +(Luny.Number, System.String)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator +(Number a, string b)
+    content: public static Number operator +(Number a, String b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1352,10 +1352,10 @@ items:
       type: System.String
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator +(a As Number, b As String) As Number
+    content.vb: Public Shared Operator +(a As Number, b As [String]) As Number
   overload: Luny.Number.op_Addition*
   nameWithType.vb: Number.+(Number, String)
-  fullName.vb: Luny.Number.+(Luny.Number, String)
+  fullName.vb: Luny.Number.+(Luny.Number, System.String)
   name.vb: +(Number, String)
 - uid: Luny.Number.op_Addition(System.String,Luny.Number)
   commentId: M:Luny.Number.op_Addition(System.String,Luny.Number)
@@ -1364,15 +1364,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator +(string, Number)
-  nameWithType: Number.operator +(string, Number)
-  fullName: Luny.Number.operator +(string, Luny.Number)
+  name: operator +(String, Number)
+  nameWithType: Number.operator +(String, Number)
+  fullName: Luny.Number.operator +(System.String, Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator +(string a, Number b)
+    content: public static Number operator +(String a, Number b)
     parameters:
     - id: a
       type: System.String
@@ -1380,10 +1380,10 @@ items:
       type: Luny.Number
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator +(a As String, b As Number) As Number
+    content.vb: Public Shared Operator +(a As [String], b As Number) As Number
   overload: Luny.Number.op_Addition*
   nameWithType.vb: Number.+(String, Number)
-  fullName.vb: Luny.Number.+(String, Luny.Number)
+  fullName.vb: Luny.Number.+(System.String, Luny.Number)
   name.vb: +(String, Number)
 - uid: Luny.Number.op_Subtraction(Luny.Number,System.String)
   commentId: M:Luny.Number.op_Subtraction(Luny.Number,System.String)
@@ -1392,15 +1392,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator -(Number, string)
-  nameWithType: Number.operator -(Number, string)
-  fullName: Luny.Number.operator -(Luny.Number, string)
+  name: operator -(Number, String)
+  nameWithType: Number.operator -(Number, String)
+  fullName: Luny.Number.operator -(Luny.Number, System.String)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator -(Number a, string b)
+    content: public static Number operator -(Number a, String b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1408,10 +1408,10 @@ items:
       type: System.String
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator -(a As Number, b As String) As Number
+    content.vb: Public Shared Operator -(a As Number, b As [String]) As Number
   overload: Luny.Number.op_Subtraction*
   nameWithType.vb: Number.-(Number, String)
-  fullName.vb: Luny.Number.-(Luny.Number, String)
+  fullName.vb: Luny.Number.-(Luny.Number, System.String)
   name.vb: -(Number, String)
 - uid: Luny.Number.op_Subtraction(System.String,Luny.Number)
   commentId: M:Luny.Number.op_Subtraction(System.String,Luny.Number)
@@ -1420,15 +1420,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator -(string, Number)
-  nameWithType: Number.operator -(string, Number)
-  fullName: Luny.Number.operator -(string, Luny.Number)
+  name: operator -(String, Number)
+  nameWithType: Number.operator -(String, Number)
+  fullName: Luny.Number.operator -(System.String, Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator -(string a, Number b)
+    content: public static Number operator -(String a, Number b)
     parameters:
     - id: a
       type: System.String
@@ -1436,10 +1436,10 @@ items:
       type: Luny.Number
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator -(a As String, b As Number) As Number
+    content.vb: Public Shared Operator -(a As [String], b As Number) As Number
   overload: Luny.Number.op_Subtraction*
   nameWithType.vb: Number.-(String, Number)
-  fullName.vb: Luny.Number.-(String, Luny.Number)
+  fullName.vb: Luny.Number.-(System.String, Luny.Number)
   name.vb: -(String, Number)
 - uid: Luny.Number.op_Multiply(Luny.Number,System.String)
   commentId: M:Luny.Number.op_Multiply(Luny.Number,System.String)
@@ -1448,15 +1448,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator *(Number, string)
-  nameWithType: Number.operator *(Number, string)
-  fullName: Luny.Number.operator *(Luny.Number, string)
+  name: operator *(Number, String)
+  nameWithType: Number.operator *(Number, String)
+  fullName: Luny.Number.operator *(Luny.Number, System.String)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator *(Number a, string b)
+    content: public static Number operator *(Number a, String b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1464,10 +1464,10 @@ items:
       type: System.String
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator *(a As Number, b As String) As Number
+    content.vb: Public Shared Operator *(a As Number, b As [String]) As Number
   overload: Luny.Number.op_Multiply*
   nameWithType.vb: Number.*(Number, String)
-  fullName.vb: Luny.Number.*(Luny.Number, String)
+  fullName.vb: Luny.Number.*(Luny.Number, System.String)
   name.vb: '*(Number, String)'
 - uid: Luny.Number.op_Multiply(System.String,Luny.Number)
   commentId: M:Luny.Number.op_Multiply(System.String,Luny.Number)
@@ -1476,15 +1476,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator *(string, Number)
-  nameWithType: Number.operator *(string, Number)
-  fullName: Luny.Number.operator *(string, Luny.Number)
+  name: operator *(String, Number)
+  nameWithType: Number.operator *(String, Number)
+  fullName: Luny.Number.operator *(System.String, Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator *(string a, Number b)
+    content: public static Number operator *(String a, Number b)
     parameters:
     - id: a
       type: System.String
@@ -1492,10 +1492,10 @@ items:
       type: Luny.Number
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator *(a As String, b As Number) As Number
+    content.vb: Public Shared Operator *(a As [String], b As Number) As Number
   overload: Luny.Number.op_Multiply*
   nameWithType.vb: Number.*(String, Number)
-  fullName.vb: Luny.Number.*(String, Luny.Number)
+  fullName.vb: Luny.Number.*(System.String, Luny.Number)
   name.vb: '*(String, Number)'
 - uid: Luny.Number.op_Division(Luny.Number,System.String)
   commentId: M:Luny.Number.op_Division(Luny.Number,System.String)
@@ -1504,15 +1504,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator /(Number, string)
-  nameWithType: Number.operator /(Number, string)
-  fullName: Luny.Number.operator /(Luny.Number, string)
+  name: operator /(Number, String)
+  nameWithType: Number.operator /(Number, String)
+  fullName: Luny.Number.operator /(Luny.Number, System.String)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator /(Number a, string b)
+    content: public static Number operator /(Number a, String b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1520,10 +1520,10 @@ items:
       type: System.String
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator /(a As Number, b As String) As Number
+    content.vb: Public Shared Operator /(a As Number, b As [String]) As Number
   overload: Luny.Number.op_Division*
   nameWithType.vb: Number./(Number, String)
-  fullName.vb: Luny.Number./(Luny.Number, String)
+  fullName.vb: Luny.Number./(Luny.Number, System.String)
   name.vb: /(Number, String)
 - uid: Luny.Number.op_Division(System.String,Luny.Number)
   commentId: M:Luny.Number.op_Division(System.String,Luny.Number)
@@ -1532,15 +1532,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator /(string, Number)
-  nameWithType: Number.operator /(string, Number)
-  fullName: Luny.Number.operator /(string, Luny.Number)
+  name: operator /(String, Number)
+  nameWithType: Number.operator /(String, Number)
+  fullName: Luny.Number.operator /(System.String, Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator /(string a, Number b)
+    content: public static Number operator /(String a, Number b)
     parameters:
     - id: a
       type: System.String
@@ -1548,10 +1548,10 @@ items:
       type: Luny.Number
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator /(a As String, b As Number) As Number
+    content.vb: Public Shared Operator /(a As [String], b As Number) As Number
   overload: Luny.Number.op_Division*
   nameWithType.vb: Number./(String, Number)
-  fullName.vb: Luny.Number./(String, Luny.Number)
+  fullName.vb: Luny.Number./(System.String, Luny.Number)
   name.vb: /(String, Number)
 - uid: Luny.Number.op_Modulus(Luny.Number,System.String)
   commentId: M:Luny.Number.op_Modulus(Luny.Number,System.String)
@@ -1560,15 +1560,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator %(Number, string)
-  nameWithType: Number.operator %(Number, string)
-  fullName: Luny.Number.operator %(Luny.Number, string)
+  name: operator %(Number, String)
+  nameWithType: Number.operator %(Number, String)
+  fullName: Luny.Number.operator %(Luny.Number, System.String)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator %(Number a, string b)
+    content: public static Number operator %(Number a, String b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1576,10 +1576,10 @@ items:
       type: System.String
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator Mod(a As Number, b As String) As Number
+    content.vb: Public Shared Operator Mod(a As Number, b As [String]) As Number
   overload: Luny.Number.op_Modulus*
   nameWithType.vb: Number.Mod(Number, String)
-  fullName.vb: Luny.Number.Mod(Luny.Number, String)
+  fullName.vb: Luny.Number.Mod(Luny.Number, System.String)
   name.vb: Mod(Number, String)
 - uid: Luny.Number.op_Modulus(System.String,Luny.Number)
   commentId: M:Luny.Number.op_Modulus(System.String,Luny.Number)
@@ -1588,15 +1588,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator %(string, Number)
-  nameWithType: Number.operator %(string, Number)
-  fullName: Luny.Number.operator %(string, Luny.Number)
+  name: operator %(String, Number)
+  nameWithType: Number.operator %(String, Number)
+  fullName: Luny.Number.operator %(System.String, Luny.Number)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Number operator %(string a, Number b)
+    content: public static Number operator %(String a, Number b)
     parameters:
     - id: a
       type: System.String
@@ -1604,10 +1604,10 @@ items:
       type: Luny.Number
     return:
       type: Luny.Number
-    content.vb: Public Shared Operator Mod(a As String, b As Number) As Number
+    content.vb: Public Shared Operator Mod(a As [String], b As Number) As Number
   overload: Luny.Number.op_Modulus*
   nameWithType.vb: Number.Mod(String, Number)
-  fullName.vb: Luny.Number.Mod(String, Luny.Number)
+  fullName.vb: Luny.Number.Mod(System.String, Luny.Number)
   name.vb: Mod(String, Number)
 - uid: Luny.Number.op_UnaryPlus(Luny.Number)
   commentId: M:Luny.Number.op_UnaryPlus(Luny.Number)
@@ -1676,7 +1676,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator ==(Number a, Number b)
+    content: public static Boolean operator ==(Number a, Number b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1684,7 +1684,7 @@ items:
       type: Luny.Number
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator =(a As Number, b As Number) As Boolean
+    content.vb: Public Shared Operator =(a As Number, b As Number) As [Boolean]
   overload: Luny.Number.op_Equality*
   nameWithType.vb: Number.=(Number, Number)
   fullName.vb: Luny.Number.=(Luny.Number, Luny.Number)
@@ -1704,7 +1704,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator !=(Number a, Number b)
+    content: public static Boolean operator !=(Number a, Number b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1712,7 +1712,7 @@ items:
       type: Luny.Number
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <>(a As Number, b As Number) As Boolean
+    content.vb: Public Shared Operator <>(a As Number, b As Number) As [Boolean]
   overload: Luny.Number.op_Inequality*
   nameWithType.vb: Number.<>(Number, Number)
   fullName.vb: Luny.Number.<>(Luny.Number, Luny.Number)
@@ -1732,7 +1732,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator <(Number a, Number b)
+    content: public static Boolean operator <(Number a, Number b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1740,7 +1740,7 @@ items:
       type: Luny.Number
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <(a As Number, b As Number) As Boolean
+    content.vb: Public Shared Operator <(a As Number, b As Number) As [Boolean]
   overload: Luny.Number.op_LessThan*
   nameWithType.vb: Number.<(Number, Number)
   fullName.vb: Luny.Number.<(Luny.Number, Luny.Number)
@@ -1760,7 +1760,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator >(Number a, Number b)
+    content: public static Boolean operator >(Number a, Number b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1768,7 +1768,7 @@ items:
       type: Luny.Number
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator >(a As Number, b As Number) As Boolean
+    content.vb: Public Shared Operator >(a As Number, b As Number) As [Boolean]
   overload: Luny.Number.op_GreaterThan*
   nameWithType.vb: Number.>(Number, Number)
   fullName.vb: Luny.Number.>(Luny.Number, Luny.Number)
@@ -1788,7 +1788,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator <=(Number a, Number b)
+    content: public static Boolean operator <=(Number a, Number b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1796,7 +1796,7 @@ items:
       type: Luny.Number
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <=(a As Number, b As Number) As Boolean
+    content.vb: Public Shared Operator <=(a As Number, b As Number) As [Boolean]
   overload: Luny.Number.op_LessThanOrEqual*
   nameWithType.vb: Number.<=(Number, Number)
   fullName.vb: Luny.Number.<=(Luny.Number, Luny.Number)
@@ -1816,7 +1816,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator >=(Number a, Number b)
+    content: public static Boolean operator >=(Number a, Number b)
     parameters:
     - id: a
       type: Luny.Number
@@ -1824,7 +1824,7 @@ items:
       type: Luny.Number
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator >=(a As Number, b As Number) As Boolean
+    content.vb: Public Shared Operator >=(a As Number, b As Number) As [Boolean]
   overload: Luny.Number.op_GreaterThanOrEqual*
   nameWithType.vb: Number.>=(Number, Number)
   fullName.vb: Luny.Number.>=(Luny.Number, Luny.Number)
@@ -1836,22 +1836,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Number(double)
-  nameWithType: Number.Number(double)
-  fullName: Luny.Number.Number(double)
+  name: Number(Double)
+  nameWithType: Number.Number(Double)
+  fullName: Luny.Number.Number(System.Double)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public Number(double value)
+    content: public Number(Double value)
     parameters:
     - id: value
       type: System.Double
-    content.vb: Public Sub New(value As Double)
+    content.vb: Public Sub New(value As [Double])
   overload: Luny.Number.#ctor*
   nameWithType.vb: Number.New(Double)
-  fullName.vb: Luny.Number.New(Double)
+  fullName.vb: Luny.Number.New(System.Double)
   name.vb: New(Double)
 - uid: Luny.Number.#ctor(System.Boolean)
   commentId: M:Luny.Number.#ctor(System.Boolean)
@@ -1860,22 +1860,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Number(bool)
-  nameWithType: Number.Number(bool)
-  fullName: Luny.Number.Number(bool)
+  name: Number(Boolean)
+  nameWithType: Number.Number(Boolean)
+  fullName: Luny.Number.Number(System.Boolean)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public Number(bool value)
+    content: public Number(Boolean value)
     parameters:
     - id: value
       type: System.Boolean
-    content.vb: Public Sub New(value As Boolean)
+    content.vb: Public Sub New(value As [Boolean])
   overload: Luny.Number.#ctor*
   nameWithType.vb: Number.New(Boolean)
-  fullName.vb: Luny.Number.New(Boolean)
+  fullName.vb: Luny.Number.New(System.Boolean)
   name.vb: New(Boolean)
 - uid: Luny.Number.#ctor(System.String)
   commentId: M:Luny.Number.#ctor(System.String)
@@ -1884,22 +1884,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Number(string)
-  nameWithType: Number.Number(string)
-  fullName: Luny.Number.Number(string)
+  name: Number(String)
+  nameWithType: Number.Number(String)
+  fullName: Luny.Number.Number(System.String)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public Number(string value)
+    content: public Number(String value)
     parameters:
     - id: value
       type: System.String
-    content.vb: Public Sub New(value As String)
+    content.vb: Public Sub New(value As [String])
   overload: Luny.Number.#ctor*
   nameWithType.vb: Number.New(String)
-  fullName.vb: Luny.Number.New(String)
+  fullName.vb: Luny.Number.New(System.String)
   name.vb: New(String)
 - uid: Luny.Number.CompareTo(System.Object)
   commentId: M:Luny.Number.CompareTo(System.Object)
@@ -1908,28 +1908,25 @@ items:
   langs:
   - csharp
   - vb
-  name: CompareTo(object)
-  nameWithType: Number.CompareTo(object)
-  fullName: Luny.Number.CompareTo(object)
+  name: CompareTo(Object)
+  nameWithType: Number.CompareTo(Object)
+  fullName: Luny.Number.CompareTo(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public int CompareTo(object obj)
+    content: public Int32 CompareTo(Object obj)
     parameters:
     - id: obj
       type: System.Object
     return:
       type: System.Int32
-    content.vb: Public Function CompareTo(obj As Object) As Integer
+    content.vb: Public Function CompareTo(obj As [Object]) As Int32
   overload: Luny.Number.CompareTo*
   implements:
   - System.IComparable.CompareTo(System.Object)
-  nameWithType.vb: Number.CompareTo(Object)
-  fullName.vb: Luny.Number.CompareTo(Object)
-  name.vb: CompareTo(Object)
 - uid: Luny.Number.CompareTo(System.Double)
   commentId: M:Luny.Number.CompareTo(System.Double)
   id: CompareTo(System.Double)
@@ -1937,28 +1934,25 @@ items:
   langs:
   - csharp
   - vb
-  name: CompareTo(double)
-  nameWithType: Number.CompareTo(double)
-  fullName: Luny.Number.CompareTo(double)
+  name: CompareTo(Double)
+  nameWithType: Number.CompareTo(Double)
+  fullName: Luny.Number.CompareTo(System.Double)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public int CompareTo(double other)
+    content: public Int32 CompareTo(Double other)
     parameters:
     - id: other
       type: System.Double
     return:
       type: System.Int32
-    content.vb: Public Function CompareTo(other As Double) As Integer
+    content.vb: Public Function CompareTo(other As [Double]) As Int32
   overload: Luny.Number.CompareTo*
   implements:
   - System.IComparable{System.Double}.CompareTo(System.Double)
-  nameWithType.vb: Number.CompareTo(Double)
-  fullName.vb: Luny.Number.CompareTo(Double)
-  name.vb: CompareTo(Double)
 - uid: Luny.Number.CompareTo(System.Int64)
   commentId: M:Luny.Number.CompareTo(System.Int64)
   id: CompareTo(System.Int64)
@@ -1966,28 +1960,25 @@ items:
   langs:
   - csharp
   - vb
-  name: CompareTo(long)
-  nameWithType: Number.CompareTo(long)
-  fullName: Luny.Number.CompareTo(long)
+  name: CompareTo(Int64)
+  nameWithType: Number.CompareTo(Int64)
+  fullName: Luny.Number.CompareTo(System.Int64)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public int CompareTo(long other)
+    content: public Int32 CompareTo(Int64 other)
     parameters:
     - id: other
       type: System.Int64
     return:
       type: System.Int32
-    content.vb: Public Function CompareTo(other As Long) As Integer
+    content.vb: Public Function CompareTo(other As Int64) As Int32
   overload: Luny.Number.CompareTo*
   implements:
   - System.IComparable{System.Int64}.CompareTo(System.Int64)
-  nameWithType.vb: Number.CompareTo(Long)
-  fullName.vb: Luny.Number.CompareTo(Long)
-  name.vb: CompareTo(Long)
 - uid: Luny.Number.CompareTo(Luny.Number)
   commentId: M:Luny.Number.CompareTo(Luny.Number)
   id: CompareTo(Luny.Number)
@@ -2004,13 +1995,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public int CompareTo(Number other)
+    content: public Int32 CompareTo(Number other)
     parameters:
     - id: other
       type: Luny.Number
     return:
       type: System.Int32
-    content.vb: Public Function CompareTo(other As Number) As Integer
+    content.vb: Public Function CompareTo(other As Number) As Int32
   overload: Luny.Number.CompareTo*
   implements:
   - System.IComparable{Luny.Number}.CompareTo(Luny.Number)
@@ -2021,28 +2012,25 @@ items:
   langs:
   - csharp
   - vb
-  name: CompareTo(ulong)
-  nameWithType: Number.CompareTo(ulong)
-  fullName: Luny.Number.CompareTo(ulong)
+  name: CompareTo(UInt64)
+  nameWithType: Number.CompareTo(UInt64)
+  fullName: Luny.Number.CompareTo(System.UInt64)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public int CompareTo(ulong other)
+    content: public Int32 CompareTo(UInt64 other)
     parameters:
     - id: other
       type: System.UInt64
     return:
       type: System.Int32
-    content.vb: Public Function CompareTo(other As ULong) As Integer
+    content.vb: Public Function CompareTo(other As UInt64) As Int32
   overload: Luny.Number.CompareTo*
   implements:
   - System.IComparable{System.UInt64}.CompareTo(System.UInt64)
-  nameWithType.vb: Number.CompareTo(ULong)
-  fullName.vb: Luny.Number.CompareTo(ULong)
-  name.vb: CompareTo(ULong)
 - uid: Luny.Number.GetTypeCode
   commentId: M:Luny.Number.GetTypeCode
   id: GetTypeCode
@@ -2082,13 +2070,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public bool ToBoolean(IFormatProvider provider)
+    content: public Boolean ToBoolean(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.Boolean
-    content.vb: Public Function ToBoolean(provider As IFormatProvider) As Boolean
+    content.vb: Public Function ToBoolean(provider As IFormatProvider) As [Boolean]
   overload: Luny.Number.ToBoolean*
   implements:
   - System.IConvertible.ToBoolean(System.IFormatProvider)
@@ -2108,13 +2096,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public byte ToByte(IFormatProvider provider)
+    content: public Byte ToByte(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.Byte
-    content.vb: Public Function ToByte(provider As IFormatProvider) As Byte
+    content.vb: Public Function ToByte(provider As IFormatProvider) As [Byte]
   overload: Luny.Number.ToByte*
   implements:
   - System.IConvertible.ToByte(System.IFormatProvider)
@@ -2134,13 +2122,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public char ToChar(IFormatProvider provider)
+    content: public Char ToChar(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.Char
-    content.vb: Public Function ToChar(provider As IFormatProvider) As Char
+    content.vb: Public Function ToChar(provider As IFormatProvider) As [Char]
   overload: Luny.Number.ToChar*
   implements:
   - System.IConvertible.ToChar(System.IFormatProvider)
@@ -2166,7 +2154,7 @@ items:
       type: System.IFormatProvider
     return:
       type: System.DateTime
-    content.vb: Public Function ToDateTime(provider As IFormatProvider) As Date
+    content.vb: Public Function ToDateTime(provider As IFormatProvider) As DateTime
   overload: Luny.Number.ToDateTime*
   implements:
   - System.IConvertible.ToDateTime(System.IFormatProvider)
@@ -2186,13 +2174,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public decimal ToDecimal(IFormatProvider provider)
+    content: public Decimal ToDecimal(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.Decimal
-    content.vb: Public Function ToDecimal(provider As IFormatProvider) As Decimal
+    content.vb: Public Function ToDecimal(provider As IFormatProvider) As [Decimal]
   overload: Luny.Number.ToDecimal*
   implements:
   - System.IConvertible.ToDecimal(System.IFormatProvider)
@@ -2212,13 +2200,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public double ToDouble(IFormatProvider provider)
+    content: public Double ToDouble(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.Double
-    content.vb: Public Function ToDouble(provider As IFormatProvider) As Double
+    content.vb: Public Function ToDouble(provider As IFormatProvider) As [Double]
   overload: Luny.Number.ToDouble*
   implements:
   - System.IConvertible.ToDouble(System.IFormatProvider)
@@ -2238,13 +2226,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public short ToInt16(IFormatProvider provider)
+    content: public Int16 ToInt16(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.Int16
-    content.vb: Public Function ToInt16(provider As IFormatProvider) As Short
+    content.vb: Public Function ToInt16(provider As IFormatProvider) As Int16
   overload: Luny.Number.ToInt16*
   implements:
   - System.IConvertible.ToInt16(System.IFormatProvider)
@@ -2264,13 +2252,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public int ToInt32(IFormatProvider provider)
+    content: public Int32 ToInt32(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.Int32
-    content.vb: Public Function ToInt32(provider As IFormatProvider) As Integer
+    content.vb: Public Function ToInt32(provider As IFormatProvider) As Int32
   overload: Luny.Number.ToInt32*
   implements:
   - System.IConvertible.ToInt32(System.IFormatProvider)
@@ -2290,13 +2278,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public long ToInt64(IFormatProvider provider)
+    content: public Int64 ToInt64(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.Int64
-    content.vb: Public Function ToInt64(provider As IFormatProvider) As Long
+    content.vb: Public Function ToInt64(provider As IFormatProvider) As Int64
   overload: Luny.Number.ToInt64*
   implements:
   - System.IConvertible.ToInt64(System.IFormatProvider)
@@ -2316,13 +2304,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public ushort ToUInt16(IFormatProvider provider)
+    content: public UInt16 ToUInt16(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.UInt16
-    content.vb: Public Function ToUInt16(provider As IFormatProvider) As UShort
+    content.vb: Public Function ToUInt16(provider As IFormatProvider) As UInt16
   overload: Luny.Number.ToUInt16*
   implements:
   - System.IConvertible.ToUInt16(System.IFormatProvider)
@@ -2342,13 +2330,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public uint ToUInt32(IFormatProvider provider)
+    content: public UInt32 ToUInt32(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.UInt32
-    content.vb: Public Function ToUInt32(provider As IFormatProvider) As UInteger
+    content.vb: Public Function ToUInt32(provider As IFormatProvider) As UInt32
   overload: Luny.Number.ToUInt32*
   implements:
   - System.IConvertible.ToUInt32(System.IFormatProvider)
@@ -2368,13 +2356,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public ulong ToUInt64(IFormatProvider provider)
+    content: public UInt64 ToUInt64(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.UInt64
-    content.vb: Public Function ToUInt64(provider As IFormatProvider) As ULong
+    content.vb: Public Function ToUInt64(provider As IFormatProvider) As UInt64
   overload: Luny.Number.ToUInt64*
   implements:
   - System.IConvertible.ToUInt64(System.IFormatProvider)
@@ -2394,13 +2382,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public sbyte ToSByte(IFormatProvider provider)
+    content: public SByte ToSByte(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.SByte
-    content.vb: Public Function ToSByte(provider As IFormatProvider) As SByte
+    content.vb: Public Function ToSByte(provider As IFormatProvider) As [SByte]
   overload: Luny.Number.ToSByte*
   implements:
   - System.IConvertible.ToSByte(System.IFormatProvider)
@@ -2420,13 +2408,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public float ToSingle(IFormatProvider provider)
+    content: public Single ToSingle(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.Single
-    content.vb: Public Function ToSingle(provider As IFormatProvider) As Single
+    content.vb: Public Function ToSingle(provider As IFormatProvider) As [Single]
   overload: Luny.Number.ToSingle*
   implements:
   - System.IConvertible.ToSingle(System.IFormatProvider)
@@ -2446,7 +2434,7 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public object ToType(Type conversionType, IFormatProvider provider)
+    content: public Object ToType(Type conversionType, IFormatProvider provider)
     parameters:
     - id: conversionType
       type: System.Type
@@ -2454,7 +2442,7 @@ items:
       type: System.IFormatProvider
     return:
       type: System.Object
-    content.vb: Public Function ToType(conversionType As Type, provider As IFormatProvider) As Object
+    content.vb: Public Function ToType(conversionType As Type, provider As IFormatProvider) As [Object]
   overload: Luny.Number.ToType*
   implements:
   - System.IConvertible.ToType(System.Type,System.IFormatProvider)
@@ -2474,13 +2462,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public string ToString(IFormatProvider provider)
+    content: public String ToString(IFormatProvider provider)
     parameters:
     - id: provider
       type: System.IFormatProvider
     return:
       type: System.String
-    content.vb: Public Function ToString(provider As IFormatProvider) As String
+    content.vb: Public Function ToString(provider As IFormatProvider) As [String]
   overload: Luny.Number.ToString*
   implements:
   - System.IConvertible.ToString(System.IFormatProvider)
@@ -2491,28 +2479,25 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(double)
-  nameWithType: Number.Equals(double)
-  fullName: Luny.Number.Equals(double)
+  name: Equals(Double)
+  nameWithType: Number.Equals(Double)
+  fullName: Luny.Number.Equals(System.Double)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(double other)
+    content: public Boolean Equals(Double other)
     parameters:
     - id: other
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As Double) As Boolean
+    content.vb: Public Function Equals(other As [Double]) As [Boolean]
   overload: Luny.Number.Equals*
   implements:
   - System.IEquatable{System.Double}.Equals(System.Double)
-  nameWithType.vb: Number.Equals(Double)
-  fullName.vb: Luny.Number.Equals(Double)
-  name.vb: Equals(Double)
 - uid: Luny.Number.Equals(System.Int64)
   commentId: M:Luny.Number.Equals(System.Int64)
   id: Equals(System.Int64)
@@ -2520,28 +2505,25 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(long)
-  nameWithType: Number.Equals(long)
-  fullName: Luny.Number.Equals(long)
+  name: Equals(Int64)
+  nameWithType: Number.Equals(Int64)
+  fullName: Luny.Number.Equals(System.Int64)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(long other)
+    content: public Boolean Equals(Int64 other)
     parameters:
     - id: other
       type: System.Int64
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As Long) As Boolean
+    content.vb: Public Function Equals(other As Int64) As [Boolean]
   overload: Luny.Number.Equals*
   implements:
   - System.IEquatable{System.Int64}.Equals(System.Int64)
-  nameWithType.vb: Number.Equals(Long)
-  fullName.vb: Luny.Number.Equals(Long)
-  name.vb: Equals(Long)
 - uid: Luny.Number.Equals(Luny.Number)
   commentId: M:Luny.Number.Equals(Luny.Number)
   id: Equals(Luny.Number)
@@ -2558,13 +2540,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(Number other)
+    content: public Boolean Equals(Number other)
     parameters:
     - id: other
       type: Luny.Number
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As Number) As Boolean
+    content.vb: Public Function Equals(other As Number) As [Boolean]
   overload: Luny.Number.Equals*
   implements:
   - System.IEquatable{Luny.Number}.Equals(Luny.Number)
@@ -2575,28 +2557,25 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(ulong)
-  nameWithType: Number.Equals(ulong)
-  fullName: Luny.Number.Equals(ulong)
+  name: Equals(UInt64)
+  nameWithType: Number.Equals(UInt64)
+  fullName: Luny.Number.Equals(System.UInt64)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(ulong other)
+    content: public Boolean Equals(UInt64 other)
     parameters:
     - id: other
       type: System.UInt64
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As ULong) As Boolean
+    content.vb: Public Function Equals(other As UInt64) As [Boolean]
   overload: Luny.Number.Equals*
   implements:
   - System.IEquatable{System.UInt64}.Equals(System.UInt64)
-  nameWithType.vb: Number.Equals(ULong)
-  fullName.vb: Luny.Number.Equals(ULong)
-  name.vb: Equals(ULong)
 - uid: Luny.Number.ToString(System.String,System.IFormatProvider)
   commentId: M:Luny.Number.ToString(System.String,System.IFormatProvider)
   id: ToString(System.String,System.IFormatProvider)
@@ -2604,16 +2583,16 @@ items:
   langs:
   - csharp
   - vb
-  name: ToString(string, IFormatProvider)
-  nameWithType: Number.ToString(string, IFormatProvider)
-  fullName: Luny.Number.ToString(string, System.IFormatProvider)
+  name: ToString(String, IFormatProvider)
+  nameWithType: Number.ToString(String, IFormatProvider)
+  fullName: Luny.Number.ToString(System.String, System.IFormatProvider)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public string ToString(string format, IFormatProvider formatProvider)
+    content: public String ToString(String format, IFormatProvider formatProvider)
     parameters:
     - id: format
       type: System.String
@@ -2621,13 +2600,10 @@ items:
       type: System.IFormatProvider
     return:
       type: System.String
-    content.vb: Public Function ToString(format As String, formatProvider As IFormatProvider) As String
+    content.vb: Public Function ToString(format As [String], formatProvider As IFormatProvider) As [String]
   overload: Luny.Number.ToString*
   implements:
   - System.IFormattable.ToString(System.String,System.IFormatProvider)
-  nameWithType.vb: Number.ToString(String, IFormatProvider)
-  fullName.vb: Luny.Number.ToString(String, System.IFormatProvider)
-  name.vb: ToString(String, IFormatProvider)
 - uid: Luny.Number.ToTimeSpan(System.IFormatProvider)
   commentId: M:Luny.Number.ToTimeSpan(System.IFormatProvider)
   id: ToTimeSpan(System.IFormatProvider)
@@ -2670,13 +2646,13 @@ items:
     content: >-
       [ExcludeFromCodeCoverage]
 
-      public override string ToString()
+      public override String ToString()
     return:
       type: System.String
     content.vb: >-
       <ExcludeFromCodeCoverage>
 
-      Public Overrides Function ToString() As String
+      Public Overrides Function ToString() As [String]
   overridden: System.ValueType.ToString
   overload: Luny.Number.ToString*
   attributes:
@@ -2690,27 +2666,24 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(object)
-  nameWithType: Number.Equals(object)
-  fullName: Luny.Number.Equals(object)
+  name: Equals(Object)
+  nameWithType: Number.Equals(Object)
+  fullName: Luny.Number.Equals(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public override bool Equals(object obj)
+    content: public override Boolean Equals(Object obj)
     parameters:
     - id: obj
       type: System.Object
     return:
       type: System.Boolean
-    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    content.vb: Public Overrides Function Equals(obj As [Object]) As [Boolean]
   overridden: System.ValueType.Equals(System.Object)
   overload: Luny.Number.Equals*
-  nameWithType.vb: Number.Equals(Object)
-  fullName.vb: Luny.Number.Equals(Object)
-  name.vb: Equals(Object)
 - uid: Luny.Number.GetHashCode
   commentId: M:Luny.Number.GetHashCode
   id: GetHashCode
@@ -2727,10 +2700,10 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public override int GetHashCode()
+    content: public override Int32 GetHashCode()
     return:
       type: System.Int32
-    content.vb: Public Overrides Function GetHashCode() As Integer
+    content.vb: Public Overrides Function GetHashCode() As Int32
   overridden: System.ValueType.GetHashCode
   overload: Luny.Number.GetHashCode*
 references:
@@ -2840,11 +2813,11 @@ references:
   parent: System
   definition: System.IComparable`1
   href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
-  name: IComparable<double>
-  nameWithType: IComparable<double>
-  fullName: System.IComparable<double>
+  name: IComparable<Double>
+  nameWithType: IComparable<Double>
+  fullName: System.IComparable<System.Double>
   nameWithType.vb: IComparable(Of Double)
-  fullName.vb: System.IComparable(Of Double)
+  fullName.vb: System.IComparable(Of System.Double)
   name.vb: IComparable(Of Double)
   spec.csharp:
   - uid: System.IComparable`1
@@ -2853,7 +2826,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
   - name: <
   - uid: System.Double
-    name: double
+    name: Double
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: '>'
@@ -2875,11 +2848,11 @@ references:
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<double>
-  nameWithType: IEquatable<double>
-  fullName: System.IEquatable<double>
+  name: IEquatable<Double>
+  nameWithType: IEquatable<Double>
+  fullName: System.IEquatable<System.Double>
   nameWithType.vb: IEquatable(Of Double)
-  fullName.vb: System.IEquatable(Of Double)
+  fullName.vb: System.IEquatable(Of System.Double)
   name.vb: IEquatable(Of Double)
   spec.csharp:
   - uid: System.IEquatable`1
@@ -2888,7 +2861,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
   - uid: System.Double
-    name: double
+    name: Double
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: '>'
@@ -2910,12 +2883,12 @@ references:
   parent: System
   definition: System.IComparable`1
   href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
-  name: IComparable<long>
-  nameWithType: IComparable<long>
-  fullName: System.IComparable<long>
-  nameWithType.vb: IComparable(Of Long)
-  fullName.vb: System.IComparable(Of Long)
-  name.vb: IComparable(Of Long)
+  name: IComparable<Int64>
+  nameWithType: IComparable<Int64>
+  fullName: System.IComparable<System.Int64>
+  nameWithType.vb: IComparable(Of Int64)
+  fullName.vb: System.IComparable(Of System.Int64)
+  name.vb: IComparable(Of Int64)
   spec.csharp:
   - uid: System.IComparable`1
     name: IComparable
@@ -2923,7 +2896,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
   - name: <
   - uid: System.Int64
-    name: long
+    name: Int64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int64
   - name: '>'
@@ -2936,7 +2909,7 @@ references:
   - name: Of
   - name: " "
   - uid: System.Int64
-    name: Long
+    name: Int64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int64
   - name: )
@@ -2945,12 +2918,12 @@ references:
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<long>
-  nameWithType: IEquatable<long>
-  fullName: System.IEquatable<long>
-  nameWithType.vb: IEquatable(Of Long)
-  fullName.vb: System.IEquatable(Of Long)
-  name.vb: IEquatable(Of Long)
+  name: IEquatable<Int64>
+  nameWithType: IEquatable<Int64>
+  fullName: System.IEquatable<System.Int64>
+  nameWithType.vb: IEquatable(Of Int64)
+  fullName.vb: System.IEquatable(Of System.Int64)
+  name.vb: IEquatable(Of Int64)
   spec.csharp:
   - uid: System.IEquatable`1
     name: IEquatable
@@ -2958,7 +2931,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
   - uid: System.Int64
-    name: long
+    name: Int64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int64
   - name: '>'
@@ -2971,7 +2944,7 @@ references:
   - name: Of
   - name: " "
   - uid: System.Int64
-    name: Long
+    name: Int64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int64
   - name: )
@@ -2980,12 +2953,12 @@ references:
   parent: System
   definition: System.IComparable`1
   href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
-  name: IComparable<ulong>
-  nameWithType: IComparable<ulong>
-  fullName: System.IComparable<ulong>
-  nameWithType.vb: IComparable(Of ULong)
-  fullName.vb: System.IComparable(Of ULong)
-  name.vb: IComparable(Of ULong)
+  name: IComparable<UInt64>
+  nameWithType: IComparable<UInt64>
+  fullName: System.IComparable<System.UInt64>
+  nameWithType.vb: IComparable(Of UInt64)
+  fullName.vb: System.IComparable(Of System.UInt64)
+  name.vb: IComparable(Of UInt64)
   spec.csharp:
   - uid: System.IComparable`1
     name: IComparable
@@ -2993,7 +2966,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
   - name: <
   - uid: System.UInt64
-    name: ulong
+    name: UInt64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.uint64
   - name: '>'
@@ -3006,7 +2979,7 @@ references:
   - name: Of
   - name: " "
   - uid: System.UInt64
-    name: ULong
+    name: UInt64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.uint64
   - name: )
@@ -3015,12 +2988,12 @@ references:
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<ulong>
-  nameWithType: IEquatable<ulong>
-  fullName: System.IEquatable<ulong>
-  nameWithType.vb: IEquatable(Of ULong)
-  fullName.vb: System.IEquatable(Of ULong)
-  name.vb: IEquatable(Of ULong)
+  name: IEquatable<UInt64>
+  nameWithType: IEquatable<UInt64>
+  fullName: System.IEquatable<System.UInt64>
+  nameWithType.vb: IEquatable(Of UInt64)
+  fullName.vb: System.IEquatable(Of System.UInt64)
+  name.vb: IEquatable(Of UInt64)
   spec.csharp:
   - uid: System.IEquatable`1
     name: IEquatable
@@ -3028,7 +3001,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
   - uid: System.UInt64
-    name: ulong
+    name: UInt64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.uint64
   - name: '>'
@@ -3041,7 +3014,7 @@ references:
   - name: Of
   - name: " "
   - uid: System.UInt64
-    name: ULong
+    name: UInt64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.uint64
   - name: )
@@ -3125,12 +3098,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Number
   commentId: T:Luny.Number
   parent: Luny
@@ -3144,122 +3114,89 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System.Int16
   commentId: T:System.Int16
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int16
-  name: short
-  nameWithType: short
-  fullName: short
-  nameWithType.vb: Short
-  fullName.vb: Short
-  name.vb: Short
+  name: Int16
+  nameWithType: Int16
+  fullName: System.Int16
 - uid: System.Byte
   commentId: T:System.Byte
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.byte
-  name: byte
-  nameWithType: byte
-  fullName: byte
-  nameWithType.vb: Byte
-  fullName.vb: Byte
-  name.vb: Byte
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
 - uid: System.UInt32
   commentId: T:System.UInt32
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.uint32
-  name: uint
-  nameWithType: uint
-  fullName: uint
-  nameWithType.vb: UInteger
-  fullName.vb: UInteger
-  name.vb: UInteger
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
 - uid: System.UInt64
   commentId: T:System.UInt64
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.uint64
-  name: ulong
-  nameWithType: ulong
-  fullName: ulong
-  nameWithType.vb: ULong
-  fullName.vb: ULong
-  name.vb: ULong
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
 - uid: System.UInt16
   commentId: T:System.UInt16
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.uint16
-  name: ushort
-  nameWithType: ushort
-  fullName: ushort
-  nameWithType.vb: UShort
-  fullName.vb: UShort
-  name.vb: UShort
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
 - uid: System.SByte
   commentId: T:System.SByte
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.sbyte
-  name: sbyte
-  nameWithType: sbyte
-  fullName: sbyte
-  nameWithType.vb: SByte
-  fullName.vb: SByte
-  name.vb: SByte
+  name: SByte
+  nameWithType: SByte
+  fullName: System.SByte
 - uid: System.Decimal
   commentId: T:System.Decimal
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.decimal
-  name: decimal
-  nameWithType: decimal
-  fullName: decimal
-  nameWithType.vb: Decimal
-  fullName.vb: Decimal
-  name.vb: Decimal
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: System.TimeSpan
   commentId: T:System.TimeSpan
   parent: System
@@ -3276,20 +3213,14 @@ references:
   name: DateTime
   nameWithType: DateTime
   fullName: System.DateTime
-  nameWithType.vb: Date
-  fullName.vb: Date
-  name.vb: Date
 - uid: System.String
   commentId: T:System.String
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Number.op_Addition*
   commentId: Overload:Luny.Number.op_Addition
   isExternal: true
@@ -3533,12 +3464,9 @@ references:
   parent: System.IComparable
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
-  name: CompareTo(object)
-  nameWithType: IComparable.CompareTo(object)
-  fullName: System.IComparable.CompareTo(object)
-  nameWithType.vb: IComparable.CompareTo(Object)
-  fullName.vb: System.IComparable.CompareTo(Object)
-  name.vb: CompareTo(Object)
+  name: CompareTo(Object)
+  nameWithType: IComparable.CompareTo(Object)
+  fullName: System.IComparable.CompareTo(System.Object)
   spec.csharp:
   - uid: System.IComparable.CompareTo(System.Object)
     name: CompareTo
@@ -3546,7 +3474,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable.compareto
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -3563,23 +3491,19 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.IComparable{System.Double}.CompareTo(System.Double)
   commentId: M:System.IComparable{System.Double}.CompareTo(System.Double)
   parent: System.IComparable{System.Double}
   definition: System.IComparable`1.CompareTo(`0)
   href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
-  name: CompareTo(double)
-  nameWithType: IComparable<double>.CompareTo(double)
-  fullName: System.IComparable<double>.CompareTo(double)
+  name: CompareTo(Double)
+  nameWithType: IComparable<Double>.CompareTo(Double)
+  fullName: System.IComparable<System.Double>.CompareTo(System.Double)
   nameWithType.vb: IComparable(Of Double).CompareTo(Double)
-  fullName.vb: System.IComparable(Of Double).CompareTo(Double)
-  name.vb: CompareTo(Double)
+  fullName.vb: System.IComparable(Of System.Double).CompareTo(System.Double)
   spec.csharp:
   - uid: System.IComparable{System.Double}.CompareTo(System.Double)
     name: CompareTo
@@ -3587,7 +3511,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
   - name: (
   - uid: System.Double
-    name: double
+    name: Double
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: )
@@ -3632,12 +3556,11 @@ references:
   parent: System.IComparable{System.Int64}
   definition: System.IComparable`1.CompareTo(`0)
   href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
-  name: CompareTo(long)
-  nameWithType: IComparable<long>.CompareTo(long)
-  fullName: System.IComparable<long>.CompareTo(long)
-  nameWithType.vb: IComparable(Of Long).CompareTo(Long)
-  fullName.vb: System.IComparable(Of Long).CompareTo(Long)
-  name.vb: CompareTo(Long)
+  name: CompareTo(Int64)
+  nameWithType: IComparable<Int64>.CompareTo(Int64)
+  fullName: System.IComparable<System.Int64>.CompareTo(System.Int64)
+  nameWithType.vb: IComparable(Of Int64).CompareTo(Int64)
+  fullName.vb: System.IComparable(Of System.Int64).CompareTo(System.Int64)
   spec.csharp:
   - uid: System.IComparable{System.Int64}.CompareTo(System.Int64)
     name: CompareTo
@@ -3645,7 +3568,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
   - name: (
   - uid: System.Int64
-    name: long
+    name: Int64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int64
   - name: )
@@ -3656,7 +3579,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
   - name: (
   - uid: System.Int64
-    name: Long
+    name: Int64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int64
   - name: )
@@ -3697,12 +3620,11 @@ references:
   parent: System.IComparable{System.UInt64}
   definition: System.IComparable`1.CompareTo(`0)
   href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
-  name: CompareTo(ulong)
-  nameWithType: IComparable<ulong>.CompareTo(ulong)
-  fullName: System.IComparable<ulong>.CompareTo(ulong)
-  nameWithType.vb: IComparable(Of ULong).CompareTo(ULong)
-  fullName.vb: System.IComparable(Of ULong).CompareTo(ULong)
-  name.vb: CompareTo(ULong)
+  name: CompareTo(UInt64)
+  nameWithType: IComparable<UInt64>.CompareTo(UInt64)
+  fullName: System.IComparable<System.UInt64>.CompareTo(System.UInt64)
+  nameWithType.vb: IComparable(Of UInt64).CompareTo(UInt64)
+  fullName.vb: System.IComparable(Of System.UInt64).CompareTo(System.UInt64)
   spec.csharp:
   - uid: System.IComparable{System.UInt64}.CompareTo(System.UInt64)
     name: CompareTo
@@ -3710,7 +3632,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
   - name: (
   - uid: System.UInt64
-    name: ulong
+    name: UInt64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.uint64
   - name: )
@@ -3721,7 +3643,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
   - name: (
   - uid: System.UInt64
-    name: ULong
+    name: UInt64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.uint64
   - name: )
@@ -3886,12 +3808,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.char
-  name: char
-  nameWithType: char
-  fullName: char
-  nameWithType.vb: Char
-  fullName.vb: Char
-  name.vb: Char
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
 - uid: Luny.Number.ToDateTime*
   commentId: Overload:Luny.Number.ToDateTime
   isExternal: true
@@ -4405,12 +4324,11 @@ references:
   parent: System.IEquatable{System.Double}
   definition: System.IEquatable`1.Equals(`0)
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  name: Equals(double)
-  nameWithType: IEquatable<double>.Equals(double)
-  fullName: System.IEquatable<double>.Equals(double)
+  name: Equals(Double)
+  nameWithType: IEquatable<Double>.Equals(Double)
+  fullName: System.IEquatable<System.Double>.Equals(System.Double)
   nameWithType.vb: IEquatable(Of Double).Equals(Double)
-  fullName.vb: System.IEquatable(Of Double).Equals(Double)
-  name.vb: Equals(Double)
+  fullName.vb: System.IEquatable(Of System.Double).Equals(System.Double)
   spec.csharp:
   - uid: System.IEquatable{System.Double}.Equals(System.Double)
     name: Equals
@@ -4418,7 +4336,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - uid: System.Double
-    name: double
+    name: Double
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: )
@@ -4463,12 +4381,11 @@ references:
   parent: System.IEquatable{System.Int64}
   definition: System.IEquatable`1.Equals(`0)
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  name: Equals(long)
-  nameWithType: IEquatable<long>.Equals(long)
-  fullName: System.IEquatable<long>.Equals(long)
-  nameWithType.vb: IEquatable(Of Long).Equals(Long)
-  fullName.vb: System.IEquatable(Of Long).Equals(Long)
-  name.vb: Equals(Long)
+  name: Equals(Int64)
+  nameWithType: IEquatable<Int64>.Equals(Int64)
+  fullName: System.IEquatable<System.Int64>.Equals(System.Int64)
+  nameWithType.vb: IEquatable(Of Int64).Equals(Int64)
+  fullName.vb: System.IEquatable(Of System.Int64).Equals(System.Int64)
   spec.csharp:
   - uid: System.IEquatable{System.Int64}.Equals(System.Int64)
     name: Equals
@@ -4476,7 +4393,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - uid: System.Int64
-    name: long
+    name: Int64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int64
   - name: )
@@ -4487,7 +4404,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - uid: System.Int64
-    name: Long
+    name: Int64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int64
   - name: )
@@ -4528,12 +4445,11 @@ references:
   parent: System.IEquatable{System.UInt64}
   definition: System.IEquatable`1.Equals(`0)
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  name: Equals(ulong)
-  nameWithType: IEquatable<ulong>.Equals(ulong)
-  fullName: System.IEquatable<ulong>.Equals(ulong)
-  nameWithType.vb: IEquatable(Of ULong).Equals(ULong)
-  fullName.vb: System.IEquatable(Of ULong).Equals(ULong)
-  name.vb: Equals(ULong)
+  name: Equals(UInt64)
+  nameWithType: IEquatable<UInt64>.Equals(UInt64)
+  fullName: System.IEquatable<System.UInt64>.Equals(System.UInt64)
+  nameWithType.vb: IEquatable(Of UInt64).Equals(UInt64)
+  fullName.vb: System.IEquatable(Of System.UInt64).Equals(System.UInt64)
   spec.csharp:
   - uid: System.IEquatable{System.UInt64}.Equals(System.UInt64)
     name: Equals
@@ -4541,7 +4457,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - uid: System.UInt64
-    name: ulong
+    name: UInt64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.uint64
   - name: )
@@ -4552,7 +4468,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - uid: System.UInt64
-    name: ULong
+    name: UInt64
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.uint64
   - name: )
@@ -4561,12 +4477,9 @@ references:
   parent: System.IFormattable
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
-  name: ToString(string, IFormatProvider)
-  nameWithType: IFormattable.ToString(string, IFormatProvider)
-  fullName: System.IFormattable.ToString(string, System.IFormatProvider)
-  nameWithType.vb: IFormattable.ToString(String, IFormatProvider)
-  fullName.vb: System.IFormattable.ToString(String, System.IFormatProvider)
-  name.vb: ToString(String, IFormatProvider)
+  name: ToString(String, IFormatProvider)
+  nameWithType: IFormattable.ToString(String, IFormatProvider)
+  fullName: System.IFormattable.ToString(System.String, System.IFormatProvider)
   spec.csharp:
   - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
     name: ToString
@@ -4574,7 +4487,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
@@ -4643,12 +4556,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -4656,7 +4566,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:

@@ -35,9 +35,9 @@ items:
   langs:
   - csharp
   - vb
-  name: PausePlayer(string)
-  nameWithType: EditorApi.PausePlayer(string)
-  fullName: LunyScript.Api.EditorApi.PausePlayer(string)
+  name: PausePlayer(String)
+  nameWithType: EditorApi.PausePlayer(String)
+  fullName: LunyScript.Api.EditorApi.PausePlayer(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -45,17 +45,14 @@ items:
   summary: Pauses playmode.
   example: []
   syntax:
-    content: public ActionBlock PausePlayer(string message = null)
+    content: public ActionBlock PausePlayer(String message = null)
     parameters:
     - id: message
       type: System.String
     return:
       type: LunyScript.Blocks.ActionBlock
-    content.vb: Public Function PausePlayer(message As String = Nothing) As ActionBlock
+    content.vb: Public Function PausePlayer(message As [String] = Nothing) As ActionBlock
   overload: LunyScript.Api.EditorApi.PausePlayer*
-  nameWithType.vb: EditorApi.PausePlayer(String)
-  fullName.vb: LunyScript.Api.EditorApi.PausePlayer(String)
-  name.vb: PausePlayer(String)
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -89,12 +86,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -102,7 +96,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -186,12 +180,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Blocks.ActionBlock
   commentId: T:LunyScript.Blocks.ActionBlock
   parent: LunyScript.Blocks

@@ -34,23 +34,20 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfo(object)
-  nameWithType: ILunyLogger.LogInfo(object)
-  fullName: Luny.ILunyLogger.LogInfo(object)
+  name: LogInfo(Object)
+  nameWithType: ILunyLogger.LogInfo(Object)
+  fullName: Luny.ILunyLogger.LogInfo(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: void LogInfo(object obj)
+    content: void LogInfo(Object obj)
     parameters:
     - id: obj
       type: System.Object
-    content.vb: Sub LogInfo(obj As Object)
+    content.vb: Sub LogInfo(obj As [Object])
   overload: Luny.ILunyLogger.LogInfo*
-  nameWithType.vb: ILunyLogger.LogInfo(Object)
-  fullName.vb: Luny.ILunyLogger.LogInfo(Object)
-  name.vb: LogInfo(Object)
 - uid: Luny.ILunyLogger.LogWarning(System.Object)
   commentId: M:Luny.ILunyLogger.LogWarning(System.Object)
   id: LogWarning(System.Object)
@@ -58,23 +55,20 @@ items:
   langs:
   - csharp
   - vb
-  name: LogWarning(object)
-  nameWithType: ILunyLogger.LogWarning(object)
-  fullName: Luny.ILunyLogger.LogWarning(object)
+  name: LogWarning(Object)
+  nameWithType: ILunyLogger.LogWarning(Object)
+  fullName: Luny.ILunyLogger.LogWarning(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: void LogWarning(object obj)
+    content: void LogWarning(Object obj)
     parameters:
     - id: obj
       type: System.Object
-    content.vb: Sub LogWarning(obj As Object)
+    content.vb: Sub LogWarning(obj As [Object])
   overload: Luny.ILunyLogger.LogWarning*
-  nameWithType.vb: ILunyLogger.LogWarning(Object)
-  fullName.vb: Luny.ILunyLogger.LogWarning(Object)
-  name.vb: LogWarning(Object)
 - uid: Luny.ILunyLogger.LogError(System.Object)
   commentId: M:Luny.ILunyLogger.LogError(System.Object)
   id: LogError(System.Object)
@@ -82,23 +76,20 @@ items:
   langs:
   - csharp
   - vb
-  name: LogError(object)
-  nameWithType: ILunyLogger.LogError(object)
-  fullName: Luny.ILunyLogger.LogError(object)
+  name: LogError(Object)
+  nameWithType: ILunyLogger.LogError(Object)
+  fullName: Luny.ILunyLogger.LogError(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: void LogError(object obj)
+    content: void LogError(Object obj)
     parameters:
     - id: obj
       type: System.Object
-    content.vb: Sub LogError(obj As Object)
+    content.vb: Sub LogError(obj As [Object])
   overload: Luny.ILunyLogger.LogError*
-  nameWithType.vb: ILunyLogger.LogError(Object)
-  fullName.vb: Luny.ILunyLogger.LogError(Object)
-  name.vb: LogError(Object)
 - uid: Luny.ILunyLogger.LogInfo(System.String)
   commentId: M:Luny.ILunyLogger.LogInfo(System.String)
   id: LogInfo(System.String)
@@ -106,23 +97,20 @@ items:
   langs:
   - csharp
   - vb
-  name: LogInfo(string)
-  nameWithType: ILunyLogger.LogInfo(string)
-  fullName: Luny.ILunyLogger.LogInfo(string)
+  name: LogInfo(String)
+  nameWithType: ILunyLogger.LogInfo(String)
+  fullName: Luny.ILunyLogger.LogInfo(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: void LogInfo(string message)
+    content: void LogInfo(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Sub LogInfo(message As String)
+    content.vb: Sub LogInfo(message As [String])
   overload: Luny.ILunyLogger.LogInfo*
-  nameWithType.vb: ILunyLogger.LogInfo(String)
-  fullName.vb: Luny.ILunyLogger.LogInfo(String)
-  name.vb: LogInfo(String)
 - uid: Luny.ILunyLogger.LogWarning(System.String)
   commentId: M:Luny.ILunyLogger.LogWarning(System.String)
   id: LogWarning(System.String)
@@ -130,23 +118,20 @@ items:
   langs:
   - csharp
   - vb
-  name: LogWarning(string)
-  nameWithType: ILunyLogger.LogWarning(string)
-  fullName: Luny.ILunyLogger.LogWarning(string)
+  name: LogWarning(String)
+  nameWithType: ILunyLogger.LogWarning(String)
+  fullName: Luny.ILunyLogger.LogWarning(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: void LogWarning(string message)
+    content: void LogWarning(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Sub LogWarning(message As String)
+    content.vb: Sub LogWarning(message As [String])
   overload: Luny.ILunyLogger.LogWarning*
-  nameWithType.vb: ILunyLogger.LogWarning(String)
-  fullName.vb: Luny.ILunyLogger.LogWarning(String)
-  name.vb: LogWarning(String)
 - uid: Luny.ILunyLogger.LogError(System.String)
   commentId: M:Luny.ILunyLogger.LogError(System.String)
   id: LogError(System.String)
@@ -154,23 +139,20 @@ items:
   langs:
   - csharp
   - vb
-  name: LogError(string)
-  nameWithType: ILunyLogger.LogError(string)
-  fullName: Luny.ILunyLogger.LogError(string)
+  name: LogError(String)
+  nameWithType: ILunyLogger.LogError(String)
+  fullName: Luny.ILunyLogger.LogError(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: void LogError(string message)
+    content: void LogError(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Sub LogError(message As String)
+    content.vb: Sub LogError(message As [String])
   overload: Luny.ILunyLogger.LogError*
-  nameWithType.vb: ILunyLogger.LogError(String)
-  fullName.vb: Luny.ILunyLogger.LogError(String)
-  name.vb: LogError(String)
 - uid: Luny.ILunyLogger.LogException(System.Exception)
   commentId: M:Luny.ILunyLogger.LogException(System.Exception)
   id: LogException(System.Exception)
@@ -211,12 +193,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -243,12 +222,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.ILunyLogger.LogException*
   commentId: Overload:Luny.ILunyLogger.LogException
   isExternal: true

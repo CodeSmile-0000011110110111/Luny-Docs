@@ -46,9 +46,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Counter(int)
-  nameWithType: Counter.Counter(int)
-  fullName: Luny.Counter.Counter(int)
+  name: Counter(Int32)
+  nameWithType: Counter.Counter(Int32)
+  fullName: Luny.Counter.Counter(System.Int32)
   type: Constructor
   assemblies:
   - Luny
@@ -56,15 +56,15 @@ items:
   summary: Creates a counter with a count-towards target.
   example: []
   syntax:
-    content: public Counter(int target)
+    content: public Counter(Int32 target)
     parameters:
     - id: target
       type: System.Int32
-    content.vb: Public Sub New(target As Integer)
+    content.vb: Public Sub New(target As Int32)
   overload: Luny.Counter.#ctor*
-  nameWithType.vb: Counter.New(Integer)
-  fullName.vb: Luny.Counter.New(Integer)
-  name.vb: New(Integer)
+  nameWithType.vb: Counter.New(Int32)
+  fullName.vb: Luny.Counter.New(System.Int32)
+  name.vb: New(Int32)
 - uid: Luny.Counter.Start
   commentId: M:Luny.Counter.Start
   id: Start
@@ -184,10 +184,10 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: Luny.Counter.ToString*
 - uid: Luny.Counter.Current
@@ -205,11 +205,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public int Current { get; }
+    content: public Int32 Current { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property Current As Integer
+    content.vb: Public ReadOnly Property Current As Int32
   overload: Luny.Counter.Current*
 - uid: Luny.Counter.Target
   commentId: P:Luny.Counter.Target
@@ -226,11 +226,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public int Target { get; set; }
+    content: public Int32 Target { get; set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public Property Target As Integer
+    content.vb: Public Property Target As Int32
   overload: Luny.Counter.Target*
 - uid: Luny.Counter.IsRunning
   commentId: P:Luny.Counter.IsRunning
@@ -247,11 +247,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool IsRunning { get; set; }
+    content: public Boolean IsRunning { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property IsRunning As Boolean
+    content.vb: Public Property IsRunning As [Boolean]
   overload: Luny.Counter.IsRunning*
 - uid: Luny.Counter.AutoRepeat
   commentId: P:Luny.Counter.AutoRepeat
@@ -268,11 +268,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool AutoRepeat { get; set; }
+    content: public Boolean AutoRepeat { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property AutoRepeat As Boolean
+    content.vb: Public Property AutoRepeat As [Boolean]
   overload: Luny.Counter.AutoRepeat*
 - uid: Luny.Counter.Progress
   commentId: P:Luny.Counter.Progress
@@ -291,11 +291,11 @@ items:
   summary: Returns the progress as a normalized value (0.0 to 1.0).
   example: []
   syntax:
-    content: public double Progress { get; }
+    content: public Double Progress { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public ReadOnly Property Progress As Double
+    content.vb: Public ReadOnly Property Progress As [Double]
   overload: Luny.Counter.Progress*
 - uid: Luny.Counter.Remaining
   commentId: P:Luny.Counter.Remaining
@@ -314,11 +314,11 @@ items:
   summary: Returns the remaining count.
   example: []
   syntax:
-    content: public int Remaining { get; }
+    content: public Int32 Remaining { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property Remaining As Integer
+    content.vb: Public ReadOnly Property Remaining As Int32
   overload: Luny.Counter.Remaining*
 - uid: Luny.Counter.OnElapsed
   commentId: E:Luny.Counter.OnElapsed
@@ -351,12 +351,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -379,12 +376,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Luny.Counter.Start*
   commentId: Overload:Luny.Counter.Start
   isExternal: true
@@ -425,10 +419,8 @@ references:
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
@@ -453,12 +445,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Counter.Current*
   commentId: Overload:Luny.Counter.Current
   isExternal: true
@@ -485,12 +474,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Counter.AutoRepeat*
   commentId: Overload:Luny.Counter.AutoRepeat
   isExternal: true
@@ -510,12 +496,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Counter.Remaining*
   commentId: Overload:Luny.Counter.Remaining
   isExternal: true

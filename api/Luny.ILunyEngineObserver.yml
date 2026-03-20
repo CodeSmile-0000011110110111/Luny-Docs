@@ -300,11 +300,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: bool Enabled { get; }
+    content: Boolean Enabled { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: ReadOnly Property Enabled As Boolean
+    content.vb: ReadOnly Property Enabled As [Boolean]
   overload: Luny.ILunyEngineObserver.Enabled*
 references:
 - uid: Luny
@@ -456,12 +456,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: System
   commentId: N:System
   isExternal: true

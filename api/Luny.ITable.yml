@@ -28,7 +28,7 @@ items:
   summary: Dictionary-based variable storage..
   example: []
   syntax:
-    content: 'public interface ITable : IEnumerable<KeyValuePair<string, Variable>>, IEnumerable'
+    content: 'public interface ITable : IEnumerable<KeyValuePair<String, Variable>>, IEnumerable'
     content.vb: Public Interface ITable Inherits IEnumerable(Of KeyValuePair(Of String, Variable)), IEnumerable
   derivedClasses:
   - Luny.Table
@@ -42,15 +42,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Get<T>(string)
-  nameWithType: ITable.Get<T>(string)
-  fullName: Luny.ITable.Get<T>(string)
+  name: Get<T>(String)
+  nameWithType: ITable.Get<T>(String)
+  fullName: Luny.ITable.Get<T>(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: T Get<T>(string key)
+    content: T Get<T>(String key)
     parameters:
     - id: key
       type: System.String
@@ -58,10 +58,10 @@ items:
     - id: T
     return:
       type: '{T}'
-    content.vb: Function [Get](Of T)(key As String) As T
+    content.vb: Function [Get](Of T)(key As [String]) As T
   overload: Luny.ITable.Get*
   nameWithType.vb: ITable.Get(Of T)(String)
-  fullName.vb: Luny.ITable.Get(Of T)(String)
+  fullName.vb: Luny.ITable.Get(Of T)(System.String)
   name.vb: Get(Of T)(String)
 - uid: Luny.ITable.GetHandle(System.String)
   commentId: M:Luny.ITable.GetHandle(System.String)
@@ -70,25 +70,22 @@ items:
   langs:
   - csharp
   - vb
-  name: GetHandle(string)
-  nameWithType: ITable.GetHandle(string)
-  fullName: Luny.ITable.GetHandle(string)
+  name: GetHandle(String)
+  nameWithType: ITable.GetHandle(String)
+  fullName: Luny.ITable.GetHandle(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: Table.VarHandle GetHandle(string key)
+    content: Table.VarHandle GetHandle(String key)
     parameters:
     - id: key
       type: System.String
     return:
       type: Luny.Table.VarHandle
-    content.vb: Function GetHandle(key As String) As Table.VarHandle
+    content.vb: Function GetHandle(key As [String]) As Table.VarHandle
   overload: Luny.ITable.GetHandle*
-  nameWithType.vb: ITable.GetHandle(String)
-  fullName.vb: Luny.ITable.GetHandle(String)
-  name.vb: GetHandle(String)
 - uid: Luny.ITable.DefineVariable(System.String,Luny.Variable)
   commentId: M:Luny.ITable.DefineVariable(System.String,Luny.Variable)
   id: DefineVariable(System.String,Luny.Variable)
@@ -96,15 +93,15 @@ items:
   langs:
   - csharp
   - vb
-  name: DefineVariable(string, Variable)
-  nameWithType: ITable.DefineVariable(string, Variable)
-  fullName: Luny.ITable.DefineVariable(string, Luny.Variable)
+  name: DefineVariable(String, Variable)
+  nameWithType: ITable.DefineVariable(String, Variable)
+  fullName: Luny.ITable.DefineVariable(System.String, Luny.Variable)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: Table.VarHandle DefineVariable(string key, Variable variable)
+    content: Table.VarHandle DefineVariable(String key, Variable variable)
     parameters:
     - id: key
       type: System.String
@@ -112,11 +109,8 @@ items:
       type: Luny.Variable
     return:
       type: Luny.Table.VarHandle
-    content.vb: Function DefineVariable(key As String, variable As Variable) As Table.VarHandle
+    content.vb: Function DefineVariable(key As [String], variable As Variable) As Table.VarHandle
   overload: Luny.ITable.DefineVariable*
-  nameWithType.vb: ITable.DefineVariable(String, Variable)
-  fullName.vb: Luny.ITable.DefineVariable(String, Luny.Variable)
-  name.vb: DefineVariable(String, Variable)
 - uid: Luny.ITable.DefineConstant(System.String,Luny.Variable)
   commentId: M:Luny.ITable.DefineConstant(System.String,Luny.Variable)
   id: DefineConstant(System.String,Luny.Variable)
@@ -124,15 +118,15 @@ items:
   langs:
   - csharp
   - vb
-  name: DefineConstant(string, Variable)
-  nameWithType: ITable.DefineConstant(string, Variable)
-  fullName: Luny.ITable.DefineConstant(string, Luny.Variable)
+  name: DefineConstant(String, Variable)
+  nameWithType: ITable.DefineConstant(String, Variable)
+  fullName: Luny.ITable.DefineConstant(System.String, Luny.Variable)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: Table.VarHandle DefineConstant(string key, Variable variable)
+    content: Table.VarHandle DefineConstant(String key, Variable variable)
     parameters:
     - id: key
       type: System.String
@@ -140,11 +134,8 @@ items:
       type: Luny.Variable
     return:
       type: Luny.Table.VarHandle
-    content.vb: Function DefineConstant(key As String, variable As Variable) As Table.VarHandle
+    content.vb: Function DefineConstant(key As [String], variable As Variable) As Table.VarHandle
   overload: Luny.ITable.DefineConstant*
-  nameWithType.vb: ITable.DefineConstant(String, Variable)
-  fullName.vb: Luny.ITable.DefineConstant(String, Luny.Variable)
-  name.vb: DefineConstant(String, Variable)
 - uid: Luny.ITable.GetHandle``1(System.String)
   commentId: M:Luny.ITable.GetHandle``1(System.String)
   id: GetHandle``1(System.String)
@@ -152,15 +143,15 @@ items:
   langs:
   - csharp
   - vb
-  name: GetHandle<T>(string)
-  nameWithType: ITable.GetHandle<T>(string)
-  fullName: Luny.ITable.GetHandle<T>(string)
+  name: GetHandle<T>(String)
+  nameWithType: ITable.GetHandle<T>(String)
+  fullName: Luny.ITable.GetHandle<T>(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: Table.VarHandle<T> GetHandle<T>(string key)
+    content: Table.VarHandle<T> GetHandle<T>(String key)
     parameters:
     - id: key
       type: System.String
@@ -168,10 +159,10 @@ items:
     - id: T
     return:
       type: Luny.Table.VarHandle{{T}}
-    content.vb: Function GetHandle(Of T)(key As String) As Table.VarHandle(Of T)
+    content.vb: Function GetHandle(Of T)(key As [String]) As Table.VarHandle(Of T)
   overload: Luny.ITable.GetHandle*
   nameWithType.vb: ITable.GetHandle(Of T)(String)
-  fullName.vb: Luny.ITable.GetHandle(Of T)(String)
+  fullName.vb: Luny.ITable.GetHandle(Of T)(System.String)
   name.vb: GetHandle(Of T)(String)
 - uid: Luny.ITable.Has(System.String)
   commentId: M:Luny.ITable.Has(System.String)
@@ -180,25 +171,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Has(string)
-  nameWithType: ITable.Has(string)
-  fullName: Luny.ITable.Has(string)
+  name: Has(String)
+  nameWithType: ITable.Has(String)
+  fullName: Luny.ITable.Has(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: bool Has(string key)
+    content: Boolean Has(String key)
     parameters:
     - id: key
       type: System.String
     return:
       type: System.Boolean
-    content.vb: Function Has(key As String) As Boolean
+    content.vb: Function Has(key As [String]) As [Boolean]
   overload: Luny.ITable.Has*
-  nameWithType.vb: ITable.Has(String)
-  fullName.vb: Luny.ITable.Has(String)
-  name.vb: Has(String)
 - uid: Luny.ITable.Remove(System.String)
   commentId: M:Luny.ITable.Remove(System.String)
   id: Remove(System.String)
@@ -206,25 +194,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Remove(string)
-  nameWithType: ITable.Remove(string)
-  fullName: Luny.ITable.Remove(string)
+  name: Remove(String)
+  nameWithType: ITable.Remove(String)
+  fullName: Luny.ITable.Remove(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: bool Remove(string key)
+    content: Boolean Remove(String key)
     parameters:
     - id: key
       type: System.String
     return:
       type: System.Boolean
-    content.vb: Function Remove(key As String) As Boolean
+    content.vb: Function Remove(key As [String]) As [Boolean]
   overload: Luny.ITable.Remove*
-  nameWithType.vb: ITable.Remove(String)
-  fullName.vb: Luny.ITable.Remove(String)
-  name.vb: Remove(String)
 - uid: Luny.ITable.RemoveAll
   commentId: M:Luny.ITable.RemoveAll
   id: RemoveAll
@@ -250,24 +235,24 @@ items:
   langs:
   - csharp
   - vb
-  name: this[string]
-  nameWithType: ITable.this[string]
-  fullName: Luny.ITable.this[string]
+  name: this[String]
+  nameWithType: ITable.this[String]
+  fullName: Luny.ITable.this[System.String]
   type: Property
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: Variable this[string key] { get; set; }
+    content: Variable this[String key] { get; set; }
     parameters:
     - id: key
       type: System.String
     return:
       type: Luny.Variable
-    content.vb: Default Property this[](key As String) As Variable
+    content.vb: Default Property this[](key As [String]) As Variable
   overload: Luny.ITable.Item*
   nameWithType.vb: ITable.this[](String)
-  fullName.vb: Luny.ITable.this[](String)
+  fullName.vb: Luny.ITable.this[](System.String)
   name.vb: this[](String)
 - uid: Luny.ITable.OnVariableChanged
   commentId: E:Luny.ITable.OnVariableChanged
@@ -309,10 +294,10 @@ references:
   definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
   name: GetEnumerator()
-  nameWithType: IEnumerable<KeyValuePair<string, Variable>>.GetEnumerator()
-  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, Luny.Variable>>.GetEnumerator()
+  nameWithType: IEnumerable<KeyValuePair<String, Variable>>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, Luny.Variable>>.GetEnumerator()
   nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, Variable)).GetEnumerator()
-  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, Luny.Variable)).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, Luny.Variable)).GetEnumerator()
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Luny.Variable}}.GetEnumerator
     name: GetEnumerator
@@ -377,11 +362,11 @@ references:
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<KeyValuePair<string, Variable>>
-  nameWithType: IEnumerable<KeyValuePair<string, Variable>>
-  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, Luny.Variable>>
+  name: IEnumerable<KeyValuePair<String, Variable>>
+  nameWithType: IEnumerable<KeyValuePair<String, Variable>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, Luny.Variable>>
   nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, Variable))
-  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, Luny.Variable))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, Luny.Variable))
   name.vb: IEnumerable(Of KeyValuePair(Of String, Variable))
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
@@ -395,7 +380,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
   - name: <
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
@@ -545,12 +530,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: '{T}'
   commentId: '!:T'
   definition: T
@@ -714,12 +696,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.ITable.Remove*
   commentId: Overload:Luny.ITable.Remove
   isExternal: true

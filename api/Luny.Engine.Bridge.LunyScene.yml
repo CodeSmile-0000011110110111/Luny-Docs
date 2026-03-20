@@ -39,24 +39,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyScene(object, ILunyPath)
-  nameWithType: LunyScene.LunyScene(object, ILunyPath)
-  fullName: Luny.Engine.Bridge.LunyScene.LunyScene(object, Luny.Engine.Bridge.ILunyPath)
+  name: LunyScene(Object, ILunyPath)
+  nameWithType: LunyScene.LunyScene(Object, ILunyPath)
+  fullName: Luny.Engine.Bridge.LunyScene.LunyScene(System.Object, Luny.Engine.Bridge.ILunyPath)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected LunyScene(object nativeScene, ILunyPath scenePath)
+    content: protected LunyScene(Object nativeScene, ILunyPath scenePath)
     parameters:
     - id: nativeScene
       type: System.Object
     - id: scenePath
       type: Luny.Engine.Bridge.ILunyPath
-    content.vb: Protected Sub New(nativeScene As Object, scenePath As ILunyPath)
+    content.vb: Protected Sub New(nativeScene As [Object], scenePath As ILunyPath)
   overload: Luny.Engine.Bridge.LunyScene.#ctor*
   nameWithType.vb: LunyScene.New(Object, ILunyPath)
-  fullName.vb: Luny.Engine.Bridge.LunyScene.New(Object, Luny.Engine.Bridge.ILunyPath)
+  fullName.vb: Luny.Engine.Bridge.LunyScene.New(System.Object, Luny.Engine.Bridge.ILunyPath)
   name.vb: New(Object, ILunyPath)
 - uid: Luny.Engine.Bridge.LunyScene.Cast``1
   commentId: M:Luny.Engine.Bridge.LunyScene.Cast``1
@@ -105,10 +105,10 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: Luny.Engine.Bridge.LunyScene.ToString*
 - uid: Luny.Engine.Bridge.LunyScene.NativeScene
@@ -127,11 +127,11 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public object NativeScene { get; }
+    content: public Object NativeScene { get; }
     parameters: []
     return:
       type: System.Object
-    content.vb: Public ReadOnly Property NativeScene As Object
+    content.vb: Public ReadOnly Property NativeScene As [Object]
   overload: Luny.Engine.Bridge.LunyScene.NativeScene*
   implements:
   - Luny.Engine.Bridge.ILunyScene.NativeScene
@@ -151,11 +151,11 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public abstract string Name { get; }
+    content: public abstract String Name { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public MustOverride ReadOnly Property Name As String
+    content.vb: Public MustOverride ReadOnly Property Name As [String]
   overload: Luny.Engine.Bridge.LunyScene.Name*
   implements:
   - Luny.Engine.Bridge.ILunyScene.Name
@@ -225,12 +225,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Bridge.ILunyScene
   commentId: T:Luny.Engine.Bridge.ILunyScene
   parent: Luny.Engine.Bridge
@@ -319,10 +316,8 @@ references:
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
@@ -347,12 +342,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyScene.NativeScene*
   commentId: Overload:Luny.Engine.Bridge.LunyScene.NativeScene
   isExternal: true

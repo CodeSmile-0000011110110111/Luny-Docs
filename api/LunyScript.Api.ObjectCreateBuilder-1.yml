@@ -121,15 +121,15 @@ items:
   langs:
   - csharp
   - vb
-  name: LocalPosition(double, double, double)
-  nameWithType: ObjectCreateBuilder<T>.LocalPosition(double, double, double)
-  fullName: LunyScript.Api.ObjectCreateBuilder<T>.LocalPosition(double, double, double)
+  name: LocalPosition(Double, Double, Double)
+  nameWithType: ObjectCreateBuilder<T>.LocalPosition(Double, Double, Double)
+  fullName: LunyScript.Api.ObjectCreateBuilder<T>.LocalPosition(System.Double, System.Double, System.Double)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ObjectCreateBuilder<T> LocalPosition(double x, double y, double z)
+    content: public ObjectCreateBuilder<T> LocalPosition(Double x, Double y, Double z)
     parameters:
     - id: x
       type: System.Double
@@ -139,11 +139,10 @@ items:
       type: System.Double
     return:
       type: LunyScript.Api.ObjectCreateBuilder`1
-    content.vb: Public Function LocalPosition(x As Double, y As Double, z As Double) As ObjectCreateBuilder(Of T)
+    content.vb: Public Function LocalPosition(x As [Double], y As [Double], z As [Double]) As ObjectCreateBuilder(Of T)
   overload: LunyScript.Api.ObjectCreateBuilder`1.LocalPosition*
   nameWithType.vb: ObjectCreateBuilder(Of T).LocalPosition(Double, Double, Double)
-  fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T).LocalPosition(Double, Double, Double)
-  name.vb: LocalPosition(Double, Double, Double)
+  fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T).LocalPosition(System.Double, System.Double, System.Double)
 - uid: LunyScript.Api.ObjectCreateBuilder`1.LocalPosition(Luny.Engine.Bridge.LunyVector3)
   commentId: M:LunyScript.Api.ObjectCreateBuilder`1.LocalPosition(Luny.Engine.Bridge.LunyVector3)
   id: LocalPosition(Luny.Engine.Bridge.LunyVector3)
@@ -176,15 +175,15 @@ items:
   langs:
   - csharp
   - vb
-  name: LocalRotation(double, double, double)
-  nameWithType: ObjectCreateBuilder<T>.LocalRotation(double, double, double)
-  fullName: LunyScript.Api.ObjectCreateBuilder<T>.LocalRotation(double, double, double)
+  name: LocalRotation(Double, Double, Double)
+  nameWithType: ObjectCreateBuilder<T>.LocalRotation(Double, Double, Double)
+  fullName: LunyScript.Api.ObjectCreateBuilder<T>.LocalRotation(System.Double, System.Double, System.Double)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ObjectCreateBuilder<T> LocalRotation(double x, double y, double z)
+    content: public ObjectCreateBuilder<T> LocalRotation(Double x, Double y, Double z)
     parameters:
     - id: x
       type: System.Double
@@ -194,11 +193,10 @@ items:
       type: System.Double
     return:
       type: LunyScript.Api.ObjectCreateBuilder`1
-    content.vb: Public Function LocalRotation(x As Double, y As Double, z As Double) As ObjectCreateBuilder(Of T)
+    content.vb: Public Function LocalRotation(x As [Double], y As [Double], z As [Double]) As ObjectCreateBuilder(Of T)
   overload: LunyScript.Api.ObjectCreateBuilder`1.LocalRotation*
   nameWithType.vb: ObjectCreateBuilder(Of T).LocalRotation(Double, Double, Double)
-  fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T).LocalRotation(Double, Double, Double)
-  name.vb: LocalRotation(Double, Double, Double)
+  fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T).LocalRotation(System.Double, System.Double, System.Double)
 - uid: LunyScript.Api.ObjectCreateBuilder`1.LocalRotation(Luny.Engine.Bridge.LunyVector3)
   commentId: M:LunyScript.Api.ObjectCreateBuilder`1.LocalRotation(Luny.Engine.Bridge.LunyVector3)
   id: LocalRotation(Luny.Engine.Bridge.LunyVector3)
@@ -256,25 +254,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LocalScale(double)
-  nameWithType: ObjectCreateBuilder<T>.LocalScale(double)
-  fullName: LunyScript.Api.ObjectCreateBuilder<T>.LocalScale(double)
+  name: LocalScale(Double)
+  nameWithType: ObjectCreateBuilder<T>.LocalScale(Double)
+  fullName: LunyScript.Api.ObjectCreateBuilder<T>.LocalScale(System.Double)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ObjectCreateBuilder<T> LocalScale(double uniformLocalScale)
+    content: public ObjectCreateBuilder<T> LocalScale(Double uniformLocalScale)
     parameters:
     - id: uniformLocalScale
       type: System.Double
     return:
       type: LunyScript.Api.ObjectCreateBuilder`1
-    content.vb: Public Function LocalScale(uniformLocalScale As Double) As ObjectCreateBuilder(Of T)
+    content.vb: Public Function LocalScale(uniformLocalScale As [Double]) As ObjectCreateBuilder(Of T)
   overload: LunyScript.Api.ObjectCreateBuilder`1.LocalScale*
   nameWithType.vb: ObjectCreateBuilder(Of T).LocalScale(Double)
-  fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T).LocalScale(Double)
-  name.vb: LocalScale(Double)
+  fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T).LocalScale(System.Double)
 - uid: LunyScript.Api.ObjectCreateBuilder`1.LocalScale(System.Double,System.Double,System.Double)
   commentId: M:LunyScript.Api.ObjectCreateBuilder`1.LocalScale(System.Double,System.Double,System.Double)
   id: LocalScale(System.Double,System.Double,System.Double)
@@ -282,15 +279,15 @@ items:
   langs:
   - csharp
   - vb
-  name: LocalScale(double, double, double)
-  nameWithType: ObjectCreateBuilder<T>.LocalScale(double, double, double)
-  fullName: LunyScript.Api.ObjectCreateBuilder<T>.LocalScale(double, double, double)
+  name: LocalScale(Double, Double, Double)
+  nameWithType: ObjectCreateBuilder<T>.LocalScale(Double, Double, Double)
+  fullName: LunyScript.Api.ObjectCreateBuilder<T>.LocalScale(System.Double, System.Double, System.Double)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ObjectCreateBuilder<T> LocalScale(double x, double y, double z)
+    content: public ObjectCreateBuilder<T> LocalScale(Double x, Double y, Double z)
     parameters:
     - id: x
       type: System.Double
@@ -300,11 +297,10 @@ items:
       type: System.Double
     return:
       type: LunyScript.Api.ObjectCreateBuilder`1
-    content.vb: Public Function LocalScale(x As Double, y As Double, z As Double) As ObjectCreateBuilder(Of T)
+    content.vb: Public Function LocalScale(x As [Double], y As [Double], z As [Double]) As ObjectCreateBuilder(Of T)
   overload: LunyScript.Api.ObjectCreateBuilder`1.LocalScale*
   nameWithType.vb: ObjectCreateBuilder(Of T).LocalScale(Double, Double, Double)
-  fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T).LocalScale(Double, Double, Double)
-  name.vb: LocalScale(Double, Double, Double)
+  fullName.vb: LunyScript.Api.ObjectCreateBuilder(Of T).LocalScale(System.Double, System.Double, System.Double)
 - uid: LunyScript.Api.ObjectCreateBuilder`1.LocalScale(Luny.Engine.Bridge.LunyVector3)
   commentId: M:LunyScript.Api.ObjectCreateBuilder`1.LocalScale(Luny.Engine.Bridge.LunyVector3)
   id: LocalScale(Luny.Engine.Bridge.LunyVector3)
@@ -363,12 +359,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -376,7 +369,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -600,12 +593,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Engine.Bridge.LunyVector3
   commentId: T:Luny.Engine.Bridge.LunyVector3
   parent: Luny.Engine.Bridge

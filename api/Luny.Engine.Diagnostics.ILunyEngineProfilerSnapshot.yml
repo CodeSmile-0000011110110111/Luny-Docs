@@ -66,7 +66,7 @@ items:
     parameters: []
     return:
       type: System.DateTime
-    content.vb: ReadOnly Property Timestamp As Date
+    content.vb: ReadOnly Property Timestamp As DateTime
   overload: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.Timestamp*
 - uid: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount
   commentId: P:Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount
@@ -83,11 +83,11 @@ items:
   - Luny
   namespace: Luny.Engine.Diagnostics
   syntax:
-    content: long FrameCount { get; }
+    content: Int64 FrameCount { get; }
     parameters: []
     return:
       type: System.Int64
-    content.vb: ReadOnly Property FrameCount As Long
+    content.vb: ReadOnly Property FrameCount As Int64
   overload: Luny.Engine.Diagnostics.ILunyEngineProfilerSnapshot.FrameCount*
 references:
 - uid: Luny.Engine.Diagnostics
@@ -281,9 +281,6 @@ references:
   name: DateTime
   nameWithType: DateTime
   fullName: System.DateTime
-  nameWithType.vb: Date
-  fullName.vb: Date
-  name.vb: Date
 - uid: System
   commentId: N:System
   isExternal: true
@@ -303,9 +300,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64

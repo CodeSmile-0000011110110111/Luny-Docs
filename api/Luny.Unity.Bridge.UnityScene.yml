@@ -70,11 +70,11 @@ items:
   namespace: Luny.Unity.Bridge
   example: []
   syntax:
-    content: public override string Name { get; }
+    content: public override String Name { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Overrides ReadOnly Property Name As String
+    content.vb: Public Overrides ReadOnly Property Name As [String]
   overridden: Luny.Engine.Bridge.LunyScene.Name
   overload: Luny.Unity.Bridge.UnityScene.Name*
 references:
@@ -119,12 +119,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Bridge.LunyScene
   commentId: T:Luny.Engine.Bridge.LunyScene
   parent: Luny.Engine.Bridge
@@ -283,9 +280,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

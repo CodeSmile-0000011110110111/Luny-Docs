@@ -141,11 +141,11 @@ items:
     Only active in DEBUG or UNITY_EDITOR builds.
   example: []
   syntax:
-    content: public static int MaxLoopIterations { get; }
+    content: public static Int32 MaxLoopIterations { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public Shared ReadOnly Property MaxLoopIterations As Integer
+    content.vb: Public Shared ReadOnly Property MaxLoopIterations As Int32
   overload: LunyScript.ScriptEngine.MaxLoopIterations*
 references:
 - uid: LunyScript
@@ -159,12 +159,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.IScriptEngine
   commentId: T:LunyScript.IScriptEngine
   parent: LunyScript
@@ -330,9 +327,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

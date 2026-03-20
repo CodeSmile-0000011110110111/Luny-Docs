@@ -44,15 +44,15 @@ items:
   langs:
   - csharp
   - vb
-  name: UnityPrefab(GameObject, LunyAssetPath, bool)
-  nameWithType: UnityPrefab.UnityPrefab(GameObject, LunyAssetPath, bool)
-  fullName: Luny.Unity.Bridge.UnityPrefab.UnityPrefab(UnityEngine.GameObject, Luny.Engine.Bridge.LunyAssetPath, bool)
+  name: UnityPrefab(GameObject, LunyAssetPath, Boolean)
+  nameWithType: UnityPrefab.UnityPrefab(GameObject, LunyAssetPath, Boolean)
+  fullName: Luny.Unity.Bridge.UnityPrefab.UnityPrefab(UnityEngine.GameObject, Luny.Engine.Bridge.LunyAssetPath, System.Boolean)
   type: Constructor
   assemblies:
   - Luny.Unity
   namespace: Luny.Unity.Bridge
   syntax:
-    content: public UnityPrefab(GameObject prefab, LunyAssetPath assetPath, bool isPlaceholder = false)
+    content: public UnityPrefab(GameObject prefab, LunyAssetPath assetPath, Boolean isPlaceholder = false)
     parameters:
     - id: prefab
       type: UnityEngine.GameObject
@@ -60,10 +60,10 @@ items:
       type: Luny.Engine.Bridge.LunyAssetPath
     - id: isPlaceholder
       type: System.Boolean
-    content.vb: Public Sub New(prefab As GameObject, assetPath As LunyAssetPath, isPlaceholder As Boolean = False)
+    content.vb: Public Sub New(prefab As GameObject, assetPath As LunyAssetPath, isPlaceholder As [Boolean] = False)
   overload: Luny.Unity.Bridge.UnityPrefab.#ctor*
   nameWithType.vb: UnityPrefab.New(GameObject, LunyAssetPath, Boolean)
-  fullName.vb: Luny.Unity.Bridge.UnityPrefab.New(UnityEngine.GameObject, Luny.Engine.Bridge.LunyAssetPath, Boolean)
+  fullName.vb: Luny.Unity.Bridge.UnityPrefab.New(UnityEngine.GameObject, Luny.Engine.Bridge.LunyAssetPath, System.Boolean)
   name.vb: New(GameObject, LunyAssetPath, Boolean)
 - uid: Luny.Unity.Bridge.UnityPrefab.Instantiate``1(Luny.Engine.Bridge.ILunyObject)
   commentId: M:Luny.Unity.Bridge.UnityPrefab.Instantiate``1(Luny.Engine.Bridge.ILunyObject)
@@ -207,12 +207,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Bridge.LunyAsset
   commentId: T:Luny.Engine.Bridge.LunyAsset
   parent: Luny.Engine.Bridge
@@ -404,12 +401,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Bridge.LunyPrefab.Instantiate``1(Luny.Engine.Bridge.ILunyObject)
   commentId: M:Luny.Engine.Bridge.LunyPrefab.Instantiate``1(Luny.Engine.Bridge.ILunyObject)
   parent: Luny.Engine.Bridge.LunyPrefab

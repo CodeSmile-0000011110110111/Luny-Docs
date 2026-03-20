@@ -75,15 +75,15 @@ items:
   langs:
   - csharp
   - vb
-  name: TransformInterpolateTowardsObjectBlock(ILunyObject, double, double, LunyVector3, double)
-  nameWithType: TransformInterpolateTowardsObjectBlock.TransformInterpolateTowardsObjectBlock(ILunyObject, double, double, LunyVector3, double)
-  fullName: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.TransformInterpolateTowardsObjectBlock(Luny.Engine.Bridge.ILunyObject, double, double, Luny.Engine.Bridge.LunyVector3, double)
+  name: TransformInterpolateTowardsObjectBlock(ILunyObject, Double, Double, LunyVector3, Double)
+  nameWithType: TransformInterpolateTowardsObjectBlock.TransformInterpolateTowardsObjectBlock(ILunyObject, Double, Double, LunyVector3, Double)
+  fullName: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.TransformInterpolateTowardsObjectBlock(Luny.Engine.Bridge.ILunyObject, System.Double, System.Double, Luny.Engine.Bridge.LunyVector3, System.Double)
   type: Constructor
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: protected TransformInterpolateTowardsObjectBlock(ILunyObject target, double speed, double deadZone, LunyVector3 axisLock, double responsiveness)
+    content: protected TransformInterpolateTowardsObjectBlock(ILunyObject target, Double speed, Double deadZone, LunyVector3 axisLock, Double responsiveness)
     parameters:
     - id: target
       type: Luny.Engine.Bridge.ILunyObject
@@ -95,10 +95,10 @@ items:
       type: Luny.Engine.Bridge.LunyVector3
     - id: responsiveness
       type: System.Double
-    content.vb: Protected Sub New(target As ILunyObject, speed As Double, deadZone As Double, axisLock As LunyVector3, responsiveness As Double)
+    content.vb: Protected Sub New(target As ILunyObject, speed As [Double], deadZone As [Double], axisLock As LunyVector3, responsiveness As [Double])
   overload: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.#ctor*
   nameWithType.vb: TransformInterpolateTowardsObjectBlock.New(ILunyObject, Double, Double, LunyVector3, Double)
-  fullName.vb: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.New(Luny.Engine.Bridge.ILunyObject, Double, Double, Luny.Engine.Bridge.LunyVector3, Double)
+  fullName.vb: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.New(Luny.Engine.Bridge.ILunyObject, System.Double, System.Double, Luny.Engine.Bridge.LunyVector3, System.Double)
   name.vb: New(ILunyObject, Double, Double, LunyVector3, Double)
 - uid: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.TryGetPositionDelta(LunyScript.IScriptRuntimeContext,Luny.Engine.Bridge.LunyVector3@,Luny.Engine.Bridge.LunyVector3@)
   commentId: M:LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.TryGetPositionDelta(LunyScript.IScriptRuntimeContext,Luny.Engine.Bridge.LunyVector3@,Luny.Engine.Bridge.LunyVector3@)
@@ -120,7 +120,7 @@ items:
     Returns false (and skips) when the distance is within the dead zone.
   example: []
   syntax:
-    content: protected bool TryGetPositionDelta(IScriptRuntimeContext ctx, out LunyVector3 current, out LunyVector3 maskedTarget)
+    content: protected Boolean TryGetPositionDelta(IScriptRuntimeContext ctx, out LunyVector3 current, out LunyVector3 maskedTarget)
     parameters:
     - id: ctx
       type: LunyScript.IScriptRuntimeContext
@@ -130,7 +130,7 @@ items:
       type: Luny.Engine.Bridge.LunyVector3
     return:
       type: System.Boolean
-    content.vb: Protected Function TryGetPositionDelta(ctx As IScriptRuntimeContext, current As LunyVector3, maskedTarget As LunyVector3) As Boolean
+    content.vb: Protected Function TryGetPositionDelta(ctx As IScriptRuntimeContext, current As LunyVector3, maskedTarget As LunyVector3) As [Boolean]
   overload: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.TryGetPositionDelta*
   nameWithType.vb: TransformInterpolateTowardsObjectBlock.TryGetPositionDelta(IScriptRuntimeContext, LunyVector3, LunyVector3)
   fullName.vb: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.TryGetPositionDelta(LunyScript.IScriptRuntimeContext, Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
@@ -155,7 +155,7 @@ items:
     Returns false (and skips) when the direction is zero or the angle is within the dead zone.
   example: []
   syntax:
-    content: protected bool TryGetTargetRotation(IScriptRuntimeContext ctx, out LunyQuaternion currentRotation, out LunyQuaternion targetRotation)
+    content: protected Boolean TryGetTargetRotation(IScriptRuntimeContext ctx, out LunyQuaternion currentRotation, out LunyQuaternion targetRotation)
     parameters:
     - id: ctx
       type: LunyScript.IScriptRuntimeContext
@@ -165,7 +165,7 @@ items:
       type: Luny.Engine.Bridge.LunyQuaternion
     return:
       type: System.Boolean
-    content.vb: Protected Function TryGetTargetRotation(ctx As IScriptRuntimeContext, currentRotation As LunyQuaternion, targetRotation As LunyQuaternion) As Boolean
+    content.vb: Protected Function TryGetTargetRotation(ctx As IScriptRuntimeContext, currentRotation As LunyQuaternion, targetRotation As LunyQuaternion) As [Boolean]
   overload: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.TryGetTargetRotation*
   nameWithType.vb: TransformInterpolateTowardsObjectBlock.TryGetTargetRotation(IScriptRuntimeContext, LunyQuaternion, LunyQuaternion)
   fullName.vb: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.TryGetTargetRotation(LunyScript.IScriptRuntimeContext, Luny.Engine.Bridge.LunyQuaternion, Luny.Engine.Bridge.LunyQuaternion)
@@ -185,10 +185,10 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: protected string TowardsObjectToString()
+    content: protected String TowardsObjectToString()
     return:
       type: System.String
-    content.vb: Protected Function TowardsObjectToString() As String
+    content.vb: Protected Function TowardsObjectToString() As [String]
   overload: LunyScript.Blocks.TransformInterpolateTowardsObjectBlock.TowardsObjectToString*
 references:
 - uid: Luny.Engine.Bridge.ILunyObject
@@ -230,12 +230,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.Blocks.ScriptBlock
   commentId: T:LunyScript.Blocks.ScriptBlock
   parent: LunyScript.Blocks
@@ -470,12 +467,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Engine.Bridge.LunyVector3
   commentId: T:Luny.Engine.Bridge.LunyVector3
   parent: Luny.Engine.Bridge
@@ -504,12 +498,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: LunyScript
   commentId: N:LunyScript
   isExternal: true
@@ -544,9 +535,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

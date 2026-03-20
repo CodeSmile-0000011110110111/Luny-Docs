@@ -38,15 +38,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Create(ILunyObject, double, double, LunyVector3, double, bool)
-  nameWithType: TransformRotationLerpTowardsObjectBlock.Create(ILunyObject, double, double, LunyVector3, double, bool)
-  fullName: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock.Create(Luny.Engine.Bridge.ILunyObject, double, double, Luny.Engine.Bridge.LunyVector3, double, bool)
+  name: Create(ILunyObject, Double, Double, LunyVector3, Double, Boolean)
+  nameWithType: TransformRotationLerpTowardsObjectBlock.Create(ILunyObject, Double, Double, LunyVector3, Double, Boolean)
+  fullName: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock.Create(Luny.Engine.Bridge.ILunyObject, System.Double, System.Double, Luny.Engine.Bridge.LunyVector3, System.Double, System.Boolean)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static TransformRotationLerpTowardsObjectBlock Create(ILunyObject target, double speed, double deadZone = 0.1, LunyVector3 axisLock = default, double responsiveness = 1, bool spherical = false)
+    content: public static TransformRotationLerpTowardsObjectBlock Create(ILunyObject target, Double speed, Double deadZone = 0.1, LunyVector3 axisLock = default, Double responsiveness = 1, Boolean spherical = false)
     parameters:
     - id: target
       type: Luny.Engine.Bridge.ILunyObject
@@ -62,11 +62,8 @@ items:
       type: System.Boolean
     return:
       type: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock
-    content.vb: Public Shared Function Create(target As ILunyObject, speed As Double, deadZone As Double = 0.1, axisLock As LunyVector3 = Nothing, responsiveness As Double = 1, spherical As Boolean = False) As TransformRotationLerpTowardsObjectBlock
+    content.vb: Public Shared Function Create(target As ILunyObject, speed As [Double], deadZone As [Double] = 0.1, axisLock As LunyVector3 = Nothing, responsiveness As [Double] = 1, spherical As [Boolean] = False) As TransformRotationLerpTowardsObjectBlock
   overload: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock.Create*
-  nameWithType.vb: TransformRotationLerpTowardsObjectBlock.Create(ILunyObject, Double, Double, LunyVector3, Double, Boolean)
-  fullName.vb: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock.Create(Luny.Engine.Bridge.ILunyObject, Double, Double, Luny.Engine.Bridge.LunyVector3, Double, Boolean)
-  name.vb: Create(ILunyObject, Double, Double, LunyVector3, Double, Boolean)
 - uid: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock.Execute(LunyScript.IScriptRuntimeContext)
   commentId: M:LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock.Execute(LunyScript.IScriptRuntimeContext)
   id: Execute(LunyScript.IScriptRuntimeContext)
@@ -106,10 +103,10 @@ items:
   namespace: LunyScript.Blocks
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock.ToString*
 references:
@@ -144,12 +141,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.Blocks.ScriptBlock
   commentId: T:LunyScript.Blocks.ScriptBlock
   parent: LunyScript.Blocks
@@ -254,12 +248,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Engine.Bridge.LunyVector3
   commentId: T:Luny.Engine.Bridge.LunyVector3
   parent: Luny.Engine.Bridge
@@ -273,12 +264,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock
   commentId: T:LunyScript.Blocks.TransformRotationLerpTowardsObjectBlock
   parent: LunyScript.Blocks
@@ -381,10 +369,8 @@ references:
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
@@ -409,9 +395,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

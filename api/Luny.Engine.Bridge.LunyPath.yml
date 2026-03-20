@@ -43,21 +43,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator string(LunyPath)
-  nameWithType: LunyPath.implicit operator string(LunyPath)
-  fullName: Luny.Engine.Bridge.LunyPath.implicit operator string(Luny.Engine.Bridge.LunyPath)
+  name: implicit operator String(LunyPath)
+  nameWithType: LunyPath.implicit operator String(LunyPath)
+  fullName: Luny.Engine.Bridge.LunyPath.implicit operator System.String(Luny.Engine.Bridge.LunyPath)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static implicit operator string(LunyPath lunyPath)
+    content: public static implicit operator String(LunyPath lunyPath)
     parameters:
     - id: lunyPath
       type: Luny.Engine.Bridge.LunyPath
     return:
       type: System.String
-    content.vb: Public Shared Widening Operator CType(lunyPath As LunyPath) As String
+    content.vb: Public Shared Widening Operator CType(lunyPath As LunyPath) As [String]
   overload: Luny.Engine.Bridge.LunyPath.op_Implicit*
   nameWithType.vb: LunyPath.CType(LunyPath)
   fullName.vb: Luny.Engine.Bridge.LunyPath.CType(Luny.Engine.Bridge.LunyPath)
@@ -69,25 +69,22 @@ items:
   langs:
   - csharp
   - vb
-  name: FromNative(string)
-  nameWithType: LunyPath.FromNative(string)
-  fullName: Luny.Engine.Bridge.LunyPath.FromNative(string)
+  name: FromNative(String)
+  nameWithType: LunyPath.FromNative(String)
+  fullName: Luny.Engine.Bridge.LunyPath.FromNative(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyPath FromNative(string nativePath)
+    content: public static LunyPath FromNative(String nativePath)
     parameters:
     - id: nativePath
       type: System.String
     return:
       type: Luny.Engine.Bridge.LunyPath
-    content.vb: Public Shared Function FromNative(nativePath As String) As LunyPath
+    content.vb: Public Shared Function FromNative(nativePath As [String]) As LunyPath
   overload: Luny.Engine.Bridge.LunyPath.FromNative*
-  nameWithType.vb: LunyPath.FromNative(String)
-  fullName.vb: Luny.Engine.Bridge.LunyPath.FromNative(String)
-  name.vb: FromNative(String)
 - uid: Luny.Engine.Bridge.LunyPath.FromAgnostic(System.String)
   commentId: M:Luny.Engine.Bridge.LunyPath.FromAgnostic(System.String)
   id: FromAgnostic(System.String)
@@ -95,25 +92,22 @@ items:
   langs:
   - csharp
   - vb
-  name: FromAgnostic(string)
-  nameWithType: LunyPath.FromAgnostic(string)
-  fullName: Luny.Engine.Bridge.LunyPath.FromAgnostic(string)
+  name: FromAgnostic(String)
+  nameWithType: LunyPath.FromAgnostic(String)
+  fullName: Luny.Engine.Bridge.LunyPath.FromAgnostic(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyPath FromAgnostic(string agnosticPath)
+    content: public static LunyPath FromAgnostic(String agnosticPath)
     parameters:
     - id: agnosticPath
       type: System.String
     return:
       type: Luny.Engine.Bridge.LunyPath
-    content.vb: Public Shared Function FromAgnostic(agnosticPath As String) As LunyPath
+    content.vb: Public Shared Function FromAgnostic(agnosticPath As [String]) As LunyPath
   overload: Luny.Engine.Bridge.LunyPath.FromAgnostic*
-  nameWithType.vb: LunyPath.FromAgnostic(String)
-  fullName.vb: Luny.Engine.Bridge.LunyPath.FromAgnostic(String)
-  name.vb: FromAgnostic(String)
 - uid: Luny.Engine.Bridge.LunyPath.#ctor(System.String,System.Boolean)
   commentId: M:Luny.Engine.Bridge.LunyPath.#ctor(System.String,System.Boolean)
   id: '#ctor(System.String,System.Boolean)'
@@ -121,24 +115,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyPath(string, bool)
-  nameWithType: LunyPath.LunyPath(string, bool)
-  fullName: Luny.Engine.Bridge.LunyPath.LunyPath(string, bool)
+  name: LunyPath(String, Boolean)
+  nameWithType: LunyPath.LunyPath(String, Boolean)
+  fullName: Luny.Engine.Bridge.LunyPath.LunyPath(System.String, System.Boolean)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected LunyPath(string path, bool isNative)
+    content: protected LunyPath(String path, Boolean isNative)
     parameters:
     - id: path
       type: System.String
     - id: isNative
       type: System.Boolean
-    content.vb: Protected Sub New(path As String, isNative As Boolean)
+    content.vb: Protected Sub New(path As [String], isNative As [Boolean])
   overload: Luny.Engine.Bridge.LunyPath.#ctor*
   nameWithType.vb: LunyPath.New(String, Boolean)
-  fullName.vb: Luny.Engine.Bridge.LunyPath.New(String, Boolean)
+  fullName.vb: Luny.Engine.Bridge.LunyPath.New(System.String, System.Boolean)
   name.vb: New(String, Boolean)
 - uid: Luny.Engine.Bridge.LunyPath.ToString
   commentId: M:Luny.Engine.Bridge.LunyPath.ToString
@@ -156,10 +150,10 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: Luny.Engine.Bridge.LunyPath.ToString*
 - uid: Luny.Engine.Bridge.LunyPath.Converter
@@ -201,11 +195,11 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public string NativePath { get; }
+    content: public String NativePath { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public ReadOnly Property NativePath As String
+    content.vb: Public ReadOnly Property NativePath As [String]
   overload: Luny.Engine.Bridge.LunyPath.NativePath*
   implements:
   - Luny.Engine.Bridge.ILunyPath.NativePath
@@ -225,11 +219,11 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public string AgnosticPath { get; }
+    content: public String AgnosticPath { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public ReadOnly Property AgnosticPath As String
+    content.vb: Public ReadOnly Property AgnosticPath As [String]
   overload: Luny.Engine.Bridge.LunyPath.AgnosticPath*
   implements:
   - Luny.Engine.Bridge.ILunyPath.AgnosticPath
@@ -296,12 +290,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Bridge.ILunyPath
   commentId: T:Luny.Engine.Bridge.ILunyPath
   parent: Luny.Engine.Bridge
@@ -342,12 +333,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyPath.FromNative*
   commentId: Overload:Luny.Engine.Bridge.LunyPath.FromNative
   isExternal: true
@@ -377,21 +365,16 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString

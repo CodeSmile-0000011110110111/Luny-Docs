@@ -98,9 +98,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Coroutine(string)
-  nameWithType: Script.Coroutine(string)
-  fullName: LunyScript.Script.Coroutine(string)
+  name: Coroutine(String)
+  nameWithType: Script.Coroutine(String)
+  fullName: LunyScript.Script.Coroutine(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -111,17 +111,14 @@ items:
     Usage: Coroutine("name").Duration(3).Seconds().OnUpdate(blocks).Elapsed(blocks);
   example: []
   syntax:
-    content: public CoroutineBuilder Coroutine(string name)
+    content: public CoroutineBuilder Coroutine(String name)
     parameters:
     - id: name
       type: System.String
     return:
       type: LunyScript.Api.CoroutineBuilder
-    content.vb: Public Function Coroutine(name As String) As CoroutineBuilder
+    content.vb: Public Function Coroutine(name As [String]) As CoroutineBuilder
   overload: LunyScript.Script.Coroutine*
-  nameWithType.vb: Script.Coroutine(String)
-  fullName.vb: LunyScript.Script.Coroutine(String)
-  name.vb: Coroutine(String)
 - uid: LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
   commentId: M:LunyScript.Script.If(LunyScript.Blocks.ConditionBlock[])
   id: If(LunyScript.Blocks.ConditionBlock[])
@@ -251,9 +248,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Check(Func<IScriptRuntimeContext, bool>)
-  nameWithType: Script.Check(Func<IScriptRuntimeContext, bool>)
-  fullName: LunyScript.Script.Check(System.Func<LunyScript.IScriptRuntimeContext, bool>)
+  name: Check(Func<IScriptRuntimeContext, Boolean>)
+  nameWithType: Script.Check(Func<IScriptRuntimeContext, Boolean>)
+  fullName: LunyScript.Script.Check(System.Func<LunyScript.IScriptRuntimeContext, System.Boolean>)
   type: Method
   assemblies:
   - LunyScript
@@ -267,7 +264,7 @@ items:
     - Prefer named methods over lambdas to ensure the block-based code continues to read like intent.
   example: []
   syntax:
-    content: public ConditionBlock Check(Func<IScriptRuntimeContext, bool> func)
+    content: public ConditionBlock Check(Func<IScriptRuntimeContext, Boolean> func)
     parameters:
     - id: func
       type: System.Func{LunyScript.IScriptRuntimeContext,System.Boolean}
@@ -275,10 +272,10 @@ items:
     return:
       type: LunyScript.Blocks.ConditionBlock
       description: ''
-    content.vb: Public Function Check(func As Func(Of IScriptRuntimeContext, Boolean)) As ConditionBlock
+    content.vb: Public Function Check(func As Func(Of IScriptRuntimeContext, [Boolean])) As ConditionBlock
   overload: LunyScript.Script.Check*
   nameWithType.vb: Script.Check(Func(Of IScriptRuntimeContext, Boolean))
-  fullName.vb: LunyScript.Script.Check(System.Func(Of LunyScript.IScriptRuntimeContext, Boolean))
+  fullName.vb: LunyScript.Script.Check(System.Func(Of LunyScript.IScriptRuntimeContext, System.Boolean))
   name.vb: Check(Func(Of IScriptRuntimeContext, Boolean))
 - uid: LunyScript.Script.Check(System.Func{System.Boolean})
   commentId: M:LunyScript.Script.Check(System.Func{System.Boolean})
@@ -287,9 +284,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Check(Func<bool>)
-  nameWithType: Script.Check(Func<bool>)
-  fullName: LunyScript.Script.Check(System.Func<bool>)
+  name: Check(Func<Boolean>)
+  nameWithType: Script.Check(Func<Boolean>)
+  fullName: LunyScript.Script.Check(System.Func<System.Boolean>)
   type: Method
   assemblies:
   - LunyScript
@@ -303,7 +300,7 @@ items:
     - Prefer named methods over lambdas to ensure the block-based code continues to read like intent.
   example: []
   syntax:
-    content: public ConditionBlock Check(Func<bool> func)
+    content: public ConditionBlock Check(Func<Boolean> func)
     parameters:
     - id: func
       type: System.Func{System.Boolean}
@@ -311,10 +308,10 @@ items:
     return:
       type: LunyScript.Blocks.ConditionBlock
       description: ''
-    content.vb: Public Function Check(func As Func(Of Boolean)) As ConditionBlock
+    content.vb: Public Function Check(func As Func(Of [Boolean])) As ConditionBlock
   overload: LunyScript.Script.Check*
   nameWithType.vb: Script.Check(Func(Of Boolean))
-  fullName.vb: LunyScript.Script.Check(System.Func(Of Boolean))
+  fullName.vb: LunyScript.Script.Check(System.Func(Of System.Boolean))
   name.vb: Check(Func(Of Boolean))
 - uid: LunyScript.Script.Run(System.Action)
   commentId: M:LunyScript.Script.Run(System.Action)
@@ -558,10 +555,10 @@ items:
   namespace: LunyScript
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: LunyScript.Script.ToString*
 - uid: LunyScript.Script.#ctor
@@ -623,11 +620,11 @@ items:
   - LunyScript
   namespace: LunyScript
   syntax:
-    content: public string Name { get; }
+    content: public String Name { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public ReadOnly Property Name As String
+    content.vb: Public ReadOnly Property Name As [String]
   overload: LunyScript.Script.Name*
 - uid: LunyScript.Script.IsEditor
   commentId: P:LunyScript.Script.IsEditor
@@ -646,11 +643,11 @@ items:
   summary: True if the script currently runs within the engine's editor (play mode). False in builds.
   example: []
   syntax:
-    content: public bool IsEditor { get; }
+    content: public Boolean IsEditor { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsEditor As Boolean
+    content.vb: Public ReadOnly Property IsEditor As [Boolean]
   overload: LunyScript.Script.IsEditor*
 - uid: LunyScript.Script.GVar
   commentId: P:LunyScript.Script.GVar
@@ -941,12 +938,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -966,12 +960,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Api.CoroutineBuilder
   commentId: T:LunyScript.Api.CoroutineBuilder
   parent: LunyScript.Api
@@ -1122,11 +1113,11 @@ references:
   parent: System
   definition: System.Func`2
   href: https://learn.microsoft.com/dotnet/api/system.func-2
-  name: Func<IScriptRuntimeContext, bool>
-  nameWithType: Func<IScriptRuntimeContext, bool>
-  fullName: System.Func<LunyScript.IScriptRuntimeContext, bool>
+  name: Func<IScriptRuntimeContext, Boolean>
+  nameWithType: Func<IScriptRuntimeContext, Boolean>
+  fullName: System.Func<LunyScript.IScriptRuntimeContext, System.Boolean>
   nameWithType.vb: Func(Of IScriptRuntimeContext, Boolean)
-  fullName.vb: System.Func(Of LunyScript.IScriptRuntimeContext, Boolean)
+  fullName.vb: System.Func(Of LunyScript.IScriptRuntimeContext, System.Boolean)
   name.vb: Func(Of IScriptRuntimeContext, Boolean)
   spec.csharp:
   - uid: System.Func`2
@@ -1141,7 +1132,7 @@ references:
   - name: ','
   - name: " "
   - uid: System.Boolean
-    name: bool
+    name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'
@@ -1211,11 +1202,11 @@ references:
   parent: System
   definition: System.Func`1
   href: https://learn.microsoft.com/dotnet/api/system.func-1
-  name: Func<bool>
-  nameWithType: Func<bool>
-  fullName: System.Func<bool>
+  name: Func<Boolean>
+  nameWithType: Func<Boolean>
+  fullName: System.Func<System.Boolean>
   nameWithType.vb: Func(Of Boolean)
-  fullName.vb: System.Func(Of Boolean)
+  fullName.vb: System.Func(Of System.Boolean)
   name.vb: Func(Of Boolean)
   spec.csharp:
   - uid: System.Func`1
@@ -1224,7 +1215,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.func-1
   - name: <
   - uid: System.Boolean
-    name: bool
+    name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'
@@ -1409,10 +1400,8 @@ references:
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
@@ -1513,12 +1502,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: LunyScript.Script.GVar*
   commentId: Overload:LunyScript.Script.GVar
   isExternal: true

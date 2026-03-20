@@ -28,15 +28,15 @@ items:
   langs:
   - csharp
   - vb
-  name: CopySign(float, float)
-  nameWithType: LunyMath.CopySign(float, float)
-  fullName: Luny.Engine.Bridge.LunyMath.CopySign(float, float)
+  name: CopySign(Single, Single)
+  nameWithType: LunyMath.CopySign(Single, Single)
+  fullName: Luny.Engine.Bridge.LunyMath.CopySign(System.Single, System.Single)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static float CopySign(float magnitude, float sign)
+    content: public static Single CopySign(Single magnitude, Single sign)
     parameters:
     - id: magnitude
       type: System.Single
@@ -44,11 +44,8 @@ items:
       type: System.Single
     return:
       type: System.Single
-    content.vb: Public Shared Function CopySign(magnitude As Single, sign As Single) As Single
+    content.vb: Public Shared Function CopySign(magnitude As [Single], sign As [Single]) As [Single]
   overload: Luny.Engine.Bridge.LunyMath.CopySign*
-  nameWithType.vb: LunyMath.CopySign(Single, Single)
-  fullName.vb: Luny.Engine.Bridge.LunyMath.CopySign(Single, Single)
-  name.vb: CopySign(Single, Single)
 references:
 - uid: Luny.Engine.Bridge
   commentId: N:Luny.Engine.Bridge
@@ -91,12 +88,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -116,9 +110,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

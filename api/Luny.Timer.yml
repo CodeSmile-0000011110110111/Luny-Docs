@@ -53,9 +53,9 @@ items:
   langs:
   - csharp
   - vb
-  name: FromSeconds(double)
-  nameWithType: Timer.FromSeconds(double)
-  fullName: Luny.Timer.FromSeconds(double)
+  name: FromSeconds(Double)
+  nameWithType: Timer.FromSeconds(Double)
+  fullName: Luny.Timer.FromSeconds(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -63,17 +63,14 @@ items:
   summary: Creates a new timer with duration in seconds.
   example: []
   syntax:
-    content: public static Timer FromSeconds(double seconds)
+    content: public static Timer FromSeconds(Double seconds)
     parameters:
     - id: seconds
       type: System.Double
     return:
       type: Luny.Timer
-    content.vb: Public Shared Function FromSeconds(seconds As Double) As Timer
+    content.vb: Public Shared Function FromSeconds(seconds As [Double]) As Timer
   overload: Luny.Timer.FromSeconds*
-  nameWithType.vb: Timer.FromSeconds(Double)
-  fullName.vb: Luny.Timer.FromSeconds(Double)
-  name.vb: FromSeconds(Double)
 - uid: Luny.Timer.FromMilliseconds(System.Double)
   commentId: M:Luny.Timer.FromMilliseconds(System.Double)
   id: FromMilliseconds(System.Double)
@@ -81,9 +78,9 @@ items:
   langs:
   - csharp
   - vb
-  name: FromMilliseconds(double)
-  nameWithType: Timer.FromMilliseconds(double)
-  fullName: Luny.Timer.FromMilliseconds(double)
+  name: FromMilliseconds(Double)
+  nameWithType: Timer.FromMilliseconds(Double)
+  fullName: Luny.Timer.FromMilliseconds(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -91,17 +88,14 @@ items:
   summary: Creates a new timer with duration in milliseconds.
   example: []
   syntax:
-    content: public static Timer FromMilliseconds(double ms)
+    content: public static Timer FromMilliseconds(Double ms)
     parameters:
     - id: ms
       type: System.Double
     return:
       type: Luny.Timer
-    content.vb: Public Shared Function FromMilliseconds(ms As Double) As Timer
+    content.vb: Public Shared Function FromMilliseconds(ms As [Double]) As Timer
   overload: Luny.Timer.FromMilliseconds*
-  nameWithType.vb: Timer.FromMilliseconds(Double)
-  fullName.vb: Luny.Timer.FromMilliseconds(Double)
-  name.vb: FromMilliseconds(Double)
 - uid: Luny.Timer.FromMinutes(System.Double)
   commentId: M:Luny.Timer.FromMinutes(System.Double)
   id: FromMinutes(System.Double)
@@ -109,9 +103,9 @@ items:
   langs:
   - csharp
   - vb
-  name: FromMinutes(double)
-  nameWithType: Timer.FromMinutes(double)
-  fullName: Luny.Timer.FromMinutes(double)
+  name: FromMinutes(Double)
+  nameWithType: Timer.FromMinutes(Double)
+  fullName: Luny.Timer.FromMinutes(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -119,17 +113,14 @@ items:
   summary: Creates a new timer with duration in minutes.
   example: []
   syntax:
-    content: public static Timer FromMinutes(double minutes)
+    content: public static Timer FromMinutes(Double minutes)
     parameters:
     - id: minutes
       type: System.Double
     return:
       type: Luny.Timer
-    content.vb: Public Shared Function FromMinutes(minutes As Double) As Timer
+    content.vb: Public Shared Function FromMinutes(minutes As [Double]) As Timer
   overload: Luny.Timer.FromMinutes*
-  nameWithType.vb: Timer.FromMinutes(Double)
-  fullName.vb: Luny.Timer.FromMinutes(Double)
-  name.vb: FromMinutes(Double)
 - uid: Luny.Timer.#ctor(System.Double)
   commentId: M:Luny.Timer.#ctor(System.Double)
   id: '#ctor(System.Double)'
@@ -137,9 +128,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Timer(double)
-  nameWithType: Timer.Timer(double)
-  fullName: Luny.Timer.Timer(double)
+  name: Timer(Double)
+  nameWithType: Timer.Timer(Double)
+  fullName: Luny.Timer.Timer(System.Double)
   type: Constructor
   assemblies:
   - Luny
@@ -147,14 +138,14 @@ items:
   summary: Creates a new timer with duration in seconds.
   example: []
   syntax:
-    content: public Timer(double duration)
+    content: public Timer(Double duration)
     parameters:
     - id: duration
       type: System.Double
-    content.vb: Public Sub New(duration As Double)
+    content.vb: Public Sub New(duration As [Double])
   overload: Luny.Timer.#ctor*
   nameWithType.vb: Timer.New(Double)
-  fullName.vb: Luny.Timer.New(Double)
+  fullName.vb: Luny.Timer.New(System.Double)
   name.vb: New(Double)
 - uid: Luny.Timer.Start
   commentId: M:Luny.Timer.Start
@@ -243,9 +234,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Tick(double)
-  nameWithType: Timer.Tick(double)
-  fullName: Luny.Timer.Tick(double)
+  name: Tick(Double)
+  nameWithType: Timer.Tick(Double)
+  fullName: Luny.Timer.Tick(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -256,15 +247,12 @@ items:
     Fires OnElapsed if duration is reached.
   example: []
   syntax:
-    content: public void Tick(double deltaTime)
+    content: public void Tick(Double deltaTime)
     parameters:
     - id: deltaTime
       type: System.Double
-    content.vb: Public Sub Tick(deltaTime As Double)
+    content.vb: Public Sub Tick(deltaTime As [Double])
   overload: Luny.Timer.Tick*
-  nameWithType.vb: Timer.Tick(Double)
-  fullName.vb: Luny.Timer.Tick(Double)
-  name.vb: Tick(Double)
 - uid: Luny.Timer.ToString
   commentId: M:Luny.Timer.ToString
   id: ToString
@@ -281,10 +269,10 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: Luny.Timer.ToString*
 - uid: Luny.Timer.ToString(System.String)
@@ -294,9 +282,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ToString(string)
-  nameWithType: Timer.ToString(string)
-  fullName: Luny.Timer.ToString(string)
+  name: ToString(String)
+  nameWithType: Timer.ToString(String)
+  fullName: Luny.Timer.ToString(System.String)
   type: Method
   assemblies:
   - Luny
@@ -304,17 +292,14 @@ items:
   summary: Returns the current time formatted as a string using TimeSpan format.
   example: []
   syntax:
-    content: public string ToString(string format)
+    content: public String ToString(String format)
     parameters:
     - id: format
       type: System.String
     return:
       type: System.String
-    content.vb: Public Function ToString(format As String) As String
+    content.vb: Public Function ToString(format As [String]) As [String]
   overload: Luny.Timer.ToString*
-  nameWithType.vb: Timer.ToString(String)
-  fullName.vb: Luny.Timer.ToString(String)
-  name.vb: ToString(String)
 - uid: Luny.Timer.Current
   commentId: P:Luny.Timer.Current
   id: Current
@@ -330,11 +315,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public double Current { get; }
+    content: public Double Current { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public ReadOnly Property Current As Double
+    content.vb: Public ReadOnly Property Current As [Double]
   overload: Luny.Timer.Current*
 - uid: Luny.Timer.Duration
   commentId: P:Luny.Timer.Duration
@@ -351,11 +336,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public double Duration { get; set; }
+    content: public Double Duration { get; set; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public Property Duration As Double
+    content.vb: Public Property Duration As [Double]
   overload: Luny.Timer.Duration*
 - uid: Luny.Timer.TimeScale
   commentId: P:Luny.Timer.TimeScale
@@ -372,11 +357,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public double TimeScale { get; set; }
+    content: public Double TimeScale { get; set; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public Property TimeScale As Double
+    content.vb: Public Property TimeScale As [Double]
   overload: Luny.Timer.TimeScale*
 - uid: Luny.Timer.IsRunning
   commentId: P:Luny.Timer.IsRunning
@@ -393,11 +378,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool IsRunning { get; set; }
+    content: public Boolean IsRunning { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property IsRunning As Boolean
+    content.vb: Public Property IsRunning As [Boolean]
   overload: Luny.Timer.IsRunning*
 - uid: Luny.Timer.AutoRepeat
   commentId: P:Luny.Timer.AutoRepeat
@@ -414,11 +399,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool AutoRepeat { get; set; }
+    content: public Boolean AutoRepeat { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property AutoRepeat As Boolean
+    content.vb: Public Property AutoRepeat As [Boolean]
   overload: Luny.Timer.AutoRepeat*
 - uid: Luny.Timer.Progress
   commentId: P:Luny.Timer.Progress
@@ -437,11 +422,11 @@ items:
   summary: Returns the progress as a normalized value (0.0 to 1.0).
   example: []
   syntax:
-    content: public double Progress { get; }
+    content: public Double Progress { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public ReadOnly Property Progress As Double
+    content.vb: Public ReadOnly Property Progress As [Double]
   overload: Luny.Timer.Progress*
 - uid: Luny.Timer.RemainingSeconds
   commentId: P:Luny.Timer.RemainingSeconds
@@ -460,11 +445,11 @@ items:
   summary: Returns the remaining time in seconds.
   example: []
   syntax:
-    content: public double RemainingSeconds { get; }
+    content: public Double RemainingSeconds { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public ReadOnly Property RemainingSeconds As Double
+    content.vb: Public ReadOnly Property RemainingSeconds As [Double]
   overload: Luny.Timer.RemainingSeconds*
 - uid: Luny.Timer.RemainingMilliseconds
   commentId: P:Luny.Timer.RemainingMilliseconds
@@ -483,11 +468,11 @@ items:
   summary: Returns the remaining time in milliseconds.
   example: []
   syntax:
-    content: public double RemainingMilliseconds { get; }
+    content: public Double RemainingMilliseconds { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public ReadOnly Property RemainingMilliseconds As Double
+    content.vb: Public ReadOnly Property RemainingMilliseconds As [Double]
   overload: Luny.Timer.RemainingMilliseconds*
 - uid: Luny.Timer.RemainingMinutes
   commentId: P:Luny.Timer.RemainingMinutes
@@ -506,11 +491,11 @@ items:
   summary: Returns the remaining time in minutes.
   example: []
   syntax:
-    content: public double RemainingMinutes { get; }
+    content: public Double RemainingMinutes { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public ReadOnly Property RemainingMinutes As Double
+    content.vb: Public ReadOnly Property RemainingMinutes As [Double]
   overload: Luny.Timer.RemainingMinutes*
 - uid: Luny.Timer.OnElapsed
   commentId: E:Luny.Timer.OnElapsed
@@ -543,12 +528,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -568,12 +550,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Timer
   commentId: T:Luny.Timer
   parent: Luny
@@ -646,10 +625,8 @@ references:
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
@@ -674,12 +651,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Timer.Current*
   commentId: Overload:Luny.Timer.Current
   isExternal: true
@@ -713,12 +687,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Timer.AutoRepeat*
   commentId: Overload:Luny.Timer.AutoRepeat
   isExternal: true

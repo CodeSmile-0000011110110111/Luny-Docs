@@ -34,9 +34,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Quit(int)
-  nameWithType: ILunyApplicationService.Quit(int)
-  fullName: Luny.Engine.Services.ILunyApplicationService.Quit(int)
+  name: Quit(Int32)
+  nameWithType: ILunyApplicationService.Quit(Int32)
+  fullName: Luny.Engine.Services.ILunyApplicationService.Quit(System.Int32)
   type: Method
   assemblies:
   - Luny
@@ -44,16 +44,13 @@ items:
   summary: Quits the application with optional exit code.
   example: []
   syntax:
-    content: void Quit(int exitCode = 0)
+    content: void Quit(Int32 exitCode = 0)
     parameters:
     - id: exitCode
       type: System.Int32
       description: 'Exit code (default: 0)'
-    content.vb: Sub Quit(exitCode As Integer = 0)
+    content.vb: Sub Quit(exitCode As Int32 = 0)
   overload: Luny.Engine.Services.ILunyApplicationService.Quit*
-  nameWithType.vb: ILunyApplicationService.Quit(Integer)
-  fullName.vb: Luny.Engine.Services.ILunyApplicationService.Quit(Integer)
-  name.vb: Quit(Integer)
 - uid: Luny.Engine.Services.ILunyApplicationService.IsEditor
   commentId: P:Luny.Engine.Services.ILunyApplicationService.IsEditor
   id: IsEditor
@@ -71,11 +68,11 @@ items:
   summary: True if running in the editor.
   example: []
   syntax:
-    content: bool IsEditor { get; }
+    content: Boolean IsEditor { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: ReadOnly Property IsEditor As Boolean
+    content.vb: ReadOnly Property IsEditor As [Boolean]
   overload: Luny.Engine.Services.ILunyApplicationService.IsEditor*
 - uid: Luny.Engine.Services.ILunyApplicationService.IsPlaying
   commentId: P:Luny.Engine.Services.ILunyApplicationService.IsPlaying
@@ -94,11 +91,11 @@ items:
   summary: True if the application is playing (not paused in editor).
   example: []
   syntax:
-    content: bool IsPlaying { get; }
+    content: Boolean IsPlaying { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: ReadOnly Property IsPlaying As Boolean
+    content.vb: ReadOnly Property IsPlaying As [Boolean]
   overload: Luny.Engine.Services.ILunyApplicationService.IsPlaying*
 references:
 - uid: Luny.Engine.Services
@@ -150,12 +147,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: System
   commentId: N:System
   isExternal: true
@@ -175,12 +169,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Services.ILunyApplicationService.IsPlaying*
   commentId: Overload:Luny.Engine.Services.ILunyApplicationService.IsPlaying
   isExternal: true

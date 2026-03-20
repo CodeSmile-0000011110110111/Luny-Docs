@@ -50,10 +50,10 @@ items:
   - Luny
   namespace: Luny.Engine.Diagnostics
   syntax:
-    content: public string ObserverName
+    content: public String ObserverName
     return:
       type: System.String
-    content.vb: Public ObserverName As String
+    content.vb: Public ObserverName As [String]
 - uid: Luny.Engine.Diagnostics.LunyObserverMetrics.Category
   commentId: F:Luny.Engine.Diagnostics.LunyObserverMetrics.Category
   id: Category
@@ -88,10 +88,10 @@ items:
   - Luny
   namespace: Luny.Engine.Diagnostics
   syntax:
-    content: public int CallCount
+    content: public Int32 CallCount
     return:
       type: System.Int32
-    content.vb: Public CallCount As Integer
+    content.vb: Public CallCount As Int32
 - uid: Luny.Engine.Diagnostics.LunyObserverMetrics.TotalMs
   commentId: F:Luny.Engine.Diagnostics.LunyObserverMetrics.TotalMs
   id: TotalMs
@@ -107,10 +107,10 @@ items:
   - Luny
   namespace: Luny.Engine.Diagnostics
   syntax:
-    content: public double TotalMs
+    content: public Double TotalMs
     return:
       type: System.Double
-    content.vb: Public TotalMs As Double
+    content.vb: Public TotalMs As [Double]
 - uid: Luny.Engine.Diagnostics.LunyObserverMetrics.AverageMs
   commentId: F:Luny.Engine.Diagnostics.LunyObserverMetrics.AverageMs
   id: AverageMs
@@ -126,10 +126,10 @@ items:
   - Luny
   namespace: Luny.Engine.Diagnostics
   syntax:
-    content: public double AverageMs
+    content: public Double AverageMs
     return:
       type: System.Double
-    content.vb: Public AverageMs As Double
+    content.vb: Public AverageMs As [Double]
 - uid: Luny.Engine.Diagnostics.LunyObserverMetrics.MinMs
   commentId: F:Luny.Engine.Diagnostics.LunyObserverMetrics.MinMs
   id: MinMs
@@ -145,10 +145,10 @@ items:
   - Luny
   namespace: Luny.Engine.Diagnostics
   syntax:
-    content: public double MinMs
+    content: public Double MinMs
     return:
       type: System.Double
-    content.vb: Public MinMs As Double
+    content.vb: Public MinMs As [Double]
 - uid: Luny.Engine.Diagnostics.LunyObserverMetrics.MaxMs
   commentId: F:Luny.Engine.Diagnostics.LunyObserverMetrics.MaxMs
   id: MaxMs
@@ -164,10 +164,10 @@ items:
   - Luny
   namespace: Luny.Engine.Diagnostics
   syntax:
-    content: public double MaxMs
+    content: public Double MaxMs
     return:
       type: System.Double
-    content.vb: Public MaxMs As Double
+    content.vb: Public MaxMs As [Double]
 - uid: Luny.Engine.Diagnostics.LunyObserverMetrics.ErrorCount
   commentId: F:Luny.Engine.Diagnostics.LunyObserverMetrics.ErrorCount
   id: ErrorCount
@@ -183,10 +183,10 @@ items:
   - Luny
   namespace: Luny.Engine.Diagnostics
   syntax:
-    content: public int ErrorCount
+    content: public Int32 ErrorCount
     return:
       type: System.Int32
-    content.vb: Public ErrorCount As Integer
+    content.vb: Public ErrorCount As Int32
 - uid: Luny.Engine.Diagnostics.LunyObserverMetrics.ToString
   commentId: M:Luny.Engine.Diagnostics.LunyObserverMetrics.ToString
   id: ToString
@@ -203,10 +203,10 @@ items:
   namespace: Luny.Engine.Diagnostics
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: Luny.Engine.Diagnostics.LunyObserverMetrics.ToString*
 - uid: Luny.Engine.Diagnostics.LunyObserverMetrics.#ctor
@@ -272,12 +272,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -290,12 +287,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.LunyEngineLifecycleEvents
   commentId: T:Luny.LunyEngineLifecycleEvents
   parent: Luny
@@ -316,32 +310,24 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: System.Double
   commentId: T:System.Double
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString

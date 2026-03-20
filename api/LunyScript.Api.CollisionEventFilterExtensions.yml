@@ -35,9 +35,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Tagged<T>(CollisionEventBuilder<T>, params string[])
-  nameWithType: CollisionEventFilterExtensions.Tagged<T>(CollisionEventBuilder<T>, params string[])
-  fullName: LunyScript.Api.CollisionEventFilterExtensions.Tagged<T>(LunyScript.Api.CollisionEventBuilder<T>, params string[])
+  name: Tagged<T>(CollisionEventBuilder<T>, params String[])
+  nameWithType: CollisionEventFilterExtensions.Tagged<T>(CollisionEventBuilder<T>, params String[])
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Tagged<T>(LunyScript.Api.CollisionEventBuilder<T>, params System.String[])
   type: Method
   assemblies:
   - LunyScript
@@ -48,7 +48,7 @@ items:
     Combine with other filter kinds for AND logic across kinds.
   example: []
   syntax:
-    content: 'public static CollisionEventBuilder<CollisionReady> Tagged<T>(this CollisionEventBuilder<T> b, params string[] tags) where T : struct, ICollisionFilterable'
+    content: 'public static CollisionEventBuilder<CollisionReady> Tagged<T>(this CollisionEventBuilder<T> b, params String[] tags) where T : struct, ICollisionFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.CollisionEventBuilder{{T}}
@@ -58,10 +58,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionReady}
-    content.vb: Public Shared Function Tagged(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray tags As String()) As CollisionEventBuilder(Of CollisionReady)
+    content.vb: Public Shared Function Tagged(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray tags As [String]()) As CollisionEventBuilder(Of CollisionReady)
   overload: LunyScript.Api.CollisionEventFilterExtensions.Tagged*
   nameWithType.vb: CollisionEventFilterExtensions.Tagged(Of T)(CollisionEventBuilder(Of T), ParamArray String())
-  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Tagged(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Tagged(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray System.String())
   name.vb: Tagged(Of T)(CollisionEventBuilder(Of T), ParamArray String())
 - uid: LunyScript.Api.CollisionEventFilterExtensions.With``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
   commentId: M:LunyScript.Api.CollisionEventFilterExtensions.With``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
@@ -71,9 +71,9 @@ items:
   langs:
   - csharp
   - vb
-  name: With<T>(CollisionEventBuilder<T>, params string[])
-  nameWithType: CollisionEventFilterExtensions.With<T>(CollisionEventBuilder<T>, params string[])
-  fullName: LunyScript.Api.CollisionEventFilterExtensions.With<T>(LunyScript.Api.CollisionEventBuilder<T>, params string[])
+  name: With<T>(CollisionEventBuilder<T>, params String[])
+  nameWithType: CollisionEventFilterExtensions.With<T>(CollisionEventBuilder<T>, params String[])
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.With<T>(LunyScript.Api.CollisionEventBuilder<T>, params System.String[])
   type: Method
   assemblies:
   - LunyScript
@@ -81,7 +81,7 @@ items:
   summary: Only react when the other object's name matches one of the given names (OR logic).
   example: []
   syntax:
-    content: 'public static CollisionEventBuilder<CollisionReady> With<T>(this CollisionEventBuilder<T> b, params string[] names) where T : struct, ICollisionFilterable'
+    content: 'public static CollisionEventBuilder<CollisionReady> With<T>(this CollisionEventBuilder<T> b, params String[] names) where T : struct, ICollisionFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.CollisionEventBuilder{{T}}
@@ -91,10 +91,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionReady}
-    content.vb: Public Shared Function [With](Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray names As String()) As CollisionEventBuilder(Of CollisionReady)
+    content.vb: Public Shared Function [With](Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray names As [String]()) As CollisionEventBuilder(Of CollisionReady)
   overload: LunyScript.Api.CollisionEventFilterExtensions.With*
   nameWithType.vb: CollisionEventFilterExtensions.With(Of T)(CollisionEventBuilder(Of T), ParamArray String())
-  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.With(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.With(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray System.String())
   name.vb: With(Of T)(CollisionEventBuilder(Of T), ParamArray String())
 - uid: LunyScript.Api.CollisionEventFilterExtensions.Layered``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
   commentId: M:LunyScript.Api.CollisionEventFilterExtensions.Layered``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
@@ -104,9 +104,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Layered<T>(CollisionEventBuilder<T>, params string[])
-  nameWithType: CollisionEventFilterExtensions.Layered<T>(CollisionEventBuilder<T>, params string[])
-  fullName: LunyScript.Api.CollisionEventFilterExtensions.Layered<T>(LunyScript.Api.CollisionEventBuilder<T>, params string[])
+  name: Layered<T>(CollisionEventBuilder<T>, params String[])
+  nameWithType: CollisionEventFilterExtensions.Layered<T>(CollisionEventBuilder<T>, params String[])
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Layered<T>(LunyScript.Api.CollisionEventBuilder<T>, params System.String[])
   type: Method
   assemblies:
   - LunyScript
@@ -117,7 +117,7 @@ items:
     Mutually exclusive with Masked() — Masked() becomes unavailable after calling this.
   example: []
   syntax:
-    content: 'public static CollisionEventBuilder<CollisionLayered> Layered<T>(this CollisionEventBuilder<T> b, params string[] layerNames) where T : struct, ICollisionFilterable'
+    content: 'public static CollisionEventBuilder<CollisionLayered> Layered<T>(this CollisionEventBuilder<T> b, params String[] layerNames) where T : struct, ICollisionFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.CollisionEventBuilder{{T}}
@@ -127,10 +127,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionLayered}
-    content.vb: Public Shared Function Layered(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray layerNames As String()) As CollisionEventBuilder(Of CollisionLayered)
+    content.vb: Public Shared Function Layered(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray layerNames As [String]()) As CollisionEventBuilder(Of CollisionLayered)
   overload: LunyScript.Api.CollisionEventFilterExtensions.Layered*
   nameWithType.vb: CollisionEventFilterExtensions.Layered(Of T)(CollisionEventBuilder(Of T), ParamArray String())
-  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Layered(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Layered(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray System.String())
   name.vb: Layered(Of T)(CollisionEventBuilder(Of T), ParamArray String())
 - uid: LunyScript.Api.CollisionEventFilterExtensions.Typed``1(LunyScript.Api.CollisionEventBuilder{``0},System.Type[])
   commentId: M:LunyScript.Api.CollisionEventFilterExtensions.Typed``1(LunyScript.Api.CollisionEventBuilder{``0},System.Type[])
@@ -173,9 +173,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Cooldown<T>(CollisionEventBuilder<T>, double)
-  nameWithType: CollisionEventFilterExtensions.Cooldown<T>(CollisionEventBuilder<T>, double)
-  fullName: LunyScript.Api.CollisionEventFilterExtensions.Cooldown<T>(LunyScript.Api.CollisionEventBuilder<T>, double)
+  name: Cooldown<T>(CollisionEventBuilder<T>, Double)
+  nameWithType: CollisionEventFilterExtensions.Cooldown<T>(CollisionEventBuilder<T>, Double)
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Cooldown<T>(LunyScript.Api.CollisionEventBuilder<T>, System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -186,7 +186,7 @@ items:
     The cooldown is checked before collision predicates; evaluated per event sequence.
   example: []
   syntax:
-    content: 'public static CollisionEventBuilder<CollisionReady> Cooldown<T>(this CollisionEventBuilder<T> b, double seconds) where T : struct, ICollisionFilterable'
+    content: 'public static CollisionEventBuilder<CollisionReady> Cooldown<T>(this CollisionEventBuilder<T> b, Double seconds) where T : struct, ICollisionFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.CollisionEventBuilder{{T}}
@@ -196,10 +196,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionReady}
-    content.vb: Public Shared Function Cooldown(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), seconds As Double) As CollisionEventBuilder(Of CollisionReady)
+    content.vb: Public Shared Function Cooldown(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), seconds As [Double]) As CollisionEventBuilder(Of CollisionReady)
   overload: LunyScript.Api.CollisionEventFilterExtensions.Cooldown*
   nameWithType.vb: CollisionEventFilterExtensions.Cooldown(Of T)(CollisionEventBuilder(Of T), Double)
-  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Cooldown(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), Double)
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Cooldown(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), System.Double)
   name.vb: Cooldown(Of T)(CollisionEventBuilder(Of T), Double)
 - uid: LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
   commentId: M:LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])
@@ -209,9 +209,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Masked<T>(CollisionEventBuilder<T>, params string[])
-  nameWithType: CollisionEventFilterExtensions.Masked<T>(CollisionEventBuilder<T>, params string[])
-  fullName: LunyScript.Api.CollisionEventFilterExtensions.Masked<T>(LunyScript.Api.CollisionEventBuilder<T>, params string[])
+  name: Masked<T>(CollisionEventBuilder<T>, params String[])
+  nameWithType: CollisionEventFilterExtensions.Masked<T>(CollisionEventBuilder<T>, params String[])
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Masked<T>(LunyScript.Api.CollisionEventBuilder<T>, params System.String[])
   type: Method
   assemblies:
   - LunyScript
@@ -222,7 +222,7 @@ items:
     Mutually exclusive with Layered() — unavailable after Layered() is called.
   example: []
   syntax:
-    content: 'public static CollisionEventBuilder<CollisionMasked> Masked<T>(this CollisionEventBuilder<T> b, params string[] layerNames) where T : struct, ICollisionFilterable'
+    content: 'public static CollisionEventBuilder<CollisionMasked> Masked<T>(this CollisionEventBuilder<T> b, params String[] layerNames) where T : struct, ICollisionFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.CollisionEventBuilder{{T}}
@@ -232,10 +232,10 @@ items:
     - id: T
     return:
       type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionMasked}
-    content.vb: Public Shared Function Masked(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray layerNames As String()) As CollisionEventBuilder(Of CollisionMasked)
+    content.vb: Public Shared Function Masked(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), ParamArray layerNames As [String]()) As CollisionEventBuilder(Of CollisionMasked)
   overload: LunyScript.Api.CollisionEventFilterExtensions.Masked*
   nameWithType.vb: CollisionEventFilterExtensions.Masked(Of T)(CollisionEventBuilder(Of T), ParamArray String())
-  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Masked(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray String())
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Masked(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray System.String())
   name.vb: Masked(Of T)(CollisionEventBuilder(Of T), ParamArray String())
 - uid: LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.Int32)
   commentId: M:LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.Int32)
@@ -245,9 +245,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Masked<T>(CollisionEventBuilder<T>, int)
-  nameWithType: CollisionEventFilterExtensions.Masked<T>(CollisionEventBuilder<T>, int)
-  fullName: LunyScript.Api.CollisionEventFilterExtensions.Masked<T>(LunyScript.Api.CollisionEventBuilder<T>, int)
+  name: Masked<T>(CollisionEventBuilder<T>, Int32)
+  nameWithType: CollisionEventFilterExtensions.Masked<T>(CollisionEventBuilder<T>, Int32)
+  fullName: LunyScript.Api.CollisionEventFilterExtensions.Masked<T>(LunyScript.Api.CollisionEventBuilder<T>, System.Int32)
   type: Method
   assemblies:
   - LunyScript
@@ -258,7 +258,7 @@ items:
     Mutually exclusive with Layered() — unavailable after Layered() is called.
   example: []
   syntax:
-    content: 'public static CollisionEventBuilder<CollisionMasked> Masked<T>(this CollisionEventBuilder<T> b, int layerMask) where T : struct, ICollisionFilterable'
+    content: 'public static CollisionEventBuilder<CollisionMasked> Masked<T>(this CollisionEventBuilder<T> b, Int32 layerMask) where T : struct, ICollisionFilterable'
     parameters:
     - id: b
       type: LunyScript.Api.CollisionEventBuilder{{T}}
@@ -268,11 +268,11 @@ items:
     - id: T
     return:
       type: LunyScript.Api.CollisionEventBuilder{LunyScript.Api.CollisionMasked}
-    content.vb: Public Shared Function Masked(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), layerMask As Integer) As CollisionEventBuilder(Of CollisionMasked)
+    content.vb: Public Shared Function Masked(Of T As {Structure, ICollisionFilterable})(b As CollisionEventBuilder(Of T), layerMask As Int32) As CollisionEventBuilder(Of CollisionMasked)
   overload: LunyScript.Api.CollisionEventFilterExtensions.Masked*
-  nameWithType.vb: CollisionEventFilterExtensions.Masked(Of T)(CollisionEventBuilder(Of T), Integer)
-  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Masked(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), Integer)
-  name.vb: Masked(Of T)(CollisionEventBuilder(Of T), Integer)
+  nameWithType.vb: CollisionEventFilterExtensions.Masked(Of T)(CollisionEventBuilder(Of T), Int32)
+  fullName.vb: LunyScript.Api.CollisionEventFilterExtensions.Masked(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), System.Int32)
+  name.vb: Masked(Of T)(CollisionEventBuilder(Of T), Int32)
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -305,12 +305,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -357,15 +354,15 @@ references:
 - uid: System.String[]
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string[]
-  nameWithType: string[]
-  fullName: string[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
   nameWithType.vb: String()
-  fullName.vb: String()
+  fullName.vb: System.String()
   name.vb: String()
   spec.csharp:
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['
@@ -531,12 +528,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: LunyScript.Api.CollisionEventFilterExtensions.Masked*
   commentId: Overload:LunyScript.Api.CollisionEventFilterExtensions.Masked
   isExternal: true
@@ -584,9 +578,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

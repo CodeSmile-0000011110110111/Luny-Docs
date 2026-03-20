@@ -37,7 +37,7 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static bool EvaluateAll(IScriptRuntimeContext runtimeContext, ConditionBlock[] conditions)
+    content: public static Boolean EvaluateAll(IScriptRuntimeContext runtimeContext, ConditionBlock[] conditions)
     parameters:
     - id: runtimeContext
       type: LunyScript.IScriptRuntimeContext
@@ -45,7 +45,7 @@ items:
       type: LunyScript.Blocks.ConditionBlock[]
     return:
       type: System.Boolean
-    content.vb: Public Shared Function EvaluateAll(runtimeContext As IScriptRuntimeContext, conditions As ConditionBlock()) As Boolean
+    content.vb: Public Shared Function EvaluateAll(runtimeContext As IScriptRuntimeContext, conditions As ConditionBlock()) As [Boolean]
   overload: LunyScript.Blocks.ControlFlow.EvaluateAll*
   nameWithType.vb: ControlFlow.EvaluateAll(IScriptRuntimeContext, ConditionBlock())
   fullName.vb: LunyScript.Blocks.ControlFlow.EvaluateAll(LunyScript.IScriptRuntimeContext, LunyScript.Blocks.ConditionBlock())
@@ -108,12 +108,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -164,12 +161,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: LunyScript
   commentId: N:LunyScript
   isExternal: true

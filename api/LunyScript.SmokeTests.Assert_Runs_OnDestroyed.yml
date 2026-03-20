@@ -136,12 +136,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.Script
   commentId: T:LunyScript.Script
   parent: LunyScript
@@ -163,19 +160,16 @@ references:
   parent: LunyScript.Script
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: Coroutine(string)
-  nameWithType: Script.Coroutine(string)
-  fullName: LunyScript.Script.Coroutine(string)
-  nameWithType.vb: Script.Coroutine(String)
-  fullName.vb: LunyScript.Script.Coroutine(String)
-  name.vb: Coroutine(String)
+  name: Coroutine(String)
+  nameWithType: Script.Coroutine(String)
+  fullName: LunyScript.Script.Coroutine(System.String)
   spec.csharp:
   - uid: LunyScript.Script.Coroutine(System.String)
     name: Coroutine
     isExternal: true
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -326,11 +320,11 @@ references:
   parent: LunyScript.Script
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.func-2
-  name: Check(Func<IScriptRuntimeContext, bool>)
-  nameWithType: Script.Check(Func<IScriptRuntimeContext, bool>)
-  fullName: LunyScript.Script.Check(System.Func<LunyScript.IScriptRuntimeContext, bool>)
+  name: Check(Func<IScriptRuntimeContext, Boolean>)
+  nameWithType: Script.Check(Func<IScriptRuntimeContext, Boolean>)
+  fullName: LunyScript.Script.Check(System.Func<LunyScript.IScriptRuntimeContext, System.Boolean>)
   nameWithType.vb: Script.Check(Func(Of IScriptRuntimeContext, Boolean))
-  fullName.vb: LunyScript.Script.Check(System.Func(Of LunyScript.IScriptRuntimeContext, Boolean))
+  fullName.vb: LunyScript.Script.Check(System.Func(Of LunyScript.IScriptRuntimeContext, System.Boolean))
   name.vb: Check(Func(Of IScriptRuntimeContext, Boolean))
   spec.csharp:
   - uid: LunyScript.Script.Check(System.Func{LunyScript.IScriptRuntimeContext,System.Boolean})
@@ -348,7 +342,7 @@ references:
   - name: ','
   - name: " "
   - uid: System.Boolean
-    name: bool
+    name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'
@@ -381,11 +375,11 @@ references:
   parent: LunyScript.Script
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.func-1
-  name: Check(Func<bool>)
-  nameWithType: Script.Check(Func<bool>)
-  fullName: LunyScript.Script.Check(System.Func<bool>)
+  name: Check(Func<Boolean>)
+  nameWithType: Script.Check(Func<Boolean>)
+  fullName: LunyScript.Script.Check(System.Func<System.Boolean>)
   nameWithType.vb: Script.Check(Func(Of Boolean))
-  fullName.vb: LunyScript.Script.Check(System.Func(Of Boolean))
+  fullName.vb: LunyScript.Script.Check(System.Func(Of System.Boolean))
   name.vb: Check(Func(Of Boolean))
   spec.csharp:
   - uid: LunyScript.Script.Check(System.Func{System.Boolean})
@@ -398,7 +392,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.func-1
   - name: <
   - uid: System.Boolean
-    name: bool
+    name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'

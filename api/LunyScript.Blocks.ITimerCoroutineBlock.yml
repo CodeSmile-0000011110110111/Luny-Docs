@@ -33,9 +33,9 @@ items:
   langs:
   - csharp
   - vb
-  name: TimeScale(double)
-  nameWithType: ITimerCoroutineBlock.TimeScale(double)
-  fullName: LunyScript.Blocks.ITimerCoroutineBlock.TimeScale(double)
+  name: TimeScale(Double)
+  nameWithType: ITimerCoroutineBlock.TimeScale(Double)
+  fullName: LunyScript.Blocks.ITimerCoroutineBlock.TimeScale(System.Double)
   type: Method
   assemblies:
   - LunyScript
@@ -43,17 +43,14 @@ items:
   summary: Sets the time scale. Negative values are clamped to 0.
   example: []
   syntax:
-    content: ActionBlock TimeScale(double scale)
+    content: ActionBlock TimeScale(Double scale)
     parameters:
     - id: scale
       type: System.Double
     return:
       type: LunyScript.Blocks.ActionBlock
-    content.vb: Function TimeScale(scale As Double) As ActionBlock
+    content.vb: Function TimeScale(scale As [Double]) As ActionBlock
   overload: LunyScript.Blocks.ITimerCoroutineBlock.TimeScale*
-  nameWithType.vb: ITimerCoroutineBlock.TimeScale(Double)
-  fullName.vb: LunyScript.Blocks.ITimerCoroutineBlock.TimeScale(Double)
-  name.vb: TimeScale(Double)
 references:
 - uid: LunyScript.Blocks
   commentId: N:LunyScript.Blocks
@@ -190,12 +187,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: LunyScript.Blocks.ActionBlock
   commentId: T:LunyScript.Blocks.ActionBlock
   parent: LunyScript.Blocks

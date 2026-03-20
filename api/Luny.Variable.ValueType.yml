@@ -7,6 +7,7 @@ items:
   children:
   - Luny.Variable.ValueType.Boolean
   - Luny.Variable.ValueType.Number
+  - Luny.Variable.ValueType.Reference
   - Luny.Variable.ValueType.String
   langs:
   - csharp
@@ -73,6 +74,24 @@ items:
   namespace: Luny
   syntax:
     content: String = 2
+    return:
+      type: Luny.Variable.ValueType
+- uid: Luny.Variable.ValueType.Reference
+  commentId: F:Luny.Variable.ValueType.Reference
+  id: Reference
+  parent: Luny.Variable.ValueType
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: Variable.ValueType.Reference
+  fullName: Luny.Variable.ValueType.Reference
+  type: Field
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: Reference = 3
     return:
       type: Luny.Variable.ValueType
 references:

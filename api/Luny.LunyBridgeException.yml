@@ -50,22 +50,22 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyBridgeException(string)
-  nameWithType: LunyBridgeException.LunyBridgeException(string)
-  fullName: Luny.LunyBridgeException.LunyBridgeException(string)
+  name: LunyBridgeException(String)
+  nameWithType: LunyBridgeException.LunyBridgeException(String)
+  fullName: Luny.LunyBridgeException.LunyBridgeException(System.String)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public LunyBridgeException(string message)
+    content: public LunyBridgeException(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Public Sub New(message As String)
+    content.vb: Public Sub New(message As [String])
   overload: Luny.LunyBridgeException.#ctor*
   nameWithType.vb: LunyBridgeException.New(String)
-  fullName.vb: Luny.LunyBridgeException.New(String)
+  fullName.vb: Luny.LunyBridgeException.New(System.String)
   name.vb: New(String)
 references:
 - uid: Luny
@@ -79,12 +79,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.Exception
   commentId: T:System.Exception
   parent: System
@@ -340,9 +337,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

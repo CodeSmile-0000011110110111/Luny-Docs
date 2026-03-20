@@ -85,24 +85,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyVector2(float, float)
-  nameWithType: LunyVector2.LunyVector2(float, float)
-  fullName: Luny.Engine.Bridge.LunyVector2.LunyVector2(float, float)
+  name: LunyVector2(Single, Single)
+  nameWithType: LunyVector2.LunyVector2(Single, Single)
+  fullName: Luny.Engine.Bridge.LunyVector2.LunyVector2(System.Single, System.Single)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public LunyVector2(float x, float y)
+    content: public LunyVector2(Single x, Single y)
     parameters:
     - id: x
       type: System.Single
     - id: y
       type: System.Single
-    content.vb: Public Sub New(x As Single, y As Single)
+    content.vb: Public Sub New(x As [Single], y As [Single])
   overload: Luny.Engine.Bridge.LunyVector2.#ctor*
   nameWithType.vb: LunyVector2.New(Single, Single)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.New(Single, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector2.New(System.Single, System.Single)
   name.vb: New(Single, Single)
 - uid: Luny.Engine.Bridge.LunyVector2.#ctor(System.Double,System.Double)
   commentId: M:Luny.Engine.Bridge.LunyVector2.#ctor(System.Double,System.Double)
@@ -111,24 +111,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyVector2(double, double)
-  nameWithType: LunyVector2.LunyVector2(double, double)
-  fullName: Luny.Engine.Bridge.LunyVector2.LunyVector2(double, double)
+  name: LunyVector2(Double, Double)
+  nameWithType: LunyVector2.LunyVector2(Double, Double)
+  fullName: Luny.Engine.Bridge.LunyVector2.LunyVector2(System.Double, System.Double)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public LunyVector2(double x, double y)
+    content: public LunyVector2(Double x, Double y)
     parameters:
     - id: x
       type: System.Double
     - id: y
       type: System.Double
-    content.vb: Public Sub New(x As Double, y As Double)
+    content.vb: Public Sub New(x As [Double], y As [Double])
   overload: Luny.Engine.Bridge.LunyVector2.#ctor*
   nameWithType.vb: LunyVector2.New(Double, Double)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.New(Double, Double)
+  fullName.vb: Luny.Engine.Bridge.LunyVector2.New(System.Double, System.Double)
   name.vb: New(Double, Double)
 - uid: Luny.Engine.Bridge.LunyVector2.Normalize
   commentId: M:Luny.Engine.Bridge.LunyVector2.Normalize
@@ -155,25 +155,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Set(float, float)
-  nameWithType: LunyVector2.Set(float, float)
-  fullName: Luny.Engine.Bridge.LunyVector2.Set(float, float)
+  name: Set(Single, Single)
+  nameWithType: LunyVector2.Set(Single, Single)
+  fullName: Luny.Engine.Bridge.LunyVector2.Set(System.Single, System.Single)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public void Set(float newX, float newY)
+    content: public void Set(Single newX, Single newY)
     parameters:
     - id: newX
       type: System.Single
     - id: newY
       type: System.Single
-    content.vb: Public Sub [Set](newX As Single, newY As Single)
+    content.vb: Public Sub [Set](newX As [Single], newY As [Single])
   overload: Luny.Engine.Bridge.LunyVector2.Set*
-  nameWithType.vb: LunyVector2.Set(Single, Single)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.Set(Single, Single)
-  name.vb: Set(Single, Single)
 - uid: Luny.Engine.Bridge.LunyVector2.Scale(Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Bridge.LunyVector2.Scale(Luny.Engine.Bridge.LunyVector2)
   id: Scale(Luny.Engine.Bridge.LunyVector2)
@@ -210,7 +207,7 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static float Dot(LunyVector2 lhs, LunyVector2 rhs)
+    content: public static Single Dot(LunyVector2 lhs, LunyVector2 rhs)
     parameters:
     - id: lhs
       type: Luny.Engine.Bridge.LunyVector2
@@ -218,7 +215,7 @@ items:
       type: Luny.Engine.Bridge.LunyVector2
     return:
       type: System.Single
-    content.vb: Public Shared Function Dot(lhs As LunyVector2, rhs As LunyVector2) As Single
+    content.vb: Public Shared Function Dot(lhs As LunyVector2, rhs As LunyVector2) As [Single]
   overload: Luny.Engine.Bridge.LunyVector2.Dot*
 - uid: Luny.Engine.Bridge.LunyVector2.Distance(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Bridge.LunyVector2.Distance(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
@@ -235,7 +232,7 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static float Distance(LunyVector2 a, LunyVector2 b)
+    content: public static Single Distance(LunyVector2 a, LunyVector2 b)
     parameters:
     - id: a
       type: Luny.Engine.Bridge.LunyVector2
@@ -243,7 +240,7 @@ items:
       type: Luny.Engine.Bridge.LunyVector2
     return:
       type: System.Single
-    content.vb: Public Shared Function Distance(a As LunyVector2, b As LunyVector2) As Single
+    content.vb: Public Shared Function Distance(a As LunyVector2, b As LunyVector2) As [Single]
   overload: Luny.Engine.Bridge.LunyVector2.Distance*
 - uid: Luny.Engine.Bridge.LunyVector2.SqrDistance(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Bridge.LunyVector2.SqrDistance(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
@@ -260,7 +257,7 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static float SqrDistance(LunyVector2 a, LunyVector2 b)
+    content: public static Single SqrDistance(LunyVector2 a, LunyVector2 b)
     parameters:
     - id: a
       type: Luny.Engine.Bridge.LunyVector2
@@ -268,7 +265,7 @@ items:
       type: Luny.Engine.Bridge.LunyVector2
     return:
       type: System.Single
-    content.vb: Public Shared Function SqrDistance(a As LunyVector2, b As LunyVector2) As Single
+    content.vb: Public Shared Function SqrDistance(a As LunyVector2, b As LunyVector2) As [Single]
   overload: Luny.Engine.Bridge.LunyVector2.SqrDistance*
 - uid: Luny.Engine.Bridge.LunyVector2.Lerp(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Single)
   commentId: M:Luny.Engine.Bridge.LunyVector2.Lerp(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Single)
@@ -277,15 +274,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Lerp(LunyVector2, LunyVector2, float)
-  nameWithType: LunyVector2.Lerp(LunyVector2, LunyVector2, float)
-  fullName: Luny.Engine.Bridge.LunyVector2.Lerp(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, float)
+  name: Lerp(LunyVector2, LunyVector2, Single)
+  nameWithType: LunyVector2.Lerp(LunyVector2, LunyVector2, Single)
+  fullName: Luny.Engine.Bridge.LunyVector2.Lerp(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, System.Single)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 Lerp(LunyVector2 a, LunyVector2 b, float t)
+    content: public static LunyVector2 Lerp(LunyVector2 a, LunyVector2 b, Single t)
     parameters:
     - id: a
       type: Luny.Engine.Bridge.LunyVector2
@@ -295,11 +292,8 @@ items:
       type: System.Single
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Function Lerp(a As LunyVector2, b As LunyVector2, t As Single) As LunyVector2
+    content.vb: Public Shared Function Lerp(a As LunyVector2, b As LunyVector2, t As [Single]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.Lerp*
-  nameWithType.vb: LunyVector2.Lerp(LunyVector2, LunyVector2, Single)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.Lerp(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, Single)
-  name.vb: Lerp(LunyVector2, LunyVector2, Single)
 - uid: Luny.Engine.Bridge.LunyVector2.Lerp(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Double)
   commentId: M:Luny.Engine.Bridge.LunyVector2.Lerp(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Double)
   id: Lerp(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Double)
@@ -307,15 +301,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Lerp(LunyVector2, LunyVector2, double)
-  nameWithType: LunyVector2.Lerp(LunyVector2, LunyVector2, double)
-  fullName: Luny.Engine.Bridge.LunyVector2.Lerp(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, double)
+  name: Lerp(LunyVector2, LunyVector2, Double)
+  nameWithType: LunyVector2.Lerp(LunyVector2, LunyVector2, Double)
+  fullName: Luny.Engine.Bridge.LunyVector2.Lerp(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, System.Double)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 Lerp(LunyVector2 a, LunyVector2 b, double t)
+    content: public static LunyVector2 Lerp(LunyVector2 a, LunyVector2 b, Double t)
     parameters:
     - id: a
       type: Luny.Engine.Bridge.LunyVector2
@@ -325,11 +319,8 @@ items:
       type: System.Double
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Function Lerp(a As LunyVector2, b As LunyVector2, t As Double) As LunyVector2
+    content.vb: Public Shared Function Lerp(a As LunyVector2, b As LunyVector2, t As [Double]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.Lerp*
-  nameWithType.vb: LunyVector2.Lerp(LunyVector2, LunyVector2, Double)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.Lerp(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, Double)
-  name.vb: Lerp(LunyVector2, LunyVector2, Double)
 - uid: Luny.Engine.Bridge.LunyVector2.LerpUnclamped(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Single)
   commentId: M:Luny.Engine.Bridge.LunyVector2.LerpUnclamped(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Single)
   id: LerpUnclamped(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Single)
@@ -337,15 +328,15 @@ items:
   langs:
   - csharp
   - vb
-  name: LerpUnclamped(LunyVector2, LunyVector2, float)
-  nameWithType: LunyVector2.LerpUnclamped(LunyVector2, LunyVector2, float)
-  fullName: Luny.Engine.Bridge.LunyVector2.LerpUnclamped(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, float)
+  name: LerpUnclamped(LunyVector2, LunyVector2, Single)
+  nameWithType: LunyVector2.LerpUnclamped(LunyVector2, LunyVector2, Single)
+  fullName: Luny.Engine.Bridge.LunyVector2.LerpUnclamped(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, System.Single)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 LerpUnclamped(LunyVector2 a, LunyVector2 b, float t)
+    content: public static LunyVector2 LerpUnclamped(LunyVector2 a, LunyVector2 b, Single t)
     parameters:
     - id: a
       type: Luny.Engine.Bridge.LunyVector2
@@ -355,11 +346,8 @@ items:
       type: System.Single
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Function LerpUnclamped(a As LunyVector2, b As LunyVector2, t As Single) As LunyVector2
+    content.vb: Public Shared Function LerpUnclamped(a As LunyVector2, b As LunyVector2, t As [Single]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.LerpUnclamped*
-  nameWithType.vb: LunyVector2.LerpUnclamped(LunyVector2, LunyVector2, Single)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.LerpUnclamped(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, Single)
-  name.vb: LerpUnclamped(LunyVector2, LunyVector2, Single)
 - uid: Luny.Engine.Bridge.LunyVector2.LerpUnclamped(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Double)
   commentId: M:Luny.Engine.Bridge.LunyVector2.LerpUnclamped(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Double)
   id: LerpUnclamped(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Double)
@@ -367,15 +355,15 @@ items:
   langs:
   - csharp
   - vb
-  name: LerpUnclamped(LunyVector2, LunyVector2, double)
-  nameWithType: LunyVector2.LerpUnclamped(LunyVector2, LunyVector2, double)
-  fullName: Luny.Engine.Bridge.LunyVector2.LerpUnclamped(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, double)
+  name: LerpUnclamped(LunyVector2, LunyVector2, Double)
+  nameWithType: LunyVector2.LerpUnclamped(LunyVector2, LunyVector2, Double)
+  fullName: Luny.Engine.Bridge.LunyVector2.LerpUnclamped(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, System.Double)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 LerpUnclamped(LunyVector2 a, LunyVector2 b, double t)
+    content: public static LunyVector2 LerpUnclamped(LunyVector2 a, LunyVector2 b, Double t)
     parameters:
     - id: a
       type: Luny.Engine.Bridge.LunyVector2
@@ -385,11 +373,8 @@ items:
       type: System.Double
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Function LerpUnclamped(a As LunyVector2, b As LunyVector2, t As Double) As LunyVector2
+    content.vb: Public Shared Function LerpUnclamped(a As LunyVector2, b As LunyVector2, t As [Double]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.LerpUnclamped*
-  nameWithType.vb: LunyVector2.LerpUnclamped(LunyVector2, LunyVector2, Double)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.LerpUnclamped(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, Double)
-  name.vb: LerpUnclamped(LunyVector2, LunyVector2, Double)
 - uid: Luny.Engine.Bridge.LunyVector2.Max(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Bridge.LunyVector2.Max(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
   id: Max(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
@@ -520,15 +505,15 @@ items:
   langs:
   - csharp
   - vb
-  name: ClampMagnitude(LunyVector2, float)
-  nameWithType: LunyVector2.ClampMagnitude(LunyVector2, float)
-  fullName: Luny.Engine.Bridge.LunyVector2.ClampMagnitude(Luny.Engine.Bridge.LunyVector2, float)
+  name: ClampMagnitude(LunyVector2, Single)
+  nameWithType: LunyVector2.ClampMagnitude(LunyVector2, Single)
+  fullName: Luny.Engine.Bridge.LunyVector2.ClampMagnitude(Luny.Engine.Bridge.LunyVector2, System.Single)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 ClampMagnitude(LunyVector2 vector, float maxLength)
+    content: public static LunyVector2 ClampMagnitude(LunyVector2 vector, Single maxLength)
     parameters:
     - id: vector
       type: Luny.Engine.Bridge.LunyVector2
@@ -536,11 +521,8 @@ items:
       type: System.Single
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Function ClampMagnitude(vector As LunyVector2, maxLength As Single) As LunyVector2
+    content.vb: Public Shared Function ClampMagnitude(vector As LunyVector2, maxLength As [Single]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.ClampMagnitude*
-  nameWithType.vb: LunyVector2.ClampMagnitude(LunyVector2, Single)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.ClampMagnitude(Luny.Engine.Bridge.LunyVector2, Single)
-  name.vb: ClampMagnitude(LunyVector2, Single)
 - uid: Luny.Engine.Bridge.LunyVector2.ClampMagnitude(Luny.Engine.Bridge.LunyVector2,System.Double)
   commentId: M:Luny.Engine.Bridge.LunyVector2.ClampMagnitude(Luny.Engine.Bridge.LunyVector2,System.Double)
   id: ClampMagnitude(Luny.Engine.Bridge.LunyVector2,System.Double)
@@ -548,15 +530,15 @@ items:
   langs:
   - csharp
   - vb
-  name: ClampMagnitude(LunyVector2, double)
-  nameWithType: LunyVector2.ClampMagnitude(LunyVector2, double)
-  fullName: Luny.Engine.Bridge.LunyVector2.ClampMagnitude(Luny.Engine.Bridge.LunyVector2, double)
+  name: ClampMagnitude(LunyVector2, Double)
+  nameWithType: LunyVector2.ClampMagnitude(LunyVector2, Double)
+  fullName: Luny.Engine.Bridge.LunyVector2.ClampMagnitude(Luny.Engine.Bridge.LunyVector2, System.Double)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 ClampMagnitude(LunyVector2 vector, double maxLength)
+    content: public static LunyVector2 ClampMagnitude(LunyVector2 vector, Double maxLength)
     parameters:
     - id: vector
       type: Luny.Engine.Bridge.LunyVector2
@@ -564,11 +546,8 @@ items:
       type: System.Double
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Function ClampMagnitude(vector As LunyVector2, maxLength As Double) As LunyVector2
+    content.vb: Public Shared Function ClampMagnitude(vector As LunyVector2, maxLength As [Double]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.ClampMagnitude*
-  nameWithType.vb: LunyVector2.ClampMagnitude(LunyVector2, Double)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.ClampMagnitude(Luny.Engine.Bridge.LunyVector2, Double)
-  name.vb: ClampMagnitude(LunyVector2, Double)
 - uid: Luny.Engine.Bridge.LunyVector2.MoveTowards(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Single)
   commentId: M:Luny.Engine.Bridge.LunyVector2.MoveTowards(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Single)
   id: MoveTowards(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Single)
@@ -576,15 +555,15 @@ items:
   langs:
   - csharp
   - vb
-  name: MoveTowards(LunyVector2, LunyVector2, float)
-  nameWithType: LunyVector2.MoveTowards(LunyVector2, LunyVector2, float)
-  fullName: Luny.Engine.Bridge.LunyVector2.MoveTowards(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, float)
+  name: MoveTowards(LunyVector2, LunyVector2, Single)
+  nameWithType: LunyVector2.MoveTowards(LunyVector2, LunyVector2, Single)
+  fullName: Luny.Engine.Bridge.LunyVector2.MoveTowards(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, System.Single)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 MoveTowards(LunyVector2 current, LunyVector2 target, float maxDistanceDelta)
+    content: public static LunyVector2 MoveTowards(LunyVector2 current, LunyVector2 target, Single maxDistanceDelta)
     parameters:
     - id: current
       type: Luny.Engine.Bridge.LunyVector2
@@ -594,11 +573,8 @@ items:
       type: System.Single
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Function MoveTowards(current As LunyVector2, target As LunyVector2, maxDistanceDelta As Single) As LunyVector2
+    content.vb: Public Shared Function MoveTowards(current As LunyVector2, target As LunyVector2, maxDistanceDelta As [Single]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.MoveTowards*
-  nameWithType.vb: LunyVector2.MoveTowards(LunyVector2, LunyVector2, Single)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.MoveTowards(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, Single)
-  name.vb: MoveTowards(LunyVector2, LunyVector2, Single)
 - uid: Luny.Engine.Bridge.LunyVector2.MoveTowards(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Double)
   commentId: M:Luny.Engine.Bridge.LunyVector2.MoveTowards(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Double)
   id: MoveTowards(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2,System.Double)
@@ -606,15 +582,15 @@ items:
   langs:
   - csharp
   - vb
-  name: MoveTowards(LunyVector2, LunyVector2, double)
-  nameWithType: LunyVector2.MoveTowards(LunyVector2, LunyVector2, double)
-  fullName: Luny.Engine.Bridge.LunyVector2.MoveTowards(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, double)
+  name: MoveTowards(LunyVector2, LunyVector2, Double)
+  nameWithType: LunyVector2.MoveTowards(LunyVector2, LunyVector2, Double)
+  fullName: Luny.Engine.Bridge.LunyVector2.MoveTowards(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, System.Double)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 MoveTowards(LunyVector2 current, LunyVector2 target, double maxDistanceDelta)
+    content: public static LunyVector2 MoveTowards(LunyVector2 current, LunyVector2 target, Double maxDistanceDelta)
     parameters:
     - id: current
       type: Luny.Engine.Bridge.LunyVector2
@@ -624,11 +600,8 @@ items:
       type: System.Double
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Function MoveTowards(current As LunyVector2, target As LunyVector2, maxDistanceDelta As Double) As LunyVector2
+    content.vb: Public Shared Function MoveTowards(current As LunyVector2, target As LunyVector2, maxDistanceDelta As [Double]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.MoveTowards*
-  nameWithType.vb: LunyVector2.MoveTowards(LunyVector2, LunyVector2, Double)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.MoveTowards(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2, Double)
-  name.vb: MoveTowards(LunyVector2, LunyVector2, Double)
 - uid: Luny.Engine.Bridge.LunyVector2.Perpendicular(Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Bridge.LunyVector2.Perpendicular(Luny.Engine.Bridge.LunyVector2)
   id: Perpendicular(Luny.Engine.Bridge.LunyVector2)
@@ -667,7 +640,7 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static float Angle(LunyVector2 from, LunyVector2 to)
+    content: public static Single Angle(LunyVector2 from, LunyVector2 to)
     parameters:
     - id: from
       type: Luny.Engine.Bridge.LunyVector2
@@ -675,7 +648,7 @@ items:
       type: Luny.Engine.Bridge.LunyVector2
     return:
       type: System.Single
-    content.vb: Public Shared Function Angle(from As LunyVector2, [to] As LunyVector2) As Single
+    content.vb: Public Shared Function Angle(from As LunyVector2, [to] As LunyVector2) As [Single]
   overload: Luny.Engine.Bridge.LunyVector2.Angle*
 - uid: Luny.Engine.Bridge.LunyVector2.SignedAngle(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Bridge.LunyVector2.SignedAngle(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
@@ -692,7 +665,7 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static float SignedAngle(LunyVector2 from, LunyVector2 to)
+    content: public static Single SignedAngle(LunyVector2 from, LunyVector2 to)
     parameters:
     - id: from
       type: Luny.Engine.Bridge.LunyVector2
@@ -700,7 +673,7 @@ items:
       type: Luny.Engine.Bridge.LunyVector2
     return:
       type: System.Single
-    content.vb: Public Shared Function SignedAngle(from As LunyVector2, [to] As LunyVector2) As Single
+    content.vb: Public Shared Function SignedAngle(from As LunyVector2, [to] As LunyVector2) As [Single]
   overload: Luny.Engine.Bridge.LunyVector2.SignedAngle*
 - uid: Luny.Engine.Bridge.LunyVector2.op_Implicit(Luny.Engine.Bridge.LunyVector2)~Luny.Engine.Bridge.LunyVector3
   commentId: M:Luny.Engine.Bridge.LunyVector2.op_Implicit(Luny.Engine.Bridge.LunyVector2)~Luny.Engine.Bridge.LunyVector3
@@ -843,15 +816,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator *(LunyVector2, float)
-  nameWithType: LunyVector2.operator *(LunyVector2, float)
-  fullName: Luny.Engine.Bridge.LunyVector2.operator *(Luny.Engine.Bridge.LunyVector2, float)
+  name: operator *(LunyVector2, Single)
+  nameWithType: LunyVector2.operator *(LunyVector2, Single)
+  fullName: Luny.Engine.Bridge.LunyVector2.operator *(Luny.Engine.Bridge.LunyVector2, System.Single)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 operator *(LunyVector2 a, float d)
+    content: public static LunyVector2 operator *(LunyVector2 a, Single d)
     parameters:
     - id: a
       type: Luny.Engine.Bridge.LunyVector2
@@ -859,10 +832,10 @@ items:
       type: System.Single
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Operator *(a As LunyVector2, d As Single) As LunyVector2
+    content.vb: Public Shared Operator *(a As LunyVector2, d As [Single]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.op_Multiply*
   nameWithType.vb: LunyVector2.*(LunyVector2, Single)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.*(Luny.Engine.Bridge.LunyVector2, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector2.*(Luny.Engine.Bridge.LunyVector2, System.Single)
   name.vb: '*(LunyVector2, Single)'
 - uid: Luny.Engine.Bridge.LunyVector2.op_Multiply(Luny.Engine.Bridge.LunyVector2,System.Double)
   commentId: M:Luny.Engine.Bridge.LunyVector2.op_Multiply(Luny.Engine.Bridge.LunyVector2,System.Double)
@@ -871,15 +844,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator *(LunyVector2, double)
-  nameWithType: LunyVector2.operator *(LunyVector2, double)
-  fullName: Luny.Engine.Bridge.LunyVector2.operator *(Luny.Engine.Bridge.LunyVector2, double)
+  name: operator *(LunyVector2, Double)
+  nameWithType: LunyVector2.operator *(LunyVector2, Double)
+  fullName: Luny.Engine.Bridge.LunyVector2.operator *(Luny.Engine.Bridge.LunyVector2, System.Double)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 operator *(LunyVector2 a, double d)
+    content: public static LunyVector2 operator *(LunyVector2 a, Double d)
     parameters:
     - id: a
       type: Luny.Engine.Bridge.LunyVector2
@@ -887,10 +860,10 @@ items:
       type: System.Double
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Operator *(a As LunyVector2, d As Double) As LunyVector2
+    content.vb: Public Shared Operator *(a As LunyVector2, d As [Double]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.op_Multiply*
   nameWithType.vb: LunyVector2.*(LunyVector2, Double)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.*(Luny.Engine.Bridge.LunyVector2, Double)
+  fullName.vb: Luny.Engine.Bridge.LunyVector2.*(Luny.Engine.Bridge.LunyVector2, System.Double)
   name.vb: '*(LunyVector2, Double)'
 - uid: Luny.Engine.Bridge.LunyVector2.op_Multiply(System.Single,Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Bridge.LunyVector2.op_Multiply(System.Single,Luny.Engine.Bridge.LunyVector2)
@@ -899,15 +872,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator *(float, LunyVector2)
-  nameWithType: LunyVector2.operator *(float, LunyVector2)
-  fullName: Luny.Engine.Bridge.LunyVector2.operator *(float, Luny.Engine.Bridge.LunyVector2)
+  name: operator *(Single, LunyVector2)
+  nameWithType: LunyVector2.operator *(Single, LunyVector2)
+  fullName: Luny.Engine.Bridge.LunyVector2.operator *(System.Single, Luny.Engine.Bridge.LunyVector2)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 operator *(float d, LunyVector2 a)
+    content: public static LunyVector2 operator *(Single d, LunyVector2 a)
     parameters:
     - id: d
       type: System.Single
@@ -915,10 +888,10 @@ items:
       type: Luny.Engine.Bridge.LunyVector2
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Operator *(d As Single, a As LunyVector2) As LunyVector2
+    content.vb: Public Shared Operator *(d As [Single], a As LunyVector2) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.op_Multiply*
   nameWithType.vb: LunyVector2.*(Single, LunyVector2)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.*(Single, Luny.Engine.Bridge.LunyVector2)
+  fullName.vb: Luny.Engine.Bridge.LunyVector2.*(System.Single, Luny.Engine.Bridge.LunyVector2)
   name.vb: '*(Single, LunyVector2)'
 - uid: Luny.Engine.Bridge.LunyVector2.op_Multiply(System.Double,Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Bridge.LunyVector2.op_Multiply(System.Double,Luny.Engine.Bridge.LunyVector2)
@@ -927,15 +900,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator *(double, LunyVector2)
-  nameWithType: LunyVector2.operator *(double, LunyVector2)
-  fullName: Luny.Engine.Bridge.LunyVector2.operator *(double, Luny.Engine.Bridge.LunyVector2)
+  name: operator *(Double, LunyVector2)
+  nameWithType: LunyVector2.operator *(Double, LunyVector2)
+  fullName: Luny.Engine.Bridge.LunyVector2.operator *(System.Double, Luny.Engine.Bridge.LunyVector2)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 operator *(double d, LunyVector2 a)
+    content: public static LunyVector2 operator *(Double d, LunyVector2 a)
     parameters:
     - id: d
       type: System.Double
@@ -943,10 +916,10 @@ items:
       type: Luny.Engine.Bridge.LunyVector2
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Operator *(d As Double, a As LunyVector2) As LunyVector2
+    content.vb: Public Shared Operator *(d As [Double], a As LunyVector2) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.op_Multiply*
   nameWithType.vb: LunyVector2.*(Double, LunyVector2)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.*(Double, Luny.Engine.Bridge.LunyVector2)
+  fullName.vb: Luny.Engine.Bridge.LunyVector2.*(System.Double, Luny.Engine.Bridge.LunyVector2)
   name.vb: '*(Double, LunyVector2)'
 - uid: Luny.Engine.Bridge.LunyVector2.op_Multiply(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Bridge.LunyVector2.op_Multiply(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
@@ -983,15 +956,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator /(LunyVector2, float)
-  nameWithType: LunyVector2.operator /(LunyVector2, float)
-  fullName: Luny.Engine.Bridge.LunyVector2.operator /(Luny.Engine.Bridge.LunyVector2, float)
+  name: operator /(LunyVector2, Single)
+  nameWithType: LunyVector2.operator /(LunyVector2, Single)
+  fullName: Luny.Engine.Bridge.LunyVector2.operator /(Luny.Engine.Bridge.LunyVector2, System.Single)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 operator /(LunyVector2 a, float d)
+    content: public static LunyVector2 operator /(LunyVector2 a, Single d)
     parameters:
     - id: a
       type: Luny.Engine.Bridge.LunyVector2
@@ -999,10 +972,10 @@ items:
       type: System.Single
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Operator /(a As LunyVector2, d As Single) As LunyVector2
+    content.vb: Public Shared Operator /(a As LunyVector2, d As [Single]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.op_Division*
   nameWithType.vb: LunyVector2./(LunyVector2, Single)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2./(Luny.Engine.Bridge.LunyVector2, Single)
+  fullName.vb: Luny.Engine.Bridge.LunyVector2./(Luny.Engine.Bridge.LunyVector2, System.Single)
   name.vb: /(LunyVector2, Single)
 - uid: Luny.Engine.Bridge.LunyVector2.op_Division(Luny.Engine.Bridge.LunyVector2,System.Double)
   commentId: M:Luny.Engine.Bridge.LunyVector2.op_Division(Luny.Engine.Bridge.LunyVector2,System.Double)
@@ -1011,15 +984,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator /(LunyVector2, double)
-  nameWithType: LunyVector2.operator /(LunyVector2, double)
-  fullName: Luny.Engine.Bridge.LunyVector2.operator /(Luny.Engine.Bridge.LunyVector2, double)
+  name: operator /(LunyVector2, Double)
+  nameWithType: LunyVector2.operator /(LunyVector2, Double)
+  fullName: Luny.Engine.Bridge.LunyVector2.operator /(Luny.Engine.Bridge.LunyVector2, System.Double)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static LunyVector2 operator /(LunyVector2 a, double d)
+    content: public static LunyVector2 operator /(LunyVector2 a, Double d)
     parameters:
     - id: a
       type: Luny.Engine.Bridge.LunyVector2
@@ -1027,10 +1000,10 @@ items:
       type: System.Double
     return:
       type: Luny.Engine.Bridge.LunyVector2
-    content.vb: Public Shared Operator /(a As LunyVector2, d As Double) As LunyVector2
+    content.vb: Public Shared Operator /(a As LunyVector2, d As [Double]) As LunyVector2
   overload: Luny.Engine.Bridge.LunyVector2.op_Division*
   nameWithType.vb: LunyVector2./(LunyVector2, Double)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2./(Luny.Engine.Bridge.LunyVector2, Double)
+  fullName.vb: Luny.Engine.Bridge.LunyVector2./(Luny.Engine.Bridge.LunyVector2, System.Double)
   name.vb: /(LunyVector2, Double)
 - uid: Luny.Engine.Bridge.LunyVector2.op_Division(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
   commentId: M:Luny.Engine.Bridge.LunyVector2.op_Division(Luny.Engine.Bridge.LunyVector2,Luny.Engine.Bridge.LunyVector2)
@@ -1075,7 +1048,7 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static bool operator ==(LunyVector2 lhs, LunyVector2 rhs)
+    content: public static Boolean operator ==(LunyVector2 lhs, LunyVector2 rhs)
     parameters:
     - id: lhs
       type: Luny.Engine.Bridge.LunyVector2
@@ -1083,7 +1056,7 @@ items:
       type: Luny.Engine.Bridge.LunyVector2
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator =(lhs As LunyVector2, rhs As LunyVector2) As Boolean
+    content.vb: Public Shared Operator =(lhs As LunyVector2, rhs As LunyVector2) As [Boolean]
   overload: Luny.Engine.Bridge.LunyVector2.op_Equality*
   nameWithType.vb: LunyVector2.=(LunyVector2, LunyVector2)
   fullName.vb: Luny.Engine.Bridge.LunyVector2.=(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2)
@@ -1103,7 +1076,7 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static bool operator !=(LunyVector2 lhs, LunyVector2 rhs)
+    content: public static Boolean operator !=(LunyVector2 lhs, LunyVector2 rhs)
     parameters:
     - id: lhs
       type: Luny.Engine.Bridge.LunyVector2
@@ -1111,7 +1084,7 @@ items:
       type: Luny.Engine.Bridge.LunyVector2
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <>(lhs As LunyVector2, rhs As LunyVector2) As Boolean
+    content.vb: Public Shared Operator <>(lhs As LunyVector2, rhs As LunyVector2) As [Boolean]
   overload: Luny.Engine.Bridge.LunyVector2.op_Inequality*
   nameWithType.vb: LunyVector2.<>(LunyVector2, LunyVector2)
   fullName.vb: Luny.Engine.Bridge.LunyVector2.<>(Luny.Engine.Bridge.LunyVector2, Luny.Engine.Bridge.LunyVector2)
@@ -1132,13 +1105,13 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public bool Equals(LunyVector2 other)
+    content: public Boolean Equals(LunyVector2 other)
     parameters:
     - id: other
       type: Luny.Engine.Bridge.LunyVector2
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As LunyVector2) As Boolean
+    content.vb: Public Function Equals(other As LunyVector2) As [Boolean]
   overload: Luny.Engine.Bridge.LunyVector2.Equals*
   implements:
   - System.IEquatable{Luny.Engine.Bridge.LunyVector2}.Equals(Luny.Engine.Bridge.LunyVector2)
@@ -1149,27 +1122,24 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(object)
-  nameWithType: LunyVector2.Equals(object)
-  fullName: Luny.Engine.Bridge.LunyVector2.Equals(object)
+  name: Equals(Object)
+  nameWithType: LunyVector2.Equals(Object)
+  fullName: Luny.Engine.Bridge.LunyVector2.Equals(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override bool Equals(object obj)
+    content: public override Boolean Equals(Object obj)
     parameters:
     - id: obj
       type: System.Object
     return:
       type: System.Boolean
-    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    content.vb: Public Overrides Function Equals(obj As [Object]) As [Boolean]
   overridden: System.ValueType.Equals(System.Object)
   overload: Luny.Engine.Bridge.LunyVector2.Equals*
-  nameWithType.vb: LunyVector2.Equals(Object)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.Equals(Object)
-  name.vb: Equals(Object)
 - uid: Luny.Engine.Bridge.LunyVector2.GetHashCode
   commentId: M:Luny.Engine.Bridge.LunyVector2.GetHashCode
   id: GetHashCode
@@ -1186,10 +1156,10 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override int GetHashCode()
+    content: public override Int32 GetHashCode()
     return:
       type: System.Int32
-    content.vb: Public Overrides Function GetHashCode() As Integer
+    content.vb: Public Overrides Function GetHashCode() As Int32
   overridden: System.ValueType.GetHashCode
   overload: Luny.Engine.Bridge.LunyVector2.GetHashCode*
 - uid: Luny.Engine.Bridge.LunyVector2.ToString
@@ -1208,10 +1178,10 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.ValueType.ToString
   overload: Luny.Engine.Bridge.LunyVector2.ToString*
 - uid: Luny.Engine.Bridge.LunyVector2.ToString(System.String)
@@ -1221,25 +1191,22 @@ items:
   langs:
   - csharp
   - vb
-  name: ToString(string)
-  nameWithType: LunyVector2.ToString(string)
-  fullName: Luny.Engine.Bridge.LunyVector2.ToString(string)
+  name: ToString(String)
+  nameWithType: LunyVector2.ToString(String)
+  fullName: Luny.Engine.Bridge.LunyVector2.ToString(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public string ToString(string format)
+    content: public String ToString(String format)
     parameters:
     - id: format
       type: System.String
     return:
       type: System.String
-    content.vb: Public Function ToString(format As String) As String
+    content.vb: Public Function ToString(format As [String]) As [String]
   overload: Luny.Engine.Bridge.LunyVector2.ToString*
-  nameWithType.vb: LunyVector2.ToString(String)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.ToString(String)
-  name.vb: ToString(String)
 - uid: Luny.Engine.Bridge.LunyVector2.X
   commentId: P:Luny.Engine.Bridge.LunyVector2.X
   id: X
@@ -1255,11 +1222,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public float X { get; set; }
+    content: public Single X { get; set; }
     parameters: []
     return:
       type: System.Single
-    content.vb: Public Property X As Single
+    content.vb: Public Property X As [Single]
   overload: Luny.Engine.Bridge.LunyVector2.X*
 - uid: Luny.Engine.Bridge.LunyVector2.Y
   commentId: P:Luny.Engine.Bridge.LunyVector2.Y
@@ -1276,11 +1243,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public float Y { get; set; }
+    content: public Single Y { get; set; }
     parameters: []
     return:
       type: System.Single
-    content.vb: Public Property Y As Single
+    content.vb: Public Property Y As [Single]
   overload: Luny.Engine.Bridge.LunyVector2.Y*
 - uid: Luny.Engine.Bridge.LunyVector2.Item(System.Int32)
   commentId: P:Luny.Engine.Bridge.LunyVector2.Item(System.Int32)
@@ -1289,25 +1256,25 @@ items:
   langs:
   - csharp
   - vb
-  name: this[int]
-  nameWithType: LunyVector2.this[int]
-  fullName: Luny.Engine.Bridge.LunyVector2.this[int]
+  name: this[Int32]
+  nameWithType: LunyVector2.this[Int32]
+  fullName: Luny.Engine.Bridge.LunyVector2.this[System.Int32]
   type: Property
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public float this[int index] { get; set; }
+    content: public Single this[Int32 index] { get; set; }
     parameters:
     - id: index
       type: System.Int32
     return:
       type: System.Single
-    content.vb: Public Default Property this[](index As Integer) As Single
+    content.vb: Public Default Property this[](index As Int32) As [Single]
   overload: Luny.Engine.Bridge.LunyVector2.Item*
-  nameWithType.vb: LunyVector2.this[](Integer)
-  fullName.vb: Luny.Engine.Bridge.LunyVector2.this[](Integer)
-  name.vb: this[](Integer)
+  nameWithType.vb: LunyVector2.this[](Int32)
+  fullName.vb: Luny.Engine.Bridge.LunyVector2.this[](System.Int32)
+  name.vb: this[](Int32)
 - uid: Luny.Engine.Bridge.LunyVector2.Zero
   commentId: P:Luny.Engine.Bridge.LunyVector2.Zero
   id: Zero
@@ -1491,11 +1458,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public float Magnitude { get; }
+    content: public Single Magnitude { get; }
     parameters: []
     return:
       type: System.Single
-    content.vb: Public ReadOnly Property Magnitude As Single
+    content.vb: Public ReadOnly Property Magnitude As [Single]
   overload: Luny.Engine.Bridge.LunyVector2.Magnitude*
 - uid: Luny.Engine.Bridge.LunyVector2.SqrMagnitude
   commentId: P:Luny.Engine.Bridge.LunyVector2.SqrMagnitude
@@ -1512,11 +1479,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public float SqrMagnitude { get; }
+    content: public Single SqrMagnitude { get; }
     parameters: []
     return:
       type: System.Single
-    content.vb: Public ReadOnly Property SqrMagnitude As Single
+    content.vb: Public ReadOnly Property SqrMagnitude As [Single]
   overload: Luny.Engine.Bridge.LunyVector2.SqrMagnitude*
 - uid: Luny.Engine.Bridge.LunyVector2.Normalized
   commentId: P:Luny.Engine.Bridge.LunyVector2.Normalized
@@ -1662,23 +1629,17 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: System.Double
   commentId: T:System.Double
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Engine.Bridge.LunyVector2.Normalize*
   commentId: Overload:Luny.Engine.Bridge.LunyVector2.Normalize
   isExternal: true
@@ -1938,12 +1899,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Bridge.LunyVector2.op_Inequality*
   commentId: Overload:Luny.Engine.Bridge.LunyVector2.op_Inequality
   isExternal: true
@@ -2030,12 +1988,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -2043,7 +1998,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -2060,12 +2015,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.ValueType
   commentId: T:System.ValueType
   parent: System
@@ -2108,12 +2060,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType
@@ -2148,12 +2097,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyVector2.X*
   commentId: Overload:Luny.Engine.Bridge.LunyVector2.X
   isExternal: true

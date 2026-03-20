@@ -147,11 +147,11 @@ items:
     Prefer FrameCount since it is the same for all engines.
   example: []
   syntax:
-    content: public override long EngineFrameCount { get; }
+    content: public override Int64 EngineFrameCount { get; }
     parameters: []
     return:
       type: System.Int64
-    content.vb: Public Overrides ReadOnly Property EngineFrameCount As Long
+    content.vb: Public Overrides ReadOnly Property EngineFrameCount As Int64
   overridden: Luny.Engine.Services.LunyTimeServiceBase.EngineFrameCount
   overload: Luny.Unity.Services.UnityTimeService.EngineFrameCount*
   implements:
@@ -173,11 +173,11 @@ items:
   summary: Gets the time in seconds since the application started. Uses real time (not affected by Time.timeScale).
   example: []
   syntax:
-    content: public override double ElapsedSeconds { get; }
+    content: public override Double ElapsedSeconds { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public Overrides ReadOnly Property ElapsedSeconds As Double
+    content.vb: Public Overrides ReadOnly Property ElapsedSeconds As [Double]
   overridden: Luny.Engine.Services.LunyTimeServiceBase.ElapsedSeconds
   overload: Luny.Unity.Services.UnityTimeService.ElapsedSeconds*
   implements:
@@ -224,12 +224,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Services.LunyEngineServiceBase
   commentId: T:Luny.Engine.Services.LunyEngineServiceBase
   parent: Luny.Engine.Services
@@ -458,12 +455,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: Luny.Engine.Services.LunyTimeServiceBase.ElapsedSeconds
   commentId: P:Luny.Engine.Services.LunyTimeServiceBase.ElapsedSeconds
   parent: Luny.Engine.Services.LunyTimeServiceBase
@@ -491,9 +485,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double

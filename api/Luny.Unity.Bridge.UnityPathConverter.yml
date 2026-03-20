@@ -32,9 +32,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ToLuny(string, LunyPathType)
-  nameWithType: UnityPathConverter.ToLuny(string, LunyPathType)
-  fullName: Luny.Unity.Bridge.UnityPathConverter.ToLuny(string, Luny.Engine.Bridge.LunyPathType)
+  name: ToLuny(String, LunyPathType)
+  nameWithType: UnityPathConverter.ToLuny(String, LunyPathType)
+  fullName: Luny.Unity.Bridge.UnityPathConverter.ToLuny(System.String, Luny.Engine.Bridge.LunyPathType)
   type: Method
   assemblies:
   - Luny.Unity
@@ -42,7 +42,7 @@ items:
   summary: Converts a native path to a Luny relative path.
   example: []
   syntax:
-    content: public string ToLuny(string nativePath, LunyPathType type)
+    content: public String ToLuny(String nativePath, LunyPathType type)
     parameters:
     - id: nativePath
       type: System.String
@@ -50,13 +50,10 @@ items:
       type: Luny.Engine.Bridge.LunyPathType
     return:
       type: System.String
-    content.vb: Public Function ToLuny(nativePath As String, type As LunyPathType) As String
+    content.vb: Public Function ToLuny(nativePath As [String], type As LunyPathType) As [String]
   overload: Luny.Unity.Bridge.UnityPathConverter.ToLuny*
   implements:
   - Luny.Engine.Bridge.ILunyPathConverter.ToLuny(System.String,Luny.Engine.Bridge.LunyPathType)
-  nameWithType.vb: UnityPathConverter.ToLuny(String, LunyPathType)
-  fullName.vb: Luny.Unity.Bridge.UnityPathConverter.ToLuny(String, Luny.Engine.Bridge.LunyPathType)
-  name.vb: ToLuny(String, LunyPathType)
 - uid: Luny.Unity.Bridge.UnityPathConverter.ToNative(System.String,Luny.Engine.Bridge.LunyPathType)
   commentId: M:Luny.Unity.Bridge.UnityPathConverter.ToNative(System.String,Luny.Engine.Bridge.LunyPathType)
   id: ToNative(System.String,Luny.Engine.Bridge.LunyPathType)
@@ -64,9 +61,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ToNative(string, LunyPathType)
-  nameWithType: UnityPathConverter.ToNative(string, LunyPathType)
-  fullName: Luny.Unity.Bridge.UnityPathConverter.ToNative(string, Luny.Engine.Bridge.LunyPathType)
+  name: ToNative(String, LunyPathType)
+  nameWithType: UnityPathConverter.ToNative(String, LunyPathType)
+  fullName: Luny.Unity.Bridge.UnityPathConverter.ToNative(System.String, Luny.Engine.Bridge.LunyPathType)
   type: Method
   assemblies:
   - Luny.Unity
@@ -74,7 +71,7 @@ items:
   summary: Converts a Luny relative path to a native engine path.
   example: []
   syntax:
-    content: public string ToNative(string agnosticPath, LunyPathType type)
+    content: public String ToNative(String agnosticPath, LunyPathType type)
     parameters:
     - id: agnosticPath
       type: System.String
@@ -82,13 +79,10 @@ items:
       type: Luny.Engine.Bridge.LunyPathType
     return:
       type: System.String
-    content.vb: Public Function ToNative(agnosticPath As String, type As LunyPathType) As String
+    content.vb: Public Function ToNative(agnosticPath As [String], type As LunyPathType) As [String]
   overload: Luny.Unity.Bridge.UnityPathConverter.ToNative*
   implements:
   - Luny.Engine.Bridge.ILunyPathConverter.ToNative(System.String,Luny.Engine.Bridge.LunyPathType)
-  nameWithType.vb: UnityPathConverter.ToNative(String, LunyPathType)
-  fullName.vb: Luny.Unity.Bridge.UnityPathConverter.ToNative(String, Luny.Engine.Bridge.LunyPathType)
-  name.vb: ToNative(String, LunyPathType)
 - uid: Luny.Unity.Bridge.UnityPathConverter.#ctor
   commentId: M:Luny.Unity.Bridge.UnityPathConverter.#ctor
   id: '#ctor'
@@ -152,12 +146,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Bridge.ILunyPathConverter
   commentId: T:Luny.Engine.Bridge.ILunyPathConverter
   parent: Luny.Engine.Bridge
@@ -222,19 +213,16 @@ references:
   parent: Luny.Engine.Bridge.ILunyPathConverter
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: ToLuny(string, LunyPathType)
-  nameWithType: ILunyPathConverter.ToLuny(string, LunyPathType)
-  fullName: Luny.Engine.Bridge.ILunyPathConverter.ToLuny(string, Luny.Engine.Bridge.LunyPathType)
-  nameWithType.vb: ILunyPathConverter.ToLuny(String, LunyPathType)
-  fullName.vb: Luny.Engine.Bridge.ILunyPathConverter.ToLuny(String, Luny.Engine.Bridge.LunyPathType)
-  name.vb: ToLuny(String, LunyPathType)
+  name: ToLuny(String, LunyPathType)
+  nameWithType: ILunyPathConverter.ToLuny(String, LunyPathType)
+  fullName: Luny.Engine.Bridge.ILunyPathConverter.ToLuny(System.String, Luny.Engine.Bridge.LunyPathType)
   spec.csharp:
   - uid: Luny.Engine.Bridge.ILunyPathConverter.ToLuny(System.String,Luny.Engine.Bridge.LunyPathType)
     name: ToLuny
     isExternal: true
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
@@ -263,12 +251,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyPathType
   commentId: T:Luny.Engine.Bridge.LunyPathType
   parent: Luny.Engine.Bridge
@@ -289,19 +274,16 @@ references:
   parent: Luny.Engine.Bridge.ILunyPathConverter
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: ToNative(string, LunyPathType)
-  nameWithType: ILunyPathConverter.ToNative(string, LunyPathType)
-  fullName: Luny.Engine.Bridge.ILunyPathConverter.ToNative(string, Luny.Engine.Bridge.LunyPathType)
-  nameWithType.vb: ILunyPathConverter.ToNative(String, LunyPathType)
-  fullName.vb: Luny.Engine.Bridge.ILunyPathConverter.ToNative(String, Luny.Engine.Bridge.LunyPathType)
-  name.vb: ToNative(String, LunyPathType)
+  name: ToNative(String, LunyPathType)
+  nameWithType: ILunyPathConverter.ToNative(String, LunyPathType)
+  fullName: Luny.Engine.Bridge.ILunyPathConverter.ToNative(System.String, Luny.Engine.Bridge.LunyPathType)
   spec.csharp:
   - uid: Luny.Engine.Bridge.ILunyPathConverter.ToNative(System.String,Luny.Engine.Bridge.LunyPathType)
     name: ToNative
     isExternal: true
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','

@@ -55,11 +55,11 @@ items:
     Prefer FrameCount since it is the same for all engines.
   example: []
   syntax:
-    content: long EngineFrameCount { get; }
+    content: Int64 EngineFrameCount { get; }
     parameters: []
     return:
       type: System.Int64
-    content.vb: ReadOnly Property EngineFrameCount As Long
+    content.vb: ReadOnly Property EngineFrameCount As Int64
   overload: Luny.Engine.Services.ILunyTimeService.EngineFrameCount*
 - uid: Luny.Engine.Services.ILunyTimeService.FrameCount
   commentId: P:Luny.Engine.Services.ILunyTimeService.FrameCount
@@ -79,11 +79,11 @@ items:
   remarks: Initialization (startup, OnCreate, OnEnable) occurs in FrameCount 0. By OnReady (and before first OnHeartbeat/OnFrame) FrameCount will be 1.
   example: []
   syntax:
-    content: long FrameCount { get; }
+    content: Int64 FrameCount { get; }
     parameters: []
     return:
       type: System.Int64
-    content.vb: ReadOnly Property FrameCount As Long
+    content.vb: ReadOnly Property FrameCount As Int64
   overload: Luny.Engine.Services.ILunyTimeService.FrameCount*
 - uid: Luny.Engine.Services.ILunyTimeService.HeartbeatCount
   commentId: P:Luny.Engine.Services.ILunyTimeService.HeartbeatCount
@@ -102,11 +102,11 @@ items:
   summary: Gets the total number of heartbeats LunyEngine has run since launch. This value is consistent across engines.
   example: []
   syntax:
-    content: long HeartbeatCount { get; }
+    content: Int64 HeartbeatCount { get; }
     parameters: []
     return:
       type: System.Int64
-    content.vb: ReadOnly Property HeartbeatCount As Long
+    content.vb: ReadOnly Property HeartbeatCount As Int64
   overload: Luny.Engine.Services.ILunyTimeService.HeartbeatCount*
 - uid: Luny.Engine.Services.ILunyTimeService.ElapsedSeconds
   commentId: P:Luny.Engine.Services.ILunyTimeService.ElapsedSeconds
@@ -125,11 +125,11 @@ items:
   summary: Gets the time in seconds since the application started. Uses real time (not affected by Time.timeScale).
   example: []
   syntax:
-    content: double ElapsedSeconds { get; }
+    content: Double ElapsedSeconds { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: ReadOnly Property ElapsedSeconds As Double
+    content.vb: ReadOnly Property ElapsedSeconds As [Double]
   overload: Luny.Engine.Services.ILunyTimeService.ElapsedSeconds*
 - uid: Luny.Engine.Services.ILunyTimeService.DeltaTime
   commentId: P:Luny.Engine.Services.ILunyTimeService.DeltaTime
@@ -149,11 +149,11 @@ items:
   remarks: When read in a Heartbeat method, be aware that DeltaTime is last frame's deltaTime.
   example: []
   syntax:
-    content: double DeltaTime { get; }
+    content: Double DeltaTime { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: ReadOnly Property DeltaTime As Double
+    content.vb: ReadOnly Property DeltaTime As [Double]
   overload: Luny.Engine.Services.ILunyTimeService.DeltaTime*
 - uid: Luny.Engine.Services.ILunyTimeService.FixedDeltaTime
   commentId: P:Luny.Engine.Services.ILunyTimeService.FixedDeltaTime
@@ -172,11 +172,11 @@ items:
   summary: Time between two heartbeats. Value remains fixed (constant) at runtime.
   example: []
   syntax:
-    content: double FixedDeltaTime { get; }
+    content: Double FixedDeltaTime { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: ReadOnly Property FixedDeltaTime As Double
+    content.vb: ReadOnly Property FixedDeltaTime As [Double]
   overload: Luny.Engine.Services.ILunyTimeService.FixedDeltaTime*
 references:
 - uid: Luny.Engine.Services
@@ -228,12 +228,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System
   commentId: N:System
   isExternal: true
@@ -267,12 +264,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Engine.Services.ILunyTimeService.DeltaTime*
   commentId: Overload:Luny.Engine.Services.ILunyTimeService.DeltaTime
   isExternal: true

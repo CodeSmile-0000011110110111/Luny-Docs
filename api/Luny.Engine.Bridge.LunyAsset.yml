@@ -46,10 +46,10 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static int s_NextAssetID
+    content: public static Int32 s_NextAssetID
     return:
       type: System.Int32
-    content.vb: Public Shared s_NextAssetID As Integer
+    content.vb: Public Shared s_NextAssetID As Int32
 - uid: Luny.Engine.Bridge.LunyAsset.#ctor(System.Object,Luny.Engine.Bridge.LunyAssetPath)
   commentId: M:Luny.Engine.Bridge.LunyAsset.#ctor(System.Object,Luny.Engine.Bridge.LunyAssetPath)
   id: '#ctor(System.Object,Luny.Engine.Bridge.LunyAssetPath)'
@@ -57,24 +57,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyAsset(object, LunyAssetPath)
-  nameWithType: LunyAsset.LunyAsset(object, LunyAssetPath)
-  fullName: Luny.Engine.Bridge.LunyAsset.LunyAsset(object, Luny.Engine.Bridge.LunyAssetPath)
+  name: LunyAsset(Object, LunyAssetPath)
+  nameWithType: LunyAsset.LunyAsset(Object, LunyAssetPath)
+  fullName: Luny.Engine.Bridge.LunyAsset.LunyAsset(System.Object, Luny.Engine.Bridge.LunyAssetPath)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected LunyAsset(object nativeAsset, LunyAssetPath assetPath)
+    content: protected LunyAsset(Object nativeAsset, LunyAssetPath assetPath)
     parameters:
     - id: nativeAsset
       type: System.Object
     - id: assetPath
       type: Luny.Engine.Bridge.LunyAssetPath
-    content.vb: Protected Sub New(nativeAsset As Object, assetPath As LunyAssetPath)
+    content.vb: Protected Sub New(nativeAsset As [Object], assetPath As LunyAssetPath)
   overload: Luny.Engine.Bridge.LunyAsset.#ctor*
   nameWithType.vb: LunyAsset.New(Object, LunyAssetPath)
-  fullName.vb: Luny.Engine.Bridge.LunyAsset.New(Object, Luny.Engine.Bridge.LunyAssetPath)
+  fullName.vb: Luny.Engine.Bridge.LunyAsset.New(System.Object, Luny.Engine.Bridge.LunyAssetPath)
   name.vb: New(Object, LunyAssetPath)
 - uid: Luny.Engine.Bridge.LunyAsset.Cast``1
   commentId: M:Luny.Engine.Bridge.LunyAsset.Cast``1
@@ -121,10 +121,10 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: Luny.Engine.Bridge.LunyAsset.ToString*
 - uid: Luny.Engine.Bridge.LunyAsset.AssetID
@@ -194,11 +194,11 @@ items:
   summary: The native asset reference.
   example: []
   syntax:
-    content: public object NativeAsset { get; }
+    content: public Object NativeAsset { get; }
     parameters: []
     return:
       type: System.Object
-    content.vb: Public ReadOnly Property NativeAsset As Object
+    content.vb: Public ReadOnly Property NativeAsset As [Object]
   overload: Luny.Engine.Bridge.LunyAsset.NativeAsset*
   implements:
   - Luny.Engine.Bridge.ILunyAsset.NativeAsset
@@ -244,12 +244,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Bridge.ILunyAsset
   commentId: T:Luny.Engine.Bridge.ILunyAsset
   parent: Luny.Engine.Bridge
@@ -270,12 +267,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Luny.Engine.Bridge.LunyAsset.#ctor*
   commentId: Overload:Luny.Engine.Bridge.LunyAsset.#ctor
   isExternal: true
@@ -349,10 +343,8 @@ references:
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
@@ -377,12 +369,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyAsset.AssetID*
   commentId: Overload:Luny.Engine.Bridge.LunyAsset.AssetID
   isExternal: true

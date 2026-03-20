@@ -9,18 +9,26 @@ items:
   - LunyScript.Blocks.VariableBlock.Add(Luny.Variable)
   - LunyScript.Blocks.VariableBlock.Add(LunyScript.Blocks.VariableBlock)
   - LunyScript.Blocks.VariableBlock.Dec
+  - LunyScript.Blocks.VariableBlock.Decrement
   - LunyScript.Blocks.VariableBlock.Div(Luny.Variable)
   - LunyScript.Blocks.VariableBlock.Div(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Divide(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Divide(LunyScript.Blocks.VariableBlock)
   - LunyScript.Blocks.VariableBlock.Equals(System.Object)
   - LunyScript.Blocks.VariableBlock.Evaluate(LunyScript.IScriptRuntimeContext)
   - LunyScript.Blocks.VariableBlock.GetHashCode
   - LunyScript.Blocks.VariableBlock.Inc
+  - LunyScript.Blocks.VariableBlock.Increment
   - LunyScript.Blocks.VariableBlock.Mul(Luny.Variable)
   - LunyScript.Blocks.VariableBlock.Mul(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Multiply(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Multiply(LunyScript.Blocks.VariableBlock)
   - LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
   - LunyScript.Blocks.VariableBlock.Set(LunyScript.Blocks.VariableBlock)
   - LunyScript.Blocks.VariableBlock.Sub(Luny.Variable)
   - LunyScript.Blocks.VariableBlock.Sub(LunyScript.Blocks.VariableBlock)
+  - LunyScript.Blocks.VariableBlock.Subtract(Luny.Variable)
+  - LunyScript.Blocks.VariableBlock.Subtract(LunyScript.Blocks.VariableBlock)
   - LunyScript.Blocks.VariableBlock.ToString
   - LunyScript.Blocks.VariableBlock.Toggle
   - LunyScript.Blocks.VariableBlock.op_Addition(Luny.Variable,LunyScript.Blocks.VariableBlock)
@@ -118,25 +126,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator VariableBlock(int)
-  nameWithType: VariableBlock.implicit operator VariableBlock(int)
-  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(int)
+  name: implicit operator VariableBlock(Int32)
+  nameWithType: VariableBlock.implicit operator VariableBlock(Int32)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(System.Int32)
   type: Operator
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static implicit operator VariableBlock(int value)
+    content: public static implicit operator VariableBlock(Int32 value)
     parameters:
     - id: value
       type: System.Int32
     return:
       type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Widening Operator CType(value As Integer) As VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As Int32) As VariableBlock
   overload: LunyScript.Blocks.VariableBlock.op_Implicit*
-  nameWithType.vb: VariableBlock.CType(Integer)
-  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Integer)
-  name.vb: CType(Integer)
+  nameWithType.vb: VariableBlock.CType(Int32)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(System.Int32)
+  name.vb: CType(Int32)
 - uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.Int64)~LunyScript.Blocks.VariableBlock
   commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.Int64)~LunyScript.Blocks.VariableBlock
   id: op_Implicit(System.Int64)~LunyScript.Blocks.VariableBlock
@@ -144,25 +152,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator VariableBlock(long)
-  nameWithType: VariableBlock.implicit operator VariableBlock(long)
-  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(long)
+  name: implicit operator VariableBlock(Int64)
+  nameWithType: VariableBlock.implicit operator VariableBlock(Int64)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(System.Int64)
   type: Operator
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static implicit operator VariableBlock(long value)
+    content: public static implicit operator VariableBlock(Int64 value)
     parameters:
     - id: value
       type: System.Int64
     return:
       type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Widening Operator CType(value As Long) As VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As Int64) As VariableBlock
   overload: LunyScript.Blocks.VariableBlock.op_Implicit*
-  nameWithType.vb: VariableBlock.CType(Long)
-  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Long)
-  name.vb: CType(Long)
+  nameWithType.vb: VariableBlock.CType(Int64)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(System.Int64)
+  name.vb: CType(Int64)
 - uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.Single)~LunyScript.Blocks.VariableBlock
   commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.Single)~LunyScript.Blocks.VariableBlock
   id: op_Implicit(System.Single)~LunyScript.Blocks.VariableBlock
@@ -170,24 +178,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator VariableBlock(float)
-  nameWithType: VariableBlock.implicit operator VariableBlock(float)
-  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(float)
+  name: implicit operator VariableBlock(Single)
+  nameWithType: VariableBlock.implicit operator VariableBlock(Single)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(System.Single)
   type: Operator
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static implicit operator VariableBlock(float value)
+    content: public static implicit operator VariableBlock(Single value)
     parameters:
     - id: value
       type: System.Single
     return:
       type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Widening Operator CType(value As Single) As VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As [Single]) As VariableBlock
   overload: LunyScript.Blocks.VariableBlock.op_Implicit*
   nameWithType.vb: VariableBlock.CType(Single)
-  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Single)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(System.Single)
   name.vb: CType(Single)
 - uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.Double)~LunyScript.Blocks.VariableBlock
   commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.Double)~LunyScript.Blocks.VariableBlock
@@ -196,24 +204,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator VariableBlock(double)
-  nameWithType: VariableBlock.implicit operator VariableBlock(double)
-  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(double)
+  name: implicit operator VariableBlock(Double)
+  nameWithType: VariableBlock.implicit operator VariableBlock(Double)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(System.Double)
   type: Operator
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static implicit operator VariableBlock(double value)
+    content: public static implicit operator VariableBlock(Double value)
     parameters:
     - id: value
       type: System.Double
     return:
       type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Widening Operator CType(value As Double) As VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As [Double]) As VariableBlock
   overload: LunyScript.Blocks.VariableBlock.op_Implicit*
   nameWithType.vb: VariableBlock.CType(Double)
-  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Double)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(System.Double)
   name.vb: CType(Double)
 - uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.Boolean)~LunyScript.Blocks.VariableBlock
   commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.Boolean)~LunyScript.Blocks.VariableBlock
@@ -222,24 +230,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator VariableBlock(bool)
-  nameWithType: VariableBlock.implicit operator VariableBlock(bool)
-  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(bool)
+  name: implicit operator VariableBlock(Boolean)
+  nameWithType: VariableBlock.implicit operator VariableBlock(Boolean)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(System.Boolean)
   type: Operator
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static implicit operator VariableBlock(bool value)
+    content: public static implicit operator VariableBlock(Boolean value)
     parameters:
     - id: value
       type: System.Boolean
     return:
       type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Widening Operator CType(value As Boolean) As VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As [Boolean]) As VariableBlock
   overload: LunyScript.Blocks.VariableBlock.op_Implicit*
   nameWithType.vb: VariableBlock.CType(Boolean)
-  fullName.vb: LunyScript.Blocks.VariableBlock.CType(Boolean)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(System.Boolean)
   name.vb: CType(Boolean)
 - uid: LunyScript.Blocks.VariableBlock.op_Implicit(System.String)~LunyScript.Blocks.VariableBlock
   commentId: M:LunyScript.Blocks.VariableBlock.op_Implicit(System.String)~LunyScript.Blocks.VariableBlock
@@ -248,24 +256,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator VariableBlock(string)
-  nameWithType: VariableBlock.implicit operator VariableBlock(string)
-  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(string)
+  name: implicit operator VariableBlock(String)
+  nameWithType: VariableBlock.implicit operator VariableBlock(String)
+  fullName: LunyScript.Blocks.VariableBlock.implicit operator LunyScript.Blocks.VariableBlock(System.String)
   type: Operator
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static implicit operator VariableBlock(string value)
+    content: public static implicit operator VariableBlock(String value)
     parameters:
     - id: value
       type: System.String
     return:
       type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Widening Operator CType(value As String) As VariableBlock
+    content.vb: Public Shared Widening Operator CType(value As [String]) As VariableBlock
   overload: LunyScript.Blocks.VariableBlock.op_Implicit*
   nameWithType.vb: VariableBlock.CType(String)
-  fullName.vb: LunyScript.Blocks.VariableBlock.CType(String)
+  fullName.vb: LunyScript.Blocks.VariableBlock.CType(System.String)
   name.vb: CType(String)
 - uid: LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,Luny.Variable)
   commentId: M:LunyScript.Blocks.VariableBlock.op_Addition(LunyScript.Blocks.VariableBlock,Luny.Variable)
@@ -1033,13 +1041,13 @@ items:
   namespace: LunyScript.Blocks
   example: []
   syntax:
-    content: protected override bool Evaluate(IScriptRuntimeContext runtimeContext)
+    content: protected override Boolean Evaluate(IScriptRuntimeContext runtimeContext)
     parameters:
     - id: runtimeContext
       type: LunyScript.IScriptRuntimeContext
     return:
       type: System.Boolean
-    content.vb: Protected Overrides Function Evaluate(runtimeContext As IScriptRuntimeContext) As Boolean
+    content.vb: Protected Overrides Function Evaluate(runtimeContext As IScriptRuntimeContext) As [Boolean]
   overridden: LunyScript.Blocks.ConditionBlock.Evaluate(LunyScript.IScriptRuntimeContext)
   overload: LunyScript.Blocks.VariableBlock.Evaluate*
 - uid: LunyScript.Blocks.VariableBlock.Equals(System.Object)
@@ -1049,27 +1057,24 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(object)
-  nameWithType: VariableBlock.Equals(object)
-  fullName: LunyScript.Blocks.VariableBlock.Equals(object)
+  name: Equals(Object)
+  nameWithType: VariableBlock.Equals(Object)
+  fullName: LunyScript.Blocks.VariableBlock.Equals(System.Object)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   example: []
   syntax:
-    content: public override bool Equals(object obj)
+    content: public override Boolean Equals(Object obj)
     parameters:
     - id: obj
       type: System.Object
     return:
       type: System.Boolean
-    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    content.vb: Public Overrides Function Equals(obj As [Object]) As [Boolean]
   overridden: System.Object.Equals(System.Object)
   overload: LunyScript.Blocks.VariableBlock.Equals*
-  nameWithType.vb: VariableBlock.Equals(Object)
-  fullName.vb: LunyScript.Blocks.VariableBlock.Equals(Object)
-  name.vb: Equals(Object)
 - uid: LunyScript.Blocks.VariableBlock.GetHashCode
   commentId: M:LunyScript.Blocks.VariableBlock.GetHashCode
   id: GetHashCode
@@ -1086,10 +1091,10 @@ items:
   namespace: LunyScript.Blocks
   example: []
   syntax:
-    content: public override int GetHashCode()
+    content: public override Int32 GetHashCode()
     return:
       type: System.Int32
-    content.vb: Public Overrides Function GetHashCode() As Integer
+    content.vb: Public Overrides Function GetHashCode() As Int32
   overridden: System.Object.GetHashCode
   overload: LunyScript.Blocks.VariableBlock.GetHashCode*
 - uid: LunyScript.Blocks.VariableBlock.Set(Luny.Variable)
@@ -1382,6 +1387,184 @@ items:
       type: LunyScript.Blocks.ActionBlock
     content.vb: Public Function Toggle() As ActionBlock
   overload: LunyScript.Blocks.VariableBlock.Toggle*
+- uid: LunyScript.Blocks.VariableBlock.Subtract(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Subtract(Luny.Variable)
+  id: Subtract(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Subtract(Variable)
+  nameWithType: VariableBlock.Subtract(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Subtract(Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ActionBlock Subtract(Variable value)
+    parameters:
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Subtract(value As Variable) As ActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Subtract*
+- uid: LunyScript.Blocks.VariableBlock.Subtract(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Subtract(LunyScript.Blocks.VariableBlock)
+  id: Subtract(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Subtract(VariableBlock)
+  nameWithType: VariableBlock.Subtract(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Subtract(LunyScript.Blocks.VariableBlock)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ActionBlock Subtract(VariableBlock value)
+    parameters:
+    - id: value
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Subtract(value As VariableBlock) As ActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Subtract*
+- uid: LunyScript.Blocks.VariableBlock.Multiply(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Multiply(Luny.Variable)
+  id: Multiply(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Variable)
+  nameWithType: VariableBlock.Multiply(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Multiply(Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ActionBlock Multiply(Variable value)
+    parameters:
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Multiply(value As Variable) As ActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Multiply*
+- uid: LunyScript.Blocks.VariableBlock.Multiply(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Multiply(LunyScript.Blocks.VariableBlock)
+  id: Multiply(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Multiply(VariableBlock)
+  nameWithType: VariableBlock.Multiply(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Multiply(LunyScript.Blocks.VariableBlock)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ActionBlock Multiply(VariableBlock value)
+    parameters:
+    - id: value
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Multiply(value As VariableBlock) As ActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Multiply*
+- uid: LunyScript.Blocks.VariableBlock.Divide(Luny.Variable)
+  commentId: M:LunyScript.Blocks.VariableBlock.Divide(Luny.Variable)
+  id: Divide(Luny.Variable)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Divide(Variable)
+  nameWithType: VariableBlock.Divide(Variable)
+  fullName: LunyScript.Blocks.VariableBlock.Divide(Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ActionBlock Divide(Variable value)
+    parameters:
+    - id: value
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Divide(value As Variable) As ActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Divide*
+- uid: LunyScript.Blocks.VariableBlock.Divide(LunyScript.Blocks.VariableBlock)
+  commentId: M:LunyScript.Blocks.VariableBlock.Divide(LunyScript.Blocks.VariableBlock)
+  id: Divide(LunyScript.Blocks.VariableBlock)
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Divide(VariableBlock)
+  nameWithType: VariableBlock.Divide(VariableBlock)
+  fullName: LunyScript.Blocks.VariableBlock.Divide(LunyScript.Blocks.VariableBlock)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ActionBlock Divide(VariableBlock value)
+    parameters:
+    - id: value
+      type: LunyScript.Blocks.VariableBlock
+    return:
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Divide(value As VariableBlock) As ActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Divide*
+- uid: LunyScript.Blocks.VariableBlock.Increment
+  commentId: M:LunyScript.Blocks.VariableBlock.Increment
+  id: Increment
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Increment()
+  nameWithType: VariableBlock.Increment()
+  fullName: LunyScript.Blocks.VariableBlock.Increment()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ActionBlock Increment()
+    return:
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Increment() As ActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Increment*
+- uid: LunyScript.Blocks.VariableBlock.Decrement
+  commentId: M:LunyScript.Blocks.VariableBlock.Decrement
+  id: Decrement
+  parent: LunyScript.Blocks.VariableBlock
+  langs:
+  - csharp
+  - vb
+  name: Decrement()
+  nameWithType: VariableBlock.Decrement()
+  fullName: LunyScript.Blocks.VariableBlock.Decrement()
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Blocks
+  syntax:
+    content: public ActionBlock Decrement()
+    return:
+      type: LunyScript.Blocks.ActionBlock
+    content.vb: Public Function Decrement() As ActionBlock
+  overload: LunyScript.Blocks.VariableBlock.Decrement*
 - uid: LunyScript.Blocks.VariableBlock.ToString
   commentId: M:LunyScript.Blocks.VariableBlock.ToString
   id: ToString
@@ -1398,10 +1581,10 @@ items:
   namespace: LunyScript.Blocks
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: LunyScript.Blocks.VariableBlock.ToString*
 - uid: LunyScript.Blocks.VariableBlock.#ctor
@@ -1457,12 +1640,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.Blocks.ScriptBlock
   commentId: T:LunyScript.Blocks.ScriptBlock
   parent: LunyScript.Blocks
@@ -1534,67 +1714,49 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System.Single
   commentId: T:System.Single
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: System.Double
   commentId: T:System.Double
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: System.String
   commentId: T:System.String
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Blocks.VariableBlock.op_Addition*
   commentId: Overload:LunyScript.Blocks.VariableBlock.op_Addition
   isExternal: true
@@ -1872,19 +2034,16 @@ references:
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
-  name: Equals(object)
-  nameWithType: object.Equals(object)
-  fullName: object.Equals(object)
-  nameWithType.vb: Object.Equals(Object)
-  fullName.vb: Object.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
     isExternal: true
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -1908,10 +2067,8 @@ references:
   parent: System.Object
   isExternal: true
   name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
@@ -1995,15 +2152,48 @@ references:
   name: Toggle
   nameWithType: VariableBlock.Toggle
   fullName: LunyScript.Blocks.VariableBlock.Toggle
+- uid: LunyScript.Blocks.VariableBlock.Subtract*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Subtract
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Subtract_Luny_Variable_
+  name: Subtract
+  nameWithType: VariableBlock.Subtract
+  fullName: LunyScript.Blocks.VariableBlock.Subtract
+- uid: LunyScript.Blocks.VariableBlock.Multiply*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Multiply
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Multiply_Luny_Variable_
+  name: Multiply
+  nameWithType: VariableBlock.Multiply
+  fullName: LunyScript.Blocks.VariableBlock.Multiply
+- uid: LunyScript.Blocks.VariableBlock.Divide*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Divide
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Divide_Luny_Variable_
+  name: Divide
+  nameWithType: VariableBlock.Divide
+  fullName: LunyScript.Blocks.VariableBlock.Divide
+- uid: LunyScript.Blocks.VariableBlock.Increment*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Increment
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Increment
+  name: Increment
+  nameWithType: VariableBlock.Increment
+  fullName: LunyScript.Blocks.VariableBlock.Increment
+- uid: LunyScript.Blocks.VariableBlock.Decrement*
+  commentId: Overload:LunyScript.Blocks.VariableBlock.Decrement
+  isExternal: true
+  href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Decrement
+  name: Decrement
+  nameWithType: VariableBlock.Decrement
+  fullName: LunyScript.Blocks.VariableBlock.Decrement
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString

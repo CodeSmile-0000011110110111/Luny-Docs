@@ -173,10 +173,10 @@ items:
   summary: Provides the extension mapping for different asset types.
   example: []
   syntax:
-    content: protected abstract IReadOnlyDictionary<Type, string[]> GetExtensionMapping()
+    content: protected abstract IReadOnlyDictionary<Type, String[]> GetExtensionMapping()
     return:
       type: System.Collections.Generic.IReadOnlyDictionary{System.Type,System.String[]}
-    content.vb: Protected MustOverride Function GetExtensionMapping() As IReadOnlyDictionary(Of Type, String())
+    content.vb: Protected MustOverride Function GetExtensionMapping() As IReadOnlyDictionary(Of Type, [String]())
   overload: Luny.Engine.Services.LunyAssetServiceBase.GetExtensionMapping*
 - uid: Luny.Engine.Services.LunyAssetServiceBase.GetPlaceholder``1(Luny.Engine.Bridge.LunyAssetPath)
   commentId: M:Luny.Engine.Services.LunyAssetServiceBase.GetPlaceholder``1(Luny.Engine.Bridge.LunyAssetPath)
@@ -271,12 +271,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Services.LunyEngineServiceBase
   commentId: T:Luny.Engine.Services.LunyEngineServiceBase
   parent: Luny.Engine.Services
@@ -666,11 +663,11 @@ references:
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyDictionary`2
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
-  name: IReadOnlyDictionary<Type, string[]>
-  nameWithType: IReadOnlyDictionary<Type, string[]>
-  fullName: System.Collections.Generic.IReadOnlyDictionary<System.Type, string[]>
+  name: IReadOnlyDictionary<Type, String[]>
+  nameWithType: IReadOnlyDictionary<Type, String[]>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.Type, System.String[]>
   nameWithType.vb: IReadOnlyDictionary(Of Type, String())
-  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of System.Type, String())
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of System.Type, System.String())
   name.vb: IReadOnlyDictionary(Of Type, String())
   spec.csharp:
   - uid: System.Collections.Generic.IReadOnlyDictionary`2
@@ -685,7 +682,7 @@ references:
   - name: ','
   - name: " "
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '['

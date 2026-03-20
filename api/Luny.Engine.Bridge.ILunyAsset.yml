@@ -118,11 +118,11 @@ items:
   summary: The native asset reference.
   example: []
   syntax:
-    content: object NativeAsset { get; }
+    content: Object NativeAsset { get; }
     parameters: []
     return:
       type: System.Object
-    content.vb: ReadOnly Property NativeAsset As Object
+    content.vb: ReadOnly Property NativeAsset As [Object]
   overload: Luny.Engine.Bridge.ILunyAsset.NativeAsset*
 references:
 - uid: Luny.Engine.Bridge
@@ -220,12 +220,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true

@@ -30,9 +30,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Action(string)
-  nameWithType: WhenInputEventBuilder.Action(string)
-  fullName: LunyScript.Api.WhenInputEventBuilder.Action(string)
+  name: Action(String)
+  nameWithType: WhenInputEventBuilder.Action(String)
+  fullName: LunyScript.Api.WhenInputEventBuilder.Action(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -40,7 +40,7 @@ items:
   summary: Input Action Map events.
   example: []
   syntax:
-    content: public WhenInputActionBuilder Action(string actionName)
+    content: public WhenInputActionBuilder Action(String actionName)
     parameters:
     - id: actionName
       type: System.String
@@ -48,11 +48,8 @@ items:
     return:
       type: LunyScript.Api.WhenInputActionBuilder
       description: ''
-    content.vb: Public Function Action(actionName As String) As WhenInputActionBuilder
+    content.vb: Public Function Action(actionName As [String]) As WhenInputActionBuilder
   overload: LunyScript.Api.WhenInputEventBuilder.Action*
-  nameWithType.vb: WhenInputEventBuilder.Action(String)
-  fullName.vb: LunyScript.Api.WhenInputEventBuilder.Action(String)
-  name.vb: Action(String)
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -86,12 +83,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -99,7 +93,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -183,12 +177,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Api.WhenInputActionBuilder
   commentId: T:LunyScript.Api.WhenInputActionBuilder
   parent: LunyScript.Api

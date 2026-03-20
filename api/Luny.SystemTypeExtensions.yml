@@ -37,7 +37,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: 'public static bool HasAttribute<T>(this Type type) where T : Attribute'
+    content: 'public static Boolean HasAttribute<T>(this Type type) where T : Attribute'
     parameters:
     - id: type
       type: System.Type
@@ -45,7 +45,7 @@ items:
     - id: T
     return:
       type: System.Boolean
-    content.vb: Public Shared Function HasAttribute(Of T As Attribute)(type As Type) As Boolean
+    content.vb: Public Shared Function HasAttribute(Of T As Attribute)(type As Type) As [Boolean]
   overload: Luny.SystemTypeExtensions.HasAttribute*
   nameWithType.vb: SystemTypeExtensions.HasAttribute(Of T)(Type)
   fullName.vb: Luny.SystemTypeExtensions.HasAttribute(Of T)(System.Type)
@@ -62,12 +62,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -95,9 +92,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

@@ -62,22 +62,22 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyRef(string)
-  nameWithType: LunyRef<T>.LunyRef(string)
-  fullName: Luny.Engine.Bridge.LunyRef<T>.LunyRef(string)
+  name: LunyRef(String)
+  nameWithType: LunyRef<T>.LunyRef(String)
+  fullName: Luny.Engine.Bridge.LunyRef<T>.LunyRef(System.String)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected LunyRef(string query)
+    content: protected LunyRef(String query)
     parameters:
     - id: query
       type: System.String
-    content.vb: Protected Sub New(query As String)
+    content.vb: Protected Sub New(query As [String])
   overload: Luny.Engine.Bridge.LunyRef`1.#ctor*
   nameWithType.vb: LunyRef(Of T).New(String)
-  fullName.vb: Luny.Engine.Bridge.LunyRef(Of T).New(String)
+  fullName.vb: Luny.Engine.Bridge.LunyRef(Of T).New(System.String)
   name.vb: New(String)
 - uid: Luny.Engine.Bridge.LunyRef`1.#ctor(`0)
   commentId: M:Luny.Engine.Bridge.LunyRef`1.#ctor(`0)
@@ -110,15 +110,15 @@ items:
   langs:
   - csharp
   - vb
-  name: ResolveObject(string)
-  nameWithType: LunyRef<T>.ResolveObject(string)
-  fullName: Luny.Engine.Bridge.LunyRef<T>.ResolveObject(string)
+  name: ResolveObject(String)
+  nameWithType: LunyRef<T>.ResolveObject(String)
+  fullName: Luny.Engine.Bridge.LunyRef<T>.ResolveObject(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected abstract T ResolveObject(string query)
+    content: protected abstract T ResolveObject(String query)
     parameters:
     - id: query
       type: System.String
@@ -128,11 +128,10 @@ items:
         arguments: []
     return:
       type: '{T}'
-    content.vb: Protected MustOverride Function ResolveObject(query As String) As T
+    content.vb: Protected MustOverride Function ResolveObject(query As [String]) As T
   overload: Luny.Engine.Bridge.LunyRef`1.ResolveObject*
   nameWithType.vb: LunyRef(Of T).ResolveObject(String)
-  fullName.vb: Luny.Engine.Bridge.LunyRef(Of T).ResolveObject(String)
-  name.vb: ResolveObject(String)
+  fullName.vb: Luny.Engine.Bridge.LunyRef(Of T).ResolveObject(System.String)
 - uid: Luny.Engine.Bridge.LunyRef`1.IsValid(`0)
   commentId: M:Luny.Engine.Bridge.LunyRef`1.IsValid(`0)
   id: IsValid(`0)
@@ -148,13 +147,13 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected abstract bool IsValid(T value)
+    content: protected abstract Boolean IsValid(T value)
     parameters:
     - id: value
       type: '{T}'
     return:
       type: System.Boolean
-    content.vb: Protected MustOverride Function IsValid(value As T) As Boolean
+    content.vb: Protected MustOverride Function IsValid(value As T) As [Boolean]
   overload: Luny.Engine.Bridge.LunyRef`1.IsValid*
   nameWithType.vb: LunyRef(Of T).IsValid(T)
   fullName.vb: Luny.Engine.Bridge.LunyRef(Of T).IsValid(T)
@@ -223,12 +222,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -308,12 +304,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: '{T}'
   commentId: '!:T'
   definition: T
@@ -347,12 +340,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Bridge.LunyRef`1.Value*
   commentId: Overload:Luny.Engine.Bridge.LunyRef`1.Value
   isExternal: true

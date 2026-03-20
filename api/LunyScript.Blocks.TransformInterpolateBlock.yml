@@ -57,10 +57,10 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: protected readonly float Speed
+    content: protected readonly Single Speed
     return:
       type: System.Single
-    content.vb: Protected ReadOnly Speed As Single
+    content.vb: Protected ReadOnly Speed As [Single]
 - uid: LunyScript.Blocks.TransformInterpolateBlock.DeadZone
   commentId: F:LunyScript.Blocks.TransformInterpolateBlock.DeadZone
   id: DeadZone
@@ -76,10 +76,10 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: protected readonly float DeadZone
+    content: protected readonly Single DeadZone
     return:
       type: System.Single
-    content.vb: Protected ReadOnly DeadZone As Single
+    content.vb: Protected ReadOnly DeadZone As [Single]
 - uid: LunyScript.Blocks.TransformInterpolateBlock.AxisLock
   commentId: F:LunyScript.Blocks.TransformInterpolateBlock.AxisLock
   id: AxisLock
@@ -114,10 +114,10 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: protected readonly float Responsiveness
+    content: protected readonly Single Responsiveness
     return:
       type: System.Single
-    content.vb: Protected ReadOnly Responsiveness As Single
+    content.vb: Protected ReadOnly Responsiveness As [Single]
 - uid: LunyScript.Blocks.TransformInterpolateBlock.#ctor(System.Double,System.Double,Luny.Engine.Bridge.LunyVector3,System.Double)
   commentId: M:LunyScript.Blocks.TransformInterpolateBlock.#ctor(System.Double,System.Double,Luny.Engine.Bridge.LunyVector3,System.Double)
   id: '#ctor(System.Double,System.Double,Luny.Engine.Bridge.LunyVector3,System.Double)'
@@ -125,15 +125,15 @@ items:
   langs:
   - csharp
   - vb
-  name: TransformInterpolateBlock(double, double, LunyVector3, double)
-  nameWithType: TransformInterpolateBlock.TransformInterpolateBlock(double, double, LunyVector3, double)
-  fullName: LunyScript.Blocks.TransformInterpolateBlock.TransformInterpolateBlock(double, double, Luny.Engine.Bridge.LunyVector3, double)
+  name: TransformInterpolateBlock(Double, Double, LunyVector3, Double)
+  nameWithType: TransformInterpolateBlock.TransformInterpolateBlock(Double, Double, LunyVector3, Double)
+  fullName: LunyScript.Blocks.TransformInterpolateBlock.TransformInterpolateBlock(System.Double, System.Double, Luny.Engine.Bridge.LunyVector3, System.Double)
   type: Constructor
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: protected TransformInterpolateBlock(double speed, double deadZone, LunyVector3 axisLock, double responsiveness)
+    content: protected TransformInterpolateBlock(Double speed, Double deadZone, LunyVector3 axisLock, Double responsiveness)
     parameters:
     - id: speed
       type: System.Double
@@ -143,10 +143,10 @@ items:
       type: Luny.Engine.Bridge.LunyVector3
     - id: responsiveness
       type: System.Double
-    content.vb: Protected Sub New(speed As Double, deadZone As Double, axisLock As LunyVector3, responsiveness As Double)
+    content.vb: Protected Sub New(speed As [Double], deadZone As [Double], axisLock As LunyVector3, responsiveness As [Double])
   overload: LunyScript.Blocks.TransformInterpolateBlock.#ctor*
   nameWithType.vb: TransformInterpolateBlock.New(Double, Double, LunyVector3, Double)
-  fullName.vb: LunyScript.Blocks.TransformInterpolateBlock.New(Double, Double, Luny.Engine.Bridge.LunyVector3, Double)
+  fullName.vb: LunyScript.Blocks.TransformInterpolateBlock.New(System.Double, System.Double, Luny.Engine.Bridge.LunyVector3, System.Double)
   name.vb: New(Double, Double, LunyVector3, Double)
 - uid: LunyScript.Blocks.TransformInterpolateBlock.ComputeStep
   commentId: M:LunyScript.Blocks.TransformInterpolateBlock.ComputeStep
@@ -165,10 +165,10 @@ items:
   summary: Returns Speed * deltaTime * Responsiveness, ready to use as a step or lerp t value.
   example: []
   syntax:
-    content: protected float ComputeStep()
+    content: protected Single ComputeStep()
     return:
       type: System.Single
-    content.vb: Protected Function ComputeStep() As Single
+    content.vb: Protected Function ComputeStep() As [Single]
   overload: LunyScript.Blocks.TransformInterpolateBlock.ComputeStep*
 - uid: LunyScript.Blocks.TransformInterpolateBlock.TowardsToString
   commentId: M:LunyScript.Blocks.TransformInterpolateBlock.TowardsToString
@@ -185,10 +185,10 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: protected string TowardsToString()
+    content: protected String TowardsToString()
     return:
       type: System.String
-    content.vb: Protected Function TowardsToString() As String
+    content.vb: Protected Function TowardsToString() As [String]
   overload: LunyScript.Blocks.TransformInterpolateBlock.TowardsToString*
 references:
 - uid: LunyScript.Blocks
@@ -222,12 +222,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.Blocks.ScriptBlock
   commentId: T:LunyScript.Blocks.ScriptBlock
   parent: LunyScript.Blocks
@@ -331,12 +328,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: Luny.Engine.Bridge.LunyVector3
   commentId: T:Luny.Engine.Bridge.LunyVector3
   parent: Luny.Engine.Bridge
@@ -397,12 +391,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: LunyScript.Blocks.TransformInterpolateBlock.ComputeStep*
   commentId: Overload:LunyScript.Blocks.TransformInterpolateBlock.ComputeStep
   isExternal: true
@@ -422,9 +413,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

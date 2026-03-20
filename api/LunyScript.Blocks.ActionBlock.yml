@@ -56,13 +56,13 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static bool IsNullOrEmpty(ActionBlock[] blocks)
+    content: public static Boolean IsNullOrEmpty(ActionBlock[] blocks)
     parameters:
     - id: blocks
       type: LunyScript.Blocks.ActionBlock[]
     return:
       type: System.Boolean
-    content.vb: Public Shared Function IsNullOrEmpty(blocks As ActionBlock()) As Boolean
+    content.vb: Public Shared Function IsNullOrEmpty(blocks As ActionBlock()) As [Boolean]
   overload: LunyScript.Blocks.ActionBlock.IsNullOrEmpty*
   nameWithType.vb: ActionBlock.IsNullOrEmpty(ActionBlock())
   fullName.vb: LunyScript.Blocks.ActionBlock.IsNullOrEmpty(LunyScript.Blocks.ActionBlock())
@@ -141,12 +141,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.Blocks.ScriptBlock
   commentId: T:LunyScript.Blocks.ScriptBlock
   parent: LunyScript.Blocks
@@ -205,12 +202,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: LunyScript.Blocks.ActionBlock.Execute*
   commentId: Overload:LunyScript.Blocks.ActionBlock.Execute
   isExternal: true

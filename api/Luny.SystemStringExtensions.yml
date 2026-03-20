@@ -32,9 +32,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ToForwardSlashes(string)
-  nameWithType: SystemStringExtensions.ToForwardSlashes(string)
-  fullName: Luny.SystemStringExtensions.ToForwardSlashes(string)
+  name: ToForwardSlashes(String)
+  nameWithType: SystemStringExtensions.ToForwardSlashes(String)
+  fullName: Luny.SystemStringExtensions.ToForwardSlashes(System.String)
   type: Method
   assemblies:
   - Luny
@@ -46,7 +46,7 @@ items:
     Uses IndexOf() and Replace() which are both SIMD-optimized.
   example: []
   syntax:
-    content: public static string ToForwardSlashes(this string str)
+    content: public static String ToForwardSlashes(this String str)
     parameters:
     - id: str
       type: System.String
@@ -54,11 +54,8 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Shared Function ToForwardSlashes(str As String) As String
+    content.vb: Public Shared Function ToForwardSlashes(str As [String]) As [String]
   overload: Luny.SystemStringExtensions.ToForwardSlashes*
-  nameWithType.vb: SystemStringExtensions.ToForwardSlashes(String)
-  fullName.vb: Luny.SystemStringExtensions.ToForwardSlashes(String)
-  name.vb: ToForwardSlashes(String)
 - uid: Luny.SystemStringExtensions.IsValidCSharpIdentifier(System.String,System.Boolean,System.Boolean)
   commentId: M:Luny.SystemStringExtensions.IsValidCSharpIdentifier(System.String,System.Boolean,System.Boolean)
   id: IsValidCSharpIdentifier(System.String,System.Boolean,System.Boolean)
@@ -67,9 +64,9 @@ items:
   langs:
   - csharp
   - vb
-  name: IsValidCSharpIdentifier(string, bool, bool)
-  nameWithType: SystemStringExtensions.IsValidCSharpIdentifier(string, bool, bool)
-  fullName: Luny.SystemStringExtensions.IsValidCSharpIdentifier(string, bool, bool)
+  name: IsValidCSharpIdentifier(String, Boolean, Boolean)
+  nameWithType: SystemStringExtensions.IsValidCSharpIdentifier(String, Boolean, Boolean)
+  fullName: Luny.SystemStringExtensions.IsValidCSharpIdentifier(System.String, System.Boolean, System.Boolean)
   type: Method
   assemblies:
   - Luny
@@ -80,7 +77,7 @@ items:
     It may not catch all edge cases, but 99% of them.
   example: []
   syntax:
-    content: public static bool IsValidCSharpIdentifier(this string str, bool allowNamespaces = false, bool allowGenerics = false)
+    content: public static Boolean IsValidCSharpIdentifier(this String str, Boolean allowNamespaces = false, Boolean allowGenerics = false)
     parameters:
     - id: str
       type: System.String
@@ -93,11 +90,8 @@ items:
     return:
       type: System.Boolean
       description: ''
-    content.vb: Public Shared Function IsValidCSharpIdentifier(str As String, allowNamespaces As Boolean = False, allowGenerics As Boolean = False) As Boolean
+    content.vb: Public Shared Function IsValidCSharpIdentifier(str As [String], allowNamespaces As [Boolean] = False, allowGenerics As [Boolean] = False) As [Boolean]
   overload: Luny.SystemStringExtensions.IsValidCSharpIdentifier*
-  nameWithType.vb: SystemStringExtensions.IsValidCSharpIdentifier(String, Boolean, Boolean)
-  fullName.vb: Luny.SystemStringExtensions.IsValidCSharpIdentifier(String, Boolean, Boolean)
-  name.vb: IsValidCSharpIdentifier(String, Boolean, Boolean)
 - uid: Luny.SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars(System.String,System.Char)
   commentId: M:Luny.SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars(System.String,System.Char)
   id: ReplaceIllegalCSharpIdentifierChars(System.String,System.Char)
@@ -106,9 +100,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ReplaceIllegalCSharpIdentifierChars(string, char)
-  nameWithType: SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars(string, char)
-  fullName: Luny.SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars(string, char)
+  name: ReplaceIllegalCSharpIdentifierChars(String, Char)
+  nameWithType: SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars(String, Char)
+  fullName: Luny.SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars(System.String, System.Char)
   type: Method
   assemblies:
   - Luny
@@ -119,7 +113,7 @@ items:
     If the string matches a known C# keyword, it gets prefixed with '@' to make it a legal identifier.
   example: []
   syntax:
-    content: public static string ReplaceIllegalCSharpIdentifierChars(this string str, char replacement = '_')
+    content: public static String ReplaceIllegalCSharpIdentifierChars(this String str, Char replacement = '_')
     parameters:
     - id: str
       type: System.String
@@ -130,11 +124,8 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Shared Function ReplaceIllegalCSharpIdentifierChars(str As String, replacement As Char = "_"c) As String
+    content.vb: Public Shared Function ReplaceIllegalCSharpIdentifierChars(str As [String], replacement As [Char] = "_"c) As [String]
   overload: Luny.SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars*
-  nameWithType.vb: SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars(String, Char)
-  fullName.vb: Luny.SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars(String, Char)
-  name.vb: ReplaceIllegalCSharpIdentifierChars(String, Char)
 - uid: Luny.SystemStringExtensions.SanitizeIdentifier(System.String)
   commentId: M:Luny.SystemStringExtensions.SanitizeIdentifier(System.String)
   id: SanitizeIdentifier(System.String)
@@ -143,9 +134,9 @@ items:
   langs:
   - csharp
   - vb
-  name: SanitizeIdentifier(string)
-  nameWithType: SystemStringExtensions.SanitizeIdentifier(string)
-  fullName: Luny.SystemStringExtensions.SanitizeIdentifier(string)
+  name: SanitizeIdentifier(String)
+  nameWithType: SystemStringExtensions.SanitizeIdentifier(String)
+  fullName: Luny.SystemStringExtensions.SanitizeIdentifier(System.String)
   type: Method
   assemblies:
   - Luny
@@ -153,7 +144,7 @@ items:
   summary: Trims string and replaces illegal C# identifier characters and prints a Debug.LogWarning if it had to be altered.
   example: []
   syntax:
-    content: public static string SanitizeIdentifier(this string identifier)
+    content: public static String SanitizeIdentifier(this String identifier)
     parameters:
     - id: identifier
       type: System.String
@@ -161,11 +152,8 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Shared Function SanitizeIdentifier(identifier As String) As String
+    content.vb: Public Shared Function SanitizeIdentifier(identifier As [String]) As [String]
   overload: Luny.SystemStringExtensions.SanitizeIdentifier*
-  nameWithType.vb: SystemStringExtensions.SanitizeIdentifier(String)
-  fullName.vb: Luny.SystemStringExtensions.SanitizeIdentifier(String)
-  name.vb: SanitizeIdentifier(String)
 references:
 - uid: Luny
   commentId: N:Luny
@@ -178,12 +166,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -203,12 +188,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.SystemStringExtensions.IsValidCSharpIdentifier*
   commentId: Overload:Luny.SystemStringExtensions.IsValidCSharpIdentifier
   isExternal: true
@@ -221,12 +203,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars*
   commentId: Overload:Luny.SystemStringExtensions.ReplaceIllegalCSharpIdentifierChars
   isExternal: true
@@ -239,12 +218,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.char
-  name: char
-  nameWithType: char
-  fullName: char
-  nameWithType.vb: Char
-  fullName.vb: Char
-  name.vb: Char
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
 - uid: Luny.SystemStringExtensions.SanitizeIdentifier*
   commentId: Overload:Luny.SystemStringExtensions.SanitizeIdentifier
   isExternal: true

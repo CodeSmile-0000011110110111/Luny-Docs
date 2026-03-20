@@ -49,22 +49,22 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyScriptException(string)
-  nameWithType: LunyScriptException.LunyScriptException(string)
-  fullName: LunyScript.LunyScriptException.LunyScriptException(string)
+  name: LunyScriptException(String)
+  nameWithType: LunyScriptException.LunyScriptException(String)
+  fullName: LunyScript.LunyScriptException.LunyScriptException(System.String)
   type: Constructor
   assemblies:
   - LunyScript
   namespace: LunyScript
   syntax:
-    content: public LunyScriptException(string message)
+    content: public LunyScriptException(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Public Sub New(message As String)
+    content.vb: Public Sub New(message As [String])
   overload: LunyScript.LunyScriptException.#ctor*
   nameWithType.vb: LunyScriptException.New(String)
-  fullName.vb: LunyScript.LunyScriptException.New(String)
+  fullName.vb: LunyScript.LunyScriptException.New(System.String)
   name.vb: New(String)
 - uid: LunyScript.LunyScriptException.#ctor(System.String,System.Exception)
   commentId: M:LunyScript.LunyScriptException.#ctor(System.String,System.Exception)
@@ -73,24 +73,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyScriptException(string, Exception)
-  nameWithType: LunyScriptException.LunyScriptException(string, Exception)
-  fullName: LunyScript.LunyScriptException.LunyScriptException(string, System.Exception)
+  name: LunyScriptException(String, Exception)
+  nameWithType: LunyScriptException.LunyScriptException(String, Exception)
+  fullName: LunyScript.LunyScriptException.LunyScriptException(System.String, System.Exception)
   type: Constructor
   assemblies:
   - LunyScript
   namespace: LunyScript
   syntax:
-    content: public LunyScriptException(string message, Exception innerException)
+    content: public LunyScriptException(String message, Exception innerException)
     parameters:
     - id: message
       type: System.String
     - id: innerException
       type: System.Exception
-    content.vb: Public Sub New(message As String, innerException As Exception)
+    content.vb: Public Sub New(message As [String], innerException As Exception)
   overload: LunyScript.LunyScriptException.#ctor*
   nameWithType.vb: LunyScriptException.New(String, Exception)
-  fullName.vb: LunyScript.LunyScriptException.New(String, System.Exception)
+  fullName.vb: LunyScript.LunyScriptException.New(System.String, System.Exception)
   name.vb: New(String, Exception)
 references:
 - uid: LunyScript
@@ -104,12 +104,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.Exception
   commentId: T:System.Exception
   parent: System
@@ -380,9 +377,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

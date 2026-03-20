@@ -52,10 +52,10 @@ items:
     -1 if time service not available.
   example: []
   syntax:
-    content: public long FrameCount
+    content: public Int64 FrameCount
     return:
       type: System.Int64
-    content.vb: Public FrameCount As Long
+    content.vb: Public FrameCount As Int64
 - uid: Luny.LogEntry.ElapsedSeconds
   commentId: F:Luny.LogEntry.ElapsedSeconds
   id: ElapsedSeconds
@@ -76,10 +76,10 @@ items:
     -1.0 if time service not available.
   example: []
   syntax:
-    content: public double ElapsedSeconds
+    content: public Double ElapsedSeconds
     return:
       type: System.Double
-    content.vb: Public ElapsedSeconds As Double
+    content.vb: Public ElapsedSeconds As [Double]
 - uid: Luny.LogEntry.Level
   commentId: F:Luny.LogEntry.Level
   id: Level
@@ -118,10 +118,10 @@ items:
   summary: The log message content.
   example: []
   syntax:
-    content: public string Message
+    content: public String Message
     return:
       type: System.String
-    content.vb: Public Message As String
+    content.vb: Public Message As [String]
 - uid: Luny.LogEntry.Context
   commentId: F:Luny.LogEntry.Context
   id: Context
@@ -139,10 +139,10 @@ items:
   summary: Context type name that generated this log (e.g., "LunyScriptRunner", "LogMessageBlock").
   example: []
   syntax:
-    content: public string Context
+    content: public String Context
     return:
       type: System.String
-    content.vb: Public Context As String
+    content.vb: Public Context As [String]
 - uid: Luny.LogEntry.ToString
   commentId: M:Luny.LogEntry.ToString
   id: ToString
@@ -159,10 +159,10 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.ValueType.ToString
   overload: Luny.LogEntry.ToString*
 references:
@@ -178,12 +178,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -191,7 +188,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -246,23 +243,17 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System.Double
   commentId: T:System.Double
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.LogLevel
   commentId: T:Luny.LogLevel
   parent: Luny
@@ -276,12 +267,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType

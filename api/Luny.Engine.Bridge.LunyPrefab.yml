@@ -42,24 +42,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyPrefab(object, LunyAssetPath)
-  nameWithType: LunyPrefab.LunyPrefab(object, LunyAssetPath)
-  fullName: Luny.Engine.Bridge.LunyPrefab.LunyPrefab(object, Luny.Engine.Bridge.LunyAssetPath)
+  name: LunyPrefab(Object, LunyAssetPath)
+  nameWithType: LunyPrefab.LunyPrefab(Object, LunyAssetPath)
+  fullName: Luny.Engine.Bridge.LunyPrefab.LunyPrefab(System.Object, Luny.Engine.Bridge.LunyAssetPath)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: protected LunyPrefab(object nativePrefabAsset, LunyAssetPath assetPath)
+    content: protected LunyPrefab(Object nativePrefabAsset, LunyAssetPath assetPath)
     parameters:
     - id: nativePrefabAsset
       type: System.Object
     - id: assetPath
       type: Luny.Engine.Bridge.LunyAssetPath
-    content.vb: Protected Sub New(nativePrefabAsset As Object, assetPath As LunyAssetPath)
+    content.vb: Protected Sub New(nativePrefabAsset As [Object], assetPath As LunyAssetPath)
   overload: Luny.Engine.Bridge.LunyPrefab.#ctor*
   nameWithType.vb: LunyPrefab.New(Object, LunyAssetPath)
-  fullName.vb: Luny.Engine.Bridge.LunyPrefab.New(Object, Luny.Engine.Bridge.LunyAssetPath)
+  fullName.vb: Luny.Engine.Bridge.LunyPrefab.New(System.Object, Luny.Engine.Bridge.LunyAssetPath)
   name.vb: New(Object, LunyAssetPath)
 - uid: Luny.Engine.Bridge.LunyPrefab.Instantiate``1(Luny.Engine.Bridge.ILunyObject)
   commentId: M:Luny.Engine.Bridge.LunyPrefab.Instantiate``1(Luny.Engine.Bridge.ILunyObject)
@@ -131,12 +131,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Bridge.LunyAsset
   commentId: T:Luny.Engine.Bridge.LunyAsset
   parent: Luny.Engine.Bridge

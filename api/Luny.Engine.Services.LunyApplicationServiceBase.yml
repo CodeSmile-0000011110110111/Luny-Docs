@@ -46,9 +46,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Quit(int)
-  nameWithType: LunyApplicationServiceBase.Quit(int)
-  fullName: Luny.Engine.Services.LunyApplicationServiceBase.Quit(int)
+  name: Quit(Int32)
+  nameWithType: LunyApplicationServiceBase.Quit(Int32)
+  fullName: Luny.Engine.Services.LunyApplicationServiceBase.Quit(System.Int32)
   type: Method
   assemblies:
   - Luny
@@ -56,18 +56,15 @@ items:
   summary: Quits the application with optional exit code.
   example: []
   syntax:
-    content: public abstract void Quit(int exitCode = 0)
+    content: public abstract void Quit(Int32 exitCode = 0)
     parameters:
     - id: exitCode
       type: System.Int32
       description: 'Exit code (default: 0)'
-    content.vb: Public MustOverride Sub Quit(exitCode As Integer = 0)
+    content.vb: Public MustOverride Sub Quit(exitCode As Int32 = 0)
   overload: Luny.Engine.Services.LunyApplicationServiceBase.Quit*
   implements:
   - Luny.Engine.Services.ILunyApplicationService.Quit(System.Int32)
-  nameWithType.vb: LunyApplicationServiceBase.Quit(Integer)
-  fullName.vb: Luny.Engine.Services.LunyApplicationServiceBase.Quit(Integer)
-  name.vb: Quit(Integer)
 - uid: Luny.Engine.Services.LunyApplicationServiceBase.#ctor
   commentId: M:Luny.Engine.Services.LunyApplicationServiceBase.#ctor
   id: '#ctor'
@@ -106,11 +103,11 @@ items:
   summary: True if running in the editor.
   example: []
   syntax:
-    content: public abstract bool IsEditor { get; }
+    content: public abstract Boolean IsEditor { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public MustOverride ReadOnly Property IsEditor As Boolean
+    content.vb: Public MustOverride ReadOnly Property IsEditor As [Boolean]
   overload: Luny.Engine.Services.LunyApplicationServiceBase.IsEditor*
   implements:
   - Luny.Engine.Services.ILunyApplicationService.IsEditor
@@ -131,11 +128,11 @@ items:
   summary: True if the application is playing (not paused in editor).
   example: []
   syntax:
-    content: public abstract bool IsPlaying { get; }
+    content: public abstract Boolean IsPlaying { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public MustOverride ReadOnly Property IsPlaying As Boolean
+    content.vb: Public MustOverride ReadOnly Property IsPlaying As [Boolean]
   overload: Luny.Engine.Services.LunyApplicationServiceBase.IsPlaying*
   implements:
   - Luny.Engine.Services.ILunyApplicationService.IsPlaying
@@ -181,12 +178,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Services.LunyEngineServiceBase
   commentId: T:Luny.Engine.Services.LunyEngineServiceBase
   parent: Luny.Engine.Services
@@ -406,12 +400,9 @@ references:
   parent: Luny.Engine.Services.ILunyApplicationService
   isExternal: true
   href: Luny.Engine.Services.ILunyApplicationService.html#Luny_Engine_Services_ILunyApplicationService_Quit_System_Int32_
-  name: Quit(int)
-  nameWithType: ILunyApplicationService.Quit(int)
-  fullName: Luny.Engine.Services.ILunyApplicationService.Quit(int)
-  nameWithType.vb: ILunyApplicationService.Quit(Integer)
-  fullName.vb: Luny.Engine.Services.ILunyApplicationService.Quit(Integer)
-  name.vb: Quit(Integer)
+  name: Quit(Int32)
+  nameWithType: ILunyApplicationService.Quit(Int32)
+  fullName: Luny.Engine.Services.ILunyApplicationService.Quit(System.Int32)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyApplicationService.Quit(System.Int32)
     name: Quit
@@ -419,7 +410,7 @@ references:
     href: Luny.Engine.Services.ILunyApplicationService.html#Luny_Engine_Services_ILunyApplicationService_Quit_System_Int32_
   - name: (
   - uid: System.Int32
-    name: int
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
@@ -430,7 +421,7 @@ references:
     href: Luny.Engine.Services.ILunyApplicationService.html#Luny_Engine_Services_ILunyApplicationService_Quit_System_Int32_
   - name: (
   - uid: System.Int32
-    name: Integer
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
@@ -439,12 +430,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Luny.Engine.Services.LunyApplicationServiceBase.#ctor*
   commentId: Overload:Luny.Engine.Services.LunyApplicationServiceBase.#ctor
   isExternal: true
@@ -475,12 +463,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Services.LunyApplicationServiceBase.IsPlaying*
   commentId: Overload:Luny.Engine.Services.LunyApplicationServiceBase.IsPlaying
   isExternal: true

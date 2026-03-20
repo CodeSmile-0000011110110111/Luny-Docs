@@ -43,10 +43,10 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.Object.ToString
   overload: Luny.Engine.Bridge.LunyInputUserProfile.ToString*
 - uid: Luny.Engine.Bridge.LunyInputUserProfile.#ctor
@@ -85,11 +85,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public uint UserId { get; set; }
+    content: public UInt32 UserId { get; set; }
     parameters: []
     return:
       type: System.UInt32
-    content.vb: Public Property UserId As UInteger
+    content.vb: Public Property UserId As UInt32
   overload: Luny.Engine.Bridge.LunyInputUserProfile.UserId*
 - uid: Luny.Engine.Bridge.LunyInputUserProfile.UserName
   commentId: P:Luny.Engine.Bridge.LunyInputUserProfile.UserName
@@ -106,11 +106,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public string UserName { get; set; }
+    content: public String UserName { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property UserName As String
+    content.vb: Public Property UserName As [String]
   overload: Luny.Engine.Bridge.LunyInputUserProfile.UserName*
 - uid: Luny.Engine.Bridge.LunyInputUserProfile.Actions
   commentId: P:Luny.Engine.Bridge.LunyInputUserProfile.Actions
@@ -127,11 +127,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public object Actions { get; set; }
+    content: public Object Actions { get; set; }
     parameters: []
     return:
       type: System.Object
-    content.vb: Public Property Actions As Object
+    content.vb: Public Property Actions As [Object]
   overload: Luny.Engine.Bridge.LunyInputUserProfile.Actions*
 - uid: Luny.Engine.Bridge.LunyInputUserProfile.UiInput
   commentId: P:Luny.Engine.Bridge.LunyInputUserProfile.UiInput
@@ -148,11 +148,11 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public object UiInput { get; set; }
+    content: public Object UiInput { get; set; }
     parameters: []
     return:
       type: System.Object
-    content.vb: Public Property UiInput As Object
+    content.vb: Public Property UiInput As [Object]
   overload: Luny.Engine.Bridge.LunyInputUserProfile.UiInput*
 - uid: Luny.Engine.Bridge.LunyInputUserProfile.Pawns
   commentId: P:Luny.Engine.Bridge.LunyInputUserProfile.Pawns
@@ -217,12 +217,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -235,10 +232,8 @@ references:
   parent: System.Object
   isExternal: true
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
@@ -263,12 +258,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyInputUserProfile.#ctor*
   commentId: Overload:Luny.Engine.Bridge.LunyInputUserProfile.#ctor
   isExternal: true
@@ -291,12 +283,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.uint32
-  name: uint
-  nameWithType: uint
-  fullName: uint
-  nameWithType.vb: UInteger
-  fullName.vb: UInteger
-  name.vb: UInteger
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
 - uid: Luny.Engine.Bridge.LunyInputUserProfile.UserName*
   commentId: Overload:Luny.Engine.Bridge.LunyInputUserProfile.UserName
   isExternal: true

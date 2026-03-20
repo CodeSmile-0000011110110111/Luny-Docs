@@ -30,25 +30,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Instantiate(string)
-  nameWithType: PrefabBuilder.Instantiate(string)
-  fullName: LunyScript.Api.PrefabBuilder.Instantiate(string)
+  name: Instantiate(String)
+  nameWithType: PrefabBuilder.Instantiate(String)
+  fullName: LunyScript.Api.PrefabBuilder.Instantiate(System.String)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ObjectCreateBuilder<ObjectBuilderNameSet> Instantiate(string prefabName)
+    content: public ObjectCreateBuilder<ObjectBuilderNameSet> Instantiate(String prefabName)
     parameters:
     - id: prefabName
       type: System.String
     return:
       type: LunyScript.Api.ObjectCreateBuilder{LunyScript.Api.ObjectBuilderNameSet}
-    content.vb: Public Function Instantiate(prefabName As String) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
+    content.vb: Public Function Instantiate(prefabName As [String]) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
   overload: LunyScript.Api.PrefabBuilder.Instantiate*
-  nameWithType.vb: PrefabBuilder.Instantiate(String)
-  fullName.vb: LunyScript.Api.PrefabBuilder.Instantiate(String)
-  name.vb: Instantiate(String)
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -82,12 +79,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -95,7 +89,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -179,12 +173,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Api.ObjectCreateBuilder{LunyScript.Api.ObjectBuilderNameSet}
   commentId: T:LunyScript.Api.ObjectCreateBuilder{LunyScript.Api.ObjectBuilderNameSet}
   parent: LunyScript.Api

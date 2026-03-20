@@ -33,9 +33,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ForUser(WhenInputActionBuilder, string)
-  nameWithType: WhenInputActionBuilderExtensions.ForUser(WhenInputActionBuilder, string)
-  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder, string)
+  name: ForUser(WhenInputActionBuilder, String)
+  nameWithType: WhenInputActionBuilderExtensions.ForUser(WhenInputActionBuilder, String)
+  fullName: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder, System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -43,7 +43,7 @@ items:
   summary: Specifies that event should only run when sent from a device paired with the named input user.
   example: []
   syntax:
-    content: public static WhenInputActionBuilder ForUser(this WhenInputActionBuilder b, string userName)
+    content: public static WhenInputActionBuilder ForUser(this WhenInputActionBuilder b, String userName)
     parameters:
     - id: b
       type: LunyScript.Api.WhenInputActionBuilder
@@ -54,11 +54,8 @@ items:
     return:
       type: LunyScript.Api.WhenInputActionBuilder
       description: ''
-    content.vb: Public Shared Function ForUser(b As WhenInputActionBuilder, userName As String) As WhenInputActionBuilder
+    content.vb: Public Shared Function ForUser(b As WhenInputActionBuilder, userName As [String]) As WhenInputActionBuilder
   overload: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser*
-  nameWithType.vb: WhenInputActionBuilderExtensions.ForUser(WhenInputActionBuilder, String)
-  fullName.vb: LunyScript.Api.WhenInputActionBuilderExtensions.ForUser(LunyScript.Api.WhenInputActionBuilder, String)
-  name.vb: ForUser(WhenInputActionBuilder, String)
 - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Started(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
   commentId: M:LunyScript.Api.WhenInputActionBuilderExtensions.Started(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
   id: Started(LunyScript.Api.WhenInputActionBuilder,LunyScript.Blocks.ActionBlock[])
@@ -237,12 +234,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -270,12 +264,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Api.WhenInputActionBuilderExtensions.Started*
   commentId: Overload:LunyScript.Api.WhenInputActionBuilderExtensions.Started
   isExternal: true

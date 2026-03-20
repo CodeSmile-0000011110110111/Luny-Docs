@@ -53,22 +53,22 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyException(string)
-  nameWithType: LunyException.LunyException(string)
-  fullName: Luny.LunyException.LunyException(string)
+  name: LunyException(String)
+  nameWithType: LunyException.LunyException(String)
+  fullName: Luny.LunyException.LunyException(System.String)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: protected LunyException(string message)
+    content: protected LunyException(String message)
     parameters:
     - id: message
       type: System.String
-    content.vb: Protected Sub New(message As String)
+    content.vb: Protected Sub New(message As [String])
   overload: Luny.LunyException.#ctor*
   nameWithType.vb: LunyException.New(String)
-  fullName.vb: Luny.LunyException.New(String)
+  fullName.vb: Luny.LunyException.New(System.String)
   name.vb: New(String)
 - uid: Luny.LunyException.#ctor(System.String,System.Exception)
   commentId: M:Luny.LunyException.#ctor(System.String,System.Exception)
@@ -77,24 +77,24 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyException(string, Exception)
-  nameWithType: LunyException.LunyException(string, Exception)
-  fullName: Luny.LunyException.LunyException(string, System.Exception)
+  name: LunyException(String, Exception)
+  nameWithType: LunyException.LunyException(String, Exception)
+  fullName: Luny.LunyException.LunyException(System.String, System.Exception)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: protected LunyException(string message, Exception innerException)
+    content: protected LunyException(String message, Exception innerException)
     parameters:
     - id: message
       type: System.String
     - id: innerException
       type: System.Exception
-    content.vb: Protected Sub New(message As String, innerException As Exception)
+    content.vb: Protected Sub New(message As [String], innerException As Exception)
   overload: Luny.LunyException.#ctor*
   nameWithType.vb: LunyException.New(String, Exception)
-  fullName.vb: Luny.LunyException.New(String, System.Exception)
+  fullName.vb: Luny.LunyException.New(System.String, System.Exception)
   name.vb: New(String, Exception)
 references:
 - uid: Luny
@@ -108,12 +108,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.Exception
   commentId: T:System.Exception
   parent: System
@@ -369,9 +366,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

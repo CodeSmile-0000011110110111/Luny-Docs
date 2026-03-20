@@ -35,25 +35,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Enable(string)
-  nameWithType: ObjectBuilder.Enable(string)
-  fullName: LunyScript.Api.ObjectBuilder.Enable(string)
+  name: Enable(String)
+  nameWithType: ObjectBuilder.Enable(String)
+  fullName: LunyScript.Api.ObjectBuilder.Enable(System.String)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ActionBlock Enable(string name = null)
+    content: public ActionBlock Enable(String name = null)
     parameters:
     - id: name
       type: System.String
     return:
       type: LunyScript.Blocks.ActionBlock
-    content.vb: Public Function Enable(name As String = Nothing) As ActionBlock
+    content.vb: Public Function Enable(name As [String] = Nothing) As ActionBlock
   overload: LunyScript.Api.ObjectBuilder.Enable*
-  nameWithType.vb: ObjectBuilder.Enable(String)
-  fullName.vb: LunyScript.Api.ObjectBuilder.Enable(String)
-  name.vb: Enable(String)
 - uid: LunyScript.Api.ObjectBuilder.Disable(System.String)
   commentId: M:LunyScript.Api.ObjectBuilder.Disable(System.String)
   id: Disable(System.String)
@@ -61,25 +58,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Disable(string)
-  nameWithType: ObjectBuilder.Disable(string)
-  fullName: LunyScript.Api.ObjectBuilder.Disable(string)
+  name: Disable(String)
+  nameWithType: ObjectBuilder.Disable(String)
+  fullName: LunyScript.Api.ObjectBuilder.Disable(System.String)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ActionBlock Disable(string name = null)
+    content: public ActionBlock Disable(String name = null)
     parameters:
     - id: name
       type: System.String
     return:
       type: LunyScript.Blocks.ActionBlock
-    content.vb: Public Function Disable(name As String = Nothing) As ActionBlock
+    content.vb: Public Function Disable(name As [String] = Nothing) As ActionBlock
   overload: LunyScript.Api.ObjectBuilder.Disable*
-  nameWithType.vb: ObjectBuilder.Disable(String)
-  fullName.vb: LunyScript.Api.ObjectBuilder.Disable(String)
-  name.vb: Disable(String)
 - uid: LunyScript.Api.ObjectBuilder.Create(System.String)
   commentId: M:LunyScript.Api.ObjectBuilder.Create(System.String)
   id: Create(System.String)
@@ -87,25 +81,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Create(string)
-  nameWithType: ObjectBuilder.Create(string)
-  fullName: LunyScript.Api.ObjectBuilder.Create(string)
+  name: Create(String)
+  nameWithType: ObjectBuilder.Create(String)
+  fullName: LunyScript.Api.ObjectBuilder.Create(System.String)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ObjectCreateBuilder<ObjectBuilderNameSet> Create(string name)
+    content: public ObjectCreateBuilder<ObjectBuilderNameSet> Create(String name)
     parameters:
     - id: name
       type: System.String
     return:
       type: LunyScript.Api.ObjectCreateBuilder{LunyScript.Api.ObjectBuilderNameSet}
-    content.vb: Public Function Create(name As String) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
+    content.vb: Public Function Create(name As [String]) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
   overload: LunyScript.Api.ObjectBuilder.Create*
-  nameWithType.vb: ObjectBuilder.Create(String)
-  fullName.vb: LunyScript.Api.ObjectBuilder.Create(String)
-  name.vb: Create(String)
 - uid: LunyScript.Api.ObjectBuilder.Destroy(System.String)
   commentId: M:LunyScript.Api.ObjectBuilder.Destroy(System.String)
   id: Destroy(System.String)
@@ -113,25 +104,22 @@ items:
   langs:
   - csharp
   - vb
-  name: Destroy(string)
-  nameWithType: ObjectBuilder.Destroy(string)
-  fullName: LunyScript.Api.ObjectBuilder.Destroy(string)
+  name: Destroy(String)
+  nameWithType: ObjectBuilder.Destroy(String)
+  fullName: LunyScript.Api.ObjectBuilder.Destroy(System.String)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: public ActionBlock Destroy(string name = null)
+    content: public ActionBlock Destroy(String name = null)
     parameters:
     - id: name
       type: System.String
     return:
       type: LunyScript.Blocks.ActionBlock
-    content.vb: Public Function Destroy(name As String = Nothing) As ActionBlock
+    content.vb: Public Function Destroy(name As [String] = Nothing) As ActionBlock
   overload: LunyScript.Api.ObjectBuilder.Destroy*
-  nameWithType.vb: ObjectBuilder.Destroy(String)
-  fullName.vb: LunyScript.Api.ObjectBuilder.Destroy(String)
-  name.vb: Destroy(String)
 references:
 - uid: LunyScript.Api
   commentId: N:LunyScript.Api
@@ -165,12 +153,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -178,7 +163,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -262,12 +247,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Blocks.ActionBlock
   commentId: T:LunyScript.Blocks.ActionBlock
   parent: LunyScript.Blocks

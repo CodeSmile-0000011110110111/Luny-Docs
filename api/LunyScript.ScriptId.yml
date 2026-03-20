@@ -50,10 +50,10 @@ items:
   - LunyScript
   namespace: LunyScript
   syntax:
-    content: public readonly int Value
+    content: public readonly Int32 Value
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Value As Integer
+    content.vb: Public ReadOnly Value As Int32
 - uid: LunyScript.ScriptId.Generate
   commentId: M:LunyScript.ScriptId.Generate
   id: Generate
@@ -92,13 +92,13 @@ items:
   namespace: LunyScript
   example: []
   syntax:
-    content: public bool Equals(ScriptId other)
+    content: public Boolean Equals(ScriptId other)
     parameters:
     - id: other
       type: LunyScript.ScriptId
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As ScriptId) As Boolean
+    content.vb: Public Function Equals(other As ScriptId) As [Boolean]
   overload: LunyScript.ScriptId.Equals*
   implements:
   - System.IEquatable{LunyScript.ScriptId}.Equals(LunyScript.ScriptId)
@@ -109,27 +109,24 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(object)
-  nameWithType: ScriptId.Equals(object)
-  fullName: LunyScript.ScriptId.Equals(object)
+  name: Equals(Object)
+  nameWithType: ScriptId.Equals(Object)
+  fullName: LunyScript.ScriptId.Equals(System.Object)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript
   example: []
   syntax:
-    content: public override bool Equals(object obj)
+    content: public override Boolean Equals(Object obj)
     parameters:
     - id: obj
       type: System.Object
     return:
       type: System.Boolean
-    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    content.vb: Public Overrides Function Equals(obj As [Object]) As [Boolean]
   overridden: System.ValueType.Equals(System.Object)
   overload: LunyScript.ScriptId.Equals*
-  nameWithType.vb: ScriptId.Equals(Object)
-  fullName.vb: LunyScript.ScriptId.Equals(Object)
-  name.vb: Equals(Object)
 - uid: LunyScript.ScriptId.GetHashCode
   commentId: M:LunyScript.ScriptId.GetHashCode
   id: GetHashCode
@@ -146,10 +143,10 @@ items:
   namespace: LunyScript
   example: []
   syntax:
-    content: public override int GetHashCode()
+    content: public override Int32 GetHashCode()
     return:
       type: System.Int32
-    content.vb: Public Overrides Function GetHashCode() As Integer
+    content.vb: Public Overrides Function GetHashCode() As Int32
   overridden: System.ValueType.GetHashCode
   overload: LunyScript.ScriptId.GetHashCode*
 - uid: LunyScript.ScriptId.CompareTo(LunyScript.ScriptId)
@@ -168,13 +165,13 @@ items:
   namespace: LunyScript
   example: []
   syntax:
-    content: public int CompareTo(ScriptId other)
+    content: public Int32 CompareTo(ScriptId other)
     parameters:
     - id: other
       type: LunyScript.ScriptId
     return:
       type: System.Int32
-    content.vb: Public Function CompareTo(other As ScriptId) As Integer
+    content.vb: Public Function CompareTo(other As ScriptId) As Int32
   overload: LunyScript.ScriptId.CompareTo*
   implements:
   - System.IComparable{LunyScript.ScriptId}.CompareTo(LunyScript.ScriptId)
@@ -194,10 +191,10 @@ items:
   namespace: LunyScript
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.ValueType.ToString
   overload: LunyScript.ScriptId.ToString*
 - uid: LunyScript.ScriptId.op_Equality(LunyScript.ScriptId,LunyScript.ScriptId)
@@ -215,7 +212,7 @@ items:
   - LunyScript
   namespace: LunyScript
   syntax:
-    content: public static bool operator ==(ScriptId left, ScriptId right)
+    content: public static Boolean operator ==(ScriptId left, ScriptId right)
     parameters:
     - id: left
       type: LunyScript.ScriptId
@@ -223,7 +220,7 @@ items:
       type: LunyScript.ScriptId
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator =(left As ScriptId, right As ScriptId) As Boolean
+    content.vb: Public Shared Operator =(left As ScriptId, right As ScriptId) As [Boolean]
   overload: LunyScript.ScriptId.op_Equality*
   nameWithType.vb: ScriptId.=(ScriptId, ScriptId)
   fullName.vb: LunyScript.ScriptId.=(LunyScript.ScriptId, LunyScript.ScriptId)
@@ -243,7 +240,7 @@ items:
   - LunyScript
   namespace: LunyScript
   syntax:
-    content: public static bool operator !=(ScriptId left, ScriptId right)
+    content: public static Boolean operator !=(ScriptId left, ScriptId right)
     parameters:
     - id: left
       type: LunyScript.ScriptId
@@ -251,7 +248,7 @@ items:
       type: LunyScript.ScriptId
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <>(left As ScriptId, right As ScriptId) As Boolean
+    content.vb: Public Shared Operator <>(left As ScriptId, right As ScriptId) As [Boolean]
   overload: LunyScript.ScriptId.op_Inequality*
   nameWithType.vb: ScriptId.<>(ScriptId, ScriptId)
   fullName.vb: LunyScript.ScriptId.<>(LunyScript.ScriptId, LunyScript.ScriptId)
@@ -402,12 +399,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: LunyScript.ScriptId.Generate*
   commentId: Overload:LunyScript.ScriptId.Generate
   isExternal: true
@@ -467,12 +461,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: System.IEquatable`1.Equals(`0)
   commentId: M:System.IEquatable`1.Equals(`0)
   isExternal: true
@@ -503,12 +494,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -516,7 +504,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -533,12 +521,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.ValueType
   commentId: T:System.ValueType
   parent: System
@@ -674,12 +659,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.ScriptId.op_Equality*
   commentId: Overload:LunyScript.ScriptId.op_Equality
   isExternal: true

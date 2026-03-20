@@ -61,7 +61,7 @@ items:
     Used for high-performance polling in update loops.
   example: []
   syntax:
-    content: 'public readonly struct Alarm : IComparable<Alarm>, IComparable<double>, IEquatable<Alarm>, IEquatable<double>'
+    content: 'public readonly struct Alarm : IComparable<Alarm>, IComparable<Double>, IEquatable<Alarm>, IEquatable<Double>'
     content.vb: Public Structure Alarm Implements IComparable(Of Alarm), IComparable(Of Double), IEquatable(Of Alarm), IEquatable(Of Double)
   implements:
   - System.IComparable{Luny.Alarm}
@@ -83,10 +83,10 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public readonly double Target
+    content: public readonly Double Target
     return:
       type: System.Double
-    content.vb: Public ReadOnly Target As Double
+    content.vb: Public ReadOnly Target As [Double]
 - uid: Luny.Alarm.#ctor(System.Double)
   commentId: M:Luny.Alarm.#ctor(System.Double)
   id: '#ctor(System.Double)'
@@ -94,9 +94,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Alarm(double)
-  nameWithType: Alarm.Alarm(double)
-  fullName: Luny.Alarm.Alarm(double)
+  name: Alarm(Double)
+  nameWithType: Alarm.Alarm(Double)
+  fullName: Luny.Alarm.Alarm(System.Double)
   type: Constructor
   assemblies:
   - Luny
@@ -104,14 +104,14 @@ items:
   summary: Creates an alarm set to fire after the specified time or ticks.
   example: []
   syntax:
-    content: public Alarm(double target)
+    content: public Alarm(Double target)
     parameters:
     - id: target
       type: System.Double
-    content.vb: Public Sub New(target As Double)
+    content.vb: Public Sub New(target As [Double])
   overload: Luny.Alarm.#ctor*
   nameWithType.vb: Alarm.New(Double)
-  fullName.vb: Luny.Alarm.New(Double)
+  fullName.vb: Luny.Alarm.New(System.Double)
   name.vb: New(Double)
 - uid: Luny.Alarm.In(System.Double)
   commentId: M:Luny.Alarm.In(System.Double)
@@ -120,9 +120,9 @@ items:
   langs:
   - csharp
   - vb
-  name: In(double)
-  nameWithType: Alarm.In(double)
-  fullName: Luny.Alarm.In(double)
+  name: In(Double)
+  nameWithType: Alarm.In(Double)
+  fullName: Luny.Alarm.In(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -133,17 +133,14 @@ items:
     Note: Use From(now) to make it relative to a specific time.
   example: []
   syntax:
-    content: public static Alarm In(double seconds)
+    content: public static Alarm In(Double seconds)
     parameters:
     - id: seconds
       type: System.Double
     return:
       type: Luny.Alarm
-    content.vb: Public Shared Function [In](seconds As Double) As Alarm
+    content.vb: Public Shared Function [In](seconds As [Double]) As Alarm
   overload: Luny.Alarm.In*
-  nameWithType.vb: Alarm.In(Double)
-  fullName.vb: Luny.Alarm.In(Double)
-  name.vb: In(Double)
 - uid: Luny.Alarm.In(System.Int64)
   commentId: M:Luny.Alarm.In(System.Int64)
   id: In(System.Int64)
@@ -151,9 +148,9 @@ items:
   langs:
   - csharp
   - vb
-  name: In(long)
-  nameWithType: Alarm.In(long)
-  fullName: Luny.Alarm.In(long)
+  name: In(Int64)
+  nameWithType: Alarm.In(Int64)
+  fullName: Luny.Alarm.In(System.Int64)
   type: Method
   assemblies:
   - Luny
@@ -164,17 +161,14 @@ items:
     Note: Use From(now) to make it relative to a specific tick count.
   example: []
   syntax:
-    content: public static Alarm In(long ticks)
+    content: public static Alarm In(Int64 ticks)
     parameters:
     - id: ticks
       type: System.Int64
     return:
       type: Luny.Alarm
-    content.vb: Public Shared Function [In](ticks As Long) As Alarm
+    content.vb: Public Shared Function [In](ticks As Int64) As Alarm
   overload: Luny.Alarm.In*
-  nameWithType.vb: Alarm.In(Long)
-  fullName.vb: Luny.Alarm.In(Long)
-  name.vb: In(Long)
 - uid: Luny.Alarm.InMilliseconds(System.Double)
   commentId: M:Luny.Alarm.InMilliseconds(System.Double)
   id: InMilliseconds(System.Double)
@@ -182,9 +176,9 @@ items:
   langs:
   - csharp
   - vb
-  name: InMilliseconds(double)
-  nameWithType: Alarm.InMilliseconds(double)
-  fullName: Luny.Alarm.InMilliseconds(double)
+  name: InMilliseconds(Double)
+  nameWithType: Alarm.InMilliseconds(Double)
+  fullName: Luny.Alarm.InMilliseconds(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -192,17 +186,14 @@ items:
   summary: Creates an alarm set to fire after the specified milliseconds.
   example: []
   syntax:
-    content: public static Alarm InMilliseconds(double ms)
+    content: public static Alarm InMilliseconds(Double ms)
     parameters:
     - id: ms
       type: System.Double
     return:
       type: Luny.Alarm
-    content.vb: Public Shared Function InMilliseconds(ms As Double) As Alarm
+    content.vb: Public Shared Function InMilliseconds(ms As [Double]) As Alarm
   overload: Luny.Alarm.InMilliseconds*
-  nameWithType.vb: Alarm.InMilliseconds(Double)
-  fullName.vb: Luny.Alarm.InMilliseconds(Double)
-  name.vb: InMilliseconds(Double)
 - uid: Luny.Alarm.InMinutes(System.Double)
   commentId: M:Luny.Alarm.InMinutes(System.Double)
   id: InMinutes(System.Double)
@@ -210,9 +201,9 @@ items:
   langs:
   - csharp
   - vb
-  name: InMinutes(double)
-  nameWithType: Alarm.InMinutes(double)
-  fullName: Luny.Alarm.InMinutes(double)
+  name: InMinutes(Double)
+  nameWithType: Alarm.InMinutes(Double)
+  fullName: Luny.Alarm.InMinutes(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -220,17 +211,14 @@ items:
   summary: Creates an alarm set to fire after the specified minutes.
   example: []
   syntax:
-    content: public static Alarm InMinutes(double m)
+    content: public static Alarm InMinutes(Double m)
     parameters:
     - id: m
       type: System.Double
     return:
       type: Luny.Alarm
-    content.vb: Public Shared Function InMinutes(m As Double) As Alarm
+    content.vb: Public Shared Function InMinutes(m As [Double]) As Alarm
   overload: Luny.Alarm.InMinutes*
-  nameWithType.vb: Alarm.InMinutes(Double)
-  fullName.vb: Luny.Alarm.InMinutes(Double)
-  name.vb: InMinutes(Double)
 - uid: Luny.Alarm.InHours(System.Double)
   commentId: M:Luny.Alarm.InHours(System.Double)
   id: InHours(System.Double)
@@ -238,9 +226,9 @@ items:
   langs:
   - csharp
   - vb
-  name: InHours(double)
-  nameWithType: Alarm.InHours(double)
-  fullName: Luny.Alarm.InHours(double)
+  name: InHours(Double)
+  nameWithType: Alarm.InHours(Double)
+  fullName: Luny.Alarm.InHours(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -248,17 +236,14 @@ items:
   summary: Creates an alarm set to fire after the specified hours.
   example: []
   syntax:
-    content: public static Alarm InHours(double h)
+    content: public static Alarm InHours(Double h)
     parameters:
     - id: h
       type: System.Double
     return:
       type: Luny.Alarm
-    content.vb: Public Shared Function InHours(h As Double) As Alarm
+    content.vb: Public Shared Function InHours(h As [Double]) As Alarm
   overload: Luny.Alarm.InHours*
-  nameWithType.vb: Alarm.InHours(Double)
-  fullName.vb: Luny.Alarm.InHours(Double)
-  name.vb: InHours(Double)
 - uid: Luny.Alarm.At(System.Double)
   commentId: M:Luny.Alarm.At(System.Double)
   id: At(System.Double)
@@ -266,9 +251,9 @@ items:
   langs:
   - csharp
   - vb
-  name: At(double)
-  nameWithType: Alarm.At(double)
-  fullName: Luny.Alarm.At(double)
+  name: At(Double)
+  nameWithType: Alarm.At(Double)
+  fullName: Luny.Alarm.At(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -276,17 +261,14 @@ items:
   summary: Creates an alarm at a specific absolute time.
   example: []
   syntax:
-    content: public static Alarm At(double absoluteTime)
+    content: public static Alarm At(Double absoluteTime)
     parameters:
     - id: absoluteTime
       type: System.Double
     return:
       type: Luny.Alarm
-    content.vb: Public Shared Function At(absoluteTime As Double) As Alarm
+    content.vb: Public Shared Function At(absoluteTime As [Double]) As Alarm
   overload: Luny.Alarm.At*
-  nameWithType.vb: Alarm.At(Double)
-  fullName.vb: Luny.Alarm.At(Double)
-  name.vb: At(Double)
 - uid: Luny.Alarm.At(System.Int64)
   commentId: M:Luny.Alarm.At(System.Int64)
   id: At(System.Int64)
@@ -294,9 +276,9 @@ items:
   langs:
   - csharp
   - vb
-  name: At(long)
-  nameWithType: Alarm.At(long)
-  fullName: Luny.Alarm.At(long)
+  name: At(Int64)
+  nameWithType: Alarm.At(Int64)
+  fullName: Luny.Alarm.At(System.Int64)
   type: Method
   assemblies:
   - Luny
@@ -304,17 +286,14 @@ items:
   summary: Creates an alarm at a specific total number of ticks.
   example: []
   syntax:
-    content: public static Alarm At(long totalTicks)
+    content: public static Alarm At(Int64 totalTicks)
     parameters:
     - id: totalTicks
       type: System.Int64
     return:
       type: Luny.Alarm
-    content.vb: Public Shared Function At(totalTicks As Long) As Alarm
+    content.vb: Public Shared Function At(totalTicks As Int64) As Alarm
   overload: Luny.Alarm.At*
-  nameWithType.vb: Alarm.At(Long)
-  fullName.vb: Luny.Alarm.At(Long)
-  name.vb: At(Long)
 - uid: Luny.Alarm.From(System.Double)
   commentId: M:Luny.Alarm.From(System.Double)
   id: From(System.Double)
@@ -322,9 +301,9 @@ items:
   langs:
   - csharp
   - vb
-  name: From(double)
-  nameWithType: Alarm.From(double)
-  fullName: Luny.Alarm.From(double)
+  name: From(Double)
+  nameWithType: Alarm.From(Double)
+  fullName: Luny.Alarm.From(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -335,17 +314,14 @@ items:
     Example: `Alarm.In(5).From(Time.ElapsedSeconds)`
   example: []
   syntax:
-    content: public Alarm From(double now)
+    content: public Alarm From(Double now)
     parameters:
     - id: now
       type: System.Double
     return:
       type: Luny.Alarm
-    content.vb: Public Function From(now As Double) As Alarm
+    content.vb: Public Function From(now As [Double]) As Alarm
   overload: Luny.Alarm.From*
-  nameWithType.vb: Alarm.From(Double)
-  fullName.vb: Luny.Alarm.From(Double)
-  name.vb: From(Double)
 - uid: Luny.Alarm.From(System.Int64)
   commentId: M:Luny.Alarm.From(System.Int64)
   id: From(System.Int64)
@@ -353,9 +329,9 @@ items:
   langs:
   - csharp
   - vb
-  name: From(long)
-  nameWithType: Alarm.From(long)
-  fullName: Luny.Alarm.From(long)
+  name: From(Int64)
+  nameWithType: Alarm.From(Int64)
+  fullName: Luny.Alarm.From(System.Int64)
   type: Method
   assemblies:
   - Luny
@@ -366,17 +342,14 @@ items:
     Example: `Alarm.In(5).From(Time.FrameCount)`
   example: []
   syntax:
-    content: public Alarm From(long currentTick)
+    content: public Alarm From(Int64 currentTick)
     parameters:
     - id: currentTick
       type: System.Int64
     return:
       type: Luny.Alarm
-    content.vb: Public Function From(currentTick As Long) As Alarm
+    content.vb: Public Function From(currentTick As Int64) As Alarm
   overload: Luny.Alarm.From*
-  nameWithType.vb: Alarm.From(Long)
-  fullName.vb: Luny.Alarm.From(Long)
-  name.vb: From(Long)
 - uid: Luny.Alarm.IsElapsed(System.Double)
   commentId: M:Luny.Alarm.IsElapsed(System.Double)
   id: IsElapsed(System.Double)
@@ -384,9 +357,9 @@ items:
   langs:
   - csharp
   - vb
-  name: IsElapsed(double)
-  nameWithType: Alarm.IsElapsed(double)
-  fullName: Luny.Alarm.IsElapsed(double)
+  name: IsElapsed(Double)
+  nameWithType: Alarm.IsElapsed(Double)
+  fullName: Luny.Alarm.IsElapsed(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -394,17 +367,14 @@ items:
   summary: Returns true if the target time has been reached or passed.
   example: []
   syntax:
-    content: public bool IsElapsed(double now)
+    content: public Boolean IsElapsed(Double now)
     parameters:
     - id: now
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Function IsElapsed(now As Double) As Boolean
+    content.vb: Public Function IsElapsed(now As [Double]) As [Boolean]
   overload: Luny.Alarm.IsElapsed*
-  nameWithType.vb: Alarm.IsElapsed(Double)
-  fullName.vb: Luny.Alarm.IsElapsed(Double)
-  name.vb: IsElapsed(Double)
 - uid: Luny.Alarm.RemainingSeconds(System.Double)
   commentId: M:Luny.Alarm.RemainingSeconds(System.Double)
   id: RemainingSeconds(System.Double)
@@ -412,9 +382,9 @@ items:
   langs:
   - csharp
   - vb
-  name: RemainingSeconds(double)
-  nameWithType: Alarm.RemainingSeconds(double)
-  fullName: Luny.Alarm.RemainingSeconds(double)
+  name: RemainingSeconds(Double)
+  nameWithType: Alarm.RemainingSeconds(Double)
+  fullName: Luny.Alarm.RemainingSeconds(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -422,17 +392,14 @@ items:
   summary: Returns the remaining time in seconds.
   example: []
   syntax:
-    content: public double RemainingSeconds(double now)
+    content: public Double RemainingSeconds(Double now)
     parameters:
     - id: now
       type: System.Double
     return:
       type: System.Double
-    content.vb: Public Function RemainingSeconds(now As Double) As Double
+    content.vb: Public Function RemainingSeconds(now As [Double]) As [Double]
   overload: Luny.Alarm.RemainingSeconds*
-  nameWithType.vb: Alarm.RemainingSeconds(Double)
-  fullName.vb: Luny.Alarm.RemainingSeconds(Double)
-  name.vb: RemainingSeconds(Double)
 - uid: Luny.Alarm.RemainingMilliseconds(System.Double)
   commentId: M:Luny.Alarm.RemainingMilliseconds(System.Double)
   id: RemainingMilliseconds(System.Double)
@@ -440,9 +407,9 @@ items:
   langs:
   - csharp
   - vb
-  name: RemainingMilliseconds(double)
-  nameWithType: Alarm.RemainingMilliseconds(double)
-  fullName: Luny.Alarm.RemainingMilliseconds(double)
+  name: RemainingMilliseconds(Double)
+  nameWithType: Alarm.RemainingMilliseconds(Double)
+  fullName: Luny.Alarm.RemainingMilliseconds(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -450,17 +417,14 @@ items:
   summary: Returns the remaining time in milliseconds.
   example: []
   syntax:
-    content: public double RemainingMilliseconds(double now)
+    content: public Double RemainingMilliseconds(Double now)
     parameters:
     - id: now
       type: System.Double
     return:
       type: System.Double
-    content.vb: Public Function RemainingMilliseconds(now As Double) As Double
+    content.vb: Public Function RemainingMilliseconds(now As [Double]) As [Double]
   overload: Luny.Alarm.RemainingMilliseconds*
-  nameWithType.vb: Alarm.RemainingMilliseconds(Double)
-  fullName.vb: Luny.Alarm.RemainingMilliseconds(Double)
-  name.vb: RemainingMilliseconds(Double)
 - uid: Luny.Alarm.RemainingMinutes(System.Double)
   commentId: M:Luny.Alarm.RemainingMinutes(System.Double)
   id: RemainingMinutes(System.Double)
@@ -468,9 +432,9 @@ items:
   langs:
   - csharp
   - vb
-  name: RemainingMinutes(double)
-  nameWithType: Alarm.RemainingMinutes(double)
-  fullName: Luny.Alarm.RemainingMinutes(double)
+  name: RemainingMinutes(Double)
+  nameWithType: Alarm.RemainingMinutes(Double)
+  fullName: Luny.Alarm.RemainingMinutes(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -478,17 +442,14 @@ items:
   summary: Returns the remaining time in minutes.
   example: []
   syntax:
-    content: public double RemainingMinutes(double now)
+    content: public Double RemainingMinutes(Double now)
     parameters:
     - id: now
       type: System.Double
     return:
       type: System.Double
-    content.vb: Public Function RemainingMinutes(now As Double) As Double
+    content.vb: Public Function RemainingMinutes(now As [Double]) As [Double]
   overload: Luny.Alarm.RemainingMinutes*
-  nameWithType.vb: Alarm.RemainingMinutes(Double)
-  fullName.vb: Luny.Alarm.RemainingMinutes(Double)
-  name.vb: RemainingMinutes(Double)
 - uid: Luny.Alarm.CompareTo(Luny.Alarm)
   commentId: M:Luny.Alarm.CompareTo(Luny.Alarm)
   id: CompareTo(Luny.Alarm)
@@ -505,13 +466,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public int CompareTo(Alarm other)
+    content: public Int32 CompareTo(Alarm other)
     parameters:
     - id: other
       type: Luny.Alarm
     return:
       type: System.Int32
-    content.vb: Public Function CompareTo(other As Alarm) As Integer
+    content.vb: Public Function CompareTo(other As Alarm) As Int32
   overload: Luny.Alarm.CompareTo*
   implements:
   - System.IComparable{Luny.Alarm}.CompareTo(Luny.Alarm)
@@ -522,28 +483,25 @@ items:
   langs:
   - csharp
   - vb
-  name: CompareTo(double)
-  nameWithType: Alarm.CompareTo(double)
-  fullName: Luny.Alarm.CompareTo(double)
+  name: CompareTo(Double)
+  nameWithType: Alarm.CompareTo(Double)
+  fullName: Luny.Alarm.CompareTo(System.Double)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public int CompareTo(double other)
+    content: public Int32 CompareTo(Double other)
     parameters:
     - id: other
       type: System.Double
     return:
       type: System.Int32
-    content.vb: Public Function CompareTo(other As Double) As Integer
+    content.vb: Public Function CompareTo(other As [Double]) As Int32
   overload: Luny.Alarm.CompareTo*
   implements:
   - System.IComparable{System.Double}.CompareTo(System.Double)
-  nameWithType.vb: Alarm.CompareTo(Double)
-  fullName.vb: Luny.Alarm.CompareTo(Double)
-  name.vb: CompareTo(Double)
 - uid: Luny.Alarm.Equals(Luny.Alarm)
   commentId: M:Luny.Alarm.Equals(Luny.Alarm)
   id: Equals(Luny.Alarm)
@@ -560,13 +518,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(Alarm other)
+    content: public Boolean Equals(Alarm other)
     parameters:
     - id: other
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As Alarm) As Boolean
+    content.vb: Public Function Equals(other As Alarm) As [Boolean]
   overload: Luny.Alarm.Equals*
   implements:
   - System.IEquatable{Luny.Alarm}.Equals(Luny.Alarm)
@@ -577,28 +535,25 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(double)
-  nameWithType: Alarm.Equals(double)
-  fullName: Luny.Alarm.Equals(double)
+  name: Equals(Double)
+  nameWithType: Alarm.Equals(Double)
+  fullName: Luny.Alarm.Equals(System.Double)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(double other)
+    content: public Boolean Equals(Double other)
     parameters:
     - id: other
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As Double) As Boolean
+    content.vb: Public Function Equals(other As [Double]) As [Boolean]
   overload: Luny.Alarm.Equals*
   implements:
   - System.IEquatable{System.Double}.Equals(System.Double)
-  nameWithType.vb: Alarm.Equals(Double)
-  fullName.vb: Luny.Alarm.Equals(Double)
-  name.vb: Equals(Double)
 - uid: Luny.Alarm.Equals(System.Object)
   commentId: M:Luny.Alarm.Equals(System.Object)
   id: Equals(System.Object)
@@ -606,27 +561,24 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(object)
-  nameWithType: Alarm.Equals(object)
-  fullName: Luny.Alarm.Equals(object)
+  name: Equals(Object)
+  nameWithType: Alarm.Equals(Object)
+  fullName: Luny.Alarm.Equals(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public override bool Equals(object obj)
+    content: public override Boolean Equals(Object obj)
     parameters:
     - id: obj
       type: System.Object
     return:
       type: System.Boolean
-    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    content.vb: Public Overrides Function Equals(obj As [Object]) As [Boolean]
   overridden: System.ValueType.Equals(System.Object)
   overload: Luny.Alarm.Equals*
-  nameWithType.vb: Alarm.Equals(Object)
-  fullName.vb: Luny.Alarm.Equals(Object)
-  name.vb: Equals(Object)
 - uid: Luny.Alarm.GetHashCode
   commentId: M:Luny.Alarm.GetHashCode
   id: GetHashCode
@@ -643,10 +595,10 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public override int GetHashCode()
+    content: public override Int32 GetHashCode()
     return:
       type: System.Int32
-    content.vb: Public Overrides Function GetHashCode() As Integer
+    content.vb: Public Overrides Function GetHashCode() As Int32
   overridden: System.ValueType.GetHashCode
   overload: Luny.Alarm.GetHashCode*
 - uid: Luny.Alarm.ToString
@@ -665,10 +617,10 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.ValueType.ToString
   overload: Luny.Alarm.ToString*
 - uid: Luny.Alarm.op_Equality(Luny.Alarm,Luny.Alarm)
@@ -686,7 +638,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator ==(Alarm left, Alarm right)
+    content: public static Boolean operator ==(Alarm left, Alarm right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -694,7 +646,7 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator =(left As Alarm, right As Alarm) As Boolean
+    content.vb: Public Shared Operator =(left As Alarm, right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_Equality*
   nameWithType.vb: Alarm.=(Alarm, Alarm)
   fullName.vb: Luny.Alarm.=(Luny.Alarm, Luny.Alarm)
@@ -714,7 +666,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator !=(Alarm left, Alarm right)
+    content: public static Boolean operator !=(Alarm left, Alarm right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -722,7 +674,7 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <>(left As Alarm, right As Alarm) As Boolean
+    content.vb: Public Shared Operator <>(left As Alarm, right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_Inequality*
   nameWithType.vb: Alarm.<>(Alarm, Alarm)
   fullName.vb: Luny.Alarm.<>(Luny.Alarm, Luny.Alarm)
@@ -742,7 +694,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator <(Alarm left, Alarm right)
+    content: public static Boolean operator <(Alarm left, Alarm right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -750,7 +702,7 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <(left As Alarm, right As Alarm) As Boolean
+    content.vb: Public Shared Operator <(left As Alarm, right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_LessThan*
   nameWithType.vb: Alarm.<(Alarm, Alarm)
   fullName.vb: Luny.Alarm.<(Luny.Alarm, Luny.Alarm)
@@ -770,7 +722,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator >(Alarm left, Alarm right)
+    content: public static Boolean operator >(Alarm left, Alarm right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -778,7 +730,7 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator >(left As Alarm, right As Alarm) As Boolean
+    content.vb: Public Shared Operator >(left As Alarm, right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_GreaterThan*
   nameWithType.vb: Alarm.>(Alarm, Alarm)
   fullName.vb: Luny.Alarm.>(Luny.Alarm, Luny.Alarm)
@@ -798,7 +750,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator <=(Alarm left, Alarm right)
+    content: public static Boolean operator <=(Alarm left, Alarm right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -806,7 +758,7 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <=(left As Alarm, right As Alarm) As Boolean
+    content.vb: Public Shared Operator <=(left As Alarm, right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_LessThanOrEqual*
   nameWithType.vb: Alarm.<=(Alarm, Alarm)
   fullName.vb: Luny.Alarm.<=(Luny.Alarm, Luny.Alarm)
@@ -826,7 +778,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator >=(Alarm left, Alarm right)
+    content: public static Boolean operator >=(Alarm left, Alarm right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -834,7 +786,7 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator >=(left As Alarm, right As Alarm) As Boolean
+    content.vb: Public Shared Operator >=(left As Alarm, right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_GreaterThanOrEqual*
   nameWithType.vb: Alarm.>=(Alarm, Alarm)
   fullName.vb: Luny.Alarm.>=(Luny.Alarm, Luny.Alarm)
@@ -846,15 +798,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator ==(double, Alarm)
-  nameWithType: Alarm.operator ==(double, Alarm)
-  fullName: Luny.Alarm.operator ==(double, Luny.Alarm)
+  name: operator ==(Double, Alarm)
+  nameWithType: Alarm.operator ==(Double, Alarm)
+  fullName: Luny.Alarm.operator ==(System.Double, Luny.Alarm)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator ==(double left, Alarm right)
+    content: public static Boolean operator ==(Double left, Alarm right)
     parameters:
     - id: left
       type: System.Double
@@ -862,10 +814,10 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator =(left As Double, right As Alarm) As Boolean
+    content.vb: Public Shared Operator =(left As [Double], right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_Equality*
   nameWithType.vb: Alarm.=(Double, Alarm)
-  fullName.vb: Luny.Alarm.=(Double, Luny.Alarm)
+  fullName.vb: Luny.Alarm.=(System.Double, Luny.Alarm)
   name.vb: =(Double, Alarm)
 - uid: Luny.Alarm.op_Inequality(System.Double,Luny.Alarm)
   commentId: M:Luny.Alarm.op_Inequality(System.Double,Luny.Alarm)
@@ -874,15 +826,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator !=(double, Alarm)
-  nameWithType: Alarm.operator !=(double, Alarm)
-  fullName: Luny.Alarm.operator !=(double, Luny.Alarm)
+  name: operator !=(Double, Alarm)
+  nameWithType: Alarm.operator !=(Double, Alarm)
+  fullName: Luny.Alarm.operator !=(System.Double, Luny.Alarm)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator !=(double left, Alarm right)
+    content: public static Boolean operator !=(Double left, Alarm right)
     parameters:
     - id: left
       type: System.Double
@@ -890,10 +842,10 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <>(left As Double, right As Alarm) As Boolean
+    content.vb: Public Shared Operator <>(left As [Double], right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_Inequality*
   nameWithType.vb: Alarm.<>(Double, Alarm)
-  fullName.vb: Luny.Alarm.<>(Double, Luny.Alarm)
+  fullName.vb: Luny.Alarm.<>(System.Double, Luny.Alarm)
   name.vb: <>(Double, Alarm)
 - uid: Luny.Alarm.op_LessThan(System.Double,Luny.Alarm)
   commentId: M:Luny.Alarm.op_LessThan(System.Double,Luny.Alarm)
@@ -902,15 +854,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator <(double, Alarm)
-  nameWithType: Alarm.operator <(double, Alarm)
-  fullName: Luny.Alarm.operator <(double, Luny.Alarm)
+  name: operator <(Double, Alarm)
+  nameWithType: Alarm.operator <(Double, Alarm)
+  fullName: Luny.Alarm.operator <(System.Double, Luny.Alarm)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator <(double left, Alarm right)
+    content: public static Boolean operator <(Double left, Alarm right)
     parameters:
     - id: left
       type: System.Double
@@ -918,10 +870,10 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <(left As Double, right As Alarm) As Boolean
+    content.vb: Public Shared Operator <(left As [Double], right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_LessThan*
   nameWithType.vb: Alarm.<(Double, Alarm)
-  fullName.vb: Luny.Alarm.<(Double, Luny.Alarm)
+  fullName.vb: Luny.Alarm.<(System.Double, Luny.Alarm)
   name.vb: <(Double, Alarm)
 - uid: Luny.Alarm.op_GreaterThan(System.Double,Luny.Alarm)
   commentId: M:Luny.Alarm.op_GreaterThan(System.Double,Luny.Alarm)
@@ -930,15 +882,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator >(double, Alarm)
-  nameWithType: Alarm.operator >(double, Alarm)
-  fullName: Luny.Alarm.operator >(double, Luny.Alarm)
+  name: operator >(Double, Alarm)
+  nameWithType: Alarm.operator >(Double, Alarm)
+  fullName: Luny.Alarm.operator >(System.Double, Luny.Alarm)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator >(double left, Alarm right)
+    content: public static Boolean operator >(Double left, Alarm right)
     parameters:
     - id: left
       type: System.Double
@@ -946,10 +898,10 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator >(left As Double, right As Alarm) As Boolean
+    content.vb: Public Shared Operator >(left As [Double], right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_GreaterThan*
   nameWithType.vb: Alarm.>(Double, Alarm)
-  fullName.vb: Luny.Alarm.>(Double, Luny.Alarm)
+  fullName.vb: Luny.Alarm.>(System.Double, Luny.Alarm)
   name.vb: '>(Double, Alarm)'
 - uid: Luny.Alarm.op_LessThanOrEqual(System.Double,Luny.Alarm)
   commentId: M:Luny.Alarm.op_LessThanOrEqual(System.Double,Luny.Alarm)
@@ -958,15 +910,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator <=(double, Alarm)
-  nameWithType: Alarm.operator <=(double, Alarm)
-  fullName: Luny.Alarm.operator <=(double, Luny.Alarm)
+  name: operator <=(Double, Alarm)
+  nameWithType: Alarm.operator <=(Double, Alarm)
+  fullName: Luny.Alarm.operator <=(System.Double, Luny.Alarm)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator <=(double left, Alarm right)
+    content: public static Boolean operator <=(Double left, Alarm right)
     parameters:
     - id: left
       type: System.Double
@@ -974,10 +926,10 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <=(left As Double, right As Alarm) As Boolean
+    content.vb: Public Shared Operator <=(left As [Double], right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_LessThanOrEqual*
   nameWithType.vb: Alarm.<=(Double, Alarm)
-  fullName.vb: Luny.Alarm.<=(Double, Luny.Alarm)
+  fullName.vb: Luny.Alarm.<=(System.Double, Luny.Alarm)
   name.vb: <=(Double, Alarm)
 - uid: Luny.Alarm.op_GreaterThanOrEqual(System.Double,Luny.Alarm)
   commentId: M:Luny.Alarm.op_GreaterThanOrEqual(System.Double,Luny.Alarm)
@@ -986,15 +938,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator >=(double, Alarm)
-  nameWithType: Alarm.operator >=(double, Alarm)
-  fullName: Luny.Alarm.operator >=(double, Luny.Alarm)
+  name: operator >=(Double, Alarm)
+  nameWithType: Alarm.operator >=(Double, Alarm)
+  fullName: Luny.Alarm.operator >=(System.Double, Luny.Alarm)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator >=(double left, Alarm right)
+    content: public static Boolean operator >=(Double left, Alarm right)
     parameters:
     - id: left
       type: System.Double
@@ -1002,10 +954,10 @@ items:
       type: Luny.Alarm
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator >=(left As Double, right As Alarm) As Boolean
+    content.vb: Public Shared Operator >=(left As [Double], right As Alarm) As [Boolean]
   overload: Luny.Alarm.op_GreaterThanOrEqual*
   nameWithType.vb: Alarm.>=(Double, Alarm)
-  fullName.vb: Luny.Alarm.>=(Double, Luny.Alarm)
+  fullName.vb: Luny.Alarm.>=(System.Double, Luny.Alarm)
   name.vb: '>=(Double, Alarm)'
 - uid: Luny.Alarm.op_Equality(Luny.Alarm,System.Double)
   commentId: M:Luny.Alarm.op_Equality(Luny.Alarm,System.Double)
@@ -1014,15 +966,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator ==(Alarm, double)
-  nameWithType: Alarm.operator ==(Alarm, double)
-  fullName: Luny.Alarm.operator ==(Luny.Alarm, double)
+  name: operator ==(Alarm, Double)
+  nameWithType: Alarm.operator ==(Alarm, Double)
+  fullName: Luny.Alarm.operator ==(Luny.Alarm, System.Double)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator ==(Alarm left, double right)
+    content: public static Boolean operator ==(Alarm left, Double right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -1030,10 +982,10 @@ items:
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator =(left As Alarm, right As Double) As Boolean
+    content.vb: Public Shared Operator =(left As Alarm, right As [Double]) As [Boolean]
   overload: Luny.Alarm.op_Equality*
   nameWithType.vb: Alarm.=(Alarm, Double)
-  fullName.vb: Luny.Alarm.=(Luny.Alarm, Double)
+  fullName.vb: Luny.Alarm.=(Luny.Alarm, System.Double)
   name.vb: =(Alarm, Double)
 - uid: Luny.Alarm.op_Inequality(Luny.Alarm,System.Double)
   commentId: M:Luny.Alarm.op_Inequality(Luny.Alarm,System.Double)
@@ -1042,15 +994,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator !=(Alarm, double)
-  nameWithType: Alarm.operator !=(Alarm, double)
-  fullName: Luny.Alarm.operator !=(Luny.Alarm, double)
+  name: operator !=(Alarm, Double)
+  nameWithType: Alarm.operator !=(Alarm, Double)
+  fullName: Luny.Alarm.operator !=(Luny.Alarm, System.Double)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator !=(Alarm left, double right)
+    content: public static Boolean operator !=(Alarm left, Double right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -1058,10 +1010,10 @@ items:
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <>(left As Alarm, right As Double) As Boolean
+    content.vb: Public Shared Operator <>(left As Alarm, right As [Double]) As [Boolean]
   overload: Luny.Alarm.op_Inequality*
   nameWithType.vb: Alarm.<>(Alarm, Double)
-  fullName.vb: Luny.Alarm.<>(Luny.Alarm, Double)
+  fullName.vb: Luny.Alarm.<>(Luny.Alarm, System.Double)
   name.vb: <>(Alarm, Double)
 - uid: Luny.Alarm.op_LessThan(Luny.Alarm,System.Double)
   commentId: M:Luny.Alarm.op_LessThan(Luny.Alarm,System.Double)
@@ -1070,15 +1022,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator <(Alarm, double)
-  nameWithType: Alarm.operator <(Alarm, double)
-  fullName: Luny.Alarm.operator <(Luny.Alarm, double)
+  name: operator <(Alarm, Double)
+  nameWithType: Alarm.operator <(Alarm, Double)
+  fullName: Luny.Alarm.operator <(Luny.Alarm, System.Double)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator <(Alarm left, double right)
+    content: public static Boolean operator <(Alarm left, Double right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -1086,10 +1038,10 @@ items:
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <(left As Alarm, right As Double) As Boolean
+    content.vb: Public Shared Operator <(left As Alarm, right As [Double]) As [Boolean]
   overload: Luny.Alarm.op_LessThan*
   nameWithType.vb: Alarm.<(Alarm, Double)
-  fullName.vb: Luny.Alarm.<(Luny.Alarm, Double)
+  fullName.vb: Luny.Alarm.<(Luny.Alarm, System.Double)
   name.vb: <(Alarm, Double)
 - uid: Luny.Alarm.op_GreaterThan(Luny.Alarm,System.Double)
   commentId: M:Luny.Alarm.op_GreaterThan(Luny.Alarm,System.Double)
@@ -1098,15 +1050,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator >(Alarm, double)
-  nameWithType: Alarm.operator >(Alarm, double)
-  fullName: Luny.Alarm.operator >(Luny.Alarm, double)
+  name: operator >(Alarm, Double)
+  nameWithType: Alarm.operator >(Alarm, Double)
+  fullName: Luny.Alarm.operator >(Luny.Alarm, System.Double)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator >(Alarm left, double right)
+    content: public static Boolean operator >(Alarm left, Double right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -1114,10 +1066,10 @@ items:
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator >(left As Alarm, right As Double) As Boolean
+    content.vb: Public Shared Operator >(left As Alarm, right As [Double]) As [Boolean]
   overload: Luny.Alarm.op_GreaterThan*
   nameWithType.vb: Alarm.>(Alarm, Double)
-  fullName.vb: Luny.Alarm.>(Luny.Alarm, Double)
+  fullName.vb: Luny.Alarm.>(Luny.Alarm, System.Double)
   name.vb: '>(Alarm, Double)'
 - uid: Luny.Alarm.op_LessThanOrEqual(Luny.Alarm,System.Double)
   commentId: M:Luny.Alarm.op_LessThanOrEqual(Luny.Alarm,System.Double)
@@ -1126,15 +1078,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator <=(Alarm, double)
-  nameWithType: Alarm.operator <=(Alarm, double)
-  fullName: Luny.Alarm.operator <=(Luny.Alarm, double)
+  name: operator <=(Alarm, Double)
+  nameWithType: Alarm.operator <=(Alarm, Double)
+  fullName: Luny.Alarm.operator <=(Luny.Alarm, System.Double)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator <=(Alarm left, double right)
+    content: public static Boolean operator <=(Alarm left, Double right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -1142,10 +1094,10 @@ items:
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <=(left As Alarm, right As Double) As Boolean
+    content.vb: Public Shared Operator <=(left As Alarm, right As [Double]) As [Boolean]
   overload: Luny.Alarm.op_LessThanOrEqual*
   nameWithType.vb: Alarm.<=(Alarm, Double)
-  fullName.vb: Luny.Alarm.<=(Luny.Alarm, Double)
+  fullName.vb: Luny.Alarm.<=(Luny.Alarm, System.Double)
   name.vb: <=(Alarm, Double)
 - uid: Luny.Alarm.op_GreaterThanOrEqual(Luny.Alarm,System.Double)
   commentId: M:Luny.Alarm.op_GreaterThanOrEqual(Luny.Alarm,System.Double)
@@ -1154,15 +1106,15 @@ items:
   langs:
   - csharp
   - vb
-  name: operator >=(Alarm, double)
-  nameWithType: Alarm.operator >=(Alarm, double)
-  fullName: Luny.Alarm.operator >=(Luny.Alarm, double)
+  name: operator >=(Alarm, Double)
+  nameWithType: Alarm.operator >=(Alarm, Double)
+  fullName: Luny.Alarm.operator >=(Luny.Alarm, System.Double)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator >=(Alarm left, double right)
+    content: public static Boolean operator >=(Alarm left, Double right)
     parameters:
     - id: left
       type: Luny.Alarm
@@ -1170,10 +1122,10 @@ items:
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator >=(left As Alarm, right As Double) As Boolean
+    content.vb: Public Shared Operator >=(left As Alarm, right As [Double]) As [Boolean]
   overload: Luny.Alarm.op_GreaterThanOrEqual*
   nameWithType.vb: Alarm.>=(Alarm, Double)
-  fullName.vb: Luny.Alarm.>=(Luny.Alarm, Double)
+  fullName.vb: Luny.Alarm.>=(Luny.Alarm, System.Double)
   name.vb: '>=(Alarm, Double)'
 references:
 - uid: Luny
@@ -1223,11 +1175,11 @@ references:
   parent: System
   definition: System.IComparable`1
   href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
-  name: IComparable<double>
-  nameWithType: IComparable<double>
-  fullName: System.IComparable<double>
+  name: IComparable<Double>
+  nameWithType: IComparable<Double>
+  fullName: System.IComparable<System.Double>
   nameWithType.vb: IComparable(Of Double)
-  fullName.vb: System.IComparable(Of Double)
+  fullName.vb: System.IComparable(Of System.Double)
   name.vb: IComparable(Of Double)
   spec.csharp:
   - uid: System.IComparable`1
@@ -1236,7 +1188,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
   - name: <
   - uid: System.Double
-    name: double
+    name: Double
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: '>'
@@ -1293,11 +1245,11 @@ references:
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<double>
-  nameWithType: IEquatable<double>
-  fullName: System.IEquatable<double>
+  name: IEquatable<Double>
+  nameWithType: IEquatable<Double>
+  fullName: System.IEquatable<System.Double>
   nameWithType.vb: IEquatable(Of Double)
-  fullName.vb: System.IEquatable(Of Double)
+  fullName.vb: System.IEquatable(Of System.Double)
   name.vb: IEquatable(Of Double)
   spec.csharp:
   - uid: System.IEquatable`1
@@ -1306,7 +1258,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
   - uid: System.Double
-    name: double
+    name: Double
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: '>'
@@ -1391,12 +1343,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Alarm.#ctor*
   commentId: Overload:Luny.Alarm.#ctor
   isExternal: true
@@ -1427,12 +1376,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: Luny.Alarm.InMilliseconds*
   commentId: Overload:Luny.Alarm.InMilliseconds
   isExternal: true
@@ -1480,12 +1426,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Alarm.RemainingSeconds*
   commentId: Overload:Luny.Alarm.RemainingSeconds
   isExternal: true
@@ -1551,12 +1494,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: System.IComparable`1.CompareTo(`0)
   commentId: M:System.IComparable`1.CompareTo(`0)
   isExternal: true
@@ -1587,12 +1527,11 @@ references:
   parent: System.IComparable{System.Double}
   definition: System.IComparable`1.CompareTo(`0)
   href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
-  name: CompareTo(double)
-  nameWithType: IComparable<double>.CompareTo(double)
-  fullName: System.IComparable<double>.CompareTo(double)
+  name: CompareTo(Double)
+  nameWithType: IComparable<Double>.CompareTo(Double)
+  fullName: System.IComparable<System.Double>.CompareTo(System.Double)
   nameWithType.vb: IComparable(Of Double).CompareTo(Double)
-  fullName.vb: System.IComparable(Of Double).CompareTo(Double)
-  name.vb: CompareTo(Double)
+  fullName.vb: System.IComparable(Of System.Double).CompareTo(System.Double)
   spec.csharp:
   - uid: System.IComparable{System.Double}.CompareTo(System.Double)
     name: CompareTo
@@ -1600,7 +1539,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
   - name: (
   - uid: System.Double
-    name: double
+    name: Double
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: )
@@ -1684,12 +1623,11 @@ references:
   parent: System.IEquatable{System.Double}
   definition: System.IEquatable`1.Equals(`0)
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  name: Equals(double)
-  nameWithType: IEquatable<double>.Equals(double)
-  fullName: System.IEquatable<double>.Equals(double)
+  name: Equals(Double)
+  nameWithType: IEquatable<Double>.Equals(Double)
+  fullName: System.IEquatable<System.Double>.Equals(System.Double)
   nameWithType.vb: IEquatable(Of Double).Equals(Double)
-  fullName.vb: System.IEquatable(Of Double).Equals(Double)
-  name.vb: Equals(Double)
+  fullName.vb: System.IEquatable(Of System.Double).Equals(System.Double)
   spec.csharp:
   - uid: System.IEquatable{System.Double}.Equals(System.Double)
     name: Equals
@@ -1697,7 +1635,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - uid: System.Double
-    name: double
+    name: Double
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: )
@@ -1717,12 +1655,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -1730,7 +1665,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -1747,12 +1682,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.ValueType
   commentId: T:System.ValueType
   parent: System
@@ -1824,12 +1756,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Alarm.op_Equality*
   commentId: Overload:Luny.Alarm.op_Equality
   isExternal: true

@@ -65,7 +65,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: 'public readonly struct Variable : IEquatable<Variable>, IEquatable<bool>, IEquatable<double>, IEquatable<string>'
+    content: 'public readonly struct Variable : IEquatable<Variable>, IEquatable<Boolean>, IEquatable<Double>, IEquatable<String>'
     content.vb: Public Structure Variable Implements IEquatable(Of Variable), IEquatable(Of Boolean), IEquatable(Of Double), IEquatable(Of String)
   implements:
   - System.IEquatable{Luny.Variable}
@@ -79,15 +79,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Named(bool, string)
-  nameWithType: Variable.Named(bool, string)
-  fullName: Luny.Variable.Named(bool, string)
+  name: Named(Boolean, String)
+  nameWithType: Variable.Named(Boolean, String)
+  fullName: Luny.Variable.Named(System.Boolean, System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Variable Named(bool value, string name)
+    content: public static Variable Named(Boolean value, String name)
     parameters:
     - id: value
       type: System.Boolean
@@ -95,11 +95,8 @@ items:
       type: System.String
     return:
       type: Luny.Variable
-    content.vb: Public Shared Function Named(value As Boolean, name As String) As Variable
+    content.vb: Public Shared Function Named(value As [Boolean], name As [String]) As Variable
   overload: Luny.Variable.Named*
-  nameWithType.vb: Variable.Named(Boolean, String)
-  fullName.vb: Luny.Variable.Named(Boolean, String)
-  name.vb: Named(Boolean, String)
 - uid: Luny.Variable.Named(System.Double,System.String)
   commentId: M:Luny.Variable.Named(System.Double,System.String)
   id: Named(System.Double,System.String)
@@ -107,15 +104,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Named(double, string)
-  nameWithType: Variable.Named(double, string)
-  fullName: Luny.Variable.Named(double, string)
+  name: Named(Double, String)
+  nameWithType: Variable.Named(Double, String)
+  fullName: Luny.Variable.Named(System.Double, System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Variable Named(double value, string name)
+    content: public static Variable Named(Double value, String name)
     parameters:
     - id: value
       type: System.Double
@@ -123,11 +120,8 @@ items:
       type: System.String
     return:
       type: Luny.Variable
-    content.vb: Public Shared Function Named(value As Double, name As String) As Variable
+    content.vb: Public Shared Function Named(value As [Double], name As [String]) As Variable
   overload: Luny.Variable.Named*
-  nameWithType.vb: Variable.Named(Double, String)
-  fullName.vb: Luny.Variable.Named(Double, String)
-  name.vb: Named(Double, String)
 - uid: Luny.Variable.Named(System.Single,System.String)
   commentId: M:Luny.Variable.Named(System.Single,System.String)
   id: Named(System.Single,System.String)
@@ -135,15 +129,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Named(float, string)
-  nameWithType: Variable.Named(float, string)
-  fullName: Luny.Variable.Named(float, string)
+  name: Named(Single, String)
+  nameWithType: Variable.Named(Single, String)
+  fullName: Luny.Variable.Named(System.Single, System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Variable Named(float value, string name)
+    content: public static Variable Named(Single value, String name)
     parameters:
     - id: value
       type: System.Single
@@ -151,11 +145,8 @@ items:
       type: System.String
     return:
       type: Luny.Variable
-    content.vb: Public Shared Function Named(value As Single, name As String) As Variable
+    content.vb: Public Shared Function Named(value As [Single], name As [String]) As Variable
   overload: Luny.Variable.Named*
-  nameWithType.vb: Variable.Named(Single, String)
-  fullName.vb: Luny.Variable.Named(Single, String)
-  name.vb: Named(Single, String)
 - uid: Luny.Variable.Named(System.Int32,System.String)
   commentId: M:Luny.Variable.Named(System.Int32,System.String)
   id: Named(System.Int32,System.String)
@@ -163,15 +154,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Named(int, string)
-  nameWithType: Variable.Named(int, string)
-  fullName: Luny.Variable.Named(int, string)
+  name: Named(Int32, String)
+  nameWithType: Variable.Named(Int32, String)
+  fullName: Luny.Variable.Named(System.Int32, System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Variable Named(int value, string name)
+    content: public static Variable Named(Int32 value, String name)
     parameters:
     - id: value
       type: System.Int32
@@ -179,11 +170,8 @@ items:
       type: System.String
     return:
       type: Luny.Variable
-    content.vb: Public Shared Function Named(value As Integer, name As String) As Variable
+    content.vb: Public Shared Function Named(value As Int32, name As [String]) As Variable
   overload: Luny.Variable.Named*
-  nameWithType.vb: Variable.Named(Integer, String)
-  fullName.vb: Luny.Variable.Named(Integer, String)
-  name.vb: Named(Integer, String)
 - uid: Luny.Variable.Named(System.Int64,System.String)
   commentId: M:Luny.Variable.Named(System.Int64,System.String)
   id: Named(System.Int64,System.String)
@@ -191,15 +179,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Named(long, string)
-  nameWithType: Variable.Named(long, string)
-  fullName: Luny.Variable.Named(long, string)
+  name: Named(Int64, String)
+  nameWithType: Variable.Named(Int64, String)
+  fullName: Luny.Variable.Named(System.Int64, System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Variable Named(long value, string name)
+    content: public static Variable Named(Int64 value, String name)
     parameters:
     - id: value
       type: System.Int64
@@ -207,11 +195,8 @@ items:
       type: System.String
     return:
       type: Luny.Variable
-    content.vb: Public Shared Function Named(value As Long, name As String) As Variable
+    content.vb: Public Shared Function Named(value As Int64, name As [String]) As Variable
   overload: Luny.Variable.Named*
-  nameWithType.vb: Variable.Named(Long, String)
-  fullName.vb: Luny.Variable.Named(Long, String)
-  name.vb: Named(Long, String)
 - uid: Luny.Variable.Named(Luny.Number,System.String)
   commentId: M:Luny.Variable.Named(Luny.Number,System.String)
   id: Named(Luny.Number,System.String)
@@ -219,15 +204,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Named(Number, string)
-  nameWithType: Variable.Named(Number, string)
-  fullName: Luny.Variable.Named(Luny.Number, string)
+  name: Named(Number, String)
+  nameWithType: Variable.Named(Number, String)
+  fullName: Luny.Variable.Named(Luny.Number, System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Variable Named(Number value, string name)
+    content: public static Variable Named(Number value, String name)
     parameters:
     - id: value
       type: Luny.Number
@@ -235,11 +220,8 @@ items:
       type: System.String
     return:
       type: Luny.Variable
-    content.vb: Public Shared Function Named(value As Number, name As String) As Variable
+    content.vb: Public Shared Function Named(value As Number, name As [String]) As Variable
   overload: Luny.Variable.Named*
-  nameWithType.vb: Variable.Named(Number, String)
-  fullName.vb: Luny.Variable.Named(Luny.Number, String)
-  name.vb: Named(Number, String)
 - uid: Luny.Variable.Named(System.String,System.String)
   commentId: M:Luny.Variable.Named(System.String,System.String)
   id: Named(System.String,System.String)
@@ -247,15 +229,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Named(string, string)
-  nameWithType: Variable.Named(string, string)
-  fullName: Luny.Variable.Named(string, string)
+  name: Named(String, String)
+  nameWithType: Variable.Named(String, String)
+  fullName: Luny.Variable.Named(System.String, System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Variable Named(string value, string name)
+    content: public static Variable Named(String value, String name)
     parameters:
     - id: value
       type: System.String
@@ -263,11 +245,8 @@ items:
       type: System.String
     return:
       type: Luny.Variable
-    content.vb: Public Shared Function Named(value As String, name As String) As Variable
+    content.vb: Public Shared Function Named(value As [String], name As [String]) As Variable
   overload: Luny.Variable.Named*
-  nameWithType.vb: Variable.Named(String, String)
-  fullName.vb: Luny.Variable.Named(String, String)
-  name.vb: Named(String, String)
 - uid: Luny.Variable.Named(System.Object,System.String)
   commentId: M:Luny.Variable.Named(System.Object,System.String)
   id: Named(System.Object,System.String)
@@ -275,15 +254,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Named(object, string)
-  nameWithType: Variable.Named(object, string)
-  fullName: Luny.Variable.Named(object, string)
+  name: Named(Object, String)
+  nameWithType: Variable.Named(Object, String)
+  fullName: Luny.Variable.Named(System.Object, System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static Variable Named(object value, string name)
+    content: public static Variable Named(Object value, String name)
     parameters:
     - id: value
       type: System.Object
@@ -291,11 +270,8 @@ items:
       type: System.String
     return:
       type: Luny.Variable
-    content.vb: Public Shared Function Named(value As Object, name As String) As Variable
+    content.vb: Public Shared Function Named(value As [Object], name As [String]) As Variable
   overload: Luny.Variable.Named*
-  nameWithType.vb: Variable.Named(Object, String)
-  fullName.vb: Luny.Variable.Named(Object, String)
-  name.vb: Named(Object, String)
 - uid: Luny.Variable.AsBoolean
   commentId: M:Luny.Variable.AsBoolean
   id: AsBoolean
@@ -311,10 +287,10 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool AsBoolean()
+    content: public Boolean AsBoolean()
     return:
       type: System.Boolean
-    content.vb: Public Function AsBoolean() As Boolean
+    content.vb: Public Function AsBoolean() As [Boolean]
   overload: Luny.Variable.AsBoolean*
 - uid: Luny.Variable.AsNumber
   commentId: M:Luny.Variable.AsNumber
@@ -336,26 +312,6 @@ items:
       type: Luny.Number
     content.vb: Public Function AsNumber() As Number
   overload: Luny.Variable.AsNumber*
-- uid: Luny.Variable.AsDouble
-  commentId: M:Luny.Variable.AsDouble
-  id: AsDouble
-  parent: Luny.Variable
-  langs:
-  - csharp
-  - vb
-  name: AsDouble()
-  nameWithType: Variable.AsDouble()
-  fullName: Luny.Variable.AsDouble()
-  type: Method
-  assemblies:
-  - Luny
-  namespace: Luny
-  syntax:
-    content: public double AsDouble()
-    return:
-      type: System.Double
-    content.vb: Public Function AsDouble() As Double
-  overload: Luny.Variable.AsDouble*
 - uid: Luny.Variable.AsSingle
   commentId: M:Luny.Variable.AsSingle
   id: AsSingle
@@ -371,31 +327,31 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public float AsSingle()
+    content: public Single AsSingle()
     return:
       type: System.Single
-    content.vb: Public Function AsSingle() As Single
+    content.vb: Public Function AsSingle() As [Single]
   overload: Luny.Variable.AsSingle*
-- uid: Luny.Variable.AsInt64
-  commentId: M:Luny.Variable.AsInt64
-  id: AsInt64
+- uid: Luny.Variable.AsDouble
+  commentId: M:Luny.Variable.AsDouble
+  id: AsDouble
   parent: Luny.Variable
   langs:
   - csharp
   - vb
-  name: AsInt64()
-  nameWithType: Variable.AsInt64()
-  fullName: Luny.Variable.AsInt64()
+  name: AsDouble()
+  nameWithType: Variable.AsDouble()
+  fullName: Luny.Variable.AsDouble()
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public long AsInt64()
+    content: public Double AsDouble()
     return:
-      type: System.Int64
-    content.vb: Public Function AsInt64() As Long
-  overload: Luny.Variable.AsInt64*
+      type: System.Double
+    content.vb: Public Function AsDouble() As [Double]
+  overload: Luny.Variable.AsDouble*
 - uid: Luny.Variable.AsInt32
   commentId: M:Luny.Variable.AsInt32
   id: AsInt32
@@ -411,11 +367,31 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public int AsInt32()
+    content: public Int32 AsInt32()
     return:
       type: System.Int32
-    content.vb: Public Function AsInt32() As Integer
+    content.vb: Public Function AsInt32() As Int32
   overload: Luny.Variable.AsInt32*
+- uid: Luny.Variable.AsInt64
+  commentId: M:Luny.Variable.AsInt64
+  id: AsInt64
+  parent: Luny.Variable
+  langs:
+  - csharp
+  - vb
+  name: AsInt64()
+  nameWithType: Variable.AsInt64()
+  fullName: Luny.Variable.AsInt64()
+  type: Method
+  assemblies:
+  - Luny
+  namespace: Luny
+  syntax:
+    content: public Int64 AsInt64()
+    return:
+      type: System.Int64
+    content.vb: Public Function AsInt64() As Int64
+  overload: Luny.Variable.AsInt64*
 - uid: Luny.Variable.AsString
   commentId: M:Luny.Variable.AsString
   id: AsString
@@ -431,10 +407,10 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public string AsString()
+    content: public String AsString()
     return:
       type: System.String
-    content.vb: Public Function AsString() As String
+    content.vb: Public Function AsString() As [String]
   overload: Luny.Variable.AsString*
 - uid: Luny.Variable.As``1
   commentId: M:Luny.Variable.As``1
@@ -468,25 +444,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Variable(int)
-  nameWithType: Variable.implicit operator Variable(int)
-  fullName: Luny.Variable.implicit operator Luny.Variable(int)
+  name: implicit operator Variable(Int32)
+  nameWithType: Variable.implicit operator Variable(Int32)
+  fullName: Luny.Variable.implicit operator Luny.Variable(System.Int32)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Variable(int v)
+    content: public static implicit operator Variable(Int32 v)
     parameters:
     - id: v
       type: System.Int32
     return:
       type: Luny.Variable
-    content.vb: Public Shared Widening Operator CType(v As Integer) As Variable
+    content.vb: Public Shared Widening Operator CType(v As Int32) As Variable
   overload: Luny.Variable.op_Implicit*
-  nameWithType.vb: Variable.CType(Integer)
-  fullName.vb: Luny.Variable.CType(Integer)
-  name.vb: CType(Integer)
+  nameWithType.vb: Variable.CType(Int32)
+  fullName.vb: Luny.Variable.CType(System.Int32)
+  name.vb: CType(Int32)
 - uid: Luny.Variable.op_Implicit(System.Int64)~Luny.Variable
   commentId: M:Luny.Variable.op_Implicit(System.Int64)~Luny.Variable
   id: op_Implicit(System.Int64)~Luny.Variable
@@ -494,25 +470,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Variable(long)
-  nameWithType: Variable.implicit operator Variable(long)
-  fullName: Luny.Variable.implicit operator Luny.Variable(long)
+  name: implicit operator Variable(Int64)
+  nameWithType: Variable.implicit operator Variable(Int64)
+  fullName: Luny.Variable.implicit operator Luny.Variable(System.Int64)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Variable(long v)
+    content: public static implicit operator Variable(Int64 v)
     parameters:
     - id: v
       type: System.Int64
     return:
       type: Luny.Variable
-    content.vb: Public Shared Widening Operator CType(v As Long) As Variable
+    content.vb: Public Shared Widening Operator CType(v As Int64) As Variable
   overload: Luny.Variable.op_Implicit*
-  nameWithType.vb: Variable.CType(Long)
-  fullName.vb: Luny.Variable.CType(Long)
-  name.vb: CType(Long)
+  nameWithType.vb: Variable.CType(Int64)
+  fullName.vb: Luny.Variable.CType(System.Int64)
+  name.vb: CType(Int64)
 - uid: Luny.Variable.op_Implicit(System.Single)~Luny.Variable
   commentId: M:Luny.Variable.op_Implicit(System.Single)~Luny.Variable
   id: op_Implicit(System.Single)~Luny.Variable
@@ -520,24 +496,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Variable(float)
-  nameWithType: Variable.implicit operator Variable(float)
-  fullName: Luny.Variable.implicit operator Luny.Variable(float)
+  name: implicit operator Variable(Single)
+  nameWithType: Variable.implicit operator Variable(Single)
+  fullName: Luny.Variable.implicit operator Luny.Variable(System.Single)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Variable(float v)
+    content: public static implicit operator Variable(Single v)
     parameters:
     - id: v
       type: System.Single
     return:
       type: Luny.Variable
-    content.vb: Public Shared Widening Operator CType(v As Single) As Variable
+    content.vb: Public Shared Widening Operator CType(v As [Single]) As Variable
   overload: Luny.Variable.op_Implicit*
   nameWithType.vb: Variable.CType(Single)
-  fullName.vb: Luny.Variable.CType(Single)
+  fullName.vb: Luny.Variable.CType(System.Single)
   name.vb: CType(Single)
 - uid: Luny.Variable.op_Implicit(System.Double)~Luny.Variable
   commentId: M:Luny.Variable.op_Implicit(System.Double)~Luny.Variable
@@ -546,24 +522,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Variable(double)
-  nameWithType: Variable.implicit operator Variable(double)
-  fullName: Luny.Variable.implicit operator Luny.Variable(double)
+  name: implicit operator Variable(Double)
+  nameWithType: Variable.implicit operator Variable(Double)
+  fullName: Luny.Variable.implicit operator Luny.Variable(System.Double)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Variable(double v)
+    content: public static implicit operator Variable(Double v)
     parameters:
     - id: v
       type: System.Double
     return:
       type: Luny.Variable
-    content.vb: Public Shared Widening Operator CType(v As Double) As Variable
+    content.vb: Public Shared Widening Operator CType(v As [Double]) As Variable
   overload: Luny.Variable.op_Implicit*
   nameWithType.vb: Variable.CType(Double)
-  fullName.vb: Luny.Variable.CType(Double)
+  fullName.vb: Luny.Variable.CType(System.Double)
   name.vb: CType(Double)
 - uid: Luny.Variable.op_Implicit(System.Boolean)~Luny.Variable
   commentId: M:Luny.Variable.op_Implicit(System.Boolean)~Luny.Variable
@@ -572,24 +548,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Variable(bool)
-  nameWithType: Variable.implicit operator Variable(bool)
-  fullName: Luny.Variable.implicit operator Luny.Variable(bool)
+  name: implicit operator Variable(Boolean)
+  nameWithType: Variable.implicit operator Variable(Boolean)
+  fullName: Luny.Variable.implicit operator Luny.Variable(System.Boolean)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Variable(bool v)
+    content: public static implicit operator Variable(Boolean v)
     parameters:
     - id: v
       type: System.Boolean
     return:
       type: Luny.Variable
-    content.vb: Public Shared Widening Operator CType(v As Boolean) As Variable
+    content.vb: Public Shared Widening Operator CType(v As [Boolean]) As Variable
   overload: Luny.Variable.op_Implicit*
   nameWithType.vb: Variable.CType(Boolean)
-  fullName.vb: Luny.Variable.CType(Boolean)
+  fullName.vb: Luny.Variable.CType(System.Boolean)
   name.vb: CType(Boolean)
 - uid: Luny.Variable.op_Implicit(Luny.Number)~Luny.Variable
   commentId: M:Luny.Variable.op_Implicit(Luny.Number)~Luny.Variable
@@ -624,24 +600,24 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator Variable(string)
-  nameWithType: Variable.implicit operator Variable(string)
-  fullName: Luny.Variable.implicit operator Luny.Variable(string)
+  name: implicit operator Variable(String)
+  nameWithType: Variable.implicit operator Variable(String)
+  fullName: Luny.Variable.implicit operator Luny.Variable(System.String)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator Variable(string v)
+    content: public static implicit operator Variable(String v)
     parameters:
     - id: v
       type: System.String
     return:
       type: Luny.Variable
-    content.vb: Public Shared Widening Operator CType(v As String) As Variable
+    content.vb: Public Shared Widening Operator CType(v As [String]) As Variable
   overload: Luny.Variable.op_Implicit*
   nameWithType.vb: Variable.CType(String)
-  fullName.vb: Luny.Variable.CType(String)
+  fullName.vb: Luny.Variable.CType(System.String)
   name.vb: CType(String)
 - uid: Luny.Variable.op_Implicit(Luny.Variable)~System.Int32
   commentId: M:Luny.Variable.op_Implicit(Luny.Variable)~System.Int32
@@ -650,21 +626,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator int(Variable)
-  nameWithType: Variable.implicit operator int(Variable)
-  fullName: Luny.Variable.implicit operator int(Luny.Variable)
+  name: implicit operator Int32(Variable)
+  nameWithType: Variable.implicit operator Int32(Variable)
+  fullName: Luny.Variable.implicit operator System.Int32(Luny.Variable)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator int(Variable v)
+    content: public static implicit operator Int32(Variable v)
     parameters:
     - id: v
       type: Luny.Variable
     return:
       type: System.Int32
-    content.vb: Public Shared Widening Operator CType(v As Variable) As Integer
+    content.vb: Public Shared Widening Operator CType(v As Variable) As Int32
   overload: Luny.Variable.op_Implicit*
   nameWithType.vb: Variable.CType(Variable)
   fullName.vb: Luny.Variable.CType(Luny.Variable)
@@ -676,21 +652,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator long(Variable)
-  nameWithType: Variable.implicit operator long(Variable)
-  fullName: Luny.Variable.implicit operator long(Luny.Variable)
+  name: implicit operator Int64(Variable)
+  nameWithType: Variable.implicit operator Int64(Variable)
+  fullName: Luny.Variable.implicit operator System.Int64(Luny.Variable)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator long(Variable v)
+    content: public static implicit operator Int64(Variable v)
     parameters:
     - id: v
       type: Luny.Variable
     return:
       type: System.Int64
-    content.vb: Public Shared Widening Operator CType(v As Variable) As Long
+    content.vb: Public Shared Widening Operator CType(v As Variable) As Int64
   overload: Luny.Variable.op_Implicit*
   nameWithType.vb: Variable.CType(Variable)
   fullName.vb: Luny.Variable.CType(Luny.Variable)
@@ -702,21 +678,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator float(Variable)
-  nameWithType: Variable.implicit operator float(Variable)
-  fullName: Luny.Variable.implicit operator float(Luny.Variable)
+  name: implicit operator Single(Variable)
+  nameWithType: Variable.implicit operator Single(Variable)
+  fullName: Luny.Variable.implicit operator System.Single(Luny.Variable)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator float(Variable v)
+    content: public static implicit operator Single(Variable v)
     parameters:
     - id: v
       type: Luny.Variable
     return:
       type: System.Single
-    content.vb: Public Shared Widening Operator CType(v As Variable) As Single
+    content.vb: Public Shared Widening Operator CType(v As Variable) As [Single]
   overload: Luny.Variable.op_Implicit*
   nameWithType.vb: Variable.CType(Variable)
   fullName.vb: Luny.Variable.CType(Luny.Variable)
@@ -728,21 +704,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator double(Variable)
-  nameWithType: Variable.implicit operator double(Variable)
-  fullName: Luny.Variable.implicit operator double(Luny.Variable)
+  name: implicit operator Double(Variable)
+  nameWithType: Variable.implicit operator Double(Variable)
+  fullName: Luny.Variable.implicit operator System.Double(Luny.Variable)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator double(Variable v)
+    content: public static implicit operator Double(Variable v)
     parameters:
     - id: v
       type: Luny.Variable
     return:
       type: System.Double
-    content.vb: Public Shared Widening Operator CType(v As Variable) As Double
+    content.vb: Public Shared Widening Operator CType(v As Variable) As [Double]
   overload: Luny.Variable.op_Implicit*
   nameWithType.vb: Variable.CType(Variable)
   fullName.vb: Luny.Variable.CType(Luny.Variable)
@@ -754,21 +730,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator bool(Variable)
-  nameWithType: Variable.implicit operator bool(Variable)
-  fullName: Luny.Variable.implicit operator bool(Luny.Variable)
+  name: implicit operator Boolean(Variable)
+  nameWithType: Variable.implicit operator Boolean(Variable)
+  fullName: Luny.Variable.implicit operator System.Boolean(Luny.Variable)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator bool(Variable v)
+    content: public static implicit operator Boolean(Variable v)
     parameters:
     - id: v
       type: Luny.Variable
     return:
       type: System.Boolean
-    content.vb: Public Shared Widening Operator CType(v As Variable) As Boolean
+    content.vb: Public Shared Widening Operator CType(v As Variable) As [Boolean]
   overload: Luny.Variable.op_Implicit*
   nameWithType.vb: Variable.CType(Variable)
   fullName.vb: Luny.Variable.CType(Luny.Variable)
@@ -806,21 +782,21 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator string(Variable)
-  nameWithType: Variable.implicit operator string(Variable)
-  fullName: Luny.Variable.implicit operator string(Luny.Variable)
+  name: implicit operator String(Variable)
+  nameWithType: Variable.implicit operator String(Variable)
+  fullName: Luny.Variable.implicit operator System.String(Luny.Variable)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public static implicit operator string(Variable v)
+    content: public static implicit operator String(Variable v)
     parameters:
     - id: v
       type: Luny.Variable
     return:
       type: System.String
-    content.vb: Public Shared Widening Operator CType(v As Variable) As String
+    content.vb: Public Shared Widening Operator CType(v As Variable) As [String]
   overload: Luny.Variable.op_Implicit*
   nameWithType.vb: Variable.CType(Variable)
   fullName.vb: Luny.Variable.CType(Luny.Variable)
@@ -844,13 +820,13 @@ items:
     content: >-
       [ExcludeFromCodeCoverage]
 
-      public override string ToString()
+      public override String ToString()
     return:
       type: System.String
     content.vb: >-
       <ExcludeFromCodeCoverage>
 
-      Public Overrides Function ToString() As String
+      Public Overrides Function ToString() As [String]
   overridden: System.ValueType.ToString
   overload: Luny.Variable.ToString*
   attributes:
@@ -864,28 +840,25 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(bool)
-  nameWithType: Variable.Equals(bool)
-  fullName: Luny.Variable.Equals(bool)
+  name: Equals(Boolean)
+  nameWithType: Variable.Equals(Boolean)
+  fullName: Luny.Variable.Equals(System.Boolean)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(bool b)
+    content: public Boolean Equals(Boolean b)
     parameters:
     - id: b
       type: System.Boolean
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(b As Boolean) As Boolean
+    content.vb: Public Function Equals(b As [Boolean]) As [Boolean]
   overload: Luny.Variable.Equals*
   implements:
   - System.IEquatable{System.Boolean}.Equals(System.Boolean)
-  nameWithType.vb: Variable.Equals(Boolean)
-  fullName.vb: Luny.Variable.Equals(Boolean)
-  name.vb: Equals(Boolean)
 - uid: Luny.Variable.Equals(System.Double)
   commentId: M:Luny.Variable.Equals(System.Double)
   id: Equals(System.Double)
@@ -893,28 +866,25 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(double)
-  nameWithType: Variable.Equals(double)
-  fullName: Luny.Variable.Equals(double)
+  name: Equals(Double)
+  nameWithType: Variable.Equals(Double)
+  fullName: Luny.Variable.Equals(System.Double)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(double d)
+    content: public Boolean Equals(Double d)
     parameters:
     - id: d
       type: System.Double
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(d As Double) As Boolean
+    content.vb: Public Function Equals(d As [Double]) As [Boolean]
   overload: Luny.Variable.Equals*
   implements:
   - System.IEquatable{System.Double}.Equals(System.Double)
-  nameWithType.vb: Variable.Equals(Double)
-  fullName.vb: Luny.Variable.Equals(Double)
-  name.vb: Equals(Double)
 - uid: Luny.Variable.Equals(System.String)
   commentId: M:Luny.Variable.Equals(System.String)
   id: Equals(System.String)
@@ -922,28 +892,25 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(string)
-  nameWithType: Variable.Equals(string)
-  fullName: Luny.Variable.Equals(string)
+  name: Equals(String)
+  nameWithType: Variable.Equals(String)
+  fullName: Luny.Variable.Equals(System.String)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(string s)
+    content: public Boolean Equals(String s)
     parameters:
     - id: s
       type: System.String
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(s As String) As Boolean
+    content.vb: Public Function Equals(s As [String]) As [Boolean]
   overload: Luny.Variable.Equals*
   implements:
   - System.IEquatable{System.String}.Equals(System.String)
-  nameWithType.vb: Variable.Equals(String)
-  fullName.vb: Luny.Variable.Equals(String)
-  name.vb: Equals(String)
 - uid: Luny.Variable.Equals(Luny.Variable)
   commentId: M:Luny.Variable.Equals(Luny.Variable)
   id: Equals(Luny.Variable)
@@ -960,13 +927,13 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public bool Equals(Variable other)
+    content: public Boolean Equals(Variable other)
     parameters:
     - id: other
       type: Luny.Variable
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As Variable) As Boolean
+    content.vb: Public Function Equals(other As Variable) As [Boolean]
   overload: Luny.Variable.Equals*
   implements:
   - System.IEquatable{Luny.Variable}.Equals(Luny.Variable)
@@ -977,27 +944,24 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(object)
-  nameWithType: Variable.Equals(object)
-  fullName: Luny.Variable.Equals(object)
+  name: Equals(Object)
+  nameWithType: Variable.Equals(Object)
+  fullName: Luny.Variable.Equals(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny
   example: []
   syntax:
-    content: public override bool Equals(object obj)
+    content: public override Boolean Equals(Object obj)
     parameters:
     - id: obj
       type: System.Object
     return:
       type: System.Boolean
-    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    content.vb: Public Overrides Function Equals(obj As [Object]) As [Boolean]
   overridden: System.ValueType.Equals(System.Object)
   overload: Luny.Variable.Equals*
-  nameWithType.vb: Variable.Equals(Object)
-  fullName.vb: Luny.Variable.Equals(Object)
-  name.vb: Equals(Object)
 - uid: Luny.Variable.GetHashCode
   commentId: M:Luny.Variable.GetHashCode
   id: GetHashCode
@@ -1014,10 +978,10 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public override int GetHashCode()
+    content: public override Int32 GetHashCode()
     return:
       type: System.Int32
-    content.vb: Public Overrides Function GetHashCode() As Integer
+    content.vb: Public Overrides Function GetHashCode() As Int32
   overridden: System.ValueType.GetHashCode
   overload: Luny.Variable.GetHashCode*
 - uid: Luny.Variable.op_Equality(Luny.Variable,Luny.Variable)
@@ -1035,7 +999,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator ==(Variable left, Variable right)
+    content: public static Boolean operator ==(Variable left, Variable right)
     parameters:
     - id: left
       type: Luny.Variable
@@ -1043,7 +1007,7 @@ items:
       type: Luny.Variable
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator =(left As Variable, right As Variable) As Boolean
+    content.vb: Public Shared Operator =(left As Variable, right As Variable) As [Boolean]
   overload: Luny.Variable.op_Equality*
   nameWithType.vb: Variable.=(Variable, Variable)
   fullName.vb: Luny.Variable.=(Luny.Variable, Luny.Variable)
@@ -1063,7 +1027,7 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public static bool operator !=(Variable left, Variable right)
+    content: public static Boolean operator !=(Variable left, Variable right)
     parameters:
     - id: left
       type: Luny.Variable
@@ -1071,7 +1035,7 @@ items:
       type: Luny.Variable
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <>(left As Variable, right As Variable) As Boolean
+    content.vb: Public Shared Operator <>(left As Variable, right As Variable) As [Boolean]
   overload: Luny.Variable.op_Inequality*
   nameWithType.vb: Variable.<>(Variable, Variable)
   fullName.vb: Luny.Variable.<>(Luny.Variable, Luny.Variable)
@@ -1091,11 +1055,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public string Name { get; }
+    content: public String Name { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public ReadOnly Property Name As String
+    content.vb: Public ReadOnly Property Name As [String]
   overload: Luny.Variable.Name*
 - uid: Luny.Variable.Type
   commentId: P:Luny.Variable.Type
@@ -1133,11 +1097,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool IsTrue { get; }
+    content: public Boolean IsTrue { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsTrue As Boolean
+    content.vb: Public ReadOnly Property IsTrue As [Boolean]
   overload: Luny.Variable.IsTrue*
 - uid: Luny.Variable.IsHigh
   commentId: P:Luny.Variable.IsHigh
@@ -1154,11 +1118,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool IsHigh { get; }
+    content: public Boolean IsHigh { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsHigh As Boolean
+    content.vb: Public ReadOnly Property IsHigh As [Boolean]
   overload: Luny.Variable.IsHigh*
 - uid: Luny.Variable.IsNormalized
   commentId: P:Luny.Variable.IsNormalized
@@ -1175,11 +1139,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool IsNormalized { get; }
+    content: public Boolean IsNormalized { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsNormalized As Boolean
+    content.vb: Public ReadOnly Property IsNormalized As [Boolean]
   overload: Luny.Variable.IsNormalized*
 - uid: Luny.Variable.Value
   commentId: P:Luny.Variable.Value
@@ -1196,11 +1160,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public double Value { get; }
+    content: public Double Value { get; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public ReadOnly Property Value As Double
+    content.vb: Public ReadOnly Property Value As [Double]
   overload: Luny.Variable.Value*
 - uid: Luny.Variable.Object
   commentId: P:Luny.Variable.Object
@@ -1217,11 +1181,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public object Object { get; }
+    content: public Object Object { get; }
     parameters: []
     return:
       type: System.Object
-    content.vb: Public ReadOnly Property [Object] As Object
+    content.vb: Public ReadOnly Property [Object] As [Object]
   overload: Luny.Variable.Object*
 - uid: Luny.Variable.IsNull
   commentId: P:Luny.Variable.IsNull
@@ -1238,11 +1202,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool IsNull { get; }
+    content: public Boolean IsNull { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsNull As Boolean
+    content.vb: Public ReadOnly Property IsNull As [Boolean]
   overload: Luny.Variable.IsNull*
 - uid: Luny.Variable.IsNullOrEmpty
   commentId: P:Luny.Variable.IsNullOrEmpty
@@ -1259,11 +1223,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool IsNullOrEmpty { get; }
+    content: public Boolean IsNullOrEmpty { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsNullOrEmpty As Boolean
+    content.vb: Public ReadOnly Property IsNullOrEmpty As [Boolean]
   overload: Luny.Variable.IsNullOrEmpty*
 - uid: Luny.Variable.IsNullOrWhitespace
   commentId: P:Luny.Variable.IsNullOrWhitespace
@@ -1280,11 +1244,11 @@ items:
   - Luny
   namespace: Luny
   syntax:
-    content: public bool IsNullOrWhitespace { get; }
+    content: public Boolean IsNullOrWhitespace { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public ReadOnly Property IsNullOrWhitespace As Boolean
+    content.vb: Public ReadOnly Property IsNullOrWhitespace As [Boolean]
   overload: Luny.Variable.IsNullOrWhitespace*
 references:
 - uid: Luny
@@ -1334,11 +1298,11 @@ references:
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<bool>
-  nameWithType: IEquatable<bool>
-  fullName: System.IEquatable<bool>
+  name: IEquatable<Boolean>
+  nameWithType: IEquatable<Boolean>
+  fullName: System.IEquatable<System.Boolean>
   nameWithType.vb: IEquatable(Of Boolean)
-  fullName.vb: System.IEquatable(Of Boolean)
+  fullName.vb: System.IEquatable(Of System.Boolean)
   name.vb: IEquatable(Of Boolean)
   spec.csharp:
   - uid: System.IEquatable`1
@@ -1347,7 +1311,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
   - uid: System.Boolean
-    name: bool
+    name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'
@@ -1369,11 +1333,11 @@ references:
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<double>
-  nameWithType: IEquatable<double>
-  fullName: System.IEquatable<double>
+  name: IEquatable<Double>
+  nameWithType: IEquatable<Double>
+  fullName: System.IEquatable<System.Double>
   nameWithType.vb: IEquatable(Of Double)
-  fullName.vb: System.IEquatable(Of Double)
+  fullName.vb: System.IEquatable(Of System.Double)
   name.vb: IEquatable(Of Double)
   spec.csharp:
   - uid: System.IEquatable`1
@@ -1382,7 +1346,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
   - uid: System.Double
-    name: double
+    name: Double
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: '>'
@@ -1404,11 +1368,11 @@ references:
   parent: System
   definition: System.IEquatable`1
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
-  name: IEquatable<string>
-  nameWithType: IEquatable<string>
-  fullName: System.IEquatable<string>
+  name: IEquatable<String>
+  nameWithType: IEquatable<String>
+  fullName: System.IEquatable<System.String>
   nameWithType.vb: IEquatable(Of String)
-  fullName.vb: System.IEquatable(Of String)
+  fullName.vb: System.IEquatable(Of System.String)
   name.vb: IEquatable(Of String)
   spec.csharp:
   - uid: System.IEquatable`1
@@ -1417,7 +1381,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
@@ -1481,23 +1445,17 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: System.String
   commentId: T:System.String
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Variable
   commentId: T:Luny.Variable
   parent: Luny
@@ -1511,45 +1469,33 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: System.Single
   commentId: T:System.Single
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: Luny.Number
   commentId: T:Luny.Number
   parent: Luny
@@ -1562,12 +1508,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Variable.AsBoolean*
   commentId: Overload:Luny.Variable.AsBoolean
   isExternal: true
@@ -1582,13 +1525,6 @@ references:
   name: AsNumber
   nameWithType: Variable.AsNumber
   fullName: Luny.Variable.AsNumber
-- uid: Luny.Variable.AsDouble*
-  commentId: Overload:Luny.Variable.AsDouble
-  isExternal: true
-  href: Luny.Variable.html#Luny_Variable_AsDouble
-  name: AsDouble
-  nameWithType: Variable.AsDouble
-  fullName: Luny.Variable.AsDouble
 - uid: Luny.Variable.AsSingle*
   commentId: Overload:Luny.Variable.AsSingle
   isExternal: true
@@ -1596,13 +1532,13 @@ references:
   name: AsSingle
   nameWithType: Variable.AsSingle
   fullName: Luny.Variable.AsSingle
-- uid: Luny.Variable.AsInt64*
-  commentId: Overload:Luny.Variable.AsInt64
+- uid: Luny.Variable.AsDouble*
+  commentId: Overload:Luny.Variable.AsDouble
   isExternal: true
-  href: Luny.Variable.html#Luny_Variable_AsInt64
-  name: AsInt64
-  nameWithType: Variable.AsInt64
-  fullName: Luny.Variable.AsInt64
+  href: Luny.Variable.html#Luny_Variable_AsDouble
+  name: AsDouble
+  nameWithType: Variable.AsDouble
+  fullName: Luny.Variable.AsDouble
 - uid: Luny.Variable.AsInt32*
   commentId: Overload:Luny.Variable.AsInt32
   isExternal: true
@@ -1610,6 +1546,13 @@ references:
   name: AsInt32
   nameWithType: Variable.AsInt32
   fullName: Luny.Variable.AsInt32
+- uid: Luny.Variable.AsInt64*
+  commentId: Overload:Luny.Variable.AsInt64
+  isExternal: true
+  href: Luny.Variable.html#Luny_Variable_AsInt64
+  name: AsInt64
+  nameWithType: Variable.AsInt64
+  fullName: Luny.Variable.AsInt64
 - uid: Luny.Variable.AsString*
   commentId: Overload:Luny.Variable.AsString
   isExternal: true
@@ -1695,12 +1638,11 @@ references:
   parent: System.IEquatable{System.Boolean}
   definition: System.IEquatable`1.Equals(`0)
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  name: Equals(bool)
-  nameWithType: IEquatable<bool>.Equals(bool)
-  fullName: System.IEquatable<bool>.Equals(bool)
+  name: Equals(Boolean)
+  nameWithType: IEquatable<Boolean>.Equals(Boolean)
+  fullName: System.IEquatable<System.Boolean>.Equals(System.Boolean)
   nameWithType.vb: IEquatable(Of Boolean).Equals(Boolean)
-  fullName.vb: System.IEquatable(Of Boolean).Equals(Boolean)
-  name.vb: Equals(Boolean)
+  fullName.vb: System.IEquatable(Of System.Boolean).Equals(System.Boolean)
   spec.csharp:
   - uid: System.IEquatable{System.Boolean}.Equals(System.Boolean)
     name: Equals
@@ -1708,7 +1650,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - uid: System.Boolean
-    name: bool
+    name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
@@ -1753,12 +1695,11 @@ references:
   parent: System.IEquatable{System.Double}
   definition: System.IEquatable`1.Equals(`0)
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  name: Equals(double)
-  nameWithType: IEquatable<double>.Equals(double)
-  fullName: System.IEquatable<double>.Equals(double)
+  name: Equals(Double)
+  nameWithType: IEquatable<Double>.Equals(Double)
+  fullName: System.IEquatable<System.Double>.Equals(System.Double)
   nameWithType.vb: IEquatable(Of Double).Equals(Double)
-  fullName.vb: System.IEquatable(Of Double).Equals(Double)
-  name.vb: Equals(Double)
+  fullName.vb: System.IEquatable(Of System.Double).Equals(System.Double)
   spec.csharp:
   - uid: System.IEquatable{System.Double}.Equals(System.Double)
     name: Equals
@@ -1766,7 +1707,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - uid: System.Double
-    name: double
+    name: Double
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: )
@@ -1786,12 +1727,11 @@ references:
   parent: System.IEquatable{System.String}
   definition: System.IEquatable`1.Equals(`0)
   href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
-  name: Equals(string)
-  nameWithType: IEquatable<string>.Equals(string)
-  fullName: System.IEquatable<string>.Equals(string)
+  name: Equals(String)
+  nameWithType: IEquatable<String>.Equals(String)
+  fullName: System.IEquatable<System.String>.Equals(System.String)
   nameWithType.vb: IEquatable(Of String).Equals(String)
-  fullName.vb: System.IEquatable(Of String).Equals(String)
-  name.vb: Equals(String)
+  fullName.vb: System.IEquatable(Of System.String).Equals(System.String)
   spec.csharp:
   - uid: System.IEquatable{System.String}.Equals(System.String)
     name: Equals
@@ -1799,7 +1739,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - uid: System.String
-    name: string
+    name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
@@ -1851,12 +1791,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -1864,7 +1801,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:

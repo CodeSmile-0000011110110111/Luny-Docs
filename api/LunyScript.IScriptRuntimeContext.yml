@@ -156,11 +156,11 @@ items:
     Null outside of event execution.
   example: []
   syntax:
-    content: object EventArgs { get; }
+    content: Object EventArgs { get; }
     parameters: []
     return:
       type: System.Object
-    content.vb: ReadOnly Property EventArgs As Object
+    content.vb: ReadOnly Property EventArgs As [Object]
   overload: LunyScript.IScriptRuntimeContext.EventArgs*
 references:
 - uid: LunyScript
@@ -299,9 +299,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object

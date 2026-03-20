@@ -41,9 +41,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Quit(int)
-  nameWithType: UnityApplicationService.Quit(int)
-  fullName: Luny.Unity.Services.UnityApplicationService.Quit(int)
+  name: Quit(Int32)
+  nameWithType: UnityApplicationService.Quit(Int32)
+  fullName: Luny.Unity.Services.UnityApplicationService.Quit(System.Int32)
   type: Method
   assemblies:
   - Luny.Unity
@@ -51,19 +51,16 @@ items:
   summary: Quits the application with optional exit code.
   example: []
   syntax:
-    content: public override void Quit(int exitCode = 0)
+    content: public override void Quit(Int32 exitCode = 0)
     parameters:
     - id: exitCode
       type: System.Int32
       description: 'Exit code (default: 0)'
-    content.vb: Public Overrides Sub Quit(exitCode As Integer = 0)
+    content.vb: Public Overrides Sub Quit(exitCode As Int32 = 0)
   overridden: Luny.Engine.Services.LunyApplicationServiceBase.Quit(System.Int32)
   overload: Luny.Unity.Services.UnityApplicationService.Quit*
   implements:
   - Luny.Engine.Services.ILunyApplicationService.Quit(System.Int32)
-  nameWithType.vb: UnityApplicationService.Quit(Integer)
-  fullName.vb: Luny.Unity.Services.UnityApplicationService.Quit(Integer)
-  name.vb: Quit(Integer)
 - uid: Luny.Unity.Services.UnityApplicationService.OnServiceInitialize
   commentId: M:Luny.Unity.Services.UnityApplicationService.OnServiceInitialize
   id: OnServiceInitialize
@@ -162,11 +159,11 @@ items:
   summary: True if running in the editor.
   example: []
   syntax:
-    content: public override bool IsEditor { get; }
+    content: public override Boolean IsEditor { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Overrides ReadOnly Property IsEditor As Boolean
+    content.vb: Public Overrides ReadOnly Property IsEditor As [Boolean]
   overridden: Luny.Engine.Services.LunyApplicationServiceBase.IsEditor
   overload: Luny.Unity.Services.UnityApplicationService.IsEditor*
   implements:
@@ -188,11 +185,11 @@ items:
   summary: True if the application is playing (not paused in editor).
   example: []
   syntax:
-    content: public override bool IsPlaying { get; }
+    content: public override Boolean IsPlaying { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Overrides ReadOnly Property IsPlaying As Boolean
+    content.vb: Public Overrides ReadOnly Property IsPlaying As [Boolean]
   overridden: Luny.Engine.Services.LunyApplicationServiceBase.IsPlaying
   overload: Luny.Unity.Services.UnityApplicationService.IsPlaying*
   implements:
@@ -239,12 +236,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Luny.Engine.Services.LunyEngineServiceBase
   commentId: T:Luny.Engine.Services.LunyEngineServiceBase
   parent: Luny.Engine.Services
@@ -326,19 +320,16 @@ references:
   parent: Luny.Engine.Services.LunyApplicationServiceBase
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: Quit(int)
-  nameWithType: LunyApplicationServiceBase.Quit(int)
-  fullName: Luny.Engine.Services.LunyApplicationServiceBase.Quit(int)
-  nameWithType.vb: LunyApplicationServiceBase.Quit(Integer)
-  fullName.vb: Luny.Engine.Services.LunyApplicationServiceBase.Quit(Integer)
-  name.vb: Quit(Integer)
+  name: Quit(Int32)
+  nameWithType: LunyApplicationServiceBase.Quit(Int32)
+  fullName: Luny.Engine.Services.LunyApplicationServiceBase.Quit(System.Int32)
   spec.csharp:
   - uid: Luny.Engine.Services.LunyApplicationServiceBase.Quit(System.Int32)
     name: Quit
     isExternal: true
   - name: (
   - uid: System.Int32
-    name: int
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
@@ -348,7 +339,7 @@ references:
     isExternal: true
   - name: (
   - uid: System.Int32
-    name: Integer
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
@@ -364,12 +355,9 @@ references:
   parent: Luny.Engine.Services.ILunyApplicationService
   isExternal: true
   href: Luny.Engine.Services.ILunyApplicationService.html#Luny_Engine_Services_ILunyApplicationService_Quit_System_Int32_
-  name: Quit(int)
-  nameWithType: ILunyApplicationService.Quit(int)
-  fullName: Luny.Engine.Services.ILunyApplicationService.Quit(int)
-  nameWithType.vb: ILunyApplicationService.Quit(Integer)
-  fullName.vb: Luny.Engine.Services.ILunyApplicationService.Quit(Integer)
-  name.vb: Quit(Integer)
+  name: Quit(Int32)
+  nameWithType: ILunyApplicationService.Quit(Int32)
+  fullName: Luny.Engine.Services.ILunyApplicationService.Quit(System.Int32)
   spec.csharp:
   - uid: Luny.Engine.Services.ILunyApplicationService.Quit(System.Int32)
     name: Quit
@@ -377,7 +365,7 @@ references:
     href: Luny.Engine.Services.ILunyApplicationService.html#Luny_Engine_Services_ILunyApplicationService_Quit_System_Int32_
   - name: (
   - uid: System.Int32
-    name: int
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
@@ -388,7 +376,7 @@ references:
     href: Luny.Engine.Services.ILunyApplicationService.html#Luny_Engine_Services_ILunyApplicationService_Quit_System_Int32_
   - name: (
   - uid: System.Int32
-    name: Integer
+    name: Int32
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
@@ -397,12 +385,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Luny.Engine.Services.LunyEngineServiceBase.OnServiceInitialize
   commentId: M:Luny.Engine.Services.LunyEngineServiceBase.OnServiceInitialize
   parent: Luny.Engine.Services.LunyEngineServiceBase
@@ -527,12 +512,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Luny.Engine.Services.LunyApplicationServiceBase.IsPlaying
   commentId: P:Luny.Engine.Services.LunyApplicationServiceBase.IsPlaying
   parent: Luny.Engine.Services.LunyApplicationServiceBase

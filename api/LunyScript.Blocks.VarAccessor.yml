@@ -38,9 +38,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Define(string)
-  nameWithType: VarAccessor.Define(string)
-  fullName: LunyScript.Blocks.VarAccessor.Define(string)
+  name: Define(String)
+  nameWithType: VarAccessor.Define(String)
+  fullName: LunyScript.Blocks.VarAccessor.Define(System.String)
   type: Method
   assemblies:
   - LunyScript
@@ -48,7 +48,7 @@ items:
   summary: Defines (or gets) a variable with the given name and the default value 0.
   example: []
   syntax:
-    content: public TableVariableBlock Define(string name)
+    content: public TableVariableBlock Define(String name)
     parameters:
     - id: name
       type: System.String
@@ -56,11 +56,8 @@ items:
     return:
       type: LunyScript.Blocks.TableVariableBlock
       description: ''
-    content.vb: Public Function Define(name As String) As TableVariableBlock
+    content.vb: Public Function Define(name As [String]) As TableVariableBlock
   overload: LunyScript.Blocks.VarAccessor.Define*
-  nameWithType.vb: VarAccessor.Define(String)
-  fullName.vb: LunyScript.Blocks.VarAccessor.Define(String)
-  name.vb: Define(String)
 - uid: LunyScript.Blocks.VarAccessor.Define(System.String,Luny.Variable)
   commentId: M:LunyScript.Blocks.VarAccessor.Define(System.String,Luny.Variable)
   id: Define(System.String,Luny.Variable)
@@ -68,9 +65,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Define(string, Variable)
-  nameWithType: VarAccessor.Define(string, Variable)
-  fullName: LunyScript.Blocks.VarAccessor.Define(string, Luny.Variable)
+  name: Define(String, Variable)
+  nameWithType: VarAccessor.Define(String, Variable)
+  fullName: LunyScript.Blocks.VarAccessor.Define(System.String, Luny.Variable)
   type: Method
   assemblies:
   - LunyScript
@@ -78,7 +75,7 @@ items:
   summary: Defines (or gets) a variable with the given name and assigns the provided Variable.
   example: []
   syntax:
-    content: public TableVariableBlock Define(string name, Variable variable)
+    content: public TableVariableBlock Define(String name, Variable variable)
     parameters:
     - id: name
       type: System.String
@@ -89,11 +86,8 @@ items:
     return:
       type: LunyScript.Blocks.TableVariableBlock
       description: ''
-    content.vb: Public Function Define(name As String, variable As Variable) As TableVariableBlock
+    content.vb: Public Function Define(name As [String], variable As Variable) As TableVariableBlock
   overload: LunyScript.Blocks.VarAccessor.Define*
-  nameWithType.vb: VarAccessor.Define(String, Variable)
-  fullName.vb: LunyScript.Blocks.VarAccessor.Define(String, Luny.Variable)
-  name.vb: Define(String, Variable)
 - uid: LunyScript.Blocks.VarAccessor.Constant(System.String,Luny.Variable)
   commentId: M:LunyScript.Blocks.VarAccessor.Constant(System.String,Luny.Variable)
   id: Constant(System.String,Luny.Variable)
@@ -101,15 +95,15 @@ items:
   langs:
   - csharp
   - vb
-  name: Constant(string, Variable)
-  nameWithType: VarAccessor.Constant(string, Variable)
-  fullName: LunyScript.Blocks.VarAccessor.Constant(string, Luny.Variable)
+  name: Constant(String, Variable)
+  nameWithType: VarAccessor.Constant(String, Variable)
+  fullName: LunyScript.Blocks.VarAccessor.Constant(System.String, Luny.Variable)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public TableVariableBlock Constant(string name, Variable variable)
+    content: public TableVariableBlock Constant(String name, Variable variable)
     parameters:
     - id: name
       type: System.String
@@ -117,11 +111,8 @@ items:
       type: Luny.Variable
     return:
       type: LunyScript.Blocks.TableVariableBlock
-    content.vb: Public Function Constant(name As String, variable As Variable) As TableVariableBlock
+    content.vb: Public Function Constant(name As [String], variable As Variable) As TableVariableBlock
   overload: LunyScript.Blocks.VarAccessor.Constant*
-  nameWithType.vb: VarAccessor.Constant(String, Variable)
-  fullName.vb: LunyScript.Blocks.VarAccessor.Constant(String, Luny.Variable)
-  name.vb: Constant(String, Variable)
 - uid: LunyScript.Blocks.VarAccessor.Item(System.String)
   commentId: P:LunyScript.Blocks.VarAccessor.Item(System.String)
   id: Item(System.String)
@@ -129,24 +120,24 @@ items:
   langs:
   - csharp
   - vb
-  name: this[string]
-  nameWithType: VarAccessor.this[string]
-  fullName: LunyScript.Blocks.VarAccessor.this[string]
+  name: this[String]
+  nameWithType: VarAccessor.this[String]
+  fullName: LunyScript.Blocks.VarAccessor.this[System.String]
   type: Property
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public TableVariableBlock this[string name] { get; set; }
+    content: public TableVariableBlock this[String name] { get; set; }
     parameters:
     - id: name
       type: System.String
     return:
       type: LunyScript.Blocks.TableVariableBlock
-    content.vb: Public Default Property this[](name As String) As TableVariableBlock
+    content.vb: Public Default Property this[](name As [String]) As TableVariableBlock
   overload: LunyScript.Blocks.VarAccessor.Item*
   nameWithType.vb: VarAccessor.this[](String)
-  fullName.vb: LunyScript.Blocks.VarAccessor.this[](String)
+  fullName.vb: LunyScript.Blocks.VarAccessor.this[](System.String)
   name.vb: this[](String)
 references:
 - uid: LunyScript.Blocks
@@ -180,12 +171,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System
   commentId: N:System
   isExternal: true
@@ -205,12 +193,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: LunyScript.Blocks.TableVariableBlock
   commentId: T:LunyScript.Blocks.TableVariableBlock
   parent: LunyScript.Blocks

@@ -36,9 +36,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Start(double)
-  nameWithType: Stopwatch.Start(double)
-  fullName: Luny.Stopwatch.Start(double)
+  name: Start(Double)
+  nameWithType: Stopwatch.Start(Double)
+  fullName: Luny.Stopwatch.Start(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -46,17 +46,14 @@ items:
   summary: Starts measuring time from the provided start time.
   example: []
   syntax:
-    content: public static Stopwatch Start(double now)
+    content: public static Stopwatch Start(Double now)
     parameters:
     - id: now
       type: System.Double
     return:
       type: Luny.Stopwatch
-    content.vb: Public Shared Function Start(now As Double) As Stopwatch
+    content.vb: Public Shared Function Start(now As [Double]) As Stopwatch
   overload: Luny.Stopwatch.Start*
-  nameWithType.vb: Stopwatch.Start(Double)
-  fullName.vb: Luny.Stopwatch.Start(Double)
-  name.vb: Start(Double)
 - uid: Luny.Stopwatch.ElapsedMilliseconds(System.Double)
   commentId: M:Luny.Stopwatch.ElapsedMilliseconds(System.Double)
   id: ElapsedMilliseconds(System.Double)
@@ -64,9 +61,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ElapsedMilliseconds(double)
-  nameWithType: Stopwatch.ElapsedMilliseconds(double)
-  fullName: Luny.Stopwatch.ElapsedMilliseconds(double)
+  name: ElapsedMilliseconds(Double)
+  nameWithType: Stopwatch.ElapsedMilliseconds(Double)
+  fullName: Luny.Stopwatch.ElapsedMilliseconds(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -74,17 +71,14 @@ items:
   summary: Returns the elapsed time in milliseconds since the timestamp was started.
   example: []
   syntax:
-    content: public double ElapsedMilliseconds(double now)
+    content: public Double ElapsedMilliseconds(Double now)
     parameters:
     - id: now
       type: System.Double
     return:
       type: System.Double
-    content.vb: Public Function ElapsedMilliseconds(now As Double) As Double
+    content.vb: Public Function ElapsedMilliseconds(now As [Double]) As [Double]
   overload: Luny.Stopwatch.ElapsedMilliseconds*
-  nameWithType.vb: Stopwatch.ElapsedMilliseconds(Double)
-  fullName.vb: Luny.Stopwatch.ElapsedMilliseconds(Double)
-  name.vb: ElapsedMilliseconds(Double)
 - uid: Luny.Stopwatch.ElapsedSeconds(System.Double)
   commentId: M:Luny.Stopwatch.ElapsedSeconds(System.Double)
   id: ElapsedSeconds(System.Double)
@@ -92,9 +86,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ElapsedSeconds(double)
-  nameWithType: Stopwatch.ElapsedSeconds(double)
-  fullName: Luny.Stopwatch.ElapsedSeconds(double)
+  name: ElapsedSeconds(Double)
+  nameWithType: Stopwatch.ElapsedSeconds(Double)
+  fullName: Luny.Stopwatch.ElapsedSeconds(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -102,17 +96,14 @@ items:
   summary: Returns the elapsed time in seconds since the timestamp was started.
   example: []
   syntax:
-    content: public double ElapsedSeconds(double now)
+    content: public Double ElapsedSeconds(Double now)
     parameters:
     - id: now
       type: System.Double
     return:
       type: System.Double
-    content.vb: Public Function ElapsedSeconds(now As Double) As Double
+    content.vb: Public Function ElapsedSeconds(now As [Double]) As [Double]
   overload: Luny.Stopwatch.ElapsedSeconds*
-  nameWithType.vb: Stopwatch.ElapsedSeconds(Double)
-  fullName.vb: Luny.Stopwatch.ElapsedSeconds(Double)
-  name.vb: ElapsedSeconds(Double)
 - uid: Luny.Stopwatch.ElapsedMinutes(System.Double)
   commentId: M:Luny.Stopwatch.ElapsedMinutes(System.Double)
   id: ElapsedMinutes(System.Double)
@@ -120,9 +111,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ElapsedMinutes(double)
-  nameWithType: Stopwatch.ElapsedMinutes(double)
-  fullName: Luny.Stopwatch.ElapsedMinutes(double)
+  name: ElapsedMinutes(Double)
+  nameWithType: Stopwatch.ElapsedMinutes(Double)
+  fullName: Luny.Stopwatch.ElapsedMinutes(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -130,17 +121,14 @@ items:
   summary: Returns the elapsed time in minutes since the timestamp was started.
   example: []
   syntax:
-    content: public double ElapsedMinutes(double now)
+    content: public Double ElapsedMinutes(Double now)
     parameters:
     - id: now
       type: System.Double
     return:
       type: System.Double
-    content.vb: Public Function ElapsedMinutes(now As Double) As Double
+    content.vb: Public Function ElapsedMinutes(now As [Double]) As [Double]
   overload: Luny.Stopwatch.ElapsedMinutes*
-  nameWithType.vb: Stopwatch.ElapsedMinutes(Double)
-  fullName.vb: Luny.Stopwatch.ElapsedMinutes(Double)
-  name.vb: ElapsedMinutes(Double)
 - uid: Luny.Stopwatch.ElapsedHours(System.Double)
   commentId: M:Luny.Stopwatch.ElapsedHours(System.Double)
   id: ElapsedHours(System.Double)
@@ -148,9 +136,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ElapsedHours(double)
-  nameWithType: Stopwatch.ElapsedHours(double)
-  fullName: Luny.Stopwatch.ElapsedHours(double)
+  name: ElapsedHours(Double)
+  nameWithType: Stopwatch.ElapsedHours(Double)
+  fullName: Luny.Stopwatch.ElapsedHours(System.Double)
   type: Method
   assemblies:
   - Luny
@@ -158,17 +146,14 @@ items:
   summary: Returns the elapsed time in hours since the timestamp was started.
   example: []
   syntax:
-    content: public double ElapsedHours(double now)
+    content: public Double ElapsedHours(Double now)
     parameters:
     - id: now
       type: System.Double
     return:
       type: System.Double
-    content.vb: Public Function ElapsedHours(now As Double) As Double
+    content.vb: Public Function ElapsedHours(now As [Double]) As [Double]
   overload: Luny.Stopwatch.ElapsedHours*
-  nameWithType.vb: Stopwatch.ElapsedHours(Double)
-  fullName.vb: Luny.Stopwatch.ElapsedHours(Double)
-  name.vb: ElapsedHours(Double)
 - uid: Luny.Stopwatch.ToString
   commentId: M:Luny.Stopwatch.ToString
   id: ToString
@@ -185,10 +170,10 @@ items:
   namespace: Luny
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.ValueType.ToString
   overload: Luny.Stopwatch.ToString*
 references:
@@ -204,12 +189,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -217,7 +199,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -279,12 +261,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Stopwatch
   commentId: T:Luny.Stopwatch
   parent: Luny
@@ -355,9 +334,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

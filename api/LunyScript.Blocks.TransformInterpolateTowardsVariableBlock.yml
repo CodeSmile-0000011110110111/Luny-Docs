@@ -72,15 +72,15 @@ items:
   langs:
   - csharp
   - vb
-  name: TransformInterpolateTowardsVariableBlock(VariableBlock<LunyVector3>, double, double, LunyVector3, double)
-  nameWithType: TransformInterpolateTowardsVariableBlock.TransformInterpolateTowardsVariableBlock(VariableBlock<LunyVector3>, double, double, LunyVector3, double)
-  fullName: LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.TransformInterpolateTowardsVariableBlock(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector3>, double, double, Luny.Engine.Bridge.LunyVector3, double)
+  name: TransformInterpolateTowardsVariableBlock(VariableBlock<LunyVector3>, Double, Double, LunyVector3, Double)
+  nameWithType: TransformInterpolateTowardsVariableBlock.TransformInterpolateTowardsVariableBlock(VariableBlock<LunyVector3>, Double, Double, LunyVector3, Double)
+  fullName: LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.TransformInterpolateTowardsVariableBlock(LunyScript.Blocks.VariableBlock<Luny.Engine.Bridge.LunyVector3>, System.Double, System.Double, Luny.Engine.Bridge.LunyVector3, System.Double)
   type: Constructor
   assemblies:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: protected TransformInterpolateTowardsVariableBlock(VariableBlock<LunyVector3> targetScale, double speed, double deadZone, LunyVector3 axisLock, double responsiveness)
+    content: protected TransformInterpolateTowardsVariableBlock(VariableBlock<LunyVector3> targetScale, Double speed, Double deadZone, LunyVector3 axisLock, Double responsiveness)
     parameters:
     - id: targetScale
       type: LunyScript.Blocks.VariableBlock{Luny.Engine.Bridge.LunyVector3}
@@ -92,10 +92,10 @@ items:
       type: Luny.Engine.Bridge.LunyVector3
     - id: responsiveness
       type: System.Double
-    content.vb: Protected Sub New(targetScale As VariableBlock(Of LunyVector3), speed As Double, deadZone As Double, axisLock As LunyVector3, responsiveness As Double)
+    content.vb: Protected Sub New(targetScale As VariableBlock(Of LunyVector3), speed As [Double], deadZone As [Double], axisLock As LunyVector3, responsiveness As [Double])
   overload: LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.#ctor*
   nameWithType.vb: TransformInterpolateTowardsVariableBlock.New(VariableBlock(Of LunyVector3), Double, Double, LunyVector3, Double)
-  fullName.vb: LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.New(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector3), Double, Double, Luny.Engine.Bridge.LunyVector3, Double)
+  fullName.vb: LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.New(LunyScript.Blocks.VariableBlock(Of Luny.Engine.Bridge.LunyVector3), System.Double, System.Double, Luny.Engine.Bridge.LunyVector3, System.Double)
   name.vb: New(VariableBlock(Of LunyVector3), Double, Double, LunyVector3, Double)
 - uid: LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.TryGetScaleDelta(LunyScript.IScriptRuntimeContext,Luny.Engine.Bridge.LunyVector3@,Luny.Engine.Bridge.LunyVector3@)
   commentId: M:LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.TryGetScaleDelta(LunyScript.IScriptRuntimeContext,Luny.Engine.Bridge.LunyVector3@,Luny.Engine.Bridge.LunyVector3@)
@@ -117,7 +117,7 @@ items:
     Returns false (and skips) when the distance is within the dead zone.
   example: []
   syntax:
-    content: protected bool TryGetScaleDelta(IScriptRuntimeContext ctx, out LunyVector3 current, out LunyVector3 maskedTarget)
+    content: protected Boolean TryGetScaleDelta(IScriptRuntimeContext ctx, out LunyVector3 current, out LunyVector3 maskedTarget)
     parameters:
     - id: ctx
       type: LunyScript.IScriptRuntimeContext
@@ -127,7 +127,7 @@ items:
       type: Luny.Engine.Bridge.LunyVector3
     return:
       type: System.Boolean
-    content.vb: Protected Function TryGetScaleDelta(ctx As IScriptRuntimeContext, current As LunyVector3, maskedTarget As LunyVector3) As Boolean
+    content.vb: Protected Function TryGetScaleDelta(ctx As IScriptRuntimeContext, current As LunyVector3, maskedTarget As LunyVector3) As [Boolean]
   overload: LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.TryGetScaleDelta*
   nameWithType.vb: TransformInterpolateTowardsVariableBlock.TryGetScaleDelta(IScriptRuntimeContext, LunyVector3, LunyVector3)
   fullName.vb: LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.TryGetScaleDelta(LunyScript.IScriptRuntimeContext, Luny.Engine.Bridge.LunyVector3, Luny.Engine.Bridge.LunyVector3)
@@ -147,10 +147,10 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: protected string TowardsVariableToString()
+    content: protected String TowardsVariableToString()
     return:
       type: System.String
-    content.vb: Protected Function TowardsVariableToString() As String
+    content.vb: Protected Function TowardsVariableToString() As [String]
   overload: LunyScript.Blocks.TransformInterpolateTowardsVariableBlock.TowardsVariableToString*
 references:
 - uid: LunyScript.Blocks.VariableBlock
@@ -192,12 +192,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: LunyScript.Blocks.ScriptBlock
   commentId: T:LunyScript.Blocks.ScriptBlock
   parent: LunyScript.Blocks
@@ -457,12 +454,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: Luny.Engine.Bridge.LunyVector3
   commentId: T:Luny.Engine.Bridge.LunyVector3
   parent: Luny.Engine.Bridge
@@ -528,12 +522,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: LunyScript
   commentId: N:LunyScript
   isExternal: true
@@ -553,9 +544,6 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String

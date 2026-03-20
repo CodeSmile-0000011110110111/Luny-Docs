@@ -50,10 +50,10 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public readonly long Value
+    content: public readonly Int64 Value
     return:
       type: System.Int64
-    content.vb: Public ReadOnly Value As Long
+    content.vb: Public ReadOnly Value As Int64
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.op_Implicit(System.Int64)~Luny.Engine.Bridge.LunyNativeObjectId
   commentId: M:Luny.Engine.Bridge.LunyNativeObjectId.op_Implicit(System.Int64)~Luny.Engine.Bridge.LunyNativeObjectId
   id: op_Implicit(System.Int64)~Luny.Engine.Bridge.LunyNativeObjectId
@@ -61,25 +61,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator LunyNativeObjectId(long)
-  nameWithType: LunyNativeObjectId.implicit operator LunyNativeObjectId(long)
-  fullName: Luny.Engine.Bridge.LunyNativeObjectId.implicit operator Luny.Engine.Bridge.LunyNativeObjectId(long)
+  name: implicit operator LunyNativeObjectId(Int64)
+  nameWithType: LunyNativeObjectId.implicit operator LunyNativeObjectId(Int64)
+  fullName: Luny.Engine.Bridge.LunyNativeObjectId.implicit operator Luny.Engine.Bridge.LunyNativeObjectId(System.Int64)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static implicit operator LunyNativeObjectId(long v)
+    content: public static implicit operator LunyNativeObjectId(Int64 v)
     parameters:
     - id: v
       type: System.Int64
     return:
       type: Luny.Engine.Bridge.LunyNativeObjectId
-    content.vb: Public Shared Widening Operator CType(v As Long) As LunyNativeObjectId
+    content.vb: Public Shared Widening Operator CType(v As Int64) As LunyNativeObjectId
   overload: Luny.Engine.Bridge.LunyNativeObjectId.op_Implicit*
-  nameWithType.vb: LunyNativeObjectId.CType(Long)
-  fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.CType(Long)
-  name.vb: CType(Long)
+  nameWithType.vb: LunyNativeObjectId.CType(Int64)
+  fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.CType(System.Int64)
+  name.vb: CType(Int64)
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.op_Implicit(System.UInt64)~Luny.Engine.Bridge.LunyNativeObjectId
   commentId: M:Luny.Engine.Bridge.LunyNativeObjectId.op_Implicit(System.UInt64)~Luny.Engine.Bridge.LunyNativeObjectId
   id: op_Implicit(System.UInt64)~Luny.Engine.Bridge.LunyNativeObjectId
@@ -87,25 +87,25 @@ items:
   langs:
   - csharp
   - vb
-  name: implicit operator LunyNativeObjectId(ulong)
-  nameWithType: LunyNativeObjectId.implicit operator LunyNativeObjectId(ulong)
-  fullName: Luny.Engine.Bridge.LunyNativeObjectId.implicit operator Luny.Engine.Bridge.LunyNativeObjectId(ulong)
+  name: implicit operator LunyNativeObjectId(UInt64)
+  nameWithType: LunyNativeObjectId.implicit operator LunyNativeObjectId(UInt64)
+  fullName: Luny.Engine.Bridge.LunyNativeObjectId.implicit operator Luny.Engine.Bridge.LunyNativeObjectId(System.UInt64)
   type: Operator
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static implicit operator LunyNativeObjectId(ulong v)
+    content: public static implicit operator LunyNativeObjectId(UInt64 v)
     parameters:
     - id: v
       type: System.UInt64
     return:
       type: Luny.Engine.Bridge.LunyNativeObjectId
-    content.vb: Public Shared Widening Operator CType(v As ULong) As LunyNativeObjectId
+    content.vb: Public Shared Widening Operator CType(v As UInt64) As LunyNativeObjectId
   overload: Luny.Engine.Bridge.LunyNativeObjectId.op_Implicit*
-  nameWithType.vb: LunyNativeObjectId.CType(ULong)
-  fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.CType(ULong)
-  name.vb: CType(ULong)
+  nameWithType.vb: LunyNativeObjectId.CType(UInt64)
+  fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.CType(System.UInt64)
+  name.vb: CType(UInt64)
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.#ctor(System.Int64)
   commentId: M:Luny.Engine.Bridge.LunyNativeObjectId.#ctor(System.Int64)
   id: '#ctor(System.Int64)'
@@ -113,23 +113,23 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyNativeObjectId(long)
-  nameWithType: LunyNativeObjectId.LunyNativeObjectId(long)
-  fullName: Luny.Engine.Bridge.LunyNativeObjectId.LunyNativeObjectId(long)
+  name: LunyNativeObjectId(Int64)
+  nameWithType: LunyNativeObjectId.LunyNativeObjectId(Int64)
+  fullName: Luny.Engine.Bridge.LunyNativeObjectId.LunyNativeObjectId(System.Int64)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public LunyNativeObjectId(long value)
+    content: public LunyNativeObjectId(Int64 value)
     parameters:
     - id: value
       type: System.Int64
-    content.vb: Public Sub New(value As Long)
+    content.vb: Public Sub New(value As Int64)
   overload: Luny.Engine.Bridge.LunyNativeObjectId.#ctor*
-  nameWithType.vb: LunyNativeObjectId.New(Long)
-  fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.New(Long)
-  name.vb: New(Long)
+  nameWithType.vb: LunyNativeObjectId.New(Int64)
+  fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.New(System.Int64)
+  name.vb: New(Int64)
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.#ctor(System.UInt64)
   commentId: M:Luny.Engine.Bridge.LunyNativeObjectId.#ctor(System.UInt64)
   id: '#ctor(System.UInt64)'
@@ -137,23 +137,23 @@ items:
   langs:
   - csharp
   - vb
-  name: LunyNativeObjectId(ulong)
-  nameWithType: LunyNativeObjectId.LunyNativeObjectId(ulong)
-  fullName: Luny.Engine.Bridge.LunyNativeObjectId.LunyNativeObjectId(ulong)
+  name: LunyNativeObjectId(UInt64)
+  nameWithType: LunyNativeObjectId.LunyNativeObjectId(UInt64)
+  fullName: Luny.Engine.Bridge.LunyNativeObjectId.LunyNativeObjectId(System.UInt64)
   type: Constructor
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public LunyNativeObjectId(ulong value)
+    content: public LunyNativeObjectId(UInt64 value)
     parameters:
     - id: value
       type: System.UInt64
-    content.vb: Public Sub New(value As ULong)
+    content.vb: Public Sub New(value As UInt64)
   overload: Luny.Engine.Bridge.LunyNativeObjectId.#ctor*
-  nameWithType.vb: LunyNativeObjectId.New(ULong)
-  fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.New(ULong)
-  name.vb: New(ULong)
+  nameWithType.vb: LunyNativeObjectId.New(UInt64)
+  fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.New(System.UInt64)
+  name.vb: New(UInt64)
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.Equals(Luny.Engine.Bridge.LunyNativeObjectId)
   commentId: M:Luny.Engine.Bridge.LunyNativeObjectId.Equals(Luny.Engine.Bridge.LunyNativeObjectId)
   id: Equals(Luny.Engine.Bridge.LunyNativeObjectId)
@@ -170,13 +170,13 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public bool Equals(LunyNativeObjectId other)
+    content: public Boolean Equals(LunyNativeObjectId other)
     parameters:
     - id: other
       type: Luny.Engine.Bridge.LunyNativeObjectId
     return:
       type: System.Boolean
-    content.vb: Public Function Equals(other As LunyNativeObjectId) As Boolean
+    content.vb: Public Function Equals(other As LunyNativeObjectId) As [Boolean]
   overload: Luny.Engine.Bridge.LunyNativeObjectId.Equals*
   implements:
   - System.IEquatable{Luny.Engine.Bridge.LunyNativeObjectId}.Equals(Luny.Engine.Bridge.LunyNativeObjectId)
@@ -187,27 +187,24 @@ items:
   langs:
   - csharp
   - vb
-  name: Equals(object)
-  nameWithType: LunyNativeObjectId.Equals(object)
-  fullName: Luny.Engine.Bridge.LunyNativeObjectId.Equals(object)
+  name: Equals(Object)
+  nameWithType: LunyNativeObjectId.Equals(Object)
+  fullName: Luny.Engine.Bridge.LunyNativeObjectId.Equals(System.Object)
   type: Method
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override bool Equals(object obj)
+    content: public override Boolean Equals(Object obj)
     parameters:
     - id: obj
       type: System.Object
     return:
       type: System.Boolean
-    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    content.vb: Public Overrides Function Equals(obj As [Object]) As [Boolean]
   overridden: System.ValueType.Equals(System.Object)
   overload: Luny.Engine.Bridge.LunyNativeObjectId.Equals*
-  nameWithType.vb: LunyNativeObjectId.Equals(Object)
-  fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.Equals(Object)
-  name.vb: Equals(Object)
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.GetHashCode
   commentId: M:Luny.Engine.Bridge.LunyNativeObjectId.GetHashCode
   id: GetHashCode
@@ -224,10 +221,10 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override int GetHashCode()
+    content: public override Int32 GetHashCode()
     return:
       type: System.Int32
-    content.vb: Public Overrides Function GetHashCode() As Integer
+    content.vb: Public Overrides Function GetHashCode() As Int32
   overridden: System.ValueType.GetHashCode
   overload: Luny.Engine.Bridge.LunyNativeObjectId.GetHashCode*
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.CompareTo(Luny.Engine.Bridge.LunyNativeObjectId)
@@ -246,13 +243,13 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public int CompareTo(LunyNativeObjectId other)
+    content: public Int32 CompareTo(LunyNativeObjectId other)
     parameters:
     - id: other
       type: Luny.Engine.Bridge.LunyNativeObjectId
     return:
       type: System.Int32
-    content.vb: Public Function CompareTo(other As LunyNativeObjectId) As Integer
+    content.vb: Public Function CompareTo(other As LunyNativeObjectId) As Int32
   overload: Luny.Engine.Bridge.LunyNativeObjectId.CompareTo*
   implements:
   - System.IComparable{Luny.Engine.Bridge.LunyNativeObjectId}.CompareTo(Luny.Engine.Bridge.LunyNativeObjectId)
@@ -272,10 +269,10 @@ items:
   namespace: Luny.Engine.Bridge
   example: []
   syntax:
-    content: public override string ToString()
+    content: public override String ToString()
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString() As String
+    content.vb: Public Overrides Function ToString() As [String]
   overridden: System.ValueType.ToString
   overload: Luny.Engine.Bridge.LunyNativeObjectId.ToString*
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.op_Equality(Luny.Engine.Bridge.LunyNativeObjectId,Luny.Engine.Bridge.LunyNativeObjectId)
@@ -293,7 +290,7 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static bool operator ==(LunyNativeObjectId left, LunyNativeObjectId right)
+    content: public static Boolean operator ==(LunyNativeObjectId left, LunyNativeObjectId right)
     parameters:
     - id: left
       type: Luny.Engine.Bridge.LunyNativeObjectId
@@ -301,7 +298,7 @@ items:
       type: Luny.Engine.Bridge.LunyNativeObjectId
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator =(left As LunyNativeObjectId, right As LunyNativeObjectId) As Boolean
+    content.vb: Public Shared Operator =(left As LunyNativeObjectId, right As LunyNativeObjectId) As [Boolean]
   overload: Luny.Engine.Bridge.LunyNativeObjectId.op_Equality*
   nameWithType.vb: LunyNativeObjectId.=(LunyNativeObjectId, LunyNativeObjectId)
   fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.=(Luny.Engine.Bridge.LunyNativeObjectId, Luny.Engine.Bridge.LunyNativeObjectId)
@@ -321,7 +318,7 @@ items:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: public static bool operator !=(LunyNativeObjectId left, LunyNativeObjectId right)
+    content: public static Boolean operator !=(LunyNativeObjectId left, LunyNativeObjectId right)
     parameters:
     - id: left
       type: Luny.Engine.Bridge.LunyNativeObjectId
@@ -329,7 +326,7 @@ items:
       type: Luny.Engine.Bridge.LunyNativeObjectId
     return:
       type: System.Boolean
-    content.vb: Public Shared Operator <>(left As LunyNativeObjectId, right As LunyNativeObjectId) As Boolean
+    content.vb: Public Shared Operator <>(left As LunyNativeObjectId, right As LunyNativeObjectId) As [Boolean]
   overload: Luny.Engine.Bridge.LunyNativeObjectId.op_Inequality*
   nameWithType.vb: LunyNativeObjectId.<>(LunyNativeObjectId, LunyNativeObjectId)
   fullName.vb: Luny.Engine.Bridge.LunyNativeObjectId.<>(Luny.Engine.Bridge.LunyNativeObjectId, Luny.Engine.Bridge.LunyNativeObjectId)
@@ -510,12 +507,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: long
-  nameWithType: long
-  fullName: long
-  nameWithType.vb: Long
-  fullName.vb: Long
-  name.vb: Long
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.op_Implicit*
   commentId: Overload:Luny.Engine.Bridge.LunyNativeObjectId.op_Implicit
   name: implicit operator
@@ -541,12 +535,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.uint64
-  name: ulong
-  nameWithType: ulong
-  fullName: ulong
-  nameWithType.vb: ULong
-  fullName.vb: ULong
-  name.vb: ULong
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.#ctor*
   commentId: Overload:Luny.Engine.Bridge.LunyNativeObjectId.#ctor
   isExternal: true
@@ -601,12 +592,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: System.IEquatable`1.Equals(`0)
   commentId: M:System.IEquatable`1.Equals(`0)
   isExternal: true
@@ -637,12 +625,9 @@ references:
   parent: System.ValueType
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
-  name: Equals(object)
-  nameWithType: ValueType.Equals(object)
-  fullName: System.ValueType.Equals(object)
-  nameWithType.vb: ValueType.Equals(Object)
-  fullName.vb: System.ValueType.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
     name: Equals
@@ -650,7 +635,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
   - name: (
   - uid: System.Object
-    name: object
+    name: Object
     isExternal: true
   - name: )
   spec.vb:
@@ -667,12 +652,9 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.ValueType
   commentId: T:System.ValueType
   parent: System
@@ -715,12 +697,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.CompareTo*
   commentId: Overload:Luny.Engine.Bridge.LunyNativeObjectId.CompareTo
   isExternal: true
@@ -819,12 +798,9 @@ references:
   parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Luny.Engine.Bridge.LunyNativeObjectId.op_Equality*
   commentId: Overload:Luny.Engine.Bridge.LunyNativeObjectId.op_Equality
   isExternal: true

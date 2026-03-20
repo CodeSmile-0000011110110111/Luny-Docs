@@ -1,6 +1,7 @@
 {
   "metadata": [
     {
+      "useClrTypeNames": true,
       "src": [
         {
           "files": [
