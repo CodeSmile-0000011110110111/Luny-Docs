@@ -17,6 +17,8 @@
     href: concepts-anatomy-script.md
   - name: Advanced Block Usage
     href: concepts-blocks-advanced.md
+  - name: Control Flow
+    href: concepts-control-flow.md
   - name: Events
     href: api-events.md
     items:
@@ -33,14 +35,12 @@
       href: api-variables-definition.md
     - name: Using Variables
       href: api-variables-uses.md
-    - name: Variable Arithmetics
-      href: api-variables-arithmetics.md
     - name: Variable Comparisons
       href: api-variables-comparisons.md
+    - name: Variable Arithmetics
+      href: api-variables-arithmetics.md
     - name: String Variables
       href: api-variables-strings.md
-  - name: Control Flow
-    href: concepts-control-flow.md
 - name: (Placeholders)
   href: api-assets.md
   items:

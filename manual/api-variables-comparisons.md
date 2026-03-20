@@ -1,21 +1,30 @@
 ﻿# Variable Comparisons
 
-Script variables can also be compared with literal values and other variables.
+Script variables can be compared with literal values and other variables.
+
+## Variables Are Conditions
+
+Variables and their comparison operators are naturally usable in conditions:
+
+```csharp
+var alive = Var.Define("Is Alive", true);
+On.Ready(If(alive).Then(Debug.Log("I live, therefore I must!")));
+```
 
 ## Operators Only
 
-Comparisons can be performed entirely with operators `< <= == != >= >`. There are no separate comparison methods.
+Comparisons can be performed entirely with operators `< <= == != >= > ! ++ --`.
 
 ## Where To Use Comparisons
 
-A comparison creates a [`ConditionBlock`](xref:LunyScript.Blocks.ConditionBlock) which evaluates to either `true` or `false`.
-Blocks that execute (make changes) are [`ActionBlock`](xref:LunyScript.Blocks.ActionBlock) types.
-
-Block methods may accept one or the other. The most common blocks accepting a `ConditionBlock` are:
+Variables and their comparison operators can be used as conditions whereever a [`ConditionBlock`](xref:LunyScript.Blocks.ConditionBlock) is accepted. For example:
 
 - `If(conditions).Then(actions)`
 - `While(conditions).Do(actions)`
-- Logical operators: `OR(conditions)`, `AND(conditions)`, `NOT(conditions)`
+- `OR(conditions)`
+- `AND(conditions)`
+- `NOT(conditions)`
+- ...
 
 ## Numerical Literal Comparison
 
@@ -31,7 +40,7 @@ On.Ready(If(compare >= 0.1)
 
 ## Numerical Variable Comparison
 
-This is true because `compare` is not equal to `other`:
+This is true because `compare`'s value is not equal to `other`'s value:
 
 ```csharp
 var compare = Var.Define("compare", 0.123456789);
@@ -58,16 +67,13 @@ On.Ready(If(compare)
 
 ## Boolean Comparison
 
-This is true because `truth` is not false.
+This example uses the `!` negation operator and will execute the `Else` branch because `truth` is true.
 
 ```csharp
-var truth = Var.Define("another fact", true);
+var truth = Var.Define("a fact", true);
 
 On.Ready(If(!truth)
-        .Then(Debug.Log($"It's a fact. ({truth.Value})"))
-        .Else(Debug.Log($"It's an alternative fact!! ({truth.Value})"))
+        .Then(Debug.Log($"It's a fact. (True)"))
+        .Else(Debug.Log($"It's an alternative fact!! (False)"))
 );
 ```
-
-> [!NOTE]
-> This example uses the `!` negation operator and will therefore execute the `Else` branch.

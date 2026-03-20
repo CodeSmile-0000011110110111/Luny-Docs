@@ -33,4 +33,4 @@ On.Ready(If(message != "We come in peace!")
 ## Other Operations: ERROR
 
 > [!CAUTION]
-> All other arithmetic operations and comparisons on string variables will be an error.
+> Other arithmetic operations and comparisons on string variables are not meaningful and will log an error.
