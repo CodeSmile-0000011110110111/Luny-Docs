@@ -133,6 +133,9 @@ This will continuously change the value between `true` and `false`.
 You can pass the result of an arithmetic operation to an Action that accepts a number, bool or string value:
 
 ```csharp
+var value1 = Var.Define("v1", 2);
+var value2 = Var.Define("v2", 3);
+
 On.Ready(Transform.SetLocalScale(value1 + value2)); // Sets uniform scale: (5,5,5)
 ```
 
@@ -146,14 +149,14 @@ This is primarily to improve readability and making math operations less verbose
 
 Aliases are provided for those who like to avoid cryptic abbreviations reminiscent of assembly language.
 
-| Operation | Wordy Alias  |
-|:----------|:-------------|
-| `Add`   | _(same)_     |
-| `Sub`   | `Subtract`   |
-| `Mul`   | `Multiply`   |
-| `Div`   | `Divide`     |
-| `Inc`   | `Increment`  |
-| `Dec`   | `Decrement`  |
+| Operation | Wordy Alias    |
+|:----------|:---------------|
+| `Add`   | `Add` (_same_) |
+| `Sub`   | `Subtract`     |
+| `Mul`   | `Multiply`     |
+| `Div`   | `Divide`       |
+| `Inc`   | `Increment`    |
+| `Dec`   | `Decrement`    |
 
 > [!NOTE]
 > This list is not exhaustive. More advanced arithmetic operations (eg `Sqrt`, `Cos`, `Exp`, `Abs`) will be added over time.

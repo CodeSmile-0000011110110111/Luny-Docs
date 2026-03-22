@@ -32,7 +32,8 @@ public override void Build(ScriptBuildContext context)
 }
 ```
 
-A variable can also hold multiple blocks, for instance the `ActionBlock[]` arrays returned from the methods above can be assigned to a variable and used multiple times.
+> [!TIP]
+> A C# variable can also be assigned an array of blocks. See the [Methods Returning Blocks example](#methods-returning-blocks). 
 
 ## Re-Using vs Re-Creating Blocks
 
@@ -46,7 +47,7 @@ If you need individual block behaviour (eg different names) you will have to cre
 
 **Dumb Answer**: You'll copy-paste the line ten times. <-- _This is not maintainable!_
 
-**Clever Answer**: You'll use a loop!
+**Clever Answer**: You'll use a `for` loop!
 
 ```csharp
 public override void Build(ScriptBuildContext context)
@@ -96,6 +97,9 @@ public override void Build(ScriptBuildContext context)
 ```
 
 Now we initially create 3 enemies, and on every subsequent enable we'll create two more: 5, 7, 9 and so forth.
+
+> [!TIP]
+> See also the [Control Flow page](concepts-control-flow.md) for more details on block-based control flow statements.
 
 ## Methods Returning Blocks
 

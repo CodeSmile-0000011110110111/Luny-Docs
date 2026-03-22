@@ -109,12 +109,12 @@ This will log ten times but will decrement from 10 to 1.
 What good are loop expressions without variables? Of course you can use variables in `For()` and `While()` loops:
 
 ```csharp
-var enemyCount = Var.("enemyCount", 3);
+var enemyCount = Var.Define("enemyCount", 3);
+var createEnemy = Object.Create("enemy").With("Assets/Prefabs/Enemy");
+
 On.Enabled(
-    For(enemyCount)
-        .Do(Object.Create("enemy").With("Assets/Prefabs/Enemy")),
-        
-    limit.Add(3)
+    For(enemyCount).Do(createEnemy),
+    enemyCount.Add(3)
 );
 ```
 
