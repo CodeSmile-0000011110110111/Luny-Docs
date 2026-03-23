@@ -129,7 +129,7 @@ func _process(delta: float):
     translate(finalMovement)
 ```
 
-That's **ten lines** you're saving compared to the [Unity MonoBehaviour implementation](first-script-unity.md). 
+That's **ten lines** you're saving compared to the [Unity MonoBehaviour implementation](getting-started-first-script-unity.md). 
 
 However, the savings derive solely from inlining the Input map strings, thus avoiding field declarations (instance variables). The code looks strikingly familiar: its complexity remains exactly the same, with only minor syntax reduction (braces, semicolons).
 

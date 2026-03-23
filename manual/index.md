@@ -8,21 +8,21 @@ LunyScript is ideal for **rapid prototyping**, **reliable scripting**, and **viv
 
 The far-reaching goal: 100% portable, standardized game logic programming. Code shall no longer be the only "asset type" we cannot transfer. Learn and write once, runs in any engine.
 
+## Documentation
+
+- [Getting Started](getting-started.md)
+- [LunyScript Concepts](concepts-overview.md)
+- [Scripting API](/api/) for both LunyEngine and LunyScript.
+
 ## Roadmap
 
 Development focus is on Unity initially.
 
 - Spring 2026: Feature development
 - Summer 2026: Alpha/Beta-Testing
-- Autumn 2026: Release v1.0
+- Autumn 2026: v1.0 Release
 
 Ports to Godot, Unreal, and/or other engines will not start before 2027.
-
-## Documentation
-
-- [Getting Started](getting-started.md)
-- [LunyScript Concepts](concepts-overview.md)
-- [Scripting API](/api/) for both LunyEngine and LunyScript.
 
 ## Sponsoring
 

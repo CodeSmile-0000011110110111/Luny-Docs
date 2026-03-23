@@ -27,7 +27,7 @@ public partial class Player : Script
 }
 ```
 
-**At 13 lines, it is 4 times less than its [MonoBehaviour](first-script-unity.md) implementation!** 😎
+**At 13 lines, it is 4 times less than its [MonoBehaviour](getting-started-first-script-unity.md) implementation!** 😎
 
 Enter playmode and try it.
 
