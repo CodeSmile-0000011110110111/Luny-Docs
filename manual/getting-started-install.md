@@ -1,4 +1,4 @@
-﻿# Installation
+﻿# Installing LunyScript
 
 > [!WARNING]
 > LunyScript and LunyEngine are in pre-alpha state. The curious may explore the repositories. But it's not ready for any kind of use.

@@ -1,4 +1,4 @@
-﻿# Variable Definition
+﻿# Defining Variables
 
 A `LunyScript.Script` subclass provides the `Var` and `GVar` properties to access script variable storage.
 

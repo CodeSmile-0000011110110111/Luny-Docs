@@ -1,4 +1,4 @@
-﻿# Engine and Service Events
+﻿# LunyEngine SDK Events
 
 These are LunyEngine events. Used internally and by framework developers, you will nevertheless run into them in callstacks (logs, exceptions).  
 

@@ -1,4 +1,4 @@
-﻿# Variable Arithmetics
+﻿# Calculating With Variables
 
 Script variables representing numbers can perform arithmetic operations like Add, Subtract, Multiply, Divide.
 

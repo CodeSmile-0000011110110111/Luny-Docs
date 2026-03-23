@@ -1,4 +1,4 @@
-﻿# Advanced Block Uses 
+﻿# Advanced Block Usage 
 
 LunyScript's block-based nature provides scripting opportunities which may not be immediately obvious. We can leverage basic C# functionality to take block-based scripting to the next level. 
 

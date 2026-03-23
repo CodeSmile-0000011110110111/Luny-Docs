@@ -1,4 +1,4 @@
-﻿# Variable Comparisons
+﻿# Comparing Variables
 
 Script variables can be compared with literal values and other variables.
 
