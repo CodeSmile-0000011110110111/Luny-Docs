@@ -3,6 +3,8 @@
 - name: Getting Started
   href: getting-started.md
   items:
+    - name: Installing
+      href: first-install.md
     - name: First Luny Script
       href: first-script.md
       items:
@@ -11,7 +13,7 @@
         - name: LunyScript vs GDScript
           href: first-script-godot.md
 - name: LunyScript Concepts
-  href: api-overview.md
+  href: concepts-overview.md
   items:
   - name: Anatomy of a Luny Script
     href: concepts-anatomy-script.md
@@ -20,27 +22,27 @@
   - name: Control Flow
     href: concepts-control-flow.md
   - name: Events
-    href: api-events.md
+    href: concepts-events.md
     items:
     - name: Object Events (On.*)
-      href: api-events-object.md
+      href: concepts-events-object.md
     - name: Global Events (When.*)
-      href: api-events-global.md
+      href: concepts-events-global.md
     - name: Engine & Service Events
-      href: api-events-engine.md
+      href: concepts-events-engine.md
   - name: Variables
-    href: api-variables.md
+    href: concepts-variables.md
     items:
     - name: Defining Variables
-      href: api-variables-definition.md
+      href: concepts-variables-definition.md
     - name: Using Variables
-      href: api-variables-uses.md
+      href: concepts-variables-uses.md
     - name: Variable Comparisons
-      href: api-variables-comparisons.md
+      href: concepts-variables-comparisons.md
     - name: Variable Arithmetics
-      href: api-variables-arithmetics.md
+      href: concepts-variables-arithmetics.md
     - name: String Variables
-      href: api-variables-strings.md
+      href: concepts-variables-strings.md
 - name: (Placeholders)
   href: api-assets.md
   items:
@@ -78,8 +80,8 @@
   - name: Application API
     href: api-application.md
   - name: Number - Numeric Value Union
-    href: api-variables-number.md
+    href: concepts-variables-number.md
   - name: Table - One Collection Fits All
-    href: api-variables-table.md
+    href: concepts-variables-table.md
   - name: LunyVector, LunyQuaternion, etc.
-    href: api-variables-lunytypes.md
+    href: concepts-variables-lunytypes.md

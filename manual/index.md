@@ -6,7 +6,7 @@ LunyScript is ideal for **rapid prototyping**, **reliable scripting**, and **viv
 
 **LunyEngine** is the developer SDK and engine-agnostic foundation for LunyScript. The intention is to have LunyScript run in multiple engines, thereby providing a common interface and scripting language to all.
 
-The ultimate goal: 100% portable, standardized game logic programming. Code shall no longer be the only "asset type" we cannot transfer. Learn and write once, runs in any engine.
+The far-reaching goal: 100% portable, standardized game logic programming. Code shall no longer be the only "asset type" we cannot transfer. Learn and write once, runs in any engine.
 
 ## Roadmap
 
@@ -18,26 +18,42 @@ Development focus is on Unity initially.
 
 Ports to Godot, Unreal, and/or other engines will not start before 2027.
 
-## Getting Started
+## Documentation
 
-- [Getting Started with LunyScript](getting-started.md)
-- [LunyScript API Overview](api-overview.md)
-- Explore the [Scripting API](/api/) reference of both LunyEngine and LunyScript.
+- [Getting Started](getting-started.md)
+- [LunyScript Concepts](concepts-overview.md)
+- [Scripting API](/api/) for both LunyEngine and LunyScript.
+
+## Sponsoring
+
+> [!TIP] 
+> **LunyScript is a project of pure passion** to make game programming more inclusive, more productive, and learning more fun!<br/> 
+> But passion alone doesn't pay the bills ...
+
+**LunyScript** and **LunyEngine** are currently entirely open source under the MIT License. 
+LunyScript will most likely be released commercially while LunyEngine will remain open source.
+
+Consider becoming a [Patreon patron](https://www.patreon.com/c/CodeSmile) or [GitHub sponsor](https://github.com/sponsors/CodeSmile-0000011110110111)
+to suport the project financially. Patreons receive updates and release notifications once or twice per month either way.
+
+[Email me](mailto:steffen@lunyscript.com) if you think you have a _win-win_  paying/funding opportunity which would further the development of LunyEngine and LunyScript.
 
 ## Social & Media
 
+- [News via Patreon](https://www.patreon.com/c/codesmile)
 - [YouTube](https://www.youtube.com/@codesmile)
 - [Discord](https://discord.gg/EkwNb4rB7W)
 - [X-Twitter](https://x.com/sitterheim)
 
-For updates and to support the project please consider [becoming a Patreon (FREE)](https://www.patreon.com/c/codesmile) or [GitHub sponsor](https://github.com/sponsors/CodeSmile-0000011110110111).
-
 > [!NOTE]
-> I follow a strict no-notifications policy for all social media, and I don't check all those places consistently. The fastest way to reach me is to post on [Unity Discussions](https://discussions.unity.com/) with `@CodeSmile` in the message, or via a Patreon message - both send email notifications which I read daily.
+> The fastest way to reach me is to post on [Unity Discussions](https://discussions.unity.com/) with `@CodeSmile` in the message, via comments on [YouTube](https://www.youtube.com/@codesmile), or via a [Patreon message](https://www.patreon.com/c/CodeSmile) - they send emails which I read daily.
 
-## Links
+## Disclaimer 🧐
 
-- [LunyScript Homepage](https://lunyscript.com)
-- [CodeSmile Homepage](https://codesmile.de)
-- [LunyScript Unity npm package repository](https://github.com/CodeSmile-0000011110110111/LunyScript-UnityPackage) (pre-alpha)
-- [LunyScript Unity Examples Project repository](https://github.com/CodeSmile-0000011110110111/LunyScript_Examples_Unity) (pre-alpha)
+> [!WARNING]
+> This manual is **entirely human-generated** by a senior game & tools software engineer and published game engine book author. 🤓<br/>
+> 
+> No worries though: The AI assisted in practically everything else, from design to code to website.<br/>
+> I take full responsibility for the occasional human-slop I might publish despite the AI supervision.<br/>
+> 
+> - [Steffen _CodeSmile_ Itterheim](https://lunyscript.com/AUTHOR)

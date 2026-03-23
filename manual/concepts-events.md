@@ -5,5 +5,6 @@ LunyScript and LunyEngine strive to provide consistent, relatable event semantic
 The event semantics follow these rules:
 - Events that already happened use past tense: `-ed`.
 - Ongoing / recurring events use present tense: `-ing`. 
-- [Object Events](api-events-object.md) -> Use the `On.*` prefix.
-- [Global Events](api-events-global.md) -> Use the `When.*` prefix.
+- [Object Events](concepts-events-object.md) -> Use the `On.*` prefix.
+- [Global Events](concepts-events-global.md) -> Use the `When.*` prefix.
+- [LunyEngine SDK Events](concepts-events-engine.md)
