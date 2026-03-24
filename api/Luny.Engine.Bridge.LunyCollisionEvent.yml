@@ -5,9 +5,9 @@ items:
   id: LunyCollisionEvent
   parent: Luny.Engine.Bridge
   children:
-  - Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEntered
-  - Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionExited
-  - Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionUpdate
+  - Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEnded
+  - Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionStarted
+  - Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionTouching
   langs:
   - csharp
   - vb
@@ -21,58 +21,58 @@ items:
   syntax:
     content: public enum LunyCollisionEvent
     content.vb: Public Enum LunyCollisionEvent
-- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEntered
-  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEntered
-  id: OnCollisionEntered
+- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionStarted
+  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionStarted
+  id: OnCollisionStarted
   parent: Luny.Engine.Bridge.LunyCollisionEvent
   langs:
   - csharp
   - vb
-  name: OnCollisionEntered
-  nameWithType: LunyCollisionEvent.OnCollisionEntered
-  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEntered
+  name: OnCollisionStarted
+  nameWithType: LunyCollisionEvent.OnCollisionStarted
+  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionStarted
   type: Field
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: OnCollisionEntered = 0
+    content: OnCollisionStarted = 0
     return:
       type: Luny.Engine.Bridge.LunyCollisionEvent
-- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionExited
-  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionExited
-  id: OnCollisionExited
+- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEnded
+  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEnded
+  id: OnCollisionEnded
   parent: Luny.Engine.Bridge.LunyCollisionEvent
   langs:
   - csharp
   - vb
-  name: OnCollisionExited
-  nameWithType: LunyCollisionEvent.OnCollisionExited
-  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionExited
+  name: OnCollisionEnded
+  nameWithType: LunyCollisionEvent.OnCollisionEnded
+  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionEnded
   type: Field
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: OnCollisionExited = 1
+    content: OnCollisionEnded = 1
     return:
       type: Luny.Engine.Bridge.LunyCollisionEvent
-- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionUpdate
-  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionUpdate
-  id: OnCollisionUpdate
+- uid: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionTouching
+  commentId: F:Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionTouching
+  id: OnCollisionTouching
   parent: Luny.Engine.Bridge.LunyCollisionEvent
   langs:
   - csharp
   - vb
-  name: OnCollisionUpdate
-  nameWithType: LunyCollisionEvent.OnCollisionUpdate
-  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionUpdate
+  name: OnCollisionTouching
+  nameWithType: LunyCollisionEvent.OnCollisionTouching
+  fullName: Luny.Engine.Bridge.LunyCollisionEvent.OnCollisionTouching
   type: Field
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: OnCollisionUpdate = 2
+    content: OnCollisionTouching = 2
     return:
       type: Luny.Engine.Bridge.LunyCollisionEvent
 references:

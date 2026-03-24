@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  commentId: T:LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  id: ScriptDiagnosticsObserver
+  parent: LunyScript.Diagnostics
+  children:
+  - LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor
+  - LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+  - LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsShutdown
+  - LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsStartup
+  langs:
+  - csharp
+  - vb
+  name: ScriptDiagnosticsObserver
+  nameWithType: ScriptDiagnosticsObserver
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  summary: >-
+    Engine lifecycle observer for diagnostics tooling. Autoloaded by reflection via ILunyEngineObserver discovery.
+
+    Exposes static startup/shutdown events so editor windows and runtime diagnostics tools can track engine lifetime
+
+    without coupling to engine-specific lifecycle methods.
+  example: []
+  syntax:
+    content: 'public sealed class ScriptDiagnosticsObserver : ILunyEngineObserver'
+    content.vb: Public NotInheritable Class ScriptDiagnosticsObserver Implements ILunyEngineObserver
+  inheritance:
+  - System.Object
+  implements:
+  - Luny.ILunyEngineObserver
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor
+  commentId: M:LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor
+  id: '#ctor'
+  parent: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  langs:
+  - csharp
+  - vb
+  name: ScriptDiagnosticsObserver()
+  nameWithType: ScriptDiagnosticsObserver.ScriptDiagnosticsObserver()
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.ScriptDiagnosticsObserver()
+  type: Constructor
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public ScriptDiagnosticsObserver()
+    content.vb: Public Sub New()
+  overload: LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor*
+  nameWithType.vb: ScriptDiagnosticsObserver.New()
+  fullName.vb: LunyScript.Diagnostics.ScriptDiagnosticsObserver.New()
+  name.vb: New()
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+  commentId: P:LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+  id: Instance
+  parent: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: ScriptDiagnosticsObserver.Instance
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  syntax:
+    content: public static ScriptDiagnosticsObserver Instance { get; }
+    parameters: []
+    return:
+      type: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+    content.vb: Public Shared ReadOnly Property Instance As ScriptDiagnosticsObserver
+  overload: LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance*
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsStartup
+  commentId: E:LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsStartup
+  id: OnDiagnosticsStartup
+  parent: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  langs:
+  - csharp
+  - vb
+  name: OnDiagnosticsStartup
+  nameWithType: ScriptDiagnosticsObserver.OnDiagnosticsStartup
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsStartup
+  type: Event
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  summary: >-
+    Fired when the engine starts up and the singleton Instance becomes valid.
+
+    Subscribe to this event when Instance is null to be notified when diagnostics become available.
+  example: []
+  syntax:
+    content: public static event Action<ScriptDiagnosticsObserver> OnDiagnosticsStartup
+    return:
+      type: System.Action{LunyScript.Diagnostics.ScriptDiagnosticsObserver}
+    content.vb: Public Shared Event OnDiagnosticsStartup As Action(Of ScriptDiagnosticsObserver)
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsShutdown
+  commentId: E:LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsShutdown
+  id: OnDiagnosticsShutdown
+  parent: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  langs:
+  - csharp
+  - vb
+  name: OnDiagnosticsShutdown
+  nameWithType: ScriptDiagnosticsObserver.OnDiagnosticsShutdown
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.OnDiagnosticsShutdown
+  type: Event
+  assemblies:
+  - LunyScript
+  namespace: LunyScript.Diagnostics
+  summary: Fired just before the engine shuts down. Instance is still valid when this fires.
+  example: []
+  syntax:
+    content: public static event Action<ScriptDiagnosticsObserver> OnDiagnosticsShutdown
+    return:
+      type: System.Action{LunyScript.Diagnostics.ScriptDiagnosticsObserver}
+    content.vb: Public Shared Event OnDiagnosticsShutdown As Action(Of ScriptDiagnosticsObserver)
+references:
+- uid: LunyScript.Diagnostics
+  commentId: N:LunyScript.Diagnostics
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Diagnostics
+  nameWithType: LunyScript.Diagnostics
+  fullName: LunyScript.Diagnostics
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: LunyScript.Diagnostics.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: LunyScript.Diagnostics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Luny.ILunyEngineObserver
+  commentId: T:Luny.ILunyEngineObserver
+  parent: Luny
+  isExternal: true
+  href: Luny.ILunyEngineObserver.html
+  name: ILunyEngineObserver
+  nameWithType: ILunyEngineObserver
+  fullName: Luny.ILunyEngineObserver
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor*
+  commentId: Overload:LunyScript.Diagnostics.ScriptDiagnosticsObserver.#ctor
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptDiagnosticsObserver.html#LunyScript_Diagnostics_ScriptDiagnosticsObserver__ctor
+  name: ScriptDiagnosticsObserver
+  nameWithType: ScriptDiagnosticsObserver.ScriptDiagnosticsObserver
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.ScriptDiagnosticsObserver
+  nameWithType.vb: ScriptDiagnosticsObserver.New
+  fullName.vb: LunyScript.Diagnostics.ScriptDiagnosticsObserver.New
+  name.vb: New
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance*
+  commentId: Overload:LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptDiagnosticsObserver.html#LunyScript_Diagnostics_ScriptDiagnosticsObserver_Instance
+  name: Instance
+  nameWithType: ScriptDiagnosticsObserver.Instance
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver.Instance
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  commentId: T:LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  parent: LunyScript.Diagnostics
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptDiagnosticsObserver.html
+  name: ScriptDiagnosticsObserver
+  nameWithType: ScriptDiagnosticsObserver
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+- uid: System.Action{LunyScript.Diagnostics.ScriptDiagnosticsObserver}
+  commentId: T:System.Action{LunyScript.Diagnostics.ScriptDiagnosticsObserver}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ScriptDiagnosticsObserver>
+  nameWithType: Action<ScriptDiagnosticsObserver>
+  fullName: System.Action<LunyScript.Diagnostics.ScriptDiagnosticsObserver>
+  nameWithType.vb: Action(Of ScriptDiagnosticsObserver)
+  fullName.vb: System.Action(Of LunyScript.Diagnostics.ScriptDiagnosticsObserver)
+  name.vb: Action(Of ScriptDiagnosticsObserver)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+    name: ScriptDiagnosticsObserver
+    isExternal: true
+    href: LunyScript.Diagnostics.ScriptDiagnosticsObserver.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+    name: ScriptDiagnosticsObserver
+    isExternal: true
+    href: LunyScript.Diagnostics.ScriptDiagnosticsObserver.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

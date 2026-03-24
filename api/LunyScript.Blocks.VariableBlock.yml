@@ -90,7 +90,8 @@ items:
   - LunyScript.Blocks.ScriptBlock
   - LunyScript.Blocks.ConditionBlock
   derivedClasses:
-  - LunyScript.Blocks.TableVariableBlock
+  - LunyScript.Blocks.ScriptVariableBlock
+  - LunyScript.Blocks.VariableArithmeticBlock
   implements:
   - LunyScript.Blocks.IScriptBlock
 - uid: LunyScript.Blocks.VariableBlock.op_Implicit(Luny.Variable)~LunyScript.Blocks.VariableBlock
@@ -290,15 +291,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator +(VariableBlock left, Variable right)
+    content: public static VariableArithmeticBlock operator +(VariableBlock left, Variable right)
     parameters:
     - id: left
       type: LunyScript.Blocks.VariableBlock
     - id: right
       type: Luny.Variable
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator +(left As VariableBlock, right As Variable) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator +(left As VariableBlock, right As Variable) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Addition*
   nameWithType.vb: VariableBlock.+(VariableBlock, Variable)
   fullName.vb: LunyScript.Blocks.VariableBlock.+(LunyScript.Blocks.VariableBlock, Luny.Variable)
@@ -318,15 +319,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator +(VariableBlock left, VariableBlock right)
+    content: public static VariableArithmeticBlock operator +(VariableBlock left, VariableBlock right)
     parameters:
     - id: left
       type: LunyScript.Blocks.VariableBlock
     - id: right
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator +(left As VariableBlock, right As VariableBlock) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator +(left As VariableBlock, right As VariableBlock) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Addition*
   nameWithType.vb: VariableBlock.+(VariableBlock, VariableBlock)
   fullName.vb: LunyScript.Blocks.VariableBlock.+(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
@@ -346,15 +347,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator +(Variable left, VariableBlock right)
+    content: public static VariableArithmeticBlock operator +(Variable left, VariableBlock right)
     parameters:
     - id: left
       type: Luny.Variable
     - id: right
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator +(left As Variable, right As VariableBlock) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator +(left As Variable, right As VariableBlock) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Addition*
   nameWithType.vb: VariableBlock.+(Variable, VariableBlock)
   fullName.vb: LunyScript.Blocks.VariableBlock.+(Luny.Variable, LunyScript.Blocks.VariableBlock)
@@ -374,15 +375,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator -(VariableBlock left, Variable right)
+    content: public static VariableArithmeticBlock operator -(VariableBlock left, Variable right)
     parameters:
     - id: left
       type: LunyScript.Blocks.VariableBlock
     - id: right
       type: Luny.Variable
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator -(left As VariableBlock, right As Variable) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator -(left As VariableBlock, right As Variable) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Subtraction*
   nameWithType.vb: VariableBlock.-(VariableBlock, Variable)
   fullName.vb: LunyScript.Blocks.VariableBlock.-(LunyScript.Blocks.VariableBlock, Luny.Variable)
@@ -402,15 +403,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator -(VariableBlock left, VariableBlock right)
+    content: public static VariableArithmeticBlock operator -(VariableBlock left, VariableBlock right)
     parameters:
     - id: left
       type: LunyScript.Blocks.VariableBlock
     - id: right
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator -(left As VariableBlock, right As VariableBlock) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator -(left As VariableBlock, right As VariableBlock) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Subtraction*
   nameWithType.vb: VariableBlock.-(VariableBlock, VariableBlock)
   fullName.vb: LunyScript.Blocks.VariableBlock.-(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
@@ -430,15 +431,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator -(Variable left, VariableBlock right)
+    content: public static VariableArithmeticBlock operator -(Variable left, VariableBlock right)
     parameters:
     - id: left
       type: Luny.Variable
     - id: right
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator -(left As Variable, right As VariableBlock) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator -(left As Variable, right As VariableBlock) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Subtraction*
   nameWithType.vb: VariableBlock.-(Variable, VariableBlock)
   fullName.vb: LunyScript.Blocks.VariableBlock.-(Luny.Variable, LunyScript.Blocks.VariableBlock)
@@ -458,15 +459,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator *(VariableBlock left, Variable right)
+    content: public static VariableArithmeticBlock operator *(VariableBlock left, Variable right)
     parameters:
     - id: left
       type: LunyScript.Blocks.VariableBlock
     - id: right
       type: Luny.Variable
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator *(left As VariableBlock, right As Variable) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator *(left As VariableBlock, right As Variable) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Multiply*
   nameWithType.vb: VariableBlock.*(VariableBlock, Variable)
   fullName.vb: LunyScript.Blocks.VariableBlock.*(LunyScript.Blocks.VariableBlock, Luny.Variable)
@@ -486,15 +487,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator *(VariableBlock left, VariableBlock right)
+    content: public static VariableArithmeticBlock operator *(VariableBlock left, VariableBlock right)
     parameters:
     - id: left
       type: LunyScript.Blocks.VariableBlock
     - id: right
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator *(left As VariableBlock, right As VariableBlock) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator *(left As VariableBlock, right As VariableBlock) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Multiply*
   nameWithType.vb: VariableBlock.*(VariableBlock, VariableBlock)
   fullName.vb: LunyScript.Blocks.VariableBlock.*(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
@@ -514,15 +515,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator *(Variable left, VariableBlock right)
+    content: public static VariableArithmeticBlock operator *(Variable left, VariableBlock right)
     parameters:
     - id: left
       type: Luny.Variable
     - id: right
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator *(left As Variable, right As VariableBlock) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator *(left As Variable, right As VariableBlock) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Multiply*
   nameWithType.vb: VariableBlock.*(Variable, VariableBlock)
   fullName.vb: LunyScript.Blocks.VariableBlock.*(Luny.Variable, LunyScript.Blocks.VariableBlock)
@@ -542,15 +543,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator /(VariableBlock left, Variable right)
+    content: public static VariableArithmeticBlock operator /(VariableBlock left, Variable right)
     parameters:
     - id: left
       type: LunyScript.Blocks.VariableBlock
     - id: right
       type: Luny.Variable
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator /(left As VariableBlock, right As Variable) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator /(left As VariableBlock, right As Variable) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Division*
   nameWithType.vb: VariableBlock./(VariableBlock, Variable)
   fullName.vb: LunyScript.Blocks.VariableBlock./(LunyScript.Blocks.VariableBlock, Luny.Variable)
@@ -570,15 +571,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator /(VariableBlock left, VariableBlock right)
+    content: public static VariableArithmeticBlock operator /(VariableBlock left, VariableBlock right)
     parameters:
     - id: left
       type: LunyScript.Blocks.VariableBlock
     - id: right
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator /(left As VariableBlock, right As VariableBlock) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator /(left As VariableBlock, right As VariableBlock) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Division*
   nameWithType.vb: VariableBlock./(VariableBlock, VariableBlock)
   fullName.vb: LunyScript.Blocks.VariableBlock./(LunyScript.Blocks.VariableBlock, LunyScript.Blocks.VariableBlock)
@@ -598,15 +599,15 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator /(Variable left, VariableBlock right)
+    content: public static VariableArithmeticBlock operator /(Variable left, VariableBlock right)
     parameters:
     - id: left
       type: Luny.Variable
     - id: right
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Operator /(left As Variable, right As VariableBlock) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Operator /(left As Variable, right As VariableBlock) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Division*
   nameWithType.vb: VariableBlock./(Variable, VariableBlock)
   fullName.vb: LunyScript.Blocks.VariableBlock./(Luny.Variable, LunyScript.Blocks.VariableBlock)
@@ -626,13 +627,13 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator ++(VariableBlock a)
+    content: public static VariableArithmeticBlock operator ++(VariableBlock a)
     parameters:
     - id: a
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Function op_Increment(a As VariableBlock) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Function op_Increment(a As VariableBlock) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Increment*
   nameWithType.vb: VariableBlock.op_Increment(VariableBlock)
   fullName.vb: LunyScript.Blocks.VariableBlock.op_Increment(LunyScript.Blocks.VariableBlock)
@@ -652,13 +653,13 @@ items:
   - LunyScript
   namespace: LunyScript.Blocks
   syntax:
-    content: public static VariableBlock operator --(VariableBlock a)
+    content: public static VariableArithmeticBlock operator --(VariableBlock a)
     parameters:
     - id: a
       type: LunyScript.Blocks.VariableBlock
     return:
-      type: LunyScript.Blocks.VariableBlock
-    content.vb: Public Shared Function op_Decrement(a As VariableBlock) As VariableBlock
+      type: LunyScript.Blocks.VariableArithmeticBlock
+    content.vb: Public Shared Function op_Decrement(a As VariableBlock) As VariableArithmeticBlock
   overload: LunyScript.Blocks.VariableBlock.op_Decrement*
   nameWithType.vb: VariableBlock.op_Decrement(VariableBlock)
   fullName.vb: LunyScript.Blocks.VariableBlock.op_Decrement(LunyScript.Blocks.VariableBlock)
@@ -1774,6 +1775,14 @@ references:
     name: +
     isExternal: true
     href: LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_op_Addition_LunyScript_Blocks_VariableBlock_Luny_Variable_
+- uid: LunyScript.Blocks.VariableArithmeticBlock
+  commentId: T:LunyScript.Blocks.VariableArithmeticBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.VariableArithmeticBlock.html
+  name: VariableArithmeticBlock
+  nameWithType: VariableArithmeticBlock
+  fullName: LunyScript.Blocks.VariableArithmeticBlock
 - uid: LunyScript.Blocks.VariableBlock.op_Subtraction*
   commentId: Overload:LunyScript.Blocks.VariableBlock.op_Subtraction
   isExternal: true

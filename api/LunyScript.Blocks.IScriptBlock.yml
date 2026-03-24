@@ -25,8 +25,8 @@ items:
   - LunyScript.Blocks.ConditionBlock
   - LunyScript.Blocks.IfBlock
   - LunyScript.Blocks.ScriptBlock
+  - LunyScript.Blocks.ScriptVariableBlock
   - LunyScript.Blocks.SequenceBlock
-  - LunyScript.Blocks.TableVariableBlock
   - LunyScript.Blocks.TransformInterpolateBlock
   - LunyScript.Blocks.TransformInterpolateTowardsObjectBlock
   - LunyScript.Blocks.TransformInterpolateTowardsVariableBlock
@@ -45,6 +45,7 @@ items:
   - LunyScript.Blocks.TransformScaleSetLocalUniformBlock
   - LunyScript.Blocks.TransformScaleTowardsBlock
   - LunyScript.Blocks.TransformScaleTowardsLerpBlock
+  - LunyScript.Blocks.VariableArithmeticBlock
   - LunyScript.Blocks.VariableBlock
 references:
 - uid: LunyScript.Blocks

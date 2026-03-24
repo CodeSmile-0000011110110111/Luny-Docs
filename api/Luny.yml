@@ -138,6 +138,7 @@ references:
   fullName: Luny.LunyServiceException
 - uid: Luny.ILunyEngineObserver
   commentId: T:Luny.ILunyEngineObserver
+  parent: Luny
   isExternal: true
   href: Luny.ILunyEngineObserver.html
   name: ILunyEngineObserver

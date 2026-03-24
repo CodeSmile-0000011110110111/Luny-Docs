@@ -26,11 +26,11 @@ items:
   - LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
   - LunyScript.Script.Object
   - LunyScript.Script.On
-  - LunyScript.Script.Owner
   - LunyScript.Script.Prefab
   - LunyScript.Script.Run(System.Action)
   - LunyScript.Script.Run(System.Action{LunyScript.IScriptRuntimeContext})
   - LunyScript.Script.Scene
+  - LunyScript.Script.Self
   - LunyScript.Script.Time
   - LunyScript.Script.ToString
   - LunyScript.Script.Transform
@@ -582,29 +582,29 @@ items:
   nameWithType.vb: Script.New()
   fullName.vb: LunyScript.Script.New()
   name.vb: New()
-- uid: LunyScript.Script.Owner
-  commentId: P:LunyScript.Script.Owner
-  id: Owner
+- uid: LunyScript.Script.Self
+  commentId: P:LunyScript.Script.Self
+  id: Self
   parent: LunyScript.Script
   langs:
   - csharp
   - vb
-  name: Owner
-  nameWithType: Script.Owner
-  fullName: LunyScript.Script.Owner
+  name: Self
+  nameWithType: Script.Self
+  fullName: LunyScript.Script.Self
   type: Property
   assemblies:
   - LunyScript
   namespace: LunyScript
-  summary: Reference to proxy for engine object.
+  summary: Reference to script's engine object.
   example: []
   syntax:
-    content: protected ILunyObject Owner { get; }
+    content: protected ILunyObject Self { get; }
     parameters: []
     return:
       type: Luny.Engine.Bridge.ILunyObject
-    content.vb: Protected ReadOnly Property Owner As ILunyObject
-  overload: LunyScript.Script.Owner*
+    content.vb: Protected ReadOnly Property Self As ILunyObject
+  overload: LunyScript.Script.Self*
 - uid: LunyScript.Script.Name
   commentId: P:LunyScript.Script.Name
   id: Name
@@ -666,11 +666,11 @@ items:
   summary: Global variables
   example: []
   syntax:
-    content: public VarAccessor GVar { get; }
+    content: public ScriptVariables GVar { get; }
     parameters: []
     return:
-      type: LunyScript.Blocks.VarAccessor
-    content.vb: Public ReadOnly Property GVar As VarAccessor
+      type: LunyScript.ScriptVariables
+    content.vb: Public ReadOnly Property GVar As ScriptVariables
   overload: LunyScript.Script.GVar*
 - uid: LunyScript.Script.Var
   commentId: P:LunyScript.Script.Var
@@ -689,11 +689,11 @@ items:
   summary: Instance variables (unique per script/object)
   example: []
   syntax:
-    content: public VarAccessor Var { get; }
+    content: public ScriptVariables Var { get; }
     parameters: []
     return:
-      type: LunyScript.Blocks.VarAccessor
-    content.vb: Public ReadOnly Property Var As VarAccessor
+      type: LunyScript.ScriptVariables
+    content.vb: Public ReadOnly Property Var As ScriptVariables
   overload: LunyScript.Script.Var*
 - uid: LunyScript.Script.Component
   commentId: P:LunyScript.Script.Component
@@ -1431,13 +1431,13 @@ references:
   nameWithType.vb: Script.New
   fullName.vb: LunyScript.Script.New
   name.vb: New
-- uid: LunyScript.Script.Owner*
-  commentId: Overload:LunyScript.Script.Owner
+- uid: LunyScript.Script.Self*
+  commentId: Overload:LunyScript.Script.Self
   isExternal: true
-  href: LunyScript.Script.html#LunyScript_Script_Owner
-  name: Owner
-  nameWithType: Script.Owner
-  fullName: LunyScript.Script.Owner
+  href: LunyScript.Script.html#LunyScript_Script_Self
+  name: Self
+  nameWithType: Script.Self
+  fullName: LunyScript.Script.Self
 - uid: Luny.Engine.Bridge.ILunyObject
   commentId: T:Luny.Engine.Bridge.ILunyObject
   parent: Luny.Engine.Bridge
@@ -1512,14 +1512,14 @@ references:
   name: GVar
   nameWithType: Script.GVar
   fullName: LunyScript.Script.GVar
-- uid: LunyScript.Blocks.VarAccessor
-  commentId: T:LunyScript.Blocks.VarAccessor
-  parent: LunyScript.Blocks
+- uid: LunyScript.ScriptVariables
+  commentId: T:LunyScript.ScriptVariables
+  parent: LunyScript
   isExternal: true
-  href: LunyScript.Blocks.VarAccessor.html
-  name: VarAccessor
-  nameWithType: VarAccessor
-  fullName: LunyScript.Blocks.VarAccessor
+  href: LunyScript.ScriptVariables.html
+  name: ScriptVariables
+  nameWithType: ScriptVariables
+  fullName: LunyScript.ScriptVariables
 - uid: LunyScript.Script.Var*
   commentId: Overload:LunyScript.Script.Var
   isExternal: true

@@ -6,9 +6,8 @@ items:
   parent: Luny
   children:
   - Luny.VariableChangedArgs.#ctor
-  - Luny.VariableChangedArgs.Current
+  - Luny.VariableChangedArgs.Handle
   - Luny.VariableChangedArgs.Name
-  - Luny.VariableChangedArgs.Previous
   - Luny.VariableChangedArgs.ToString
   langs:
   - csharp
@@ -92,48 +91,27 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property Name As [String]
   overload: Luny.VariableChangedArgs.Name*
-- uid: Luny.VariableChangedArgs.Current
-  commentId: P:Luny.VariableChangedArgs.Current
-  id: Current
+- uid: Luny.VariableChangedArgs.Handle
+  commentId: P:Luny.VariableChangedArgs.Handle
+  id: Handle
   parent: Luny.VariableChangedArgs
   langs:
   - csharp
   - vb
-  name: Current
-  nameWithType: VariableChangedArgs.Current
-  fullName: Luny.VariableChangedArgs.Current
+  name: Handle
+  nameWithType: VariableChangedArgs.Handle
+  fullName: Luny.VariableChangedArgs.Handle
   type: Property
   assemblies:
   - Luny
   namespace: Luny
   syntax:
-    content: public Variable Current { get; }
+    content: public Table.VarHandleBase Handle { get; }
     parameters: []
     return:
-      type: Luny.Variable
-    content.vb: Public ReadOnly Property Current As Variable
-  overload: Luny.VariableChangedArgs.Current*
-- uid: Luny.VariableChangedArgs.Previous
-  commentId: P:Luny.VariableChangedArgs.Previous
-  id: Previous
-  parent: Luny.VariableChangedArgs
-  langs:
-  - csharp
-  - vb
-  name: Previous
-  nameWithType: VariableChangedArgs.Previous
-  fullName: Luny.VariableChangedArgs.Previous
-  type: Property
-  assemblies:
-  - Luny
-  namespace: Luny
-  syntax:
-    content: public Variable Previous { get; }
-    parameters: []
-    return:
-      type: Luny.Variable
-    content.vb: Public ReadOnly Property Previous As Variable
-  overload: Luny.VariableChangedArgs.Previous*
+      type: Luny.Table.VarHandleBase
+    content.vb: Public ReadOnly Property Handle As Table.VarHandleBase
+  overload: Luny.VariableChangedArgs.Handle*
 references:
 - uid: Luny
   commentId: N:Luny
@@ -223,25 +201,38 @@ references:
   name: Name
   nameWithType: VariableChangedArgs.Name
   fullName: Luny.VariableChangedArgs.Name
-- uid: Luny.VariableChangedArgs.Current*
-  commentId: Overload:Luny.VariableChangedArgs.Current
+- uid: Luny.VariableChangedArgs.Handle*
+  commentId: Overload:Luny.VariableChangedArgs.Handle
   isExternal: true
-  href: Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_Current
-  name: Current
-  nameWithType: VariableChangedArgs.Current
-  fullName: Luny.VariableChangedArgs.Current
-- uid: Luny.Variable
-  commentId: T:Luny.Variable
+  href: Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_Handle
+  name: Handle
+  nameWithType: VariableChangedArgs.Handle
+  fullName: Luny.VariableChangedArgs.Handle
+- uid: Luny.Table.VarHandleBase
+  commentId: T:Luny.Table.VarHandleBase
   parent: Luny
   isExternal: true
-  href: Luny.Variable.html
-  name: Variable
-  nameWithType: Variable
-  fullName: Luny.Variable
-- uid: Luny.VariableChangedArgs.Previous*
-  commentId: Overload:Luny.VariableChangedArgs.Previous
-  isExternal: true
-  href: Luny.VariableChangedArgs.html#Luny_VariableChangedArgs_Previous
-  name: Previous
-  nameWithType: VariableChangedArgs.Previous
-  fullName: Luny.VariableChangedArgs.Previous
+  href: Luny.Table.html
+  name: Table.VarHandleBase
+  nameWithType: Table.VarHandleBase
+  fullName: Luny.Table.VarHandleBase
+  spec.csharp:
+  - uid: Luny.Table
+    name: Table
+    isExternal: true
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.VarHandleBase
+    name: VarHandleBase
+    isExternal: true
+    href: Luny.Table.VarHandleBase.html
+  spec.vb:
+  - uid: Luny.Table
+    name: Table
+    isExternal: true
+    href: Luny.Table.html
+  - name: .
+  - uid: Luny.Table.VarHandleBase
+    name: VarHandleBase
+    isExternal: true
+    href: Luny.Table.VarHandleBase.html

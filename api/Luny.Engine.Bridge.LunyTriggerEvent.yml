@@ -7,7 +7,7 @@ items:
   children:
   - Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerEntered
   - Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerExited
-  - Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
+  - Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerOverlapping
   langs:
   - csharp
   - vb
@@ -57,22 +57,22 @@ items:
     content: OnTriggerExited = 1
     return:
       type: Luny.Engine.Bridge.LunyTriggerEvent
-- uid: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
-  commentId: F:Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
-  id: OnTriggerUpdate
+- uid: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerOverlapping
+  commentId: F:Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerOverlapping
+  id: OnTriggerOverlapping
   parent: Luny.Engine.Bridge.LunyTriggerEvent
   langs:
   - csharp
   - vb
-  name: OnTriggerUpdate
-  nameWithType: LunyTriggerEvent.OnTriggerUpdate
-  fullName: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerUpdate
+  name: OnTriggerOverlapping
+  nameWithType: LunyTriggerEvent.OnTriggerOverlapping
+  fullName: Luny.Engine.Bridge.LunyTriggerEvent.OnTriggerOverlapping
   type: Field
   assemblies:
   - Luny
   namespace: Luny.Engine.Bridge
   syntax:
-    content: OnTriggerUpdate = 2
+    content: OnTriggerOverlapping = 2
     return:
       type: Luny.Engine.Bridge.LunyTriggerEvent
 references:

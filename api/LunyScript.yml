@@ -17,6 +17,7 @@ items:
   - LunyScript.ScriptEngine
   - LunyScript.ScriptId
   - LunyScript.ScriptRuntimeOptions
+  - LunyScript.ScriptVariables
   langs:
   - csharp
   - vb
@@ -104,6 +105,14 @@ references:
   name: IScriptRuntimeContext
   nameWithType: IScriptRuntimeContext
   fullName: LunyScript.IScriptRuntimeContext
+- uid: LunyScript.ScriptVariables
+  commentId: T:LunyScript.ScriptVariables
+  parent: LunyScript
+  isExternal: true
+  href: LunyScript.ScriptVariables.html
+  name: ScriptVariables
+  nameWithType: ScriptVariables
+  fullName: LunyScript.ScriptVariables
 - uid: LunyScript.Script
   commentId: T:LunyScript.Script
   parent: LunyScript

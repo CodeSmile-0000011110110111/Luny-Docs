@@ -8,6 +8,7 @@ items:
   - LunyScript.Diagnostics.ScriptBlockProfiler
   - LunyScript.Diagnostics.ScriptBlockProfilerSnapshot
   - LunyScript.Diagnostics.ScriptDebugHooks
+  - LunyScript.Diagnostics.ScriptDiagnosticsObserver
   - LunyScript.Diagnostics.ScriptExecutionTrace
   langs:
   - csharp
@@ -48,6 +49,14 @@ references:
   name: ScriptDebugHooks
   nameWithType: ScriptDebugHooks
   fullName: LunyScript.Diagnostics.ScriptDebugHooks
+- uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  commentId: T:LunyScript.Diagnostics.ScriptDiagnosticsObserver
+  parent: LunyScript.Diagnostics
+  isExternal: true
+  href: LunyScript.Diagnostics.ScriptDiagnosticsObserver.html
+  name: ScriptDiagnosticsObserver
+  nameWithType: ScriptDiagnosticsObserver
+  fullName: LunyScript.Diagnostics.ScriptDiagnosticsObserver
 - uid: LunyScript.Diagnostics.ScriptExecutionTrace
   commentId: T:LunyScript.Diagnostics.ScriptExecutionTrace
   isExternal: true

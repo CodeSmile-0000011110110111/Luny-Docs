@@ -14,8 +14,8 @@ items:
   - LunyScript.Blocks.ITimerCoroutineBlock
   - LunyScript.Blocks.IfBlock
   - LunyScript.Blocks.ScriptBlock
+  - LunyScript.Blocks.ScriptVariableBlock
   - LunyScript.Blocks.SequenceBlock
-  - LunyScript.Blocks.TableVariableBlock
   - LunyScript.Blocks.TransformInterpolateBlock
   - LunyScript.Blocks.TransformInterpolateTowardsObjectBlock
   - LunyScript.Blocks.TransformInterpolateTowardsVariableBlock
@@ -34,7 +34,7 @@ items:
   - LunyScript.Blocks.TransformScaleSetLocalUniformBlock
   - LunyScript.Blocks.TransformScaleTowardsBlock
   - LunyScript.Blocks.TransformScaleTowardsLerpBlock
-  - LunyScript.Blocks.VarAccessor
+  - LunyScript.Blocks.VariableArithmeticBlock
   - LunyScript.Blocks.VariableBlock
   - LunyScript.Blocks.VariableBlock`1
   langs:
@@ -277,22 +277,22 @@ references:
   name: TransformScaleSetLocalUniformBlock
   nameWithType: TransformScaleSetLocalUniformBlock
   fullName: LunyScript.Blocks.TransformScaleSetLocalUniformBlock
-- uid: LunyScript.Blocks.TableVariableBlock
-  commentId: T:LunyScript.Blocks.TableVariableBlock
+- uid: LunyScript.Blocks.ScriptVariableBlock
+  commentId: T:LunyScript.Blocks.ScriptVariableBlock
   parent: LunyScript.Blocks
   isExternal: true
-  href: LunyScript.Blocks.TableVariableBlock.html
-  name: TableVariableBlock
-  nameWithType: TableVariableBlock
-  fullName: LunyScript.Blocks.TableVariableBlock
-- uid: LunyScript.Blocks.VarAccessor
-  commentId: T:LunyScript.Blocks.VarAccessor
+  href: LunyScript.Blocks.ScriptVariableBlock.html
+  name: ScriptVariableBlock
+  nameWithType: ScriptVariableBlock
+  fullName: LunyScript.Blocks.ScriptVariableBlock
+- uid: LunyScript.Blocks.VariableArithmeticBlock
+  commentId: T:LunyScript.Blocks.VariableArithmeticBlock
   parent: LunyScript.Blocks
   isExternal: true
-  href: LunyScript.Blocks.VarAccessor.html
-  name: VarAccessor
-  nameWithType: VarAccessor
-  fullName: LunyScript.Blocks.VarAccessor
+  href: LunyScript.Blocks.VariableArithmeticBlock.html
+  name: VariableArithmeticBlock
+  nameWithType: VariableArithmeticBlock
+  fullName: LunyScript.Blocks.VariableArithmeticBlock
 - uid: LunyScript.Blocks.VariableBlock
   commentId: T:LunyScript.Blocks.VariableBlock
   parent: LunyScript.Blocks

@@ -12,7 +12,7 @@ items:
   - LunyScript.Api.ObjectBuilderExtensions.AsQuad``1(LunyScript.Api.ObjectCreateBuilder{``0})
   - LunyScript.Api.ObjectBuilderExtensions.AsSphere``1(LunyScript.Api.ObjectCreateBuilder{``0})
   - LunyScript.Api.ObjectBuilderExtensions.Clone``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
-  - LunyScript.Api.ObjectBuilderExtensions.With``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
+  - LunyScript.Api.ObjectBuilderExtensions.From``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
   langs:
   - csharp
   - vb
@@ -202,23 +202,23 @@ items:
   nameWithType.vb: ObjectBuilderExtensions.AsQuad(Of T)(ObjectCreateBuilder(Of T))
   fullName.vb: LunyScript.Api.ObjectBuilderExtensions.AsQuad(Of T)(LunyScript.Api.ObjectCreateBuilder(Of T))
   name.vb: AsQuad(Of T)(ObjectCreateBuilder(Of T))
-- uid: LunyScript.Api.ObjectBuilderExtensions.With``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
-  commentId: M:LunyScript.Api.ObjectBuilderExtensions.With``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
-  id: With``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
+- uid: LunyScript.Api.ObjectBuilderExtensions.From``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
+  commentId: M:LunyScript.Api.ObjectBuilderExtensions.From``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
+  id: From``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
   isExtensionMethod: true
   parent: LunyScript.Api.ObjectBuilderExtensions
   langs:
   - csharp
   - vb
-  name: With<T>(ObjectCreateBuilder<T>, String)
-  nameWithType: ObjectBuilderExtensions.With<T>(ObjectCreateBuilder<T>, String)
-  fullName: LunyScript.Api.ObjectBuilderExtensions.With<T>(LunyScript.Api.ObjectCreateBuilder<T>, System.String)
+  name: From<T>(ObjectCreateBuilder<T>, String)
+  nameWithType: ObjectBuilderExtensions.From<T>(ObjectCreateBuilder<T>, String)
+  fullName: LunyScript.Api.ObjectBuilderExtensions.From<T>(LunyScript.Api.ObjectCreateBuilder<T>, System.String)
   type: Method
   assemblies:
   - LunyScript
   namespace: LunyScript.Api
   syntax:
-    content: 'public static ObjectCreateBuilder<ObjectBuilderNameSet> With<T>(this ObjectCreateBuilder<T> b, String prefabName) where T : struct, IObjectBuilderNameSet'
+    content: 'public static ObjectCreateBuilder<ObjectBuilderNameSet> From<T>(this ObjectCreateBuilder<T> b, String prefabName) where T : struct, IObjectBuilderNameSet'
     parameters:
     - id: b
       type: LunyScript.Api.ObjectCreateBuilder{{T}}
@@ -228,11 +228,11 @@ items:
     - id: T
     return:
       type: LunyScript.Api.ObjectCreateBuilder{LunyScript.Api.ObjectBuilderNameSet}
-    content.vb: Public Shared Function [With](Of T As {Structure, IObjectBuilderNameSet})(b As ObjectCreateBuilder(Of T), prefabName As [String]) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
-  overload: LunyScript.Api.ObjectBuilderExtensions.With*
-  nameWithType.vb: ObjectBuilderExtensions.With(Of T)(ObjectCreateBuilder(Of T), String)
-  fullName.vb: LunyScript.Api.ObjectBuilderExtensions.With(Of T)(LunyScript.Api.ObjectCreateBuilder(Of T), System.String)
-  name.vb: With(Of T)(ObjectCreateBuilder(Of T), String)
+    content.vb: Public Shared Function From(Of T As {Structure, IObjectBuilderNameSet})(b As ObjectCreateBuilder(Of T), prefabName As [String]) As ObjectCreateBuilder(Of ObjectBuilderNameSet)
+  overload: LunyScript.Api.ObjectBuilderExtensions.From*
+  nameWithType.vb: ObjectBuilderExtensions.From(Of T)(ObjectCreateBuilder(Of T), String)
+  fullName.vb: LunyScript.Api.ObjectBuilderExtensions.From(Of T)(LunyScript.Api.ObjectCreateBuilder(Of T), System.String)
+  name.vb: From(Of T)(ObjectCreateBuilder(Of T), String)
 - uid: LunyScript.Api.ObjectBuilderExtensions.Clone``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
   commentId: M:LunyScript.Api.ObjectBuilderExtensions.Clone``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
   id: Clone``1(LunyScript.Api.ObjectCreateBuilder{``0},System.String)
@@ -441,13 +441,13 @@ references:
   name: AsQuad
   nameWithType: ObjectBuilderExtensions.AsQuad
   fullName: LunyScript.Api.ObjectBuilderExtensions.AsQuad
-- uid: LunyScript.Api.ObjectBuilderExtensions.With*
-  commentId: Overload:LunyScript.Api.ObjectBuilderExtensions.With
+- uid: LunyScript.Api.ObjectBuilderExtensions.From*
+  commentId: Overload:LunyScript.Api.ObjectBuilderExtensions.From
   isExternal: true
-  href: LunyScript.Api.ObjectBuilderExtensions.html#LunyScript_Api_ObjectBuilderExtensions_With__1_LunyScript_Api_ObjectCreateBuilder___0__System_String_
-  name: With
-  nameWithType: ObjectBuilderExtensions.With
-  fullName: LunyScript.Api.ObjectBuilderExtensions.With
+  href: LunyScript.Api.ObjectBuilderExtensions.html#LunyScript_Api_ObjectBuilderExtensions_From__1_LunyScript_Api_ObjectCreateBuilder___0__System_String_
+  name: From
+  nameWithType: ObjectBuilderExtensions.From
+  fullName: LunyScript.Api.ObjectBuilderExtensions.From
 - uid: System.String
   commentId: T:System.String
   parent: System

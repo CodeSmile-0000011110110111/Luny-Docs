@@ -412,6 +412,9 @@ items:
   - uid: LunyScript.ScriptRuntimeOptions
     name: ScriptRuntimeOptions
     type: Struct
+  - uid: LunyScript.ScriptVariables
+    name: ScriptVariables
+    type: Class
 - uid: LunyScript.Api
   name: LunyScript.Api
   type: Namespace
@@ -681,11 +684,11 @@ items:
   - uid: LunyScript.Blocks.ScriptBlock
     name: ScriptBlock
     type: Class
+  - uid: LunyScript.Blocks.ScriptVariableBlock
+    name: ScriptVariableBlock
+    type: Class
   - uid: LunyScript.Blocks.SequenceBlock
     name: SequenceBlock
-    type: Class
-  - uid: LunyScript.Blocks.TableVariableBlock
-    name: TableVariableBlock
     type: Class
   - uid: LunyScript.Blocks.TransformInterpolateBlock
     name: TransformInterpolateBlock
@@ -741,8 +744,8 @@ items:
   - uid: LunyScript.Blocks.TransformScaleTowardsLerpBlock
     name: TransformScaleTowardsLerpBlock
     type: Class
-  - uid: LunyScript.Blocks.VarAccessor
-    name: VarAccessor
+  - uid: LunyScript.Blocks.VariableArithmeticBlock
+    name: VariableArithmeticBlock
     type: Class
   - uid: LunyScript.Blocks.VariableBlock
     name: VariableBlock
@@ -765,6 +768,9 @@ items:
     type: Class
   - uid: LunyScript.Diagnostics.ScriptDebugHooks
     name: ScriptDebugHooks
+    type: Class
+  - uid: LunyScript.Diagnostics.ScriptDiagnosticsObserver
+    name: ScriptDiagnosticsObserver
     type: Class
   - uid: LunyScript.Diagnostics.ScriptExecutionTrace
     name: ScriptExecutionTrace

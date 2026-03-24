@@ -466,7 +466,7 @@ items:
   assemblies:
   - Luny
   namespace: Luny
-  summary: Fired when a variable is changed. Only invoked in debug builds.
+  summary: Fired when a variable is changed.
   example: []
   syntax:
     content: public event EventHandler<VariableChangedArgs> OnVariableChanged

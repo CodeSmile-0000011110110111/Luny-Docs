@@ -47,7 +47,7 @@ items:
   - LunyScript.Script.OR(LunyScript.Blocks.ConditionBlock[])
   - LunyScript.Script.NOT(LunyScript.Blocks.ConditionBlock)
   - LunyScript.Script.ToString
-  - LunyScript.Script.Owner
+  - LunyScript.Script.Self
   - LunyScript.Script.Name
   - LunyScript.Script.IsEditor
   - LunyScript.Script.GVar
@@ -622,13 +622,13 @@ references:
     isExternal: true
   - name: (
   - name: )
-- uid: LunyScript.Script.Owner
-  commentId: P:LunyScript.Script.Owner
+- uid: LunyScript.Script.Self
+  commentId: P:LunyScript.Script.Self
   parent: LunyScript.Script
   isExternal: true
-  name: Owner
-  nameWithType: Script.Owner
-  fullName: LunyScript.Script.Owner
+  name: Self
+  nameWithType: Script.Self
+  fullName: LunyScript.Script.Self
 - uid: LunyScript.Script.Name
   commentId: P:LunyScript.Script.Name
   parent: LunyScript.Script

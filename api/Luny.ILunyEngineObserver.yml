@@ -32,6 +32,8 @@ items:
   syntax:
     content: public interface ILunyEngineObserver
     content.vb: Public Interface ILunyEngineObserver
+  derivedClasses:
+  - LunyScript.Diagnostics.ScriptDiagnosticsObserver
 - uid: Luny.ILunyEngineObserver.OnEngineStartup
   commentId: M:Luny.ILunyEngineObserver.OnEngineStartup
   id: OnEngineStartup

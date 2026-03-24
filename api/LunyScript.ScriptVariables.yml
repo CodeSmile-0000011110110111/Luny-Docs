@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: LunyScript.ScriptVariables
+  commentId: T:LunyScript.ScriptVariables
+  id: ScriptVariables
+  parent: LunyScript
+  children:
+  - LunyScript.ScriptVariables.Constant(System.String,Luny.Variable)
+  - LunyScript.ScriptVariables.Define(System.String)
+  - LunyScript.ScriptVariables.Define(System.String,Luny.Variable)
+  - LunyScript.ScriptVariables.Item(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ScriptVariables
+  nameWithType: ScriptVariables
+  fullName: LunyScript.ScriptVariables
+  type: Class
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: >-
+    Provides access to the script's Variable instances stored in a Table.
+
+    Getter returns a VariableBlock for use in script expressions and conditions.
+
+    Setter performs immediate variable assignment during Build().
+  example: []
+  syntax:
+    content: public sealed class ScriptVariables
+    content.vb: Public NotInheritable Class ScriptVariables
+  inheritance:
+  - System.Object
+- uid: LunyScript.ScriptVariables.Define(System.String)
+  commentId: M:LunyScript.ScriptVariables.Define(System.String)
+  id: Define(System.String)
+  parent: LunyScript.ScriptVariables
+  langs:
+  - csharp
+  - vb
+  name: Define(String)
+  nameWithType: ScriptVariables.Define(String)
+  fullName: LunyScript.ScriptVariables.Define(System.String)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Defines (or gets) a variable with the given name and the default value 0.
+  example: []
+  syntax:
+    content: public ScriptVariableBlock Define(String name)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    return:
+      type: LunyScript.Blocks.ScriptVariableBlock
+      description: ''
+    content.vb: Public Function Define(name As [String]) As ScriptVariableBlock
+  overload: LunyScript.ScriptVariables.Define*
+- uid: LunyScript.ScriptVariables.Define(System.String,Luny.Variable)
+  commentId: M:LunyScript.ScriptVariables.Define(System.String,Luny.Variable)
+  id: Define(System.String,Luny.Variable)
+  parent: LunyScript.ScriptVariables
+  langs:
+  - csharp
+  - vb
+  name: Define(String, Variable)
+  nameWithType: ScriptVariables.Define(String, Variable)
+  fullName: LunyScript.ScriptVariables.Define(System.String, Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  summary: Defines (or gets) a variable with the given name and assigns the provided Variable.
+  example: []
+  syntax:
+    content: public ScriptVariableBlock Define(String name, Variable variable)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    - id: variable
+      type: Luny.Variable
+      description: ''
+    return:
+      type: LunyScript.Blocks.ScriptVariableBlock
+      description: ''
+    content.vb: Public Function Define(name As [String], variable As Variable) As ScriptVariableBlock
+  overload: LunyScript.ScriptVariables.Define*
+- uid: LunyScript.ScriptVariables.Constant(System.String,Luny.Variable)
+  commentId: M:LunyScript.ScriptVariables.Constant(System.String,Luny.Variable)
+  id: Constant(System.String,Luny.Variable)
+  parent: LunyScript.ScriptVariables
+  langs:
+  - csharp
+  - vb
+  name: Constant(String, Variable)
+  nameWithType: ScriptVariables.Constant(String, Variable)
+  fullName: LunyScript.ScriptVariables.Constant(System.String, Luny.Variable)
+  type: Method
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptVariableBlock Constant(String name, Variable variable)
+    parameters:
+    - id: name
+      type: System.String
+    - id: variable
+      type: Luny.Variable
+    return:
+      type: LunyScript.Blocks.ScriptVariableBlock
+    content.vb: Public Function Constant(name As [String], variable As Variable) As ScriptVariableBlock
+  overload: LunyScript.ScriptVariables.Constant*
+- uid: LunyScript.ScriptVariables.Item(System.String)
+  commentId: P:LunyScript.ScriptVariables.Item(System.String)
+  id: Item(System.String)
+  parent: LunyScript.ScriptVariables
+  langs:
+  - csharp
+  - vb
+  name: this[String]
+  nameWithType: ScriptVariables.this[String]
+  fullName: LunyScript.ScriptVariables.this[System.String]
+  type: Property
+  assemblies:
+  - LunyScript
+  namespace: LunyScript
+  syntax:
+    content: public ScriptVariableBlock this[String name] { get; set; }
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: LunyScript.Blocks.ScriptVariableBlock
+    content.vb: Public Default Property this[](name As [String]) As ScriptVariableBlock
+  overload: LunyScript.ScriptVariables.Item*
+  nameWithType.vb: ScriptVariables.this[](String)
+  fullName.vb: LunyScript.ScriptVariables.this[](System.String)
+  name.vb: this[](String)
+references:
+- uid: LunyScript
+  commentId: N:LunyScript
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript
+  nameWithType: LunyScript
+  fullName: LunyScript
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LunyScript.ScriptVariables.Define*
+  commentId: Overload:LunyScript.ScriptVariables.Define
+  isExternal: true
+  href: LunyScript.ScriptVariables.html#LunyScript_ScriptVariables_Define_System_String_
+  name: Define
+  nameWithType: ScriptVariables.Define
+  fullName: LunyScript.ScriptVariables.Define
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: LunyScript.Blocks.ScriptVariableBlock
+  commentId: T:LunyScript.Blocks.ScriptVariableBlock
+  parent: LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.Blocks.ScriptVariableBlock.html
+  name: ScriptVariableBlock
+  nameWithType: ScriptVariableBlock
+  fullName: LunyScript.Blocks.ScriptVariableBlock
+- uid: LunyScript.Blocks
+  commentId: N:LunyScript.Blocks
+  isExternal: true
+  href: LunyScript.html
+  name: LunyScript.Blocks
+  nameWithType: LunyScript.Blocks
+  fullName: LunyScript.Blocks
+  spec.csharp:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+  spec.vb:
+  - uid: LunyScript
+    name: LunyScript
+    isExternal: true
+    href: LunyScript.html
+  - name: .
+  - uid: LunyScript.Blocks
+    name: Blocks
+    isExternal: true
+    href: LunyScript.Blocks.html
+- uid: Luny.Variable
+  commentId: T:Luny.Variable
+  parent: Luny
+  isExternal: true
+  href: Luny.Variable.html
+  name: Variable
+  nameWithType: Variable
+  fullName: Luny.Variable
+- uid: Luny
+  commentId: N:Luny
+  isExternal: true
+  href: Luny.html
+  name: Luny
+  nameWithType: Luny
+  fullName: Luny
+- uid: LunyScript.ScriptVariables.Constant*
+  commentId: Overload:LunyScript.ScriptVariables.Constant
+  isExternal: true
+  href: LunyScript.ScriptVariables.html#LunyScript_ScriptVariables_Constant_System_String_Luny_Variable_
+  name: Constant
+  nameWithType: ScriptVariables.Constant
+  fullName: LunyScript.ScriptVariables.Constant
+- uid: LunyScript.ScriptVariables.Item*
+  commentId: Overload:LunyScript.ScriptVariables.Item
+  isExternal: true
+  href: LunyScript.ScriptVariables.html#LunyScript_ScriptVariables_Item_System_String_
+  name: this
+  nameWithType: ScriptVariables.this
+  fullName: LunyScript.ScriptVariables.this
+  nameWithType.vb: ScriptVariables.this[]
+  fullName.vb: LunyScript.ScriptVariables.this[]
+  name.vb: this[]
